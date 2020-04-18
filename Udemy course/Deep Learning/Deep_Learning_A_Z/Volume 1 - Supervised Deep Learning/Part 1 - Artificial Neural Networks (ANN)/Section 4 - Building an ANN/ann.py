@@ -22,6 +22,7 @@ labelencoder_X = LabelEncoder()
 X[:, 2] = labelencoder_X.fit_transform(X[:, 2])
 
 X=X[:,1:]
+X_train,X_test,
 
 
 
