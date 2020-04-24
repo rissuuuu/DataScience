@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gretldata SYSTEM "gretldata.dtd">
+
+<gretldata version="1.4" name="P12-SalaryData" frequency="1" startobs="1" endobs="30" type="cross-section">
+<description>Data imported from CSV file 'P12-SalaryData.csv', 2020-04-24 14:09
+</description>
+<variables count="2">
+<variable name="YearsExperience"
+/>
+<variable name="Salary"
+/>
+</variables>
+<observations count="30" labels="false">
+<obs>1.1 39343 </obs>
+<obs>1.3 46205 </obs>
+<obs>1.5 37731 </obs>
+<obs>2 43525 </obs>
+<obs>2.2 39891 </obs>
+<obs>2.9 56642 </obs>
+<obs>3 60150 </obs>
+<obs>3.2 54445 </obs>
+<obs>3.2 64445 </obs>
+<obs>3.7 57189 </obs>
+<obs>3.9 63218 </obs>
+<obs>4 55794 </obs>
+<obs>4 56957 </obs>
+<obs>4.1 57081 </obs>
+<obs>4.5 61111 </obs>
+<obs>4.9 67938 </obs>
+<obs>5.1 66029 </obs>
+<obs>5.3 83088 </obs>
+<obs>5.9 81363 </obs>
+<obs>6 93940 </obs>
+<obs>6.8 91738 </obs>
+<obs>7.1 98273 </obs>
+<obs>7.9 101302 </obs>
+<obs>8.2 113812 </obs>
+<obs>8.7 109431 </obs>
+<obs>9 105582 </obs>
+<obs>9.5 116969 </obs>
+<obs>9.6 112635 </obs>
+<obs>10.3 122391 </obs>
+<obs>10.5 121872 </obs>
+</observations>
+</gretldata>
