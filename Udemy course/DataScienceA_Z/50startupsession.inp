@@ -1,0 +1,25 @@
+# Log started 2020-04-24 15:06
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\P12-50-Startups.csv"
+dummify State
+rename 6 NY
+rename 7 Cal
+# model 1
+ols Profit 0 RDSpend Administration MarketingSpend NY
+# model 2
+ols Profit 0 RDSpend MarketingSpend NY
+# model 3
+ols Profit 0 RDSpend MarketingSpend NY Administration
+# model 4
+ols Profit 0 RDSpend MarketingSpend Administration
+# model 5
+ols Profit 0 RDSpend MarketingSpend
+# model 6
+ols Profit 0 RDSpend
+# model 7
+ols Profit 0 RDSpend Administration MarketingSpend NY Cal
+# model 8
+ols Profit 0 RDSpend Administration MarketingSpend Cal NY
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\P12-50-Startups.gdt"
