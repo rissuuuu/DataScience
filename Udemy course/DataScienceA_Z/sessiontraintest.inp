@@ -1,0 +1,23 @@
+# Log started 2020-04-25 11:38
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Train_test.csv"
+dummify Gender
+dummify Geography
+rename 17 France
+rename 18 Spain
+rename 19 Germany
+rename 15 Female
+rename 16 Male
+# model 1
+logit Exited 0 CreditScore Age IsActiveMember Female --p-values
+LogBalance=log10(Balance+1)
+# model 2
+logit Exited 0 CreditScore Age IsActiveMember Female NumOfProducts \
+  Germany Tenure LogBalance --p-values
+fcast 10001 11000 --static
+# model 2
+fcast 10001 11000 P_Hat_TestData
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Forcasted_test.csv"  RowNumber P_Hat_TestData --csv
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Train_test.gdt" --gzipped=1
