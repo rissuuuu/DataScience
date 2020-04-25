@@ -1,0 +1,57 @@
+# Log started 2020-04-24 18:27
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open \
+  "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\P12-Churn-Modelling1.csv"
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Churn-Modelling1gdt.gdt" --gzipped=1
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Churn-Modelling1gdt.gdt" --gzipped=1
+dummify Geography
+dummify Gender
+rename 18 Female
+rename 19 Male
+rename 15 France
+rename 16 Spain
+rename 17 Germany
+# model 1
+logit Exited 0 CreditScore Age Tenure Balance NumOfProducts HasCrCard \
+  IsActiveMember EstimatedSalary Female Spain Germany --p-values
+# model 2
+logit Exited 0 CreditScore Age Tenure Balance NumOfProducts HasCrCard \
+  IsActiveMember EstimatedSalary Female Germany --p-values
+# model 3
+logit Exited 0 CreditScore Age Tenure Balance NumOfProducts \
+  IsActiveMember EstimatedSalary Female Germany --p-values
+# model 4
+logit Exited 0 CreditScore Age Tenure Balance NumOfProducts \
+  IsActiveMember EstimatedSalary Female Germany --p-values
+# model 5
+logit Exited 0 CreditScore Age Tenure Balance NumOfProducts \
+  IsActiveMember Female Germany --p-values
+# model 6
+logit Exited 0 CreditScore Age Tenure Balance NumOfProducts \
+  IsActiveMember Female Germany --p-values
+# model 7
+logit Exited 0 CreditScore Age Balance NumOfProducts IsActiveMember \
+  Female Germany --p-values
+Log_Balance=log10(Balance+1)
+# model 8
+logit Exited 0 CreditScore Age NumOfProducts IsActiveMember Female \
+  Germany --p-values
+# model 9
+logit Exited 0 CreditScore Age NumOfProducts IsActiveMember Female \
+  Germany Log_Balance --p-values
+vif
+bkw
+Wealth_Accum=Balance/Age
+# model 10
+logit Exited 0 CreditScore Age NumOfProducts IsActiveMember Female \
+  Germany Log_Balance Wealth_Accum --p-values
+vif
+bkw
+corr Wealth_Accum Log_Balance
+# model 11
+logit Exited 0 CreditScore Age NumOfProducts IsActiveMember Female \
+  Germany Log_Balance Tenure --p-values
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Churn-Modelling1gdt.gdt" --gzipped
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Churn-Modelling1gdt.gdt" --gzipped
+# store "C:\Users\rissu\A_DataScience\Udemy course\DataScienceA_Z\Churn-Modelling1gdt.gdt" --gzipped
