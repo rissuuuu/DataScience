@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{3D232BEA-07E1-4E41-B3C7-75FE4A933DA2}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{401696D9-42CC-4E24-AA4C-1EA1E8893EC6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -912,6 +912,892 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BE27ED58-757F-45DA-8D5A-F80A0A07225F}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\rissu\A_DataScience\Business Intelligence\20200425 Fake Names\4.Analysis\Error Data\20200425FakeName Insufficient Data.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{86CE87DC-396C-4BCA-B003-C423CF1CF41C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{61BA6EB5-A3E5-4695-ACBC-A3CCE303B423}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NameSet"
+              DTS:DTSID="{C2F9A5A4-A7EB-4B0C-81FB-EB71833C178B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{08B38CA8-E060-416A-8BF2-7C7AA491B14B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GivenName"
+              DTS:DTSID="{FE1255A7-452F-438D-9DDF-8EA515060A2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MiddleInitial"
+              DTS:DTSID="{7AD0B122-09BD-48B8-9DF9-7236ABADFD87}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{A5CD5EE1-C7E1-4EB4-A7E1-79CA6C36782B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AmountPaid"
+              DTS:DTSID="{443A605C-D062-4C3E-8649-16060D55E5A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StreetAddress"
+              DTS:DTSID="{7B8807D2-AC73-48C4-930B-2FEA8EB93016}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{70070CF5-827A-4A99-A3AC-BC874396E55E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{9A297E2C-D138-48C0-8278-D935109F66B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StateFull"
+              DTS:DTSID="{EEF33957-1491-40EB-98AE-CAA00A1AA258}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{58EBE0E0-83D9-4AF9-A552-8B35F0E9236A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{05A81198-A316-40D4-824C-EAEC526EC7F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryFull"
+              DTS:DTSID="{1E807E01-69AA-4157-8E82-52D13E727607}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Feedback"
+              DTS:DTSID="{6875D62A-5936-4A94-AF2B-84F5B0C47AF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{007A002C-3758-46FC-B4E7-8035E144768A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Username"
+              DTS:DTSID="{E94A4E13-5CD3-4C70-9794-5FAEBF4A9553}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Password"
+              DTS:DTSID="{B2C462D8-8AC1-4FE9-B6AD-886EEF278ACC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BrowserUserAgent"
+              DTS:DTSID="{02D1A332-05C4-496D-B560-643FB76C4F26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TelephoneNumber"
+              DTS:DTSID="{C101FD0E-188F-4207-AC01-F38CD704B44E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TelephoneCountryCode"
+              DTS:DTSID="{8A65F870-2867-4FCE-B888-C63A5C03DAC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MothersMaiden"
+              DTS:DTSID="{37FB8B58-86C2-4382-B1BC-84922ACD4E7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{A40C3F88-33FC-4089-B1DA-5F7D2DA83BC4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TropicalZodiac"
+              DTS:DTSID="{72338625-D1B3-42E7-943E-21E547F4BD98}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCType"
+              DTS:DTSID="{C7AB77E6-F58E-408B-AACD-2CB3699A6590}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNumber"
+              DTS:DTSID="{54DCDEFB-92A0-4C62-B478-82A1B88C603F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CVV2"
+              DTS:DTSID="{46456FC8-A6D2-43D8-A461-F0511161238A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCExpires"
+              DTS:DTSID="{DEFC98CC-A42F-41E2-A8DB-F6BA3EC90042}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NationalID"
+              DTS:DTSID="{814309E2-A992-446E-9741-1E523A115DF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UPS"
+              DTS:DTSID="{C638A54E-DDC7-47D5-ADA2-B6906A471873}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WesternUnionMTCN"
+              DTS:DTSID="{1F5E4D7A-78CD-4B42-B048-03CB3AC6EB2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MoneyGramMTCN"
+              DTS:DTSID="{51238CE7-55AE-44B2-9CBF-6B4A0B27E0B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Color"
+              DTS:DTSID="{0E7E3608-F0D9-4C22-B919-CC258DA20E86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Occupation"
+              DTS:DTSID="{B01BEF3A-89BE-4F1F-8D83-0CA648E1D27C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{B25B1E12-D132-4D30-AA9A-E87F78BF895F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle"
+              DTS:DTSID="{28C72CA3-C2D6-47A1-9A04-B4A9164E0F58}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Domain"
+              DTS:DTSID="{F1C367DA-A197-42A1-829E-69FC0B70E1F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BloodType"
+              DTS:DTSID="{D986FAD0-03CE-451D-9D3A-E863B7004470}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pounds"
+              DTS:DTSID="{03AD12D4-6F24-4C32-8C3B-B691E66649E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kilograms"
+              DTS:DTSID="{C7B84B11-43BA-40D6-BCEA-EB726995E1D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FeetInches"
+              DTS:DTSID="{544D1B05-071C-4A9E-BB71-D90C5D739770}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Centimeters"
+              DTS:DTSID="{D1D52707-6AE7-4585-8033-924EB0DA576C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GUID"
+              DTS:DTSID="{33413D56-5B56-4E2B-B9E4-CA8E1688D614}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{D0EEA413-32F7-4BEF-B0A6-874D3917F4B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{48F47251-42F5-4FD4-A221-60B08ABBFED4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 46"
+              DTS:DTSID="{7820F5B3-B584-4C81-8DD7-B515CAC59B12}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[InsufficientData]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C39DC4C6-5AA0-4011-9131-583CD7FCEB9F}"
+      DTS:ObjectName="InsufficientData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\rissu\A_DataScience\Business Intelligence\20200425 Fake Names\4.Analysis\Error Data\20200425FakeName Insufficient Data.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number"
+              DTS:DTSID="{4B2F332E-C3C0-46D4-96BD-88EFDB754478}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{FD2A8A5F-9030-48FA-8E6F-12BD62A08A3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NameSet"
+              DTS:DTSID="{21B4A0B4-E21C-4474-817C-27D8DD83F521}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{D956522F-2A7F-4535-B44C-D77C2AA18B5F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GivenName"
+              DTS:DTSID="{6FEA3F82-6290-4107-94FE-12E43F7EFF01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MiddleInitial"
+              DTS:DTSID="{E2E0FE66-8602-42FD-A90D-6249584059EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{4E8FF78B-A046-499A-AFB5-8D2E37D54456}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AmountPaid"
+              DTS:DTSID="{A252B204-FC91-4DEA-B94B-8CF67D60F677}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StreetAddress"
+              DTS:DTSID="{72A18BAF-4838-4B71-9820-978D1F22D7AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{8BAAE7AD-3141-444F-BFFF-02A4ADCF2FA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{17CD746B-9A0E-4012-AE38-8BC6096BD5C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StateFull"
+              DTS:DTSID="{7DA3A3CF-5363-4412-98E9-7AC7EEFC91EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZipCode"
+              DTS:DTSID="{260E2FE2-34D9-44E6-93FF-E0D102734B7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{0C73AD6C-DB40-487F-8EB1-7FFF4199B0D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryFull"
+              DTS:DTSID="{9E685AC8-0190-41E9-9EA3-354E89084917}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Feedback"
+              DTS:DTSID="{41CCC3B4-920E-4DE6-ABE4-6C6EFD6B24C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{DCA80767-62B8-4A26-8F25-4F1C02DF9182}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Username"
+              DTS:DTSID="{8F37333A-5582-41DD-8246-F31DC0A32005}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Password"
+              DTS:DTSID="{0BCB0701-DA19-455A-92A2-4C47CA04DD99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BrowserUserAgent"
+              DTS:DTSID="{4620503A-A130-4F32-8157-042453478293}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TelephoneNumber"
+              DTS:DTSID="{B9BF5EC9-CA17-4835-BFA8-A8979068F01C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TelephoneCountryCode"
+              DTS:DTSID="{5C139A8B-359F-4500-840B-910AFC995606}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MothersMaiden"
+              DTS:DTSID="{0F688BD7-9907-492D-A1DD-CD6FC5C49832}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{F6597D47-D34D-4682-8C2F-46B314952FE3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TropicalZodiac"
+              DTS:DTSID="{F1310196-9371-40DC-83C0-7D43E9A6CF90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCType"
+              DTS:DTSID="{7C0549FF-9408-4208-8EBA-8D59815C6E80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNumber"
+              DTS:DTSID="{5E87418F-5B15-4E6D-BEDB-44041D409540}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CVV2"
+              DTS:DTSID="{3F6C4239-B81F-48E2-8627-601089024BFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCExpires"
+              DTS:DTSID="{1CC0CD86-B9DD-4B67-AEBB-1653322F2378}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NationalID"
+              DTS:DTSID="{F23A164C-5DF8-463C-AEAF-4CB748B786CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UPS"
+              DTS:DTSID="{F5B81431-6369-4B81-96A7-2587D68D95C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WesternUnionMTCN"
+              DTS:DTSID="{8DA8F338-E586-479A-AA7A-CA50F31B0E9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MoneyGramMTCN"
+              DTS:DTSID="{BED052C0-BF1A-49FD-82CA-6EDBA962FD63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Color"
+              DTS:DTSID="{4FA9816A-C967-4694-8394-3E617E4456E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Occupation"
+              DTS:DTSID="{B20BC6F8-C172-42F9-BE97-B35F89636B5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{82296C1D-C380-42EC-8F2F-763C1D202DA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vehicle"
+              DTS:DTSID="{0506CB59-B79D-4206-B8B8-D9FB05CA9072}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Domain"
+              DTS:DTSID="{0505AAA8-63FA-4D75-8144-C56633EA700B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BloodType"
+              DTS:DTSID="{EAE1197E-98E3-43F5-8D88-478823668A60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pounds"
+              DTS:DTSID="{AFFD3C5A-E85E-47F8-A6A9-6370D5009A1E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kilograms"
+              DTS:DTSID="{C635DF32-BAF6-464A-BF09-C6799007467A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FeetInches"
+              DTS:DTSID="{14CB4F93-3B0A-4052-BCBA-7ECE66E85F38}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Centimeters"
+              DTS:DTSID="{4FEA7BE6-760B-4CCC-9EA8-98E8DF58D70D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GUID"
+              DTS:DTSID="{AE717518-975F-4ACC-BF01-5291323E9F7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{81C6BE29-EA0F-41B1-87DD-A489406A3E03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{03FCA91B-DC68-4334-934E-9A4A04E1253B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 46"
+              DTS:DTSID="{ED7AD02C-2C07-4BD7-9CEC-E93E0ECEC3C6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -1020,6 +1906,104 @@
                       refId="Package\20200425FakeData\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\20200425FakeData\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20200425FakeData\Conditional Split 1"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input].Columns[AmountPaid]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="AmountPaid"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[AmountPaid]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="ZipCode"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[ZipCode]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20200425FakeData\Conditional Split 1.Outputs[Insufficient Data]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Insufficient Data"
+                  synchronousInputId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[LEN](#{Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[AmountPaid]}) == 0 || [LEN](#{Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[ZipCode]}) == 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN(AmountPaid) == 0 || LEN(ZipCode) == 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20200425FakeData\Conditional Split 1.Outputs[Pass Data]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Pass Data"
+                  synchronousInputId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\20200425FakeData\Conditional Split 1.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20200425FakeData\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20200425FakeData\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20200425FakeData\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20200425FakeData\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1720,6 +2704,707 @@
                       name="Longitude" />
                     <externalMetadataColumn
                       refId="Package\20200425FakeData\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 46]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Column 46" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\20200425FakeData\Flat File Destination 1"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20200425FakeData\Flat File Destination 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[InsufficientData]"
+                  connectionManagerRefId="Package.ConnectionManagers[InsufficientData]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Number]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Number"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Number]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Number]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[NameSet]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="NameSet"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[NameSet]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[NameSet]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Title"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Title]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Title]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[GivenName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="GivenName"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[GivenName]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[GivenName]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[MiddleInitial]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="MiddleInitial"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[MiddleInitial]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[MiddleInitial]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Surname]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[AmountPaid]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="AmountPaid"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[AmountPaid]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[AmountPaid]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[StreetAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="StreetAddress"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[StreetAddress]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[StreetAddress]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[City]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[State]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="State"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[State]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[StateFull]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="StateFull"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[StateFull]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[StateFull]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ZipCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="ZipCode"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ZipCode]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[ZipCode]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[CountryFull]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="CountryFull"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CountryFull]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[CountryFull]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Feedback]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="Feedback"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Feedback]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Feedback]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[EmailAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Username]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Username"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Username]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Username]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Password]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Password"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Password]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Password]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[BrowserUserAgent]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="BrowserUserAgent"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[BrowserUserAgent]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[BrowserUserAgent]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[TelephoneNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="TelephoneNumber"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TelephoneNumber]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[TelephoneNumber]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[TelephoneCountryCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="TelephoneCountryCode"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TelephoneCountryCode]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[TelephoneCountryCode]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[MothersMaiden]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="MothersMaiden"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[MothersMaiden]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[MothersMaiden]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Birthday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Birthday"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Birthday]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Birthday]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[TropicalZodiac]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="TropicalZodiac"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TropicalZodiac]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[TropicalZodiac]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[CCType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="CCType"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CCType]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[CCType]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[CCNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="CCNumber"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CCNumber]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[CCNumber]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[CVV2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="CVV2"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CVV2]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[CVV2]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[CCExpires]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="CCExpires"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CCExpires]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[CCExpires]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[NationalID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="NationalID"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[NationalID]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[NationalID]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[UPS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="UPS"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[UPS]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[UPS]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[WesternUnionMTCN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="WesternUnionMTCN"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[WesternUnionMTCN]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[WesternUnionMTCN]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[MoneyGramMTCN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="MoneyGramMTCN"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[MoneyGramMTCN]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[MoneyGramMTCN]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Color]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Color"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Color]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Color]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Occupation]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Occupation"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Occupation]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Occupation]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Company]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Company"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Company]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Company]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Vehicle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Vehicle"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Vehicle]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Vehicle]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Domain]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Domain"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Domain]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Domain]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[BloodType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="BloodType"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[BloodType]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[BloodType]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Pounds]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Pounds"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pounds]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Pounds]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Kilograms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Kilograms"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Kilograms]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Kilograms]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[FeetInches]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="FeetInches"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[FeetInches]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[FeetInches]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Centimeters]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Centimeters"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Centimeters]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Centimeters]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[GUID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="GUID"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[GUID]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[GUID]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Latitude]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Latitude"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Latitude]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Longitude]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Longitude"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Longitude]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]" />
+                    <inputColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Column 46]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Column 46"
+                      externalMetadataColumnId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Column 46]"
+                      lineageId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output].Columns[Column 46]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Number]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[NameSet]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="NameSet" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[GivenName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="GivenName" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[MiddleInitial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="MiddleInitial" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[AmountPaid]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="AmountPaid" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[StreetAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="StreetAddress" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[StateFull]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="StateFull" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ZipCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CountryFull]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CountryFull" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Feedback]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5000"
+                      name="Feedback" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Username]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Username" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Password]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[BrowserUserAgent]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="BrowserUserAgent" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TelephoneNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="TelephoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TelephoneCountryCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="TelephoneCountryCode" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[MothersMaiden]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="MothersMaiden" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Birthday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TropicalZodiac]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="TropicalZodiac" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CCType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CCType" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CCNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CCNumber" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CVV2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CVV2" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[CCExpires]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="CCExpires" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[NationalID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="NationalID" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[UPS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="UPS" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[WesternUnionMTCN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="WesternUnionMTCN" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[MoneyGramMTCN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="MoneyGramMTCN" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Color]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Color" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Occupation]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Occupation" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Vehicle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Vehicle" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Domain]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Domain" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[BloodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="BloodType" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Pounds]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Pounds" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Kilograms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Kilograms" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[FeetInches]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="FeetInches" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Centimeters]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Centimeters" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[GUID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="GUID" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Column 46]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
@@ -3883,7 +5568,7 @@
               startId="Package\20200425FakeData\Conditional Split.Outputs[Bad Record]" />
             <path
               refId="Package\20200425FakeData.Paths[Flat File Source Output]"
-              endId="Package\20200425FakeData\Conditional Split.Inputs[Conditional Split Input]"
+              endId="Package\20200425FakeData\Conditional Split 1.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\20200425FakeData\Flat File Source.Outputs[Flat File Source Output]" />
             <path
@@ -3891,6 +5576,16 @@
               endId="Package\20200425FakeData\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Good Record"
               startId="Package\20200425FakeData\Conditional Split.Outputs[Good Record]" />
+            <path
+              refId="Package\20200425FakeData.Paths[Insufficient Data]"
+              endId="Package\20200425FakeData\Flat File Destination 1.Inputs[Flat File Destination Input]"
+              name="Insufficient Data"
+              startId="Package\20200425FakeData\Conditional Split 1.Outputs[Insufficient Data]" />
+            <path
+              refId="Package\20200425FakeData.Paths[Pass Data]"
+              endId="Package\20200425FakeData\Conditional Split.Inputs[Conditional Split Input]"
+              name="Pass Data"
+              startId="Package\20200425FakeData\Conditional Split 1.Outputs[Pass Data]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3919,45 +5614,129 @@
     design-time-name="Package\20200425FakeData">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\20200425FakeData\Flat File Source"
-          TopLeft="308.666654401356,45.0666670248244" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\20200425FakeData\OLE DB Destination"
-          TopLeft="385.999984661738,260.000002066294" />
+          TopLeft="387.333317942089,356.373336165534" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\20200425FakeData\Flat File Source"
+          TopLeft="259.333323028353,45.0666670248244" />
         <NodeLayout
           Size="153.6,41.6"
           Id="Package\20200425FakeData\Conditional Split"
-          TopLeft="169.999993244807,160.853334611681" />
+          TopLeft="258.666656388177,248.213335305956" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\20200425FakeData\Flat File Destination"
+          TopLeft="109.999995628993,357.173336082883" />
         <EdgeLayout
-          Id="Package\20200425FakeData.Paths[Flat File Source Output]"
-          TopLeft="384.266654401356,86.6666670248244">
+          Id="Package\20200425FakeData.Paths[Good Record]"
+          TopLeft="359.733323054844,289.813335305956">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-137.466661156549,74.1866675868564"
+              EndConnector="113.199994887246,66.5600008595779"
               Start="0,0"
-              End="-137.466661156549,66.6866675868564">
+              End="113.199994887246,59.0600008595779">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.0933337934282" />
+                    End="0,23.0357116893543" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.0933337934282"
-                    Point2="0,37.0933337934282"
-                    Point3="-4,37.0933337934282" />
+                    Point1="0,23.0357116893543"
+                    Point2="0,27.0357116893543"
+                    Point3="4,27.0357116893543" />
                   <mssgle:LineSegment
-                    End="-133.466661156549,37.0933337934282" />
+                    End="109.199994887246,27.0357116893543" />
                   <mssgle:CubicBezierSegment
-                    Point1="-133.466661156549,37.0933337934282"
-                    Point2="-137.466661156549,37.0933337934282"
-                    Point3="-137.466661156549,41.0933337934282" />
+                    Point1="109.199994887246,27.0357116893543"
+                    Point2="113.199994887246,27.0357116893543"
+                    Point3="113.199994887246,31.0357116893543" />
                   <mssgle:LineSegment
-                    End="-137.466661156549,66.6866675868564" />
+                    End="113.199994887246,59.0600008595779" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="27.6794896311228,32.0357116893543,57.841015625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\20200425FakeData.Paths[Bad Record]"
+          TopLeft="311.19998972151,289.813335305956">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-115.999994092518,67.3600007769269"
+              Start="0,0"
+              End="-115.999994092518,59.8600007769269">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.3606601093909" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.3606601093909"
+                    Point2="0,27.3606601093909"
+                    Point3="-4,27.3606601093909" />
+                  <mssgle:LineSegment
+                    End="-111.999994092518,27.3606601093909" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-111.999994092518,27.3606601093909"
+                    Point2="-115.999994092518,27.3606601093909"
+                    Point3="-115.999994092518,31.3606601093909" />
+                  <mssgle:LineSegment
+                    End="-115.999994092518,59.8600007769269" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-83.5179853275089,32.3606601093909,51.0359765625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\20200425FakeData\Conditional Split 1"
+          TopLeft="483.999980767569,144.213334479438" />
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\20200425FakeData\Flat File Destination 1"
+          TopLeft="659.999973773957,252.160001768748" />
+        <EdgeLayout
+          Id="Package\20200425FakeData.Paths[Flat File Source Output]"
+          TopLeft="334.933323028353,86.6666670248244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="230.266657739216,57.5466674546137"
+              Start="0,0"
+              End="230.266657739216,50.0466674546137">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7733337273068" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7733337273068"
+                    Point2="0,28.7733337273068"
+                    Point3="4,28.7733337273068" />
+                  <mssgle:LineSegment
+                    End="226.266657739216,28.7733337273068" />
+                  <mssgle:CubicBezierSegment
+                    Point1="226.266657739216,28.7733337273068"
+                    Point2="230.266657739216,28.7733337273068"
+                    Point3="230.266657739216,32.7733337273068" />
+                  <mssgle:LineSegment
+                    End="230.266657739216,50.0466674546137" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3966,79 +5745,75 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\20200425FakeData\Flat File Destination"
-          TopLeft="111.333328909344,260.800001983643" />
         <EdgeLayout
-          Id="Package\20200425FakeData.Paths[Bad Record]"
-          TopLeft="246.799993244807,202.453334611681">
+          Id="Package\20200425FakeData.Paths[Pass Data]"
+          TopLeft="565.199980767569,185.813334479438">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-50.266664335463,58.3466673719618"
+              EndConnector="-229.733324379392,62.4000008265178"
               Start="0,0"
-              End="-50.266664335463,50.8466673719618">
+              End="-229.733324379392,54.9000008265178">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.1733336859809" />
+                    End="0,27.2000004132589" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.1733336859809"
-                    Point2="0,29.1733336859809"
-                    Point3="-4,29.1733336859809" />
+                    Point1="0,27.2000004132589"
+                    Point2="0,31.2000004132589"
+                    Point3="-4,31.2000004132589" />
                   <mssgle:LineSegment
-                    End="-46.266664335463,29.1733336859809" />
+                    End="-225.733324379392,31.2000004132589" />
                   <mssgle:CubicBezierSegment
-                    Point1="-46.266664335463,29.1733336859809"
-                    Point2="-50.266664335463,29.1733336859809"
-                    Point3="-50.266664335463,33.1733336859809" />
+                    Point1="-225.733324379392,31.2000004132589"
+                    Point2="-229.733324379392,31.2000004132589"
+                    Point3="-229.733324379392,35.2000004132589" />
                   <mssgle:LineSegment
-                    End="-50.266664335463,50.8466673719618" />
+                    End="-229.733324379392,54.9000008265178" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-50.6513204489815,34.1733336859809,51.0359765625,9.7490234375"
+              BoundingBox="-136.900021564696,36.2000004132589,44.06671875,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\20200425FakeData.Paths[Good Record]"
-          TopLeft="271.066659911474,202.453334611681">
+          Id="Package\20200425FakeData.Paths[Insufficient Data]"
+          TopLeft="590.933314100902,185.813334479438">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="200.533324750265,57.5466674546136"
+              EndConnector="158.666659673055,66.34666728931"
               Start="0,0"
-              End="200.533324750265,50.0466674546136">
+              End="158.666659673055,58.84666728931">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.3746257496059" />
+                    End="0,22.9270376510761" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.3746257496059"
-                    Point2="0,23.3746257496059"
-                    Point3="4,23.3746257496059" />
+                    Point1="0,22.9270376510761"
+                    Point2="0,26.9270376510761"
+                    Point3="4,26.9270376510761" />
                   <mssgle:LineSegment
-                    End="196.533324750265,23.3746257496059" />
+                    End="154.666659673055,26.9270376510761" />
                   <mssgle:CubicBezierSegment
-                    Point1="196.533324750265,23.3746257496059"
-                    Point2="200.533324750265,23.3746257496059"
-                    Point3="200.533324750265,27.3746257496059" />
+                    Point1="154.666659673055,26.9270376510761"
+                    Point2="158.666659673055,26.9270376510761"
+                    Point3="158.666659673055,30.9270376510761" />
                   <mssgle:LineSegment
-                    End="200.533324750265,50.0466674546136" />
+                    End="158.666659673055,58.84666728931" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="71.3461545626323,28.3746257496059,57.841015625,9.7490234375"
+              BoundingBox="42.4583688990275,31.9270376510761,73.749921875,9.7978515625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
