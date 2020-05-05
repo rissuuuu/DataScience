@@ -34,4 +34,4 @@ def predict():
     return render_template('predict.html',prediction=model_predict)
 
 if __name__ =="__main__":
-    app.run()
+    app.run(host='0.0.0.0')
