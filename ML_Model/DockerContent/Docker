@@ -1,0 +1,9 @@
+docker run docker id
+docker stop containerid
+docker images 
+docker ps
+docker build -t dockerimg:1.0.0 .
+docker rm containerid
+docker exec -it
+docker exec -it container /bin/bash
+
