@@ -28,8 +28,9 @@ def predict():
             model_predict=ml_model.predict(pred_args_arr)
             model_predict=round(float(model_predict),2)
         except valueError:
+            return "Check the values again"
 
-    return render_template('predict.html')
+    return render_template('predict.html',prediction=model_predict)
 
 if __name__ =="__main__":
     app.run()
