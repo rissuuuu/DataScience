@@ -1,10 +1,10 @@
 from flask import Flask,render_template,request
 import numpy as np
 import pandas as pd
-from sklearn.externals import joblib
+import joblib
 app=Flask(__name__)
 
-ml_f=open('linear_reg.pkl','rb')
+ml_f=open("linear_reg.pkl","rb")
 ml_model=joblib.load(ml_f)
 
 @app.route("/")
