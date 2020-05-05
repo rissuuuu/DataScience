@@ -1,16 +1,19 @@
-from flask import Flask,render_template,requests
+from flask import Flask,render_template,request
 import numpy as np
 import pandas as pd
 from sklearn.externals import joblib
 app=Flask(__name__)
 
-@app.route('/')
+ml_f=open('linear_reg.pkl','rb')
+ml_model=joblib.load(ml_f)
+
+@app.route("/")
 def home():
     return render_template('home.html')
 
-@app.route('/predict',method=['GET','POST'])
+@app.route("/predict", methods=['GET', 'POST'])
 def predict():
-    if requet.method=='POST':
+    if request.method=='POST':
         try:
             NewYork=float(request.form['NewYork'])
             Florida=float(request.form['Florida'])
@@ -23,8 +26,6 @@ def predict():
             pred_args_arr=np.array(pred_args)
             pred_args_arr=pred_args_arr.reshape(1,-1)
 
-            ml_f=open('linear_reg.pkl','rb')
-            ml_model=joblib.load(ml_f)
             model_predict=ml_model.predict(pred_args_arr)
             model_predict=round(float(model_predict),2)
         except valueError:
