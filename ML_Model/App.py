@@ -21,6 +21,12 @@ def predict():
             pred_args=[RnDSpend,AdminSpend,MrktngSpend,California,Florida,NewYork]
 
             pred_args_arr=np.array(pred_args)
+            pred_args_arr=pred_args_arr.reshape(1,-1)
+
+            ml_f=open('linear_reg.pkl','rb')
+            ml_model=joblib.load(ml_f)
+            model_predict=ml_model.predict(pred_args_arr)
+            model_predict=round(float(model_predict),2)
         except valueError:
 
     return render_template('predict.html')
