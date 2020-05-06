@@ -33,6 +33,55 @@
 
 4. Now run your application 
 	docker run -p 5000:5000 dockerimage_name:latest
+	this will run the application in docker background . you can access website with 192.168.99.100
 
-5. Create docker repository into docker website
+5. Create docker repository from docker website
+
+6. open docker terminal and type:
+	command:docker login
+	enter your username password
+	
+	
+	
+7.	Now type your docker tag from your created repository and mention the tag 
+	Command: docker tag realestate rissuuuu/realestate:1.0
+	<Note: here realestate is your local docker image name and rissuuuu/realestate is docker hub repository and 1.0 is tag number
+	
+8. Push the docker image to docker repository
+	Command: docker push rissuuuu/realestate:1.0
+	Push the docker image to your repository rissuuuu/realestate:1.0 created previously
+	
+9. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
