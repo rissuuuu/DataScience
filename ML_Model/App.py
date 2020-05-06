@@ -31,7 +31,7 @@ def predict():
         except valueError:
             return "Check the values again"
 
-    return render_template('predict.html',prediction=model_predict)
+    return render_template('home.html',prediction=model_predict)
 
 if __name__ =="__main__":
-    app.run(host='0.0.0.0')
+    app.run()

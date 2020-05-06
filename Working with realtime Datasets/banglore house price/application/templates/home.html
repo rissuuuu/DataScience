@@ -8,7 +8,7 @@
     <h1>
     <div style='text-align:center'>
       <font color='blue'>
-        Profit Prediction
+        Real State Price Prediction
       </font>
     </div>
   </h1>
@@ -39,7 +39,7 @@
             <label for='RnDSpend'><p class ="font-weight-bold">Bhk</p></label>
             <input type="text" name="Bhk" value="">
             </br>
-            <small id='BhkHelp' class=form_text text-muted>Enter number of BHK's</small>
+            <small id='BhkHelp' class=form_text text-muted>Enter number of BHK's (1 to 5)</small>
           </div>
 
           <div class='form-group'>
@@ -47,7 +47,7 @@
             <input type="text" name="Bathroom" value="">
             </br>
 
-            <small id='BathroomHelp' class=form_text text-muted>Enter number of Bathrooms</small>
+            <small id='BathroomHelp' class=form_text text-muted>Enter number of Bathrooms (1 to 5)</small>
           </div>
           <h2>Location</h2>
       	<div>
@@ -298,7 +298,11 @@
       </div>
       	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
       	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
-
+        <div class="card text-center" style="width:21.5em;margin:0 auto;"">
+      <div class='card-body'>
+        <p class='card text'><h1><font color='blue'>{{prediction}}</font></h1></p>
+      </div>
+    </div>
         </form>
       </div>
     </div>
