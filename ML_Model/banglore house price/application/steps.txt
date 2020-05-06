@@ -51,7 +51,8 @@
 	Command: docker push rissuuuu/realestate:1.0
 	Push the docker image to your repository rissuuuu/realestate:1.0 created previously
 	
-9. 
+9. Finally open portal.azure.com to publish your docker repository
+	Open azure application settings and add PORT 500
 
 
 
