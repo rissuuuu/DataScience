@@ -24,10 +24,15 @@
 	Go inside your working directory and type
 	Command: pip freeze 
 	It gives list of all pip commands that is to be installed for particular image
+	
+	<Note: In order to make your file into docker specify app.run(host='0.0.0.0') in your .py file >
+
 
 3. Build the docker file and Run the docker file with command:
-	docker build -t any_name:latest .
+	docker build -t dockerimage_name:latest .
 
-4. 
+4. Now run your application 
+	docker run -p 5000:5000 dockerimage_name:latest
 
+5. Create docker repository into docker website
 
