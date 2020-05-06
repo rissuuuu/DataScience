@@ -1,0 +1,33 @@
+1. Create a docker file inside your main files directory
+	Always save file name as "Dockerfile"
+				#Use python as base image
+				FROM python:3.7-slim
+
+				#Use working directory /app
+				WORKDIR /app
+
+				#Copy all the contents of current directory to /app
+				ADD . /app
+
+				#Installing required packages
+				RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+				#Opening the port for app
+				EXPOSE 5000
+
+				#Set environment variable
+				ENV NAME OpentoAll
+
+				#run python program
+				CMD ["python3","server.py"]
+2. create requirements.txt file where you must include all your pip install commands
+	Go inside your working directory and type
+	Command: pip freeze 
+	It gives list of all pip commands that is to be installed for particular image
+
+3. Build the docker file and Run the docker file with command:
+	docker build -t any_name:latest .
+
+4. 
+
+
