@@ -65,15 +65,17 @@
       <div class="container">
         <!-- <label for="uname"><strong>Ask me:</strong></label> -->
         <!-- <input rows='4' type="text" placeholder="Type a message to me" name="uname" required style="height:200px;font-size:14pt;"> -->
-        <textarea name="uname" cols="40" rows="5"  placeholder="Type a message to me" name="uname" required style="height:200px;font-size:14pt;"></textarea>
+        <textarea name="uname" cols="40" rows="5"  placeholder="Type message here" name="uname" required style="height:200px;font-size:14pt;"></textarea>
       </div>
       <button type="submit">Submit</button>
-      <div class="container" style="background-color: #eee">
-        <label style="padding-left: 15px">
-        <input  type="checkbox"  checked="checked" name="remember"> Remember me
-        </label>
-
-      </div>
+      <hr/>
+      <h2>Response:</h2>
+      <div class="container">
+      <hr/>
+      	{{prediction}}
+      <hr/>
+      <br/><br/><br/>
+      <h2><center>Develped by Rishav Paudel</center></h2>
     </form>
   </body>
 </html>
