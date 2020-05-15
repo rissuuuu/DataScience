@@ -1,0 +1,50 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [ "Hi", "How are you", "Is anyone there?", "Hello", "Good day" ],
+      "responses": [ "Hello, thanks for contacting me", "Good to see you again", "Hi there, how can I help?" ]
+    },
+    {
+      "tag": "sleep",
+      "patterns": [ "What time do u sleep", "When do u sleep", "how do you sleep","What time do u go to bed?"],
+      "responses": [ "I uslally sleep at 11 or 12","I love to sleep before 12","I do sleep at time and wake up early" ]
+    },
+    {
+      "tag": "wake",
+      "patterns": [ "When do u get up?","What time u wake up in the morning","Whats your morning wakeup routine" ],
+      "responses": [ "I wake up early in the morning","I wake up around 8","It feels to wake up before 7" ]
+    },
+    {
+      "tag": "eat",
+      "patterns": [ "Whats your meal plan?","What do u eat","Whats your favourite dish","Which dish you love?" ],
+      "responses": [ "My fav food is Oats","I love chicken a lot","I want to eat some fruits","My day passes with healthy foods only" ]
+    },
+    {
+      "tag": "work",
+      "patterns": [ "What do you do in afternoon?","What do u do in your room?","do u work anything?","Have u any work????" ],
+      "responses": [ "I will be busy with my laptop","I only do good reading stuffs","After I wake up i open my laptop and start working" ]
+    },
+    {
+      "tag": "play",
+      "patterns": [ "What games do you love?","What do u do in laptop?","Which games do you love??","Do u play anything?"],
+      "responses": [ "My fab game is pubg","I love playing call of duty's","My fab racing game is NFS MOST WANTED" ]
+    },
+    {
+      "tag": "chat",
+      "patterns": [ "Do you talk to anyone?","Do you talk with your girlfriend?","With whom you enjoy your time?","With whom do u chat??" ],
+      "responses": ["Most of the time i talk with my girlfriend","I do videocall to my girlfriend","Rishav control your emotions with your girlfriend"]
+    },
+    {
+      "tag": "book",
+      "patterns": [ "Which books u have?","Have you any books?","Do u read anything? " ],
+      "responses": [ "You have many books","Yes you read AI stuffs" ]
+    },
+    {
+      "tag": "workout",
+      "patterns": ["Are you doing gym?","Do u have dumbells","Are you fit" ],
+      "responses": [ "Rishav you have dumbells in your room","Rishav mostly you are doing chest and biceps only","rishav you  do gym so you are fit" ]
+    }
+
+  ]
+}

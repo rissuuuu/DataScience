@@ -14,7 +14,7 @@ def predict_text():
     if request.method=='POST':
         try:
             text=str(request.form.get('uname'))
-            predicted=util.classify(text)
+            predicted=util.response(text)
             return render_template('home.html',prediction=predicted)
         except valueError:
             return "Invalid Values"

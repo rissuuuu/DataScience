@@ -1,21 +1,35 @@
-# import tensorflow as tf
-# import tflearn
-# import joblib
+
+import tflearn
+import tensorflow as tf
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer=LancasterStemmer()
 import json
 # import tflearn
-
+import random
 import pickle
 
 intents=json.load(open('intents.json'))
 data=pickle.load(open('training_data','rb'))
 words=data['words']
-model=load('./model.tflearn')
+
+tf.reset_default_graph()
+
+net=tflearn.input_data(shape=[None,len(data['train_x'][0])])
+net=tflearn.fully_connected(net,10)
+net=tflearn.fully_connected(net,10)
+net=tflearn.fully_connected(net,len(data['train_y'][0]),activation='softmax')
+net=tflearn.regression(net)
+# defining model and setting up tensorboard
+model=tflearn.DNN(net,tensorboard_dir='tflearn_logs')
+# load our saved model
+model.load('./model.tflearn')
+
+print(model)
 def clean_sentence(sentence):
     sentence=nltk.word_tokenize(sentence)
     sentence_words=[stemmer.stem(w.lower()) for w in sentence]
+    print(sentence_words)
     return sentence_words
 
 def bag_of_words(sentences):
@@ -36,8 +50,23 @@ def classify(sentence):
     result=model.predict([bag_of_words(sentence)])[0]
     result=[[i,r] for i,r in enumerate(result) if r>THRESOLD]
     result.sort(key=lambda x: x[1], reverse=True)
-    return result
+    return result[0]
 
 def response(sentence):
+    matched=" "
     result=classify(sentence)
-    return result
+    for i,j in enumerate(data['classes']):
+        if i==result[0]:
+            matched=j
+    if result:
+        while(result):
+            for i in intents['intents']:
+                    if i['tag']==matched:
+                        return(random.choice(i['responses']))
+            result.pop(0)
+
+
+
+# print(intents['intents'])
+
+print(response('How can I help you?'))
