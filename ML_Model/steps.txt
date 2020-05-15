@@ -1,0 +1,88 @@
+1. Create a docker file inside your main files directory
+	Always save file name as "Dockerfile"
+				#Use python as base image
+				FROM python:3.7-slim
+
+				#Use working directory /app
+				WORKDIR /app
+
+				#Copy all the contents of current directory to /app
+				ADD . /app
+
+				#Installing required packages
+				RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+				#Opening the port for app
+				EXPOSE 5000
+
+				#Set environment variable
+				ENV NAME OpentoAll
+
+				#run python program
+				CMD ["python3","server.py"]
+2. create requirements.txt file where you must include all your pip install commands
+	Go inside your working directory and type
+	Command: pip freeze 
+	It gives list of all pip commands that is to be installed for particular image
+	
+	<Note: In order to make your file into docker specify app.run(host='0.0.0.0') in your .py file >
+
+
+3. Build the docker file and Run the docker file with command:
+	docker build -t dockerimage_name:latest .
+
+4. Now run your application 
+	docker run -p 5000:5000 dockerimage_name:latest
+	this will run the application in docker background . you can access website with 192.168.99.100
+
+5. Create docker repository from docker website
+
+6. open docker terminal and type:
+	command:docker login
+	enter your username password
+	
+	
+	
+7.	Now type your docker tag from your created repository and mention the tag 
+	Command: docker tag realestate rissuuuu/realestate:1.0
+	<Note: here realestate is your local docker image name and rissuuuu/realestate is docker hub repository and 1.0 is tag number
+	
+8. Push the docker image to docker repository
+	Command: docker push rissuuuu/realestate:1.0
+	Push the docker image to your repository rissuuuu/realestate:1.0 created previously
+	
+9. Finally open portal.azure.com to publish your docker repository
+	Open azure application settings and add PORT 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
