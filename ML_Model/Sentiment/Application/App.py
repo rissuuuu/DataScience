@@ -8,6 +8,7 @@ from numpy import array
 from keras.datasets import imdb
 from keras.preprocessing import sequence
 from keras.models import load_model
+import keras
 
 IMAGE_FOLDER=os.path.join('static','img_pool')
 app=Flask(__name__)
@@ -19,9 +20,9 @@ def init():
     graph=tf.get_default_graph()
 
 
-@app.route('/')
-def main():
-    return "Main.html"
+@app.route('/',methods=['GET','POST'])
+def home():
+    return render_template('home.html')
 
 
 
