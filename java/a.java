@@ -1,10 +1,22 @@
-class a {
+abstract class Phone{
+  public abstract void showConfig();
+}
+class Iphone extends Phone{
+  public void showConfig(){
+    System.out.println("Iphone");
+  }
+}
+class Android extends Phone{
+  public void showConfig(){
+    System.out.println("Android");
+  }
+}
+class a{
+  public static void main(String[] args){
+    Phone android=new Android();
+    Phone iphone=new Iphone();
 
-   public static void main(String[] args) {
-
-      int num1 = 5, num2 = 15, sum;
-      sum = num1 + num2;
-
-      System.out.println("Sum of these numbers: "+sum);
-   }
+    android.showConfig();
+    iphone.showConfig();
+  }
 }
