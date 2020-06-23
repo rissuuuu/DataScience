@@ -1,25 +1,30 @@
 interface A{
-void a();
-void b();
-void c();
-void d();
+public abstract void a();
+public abstract void b();
+public abstract void c();
+public abstract void d();
 }
-
-abstract class B implements A{
-public void c(){System.out.println("I am c");}
-}
-
-class M extends B{
-public void a(){System.out.println("I am a");}
-public void b(){System.out.println("I am b");}
-public void d(){System.out.println("I am d");}
-}
-
-class AA{
+class AA implements A{
 public static void main(String args[]){
-A a=new M();
-a.a();
-a.b();
-a.c();
-a.d();
-}}
+  A obj=new AA();
+  obj.a();
+  obj.b();
+
+}
+@Override
+public void a(){
+System.out.println("I am a");
+}
+@Override
+public void b(){
+System.out.println("I am b");
+}
+@Override
+public void c(){
+System.out.println("I am c");
+}
+@Override
+public void d(){
+System.out.println("I am d");
+}
+}
