@@ -1,0 +1,246 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science," a podcast for data science enthusiasts, where I interview practitioners and researchers and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the time data science show. In this episode, I interviewed Dr. Tarin Clanuwat, who's currently an assistant professor at the National Institute of informatics in Japan. Tarun holds a PhD in Japanese literature and has followed if I may or traditional path in classical Japanese literature. She's been doing some amazing research around Japanese literature including her work on Kuzushiji, which we talk all about in this interview. We talk all about her background, her journey in classical literature and her journey in machine learning and her current research which is the intersection of both. We also discussed the kaggle competition that she had hosted along with anokas also known as Mikel in the real world on kaggle is of course he is a robot AGI to know more about Mikel  you can check out my interview with him which I was fortunate enough to do for the second time on the series. You can find the link in the description. In this interview, we talk about classical literature, machine learning The importance of her research on kaggle. Without further ado, here's the conversation. Please enjoy the show.
+
+Sanyam Bhutani  2:22  
+Hi, everyone. I'm on the call with Dr. Tarin Clanuwat. Thank you so much Tarin for joining me on the Chai Time data science podcast.
+
+Tarin Clanuwat  2:30  
+Yeah, thank you so much for having me here too.
+
+Sanyam Bhutani  2:35  
+We so I want to talk about your background. But again, there are two things here, which include literature and machine learning. I will talk about literature first. You hold a PhD in Japanese literature and you followed if I'm a traditional research path in this field. Why was literature important to you? Why did you follow this path?
+
+Tarin Clanuwat  2:54  
+Yeah, I think the important part about like, following the traditional research path is It gives me like concrete knowledge about, like, what the end result that I want from the machine learning model that I'm building. So it's like I can I know how to set the direction of my research. And I also experience everything firsthand. So I know like, what humanity researcher would want from a machine learning model.
+
+Sanyam Bhutani  3:25  
+So it's no longer a black box for you if I mean
+
+Tarin Clanuwat  3:29  
+black box No, no, I mean, like, it's still a black box. I mean, like, I don't know. I don't know inside the model, but still is like, I mean, I just said the direction like, what we want at the end like the picture that picture is very important. I think.
+
+Sanyam Bhutani  3:49  
+That's your research give you any intuition like is dude find it helpful in that sense? While you're debugging the models, for example, if it doesn't give the right outputs?
+
+Tarin Clanuwat  3:59  
+Yeah. Actually it is it helped me a lot when I evaluate my model. Like, when I see I don't only look at the number, like what accuracy it is, I don't always look like what model is doing well or doing bad in some type of characters or something like that. So it's actually helps a lot. Okay.
+
+Sanyam Bhutani  4:20  
+And you studied classical literature. Many people try and focus on upcoming ideas, latest cutting edge ideas, why did you decide to go to the historical ones?
+
+Tarin Clanuwat  4:29  
+Yeah, I actually I like the classical Japanese literature. Because when I read something that people brought maybe like 1000 years ago is so interesting that I still can apply what they were thinking to my life today. So yeah, that's why I chose to study classical literature. And I think, yeah, it's not about like a focus on historical stuff or like the newest latest idea, but I just
+
+Sanyam Bhutani  5:01  
+Work on what mattered to me the most. And in this case, just classical literature. Okay. And I believe not many people are working on on this specific domain. Can you tell us more about that? I think you are one of the few people that can, I think read the traditional scripts.
+
+Tarin Clanuwat  5:18  
+Yeah, I mean, you mean like, do read read the script ball? Like
+
+Sanyam Bhutani  5:25  
+Kuzushiji Scripts
+
+Unknown Speaker  5:31  
+Mm hmm. Yeah. Kuzushiji actually Kuzushiji For me, it was very hard to start to learn to read. And but I think I definitely needed in my research. So I try to, yeah, learn as much as possible. But at the end, the tasks become super, like, repetitive. So I just decided that maybe just maybe machine can do This task as well. Okay, so that's why Yeah, I started to get interested in this research.
+
+Sanyam Bhutani  6:08  
+You automated yourself in a way. You decided to automate yourself in a way.
+
+Tarin Clanuwat  6:14  
+Yeah, because I'm too lazy to work everything manually.
+
+Sanyam Bhutani  6:20  
+Can you tell us more about your machine learning journey? How did machine learning start to come into the picture? And when did you decide to Okay, I'm going to use machine learning now.
+
+Tarin Clanuwat  6:30  
+Yeah, because, um, as a as I said before, like, this task is super tedious and super repetitive. Like, you know, someone told me on Twitter that if you repeat yourself three times, you can write a code to do that, but yeah, this month, way, way, way more than three times and yeah, so I just, I don't know. I mean, like, when I working on the historical document, what we do is that I transcribe everything by hand manually. Then when we search to like a big pile of books is really, really hard. Unless you can, like do the text search. But in the real world, we only have like the, the image data that we cannot search or we cannot do anything. We just have to look at it one by one. Right? So I just think that if, like, I have a magic that I can like, transcribe everything and then I can search in the text that will make my research like maybe 1000 times faster.
+
+Sanyam Bhutani  7:34  
+Okay, but but if I do, let's zooming out a bit. Why do you even need to transcribe it? on these documents available? Hasn't someone already digitalize them?
+
+Tarin Clanuwat  7:45  
+Well, the thing is about like a Kuzushiji in Japan, there are so many books out there that haven't been transcribed. I mean, like people transcribe What are they interested to? Like researcher like all like Specific like people that, for example, they're interested in this book, so they transcribe this book, but then there are so many things that it doesn't like, get people to be interested enough to put all the effort and time to transcribe it. Yeah, so I think Yeah, machine would be great for that kind of document. Okay. Now coming
+
+Sanyam Bhutani  8:25  
+to machine learning. As I said, You You studied classical literature. Did you also take a programming courses or any machine learning courses? Or how did you go about learning machine learning?
+
+Tarin Clanuwat  8:36  
+Well, I'm about programming though. I yeah, I have a PhD in Japanese classical literature, but actually, I started programming since I was I think 11. Okay. Yeah. So yeah, I started I started very young. But yeah, I didn't go to study computer science. But yeah, I have that kind of background. So when I look at the My literature research I that's why I come up with the idea that try to use the machine to solve this problem. But for machine learning, I just started in I think 2017 in September. Yeah, so what I do is I took, like, a lot of courses online like MOOC Coursera, something like that I did deep learning, AI and machine learning. I did some Udemy something like that. But one thing that very different for me is that I actually went to, like a deep learning lab in University of Tokyo. Okay, yeah. Because because I just need a GPU I need to get like a, that the deep learning environment. So I apply for a programme and I got in so that's why I went to be in that lab and Sir, I was surrounded by like, people. People who do deep learning so when I have questions, I could just ask them.
+
+Sanyam Bhutani  10:05  
+Okay. Yeah. Coming to your current research, what ideas are you working on? And what what do you think is their relevance for the future generations?
+
+Tarin Clanuwat  10:16  
+Yeah, my research is mainly focused on the text. I mean, the image that contained the text is called cause eg script, right? So, in Japan, people have been using, had been using BCG for over 1000 year until like 1900 when there's a standardisation of the Japanese language, and they don't include causality in school curriculum anymore. So that's why people most people cannot read. Like, most Japanese people cannot read books that were published just published it like 150 years ago. So behalf like about 1000 years amounts of book that nobody can read. Yeah, so Yeah, something like that. So, so my research is there a few goals that I want the first the most, I mean, like, the one that we can hopefully do is to transcribe this book to more than Japanese characters so people can actually read it. And another thing that I want to do is I want to create a search engine, like I told you before, if I can search this thing, then my research will be a lot faster. But the most important thing is that I want to make classical literature be more accessible to anyone because, you know, we have a lot of documents that we want to preserve, but we cannot preserve like, all of the researcher cannot preserve everything on their own because we as a small group of people, we need to get like more attention from general public that they appreciate what we already have, and one To put the effort into, like, preserve these historical document. Yeah.
+
+Sanyam Bhutani  12:06  
+Okay. So before though people who aren't aware of Kuzushiji. Could you please tell us more about what it is?
+
+Tarin Clanuwat  12:13  
+Yeah, Kuzushiji is like a cursive Japanese script. So like when you write like a Chinese characters and you write this quite quickly, that's become position basically that and so it's like a cursive but in Japanese that the way they can write a character, a character there are so many ways, like one hiragana character I'm not sure if you know Japanese,
+
+Sanyam Bhutani  12:39  
+I do not. I'm sorry.
+
+Tarin Clanuwat  12:42  
+Japanese
+
+Tarin Clanuwat  12:44  
+characters called hiragana there's only take phonetics is not like kanji. There's content meaning, but before hiragana used to have so many way too bright. That's why in 1900, we call it standardisation. So There, there were many way to Reisman Hector, but at the end, they just want to choose. I mean, they just chose one character to represent one, one character that we use today. So if you don't know all the variation of the character you can create, and yeah, so that's the hard part about it, I think, anomaly you know, like his handwritten characters. Like even you know, English when you read, like, all texts that they had written in cursive English is so hard to read, right? Yes. Yeah. So it's a very similar to that.
+
+Sanyam Bhutani  13:36  
+And I'm talking about machine learning. How do you think machine learning could be helpful here and how do you envision it to be able to solve the complete problem?
+
+Tarin Clanuwat  13:44  
+Yeah, actually, I mean, like, in my project, machine learning already helped so much that I cannot ask for from anywhere else because, yeah, machine learning, you know, like cookies, handwritten characters, and there are so many things. Rachael Ray, people write character differently. So if we use like computer vision, like traditional computer vision, I don't think we will be able to achieve this result. But yeah, machine learning is like the model can learn can get the feature from each characters. And, yeah, that's why we're getting a lot closer to what is useful in the real world. And, yeah, I'm sure that Yeah, machine learning will get even better, like every year, and the result will be a lot better. But the thing is, I mean, machine learning helps. But right now, what I want to focus on is the model and also the data that we get because of the training data, we need to label everything. And that needs like, expert and notation. And I'm thinking about how I can use machine learning to gather more of label data so the model can get even better over time.
+
+Sanyam Bhutani  15:01  
+Can you tell us more about the process you just mentioned, which I think many people will miss that you first need to even scan these scripts to be able to apply machine learning. So what all other steps do people even not think about?
+
+Tarin Clanuwat  15:14  
+Yeah, actually, I'm quite lucky when I started this project, I already have the facility data set. So the positive data set was created by the National Institute of Japanese literature. They have like, one each character that like a homepage image, and then they have the Unicode and also like xy coordinate the bounding box of his characters. So when we build the machine learning model, we just use something like object detection. So we have one page and then we just use object detection, like how, what characters in this page and then we get transcribed from the model like that, so I didn't create the data set. So it's already They're like, yeah, build the model. But we scan Actually, I didn't even scan the book. I mean, like people like every Museum and Library, they try to preserve everything. And the best way for them is to take the picture or scan those books, right? And then we end up like, like billions of images that no one actually know what it is. So we have to like, look at it one by one. But if we use machine learning model to like go through like millions of images, and then we just know roughly, like, what will this belong to or something like that, it will be a lot easier to categorise and manage all of this data. Okay.
+
+Sanyam Bhutani  16:46  
+And you just mentioned that we can use machine learning to transcribe these. To put things into perspective. If we were to manually go ahead and do this word, timeline, efforts or resources would it take
+
+Tarin Clanuwat  17:00  
+Well it will take about maybe.
+
+Tarin Clanuwat  17:06  
+Like, the number of the text is like a billion a feeling, okay, that kind of number in Japan this do survive like everywhere. So I cannot estimate like how much time or effort that people have to put to like a US human to do this. When I asked my collaborator Alex Lamb to work with me, he's from Mila. And the first thing he asked me how many books that you have? Do we really need machine learning to do this? Something like that? And I said, Yes, we have a lot of books. We have a lot of machine learning to do this. And I think that's one thing that you should consider when you want to start doing like a machine learning project. Do you think that the data that you have is like enough To use machine to do this or is easier to just hire someone to do it. It's easier to hire someone and it can be done in like a short time frame. You just do that.
+
+Sanyam Bhutani  18:11  
+Yeah, yes. Now, you also ended up hosting a competition. I think you did mention a paper. I think that will come out really soon. So if it's out by the time I'll have it linked in the description of this podcast, but can you tell us more about the hosting competition on kaggle? What parts were you involved in? If you could mention what interesting results came out of the competition?
+
+Tarin Clanuwat  18:36  
+Yeah, the competition. Actually, our competition was really successful that we I talked to like Kaggle people for on the KaggleDays. Yeah, that's what they said. So successful competition for us is mean like, we can start the competition and go to the end with all the problems and we get through with model right. So You know, like, I practice, I also participate in capital A little bit before I host this competition. So I didn't think much when I participate in it. Okay, I have the data and then I just tried to do something about it submit and then see the leaderboard, something like that. But then when you become like a competition host, there are so many things that you have to consider. Like, if you look from outside, maybe you just think that Oh, you have to data you have to the end result that you want, and then you can start the competition is not as simple as that. Yeah, you have to think like, what actually the in results that you want from the competition, what evaluation metrics that is good for the competition, because one thing that I always tell people is that what the hosts want from competition is different from what the participants want from the competition. You know that? Yeah, because what the host one is that they want the model does solve the problem. What the participants want is the highest score. Right? You know, if you don't like try to scope the competition well enough, then people will just do anything just to get a high score. And at the end, the model will be useful or not, is you don't know. Yeah. And another thing that Yeah, I know from the competition is that no matter how will we think that we prepare everything, something will happen. Yeah, because you never know. Like, when you have the data when you have like the metrics until like, hundreds of people work on it. You don't know where the hole is. Yeah, yeah. So yeah, that's the thing that about the competition is very different from being just a participant. Okay.
+
+Sanyam Bhutani  20:54  
+Okay. Now, coming to the research that you've already published, with the robot AGI, or Also known as anokas in human world is known as Mikel Bober. But, and you also collaborated with David Ha Alex Lamb, can you tell us more about the published research and I think you've published some architectures. How are these different from, for example resonates or something that we commonly are familiar with?
+
+Tarin Clanuwat  21:18  
+Yeah, actually, uh, yeah, I work with Um, so so so, so, so lucky to be able to work with this like, super expert machine learning researcher like the David Ha and anokas, Mikel or Alex Lamb, right. Yeah. And the paper that we published I published David Ha's deep learning for classical Japanese literature. That's one we introduced the data set is a Kuzushiji MNIST. So it's like an alternative version of the in this data set that people can use, and we try to introduce more like creativity. With the project that we can do with the data set in the Japanese culture, you know, last, I think last year, in the end of last year, I talked to like a law professor from like museums in the library in Japan, what they told me is that they are very, you're very good at creating the data, but they don't know how to use those data. Do you know I mean, like, they keep taking picture of the books, they keep, like adding the metadata, like information of the data, and they just put everything in maybe CSV or something. And at the end of it, lots of data, they have been collecting data for like, so many decades, and then they just don't know what to do with it. They just give the data to us and then ask, Can you do something about this? So that's why Yeah, we have a lot of data to introduce and yeah, that's a that's why when when paper that we have is The Kuzushiji MNIST, this data set and other paper that I wrote is about Kuzushiji transcription. So it's like Kuronet. The model the system that we use to transcribe it. So is. So it's not actually that different from like, other object detection model. So it's like object detection is not like classification. But we use the model, I mean the architecture that they already have, but we just chin a little bit like for example, before, like, we use a dam optimizer, but right now we just share this Stochastic gradient descent and we just found it got a little bit better, something like that. And we do like a lot of data augmentation. So what I do is not like focusing on building the architecture, but to try to use what we already have and then use maybe something like that data augmentation or something like that to make the results get the best results out of it. Yeah, so yeah, it's not like resnet or something like that.
+
+Sanyam Bhutani  24:18  
+anyone thinks of anything relative computers, it's about model dot whatever model comes next. Usually it's resonates. But coming to someone from community who some an outsider who's maybe not worked in Japanese literature before, how can they contribute to your research? How can they help your research?
+
+Tarin Clanuwat  24:37  
+Yeah, one thing you know, like, talking about the community contribute to my research of one thing that one community that definitely contribute to my research is caco community, right? We just have the that competition. You know, one thing that even though like we bill Coronet the system is quite good you Not to do the transcription, but then the resource that we have, I mean, like the human resource and the time and something like that we can only test like just a few algorithm that if it works or not, but then when we post the competition, like hundreds of people work on the same problem, same data set in the setup, and then they try all kinds of algorithm for us. Like, okay, do you try since on their entire cast kit, as Andy has tried to like, separate the model into two steps like classification detections like that, that is everything and they put on the discussion for us. And that's very, very generous every time I read it. Oh, my God. I was thinking like, oh, thank you for trying this. And then that's how, like, all the ideas come from the community that we can use to, like, improve the model.
+
+Tarin Clanuwat  25:53  
+Yeah.
+
+Sanyam Bhutani  25:55  
+But for anyone outside of Kaggle, who's may be listening to this podcast and wants to contribute, should they also go back look at the competition or is any other piece?
+
+Tarin Clanuwat  26:05  
+Yeah, yeah. So the data set and everything like all the same metrics and is already on the cackle website. So even though it's like a late submission, right, now you can just go and then they can just download it and they can try it. And they can see, compare the score with other people. And I think this is very important in the future research. Yeah. So for example, I think, after we do Kaggle, Kuzushiji competition, one thing that I really I know is that causality research is actually a very good example for object detection research. Yeah, even though it's like Easter text, like transcription, but you know, like in one page, there are so many kinds of characters that look almost the same. And there are so many classes is like a you have to be able to transcribe like 4000 classes to be able to transcribe these Kuzushiji. So it's very interesting like to put all that resource to be really good. Like object detection model officer.
+
+Sanyam Bhutani  27:16  
+Okay. And what expertise Do you think one would need to be able to produce good results? Do they need a PhD? Or like Mikel can they just have just be school students even even contribute to it?
+
+Tarin Clanuwat  27:29  
+I cannot tell you how much Mikel, contribute to our research. I just asked him to do anything and then he's just like a like a magic. He says, okay, does this work? This doesn't work something like that. So I guess when you asked me if you need a PhD to do that, I always think that okay, Mikel doesn't have a PhD and Yeah, he is. He's just a first year bachelor degree Can you imagine?
+
+Sanyam Bhutani  27:56  
+I've interviewed him twice, but I'm not still sure if it's a robot AGI. Or not?
+
+Tarin Clanuwat  28:01  
+I'm sure that he is a robot.
+
+Tarin Clanuwat  28:07  
+Yeah, I'm sure. Yeah. Maybe partly I don't think he's human. But anyway, yeah. So I mean, like, because I work with so many researchers, my collaborators, some of them have PhD. Some of them are grad school, some of them don't have PhD. And some of them are like me, kill me, this is like a first year, Bachelor degree. So I think, the expertise, if you want to do like, research in the machine learning architecture, algorithm, or even think about something more abstract in the theory, I think maybe that's where you need a PhD. But if you want to apply machine learning to like, any project that you have, you want to try to do it. I think. You can just start anywhere, even in high school, or something like that.
+
+Sanyam Bhutani  29:01  
+Coming to your research, what's next for your research? And when will you call this problem, quote unquote solved?
+
+Tarin Clanuwat  29:07  
+Yeah, there was so is really, really hard. I mean, I guess, how do you define if a problem is solved? Like, for example, in cancer detection, something like that can even though we get super high score in the data set, do you think that the problem is solved? Because it's kept itself inside the data set. So this is also true with Kuzushiji is that even though we get like 99% accuracy, still inside the data scope, but in the real world, there are so many things that are outside the data set. So what I think is not trying to get the soda off of the model. Of course, soda is important, but what I think is more important is that how can we use the model that we have to get beyond the data set like to call the outside and to make everything more generalised with the, the model? Yeah, some, something like that. So, okay, I wouldn't call it a soul. But yeah, the next step is to expand what the module can do.
+
+Sanyam Bhutani  30:17  
+Okay. I believe this will also lead, as he said, contributing to object detection research or even networks outside of Japanese literature.
+
+Tarin Clanuwat  30:25  
+Yeah,
+
+Tarin Clanuwat  30:26  
+yeah. Yeah, I think so. Yeah. Yes. I think to use object detection for for character recognition is not very popular yet. But because we the hardware is getting so much better. And I think this gives like a lot of possibility. It's not only Japanese, actually, it can apply to other languages too, if they have a data set that they can train on.
+
+Tarin Clanuwat  30:57  
+Yeah, something like that. So I think
+
+Tarin Clanuwat  31:00  
+Maybe I'm not sure if it will, like contribute directly to like object detection and research, but I'm sure that it will contribute to other character recognition in other languages too.
+
+Sanyam Bhutani  31:15  
+Now, my final technical question, I have a few more for you. But before we can do the technical section, what best advice do you have for someone just starting the machine learning journey?
+
+Tarin Clanuwat  31:25  
+Yeah, the machine learning journey, right. Actually, I got these questions a lot, because I just started just a few years ago, right? Yeah. And they only asked me, where should I start? I don't know where to start something like that. And my advice is that just start somewhere. I mean, just start. You don't have to know why. You should start if you like. If you want to do it. Just start like even start looking for information. Start reading a book or studying, trying to quote something doesn't mean you already start and then You will know by yourself what is the next step that you should do? But yeah, yeah business wise probably just start doing it.
+
+Sanyam Bhutani  32:10  
+Awesome. Now I follow you on Twitter which I'll again how linked in the description but these questions come from that what would be your favourite anime cartoon or anime character
+
+Tarin Clanuwat  32:24  
+you know there's one Japanese game is called token rumble I don't think you know it and
+
+Sanyam Bhutani  32:32  
+I do not know if it sorry
+
+Tarin Clanuwat  32:33  
+yeah, it's like a cactus of like a guy who like it's a lot of guy I mean like there's no human in this anymore so I really like to dimension guys and yeah, the animate I realised took a number and the character is called he's a model. He's like a sword. Okay, these are all characters. Yeah, but yeah, that's what I Rely is super limited to Japan this okay? Um, yeah.
+
+Tarin Clanuwat  33:07  
+Yeah, no, I just
+
+Tarin Clanuwat  33:10  
+I just was anything that Yeah.
+
+Sanyam Bhutani  33:14  
+Okay. Next one would be what would be your favourite Chai and favourite meal?
+
+Tarin Clanuwat  33:22  
+Doesn't have to be tea.
+
+Tarin Clanuwat  33:25  
+Yeah, I think you said that. Yeah, your podcast is Chai Time Data Science
+
+Tarin Clanuwat  33:31  
+you're right. Yeah, but my favourite thing is coffee, unfortunately.
+
+Sanyam Bhutani  33:35  
+And I have to edit that portion out.
+
+Tarin Clanuwat  33:39  
+I really like coffee and yeah, I drink coffee every day and father food and yakiniku you know like a grill beef in Japan. Okay, yeah, I like beef. I like meat, something like that. So yeah, as normally I like Japanese food.
+
+Sanyam Bhutani  34:00  
+Okay, last one. What would be your favourite game? I think you recently got a Nintendo or I think you mentioned about your Nintendo.
+
+Tarin Clanuwat  34:10  
+Yeah, you have been following my dream for a long time you know that I have been talking about buying a Nintendo Switch before I actually do it is not because I don't want to do it. I mean like, I am not sure if I will have time to play after I bought it. But the best game that I play so far is a fire emblem on the Nintendo Switch. The Fire Emblem treehouse. Okay. Always like RPG game RPG, our turn based strategy game. Okay.
+
+Sanyam Bhutani  34:46  
+Now, before we end the call, what would be the best platforms to follow your work? I'll have your Twitter handle and LinkedIn profile linked in the description any other platforms that you'd like to mention? Yeah,
+
+Tarin Clanuwat  34:58  
+well Just my Twitter adding a tweet every five minutes. So I think
+
+Tarin Clanuwat  35:05  
+my life okay.
+
+Tarin Clanuwat  35:08  
+I think the first question is Yeah,
+
+Sanyam Bhutani  35:10  
+Twitter. Okay. Awesome. Thank you so much Tarin, for joining me on the podcast and thank you so much for all of your contributions to this Japanese literature.
+
+Tarin Clanuwat  35:21  
+Thank you so much for having me here too. It's really nice to Yeah, have a talk with you. Thank you.
+
+Sanyam Bhutani  35:33  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week, to "Chai Time Data Science."
+

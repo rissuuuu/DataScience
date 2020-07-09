@@ -1,0 +1,174 @@
+Time,Speaker,Text
+0:13,Sanyam Bhutani,"Hey, this is Sanyam Bhutani and you're listening to ""Chai Time Data Science"", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Hello, and welcome to another episode of the ""Chai Time Data Science"" show. In this episode, I'm excited to be interviewing Dr. Olivier Grellier, double Kaggle Grand Master, and Senior Data Scientist at H2O.ai. Olivier holds a PhD in signal processing and has worked across multiple roles in different domains over the years, including that of a developer, project manager, and even in trading before getting into data science. In this interview, we talk ofcourse, all about his journey over the past years. His data science journey, how he got started with data science, and Kaggle. We talk all about H2O.ai. His work at H2O.ai and his current projects, Olivier shares insights into Kaggle and Kaggle competitions. We talk all about Kaggle as a learning platform and also as a platform for professional skill development. Note that this is a special release happening on H2O.ai YouTube channel, if you're curious to check out the other interview releases that I'm doing, please see the link in the description of this podcast. Second note to the listener, if you are a non-native English speaker as a reminder, all of this and the future episode release will have proper fixed English subtitles. So if you're watching it on YouTube, please remember to enable the subtitles for a better experience, along with a blog post coming out in the next week or in a few days with the video release. So stay tuned if you'd like to read the interview rather than watch it. Without further ado, here is my conversation with Dr. Olivier, double Kaggle Grand Master, and senior data scientist at H2O.ai, all about data science, his journey and Kaggle. Please enjoy the show.
+
+Sanyam Bhutani  2:59  
+Hi everyone, I'm on the call with Dr. Olivier, thank you so much for joining me on this podcast series."
+3:06,Dr. Olivier Grellier,"Thanks for having me on the call. I'm really happy to be talking with you, Sanyam."
+3:12,Sanyam Bhutani,"It's really an honor to have you on the show. Talking about your background, you hold a PhD in signal processing, and have worked across multiple roles, including that of a developer, a project manager and in trading as well. Could you tell us, how did you get started in data science? You've published some research in signal processing way back in the 2000s, was it? Can it can we classify that as data science also?"
+3:38,Dr. Olivier Grellier,"No, I think it was it was really signal processing, actually, that was on telecommunications. And yes, there are many things that could be related to data science, but it was really pure, pure mathematics and signal processing at the time. I think we were still trying to find out Magic features or data properties just like we do in our Kaggle. But yeah, that was really just signal processing."
+4:09,Sanyam Bhutani,Okay. 
+4:10,Dr. Olivier Grellier,Yeah. 
+4:11,Sanyam Bhutani,"So you've worked across multiple roles. Could you tell us about the different industries you worked at, worked across and contributed to? I'm trying to connect the dots of how you got into data science."
+4:22,Dr. Olivier Grellier,"Oh, yeah, that's very difficult. I don't even remember how I got trapped into Data Science and machine learning. Yeah. Yeah, in fact, I, it all started in research with signal processing, but I, I sort of fell really not enjoying that much to the research part of it. So I decided to enter a more practical job. And so that was in Armadeus. It's a leader in the travel technology. So that was really for the travel and nature industry. So I was there. As a C++ developer first on IBM mainframe, so so that's what really should know. There is;"
+5:09,Sanyam Bhutani,That puts the dates into perspective.
+5:15,Dr. Olivier Grellier,"So yeah, that was back in. Yeah. 20 Yeah. Yeah. 2000."
+5:22,Sanyam Bhutani,About two decades ago. 
+5:24,Dr. Olivier Grellier,"Yeah, uh, thanks for reminding me. I'm older. But yeah, that was two decades ago. Yeah."
+5:34,Sanyam Bhutani,Okay.
+5:35,Dr. Olivier Grellier,"And I stayed seven years there. I've been to London and I started as a C++ developer and then became a team leader with a, yeah, with a team of 15 people. And in London that was so enjoyable to have that many cultures there and talking to very different people. So that was that I had customers like British Airways, <Airlin names>. Lufthansa. So that was very exciting."
+6:08,Sanyam Bhutani,"But throughout this period, you you were in a technical role in a in a programming role. "
+6:13,Dr. Olivier Grellier,"Yeah exactly. That was really a programming role and very technical. I could also talk to customers and have, you know, functional books, rules or technical books, rules, wisdom. But yeah, that was really technical. And then I moved to Capgemini in 2007. Yeah. And, as I remember, and that was as a project manager, and I was working for mainly for the public sector. So that was for government and railways and stuff like that."
+6:51,Sanyam Bhutani,Got it. 
+6:51,Dr. Olivier Grellier,"I stayed, I stayed probably a year. I didn't really like it. I was, yeah. And in fact, I met different people in the finance industry. And I decided I would maybe try to become a trader on the commodity market. I got trapped for probably eight or 10 years. "
+7:17,Sanyam Bhutani,Okay.
+7:18,Dr. Olivier Grellier,"So that was really exciting, you know, trying to get rich. Wow. Hehe."
+7:23,Sanyam Bhutani,Hehehe.
+7:23,Dr. Olivier Grellier,"That's a funny thing. So, yeah, and and the thing is that when you're on, when you're trading the markets, you want to first try to predict if you're going to become rich. And also you want, you want to know if your trades will be successful. And so you stop doing forecasting and forecasting, you know, you're not that far from machine learning."
+7:51,Sanyam Bhutani,"Okay, so;"
+7:54,Dr. Olivier Grellier,"And yeah, I think that's how I got trapped into all these data science and machine learning."
+8:01,Sanyam Bhutani,Got it. So you were;
+8:02,Dr. Olivier Grellier,So that was a very sort of very long journey but finally ended up here.
+8:10,Sanyam Bhutani,"Even with the trading part, so I couldn't find anything about your secretive trading life online."
+8:18,Dr. Olivier Grellier,"Its secrecy, its total secrecy."
+8:21,Sanyam Bhutani,"But again, this to put things in perspective, you were again using computers there, not just a trader, trader."
+8:29,Dr. Olivier Grellier,"Yeah, I was using, I was still, in fact developing automatic trading things or insights or things. Yeah. Now we would call that trying to find patterns in the data or trying to find insights."
+8:48,Sanyam Bhutani,It's data science now.
+8:50,Dr. Olivier Grellier,It's data science.
+8:53,Sanyam Bhutani,Got it. 
+8:53,Dr. Olivier Grellier,"Yeah, that was really exciting."
+8:56,Sanyam Bhutani,"So once data science came into the picture for you, did you find your quote unquote, traditional research background to be very helpful? There's this common belief that everyone relies upon."
+9:09,Dr. Olivier Grellier,"Yeah, I think it was quite useful that the mathematical background was useful. And this whole thing really look like, yeah, reminded me of my PhD days. And so, yeah, it was really unfair to, you know, I read a book on machine learning, and I was like, oh, but I know this. I know. "
+9:32,Sanyam Bhutani,Hehe.
+9:32,Dr. Olivier Grellier,I know this. I know all these things and statistics. And;
+9:37,Sanyam Bhutani,So it was a flashback moment for you.
+9:39,Dr. Olivier Grellier,"Yeah, exactly. Yeah, it was like, yeah, I'm home. And you know what, when I started really getting into machine learning, I also found that my experience in development is really useful and it's probably what made me share lots of stuff on Kaggle"
+10:05,Sanyam Bhutani,Yeah. 
+10:06,Dr. Olivier Grellier,"Because to me, it's very easy to code, to code things."
+10:12,Sanyam Bhutani,So we think of researchers as people who can just read a mathematical equation and think of the code plot. Are you are you one of those researchers?
+10:25,Dr. Olivier Grellier,"I would love to be that, that talented and skilled, but, ya know, it takes me days to really think of writing code out of paper. It's probably people like, like Jean Francois-CPMP or Pavel, Dimitri Larko. They will do that straight away, but I'm not, I'm not on that side, I'm afraid."
+10:55,Sanyam Bhutani,"Okay, so coming to another aspect that, where you're double Kaggle Grand Master. So could you tell us how did you get started on your first competition? Where did Kaggle come into this broad life picture?"
+11:09,Dr. Olivier Grellier,"Yeah. And in fact, I was at a point in my life where I, I wondered what I would do next. You know, I changed quite a few industries or even sort of work. And so I talked to a good friend of mine, that, that's in Capgemini. And we talked about the few possibilities that we have now in the industry like IoT, cloud, and machine learning. And so I started reading books on machine learning, and as I said, it's it was so close to what I did when I was in my research, I decided, yeah, why not? You know, it's, it's the lazy part of me saying, maybe this, you know, so maybe you can have a nuke and I read that book, and that book was on Kaggle, it was amazing. I was like, well, it's data science machine learning and the guys were just talking about competitions and Kaggle. And I was like, what's, what's this Kaggle? So I went on the website looked at the competitions and I was like, I'm gonna show off what I am, show exactly what I know. And well, in fact, I learned humility there. The first competition was a nightmare. "
+12:34,Sanyam Bhutani,Okay.
+12:35,Dr. Olivier Grellier,It was so bad. Hehe.
+12:36,Sanyam Bhutani,Heheheheh. So it wasn't helpful with your background?
+12:42,Dr. Olivier Grellier,"Yeah, exactly. Yeah. I finished in the last 40% I think."
+12:50,Sanyam Bhutani,Okay. 
+12:51,Dr. Olivier Grellier,"And I was like ooh, I need to work now. And yeah, Kaggle, so it's practical machine learning. So usually you will learn things, machine learning or data science in books or online courses. But when you're in a competition with real data set, and competing with these bright guys, you really need to have to use things that work. It's really practical. It's not only having ideas on things and trying to plot plans and stuff, but it's really okay. I need to get it. I need to really understand the problem."
+13:38,Sanyam Bhutani,With a solid deadline as well;
+13:39,Dr. Olivier Grellier,"Yeah, exactly. Yeah. And yeah, and these deadlines, approaches every day. You're like, oh, really, I'm behind them. Do I need to do something about it?"
+13:50,Sanyam Bhutani,And the leaderboard is also constantly getting updated.
+13:54,Dr. Olivier Grellier,"Well, actually, yeah, that's that's another point. You learn not to be too much attracted by the leaderboard, because now quite often now you have big shakeups in private leaderboard. And so you have to learn as well to create models that generalize and, and will do well on private. "
+14:16,Sanyam Bhutani,Yep. 
+14:17,Dr. Olivier Grellier,And that's really difficult. 
+14:19,Sanyam Bhutani,"Definitely. We'll talk more about the battle stories, but I want to sort of linger on to these topics. Two topics you mentioned is learning machine learning and learning on Kaggle. So could you tell us about how you, before joining Kaggle, learn machine learning so to speak? Was it just using books or online courses or mixture of both? "
+14:40,Dr. Olivier Grellier,"I think, I think I probably, yeah, I read books, took online courses on Coursera. I also used a site called Packt Pub. "
+14:58,Sanyam Bhutani,Okay. 
+14:58,Dr. Olivier Grellier,"With, with lots of books there. So that's, that's very interesting because now you can see very different use cases and how the guys would do that. Usually that that's, that remains like the scholar level, I would say where you have it, you get free data sets. And usually this would go around Iris that I said, alcohol. "
+15:27,Sanyam Bhutani,Yeah.
+15:28,Dr. Olivier Grellier,"And you're like, yeah, guys, okay, now I want to have a real deep data set and what we can do with that, and yeah, quite often it's not available in books and courses, you really have to go to Kaggle or other competition sites to, to have real data and really measure the point at which you still need to learn things or really rank yourself."
+16:03,Sanyam Bhutani,"So what I'm trying to ask as a question here is, do you think a person should really spend time on reading these books or just jump on to Kaggle? Because there's a complete another learning experience once you start competing?"
+16:16,Dr. Olivier Grellier,"Yeah, I think you really need to do both. In fact, you still need to keep up with new things. So you still need to read papers, books, but you also need to maintain, what you learn there is useful and can be used practically."
+16:43,Sanyam Bhutani,You need to benchmark your skills.
+16:44,Dr. Olivier Grellier,"Yeah, exactly. You need really, you really need to benchmark. Yeah, that, that's right."
+16:50,Sanyam Bhutani,"You got it. So coming to Kaggle you're a double Grand Master and a competition master. What made you contribute more to kernels and discussions, because usual belief is the juice lies just in competing, why was contributing to the other two aspects, now it's 4 tiers but a little earlier just these 3 tiers why was contributing important to you?"
+17:13,Dr. Olivier Grellier,"Uh yeah, yeah, I like sharing stuff. In fact, I like sharing insights I didn't discuss much in the beginning, but I wanted to share kernels because that's the way I learnt when I started on Kaggle, are really bright names sharing stuff and you learn a lot in feature engineering or how to use a given model. And so that was very important to me to shell back on what I learned. And the other thing is that probably the first time I shared on, the second, the second kernel I shared I had very nice feedback. "
+17:58,Sanyam Bhutani,Okay. 
+17:59,Dr. Olivier Grellier,"Oh, you like being, you like people being nice with you so it pushes you to share even more. And funny enough the competitions where I shared the most, were the competitions where I ranked highest so, so that, that was interesting as well so and it's it's a good driver you know, you share a  lot you know win it too so maybe I should keep up sharing stuff and get good ranks. And yeah and then I started to discuss as well because as I said writing code is very simple to me, simpler than talking in fact or writing in the, chat discussing is important as well. It's how you can share insights and even understanding better the data set of the competition, is really important. "
+19:06,Sanyam Bhutani,"Got it, coming through;"
+19:08,Dr. Olivier Grellier,"Yeah. And competing and competing, in fact, that that's probably why I focused more on kernels and  discussions."
+19:19,Sanyam Bhutani,"But I speak for the Kaggle community as a member, I think you along with CPMP, one of the legends that we really look up to in terms of the discussions."
+19:30,Dr. Olivier Grellier,"As with Jean Francois I mean, good company. Thank you very much. This is a well, cpmp is probably one of the, yeah, its most insightful guy on Kaggle. Amazing. Yeah. He's an amazing friend."
+19:50,Sanyam Bhutani,"So again, coming back to competitions, you've taken up you've taken part in a bunch of competitions word competitions, usually look interesting to you. Do you have a favorite particular type? Or do you just try against all of them?"
+20:04,Dr. Olivier Grellier,"Yeah, usually. Yeah, I focus on tabular data. And that, I don't know I'm not really inspired by computer vision. And I can do natural language processing as well. And I particularly like signal processing competitions and;"
+20:27,Sanyam Bhutani,You're biased.
+20:30,Dr. Olivier Grellier,"I'm biased. I'm completely biased. Yeah, so usually that will be tabular data competitions. "
+20:40,Sanyam Bhutani,Got it. 
+20:40,Dr. Olivier Grellier,So I would get there. 
+20:43,Sanyam Bhutani,So;
+20:44,Dr. Olivier Grellier,You should see me there.
+20:46,Sanyam Bhutani,"Okay. When you were hyper active on Kaggle, you're still pretty active but during your, initially I assume you were hyperactive. How to balance time with competitions, life and work, any best tips or was it a struggle for you?"
+21:02,Dr. Olivier Grellier,"I think I didn't balance. I could, I could spend days literally on Kaggle, that that was my life at the time I think so yeah, now it's, it's quite different. I'm spending a lot of time at work. Work is, is challenging enough as I as I like to say it's challenging you know, for me now. And yeah, I'm not that active currently on Kaggle and will probably try in the coming months to be a bit more active and present on Kaggle. "
+21:49,Sanyam Bhutani,"Okay. Do you think the stuff that you've learned on Kaggle via competing or discussion, has it impacted your professional life as a data scientist, has it?"
+22:01,Dr. Olivier Grellier,"Yes. It's, it's been a huge impact. In fact, the first when I was a freelancer, the first client I had, was looking for a Kaggler. "
+22:13,Sanyam Bhutani,Okay.
+22:14,Dr. Olivier Grellier,"So, so it was a huge impact and the way as well, I look at a problem is, is really different. Now that I've been on Kaggle, you have ways to look at the data or try to understand it. Getting really deep in inside of that asset and understanding the goals of the customer. And the goal of the model is, yeah, it's it's been quite different. And  my customers used to say, well, it's funny, because when you're looking at a problem or making models you don't like having very high scoring models. "
+23:02,Sanyam Bhutani,Yeah. 
+23:02,Dr. Olivier Grellier,"Meaning that if you have a high scoring model, then probably you have a leak. I would spend I could spend hours or days with a customer trying to investigate why we would score that high on a model."
+23:19,Sanyam Bhutani,Interesting.
+23:19,Dr. Olivier Grellier,"particular program and, and quite often we would in fact find a post processing or post production thing that you do, and it keeps, in fact, something on the ground truth. "
+23:35,Sanyam Bhutani,Okay.
+23:36,Dr. Olivier Grellier,"Because you would treat, for example, you would treat a a cell differently if it's a high cell or a low one. And sometimes these are leaks that you don't really find straight away but just looking at the feature importance and the highest scoring model can say there's something fishy. And so yeah Kaggle really changed my way of thinking."
+24:06,Sanyam Bhutani,Okay. So you've also competed in both solo and being in teams. Could you tell us more about your teaming up strategy? Did you find teaming up helpful and your suggestions for teaming up on Kaggle.
+24:22,Dr. Olivier Grellier,"Team, I wouldn't be able to tell you teaming up is not for, because the actual gold medal I have, was it, was within a team. "
+24:33,Sanyam Bhutani,Okay.
+24:35,Dr. Olivier Grellier,"I don't have a strategy in fact for, for teaming up, hitting the strategies, having fun. "
+24:44,Sanyam Bhutani,Okay. 
+24:45,Dr. Olivier Grellier,"So I choose, usually I choose people I like and I go along with, with very well. And sharing insights is simple and very, people being very accessible and you know, that, that's really strategy. And it's funny because usually when that when I team up, I end up doing either stacking or preparing data sets to ease the work of others. So that that's quite funny, in fact, because, you know, when I'm teaming up with Grand Masters, I'm like, wow, these guys are good. You know. They're amazing, and they're probably a lot better than I am. And so I'm sharing. I like to use the work and it's the sharing of ideas between between two people in the team."
+25:42,Sanyam Bhutani,"Got it. So talking about teaming up with Grand Masters, you're currently teaming up with Kaggle Grand Masters at H2O. Could you tell us, could you tell us more about your role as to what problems are you teaming up with, and what challenges are you contributing?"
+26:01,Dr. Olivier Grellier,"Alright. The biggest challenge is to look, to look bright enough to work with these guys. And yeah, it's, it's amazing working eligible with that many Grand Masters. And that's probably one of the reason why I joined in fact. Obviously the real reason is probably Sri, the CEO of H2O is so he's a 'visionaire', as you would say, in French, and it's so insightful to talk to him, but yeah, yeah, and the atmosphere is great. And yes, there are many challenges I work on, particularly model management, and drift detection on features. I work as well a bit of signal processing as well. Hehehehehe."
+27:01,Sanyam Bhutani,"Hehe. You have to , hehe."
+27:03,Dr. Olivier Grellier,"What can I do about it? You know, that's me. And I'm trying as well to share stuff and an act as an enabler in inside of each tool."
+27:16,Sanyam Bhutani,Got it.
+27:20,Dr. Olivier Grellier,Working with these guys.
+27:23,Sanyam Bhutani,I can only comment a a little bit. 
+27:26,Sanyam Bhutani,"So. Yeah. So coming back to Kaggle or even broadly speaking, could you maybe tell us your first go to step, so to speak, or when working on a problem or Kaggle competition for example?"
+27:43,Dr. Olivier Grellier,"Well, it, it has changed and you think in the early days, I would just take the data set, and try two fit of first model and look at how it would perform on, on the leaderboard."
+28:06,Sanyam Bhutani,Okay. 
+28:07,Dr. Olivier Grellier,"And see the difference between CV-and the cross validation-and the public leaderboard and then I would be like, hmm there's something fishy on that and I will look at feature importance feature drift and then I would start really thinking about the problem, trying to understand the competition goal and reading really thoroughly what, what the the organizer would want out and then yeah, get deeper into the features, understand and try to some feature engineering. And then I would yeah fit, different models. So neural nets, LightGBM, XGBoost, often CatBoost . "
+29:01,Sanyam Bhutani,Yeah.
+29:02,Dr. Olivier Grellier,"Linear models and all sort of stuff. And right at the end of the competition, I would just try to stack all of these to get a better, get a better score. And yeah, that's, that's probably what I was doing now I'm more focused on EDA first."
+29:26,Sanyam Bhutani,Got it.
+29:27,Dr. Olivier Grellier,"Looking at other data, the features, how they, how they interact together in the correlation with the target. And I'm less interested in, in the public leaderboard. "
+29:44,Sanyam Bhutani,Okay. 
+29:45,Dr. Olivier Grellier,"I'm still interested in looking at the difference between the cross validation score and the public leaderboard, because that tells you something about what will happen in private. "
+29:56,Sanyam Bhutani,Yeah.
+29:58,Dr. Olivier Grellier,"But, yeah, I'm really trying to focus on finding validation, good validation strategy. And then yeah, try to do many different things."
+30:10,Sanyam Bhutani,"Got it. Could you tell us more about how do you come up with the best validation strategies because I remember I was competing in the Microsoft malware competition and you are one of the few people who didn't, say face the so called shake up. I had a really bad experience with that competition."
+30:29,Dr. Olivier Grellier,Which one was that? It was the malware? 
+30:32,Sanyam Bhutani,I think so. 
+30:33,Dr. Olivier Grellier,"Microsoft malware, I died on hudred private leaderboard!!!"
+30:37,Sanyam Bhutani,Okay. Hehe. I would1
+30:40,Dr. Olivier Grellier,"I think I dropped, I think I dropped it down to, thousand places."
+30:45,Sanyam Bhutani,I think it was worse for me.
+30:51,Dr. Olivier Grellier,Hehehehehehehe.
+30:51,Sanyam Bhutani,"Hehehe, I mis-remembered there"
+30:53,Dr. Olivier Grellier,"But that's okay. This one was, was was really hard. But I played a lot. I remember talking with Jean Francois-CPMP on that competition and I told him, you know, and move up I'm sure I'm over fitting it. It was like, how can you say that? Well, I proved, I proved I was going to go for it."
+31:15,Sanyam Bhutani,I'm sorry. I think I must have confused CPMP and you in that case either; 
+31:19,Dr. Olivier Grellier,Yeah CPMP is a killer really on he can resist any shake up 
+31:25,Sanyam Bhutani,Hehehe because
+31:29,Dr. Olivier Grellier,They're the only a few people like that I think I Giba is is does that as well. And Dmitry Larko is just amazing as well that he-These guys. I don't know. I don't know what they do. I should. We should organize a session with these guys to learn a lot more what they do to resist the shake up. 
+31:53,Sanyam Bhutani,I have to drop a quick note of this. 
+31:55,Dr. Olivier Grellier,"Yeah, I don't have the skills yet."
+31:58,Sanyam Bhutani,"I have to drop a quick plug because the both of them will be on the ""Chai Time Data Science"" show soon, so please subscribe if you haven't."
+32:05,Dr. Olivier Grellier,Very Cool! That's really cool.
+32:10,Sanyam Bhutani,"But I'm sorry I misremembered. So, generally speaking, any best advice that you might;"
+32:17,Dr. Olivier Grellier,"I think the only one I managed to resist was Peurto siguere. And even on this one it was, it was quite difficult to manage to get to stay glued on the Private Leaderboard. I think that the first thing is really trust your CV. And, and publicly Leader Board is just informative. And the second thing is really understanding that how private and publicly Leaderboard has been split. So for IID competitions, usually simple. It's just formed on so for idea I would go for serially and time series. It's really unique to split over time and make sure that throughout all of our features in that if you don't, then you'll on Private Leaderboard."
+33:18,Sanyam Bhutani,Yeah. 
+33:20,Dr. Olivier Grellier,"Yeah, but I still have to work on that actually. "
+33:24,Sanyam Bhutani,"Got it. So coming to another question that I am sure most of the Kaggle community, most of the time faces is, how do you come up with new ideas when you're working on the competition? How do you continue improving your score, after you run out of ideas, for example."
+33:44,Dr. Olivier Grellier,"Yes, so as I yeah, and you in fact it all, it trains your brain? So you can think of feature engineering without noticing in fact, it's just gets a habit. So for these type of competitions, you will do one thing and follow the different, different things. So what I usually do is I don't look at the big columns first."
+34:14,Sanyam Bhutani,Okay. 
+34:15,Dr. Olivier Grellier,"And then when I get out of ideas, I would look at public kernels and discussions and try, and trying to find out what really, what I could write or code or what really makes sense to me. The other thing is to understand even deeper the problem and the features you have available. And then usually you can, just thinking in practical terms that you can say, you can think of many different new features you can, you can create then, then you can go with different models and usually having Linear models, tree models and neural nets. You need to think differently about the data set and react processing differently. So that brings new ideas then, then really if you don't have any ideas anymore, team up. "
+35:19,Sanyam Bhutani,Okay.
+35:20,Dr. Olivier Grellier,"Yeah, that's, then that's the best because you can really speak to someone, share insights, and share findings. And then you can think of new things you can do. Yeah, that's probably best."
+35:36,Sanyam Bhutani,"Got it. So, my this, this has been a great interview. My final question to you before we conclude is what best advice do you have for someone who's just starting out with machine learning?"
+35:50,Dr. Olivier Grellier,Do Kaggle. Hehe.
+35:51,Sanyam Bhutani,Hehehe.
+35:53,Dr. Olivier Grellier,"Go on Kaggle, read books, get, get online courses. Then practice, practice a lot. "
+36:03,Sanyam Bhutani,Practice on Kaggle.
+36:05,Dr. Olivier Grellier,"Yeah, practice on Kaggle and all order competition. Competition sites. But yeah, you need to add this practical, your training to really benchmark all the things you learned. Yeah."
+36:22,Sanyam Bhutani,"Got it. So thanks again for this interview, before we end the call what would be the best platforms to follow your work?"
+36:32,Dr. Olivier Grellier,H2O.ai!
+36:34,Sanyam Bhutani,Okay. Hehe. Any social media links that you want to mention?
+36:40,Dr. Olivier Grellier,"Yeah, I think that I don't publish any work anywhere except on for H2O the website I'm using the most is medium, really. "
+36:53,Sanyam Bhutani,Okay.
+36:53,Dr. Olivier Grellier,It's a really good one.
+36:56,Sanyam Bhutani,"We will have that link. And if anyone visits the H2O conferences, I think that will be the best place to get a hold of you. "
+37:04,Dr. Olivier Grellier,Hehehehehe. Yeah. 
+37:06,Sanyam Bhutani,"Okay. Thanks. Thanks so much again, Olivier for doing this interview and for all of your contributions to the Kaggle community. "
+37:13,Dr. Olivier Grellier,"Thanks a lot for your nice, well, it was, it was really good talking to you. Thanks Sanyam."
+37:19,Sanyam Bhutani,Thanks again.
+37:25,Sanyam Bhutani,"Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to ""Chai Time Data Science""."

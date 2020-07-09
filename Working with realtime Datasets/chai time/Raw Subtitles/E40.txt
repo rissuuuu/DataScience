@@ -1,0 +1,450 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the "Chai Time Data Science" show. In this episode, I'm really excited to be interviewing one of my peers and friends on the fast.ai community, Zachary Mueller, who's a student at the University of Washington, currently pursuing his bachelor's degree in software design and development. In this interview we talk all about fast.ai the course and fast.ai V2 the upcoming library, though there is a bit of name jargon here, but fast.ai V2 stands for the new library and fast.ai is the name of course. We talk all about Zach's experience with fast.ai, his journey into deep learning and fast.ai, and the projects that he's built while going through the course. We also talked about a study group that I'm really excited about, and you can find the link to the study group and the related forum post in the description of this podcast. Zach will be starting a study group that will go on for a few months, that builds on top of fast.ai V2 the new library on which the course is yet to come out. So if you are hyper excited and can't even wait for the course to start, you can just jump in and join the study group. Anyone and everyone is welcome to join it. We talk all about the study group, the kind of efforts that went to it, what can you expect out of it? And how can you best contribute to it? I really enjoyed this conversation. We also talked a lot about the top down learning approach and how can you go about learning fast.ai. How did the both of us went about learning fast day, so I'm really excited to be releasing this. A quick note to the listeners, this episode along with all of the future releases as a reminder will have data science terms checked out properly, fixed subtitles if you're a non native English speaker, please turn on the subtitles in YouTube, it'll, I hope it gives you a better experience in watching these interviews. You can also expect the blog post version of this to come out on the website Sanyamnbhutani.com or on hackernoon.com in a few weeks on the release of the video. Without further ado, here's my conversation with Zach, all about fast.ai, fast.ai V2 and the top down learning broadly speaking, please enjoy the show.
+
+Sanyam Bhutani  3:21  
+Hi everyone. Today I'm really excited to be talking to a peer and a friend of mine from the fast.ai community. Zack, Zachary Mueller. You might know him as Zach, on the forums. Zach, thanks so much for joining me on the podcast.
+
+Zachary Mueller  3:35  
+Thank you so much for having me. It's a real pleasure, honestly.
+
+Sanyam Bhutani  3:39  
+It's a pleasure to have you on the show. Now, before we start talking all about fast.ai version two and your upcoming study group that even I'm personally really excited about. Could you tell us how did you get started with machine learning, what caught your interest and what led you to investing a lot of time into this field?
+
+Zachary Mueller  3:56  
+So that's actually a very interesting story. I started off in college as a marine biologist. 
+
+Sanyam Bhutani  4:04  
+Okay. 
+
+Zachary Mueller  4:05  
+And since I was a kid, it's all that I wanted to do. And then college hit, bio too, and I just did not get along at all and I'd made an agreement with my dad saying is marine biology didn't work I was going to go to tech.
+
+Sanyam Bhutani  4:21  
+Okay.
+
+Zachary Mueller  4:22  
+For the longest time I did, I hated coding. 
+
+Sanyam Bhutani  4:25  
+Okay.
+
+Zachary Mueller  4:25  
+But I, you know, I switched my major to software design development. And that was maybe two years ago now. And then, same year, my dad had watched, I believe the second version of fast.ai. 
+
+Sanyam Bhutani  4:44  
+Okay
+
+Zachary Mueller  4:45  
+And he had said, you know, hey, Zach, do this thing. And me being the rebellious teenager. No, Dad, I'm not gonna do this thing. And so then you know, year passes, and Jeremy comes out with the third version of the course and my dad again goes, you know, hey, I think should really do this thing. It's really cool. And so finally I was like fine, I give up. I'll try it. Keep being try and now here we are a year later. So that's really what it was I started out in marine biology didn't work and switched my majors started getting into fast.ai and seeing how I could apply it in different environmental impact, impactful areas. And here we are.
+
+Sanyam Bhutani  5:31  
+For the audience I'd also like to mention that at the time of recording, you're still in your undergrad degree, you're still pursuing it.
+
+Zachary Mueller  5:39  
+Yes, I'm gonna be here for another year and a half I think so I graduate not this fall, but the following.
+
+Sanyam Bhutani  5:45  
+Gotcha. Now, could you tell us more about your fast.ai journey once you decided to not rebel any further, you took up the course, how was the journey like what led you to completing it towards the end, because I know there's a dip in the middle of the course where you feel like nothing's working. But I think you've completed both part one and part two of the courses.
+
+Zachary Mueller  6:06  
+ish. Yeah, completed a broad term. So it actually took me something like eight or nine months for me to finish the first part. 
+
+Sanyam Bhutani  6:17  
+Okay. 
+
+Zachary Mueller  6:19  
+And part of that was, I had watched the first two lessons and then you know, Jeremy goes, go try it out for yourself. And so I did, I wanted to try and build an app with my friend on classifying snakes. So after lesson two, I spent a few weeks working on that, got decent results, but it wasn't enough to where I wanted to like you know, post it in the share your work because it was good, but not good enough for me. So then I went back to the course, made it all the way through lesson five where he talks about Rossmann, and I think lesson six, which I think was the head pose, key points and kind of stopped there because I was picked up to do some research on the campus. And so I kind of stopped the tabular for a long time, and just focused on that. And that's as far as I made it in the course for five months or so.
+
+Sanyam Bhutani  7:17  
+Okay. 
+
+Zachary Mueller  7:18  
+So then maybe six months ago now I decided, okay, gonna watch the rest of the course. And then when summer hits, I want to do the matrix calculus, the part two and the intro to machine learning because I didn't even take that, I directly started in fast.ai V3. And so that's, that's the gist basically, of where the journey is so slow to get through the course but still doing a lot.
+
+Sanyam Bhutani  7:51  
+Good. You know, again, you're still an undergrad taking up the course and I know for many people this is a mental barrier that they feel like that maybe we need to know the calculus which you learn in the later stages of undergrad. Can you confirm or deny and how do you recommend an undergrad should go about doing fast.ai or just pursue the materials?
+
+Zachary Mueller  8:14  
+Have you done pre calculus? Yes. Okay, you're good. You won't understand all the math, but you'll understand at least some of it. Because I mean, it took me until this summer to start the matrix calculus for deep learning and it was still a rush for me. But no, in no way do you really need math. Honestly, I, you really don't. What I've learned is going through and trying you know, all these models and everything. I never do math. You know, I leave the math for like, you know, less right where he's doing all the optimizers, that is very math intensive. You want to go that way, learn the matrix calculus, but I'm focused more on applications and projects and so I don't necessarily need the math. You know, and so I never put a big focus on it. 
+
+Sanyam Bhutani  9:06  
+Yeah. Now in the, I think it's you've just completed one year on the forums, I was going through your profile. 
+
+Zachary Mueller  9:15  
+Yeah.
+
+Sanyam Bhutani  9:15  
+In that period, you visited the forums 16 days. I, what I mean by that is you've spent 16 days worth of reading time on the forums in just one year.
+
+Zachary Mueller  9:26  
+Hehe, yeah, I'm basically for a while it turned into my version of Reddit. I was just, wake up. All right, we'll see what's new on the forum. Read up, see what people are doing. And more importantly, see what people are having issues on and seeing what their solution is because it's a great way to learn. 
+
+Sanyam Bhutani  9:47  
+Yep. I know you're pretty active on the forums. I don't think usually because your message replies pretty much take less than two minutes on the forums whenever I ping you, maybe it's the time difference, but I don't think you sleep.
+
+Zachary Mueller  10:03  
+Last semester was a bit different because I worked three night shifts. So I wound up getting off work at the library at two o'clock in the morning. So then I didn't sleep. Now we're starting to get sleep. But I swear I sleep and I get at least six hours a day.
+
+Sanyam Bhutani  10:16  
+That's good to know. Can you tell us how did your way of approaching, because I know there are multiple threads on the fast.ai forums itself of how do you do fast.ai. I am good at how not to do fast.ai,  I've written about that. But can you tell us how do you do fast.ai and how has your approach evolved over the past one year?
+
+Zachary Mueller  10:35  
+#####The first thing I do is so like, obviously, I'll get a problem now for me since a lot of it was research, their professors were more so here's a data set, go have fun. And so from there, you know, I'll do some research, if it's tabular, especially look at how do i do the best feature engineering for what recent papers come out, have come out in regards to this particular area. But otherwise, I will go until till something breaks.
+
+Sanyam Bhutani  11:03  
+Okay.
+
+Zachary Mueller  11:04  
+######And then I'll go and back in, I look at the documentation. And if I still didn't quite get it from the documentation, I'll go look at source code. And I understand that's a very big thing that people are afraid of. But it really saved me a lot of times looking at it. So, yeah, really just, you know, find a problem and see how far I can get it without running into issues. And if the other two, I can't quite get, you know, I'll go search on the forum. Go read because more than likely with almost any problem in fast.ai, if you've had it, more likely someone else's had it happen. 
+
+Sanyam Bhutani  11:45  
+Yeah.
+
+Zachary Mueller  11:46  
+And more than likely, they asked on the forums. And so I tend to just go look, see, and, you know, sometimes like if it's segmentation, it's, oh, I forgot that one of my channels or one of my classes happened to be wrong. So I get this CUDA-CUDA runtime error, the very minute error unless you faced it before, you don't really know it exists. So it's really a lot of, you know, push pull, what breaks, what doesn't, and then figure out how to fix what breaks. I can't think of a single problem that I've gone through where everything worked flawlessly first time around. That's not on the library, that's on me and my understanding of the library. But you know, once I faced it before, now, it's all I know what, I know why you got that error, because I faced that error few months ago. And so that's where you go into well, I respond really quickly. And it's because I've faced most of everyone's problems at this point. 
+
+Sanyam Bhutani  12:43  
+Yeah.
+
+Zachary Mueller  12:43  
+And so instead of, you know, having them dealt with, well, I couldn't quite find it on the forums. And, you know, here, here's your answer. Here's how to fix it. 
+
+Sanyam Bhutani  12:53  
+I think again, the number of days of your experience of-If I may- on fast.ai forums count that you remember which thread the problem was discussed on and you may be able to recall, what do I need to really search to get around the problem?
+
+Zachary Mueller  13:08  
+Yeah, um, yeah, it's something like that. There's a lot of problems and there's a lot of ways to fix them and 99% of the time, it's usually on me, that winds up causing it. So
+
+Sanyam Bhutani  13:20  
+Now going back a bit, I believe you had just started your career as a programmer as well. How did you went about going to the source code like you said, like it's it's a mental barrier of sorts, because fast.ai itself also follows some different source code practices, any best tips, there?
+
+Zachary Mueller  13:39  
+So I really started the source code diving when fast.ai 2 came out, because fast.ai 1 still scared me. It wasn't until October when Jeremy and Sylvain started working on V2 that I started looking into it. started getting familiar and unafraid with source code. I'm, it's, you have to walk it out. Um, one of the way, one of the ways that I'm going to try and help fix that is, and this is a little sneak preview for you, I haven't announced this anywhere, and I won't until I get to it in the course. In the study group, I plan on walking you through how to implement a key point heatmaps from start to finish in the library. So going from here's, the concept to how do we make it work? Because there's not really too many guides on that. And it's two months struggle, trying to get that working right now. 
+
+Sanyam Bhutani  14:39  
+Okay. 
+
+Zachary Mueller  14:40  
+And it's not that it's hard. It's just a learning experience, really.
+
+Sanyam Bhutani  14:44  
+Okay. I'm personally really excited for that. We'll talk about the course and V2 in a bit, but I believe you worked on a few projects while going through the course. Maybe you can discuss them in sequence. I believe the first one was lock key Martin drone racing competition that you took part in. Could you speak more about that?
+
+Zachary Mueller  15:05  
+Sure. So the lock key Martin drone racing competition happened, I think after I was about two months into fast.ai. 
+
+Sanyam Bhutani  15:14  
+Okay.
+
+Zachary Mueller  15:14  
+Now, I didn't use fast.ai for this at all, which was terrifying because fast.ai was the only real way I'd gone about anything. But a few of, the few of my classmates and I were invited to join a team for this drone racing competition. And essentially, it was split up into three tasks. The first one was, you make a video, so it wasn't too code intensive. The second one was you were trying to find the coordinates of the gate. So say I have a square, I want to find the corners of the square. And then third was combining everything together to where you're drone racing. Now my part was on the second task.
+
+Sanyam Bhutani  15:54  
+Okay. 
+
+Zachary Mueller  15:54  
+And I knew that fast.ai wasn't too good with key points back then. And so I wanted to go away from it. And I wound up going to YOLO. The object detection algorithm, and I went about a little differently to the point where each coordinate, I built a box around it. So now I have a box of, bounding box, corner finder. And then I can use some basic geometry in order to figure out where the middle is. Or if I miss a gate, you know, I can go through and find the other ones. It's, it's a very, in terms of complexity it's very rudimentary and kind of abstract. But uh, using the algorithm in this way actually got us fifth place on the task out of thousands of teams. And mind you, this is two months in.
+
+Sanyam Bhutani  16:50  
+Hehe.
+
+Zachary Mueller  16:51  
+So I'm, one of the things that I can't stress enough with deep learning is how creative mind is. If the idea seems dumb, and everyone else is yelling at you for it, do it anyways, just so you learn. And you you'd be surprised what happens. So uh;
+
+Sanyam Bhutani  17:10  
+I'd like to emphasize that you didn't have, I believe you didn't have any deep learning experience, so to speak, before this new experience with any other framework outside of fast.ai I think.
+
+Zachary Mueller  17:21  
+Nope. And so that one was using dark net. 
+
+Sanyam Bhutani  17:24  
+Okay.
+
+Zachary Mueller  17:25  
+So PJ readdy's version, which that was, in its own own its own battle, because you know, that's TensorFlow ish, and have to figure out how to convert that over into inference code. And that was, oh, boy, but you know, that's a challenge two months in, but at that point, I had kind of taken a break from fast.ai to focus on this. So, it was a fun challenge. 
+
+Sanyam Bhutani  17:51  
+Okay. Now coming to the next talent that I think you took up, its media bias detection with ULMFit. Can you again speak more about that?
+
+Zachary Mueller  18:01  
+Sure, so that one was also a competition. You know, the school runs something called Code Fest, where you have 48 hours to go from idea to product. And you're pitting off against basically a whole bunch of teams. So a few people that I worked on the Lockheed Martin project with, developed a team and they wanted to do something with, you know, fake media, fake news. And so I joined their team, and we're trying to figure out how to make it all work. And I'm like, well, I just got past the language model bit in the course, we have you ULMFit, which is, you know, a really good language model for this. And it's basically sentiment analysis. So I went through and I found this dataset called the fake news corpus, and I got a really cheap paper space GPU, and for 48 hours, all I did basically was train a language model and go through numerous headaches with it that you know, tend to happen whenever you're rushing. But by the end of it, I had something that was actually pretty good. You know, we took in now on a whole, you know, it's okay, it's multi label where we have, you know, it could be a pseudoscience or it could be political. And so we wind up having to do is, our mentor helped us figure out how to write a an appropriate formula, where we took all of these different characteristics and then overall came out with a trustworthiness. Great.
+
+Sanyam Bhutani  19:43  
+Okay. 
+
+Zachary Mueller  19:43  
+Now, I'll admit, this is nothing crazy intensive to where I want to go and like shove this on Facebook or anything. It was a toy project, but we wound up winning that competition as well. 
+
+Sanyam Bhutani  19:54  
+That's awesome.
+
+Zachary Mueller  19:56  
+Thank you. Yes. And the hardest part about that was 48 hours. And basically, I was the only one working on the model. So it was fun though. I enjoyed it. And it gave me a new way to go and apply fast.ai in something I was too afraid to do because language models don't train in 20 minutes. No, you know, they train into in an hour to four, if not more, so.
+
+Sanyam Bhutani  20:24  
+Again, I'd like to emphasize this because as far as I know, it's a mental game for many people, is that you don't need to complete a thing like you said, you don't, i don't think you have gone through a bunch of books of calculus. You didn't even complete the first.ai course before jumping into the competition, you just jumped into into the competition while going through the course, you can do the things in parallel.
+
+Zachary Mueller  20:48  
+Exactly. Like I honestly that's how I learned the best, cuz it's okay, you have a realistic standpoint, you have a goal. Let's go beat that goal. And if I run into issues or I want to go further than I'm going to go look directly on that topic and become better at it. Now, I will say I did take AP Cal in high school. So it's not that I haven't done calculus. But since I've done deep learning, I haven't done calculus if I;
+
+Sanyam Bhutani  21:15  
+And I don't think you can just read a calculus equation and think of a code block in your head, right?
+
+Zachary Mueller  21:23  
+No, for a while that was one of the things I wanted to try to do. So I made some, like little practice problems where it was, you know, here's the code. Let's try converting that over to calculus or, or here's the calculus converted over to code. Um, basically, the furthest I got was in my computer or class, I realized that exclamation is basically a for loop, which blew my mind. And I was like, okay, well, hey, it'll help me pass computer org. I'm okay, now we'll stop there. That's yeah, that's all I've really got there. So,
+
+Sanyam Bhutani  22:01  
+Again, it's a point of jumping back and forth. As long as you're not educated, you can't do the problem, but to the, do the problem, you actually have to do the problem. So, with fast.ai, at least, I believe it's a matter of jumping back and forth between the cause and something you want to do.
+
+Zachary Mueller  22:16  
+Absolutely. You know, I mean, I, as I said, I took nine months to complete the first course. And that's not you know, nine months of me struggling on the course, it's nine months of me, you know, I learned one concept, okay, let's go try and apply it and, you know, maybe get lost on there for a month. Okay. Bad news is I didn't do the course for a month. Good news is though, I learned a lot from that. 
+
+Sanyam Bhutani  22:37  
+Yeah. 
+
+Zachary Mueller  22:38  
+And now with that new viewpoint, I can now continue the course. 
+
+Sanyam Bhutani  22:43  
+Yep, that that's a great point. Now talking of another dimension that I think you've done a project in is tabular data, and the project is around tabular model applications to cybersecurity. I know you will be talking more about this in your mega study group but if you could speak a bit about this one as well.
+
+Zachary Mueller  23:01  
+Sure so when I mentioned the research earlier, a lot of the research, actually all of the research I did at the school, and I am doing was just with tabular data. And because everyone here had been focused on random forest, and support vector machines, and no one had tried neural networks, and when I brought fast.ai to the school, they kind of saw an opportunity there. And so I got to have a lot of practice with tabular data. And so I worked on a few projects. One was with trying to identify operating systems on a network. 
+
+Sanyam Bhutani  23:39  
+Okay. 
+
+Zachary Mueller  23:40  
+And so that was like, you know, identify is this computer windows 10, is this computer a Windows seven using just traffic data? Another one is or really- the other one was identifying movements based on data from an Apple watch. So was a person walking, was the person standing. And that one I had the most fun with, because I had a baseline that I had to beat and random forest. Now, I didn't have to beat it, but I made it a goal. And what came out of that project six months later was some super creative feature engineering. And noticing some really cool behaviors with like the MISH activation function, and the ranger optimizer that you didn't really see with tabular data. Because I've worked a long time with tabular data, long being like four or five months straight. And basically, it's kind of a one and done thing. But with these newer techniques that I had just experimented with, with feature engineering, I could actually push past that and I was seeing noticeable differences between you know optimizer, one versus optimizer two Up to like 5% difference. So currently, that's, I'm going to be presenting that paper in March. And that's where the course comes into play. If it's published by that, and I go to the conference, then I'm going to include kind of how I went about that for time series a little differently in the course itself. If not, then I'm going to record a separate lecture, and kind of go over. Here's what I did. I'm not sure if it'll help you guys, but this is what I found.
+
+Sanyam Bhutani  25:34  
+Really looking forward to that one. Now, talking a bit more about the issue with projects. I think this is a point that I really struggle with as well is, how do you come up with an idea that you want to spend a few months on or how do you even discover an idea? How did you discover these ideas?
+
+Zachary Mueller  25:54  
+I'll be honest, I wasn't the one that discovered them. You know, so like the competitions were all kind of there. Now the ideas were from other people, and I kind of worked with them. And that's really where all of these projects have stemmed from, it's, you know, even the image classifier with snakes. How that basically went was I told my best friend, hey, I'm doing this, you know, image classification. I know, you know nothing about tech, but here's what I do. And I showed him, you know, this is what it's capable of, he immediately goes, I want to build a snake classifier, because he wants to be herpetologist. He's like, that would be really cool. All right. There's a project and I'm going to try and do as best as I can. I will never be content with myself until I have like, basically close to 90% accuracy on it. Now, I know Jeremy says it's really hard to get 90% accuracy on most anything, but that's the goal I had get as close to it as I could. And so what that mindset now gives you is instead of okay, I tried resnet I tried, you know, x resnet. Now I'm done. No, you're not. What else is out there, go try the models because if it works in Pytorch, it works in fast.ai. How do these different models work and they beat it a little bit more, can it be a little less, and then it's suddenly your obsession, and it's a healthy obsession in a way, because now you're learning a lot just by exploring. So, you know, outsource to friends, see if they can figure out some unique application that you know, can go apply with this. If not;
+
+Sanyam Bhutani  27:34  
+Gradient student descent.
+
+Zachary Mueller  27:37  
+Oh, boy, yes, gradient student descent. Otherwise, honestly, have the same mindset. And just go play with data sets. You know, like, I know, Jeremy says, Kaggle, you don't have to compete in it. You know, look at the data set, see what the leaderboard does. Okay, now that's your own leaderboard until you beat it. Now that's your leaderboard. You know, go and work with the ata until you understand how the data works, how it all fits in the framework and how you can, how changing a few things can affect your outcome.
+
+Sanyam Bhutani  28:11  
+Now;
+
+Zachary Mueller  28:11  
+So that's what I got.
+
+Sanyam Bhutani  28:13  
+You mentioned looking for things outside of fast.ai, lingering on to that point. Let's let's, let's take the snake classifier example. How do you, how did you approach the things outside of fast.ai when you decided to continue trying to get to that accuracy? Because again, people usually get stuck inside of that fast.ai loop. Okay, I maybe I changed the learner from resnet 34 to 50 to 152. What's next? How do you come up with ideas when you're stuck there?
+
+Zachary Mueller  28:42  
+So my number one resource is Papers with code, actually. Because for most of their papers, they'll go through and apply the source code, you know, they have a link and honestly what I do is just go look okay, do they have a Pytorch GitHub Oh, they do. Okay, I can go play with that model. And so instead of, you know, CNN learner, I'll use the also scary learner, which if you actually look at what they do, not too different, and so I'll just, you know, throw a model in and see, you know, how fast is a train, or a lot of cases, the role modeling, I'm getting headaches. Now, instead of giving up, maybe, you know, take a few days break, go and figure out why you're getting that headache. Is it a tensor mismatch? What the heck does that even mean? Go learn. And, you know, just work on it, debug it, and I'm not saying debug it in like 48 hours. When I had brought NTS net into the fast.ai framework, I had worked on that thing for a month, had a billion questions on the forum, and almost gave up at least three times a day. And it's just, you know, sometimes go walk away for a prop from a project for a few days to a week. That's okay, that's healthy. You don't have to get it done immediately. Um, you know, pace yourself, you're learning. And so be realistic with your time management. Don't get so focused and so stressed out that you hit a roadblock and suddenly you're like, oh, whatever, I'm just gonna throw it all away. No, don't just put it on the shelf. And revisit it later. And you'd be surprised what after a few days of reading, scanning, whatever, you come back from an fresh angle, and you can attack the problem a little differently. 
+
+Sanyam Bhutani  30:41  
+That's great advice. For the audience. I'd like to mention the website is called paperswithcode.com, do check it out. It's one of the greatest sources out there.
+
+Zachary Mueller  30:51  
+Absolutely.
+
+Sanyam Bhutani  30:52  
+Now, coming to fast day version two. I know there's a bit of naming jargon here, but version two stands for the latest upcoming version of the library and the course that will go along with, it will actually be version four of the course, just for the audience to clarify things, but I know you're an active contributor to fast.ai V2 to library. Can you tell us more about the library? And what's the excitement all about?
+
+Zachary Mueller  31:19  
+So basically, everything that you had a problem with in fast.ai one is in some way or another addressed at fast.ai two. So one of the things I had struggles with was labeled test sets, because they came in really handy when I was evaluating my models performance on, you know, what tested that I had the answers to not necessarily Kaggle where I don't. And the one you had a clunky way of figuring out how to do that V2, you can just pass in a labeled data set. So I can have infinite data sets that are labeled and unlabeled, and it's not tied to a data bunch. So V2 provides you with a lot more freedom to approach problems all differently, and it's a lot easier for you to follow. You know, they have the source code notebooks right there that you can go through and run and go, okay, uh I want to do point detection. I remember how that worked in fast.ai one, how does it work in fast.ai two, where's that notebook? Okay, I'll run it and see how everything kind of works. Which, in developing that is so helpful for me. Because, you know, I had mentioned, I'm working on this heat map thing right now. And I spent a few months on it. And I'm looking at the notebooks and going back and forth and realizing all these little tiny details that helped make our life easier. 
+
+Sanyam Bhutani  32:42  
+Yeah, now do you have any prerequisites for jumping into that? Because again, that's a mental barrier. Do I need to complete fast.ai version? I mean, part one and part two before jumping into that, what's your take on that?
+
+Zachary Mueller  32:58  
+For right now fast.ai V1 the one at least the few lessons to understand kind of, the broader concepts, definitely helps before jumping in so you understand, you know what in the world's a data bunch. what in the world is a data Loader? And how does all of it play a role because it's kind of all still there, just refactor it, and you can work with it a little more. Otherwise, Jeremy is coming out with a new version of the course in March. And until that point, I have a study group where the only real assumption is, you know, coding to some degree, you know, you're less and let's get you guys up to speed with, get as many applications in fast.ai two as we can, so you understand the broader picture.
+
+Sanyam Bhutani  33:46  
+Awesome. Now talking about the big mega study group or project of yours. Can you tell us more about that and why did you decide to even start it in the first place?
+
+Zachary Mueller  33:56  
+So this actually goes back a year almost, about six months. You know, as I mentioned, I kind of brought, really fast.ai brought neural nets to my university, through me because I was the only one that I'd ever done it. No one had heard of, you know, Jeremy Howard, fast.ai or Pytorch. You know, it's;
+
+Sanyam Bhutani  34:16  
+Unfortunate.
+
+Zachary Mueller  34:17  
+It is, but I mean, we're a smaller school, so it's okay. But it did provide its own struggles. And so from there, I was like, okay, I've been doing this thing for about six months. And, you know, everyone on the forum is doing all these study groups, these study groups, so like, okay, we'll try and do one here at the school. And that's where you got the practical deep learning for coders that I was running at the time. And so that started in the summer, and sort of was teaching the students all these little tricks that I had learned from doing fast.ai for, you know, 6-8 months at that time, and sort of branching it off from there. And then I did that a few times, then last semester, only had one person that showed up. And so I kind of just retconned it because I was just doing too much, which was a blessing because, well, last semester also fast.ai two came into the picture. And so it's like, okay, well now I have time to focus on it. And so, earlier this year, I had a gentleman on the forums, let me see if I can find it real quick. Actually messaged me and asked if I was planning on live streaming any of my study group speak, his name was giben Gigi. 
+
+Sanyam Bhutani  35:40  
+Okay. 
+
+Zachary Mueller  35:41  
+And he had asked me if I was planning on live streaming, because the notebooks that helped him and at the time, I was like, alright, I'll see maybe, you know, I'm not really doing anything this semester. But I want to try, you know, it scared me because basically the study group that I've been working with was anywhere from two to seven people. But I knew that the notebooks that I was writing helped a lot of people out. And, you know, provided a different sort of aspect that was a little more than the course. But you know, I still wanted people to do the course too. And that's where the new course or study group comes into play. 
+
+Sanyam Bhutani  36:24  
+Okay.
+
+Zachary Mueller  36:24  
+So it's, it's been a year and a half journey for me there as well. And running the sort of mini study group has really forced me to learn a lot about the library. Because you have to know a lot aspects of it from every topic if you're going to do something like this.
+
+Sanyam Bhutani  36:45  
+Can you tell us more about the structure of the study group? I know it's, it's quite an intense work for as well, it's a few months of even teaching before we even, leave, leave out of the picture the effort that went into preparing it, can you speak to the structure?
+
+Zachary Mueller  36:59  
+Sure, I'm still preparing it, and I will still be preparing it throughout the entire thing. It's;
+
+Sanyam Bhutani  37:05  
+It starts in two days, hehe.
+
+Zachary Mueller  37:08  
+It's fine. Um, no, I've got a decent chunk prepared. But a lot of the times before it was structured to be just an hour, hour and a half, right, present a notebook, and then you know, everyone's on their merry way. And one of the recommendations I got was making a little longer. And so I sent out a poll to my local, to the cyber security club here, which is kind of for everyone, regardless if you have cybersecurity or not, I was like, hey, you know, I want to increase the time, would you rather it be an hour and a half with time to work or two and a half hours, and you have time to work? And everyone's like, two and a half hours, please. And so then I kind of structured everything again to where all right, I can get away with talking for an hour and a half and everyone's okay with that. Um, and so with that in mind, about winter break I started prepping or at least some of the, a walk with fast.ai to notebooks. Now the other day I finally like made an outline of how everything I wanted to go, because I had it in my head. But I want to see just how many notebooks, I think I saw like 33 different individual notebooks over the entire thing. Interesting so there's there's a lot of prep work going in but it I've slowly been attacking them as we go. So if anyone here is going to join a walk with fast.ai two, don't expect the notebooks to be completely done. Let's, you know as Sanyam mentioned I am an undergraduate student so I'm basically working on them a few weeks in advance if I know that will take me that long, in order to work with them and plus with fast.ai two in such a heavy development, a lot of times the notebook that I ran a month ago won't run now because something changed. Been a fun experience. But you know, so it's a lot of push and tug, don't expect on my end from me, I don't want to over stress myself, by you know, I have 33 notebooks I need to get done by January, like January 15 when we begin instead, it's, let's get as far into it as I can, and then just slowly work my way through the rest of them. So it's, it's, it's been a fun challenge. 
+
+Sanyam Bhutani  39:34  
+I can imagine.
+
+Zachary Mueller  39:35  
+But I can, I really think that it'll be a good study group. And the stuff that I'm going to be presenting is basically all stuff that I've encountered and seen, so it's not just coming out of nowhere, so.
+
+Sanyam Bhutani  39:52  
+Digging into the structure a bit further, can you tell us about the topics that you'll be covering in this walk through, what all can we expect out of it?
+
+Zachary Mueller  40:01  
+Sure. So I'm going to try and bring in as much state of the art as I can. So, and along with that some of the issues that people have had on the forums. And so like I just posted about this a little while ago, but, lesson five, six sessions going to be style transfer. And it's just style transfer. And the reason for that is, it style transfer using the notebook_dev library now, and building our own model, building our own loss function, and then taking that and setting up to a realistic deployment setting of how do I basically work with this thing. Now, it's not like starlett or anything where was beforehand it's more so building the Python script for it. But that's just kind of one of the ways. Along with that I'm going to be working with pose detection that's like a a heat map based thing I mentioned earlier. All the topics fast.ai covers, along with some of them that they don't. Like when you don't necessarily have the class in the image, how do you tell your model? I don't know. Along with that I plan on incorporating stuff like multi fit, the multi lingual model that came out a little bit while ago, built on ULMFit, stuff like devise, which is usually a part two topic, but I save it for the end. So hopefully we'll be up to that point. Along with a few of the state of the art, tabular models and seeing, okay, I understand how that works in the vision but tabular is a very different beast in how it works. How do we do that? So essentially think all of fast.ai in a nutshell, plus all these little tips and tricks and little bits to work with state of the art.
+
+Sanyam Bhutani  41:57  
+Again, I'm really excited about it. I'll have forum topic linked in the description for all of you want to join the group. Everyone and anyone is welcome to join it if, if any of this sounds exciting to you now, I'm also curious of what kind of efforts and planning went behind the scenes. How did you come up with the structure and ideas? How many hours or how many sleepless nights when did went into this?
+
+Zachary Mueller  42:23  
+So I went on winter break recently and that was about a month, so think a month of sleepless nights. But no on a realistic standpoint;
+
+Sanyam Bhutani  42:34  
+More than;
+
+Zachary Mueller  42:36  
+A few times, and at one point, I just decided, well, the fast.ai course jumps from image to tabular to NLP back to tabular back to NLP back to image and I thought that could have done at least a little better and a study group setting. And so I decided let's rearrange everything and focus two months on vision. We're going to start with image classification, and on dance. And that'll cover pretty much everything. And then we'll spend a month on tabular and then a month on NLP and then we'll, you know, get a little more advanced with everything. And so working with this sort of mindset, I then went to, okay, how do I want the scale of the difficulty to go, because you can go really complex really quickly with this stuff and I didn't want to scare people too much. I wanted them to go, okay, this is going to be a little bit more challenging, but that's okay. And so with that in mind, I kind of scaled the structure to be alright, lesson one and two of the course will cover with specifically like the image classification and the custom, we'll do that lesson one, cuz we have two and a half hours. Less than two will cover MNIST and stochastic gradient descent and then sort of work our way up from there. And so I believe in my plan, I have like, segmentation as the following week, and then keep playing the following week, and then basically getting slower, more and more complex, but in a way that I hope won't scare people too much. And so I kind of worked out with everything. So that's how it will be for the images. And then once it gets tabular, you know, we'll spend two or three lessons getting used to, you know, the adults and then the Rossman and then let's go look at Pytorch code. And same for the NLP. 
+
+Sanyam Bhutani  44:39  
+Okay. Now, on the flip side, can you tell us how much effort it took you to get to this level of proficiency and also because study group, taking a study group or even teaching to a study group involves a lot of efforts, both in terms of preparation and getting to the level of confidence where you can go ahead and teach a bunch of people, what sorts of efforts when didn't do it for you, personally.
+
+Zachary Mueller  45:02  
+So the best way that I guess we could go about this would be the first time I ran a study group. When I did, I hadn't finished the course. I knew I wanted to introduce it to the school, but I had not finished it. And so I attack the problems sort of, like, I know what I've worked on a lot. And I know kind of where I've been going with it. But I've been too afraid to you know, go to the rest of it. Well, now I kind of, okay, I'm teaching these even like two or three people, that's terrifying when you're not a good public speaker, usually, at least at that time. And so it turned into a okay, well, I have to get away from that block because now it's not just me. It's you know, people are showing up to have me teach them this, essentially. And so it was great for me because it made me get familiar with everything. Now at the time, that was sort of a broad spectrum. I learned certain things very, very well because I spent a lot of time on it. But a lot of other things I didn't, like GANs I'm still confused by GANs. And I, they terrify me. They still do. I know what they do. I know kind of how they work, but I refused to work with them. And so it's focusing, the best advice that I have on that is focus on a topic and beat it until it's a dead horse, basically. You know, okay, spend a month on image classification. Don't get past less than two and just work on it until you understand a lot about it. All right, now let's go to the next topic. Does this one interest me? NLP, it's hard to train and takes a long time. No, will shelf it. Not gonna forget about it, but I'm also not going to spend a lot of time on it because I don't need it right now. So don't think that the way the course teaches, is the way you have to do it. You know what interests you, focus on what interests you and you'll end up learning a lot more than if you were spreading all your assets out. And so following this sort of guideline helps me get to where I am along with just being disciplined. So, which I'm terrible at doing, by the way, I just fell in love with the library. And so discipline turned into fun time. 
+
+Sanyam Bhutani  47:26  
+Hehe.
+
+Zachary Mueller  47:27  
+And so I wound up working on the library for like an hour to a day, be it reading forum posts, which still counts or you know, seeing what's new, seeing what papers come out, do they have good results, okay, what's Pytorch good. And sort of following this pattern for basically a year, you know, I literally visited the forum for 365 days in a row. That was not 365 days of reading non stop, it's, you know, read a post or two here post or two there, sort of broaden that knowledge. And I might not have done the thing that they're trying to do. But I know this post exists. And I know this problem exists. So you know, if I run into it, hey, there's an answer. And working on that for honestly, even three months of just doing that sort of style, the amount of knowledge and how familiar you get with the library really will surprise you because it surprised me. Because at at some point, my dad had taken the course before me, and I was always asking him a lot of questions. And before he realized that it was the other way around, and before I realized it was the other way around. And you know, just be disciplined, work on it for a few minutes every day. Or if you feel like getting sucked into it, then get sucked into it. I'm not going to tell you not to consign very bad at doing that. But just work on it as much as you want as often as you can, and it'll come naturally. Eventually. 
+
+Sanyam Bhutani  49:01  
+That, now I again want to share a selfish thing that I did with study groups is because I didn't know anyone in my local times, and that point when you do the course, I basically started a study group to invite people to do the course with me. And to the extent, we actually did a poll, and I decided to start it if I got more than 20 votes, it got close to more than hundred votes. So if you're thinking about taking the jump, just take the jump and figure things out as you go about the study groups. That's the best thing I did I, in hindsight, and when you try to devise any concept with a bunch of people, I think it, it helps you find your blind spots in a better fashion and no one is going to call you out. In fact, people will help you identify those things. And it's, it's a, amazing experience if I may.
+
+Zachary Mueller  49:51  
+I completely agree because that was one of the things I struggled with. You know, I was the only one for a while at the school that even knew what fast.ai was. So I basically had the forum to rely on. And generating the study group while it you know, while it was there for others, it was also there for me because I got to see what their issues were, how their topics were going, and showed me some ways that I didn't realize, hey, this could be done this way, or, hey, they're confused on this, why are they confused on this? Let's go see why exactly it's going and, you know, either running or joining a study group is invaluable when you get to stuff like this, because, you know, we're, well, I know you're trying to but I probably for a very long time, won't go and sit in the course itself. And so I won't have access to those resources. So do the only other option and make your own. 
+
+Sanyam Bhutani  50:47  
+Yep. Again, like it's not just a study group, but it's also a learning group for yourself and everyone around. You don't have to be an expert. No one is gonna hold you by the ear if you get anything wrong. You don't have to be an expert you can pick things as you go. That's that that was one of the mental barriers that I had to if, if you're scared to take the jump because of that, or if you're scared to do it because you've just done one lecture, just do it anyways. People will enjoy it and it's more of a collaborative experience. No one is Jeremy Howard, except of Jeremy Howard himself. So just do the study groups, if that's something that you excited, but still intimidated about is my, my take on it.
+
+Zachary Mueller  51:30  
+Absolutely. Like that's actually how I, now that I'm thinking about it, that's how I chose the topics and how I went about approaching them. It's, what was the most scary, okay, I'm going to do the bad thing and save them for the end. So that way, you know, towards the end, I'm freaking out mentally. But, you know, you can rearrange the course and teach it in or at least go about it in a way that's a little bit easier than the very large jump that fast.ai does, which there's nothing wrong with that, just they can take a lot of people by surprise. After you get to lesson three suddenly you're going over GANs you're like what? Uh, and that's okay. You know rearrange it if you have to, there's nothing wrong with that, you're, where you're at is where you're at and as long as you're trying to build yourself up, you know having a team having a study group it helps encourage you to get to that level.
+
+Sanyam Bhutani  52:27  
+Yeah, now coming to this study group that you will be starting, can you tell us how can we best support it and what areas can we move, fast.ai people support in the best;
+
+Zachary Mueller  52:39  
+Uh, show up but yet don't show up. I'm honestly terrified by how many people I'm expecting for this first lesson because mind you all I'm used to was like seven people and then I posted it on Twitter and it's got like 4000 views. I'm like, okay. Um, forgive me, if I'm making any mistakes. Uh, you know, I am doing this in my free time. And if you see some issues, go ahead and just post a GitHub issue with the library, how it is, you know, things change all the time. And also just be patient. Because I, you know, as I said, I am building the course as we're doing the course. And part of that's due to just how the API is being made. And so, yeah, just remember, I'm only a 22 year old student, so I'm doing my best that I can for you guys. Just trust that and don't be afraid to call me out if I get something wrong.
+
+Sanyam Bhutani  53:43  
+And what areas can we best contribute to or any suggestions if you want to contribute to any, any part of the study group? I'll announce this on this interview so that I don't back out with chai breaks, but I'll try to be an unofficial TA for the study group. For anyone else who wants to contribute to it, what suggestions do you have?
+
+Zachary Mueller  54:02  
+Uh really, I guess, take close notice with how the lessons are going and get really familiar with it because I'm trying to build it  in a way to where as we go, you'll, I won't say zero to hero, but zero to close to hero in fast.ai two. And so just help everyone else out who maybe isn't used to that style of teaching or has a hard time understanding how this library works. I hope that your different perspective on something else on this particular topic will help explain a little better. And so really just, you know, it's a community, help people who are struggling. If you have suggestions and topics that you want me to work on, if we have electric time, sure, otherwise, I can help you guys build these notebooks for these topics. And absolutely share them you know, share whatever the work you're doing, whatever work you're having, if you're having issues. So help each other out as best you can, basically, because I can't be everywhere at once. I wish.
+
+Sanyam Bhutani  55:10  
+Also, please take your time with it. I know you just mentioned it took you nine months to complete the first part, it's, it's taken me over then two and a half years and I still haven't completed neither part one nor part two, take, take your own time. There's no rush, you can still learn a lot by just going thoroughly through a part of even the library or the lecture or literally your study group as well. So there's no rush, even though I think you will cover it in three, four months. I know I'll take my time with it.
+
+Zachary Mueller  55:39  
+Yeah, please do. That's why I'm recording it. So that way, you know if I decide not to do it next year, I have the lectures. And that's kind of what I was hoping is, it would turn into something like the fast.ai courses where it's, there's a particular lesson that I can go watch that goes over a particular topic and it might not be close to mine, but it's close enough. And so I can go watch it and then ask any questions if I have some. So that was honestly my goal from this from the very beginning, give you guys a bunch of resources to help you through problems that I've seen a rather common place that people work on, or problems that people have problems on. So yeah.
+
+Sanyam Bhutani  56:25  
+Awesome. Now my final question to you on this topic would be what best advice do you have for anyone who's still feeling intimidated to take the jump into open source or fast day or even deep learning broadly?
+
+Zachary Mueller  56:37  
+Um, pulling your nose into a cannibal honestly, um, it's, it's not as scary as you think it is. I know it's a big library and I know they're, you know, navigating it sometimes can be confusing, but really, it's a mental block on yourself and take it in stride. You know, set realistic goals for as you're going through. It I know some people have done it by going okay, let's go everything that datasource does and learn how it all works down to the nitty gritty. I don't do that. That's not how I want to learn it. But if that's how other people want to learn it then absolutely because now you become an expert in that. I'm more, let's go over everything in a way attacking in particular instances and if something's too difficult for me, figure out why, and go work on the thing that made it difficult for me to understand it, and then you know it could be completely unrelated to fast.ai and could be a coding thing. All right, let's go learn that coding thing and now go back to the problem. And really, it being open source is very helpful. Because if you have a question, the code is right there you can go look at it. And with fast.ai two, you can go run it and go see oh, this is why this is off, is going like that. Okay, and now bigger picture I can go do XYZ.
+
+Sanyam Bhutani  58:03  
+Again I want to emphasize if you're not comfortable with this, is because it's, it's the top down way of learning. Bottom up way of learning has been defined well over, I think over a century now soeveryone knows what to do. But since this is the top down way of learning and it's not as common as I think both of us would wish it were, it, it's 
+
+Zachary Mueller  58:24  
+Yes;
+
+Sanyam Bhutani  58:24  
+It's supposed to make you uncomfortable. It's something new. So if you feel uncomfortable, still do it anyways.
+
+Zachary Mueller  58:31  
+Absolutely.
+
+Sanyam Bhutani  58:34  
+My final question, which actually is from Jeremy is, what do you think of Thai food, which I believe you had the first time in SF when you visited him?
+
+Zachary Mueller  58:41  
+Yeah, so;
+
+Sanyam Bhutani  58:45  
+Hehehe.
+
+Zachary Mueller  58:45  
+Hehe, I went to a conference recently in San Francisco. 
+
+Sanyam Bhutani  58:50  
+Okay. 
+
+Zachary Mueller  58:51  
+And I didn't email Jeremy at the time because we weren't communicating as much compared to like now on the forums, and so at the time, I was like, oh, Jeremy's is big guy. He won't have time for me. And I had made a post saying that I was going to work on the library when I was back from a conference in San Francisco. And next thing I know, Jeremy goes, you're in San Francisco and you didn't visit me and we didn't grab lunch. What is wrong with you?
+
+Sanyam Bhutani  59:22  
+Hehehe. 
+
+Zachary Mueller  59:22  
+So I kind of just had this moment of, okay, I'm getting lunch with Jeremy Howard. Um, this man that I've looked up to, for, you know, the past year and a half. It was very scary, but I was excited. And so we kind of figured out okay, we can meet the next day. Let's go grab Thai food. I was like, I've never had Thai food. Ah.
+
+Sanyam Bhutani  59:46  
+Hehehe. 
+
+Zachary Mueller  59:47  
+I don't know what to eat. And so, Jeremy, I'm very thankful for him. He's so nice and understanding. We got to the restaurant I sit down and he goes okay now here's what I recommend. Man we haven't even said a word to each other and he just starts detailing a list of what I would amd wouldn't like and narrowing down exactly the right meal that I would enjoy. And Jeremy please forgive me but I can't remember exactly what we had. I just remember it was um, I believe something like egg noodles or curry with some sort of wrap.
+
+Sanyam Bhutani  1:00:28  
+Hehehe.
+
+Zachary Mueller  1:00:28  
+I honestly, I'm terrible at that. But without Jeremy there I would have had a heart attack because I did not know anything of what to eat. You know it was actually pretty good. 
+
+Sanyam Bhutani  1:00:39  
+Interesting.
+
+Zachary Mueller  1:00:40  
+And I did enjoy the Thai food. Have I eaten it since? No. But that's because I'm over in Pensacola. Fun fac, we're right by Alabama. We, our food is very southern.
+
+Sanyam Bhutani  1:00:52  
+Okay.
+
+Zachary Mueller  1:00:53  
+ But uh, yeah it was a good time.
+
+Sanyam Bhutani  1:00:56  
+That's an interesting story. Now before we end the call, I want to list down any of the platforms where we can follow you, for the listeners, all of these will be linked in the description, your Twitter, and I think your blog, of course, fast.ai forums, any, any anywhere else that you'd like to mention, any other platform.
+
+Zachary Mueller  1:01:14  
+No, the blog, I haven't updated a whole lot recently, that's just because everything that I've kind of gone through, I plan on writing some more blog, that's a new year resolution. So at least get once a month if I can, um, the forums and Twitter, those three is pretty much where you'll see anything. Especially the forums, I am on there, as we know, every single day. And I tend to want to respond very quickly if someone messages me, so that, that's what I got for you in terms of following me.
+
+Sanyam Bhutani  1:01:47  
+Awesome. Thanks so much Zach for joining me on the podcast and thank you so much for your contribution to fast.ai and also for creating this study group, really excited about it.
+
+Zachary Mueller  1:01:56  
+Thank you. It was honestly a pleasure being on here. Thank you for having me.
+
+Sanyam Bhutani  1:02:00  
+Likewise.
+
+Sanyam Bhutani  1:02:07  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science."
+

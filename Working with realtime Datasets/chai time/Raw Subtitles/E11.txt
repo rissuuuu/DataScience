@@ -1,0 +1,429 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:47  
+Hello, and welcome to another episode of the "Chai Time Data Science" show. In this episode, I'm honoured to be interviewing another one of my machine learning heroes for the second time, creator of MuseNet and member of technical staff at OpenAI: Christine Mcleavy Payne. Christine studied physics at Princeton, neuroscience and medicine at Stanford. She then moved away from science to work as a musician, and recently transitioned into deep learning research. Christine has been an amazing inspiration and role model to me as I'm sure to many others. She has been kind enough to already share her journey on my blog interview series to which you can find a link in the description of this podcast. In this episode, we talk all about Muse net, open AI, and deep learning research and online courses MOOCs for machine learning, deep learning. Enjoy the show.
+
+Sanyam Bhutani  1:58  
+Hi everyone. I am really excited to We'll be interviewing Christine pain for the second time. So she's already been on my blog interview series. Thanks, Christine, so much again for joining me.
+
+Christine Payne  2:08  
+Yeah, thank you for inviting me. It's fun to be here.
+
+Sanyam Bhutani  2:11  
+So during the last interview, you had mentioned that you discovered deep learning by chance, you were like trying to build an app that flip pages by tracking your eyes. So could you tell us like, Where did the inspiration for Clara which if I may, is the like younger, or the Baby version of MuseNet came from during that period?
+
+Christine Payne  2:31  
+Sure. Um, it actually came because I was at that point, just trying to learn everything about all these different modelling techniques. And I was trying to learn about language modelling at that point. And so I felt like I was kind of like reading how this was done. And I was following along but I had this sense that like, Okay, if I really want to learn it, I have to build something on my own. And so I thought, well, like what do I know about I know about music, and so I thought, like, maybe I should just figure out how to translate all these different models to music and then business. would be a way of like, I have to actually build stuff on my own. But also, like, try things that maybe no one's tried before or hasn't tried as much before. Yep,
+
+Sanyam Bhutani  3:08  
+I think I think it's still sort of a very fresh field. So like, could you like for the people who don't have much idea about this? Like, what's the challenge? You're like, why can't we just go modeldotfit or and like get music?
+
+Christine Payne  3:22  
+So that a couple different things, but the thing with music that I find challenging is that it's, it's just this huge range of timescales. So like, if you look at a waveform, like showing that the audio piece, there's like, really, really fine detail. So we'll hear frequencies, like even though a lot of the musical pitches are relatively low frequencies, a lot of what we think of is like, this is what a piano sounds like, or this is what a singer sounds like. It depends on those super high frequencies as well. And we're really sensitive to mistakes in that so like we've really noticed if you get like the sound of the piano a little bit off or little details or if you mess up with a rhythm. And if he says we noticed that. So we're very sensitive to little errors. But then we're also sensitive to like, if you generate a piece that's a minute long, and it just wanders and makes no sense or changes halfway, like we noticed that as well. So there's I think in some ways that where it's in a photo, like we might be, like, in the corner of a photo is a little weird looking or if like someone's hair in a modelled face, it's not totally perfect. Like, we're usually okay with that in a way that if it was the same degree of mistake in music, we'd be like, Oh, that's, that's really weird. So that to me, it's why it's a it's a hard problem,
+
+Sanyam Bhutani  4:38  
+I think because it's such a subjective feel. So like, and these mistakes do lay good, broadly, broadly, like, agreeable to everyone that Oh, that did not sound good to me.
+
+Christine Payne  4:49  
+It's true in both of those things, it is very subjective. But then also, like, I don't know, like even my kids, they're like, oh, that that just sounds bad. Like they tell me all the time. So, yeah, like they definitely, like humans are just very good at like, we're, our ears are amazing. And we're very good at noticing little mistakes.
+
+Sanyam Bhutani  5:12  
+So could you tell us like once you got Clara to work, which in itself was like amazing, like you, I remember you had put up an app very hard to distinguish between, like, if it came from the model or if it if it's from a real human, and I would I would lose weight all the time. Once you had that ready, like how did you find the next idea, so like how to how to improve upon that.
+
+Christine Payne  5:33  
+Interesting. So, um, so basically, at that point was when I started my fellowship at open AI, and at that point, I thought I was going to study some other things. But at open AI, everyone was very excited about this transformer architecture. And so I was kind of I was learning about it on the side there and I realised like, Oh, it's, it's actually really good at doing these sort of long term structure. That music really depends on in a way that before it's power was based on an LSTM. And something that I find kind of interesting is that you can actually hear in the in Clara's patterns that it tends to be a little bit more local. So, you'll hear the model like if it's doing a scale it'll want to just continue on a scale or so it sounds very very coherent in like a local sense. But then if you listen to it for like half, half a minute or 45 seconds you start realising like oh, it's just like stuck in these super predictable loops because it's like there's nothing pushing it to take a risk knowing like oh melody so is go like a thought a thought and then a longer version of that thought, um, whereas with the transformer it's better at better being able to look across the longer distance and so that was that was sort of my thought of like, okay, let's see what happens if we try this this very different architecture.
+
+Sanyam Bhutani  6:50  
+And I think like I I'm not an expert like you for music so to me like Clara sounded somewhat like repetitive in a in a theme suit like that.
+
+Christine Payne  7:02  
+Yeah, no, that's exactly it. So to me that repetitiveness is guessing like the safe guess of what to do. So like in music, the safest thing to do is just about like, just keep playing the same thing over and over and over. And you have to kind of be more confident. Or you have to have a better sense of long term structure to think like, okay, I've been doing this too many times, like now is the time that I should move on. You have to have a better sense of structure to do that.
+
+Sanyam Bhutani  7:27  
+So I actually tuned in to the complete concert of music. One thing I want to ask you is that I couldn't I remember that you were kind enough to share a piece before like it went live with me. Then and even during the concert, I couldn't make the difference. Like even my friends who aren't from Tech background, couldn't tell if it's from a human or if it's a generated
+
+Christine Payne  7:48  
+so interesting.
+
+Sanyam Bhutani  7:50  
+One, one question is like, uh, was that cherry picked the concert or was it like, done live?
+
+Christine Payne  7:57  
+The concert like literally the day Before Greg told me like, oh, it'd be really cool if you do a live concert with like, what? I so yeah, no, there was no cherry picking. I didn't, I didn't listen, like I literally listened to maybe a minute or two, just to like, make sure I had my setup. Correct. But like, honestly, I like when I logged in to start listening. I was like, this could be a disaster, like, I have no idea what's gonna happen. So like, there was there was no cherry picking. There was no even like, if I were gonna do it again, I'd probably like at least try to choose prompts that I thought the model would do well on or something like that. But this was like, that was totally random.
+
+Sanyam Bhutani  8:35  
+I mean, mode speaks to the model also, because like in research, people usually cherry pick the best results or for generative modelling. They pick the best images to showcase or usually it's unique in the sense some things Yeah,
+
+Christine Payne  8:48  
+yeah, no, I agree. And I also like totally understand that instinct, because and even if you know human composers, we do that too. Right. Like our human artists, not like human artists, just like publish everything they ever create. Like we have tonnes of like good ideas and tonnes of bad ideas and like you don't want to show off everything. So like I, I think to a certain extent maybe that's part of creativity is like, generate a bit of everything. But yeah, it I did appreciate Greg sort of pushing me to be like, not just show what the model can do now, like don't pretend that it's better than it is like, so show that it's good. It's something that's bad at some things and just kind of just put it out there.
+
+Sanyam Bhutani  9:25  
+Okay. So to the people who don't know what newsletter is, maybe if you could give a 50 foot view of it and how does it generate so realistic sounding music?
+
+Christine Payne  9:36  
+Sure. So, so, um, you said is it draws inspiration from the way language models work right now, which is, so what you do language modelling is you train a model on the task of guessing what word is going to come next. So humans tend to be pretty good at this we sort of, we hear a sentence and often we can like finish what we think the person is going to say next. And and the idea is that a language model is good. If it can also do this task of guessing what are plausible things to do. And you can imagine, the nice thing about that is that as you get good at that task, there might be, there's some times when there's only like one word that could possibly come next, like usually you don't want to mess up verbs, you don't want to mess up. You know, certain things you don't want to mess up. But there are lots of times when you could think like, Oh, actually, there were like, four or five different words that are all could make sense here. So going back to the set, I do pretty much the same exact thing, except instead of training you set on the task of what word is going to come next I'm doing what note is going to come next. And so there's a little bit of challenge to figuring out since musics a lot, like everything happens at once, and then you move forward in time and then a lot of things happen. So there's not quite the obvious like one to one translation, but but a lot of it is basically how you can get music into this format where a model can learn the same thing like that.
+
+Sanyam Bhutani  10:54  
+So essentially, you've converted music into like text generation, probably Basically,
+
+Christine Payne  11:01  
+yeah, yeah. So it's very similar to that I, the models not exactly the same as a text generation model in that I do give it some information about the timing. So it knows, it's this sort of position embedding has also information about where it is in time. But otherwise, it's a very similar kind of model.
+
+Sanyam Bhutani  11:19  
+Yeah. Okay. And also like music, like in language, you just have a single word going. And you next have the probability of like, what could come after that? And yeah, maybe I think it works on multiple instruments now. So how do you like take care of that? And how do you like, transcribe multiple instruments and generate for that?
+
+Christine Payne  11:40  
+Yeah. So. So right now, I mean, that is based on a MIDI format and MIDI to a sort of simplified way of representing music where you get all these messages to tell you, this instrument turns on at this volume, and then you get a sign. That's like, now wait. For a certain amount of time, and then maybe this now that note turns back off. And so there are all these events based kind of things. And so I sort of use a modified version of that as the tokens. So the same way that you know, for for language, you have the tokenization problem of how are you actually like, what are you actually going to feed into the model? It was sort of the same thing for music.
+
+Sanyam Bhutani  12:22  
+Okay. And using it, I think it's based on top of a transformer model. So was this like a collaborative effort for you? Because I think open a has a lot of experts who like created the GPU to model and they did you like work with them? And it was the expertise helpful on how did you like, experiment, that Transformers might be the way to go with this?
+
+Christine Payne  12:44  
+Yeah, no, absolutely. Sort of.
+
+Christine Payne  12:47  
+Yeah, what I think GPT GPT. Two were really pushing the idea of Transformers being good at this and then around the same time that I was playing with music people were also playing with, you know, can you do this on images Can you wait, what else can Transformers be good at doing so? So yeah, like we had like, Oh my gosh, we had so many different versions of the transformer floating around the office and like eventually it kind of coalesces on like this is actually a good version, but, but it was kind of hilarious. So yes, a lot of people were interested in it and trying out different things. So yes, it was not like I was trying to figure this out. Totally on my own, in a way.
+
+Sanyam Bhutani  13:25  
+And like, do you think it speaks to the versatility of these transformer models? Or is it also about like, how you manage to convert music into this problem? So after like processing the MIDI files in older efforts?
+
+Christine Payne  13:39  
+Yeah, no, I think it's a little bit of both. I think.
+
+Christine Payne  13:44  
+Like the the reason we're interested in it as a research group is that we're looking for algorithms that are actually very general. So you know, you the ideal, right would be to have a either neural net or some sort of architecture that's able to learn about Music, it's also able to learn about videos able to learn, like we, as humans can learn all these different things, right, so. So the end goal really is to find algorithms that are very broadly applicable. So they certainly like a big part of that. Um, I do think that like, where things are right now, there was a lot of, you know, I've tried variations of how you tokenize the music, and it tends to be sensitive to that. You know, certainly gathering a huge data set was really important decisions on it, there were a lot of smaller sort of smaller decisions that I think impacted how good the music ended up being. But I think that like eventually, we're moving towards the direction of like, we should just have models or architectures that can just learn.
+
+Christine Payne  14:47  
+Yeah, yeah.
+
+Sanyam Bhutani  14:49  
+I know. I'd also love to know more about the data set collection because one thing like I really love the angel piece on the website, but like, even when I'm doing this podcast, I am like sort of cautious About the copyright issues, and also, how much effort went into that. And also about the size of the pipeline, and what sort of hardware went into this, like Final amusement mode?
+
+Christine Payne  15:12  
+Sure, sure. So let's see. So on the data set,
+
+Christine Payne  15:16  
+there a couple different things on that side. So one
+
+Christine Payne  15:19  
+is original. Originally, I wrote to a few different people who had big meaty collections. So like bit Nidhi, just donated, to me their collection, which was like a 200,000 MIDI files or something of that, which was fantastic. And also classical archives did the same. They have like, you know, 20 to 30,000, classical pieces. So that was a great start. And then I sort of did a combination of everything, a little bit of browsing around. If I found like big collections that were just available then I just like use beautifulsoup to to scrape websites or things like that for collections. There were composers who sent me collections, different things like that. In terms of the Copyright. So I'm not a lawyer, this is not to give legal advice. But my understanding of the way things are currently is that neural nets are able to train on pieces, even pieces that are copyright pieces. But that we're not able to like sit around and listen to the data set and enjoy it or like it, you know, anything like that we're not supposed to do but if as long as the model is only using it for training, and then on the other side, like, we can't be like generating a copy of a piece and then publishing it and pretending that it's a new piece, right? And I'm not so certainly like you can't, you know, like, hopefully miniscule probability that the model could generate a copy of something like you couldn't bend publish it and pretend that
+
+Sanyam Bhutani  16:50  
+in terms of like using this as a creative tool, so for like many vloggers and YouTubers and all all sorts of people like they could maybe just like Once music is available as a platform, they could just like generate some sort of music and use it directly for whatever they they project is. Yeah,
+
+Christine Payne  17:09  
+Yeah absolutely. I mean we're sort of open it up and said like we we're not making any claims on what the what the model outputs like we have no copyright claim on it and then yeah, I it's a very much an open legal question. And that this is even within the US that I sort of only barely understand what's going on and so internationally I have no idea if different countries have different rules about this but um, but yes, yes, please consult a lawyer.
+
+Sanyam Bhutani  17:39  
+But but it's definitely an interesting feeling to be able to automate this and also like curious on your music background. So did you like also compose music for the audience? Like there's a difference between composing music and performing? So yes,
+
+Christine Payne  17:52  
+yeah, no, absolutely. Um, I have tried composing and I'm really bad at it. I wish I I wish I could like it's something that I have Like always wish I knew how to do, I can
+
+Sanyam Bhutani  18:04  
+show that to you into hidden created a model to do it for you.
+
+Christine Payne  18:07  
+Like I have to admit it's kind of satisfying. Like I always sort of, because I feel like in some ways as a musician, like that's, you know, it's neat to be able to like play and play someone else's piece. But there's something super satisfying about like, Okay, this is my piece. This is something I created that's new and different. And like I do, as I was kind of getting into the project, and as the music was starting to get better, I was like, Oh, this is like it's actually sometimes like artistically satisfying that you're like, Wow, I've like actually created something that's starting to generate, you know, legitimately interesting good music.
+
+Sanyam Bhutani  18:41  
+So what's your take on like, the creative a topic, so are you are you on the side of automating or having the human in the loop. So you use maybe such a model to like, give cues that I want to be that melodic and uplifting and then you can build your music on top of that once you have the bass beat.
+
+Christine Payne  19:00  
+Yeah, I mean, I'm certainly most interested in pieces that are kind of partly reflecting humans. So, like, to me, what's really exciting about music is is the fact that like, say, I would like to be able to compose, but I can't compose, and this is like, but I can sort of, like I, that's why I did the sort of co co composer mode that we have up on the blog, where the model gives you like a couple different ideas of how to go and you pick one and then it'll generate more and then you pick that and you can kind of go along this way. And, to me, that's a lot more fun and interesting, then, you know, press a button, and then Although, I can also imagine it being fun to say, like, you know, today I want a piece that's bow like, I want to go running and I want a piece that'll you know, make me want to run faster at this moment or something like I can imagine not being fun or, or you know, like, say someone's getting married and they want to have like the perfect like, this is our love song song and you could imagine like, you know, not use that but like news that 10.0 or something like that, like generating the perfect, perfect piece for someone. So I, but I think all of these still have, like that they're reflecting, like the emotions of a person or they're roughly You know, they're still reflecting some sort of human creativity
+
+Sanyam Bhutani  20:18  
+which I think is like music It's such a subjective thing. Like, I don't have songs that match with my friends playlists most of the time so yeah. Um,
+
+Christine Payne  20:30  
+and in the way that like, we might make a playlist for someone now it'd be like, Oh, this is the kind of things I like now you can just be like, this is the song that is actually what Yeah,
+
+Sanyam Bhutani  20:39  
+so we think like this will also push composers to be like more creative because you like you can also already like you can cue put put some cues in and generate music so that will give them more ideas maybe allow like, as you see like a creative humans to be more pushes humans to be more creative.
+
+Christine Payne  20:58  
+Yeah, I mean, So, this one composer in particular who I've worked with a bit on this, and even to the point where I've trained the model on his music, so then he can write a little bit and then the model will kind of suggest different, okay, like, different next ways to go or will kind of react to what he's written. And, and, and I think he, he thinks it's sort of this funny experience where it's, you know, it's often sort of imitating a style not quite getting a style, you know, it's not, it's certainly not as good as like, what a human fully, you know, especially when you get to like long term structure or a piece or something like that, like the model still has sort of little funny quirks. Do you think that that experience of, sort of, you know, the model is really good at here or, you know, 64 different possibilities of what you could do next in a way that humans sometimes get locked into, like, Oh, this is this is where I'm going. And so it's in terms of creativity. It's neat to be bumped into, like, all these different kinds of possibilities. Yep.
+
+Sanyam Bhutani  21:57  
+So do you think like since you had the background Don't always about music, and you will look in the transformer model. And I think you're what you just spoke about that this model tends to wander off into different directions, I suppose also visible in the right. Example shared by open a about their model. So do you think like this help you debug? Or maybe understand Transformers better is like this could be a key to like, you know, push to search further for these models, because these are relatively just just fresh cutting edge. Yeah, that's coming.
+
+Christine Payne  22:28  
+No, I do find it really interesting that I feel like I can understand a little bit more of what the model is good at and impact it that way. be partly because I think in music, you know, you can look over like, say the course of 1000 tokens or something like that, that's like, it'll be like a lot to read in the text and to try to figure out patterns in written texts. Whereas in music, you could hear like, oh, there's like, it was doing really well. And then at this moment, it kind of got off on a tangent and it didn't realise or it messed up the rhythm or it messed up like already. Like turned on this note here and then forgot to turn it off later like the, I think little mistakes are much more obvious. So I think it does sort of give some some insight as to what the model is able to do. Also in terms of like, calculating the rhythm is actually can be a pretty complex mathematical problems. So because it I am not ever like telling the model like this is how a musical beat goes. But if you think of like, you know, say you're like dancing along to a piece, where there's often like, a lot of little things that happen in between the main big beats that we hear. Yeah, and the model has to figure out like all these little like, say it commits to play this note here, it has to figure out how long to wait to get back to that main dig deep. Because if it miscalculates and puts that main beat at the wrong point, then like everybody hears like, Oh, wait, that was like you, you just had a missed up there. So so I feel like it's a little bit pushing what the model can do in terms of math. What the model can do in terms of Copying something from a long time ago? Yeah. So there are all sorts of like interesting problems that are related to what you might run into in text but, but different. So it's kind of fun to explore.
+
+Sanyam Bhutani  24:11  
+And what was really, since we talked about neural it being a black box model. So your knowledge about music was helpful like in debugging this model. And like, maybe you were able to understand what's really going on. When when you were working with this, like still prototyping it
+
+Christine Payne  24:28  
+a little bit. Yeah. And I think in some sense, like what I was saying, but the difference between the kind of music that lsdm generates versus the music that a transformer generates, like that, to me, it's really interesting. And I think like having those sort of instincts. It kind of gives a little bit more perspective on what models can do and not do. But yeah, certainly there were times where I would, you know, I remember one in particular where I like messed up masks. The model was, you know, as it was like generating what it was To look back to and what it was not supposed to be able to look back to, and I like messed that up a little bit. And it was a funny space because I would listen to the generations and I was like, Okay, well, they're not bad enough that I've like, totally messed up the model. So I know it like it can't be it. Yeah, like it was really interesting to be like, Oh, I could kind of like figure out what was wrong with the model based on, like, the kind of guesses it was making and the way it was messing up the pieces. So so that was kind of fun, too. I was like, Okay, I'm actually legitimately debugging by listening to problems right now.
+
+Sanyam Bhutani  25:32  
+But that's super interesting. I think it's this is one of the unique things with that that's really possible in a two manner.
+
+Christine Payne  25:38  
+Yeah. Yeah. No, that's actually one of the things I really love about deep learning in general is that, you know, you have these tools and then, you know, you could kind of spin and apply it to a really different field and there's a lot of carryover.
+
+Sanyam Bhutani  25:51  
+I think that's, that's, again, like we just talked about the human in the loop concept comes into play. So that's where the human creativity or like the human assistance also plays a role.
+
+Christine Payne  26:01  
+Yeah,
+
+Sanyam Bhutani  26:02  
+I want to talk about the framework and hardware. So how much of hardware resources went into training? Like the final piece that sets available only? Yeah. Okay. Clara was based on PyTorch and fast. So does it also follow the same approach and maybe to like this, this get get a hint of, are you on the Python side of things or TensorFlow? Which framework Do you like, oh, where
+
+Christine Payne  26:25  
+am i right now? I've been jumping back and forth between the two. Okay.
+
+Christine Payne  26:34  
+So one of the things that
+
+Christine Payne  26:37  
+that transformer architecture took advantage of was Scott grey, who works here at opening I had written these really nice current like a kernels for the TPU. And so this block sparse system that he had created, which just made certain affine transform operators are the TensorFlow operations really fast and really efficient and meant that I could just have a deeper model and, you know, something that just wouldn't have been possible any other way. Now, you know, I I personally like working in PyTorch. I mean, it kind of seems like I don't want to commit now. But more recently, I've been kind of returning back to PyTorch and trying to explore some of the same stuff there. But But yeah, that was that was a big part of how I ended up in tensor flow. Because for for this, the size of the model really did matter. And I did feel like I was just trying to like squeeze as much out of this.
+
+Sanyam Bhutani  27:38  
+So I'm trying to think like, how much of like this research, can we push further? Like if I'm trying to replicate this on a single machine? And do you think like, any areas that anyone else could, like push the model further improve it in any like, loops? Maybe?
+
+Christine Payne  27:54  
+Yeah, that's a good question. Um, I mean, certainly, I think Do you feel that the way that you go from the music to the encoding to the tokens matters a lot, and so finding, finding like good systems for that with better one of the things that that still sort of fundamentally bothers me is the the way that we sort of generate by just predicting the very next note, and then based on that, you generate the very next node. And it's always this like, just looking ahead kind of thing. Whereas I feel like, you know, as musicians, or even as we're talking, like, we're never ever thinking like, oh, what's the very next word, I gotta say, and then the next word, we're always thinking in like, higher concepts than that. And so I think that like capturing that would, would make a big difference. But yeah, also in terms of like, how humans can can guide what the music's like, I think it'd be fun to be able to say, you know, like, to try to push a model to do more like, what is the sad music sound like or things like that, I think. But yeah, you're right. I do feel like You know, more and more, it's tough to do some of this without having like, it is a luxury to have a lot of compute and that I can just, you know, have an idea and try it out. And I do understand that that's, that's it. It's a luxury at this point.
+
+Sanyam Bhutani  29:13  
+Because like, in my experience, I just have one single GPU only I have two GPUs this laptop and rig or deep learning box. So Transformer models are sort of tricky, because I cannot play during the evening if I put anything to train you for evenings in a row. So I think in the development phase for everyone.
+
+Christine Payne  29:32  
+Yeah. No, it's true. I think that is a hard problem. Yeah, I mean, I hope maybe we'll be seeing horror like partnership. I like I love the idea of like, you know, if we can sort of bubble up ideas and then you know, like partnerships where people can use some of this compute that we have, but I this is beyond what I have.
+
+Christine Payne  29:55  
+expertise, their powers.
+
+Christine Payne  29:57  
+degree but yeah,
+
+Christine Payne  30:00  
+Yeah, I think that's a real trade off. Because I, I haven't had the experience where, you know, you can, you can push on all these little design details. And then you just step back and you just train like a deeper model with more data and you're like, oh, why did I just spend all this time fine tuning it? Because like, it just learned, you know, if you just scale it up, it's you know, and I think everyone is sort of hitting this, like, should we just push scaling for a while and see where that takes us? Do? You know, presumably, at some point, there's, we're gonna hit a like, okay, there are other things that we've missed. And we do, we do actually still need people to be like, finding these little tricks. But yeah, I think that is just a tough problem. And it's something we started here at open AI. And also just, you know, more broadly, I think everyone's wondering about this.
+
+Sanyam Bhutani  30:46  
+I think one thing also like that might help as like we improve upon language models. So for example, as we transition from LSTM's being most famous to transformers, getting the like, fame, that's how I think Usenet even progress will be Maybe the next big model might also be a stepping stone.
+
+Christine Payne  31:05  
+Yeah, yeah, I know for sure this, you know, they're probably, I assume they're still just like basic. Yeah. No, I think everyone always laughs at like, sometimes, you know, an idea comes out and you're like, oh, that was so simple. And it was like, so beautiful. And how did we not think of that sooner? And I think like, the guild is young enough that it's still wide open for those kinds of things. Mm hmm.
+
+Sanyam Bhutani  31:29  
+Okay, so now I want to like sort of shift gears and also talk about your current role. So could you tell us like, what project are you working on now? Is it still amusement or any other project? And what is the day in the life of a technical member? Right open?
+
+Christine Payne  31:43  
+Sure. Um, yeah, I mean, so I think you said it. I'm sorry. I'm hesitating because like a lot of what we do is, you know, sort of research where we're testing out like different ideas and a lot of that face internal until like, Okay, this is what's gonna work or this is not what's gonna work. But yeah, so right now I, um, I like Personally, I am still interested in music generation at this point, I'm trying to I feel like there are like several different directions that are kind of exciting next steps. Like, I do feel like there's more to do on the Navy side of things. Like we haven't even scratched the surface on, like a lot of MIDI files also include lyrics, bay foods, you know, maybe different ways of kind of getting getting better at long term structure or getting better at kind of being able to let the human decide what the piece should be doing. But then also, I think it's fun to think about what's possible on the raw audio side of it and so, like, you know, yeah, basically, would it be possible to generate long term stuff with cardio and said, but a lot of it is, you know, it's, it's kind of the fun thing about being here, but you just don't Yeah, you can have an idea and push it for a while and like Fingers crossed, hopefully something comes through that.
+
+Christine Payne  33:08  
+That'll be good. But it's it's tough though
+
+Sanyam Bhutani  33:10  
+because, you know, nothing works until it doesn't in deep learning.
+
+Christine Payne  33:13  
+Yeah, it's, it's not like other. I feel like a lot of other like programmes or projects, sort of like, you work for a month and you're like, Okay, look, I've done something like I have, I'm like, a month better off than I was. Yeah. You know, then, whereas this, you know, sometimes it just feels like you try a lot of things and nothing works and nothing works, nothing works. And then like, suddenly there's a jump and you're like, Okay, like, it was worth it. I guess, first of all that time because I wouldn't have gotten that jump otherwise, but a lot harder to be like, I literally could have gone on vacation for the month and like, I would Yeah, but you know, but I guess it's it's just it is that sort of like you have to try a lot of experiments and and find what doesn't work. Also, I'll do
+
+Sanyam Bhutani  33:56  
+how do you draw that line? So like, maybe like you want to explore further Or like put that experiment to an end? Because like when you started this, I think magenta from TensorFlow was the but not many people talking about music, and deep learner. So then like it was perceivably perceivably impossible problem. So when you're working on an experiment, and it doesn't work, so where do you draw that line? When?
+
+Christine Payne  34:21  
+It's a tough question. Um, like, sometimes I think, yeah, there's probably a certain stubbornness or just being like, I'm just gonna keep pushing, because I like to think that something should work. I'm a big fan of, like, trying to do something that's, like, simple and dumb, but like, maybe at least gets a signs of life of sort of, like, maybe there's something here.
+
+Sanyam Bhutani  34:45  
+A basic sort of small MVP model of sorts.
+
+Christine Payne  34:48  
+Yeah, just just trying to sort of think like, Okay, what is like the simplest version of this so that like, you know, maybe there's some way of just like, yeah, exactly right. And that sort of gives you like it That works and you're like, Okay, maybe there's something here like maybe now I'll like add on to it a little bit and kind of push it that way. But that tends to be my approach yeah cuz otherwise there is this like you're just wandering around and like how do you get any signs? Yeah, like our like reinforcement agents are just like wandering right? Like you need to get a reward every once in a while so they know they're like on the right trail.
+
+Sanyam Bhutani  35:24  
+And like as you will get open and open it of course has like the best people from good and good traditional background in research. So do you think like that has affected in any way how you do you experiments or any takeaways that you had from that?
+
+Christine Payne  35:39  
+Yeah, I mean, I that I definitely feel like I still have a tonne to learn on this side. And it's maybe one of the things I'm like most trying to get better at at this point. I think originally I was just in this mode of like, I sort of have like a bunch of different experiments going on and I was kind of feeling my way through like the scenes like This is doing a little bit better. And I would follow that for a while. But I was not really very good at having a sort of structure of like, Okay, I'm going to run these experiments, I'm going to graph it this way, I'm going to, like really be clear about like, I made this one change, and this got better. And the more I learned from other people here, the more I'm getting better at like, okay, like, kind of make sure you have like a clean it's, it's worth it to take the time to build like a nice clean setup to to have something where you can, like, look back a couple months ago and be like, this, this experiment went this way or that way. And, and I think it's something that like, I feel like I'm really bad at like people, people sort of push on the, you know, like, Is it necessary to have a PhD all this sort of thing and I'm like, you know, maybe you can learn this stuff and I'm trying to learn this stuff on my own. But I do have a lot of respect for like, I think these are the kind of things you learn when you've gone through this rigorous like, this is how you do experiments. Well this is you know, how you read a paper and pull the most important things out and like I'm these are the kind of things I feel like I'm doing To learn from the people around me now,
+
+Sanyam Bhutani  37:02  
+It's really like being a lab scientist. So having that lab Journal of sorts and documenting every step of the way. Like personally when I am like, for example, doing a kaggle competition and things don't work out, I'll just delete every file that comes in front of me and not be bogged down instead keeping a note of what didn't work out. I think that's that's what I'm, yeah,
+
+Christine Payne  37:24  
+yeah, I it's something I struggle with. And I'm trying to get better at that. But, but yeah, really keeping like clear, like knowing like, Oh, this is the change I made so that when I've broken everything I can, you know, figure out how to how to get back to stuff and yeah, it's just, you know, it's probably obvious things but things I still managed to do badly so I do feel like I'm still figuring it out as I go.
+
+Christine Payne  37:48  
+To learn from everyone around me here.
+
+Sanyam Bhutani  37:51  
+And just how does like research pipeline for you look like? So how do you get an idea of running an experiment and how do you like ask questions when you find an idea as to when you start, like, maybe experimenting on, a new sort of transformer comes out, let's say, I'm just trying to think of putting things for example. And you want to try that out. So how does that pipeline look for you?
+
+Christine Payne  38:16  
+Um, I think it sort of depends.
+
+Christine Payne  38:20  
+Like the around looking like right outside here, they're like three people huddled around a whiteboard. And I'm sure like, they're doing this sort of thing where like, you have an idea and the need to, like, try to hash out like, what exactly it is. And like, I feel like I do this all the time to where I you know, you just have, you know, have this sort of early thought of like, I feel like something should work, but it's not totally clear. And so you try to like, I'm constantly destroying pictures of like, what I think should be happening, what I think that I try to think a lot about like, Okay, what is the model like? What sort of information is the model seeing what does it have to learn? Like, like, Is it realistic that it's able to like pull this information from that input? And so sort of tried to visualise it first or kind of have that instinct for at first. But then it's a lot of just like once I have a clearer picture of that, and I do try to, you know, either it's usually just a matter of Yeah, like coding up that idea, trying to compare it to the previous version. Yeah, a lot of Yeah, looking at graphs and trying to see if, okay, there's a clear difference of things. Yeah, I guess the usual sort of steps at that point. But yeah, I do feel like I tried to spend a good amount of time just brainstorming and kind of bouncing ideas off other people as well, because oftentimes, that's where someone's like, oh, there was a paper about,
+
+Christine Payne  39:46  
+like, go look at that.
+
+Sanyam Bhutani  39:48  
+Okay. Oh, also, what would be your best advice, like, if I may, you know, from a traditional research background, so, someone who's like taking the MOOC education But only in education, but I'm trying to get a break into research. So what would be your best advice or things to look out for? For them?
+
+Christine Payne  40:08  
+Yeah, um,
+
+Christine Payne  40:13  
+see, so I feel like there's sort of multiple parts of that, like I so, for me when I first took, like, I took a enterings deep learning sequence first and, and I think at that point, like, I felt like I was getting the concepts but I didn't feel very comfortable with like coding anything up on my own at that point, like, I still felt like everything was was really overwhelming. And I think I think sometimes it's helpful just to like, go into something and be like, Okay, this is not like, I'm not going to feel fluent in this in a month or something like that. It's like I will feel much better in a month than I do now. But it's like, you know, it's it's really normal to just have everything feel kind of too overwhelming for a while
+
+Sanyam Bhutani  40:52  
+it was mentioned like coding programming is like going to the gym, everyone's better than you and you keep doing it and eventually you will get better Without you Yeah.
+
+Christine Payne  41:02  
+It's funny, I actually like just just a couple days ago was thinking like maybe one of the best things about playing piano is that you constantly you're trained to constantly have this feeling of like you open up a new piece, and you're back to scratch. Like you're like, yes, you're better than if you had never played piano again. But it's like, honestly, like, you look at a piece and you're like, Oh my God, this thing is, like, this is a huge piece. I'm never gonna learn this in time for the concert. It's this, you know, and you just, like, constantly have this feeling of, like, how am I ever going to have this whole concept fit in my head kind of thing. And then you just learn like, Okay, well, like, today, I just need to start with this first page, and I'm only just gonna learn this opening and it's gonna be slow, it's gonna be horrible. And then the next day, you know, and it's, it's just, you kind of get used to like, okay, it's just gonna be bad for a while and you sort of have that discipline of being like, it's okay. Like, I it's not like it's not like it means that I'm a bad pianist or a bad programmer or whatever. Like, it just means that like this is literally something that I've never done before. And there's no reason I should know it. Yeah, I think in some ways, one of the nicest things being here at open AI is like, if you ask anybody about an architecture or something that they haven't done yet, they're also like, I don't know, like, exactly. That's gonna be like so and, and yes, like there's, you know, they're smart and they will learn and they'll figure it out kind of thing, but it's like really reassuring to be like, okay, like, literally nobody just magically knows this stuff. It's like, you go through and you learn it.
+
+Sanyam Bhutani  42:33  
+Good. you confirm or deny, like, once you research can you just think of like, magically appears in your head? Does that happen? Or do you still sometimes struggle with
+
+Christine Payne  42:43  
+those? I don't know. I sit next to Alec Radford, and I'm pretty sure that is like how his brain works.
+
+Christine Payne  42:50  
+But maybe for you, For me, no. I mean, I I think I've gotten better at that.
+
+Christine Payne  43:00  
+But yeah, it's still, I still feel like it's something that I'm learning and have to work on getting better. Like, I think it's like anything where that's a skill that like the more to the fellowship programme here literally is, here's a paper now coated up kind of thing. There's, there's like a several, several weeks of that. And I think that that's a good skill to go through or a good thing to practice. Yeah, but I do think in some ways, one of the frustrating things about papers is you take, oftentimes, you take an idea, that's like a clear, nice idea. But then it has to get sort of presented in a, like, a more elaborate feeling way. I sometimes feel like reading paper is just trying to like, undo and go back to like, what was that? Kind of like, actually core idea? Hmm.
+
+Sanyam Bhutani  43:46  
+So like, one of the problems that I always struggle with, and I'm doing a couple of communities who many people tend to do is like, they feel like I feel I'm not good at Python. And I want to do like some deep learning project. So what do you think like, should Spend some time on me we like doing Python problems or just like, what I do is clone any project and start running it start tweaking things and then get a hang of stuff. Yeah. How would you do that?
+
+Christine Payne  44:14  
+Yeah, I've done both of those. I did. Especially preparing for interviews I, I spent a while doing I really like hacker rank. So I like went through all of the like it, you know, and I especially I felt like okay, I don't have a computer science background at all. So like, like, I'd need to learn all this stuff. So So I did go through they have like a Cracking the Coding interviews. I spent a lot of time going through that. I like binge watch. What's his name? centrex algorithm is like algorithms classes on YouTube. So I just learned how they're doing that whole series. Yeah. So like, stuff like that I did go through
+
+Sanyam Bhutani  44:52  
+but like I have a CS degree, for example, and many all the time. So yeah.
+
+Christine Payne  45:01  
+Okay, so I did that because I didn't have your your background kind of thing. But um, yeah, I kind of go back and forth between both. Like, I think there's a lot to be said for. Yeah, like being able to take existing code and tweak it, but I think it's like, it's very liberating to be like, okay, I can start from a totally blank screen and like, and make a model that works like, and I think just kind of like, like, I remember that, like, it just, like, felt a little overwhelming and impossible at first, but like, it's just, ya know, so I do think I'm practising even with, like, some simple models and just be like, okay, that's actually in some ways, like, why I started out with the music thing in the first place was I was like, Okay, let me just, you know, not only depend on somebody else's code, but let me practice just writing something up from scratch. Because I do think like, yeah, once you sort of cross that point, then then the possibility like the the number of things you can try out just opens up a lot.
+
+Sanyam Bhutani  45:56  
+And I heard also reached out to you when I was preparing for the Google AI residency? And I didn't like I was sort of scared of the NDA. So I didn't tell you anything, but I was sort of secretive about it, but getting like shared many advices that were, like, pretty helpful to me. And then I realised that all of these programmes sort of follow similar structures. Who could you like? Maybe for the audience, like would tell us what are your best go to resources for a whiteboard or a coding interview and for the research interview, so that most of the interviews follow these format, I think,
+
+Christine Payne  46:31  
+yeah. Um, so for the coding interviews I get that was where I did just practice a lot on hacker rank, and I felt like that that was the most useful for me. Like I felt like by the time I to be like, by the time I got to, like, the medium level questions being easy, then I felt like okay, now I'm ready and that that's been my experience. So far. I've done a few different interviews and like everything As has been at that level in terms of deep learning one so that I don't feel like it's tougher because I think it's still pretty wide open like it. Yeah. So you sort of never quite know. Like the open AI questions were a little bit all over the place. And the nice thing about it is I felt like it was they were always kind of fun and interesting problems. So I remember going through the interviews being like, well, if nothing else, this is like entertaining to try to figure out how to solve this problem, because like, it was interesting. But I remember I would like cram the whole week tried to prepare for the interview, and then it was like, never anything close to what I'd say.
+
+Sanyam Bhutani  47:39  
+That was similar for my experience, also, for the Google a residency. Yeah. Yeah, I think your advice about the medium questions was definitely very helpful. So I read like, a bunch of medium and hard questions. And unfortunately, it didn't get selected, but that was definitely helpful. So I didn't realise that.
+
+Christine Payne  47:58  
+Yeah, yeah. I think just Cuz at the end of the day, like, I don't feel like the whiteboarding coding set. Like, it's not really the kind of stuff I use on a day to day basis anyways, but I do feel like you know, okay, it's, you might as well like, it's just like a specific number of things you have to learn there and you might as well just feel fluid so that you don't get, you know, caught up or nervous or something like that on
+
+Sanyam Bhutani  48:18  
+Got it. Also, like in your interview on like the blog interview, I'll have that linked off. And also in your blog post learning deep learning. You mentioned that you echoed Jeremy Howard's advice about doing one project and really like pushing it to be the best format but advice you have for the people who don't have that idea. So you had your music background and you had your idea, but for someone who's still exploring and still looking for that idea.
+
+Christine Payne  48:44  
+Yeah, that's a good question. Um,
+
+Christine Payne  48:49  
+yeah, I mean, to a certain extent, I think it's, it is okay, just to explore for a while, um, I guess for me like what my idea is, I've always kind of come from my like, outside of day to day life, it'll be like, I'm watching the way my kids are learning. And I try to like, think of like, how could I do that better? Like, how could I build something that would help them or it was like, while I was playing piano, or anything, so things that maybe just try to think about things you run into in day to day life. Like, I think everyone that advantage we all have coming into, like deep learning or AI world is that we have our own life experiences that are just like, probably wildly different from most people in the fields. And I think, you know, that aspect of like, how could I apply this to some topic that I know about that, that somebody else won't know about at all?
+
+Christine Payne  49:42  
+That to me is worth sort of really interesting.
+
+Christine Payne  49:47  
+for ya. I don't know. That's a good question. I guess also just talking to a lot of people talk, you know, hearing some, for me, often ideas come from, you know, sort of, like a fledgling thought, but then it's only when I'm like talking back and forth with other people than I think like, oh wait actually this is like this was totally the right thing to do but the other you know, something else is much better.
+
+Sanyam Bhutani  50:08  
+I think it's also brought up in the first take was that many times we try to think of like mathematical equations being researched but many people do when they speak of where did the intuition come from, and that's one of your legs to take those shower thoughts. I had Jason antic on the show also he's created do defy so for him. Shower thought, as you mentioned,
+
+Christine Payne  50:30  
+yeah, yeah. I just went swimming yesterday. And it was like swimming in the pool, where I was like, this is the best place for ideas because you can't get distracted to like pull out your phone or like listen to the radio. You know, something else is just like those stretches of time where it's just like you in your brain. I feel like that's, that's really important.
+
+Sanyam Bhutani  50:48  
+So I also want to ask you like, of course, you must have worked really hard. If I may. You mostly moved out before you joined open a but you're also one of the smartest person that had the privilege of knowing but How did you structure your approach when doing an online course because I tend to get demotivated and sometimes also wander off in all tangential pathways. So what advice do you have for someone just doing for?
+
+Christine Payne  51:13  
+It's a good question. It is tricky. Um, one of the things I've noticed is that like certain books I like start and I just get obsessed with and I can like power through it really fast. And then other ones I start and I just like, and I like it just feels like it's a struggle and I guess I've learned to be okay with like, okay, that that one's just not for me and like, but the nice thing about having this enormous online resources that you can afford to do that, like in a way that if you're at university or something like that, you can be like, well, I don't like this physics professor. I'm just gonna walk like there's no option but online. Actually, I left my physics professor. But it is really nice that you can find it you know, like yes, this One chorus might be what everybody loves. But if it's not the right fit for you, then that's okay and find another one.
+
+Christine Payne  52:06  
+But in terms of structuring it,
+
+Christine Payne  52:10  
+yeah, I mean,
+
+Christine Payne  52:14  
+I do tend to be very deadline oriented. So I guess like as much as I can try to set either. Yeah, sometimes I have to, like set myself an artificial outside deadline of like now with research, I'll sort of commit to like, Okay, I'm going to present at the next meeting or some like that. So like, no matter what, I have to have something together to show for that. And so and so, you know, sometimes it's a matter of just like having a single other person that you're kind of, maybe you agree to, like, every Thursday, you're gonna get together and talk about, you know, the book that you just did this past week or something, like that sort of thing. I think they'll be helpful. Yeah, to me, I think it's a combination. Like either just like look around until you find the course that like really speaks to you and that, that you can just sort of fly through or Yeah, or find ways to and I think everyone's different but I try to understand like your own personality and how you're motivated.
+
+Sanyam Bhutani  53:18  
+I heard Edward Harris the CEO sharpest minds on the show. So he also brought up a point that being accountable to maybe a mentor that's what the sharpest minds. For me it's using Twitter as a platform or just tweeting it out. Hey, I will I'll be competing fast AI by the end of three. Yeah, absolutely. That's suited line for Yeah,
+
+Christine Payne  53:39  
+I'm in the scholars programme at opening I you have to write a blog every week. And that is really good motivation to have done that week. So I think if you commit you know, some people write out a newsletter or you know, something where you start to realise like, Okay, well notice if I don't have if I you know, I can't just blog about nothing. I have to have have tried to get something that
+
+Sanyam Bhutani  54:02  
+makes Sense so at the beginning of the day tweeted out that my resolution is to put out one blog post every week. So yeah, it's challenging, but that's what like many of my annoying cousins if you're listening to this, thanks for that, but they bring it up that you didn't put out anything. And that's also like, in a way a motivator for me.
+
+Christine Payne  54:21  
+Totally. Yeah.
+
+Sanyam Bhutani  54:22  
+Yeah. Oh, also, if you could maybe like would list out your favourite movies. So you must have explored a bunch of your favourite online courses for
+
+Christine Payne  54:32  
+sure. Sure. So my two sort of biggest go to ones are the fast AI sequence. And then also, I really like the entering deep learning sequence. So I actually did it in the reverse order. I did the Andrew Ng's courses first. I felt like those kind of gave me a great like I love his lectures there in these nice bite size, like five to seven minute kind of videos that you can just kind of fly through. I did those first and then I felt like that When I did fast AI that was more about getting more competent actually coding things up myself, Jeremy, so is this like, you know, just go ahead and dive in and build it. And don't just click through, make sure you can actually do some of this stuff on your own. And so, that to me was super helpful.
+
+Christine Payne  55:16  
+Okay, so the biggest ones.
+
+Christine Payne  55:21  
+Yeah, I mean, oftentimes I'll sort of if there's a specific paper I hate reading papers to be honest. Oftentimes, I'll I try to look for blogs that'll talk through a paper. Yeah, so, but I don't have any one sort of go to think that.
+
+Sanyam Bhutani  55:38  
+I agree on that. Because like, people feel that a computer science background person might be comfortable with it, but I don't think that helps in any way in reading any sort of paper. And I follow Jeremy's advice again, just skipping the equations. And I'd sometimes use the subtitle of the equations to maybe get an understanding of, Okay, this is what's going on here. Yeah. eases a thing. For me, like I can just skip the crease. And then that really cuts down the time for me of reading the people.
+
+Christine Payne  56:06  
+Yeah, I think the nice thing about like, the more papers you read, the more you're like, Oh, wait, this is the same equation that just popped up. It's like, everywhere, you know, people, like give fancier names everything or like it. Yeah. As soon as you start realising like, Okay. Like there really are like a set number of things that will show up everywhere. And that makes it easier also. But yes, yeah.
+
+Sanyam Bhutani  56:28  
+One One last question. We would be vote based advice do you have for people who aspire to work as researchers in the field and adding the fees of following an online course?
+
+Christine Payne  56:40  
+Yeah. I think the biggest thing for me is just developing this mindset of questioning everything. So I think we're sort of you know, you get used to in school, like you learn like, this is how something's done. And then this is like you're constantly being taught like this is this is how you do math. This is how you do physics or whatever. But instead flipping that around and being like, you know, someone gives you this is how this architecture is and you're like, but why, but why, like, why does this treat that? Did you try this? Did you like what happens if you do something else like it just kind of having that as your default? mindset is really powerful because especially in this new field, where a lot of these decisions were totally arbitrary, and it's just like, did it because it worked. And so sort of, it just works. Yeah, exactly. It basically taking the extra time to sort of like, look at what your model is learned, like, has it here, just try to visualise it? Has it done anything sensible? kind of always, like your default should be? Like, maybe there's been some silly mistake, and we're doing this all wrong, like try to try to ask questions about everything. Yeah. Okay. Yeah.
+
+Sanyam Bhutani  57:51  
+Oh, when also like, this is sort of a personal question for me. I realised that you also had some background in unity. So have you played with open AI-5 Could you maybe confirm or deny because this is very personal to me does open AI plan of doing anything to counter strike and PUBG the game because I don't want to
+
+Christine Payne  58:19  
+so
+
+Sanyam Bhutani  58:20  
+these two are also some games that quite a few of my college friends and I play
+
+Christine Payne  58:26  
+oh I see so basically like what's going on next with the Dota team or with us um you know what they I I don't know I'm probably not the best person to ask on this I I know that they've been having tonnes of meetings but I have I don't have the inside scoop on what's going on with that. So yes, and I
+
+Christine Payne  58:48  
+know one time I was really bad at it.
+
+Sanyam Bhutani  58:51  
+But these days, steer them away from counters. Say again, you busy if you hear that.
+
+Christine Payne  59:00  
+Spread the word.
+
+Sanyam Bhutani  59:02  
+Thanks so much. This is really amusing. And before we end the call, what would be the best platforms to follow your work and follow you?
+
+Christine Payne  59:09  
+Ah, that's a good question. Um, actually, I just put it out here now because my resolution at talking about how do you how do you get stuff done? My resolution is to go back to actually doing some more blogs on my own page. I kind of did them as long as they did the scholars programme and then fell off. So this will be I'll commit here to saying I will. I'll go ahead and get that blog going again. But otherwise, yeah, you can visit us on the opening I blog. I think at this point, if you just look up visa and open AI, look, oh, right there
+
+Sanyam Bhutani  59:39  
+only, I don't know, have your Twitter and any other profile that you want, to be linked in desc
+
+Christine Payne  59:43  
+Yeah, Twitter. I try to be more active on Twitter, but I'm basically a quiet person and I hate sort of being big on the internet. But I tried to force myself to do it. So So I will, Twitter and my website are probably the places to go. [Go it]
+
+Sanyam Bhutani  59:57  
+so much, Christine. Again. Joining me and giving us these amazing advices
+
+Christine Payne  1:00:03  
+Okay, thank you so much.
+
+Sanyam Bhutani  1:00:15  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week, to "Chai Time Data Science."
+

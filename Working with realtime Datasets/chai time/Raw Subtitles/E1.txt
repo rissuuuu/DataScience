@@ -1,0 +1,684 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Hello, and welcome to the first episode. This is also part 26 of interview with machine learning heroes. In this episode, I'm honored to be joined by Abhishek Thakur, chief data scientist at boost.ai, and also the world's first, and at the time of recording, only triple Grand Master on Kaggle. Abhishek has been working as a data scientist for the past few years. He also has a background in computer science with a master's degree from the University of Bonn. We talked about his journey into data science, his Kaggle experience and his current projects. Enjoy the show.
+
+Sanyam Bhutani  1:38  
+Hi, everyone. Thanks for tuning in. I'm really honored to be talking to the world's first triple Grand Master today. Thank you so much for taking the time to do this interview Abhishek.
+
+Abhishek Thakur  1:49  
+Thank you very much for the invitation. It's a pleasure.
+
+Sanyam Bhutani  1:53  
+Today, you're the world's only Triple Grandmaster on Kaggle. Congratulations on the accomplishment. You're also working as the chief data scientist at boost.ai, and you've been working in this field for quite a while now. So could you tell us what got you interested in data science at first? 
+
+Abhishek Thakur  2:12  
+Yeah cool story. Data science was never my interest. I didn't know what data science or machine learning is. So I was working on image processing problems. Since my bachelor's, I'm an electronics engineer, and I'm not good at it, but I was good at signal processing. So I was looking at fingerprint recognition. Very old techniques. That works.
+
+Sanyam Bhutani  2:41  
+And this was before the boom had happened. And before all these frameworks were out there it was.
+
+Abhishek Thakur  2:49  
+Before long way back, like I'm talking about 2010 now. 
+
+Sanyam Bhutani  2:55  
+Got it.
+
+Abhishek Thakur  2:57  
+So after that, when I moved to Bonn to do my masters, during, during the time I was, I was again working in problems on image processing, OCR recognition. 
+
+Sanyam Bhutani  3:11  
+Great. 
+
+Abhishek Thakur  3:14  
+My friends were also working there and they were all talking about natural language processing and neural networks, machine learning, I was like, what the heck is that I? Everyone is talking about it. So I started taking courses at the university. I was doing masters in computer science, but I was more interested in computer vision and image processing rather than machine learning stuff. 
+
+Sanyam Bhutani  3:35  
+Yeah. 
+
+Abhishek Thakur  3:36  
+But that course, I didn't,  I didn't like it that much. So I gave up on machine learning and continued with image processing interest on my own.
+
+Sanyam Bhutani  3:51  
+This is when there was a distinction between image processing and like using machine learning or deep learning. Got it.
+
+Abhishek Thakur  3:57  
+Exactly. Okay, so nowadays people talk about computer and automtically
+
+Sanyam Bhutani  4:01  
+It's sort of synonymous. Yeah.
+
+Abhishek Thakur  4:04  
+But at that time, there was a huge distinction between these two, and then, my thesis exposed me again to, nearest neighbors.
+
+Sanyam Bhutani  4:19  
+Okay. 
+
+Abhishek Thakur  4:20  
+And then I started learning on my own. And I remember somebody had told me about Kaggle. So I joined Kaggle, I started with the competition, with basic stuff, which didn't even work for me. And after that, I learned by the solutions that people were sharing, so some people are talking about neural networks and what deep belief networks are, nobody talks about deep deviance these days. 
+
+Sanyam Bhutani  4:48  
+Yeah. 
+
+Abhishek Thakur  4:48  
+So I started reading papers. I also had a lot of time as I was a student to I could read a lot of papers and implement some papers. 
+
+Sanyam Bhutani  4:58  
+Great.
+
+Abhishek Thakur  4:58  
+So whatever I learned I learnt on my own.
+
+Sanyam Bhutani  5:01  
+Got it. And, like once you got introduced to Kaggle, was this immediately when you got begin bitten by the Kaggle bug? Or when did you get finally addicted to Kaggle that here you want to, you decided to do this as a second time full second full time job?
+
+Abhishek Thakur  5:20  
+I, I think the first competition I did was image processing competition. I'm sorry, not image processing. It was a computer vision competition. And that didn't work out for me. And after, I think it was a competition from Amazon. And people shared quite a lot of tricks and techniques, like one hot encoder used to be a technique at that time.
+
+Sanyam Bhutani  5:52  
+Okay.
+
+Abhishek Thakur  5:53  
+It was here and I was like I was going through it. And I invested quite a lot of time in that competition. They were, it was a big competition and I ended up on 16 rank.
+
+Sanyam Bhutani  6:06  
+So this was your second competition?
+
+Abhishek Thakur  6:10  
+This was my, this was my second competition, second or third. I don't remember, 
+
+Sanyam Bhutani  6:15  
+Okay so still like one of the first competitions for you.
+
+Abhishek Thakur  6:18  
+One of the first competitions. Yes, it was one of those first competitions where I failed badly. And then in this competition, I caught a good rank.
+
+Sanyam Bhutani  6:26  
+Got it.
+
+Abhishek Thakur  6:28  
+It was all because of what I learned from the previous competitions. What kind of techniques people are using and reading about them. 
+
+Sanyam Bhutani  6:36  
+Yep. 
+
+Abhishek Thakur  6:36  
+And doing this competition, all alone without a team. And after, after that, I needed a job too. I was finishing my masters and Kaggle let me build my profile quite a lot. So I had some competitions to show in my portfolio how to approach problems like machine learning problems, these kind of things. So then I never gave up on Kaggle. So I just continued from there.
+
+Sanyam Bhutani  7:06  
+Luckily for us, you never gave up. 
+
+Abhishek Thakur  7:10  
+Yeah.
+
+Sanyam Bhutani  7:10  
+And you're currently working as the chief data scientist scientist at booster.ai. So could you tell us more about the projects you're working on? And if Kaggle comes into the picture, like is it related to projects at work?
+
+Abhishek Thakur  7:21  
+Well, at boost.ai we are building conversational or chat bots. And it's all about natural language processing. 
+
+Sanyam Bhutani  7:32  
+Okay.
+
+Abhishek Thakur  7:33  
+So from the very basic steps like stemming, tokenization to the building a machine learning model, building neural networks, or some more algorithms on top of it. That's what we do. That's what I do at boost.ai. So I manage all the machine learning teams and everything inside the natural language processing area.
+
+Sanyam Bhutani  8:02  
+Got it.
+
+Abhishek Thakur  8:03  
+All the understanding. So how Kaggle is connected. So I got introduced to NLP by Kaggle. It was again a competition from StumbleUpon and learn these techniques, how to handle text data how to change text data. 
+
+Abhishek Thakur  8:23  
+So there's a lot of things that I just reused from past.
+
+Sanyam Bhutani  8:28  
+From your Kaggle pipelines.
+
+Abhishek Thakur  8:30  
+From my Kaggle and from other industries that I worked in, quite a lot NLP related industries and that knowledge was pretty useful. So just transfer it from Kaggle or from our different other industries. Also like the, the time that you spent in building machine learning models and industries is quite small. So it's more about gaining data and processing data. 
+
+Sanyam Bhutani  9:03  
+Yeah.
+
+Abhishek Thakur  9:03  
+And that I think you can learn a lot about it from Kaggle.
+
+Sanyam Bhutani  9:09  
+Got it. 
+
+Abhishek Thakur  9:10  
+Yeah. That's how it was connected.
+
+Sanyam Bhutani  9:12  
+Also, also interesting that you mentioned the traditional NLP, which is also I believe, being used by you. So where do you make that distinction at work? So how do you know that you could apply machine learning to a project or a chat bot or you could automate that thing using machine learning, broadly speaking?
+
+Abhishek Thakur  9:29  
+So traditional machine learning approaches for text? And in my company?
+
+Sanyam Bhutani  9:35  
+Yep. So like, where do you make that distinction of how much machine learning are you going to be using or traditional techniques versus machine learning?
+
+Abhishek Thakur  9:43  
+I would say it's difficult. So okay, let's talk about the company I'm working in right now. So we have conversational AI. And if you look at how chat bots are built, a very simple way of doing that, or not so  simple is intent classification. So intent classification is basically classifying every text to an intent or let's say text classification problem. So, you start from the very basic, I like to start from the very basics. So, what I would do is no text cleaning, you can throw in a TFIDF and logic revision or SVM and see what works, but when, when the data size is millions of texts, and thousands of classes;
+
+Sanyam Bhutani  10:42  
+Yeah. 
+
+Abhishek Thakur  10:44  
+Then I think these days only neural network can handle that properly and not your traditional approaches. So that's where you draw the line. But even now, if I get a, get a problem with a few samples, I would prefer for very basic like SVM, people think I am stupid. Because sometimes that works. And you also, I've also worked in industries where I tried to use random forests. And people said, no, we cannot do that. And it had improved accuracy quite a lot. And we did. We didn't use random forest. Yeah, it was, again a classification problem and it was giving a good result, but we ended up using logistic regression. 
+
+Sanyam Bhutani  11:27  
+Okay. 
+
+Abhishek Thakur  11:28  
+The reason for that was it was late, I think it was five years ago and to put the model into production. 
+
+Sanyam Bhutani  11:36  
+Yeah. 
+
+Abhishek Thakur  11:37  
+They wanted a response time of few milliseconds because he was in town for us. So yes, sometimes you have to think about all these things. Nowadays, you can use neural networks you can use ensembles and everything you can put it on a multi-GPU machine. Yeah. And on time, you can do a lot of tricks to reduce the response time to hundred milliseconds.
+
+Sanyam Bhutani  12:01  
+I think that's great advice. Many people also miss out that traditional algorithms too still work even in 2019. And also that, when you look at business things, it's not about what what, what is the current sexiest architecture, you could throw out a problem with also about these factors like response time and all other things. 
+
+Abhishek Thakur  12:19  
+Exactly.
+
+Sanyam Bhutani  12:21  
+And I'm also curious, like, you're one of the most active Grand Masters across all three years now. So how do you find the balance for Kaggle and work? So how do you manage your time with Kaggle?
+
+Abhishek Thakur  12:32  
+I was not active last year, not that much. Even the year before that, I think more than half of it I was not that active because of that I lost lot of rank. And so this year, I decided to give some more time to Kaggle. So just, I wanted to be a discussion Grand Master at the end of 2018. But that didn't happen, it's happened in 19. And then I saw this jigsaw competition that was going on. And NLP competition, I like NLP. So I decided to do that and finding time is very difficult. It's very difficult. So what I do is I wake up quite early, most of the days then I work on Kaggle of for a couple of hours, then I go to work. Come back and;
+
+Sanyam Bhutani  13:30  
+Training has finished and maybe you can;
+
+Abhishek Thakur  13:32  
+Finish yeah, so I just start some models on different machines or different servers. 
+
+Sanyam Bhutani  13:39  
+Yeah. 
+
+Abhishek Thakur  13:40  
+And then I come back and the training has finished or probably died. So yeah, and yeah, so working quite late night on Kaggle. Yeah. Family isn't happy about it, but;
+
+Sanyam Bhutani  13:57  
+Okay so could you tell us what is next for you, like will you continue competing and contributing to discussions and kernels or?
+
+Abhishek Thakur  14:07  
+So I have learned a lot like, even when there were no kernels. I think they started a few years ago. 
+
+Sanyam Bhutani  14:15  
+Yeah. I don't think many people know about that, that there were no kernels, and even the Grand Master title was recently introduced.
+
+Abhishek Thakur  14:21  
+Yeah, yeah it was recently in interviews, and there were no kernels then, if you search for it, if you search for beating the benchmark, so, you will find this topic and many competitions before the kernels. And I used to share a lot. And these were simple Python scripts that I would attach in the forums. Title is always the same, beating the benchmark. 
+
+Sanyam Bhutani  14:46  
+Okay. 
+
+Abhishek Thakur  14:47  
+Because in kernels I cannot keep that title anymore. 
+
+Sanyam Bhutani  14:49  
+Yeah. 
+
+Abhishek Thakur  14:49  
+Because it doesn't allow the same titles. So yeah. But I used to share even before the kernels and after the kernels, it was, I think these models and all were incentives. 
+
+Sanyam Bhutani  15:01  
+Yes. 
+
+Abhishek Thakur  15:02  
+And yeah, well I'll continue sharing.
+
+Sanyam Bhutani  15:06  
+Luckily for us.
+
+Abhishek Thakur  15:07  
+Yeah, I mean, it's also good for me because when when you share something, a lot of people are looking at it and commenting and they can point out things which are wrong or how you can improve or you can give some suggestions even from it.
+
+Sanyam Bhutani  15:21  
+Okay, but I'm also curious, like, why not keep these secret sauces to yourself? So you're also active in the discussions you're also active, I think you've just started the data science India community and the machine learning Berlin community. So why take time out for the community? Why contribute to that?
+
+Abhishek Thakur  15:40  
+Oh, because it's all about community. Community has given me everything I should give back to it, um, I don't really give out secret sauces. I just give a basic starting point and people try to build something on top of it, and it's also good because if somebody is using something that I have shared, also sometimes they obviously beat me in the competition, so they get a good rank and sometimes they can offer a teamup, which is good for me. Then I get to learn. Okay, how did you modify my code? 
+
+Sanyam Bhutani  16:18  
+Yeah. 
+
+Abhishek Thakur  16:18  
+Yeah. So that's always always good. And I was I was, I was when I was in Berlin, I was very active in the Berlin community there. They're organizing the meetups there, because it's a huge community and that, that we meet every month once. There are a couple of talks. We some sometimes we get very good speakers also. And it's very nice to learn from experience of, experiences of other people. Part of kind of city, yeah. You have people working on really cool things. The data science India community, it was so, when I look at Kaggle yeah I see there are people from various countries or various regions there but Indians are not that active, I don't know, like they are not getting the support they need or what's lacking but they're not really; 
+
+Sanyam Bhutani  17:22  
+We don't have a strong representation on the leaderboards or; 
+
+Abhishek Thakur  17:25  
+Exactly yeah and that's what I was thinking like there are people from China, so many of them from Russia, but you don't find Indian people on the leaderboard and I don't know why.
+
+Sanyam Bhutani  17:40  
+So you trying to change that, sort of like create or replace like, Indian version of a community like ods.ai
+
+Abhishek Thakur  17:48  
+Not exactly that but yeah I'm just, with the slack team I'm just providing a platform for people to discuss stuff. 
+
+Sanyam Bhutani  17:58  
+Got it.
+
+Sanyam Bhutani  18:00  
+Let's talk about competitions have also had many great finishes on multiple competition. So can you tell like which one was your favorite? Which one did you enjoy competing the most in? And what kind of competitions you look for today?
+
+Abhishek Thakur  18:13  
+A very old competition that I enjoyed the most was StumbleUpon.
+
+Sanyam Bhutani  18:19  
+So the one where you had your first achievement, so to speak.
+
+Abhishek Thakur  18:23  
+Okay, yeah, I was I was hoping to be in top three and Francois Chollet Keras guy, he was also participating in that competition. 
+
+Sanyam Bhutani  18:34  
+Not many people know this, but he was very active on Kaggle I think.
+
+Abhishek Thakur  18:39  
+I think he did seven or eight competitions. And I learned about natural language processing from there by cleaning HTML Tags, etc, these kind of things so that was quite interesting. 
+
+Sanyam Bhutani  18:55  
+I think people take all of these things for granted today. So like Spacy and all. You can do many things. But these were not possible for.
+
+Abhishek Thakur  19:05  
+At that time, you didn't have too many libraries to do this for you, so you were writing Regex. No, it was it was quite nice. I learned a lot from that competition. The models that I built were quite simple I would say. These days everybody will start with neural network.
+
+Sanyam Bhutani  19:25  
+Maybe also ensamble sometimes, that's  also baseline for many people,
+
+Abhishek Thakur  19:29  
+That's true. The model at that time, which placed me I think I was 5th or 6th, I think that was just a blended version of SVM and Logistic Regression. And so I learned a lot from the competition and even from the discussions and everything, I would say that was one of my favorite competitions. 
+
+Sanyam Bhutani  19:51  
+Okay. 
+
+Abhishek Thakur  19:52  
+When it comes to tabular data, I would say, Amazon employee challenge that sounds quite old. It was also very nice competition.
+
+Sanyam Bhutani  20:02  
+And what sort of challenges are you interested in today? So do you compete in all kinds of competitions or a particular category?
+
+Abhishek Thakur  20:09  
+I, I'm trying not to compete and not all competitions, I don't have resources to compete in competitions these days. If I started with one image competition, my only GPU is booked, something from the cloud and that's too expensive. Kernels have made life a little bit easy now with providing GPU for several hours. So sometimes I use that. These days, there are a lot of image competitions going on. I will work on probably one or two of them, not all of them.
+
+Sanyam Bhutani  20:47  
+I think they have a huge chunk of data like four of those that are from Google.
+
+Abhishek Thakur  20:53  
+Yes. One of them has a terabyte of data. It becomes very difficult I cannot accommodate, I don't have that big hard drive now so, I think 500 gigabytes is not enough to accomodate more than two competitions these days. Competitions that I love are NLP, competition was something I was invested a lot of time in, for sure. Learned a lot of stuff. So I learned about bird and Elmo and these kind of things. You mean and I read, read about it, read the papers. And there were so many implementations going on, people shared a lot of cool stuff there. So I can probably also, reuse some of that stuff in the industry I'm working.
+
+Sanyam Bhutani  21:43  
+I think it's like even right now it's very amusing for me to know that even a Grand Master does not know everything like you mentioned you continually learning while competing also.
+
+Abhishek Thakur  21:51  
+Hehe, you're not supposed to know anything.
+
+Sanyam Bhutani  21:57  
+Yeah, so do you think like Kaggle competitions also serves as a like, great learning resource. So if you sign up for a field that you don't know, and you want a taste of it, like coming as a fresher to a competition.
+
+Abhishek Thakur  22:08  
+Like people are afraid of, let's say probably image competitions, but it's it has been simplified so much that people are sharing kernels. So you all you have to do is just go take a look at how this guy is approaching the problem. Okay. DenseNet. What is DenseNet? Google it. You have to spend some time on it right? And read the papers and try to understand what CNNs are are just basic, or just do Coursera course. I think, I have learned was from Kaggle competitions. I didn't do many playground competitions. So people spend a lot of time playground competitions like Titanic and MNIST. So I would suggest start with the real competition. Then see your rank dropping.
+
+Sanyam Bhutani  23:11  
+I feel in my experience, like for my first competition was really like it hit my face in the wall, because you get a live leaderboard. And like when it's very active, you submit to the leader board, you sleep on it, you wake up you've fallen down 50 positions.
+
+Abhishek Thakur  23:27  
+That hurts.
+
+Sanyam Bhutani  23:28  
+Very much, forget about shakeups for now but even that.
+
+Abhishek Thakur  23:33  
+You learn a lot from it. I was in a competition, I fell down from first rank in public leaderboard to about 30 or something. So I learned a lot about overfiting.
+
+Sanyam Bhutani  23:47  
+The hard way 
+
+Abhishek Thakur  23:48  
+How to avoid overfiting so that often helps you in industry, you can you can make some really cool model that giving you 99% accuracy presented to them as yours and then everybody's going to be happy about it. But when it's live, it is probably going to fail. Yeah, that will come and bite you.
+
+Abhishek Thakur  24:10  
+So, yeah that's a learning thing.
+
+Sanyam Bhutani  24:14  
+Yeah. Also want to ask you like you, like all of these image competitions, like Google ones I assume would be impossible but do you think like today given the situation where Kaggle is, can someone with like minimal hardware or just using Kaggle kernels also do pretty great on a competition?
+
+Abhishek Thakur  24:31  
+Oh, yeah, I have heard a lot of stories about people using only Kaggle kernels. So in jigsaw we trained a BERT model, so I rented a V100 GPU on Amazon. And I was training on that and it was taking me around 15 hours on a V100.
+
+Sanyam Bhutani  24:51  
+And for context for the audience, like V100, I think is one of the most powerful graphic cards if not the most.
+
+Abhishek Thakur  24:57  
+Yeah, these days. Yes. So my 1080 (Ti) is five times slower than that on on this data and training birds would have taken me like 45-50 hours on my 1080 or my Titan X. And this one took like 15 hours. So which is quite fast. And then after the competition ended, has not ended properly, but people share that between full BERT model and kind of learners within the next hour limit. So, that was that was really amazing and I learned a lot, okay, how you can reduce the batch sizes and how you can manage the batch sizes in a proper way to send it to GPU and then train them all. So it was quite a learning experience again, and when these guys are doing it, and they're getting a rank within the top 25 - top 30 just by using Kaggle kernels where you have 3000 competitors. Yeah, that gives you an idea like the GPU, GPUs in Kaggle kernels are obviously better than the GPU you have at home. You just have to, you just have to make your code in such a way that it finishes everything within the nine hour limit, which I think is quite a lot.
+
+Sanyam Bhutani  26:23  
+I think many people like also overlook this. So it's not just about training the model. It's also about the constraints because when you in the real world constraints do matter. So I think if you use kernels, that'll also be a good taste of that. Yeah.
+
+Sanyam Bhutani  26:39  
+Yeah, for sure. 
+
+Abhishek Thakur  26:40  
+If your code is efficient, then I think yeah you can do it.
+
+Sanyam Bhutani  26:47  
+I think it's also about like these creative solutions, not just the ensemble ones where people are just some some people tend to do the crazy stacking.
+
+Abhishek Thakur  26:55  
+Yeah. So ensembles. So, when kernels started, I was really happy about it, because you get limited resources and everybody has same resources. But the change to do inference kernel so you can take it offline. Yeah, it's okay. People use Kernels so can train models in parallel, if you want. And that's that's good enough, I think.
+
+Sanyam Bhutani  27:28  
+So also like curious, what are your when when you look at a new problems, who, as you like many problems wouldn't be new for you. So when you're starting on a fresh data set or a fresh competition, what are your go to steps? How do you approach the new problem statement?
+
+Abhishek Thakur  27:46  
+By looking at the data, first of all, so how does the data look like so a lot of people do EDA, I don't do that much EDA. But my first step is to just see the data, look at some rows and columns, what features are and try to build a simple benchmark model.
+
+Sanyam Bhutani  28:08  
+So a minimal model?
+
+Abhishek Thakur  28:09  
+A minimal model. 
+
+Sanyam Bhutani  28:11  
+Okay.
+
+Abhishek Thakur  28:12  
+If, if you plan to use a subset, you can use a subset of data and then try to improve on it, by engineering or by tuning the hyper parameters or changing the model things. So these days, I don't do much EDA because people, a lot of people are already doing EDA when it comes to kind of Kaggle competitions. 
+
+Sanyam Bhutani  28:37  
+The comprehensive ones for sure.
+
+Abhishek Thakur  28:38  
+I just go, I just wait for a week for competition. You have so many EDAs, so it's nice. I don't have to do that part anymore. So I can just focus I can just get ideas from there and I can focus on models.
+
+Sanyam Bhutani  28:55  
+Like but you make use of those, you definitely give them a serious look to get a sense.
+
+Abhishek Thakur  29:00  
+Most of the time I give them a serious look, yes.
+
+Sanyam Bhutani  29:02  
+Okay so I think this is also important that data is the primary thing not the model for many people.
+
+Abhishek Thakur  29:10  
+And it also depends on what kind of problem you're trying to solve. If you're in a Kaggle competition and Tabular data and then you get categorical variables, numerical variables, these kind of things. So what I've learned from the past I just tried to use them how to handle these different kinds of categories, build a simple basic model and then try to improve on it. So I would start with something quite simple like  Random Forest look and then move to XGBoost, LightGBM.
+
+Sanyam Bhutani  29:42  
+So you still use logical regression in 2019?
+
+Abhishek Thakur  29:47  
+Yeah, I use it from time to time.
+
+Sanyam Bhutani  29:49  
+I mean, it's like not surprising to me, but many people wouldn't believe that I suppose.
+
+Abhishek Thakur  29:55  
+Many industries are using logistic regression and they call themselves an AI company.
+
+Sanyam Bhutani  30:00  
+Yeah. Fair enough.
+
+Sanyam Bhutani  30:03  
+So, yeah, good, please go ahead.
+
+Abhishek Thakur  30:06  
+Yeah. So that's, that's what i was i was saying like, building a benchmark and then improving it.
+
+Sanyam Bhutani  30:11  
+Got it. 
+
+Abhishek Thakur  30:12  
+Keeping a record of it. So nowadays, I keep my code in GitHub. I didn't used to do that previously. And then I know okay, so I made these changes and the model score went down. So, I should do something else building a cross validation system, a good cross validation system is also very, very necessary. Depends on what kind of problem it is, what kind of data it is, what kind of target variables you have, right? So you have to look into Cross Validation a lot, too, because if you have a good cross validation system, then you're not making a 
+
+Sanyam Bhutani  30:51  
+Then you're prone to a shakeup for sure.
+
+Abhishek Thakur  30:54  
+Exactly.
+
+Sanyam Bhutani  30:55  
+Got it. So but one of the problems for me, like for example, I have some background knowledge. So I start on a competition, I get to a point. And then I run out of ideas. So what is your solution for that? Like once you're out of ideas, or you can't improve further on your model.
+
+Abhishek Thakur  31:12  
+Yeah that happens quite a lot. And when we're talking about Kaggle competitions, yeah. I mean, that also happens in industries. So in industries, there's no one, no one to help you there. Except your team members. So you usually discuss or brainstorm with them and then probably can come up with some cool solution, or improve further. In Kaggle competitions, when I'm struck, happens a lot and feels quite bad. But what I do is I try to go in the discussions and read them too early. So you definitely find something that you are missing,
+
+Sanyam Bhutani  32:03  
+Some hidden clue for sure. 
+
+Abhishek Thakur  32:06  
+Somewhere .
+
+Sanyam Bhutani  32:07  
+Got it. And you also kind of have to continually share these amazing kernels with us. We'll also have your favorites link in the podcast description. But could you tell us like, what ideas do you think of when working on a kernel? And what's your workflow when getting started on a kernel?
+
+Abhishek Thakur  32:24  
+So I don't want to give away a lot when I'm making these kernels. Recently, I shared quite a lot of stuff on kernels, which used PyTorch. And it was because I learned PyTorch in the last three-four weeks. So yeah, and I just wanted to share with people like, this is easy. I was, I was scared of PyTorch, I'm a Keras Fan, But moving to PyTorch that was, it was a big step. And it was pretty easy. And I just wanted people to show how easy it is and how you can change these four loops. Or you can, you can do whatever you want inside these loops, training loops.
+
+Sanyam Bhutani  33:19  
+That's also because you have had this experience on Tensorflow or Keras so also like switching to a new framework would have been relatively easier.
+
+Abhishek Thakur  33:27  
+Exactly. And that's what I wanted to share. So, and that's what I will continue to share without giving a lot of stuff or without. I'm not very good at finding magic features. So I cannot share about magic features. But how to approach a problem how to how to just start with it.
+
+Sanyam Bhutani  33:49  
+As you mentioned, like how to beat the baseline.
+
+Abhishek Thakur  33:52  
+How to beat the best I have to beat the benchmark. So these are all, these are the types of kernels that I like to share. Sometimes I'm also sharing some optimization functions, or these kind of things. Very simple stuff. I shared one kernel as a joke. And it got the gold medal. And it's like five lines of code there. 
+
+Sanyam Bhutani  34:19  
+Okay, interesting.
+
+Abhishek Thakur  34:22  
+That was joke kernel. But gold is gold.
+
+Sanyam Bhutani  34:26  
+Indeed. So yeah, you also mentioned PyTorch Vs a Tensorflow: what's like your opinion on that like for Kaggle competitions?
+
+Abhishek Thakur  34:34  
+I'm, I'm, I've worked quite a lot on TF and Keras in the last two years. So I'm very very comfortable with it. When it comes, but only for natural language processing problems, when it comes to images, I like PyTorch more becase, first of all, when you start with an image competition you should, you can build a small simple convolutional neural net and see how it's performing, then what's the next thing you are going to do? You're going to take some model from some pre-train model, right? Say ResNet or Something like that and try to find the ImageNet weights weren't. Yeah, and then use then Fine-Tune. But it's difficult in Tensorflow or Keras, because they don't have a proper a model Zoo where you can find these weights for different kinds of models. And with PyTorch. People seem to be quite fast, and doing these kind of things. So you have a very extensive Zoo of models that you can choose from. And you can also you also have the weights available. So you don't have to train it from scratch on ImageNet.
+
+Sanyam Bhutani  35:53  
+Yeah.
+
+Abhishek Thakur  35:55  
+So that's, that's basically one of, one of the very modern reasons they like pytorch for image problems, I haven't used TensorFlow 2 yet. Like it's very similar to pytorch and all the things they call kind of freedom that you get when you use pytorch. You have the same in TF 2. So that's mine. That's next thing that I'm going to try.
+
+Sanyam Bhutani  36:20  
+Awesome. Also curious, like, based on your industry experience, like there's this constant debate. Should I learn TensorFlow? Should I learn pytorch? Do you think like, a would be like, is that question even relevant? Like, is the framework important when learning and be like, what would you recommend?
+
+Abhishek Thakur  36:39  
+Important, depends on like when you're in the industry, it also depends on the people who are working there. So if you want to introduce a new technology, you have to prove that it's better than what we have. 
+
+Sanyam Bhutani  36:55  
+Yeah. 
+
+Abhishek Thakur  36:56  
+So I don't think it matters much. But you can use PyTorch, TensorFlow, you can use very high level wrappers like fast AI. But you should understand what's happening inside those functions. So it's with fastai, as you see, like, it's very easy to build a model. Right? But only a very few people invest time in understanding how what's happening under the hood. So they won't even know what kind of optimizer is being used. Yeah. Yeah. So it sort of, for me, it doesn't matter what kind of framework you're using. You understand, if you're understanding what's happening, that's more important.
+
+Sanyam Bhutani  37:42  
+I think then also like you can actually just go to any new documentation and even start using that framework. Once you have that.
+
+Abhishek Thakur  37:49  
+Yeah you can do that.
+
+Sanyam Bhutani  37:51  
+That's great advice for sure. And do you think like a non good non-traditional background person can like use Kaggle experience to get a break into the field or like even get a sense of the field.
+
+Abhishek Thakur  38:06  
+Yeah, why not? I got my first job because of Kaggle, second, third, fourth, fifth. And this is my sixth one. There are a lot of industries and a lot of them are because of Kaggle. So when I was, when I was doing my PhD, it was because of Kaggle, because I had a good Kaggle profile and I was also ranked quite high in some competitions. 
+
+Sanyam Bhutani  38:38  
+Okay.
+
+Abhishek Thakur  38:38  
+So that helped quite a lot. And I think it's true for everyone. These days, there are like everyone, everybody wants to be a data scientist or everybody is calling themselves a data scientist but you should, you should have something in your portfolio to show like some Kaggle competition which are not playground, where you, you have done some real work, you should share some code on GitHub so that people can see what kind, of how do you write code. That's also very important in industry as well. And yeah write some articles and blog posts on okay, how you solve this problem. What was from your approach and other's approaches? 
+
+Sanyam Bhutani  39:26  
+Got it. Also want to get like, to the like, not so good side of kaggle. So you're also like, vocal about the bad practices that go on on Kaggle, like, and what's your advice to beginners, like, who don't know of this style because of the gamification of Kaggle maybe. So how to avoid making these mistakes.
+
+Abhishek Thakur  39:46  
+What, you mean what?
+
+Sanyam Bhutani  39:47  
+Falling into the trap of like this plagiarizing kernels or like these toxic practices that that are getting common like with beginners.
+
+Abhishek Thakur  39:58  
+Like what kind of toxic practices are we talking about?
+
+Sanyam Bhutani  40:00  
+Well, when would we like not crediting the original author then.
+
+Abhishek Thakur  40:06  
+That's a very simple thing. I mean, I'm the one who was ranting about it most of the times, but it's a very simple thing, everywhere, everyone, even if you're a student, like they tell you the university or don't copy, copy from somewhere then give reference. So, given the credits is something I consider very important because somebody has put a lot of time and effort and written this kernel for you, so that you can learn, and now you take it as it is, and put it as your own. Yeah, without giving any credit. So that's a bit sad. And I think the original authors they don't like it. I personally I don't like it at all. That's about plagiarising. Yeah. Be more careful, just see what you're posting, give credit. It's not a very time consuming thing. It's a one line. Yeah. So I took this kernel from here and here and those are my changes to that kernel, it's simple. And I don't know what other bad practices are.
+
+Sanyam Bhutani  41:20  
+Mostly it like originates from from these itself like just like getting to the medal because it's all gamified now so.
+
+Abhishek Thakur  41:31  
+Yeah, you should not push, people, right? "Hey, I have written this kernel" and now you're making hundreds of sock puppet accounts. Because if you've written something good people are automatically going to upvote it. So what you can do is you can share it on your LinkedIn and you can share it on your Twitter and;
+
+Sanyam Bhutani  41:57  
+Or maybe slack communities like Kaggle.
+
+Abhishek Thakur  42:01  
+Yeah, there's so many slack communities you can post it there. And people who find it useful are obviously going to upvote it. Yeah, I mean, there are many people who don't like to afford this like to copy the kernel without upvoting. And that's, that's bad. But I think, I think there are many Grand Masters who are also doing that, who are not upvoting the kernel. So I think they should, they should do that more often. When whenever I'm using somebody's code and I see a kernel, I'll use this function if I've used even a small function from this kernels, I will give the upvote.
+
+Sanyam Bhutani  42:40  
+So I think that's also one point to everyone. Like, if you're using someone's code, please first make sure you upvote and if you build on top of it, also make sure that you give credit where it's due. I also hope that like in my opinion, Kaggle does a design change because if you look at the copy and edit button versus the upward buttons, upward is like pretty small. It's easy to miss, like for someone using it for the first time.
+
+Abhishek Thakur  43:03  
+It seems like they're experimenting with it because previously it was work. Yeah. You know, and that you are copying it. 
+
+Sanyam Bhutani  43:11  
+Yeah.
+
+Abhishek Thakur  43:13  
+Yeah.
+
+Sanyam Bhutani  43:13  
+I hope they'll address its soon. I think.
+
+Abhishek Thakur  43:17  
+Probably still some points or forking the kernels.
+
+Sanyam Bhutani  43:23  
+Like, and I want to seek advice from you, like for best tips for beginners, who like aspire to become a Grand Master, maybe someday, since you're a Grand Master in all three categories. So what would be your best advice?
+
+Abhishek Thakur  43:37  
+So, what, what I've seen personally, people, people would start with a combination, and rank will fall down. Obviously, you're in top 10 on the very first day. So don't brag about it first of all, and when the time passes, you were probably 900-1000 ranks. And people get, I don't know people get depressed or something. And they don't continue with that competition anymore. Yeah, they tend to give up very easily. Yeah. And you have, you did one combination your rank was good but private leaderboard was revealed and your rank was not good at all. Then people tend to give up, they don't continue with the next competition. So there are many people who have done only one or two competitions on Kaggle, probably because of their jobs or something, I don't know. But if you're a student, you have a lot of time there. So I think you should be persistent. So even if you didn't perform well read how the winner approached the problem.
+
+Sanyam Bhutani  44:55  
+Learn from your mistakes like in one way.
+
+Abhishek Thakur  44:57  
+Yeah from your mistakes and try to keep those mistakes in your mind when you're doing the next one. You have to be hard working. You have to find time. So if you have like a couple of hours every day, I think that's more than enough.
+
+Sanyam Bhutani  45:13  
+And it for sure like multiplies exponentially, like throughout the year. People tend to miss out on that also. 
+
+Abhishek Thakur  45:19  
+Yeah, yeah, that's true. And
+
+Sanyam Bhutani  45:22  
+And, sorry, please, go ahead.
+
+Abhishek Thakur  45:25  
+Yeah. So the thing is, don't never give up.
+
+Sanyam Bhutani  45:29  
+Got it.
+
+Abhishek Thakur  45:31  
+And keep doing the competition, then you will improve. Maybe not after one or two, or three maybe after;
+
+Sanyam Bhutani  45:43  
+And what about for like the second category of people who like feel intimidated because they're all these amazing people who just smash the leaderboard in one or two submissions. So;
+
+Abhishek Thakur  45:55  
+Even I feel intimidated by these people, so, it happens but then, then you should look at what you're doing incorrectly. That's what I thought I do. So I'm working on something let's say I got a 80% accuracy and ranked quite high. And then I see like, this guy joins in within two submissions he has 90%, that, that's crazy. But you have to, you have to understand that like it's probably something that you are overlooking. 
+
+Sanyam Bhutani  46:36  
+Yep. 
+
+Abhishek Thakur  46:37  
+You, what I do is I revisit my code, and I see if there's a mistake or something that can be improved, revisit feature engineering, see the EDA again, this is something that some some kind of feature that's missing from there, when it comes to magic feature because sometimes it happens when there is a magic feature someone has found and I haven't Or you haven't, then then it becomes more difficult. So then you have to start looking into discussions about what's happening there. And in those cases, you can't do anything, right. So either you find it or you don't.
+
+Sanyam Bhutani  47:16  
+But otherwise just keep iterating on the problem.
+
+Abhishek Thakur  47:20  
+Yeah, but I would say like, you just not be intimidated by these people who are performing very well in very less number of submissions. It's also because they've worked their asses off in the past. 
+
+Sanyam Bhutani  47:32  
+Definitely. 
+
+Abhishek Thakur  47:33  
+They know the stuff they're working on. And if you're, if you're newbie, then you have to work a lot more harder to increase that level. And somebody, someday it could be you who is intimidating. 
+
+Sanyam Bhutani  47:46  
+Yeah. Awesome. Thanks for all the advices, before we conclude, like what would be the best platforms to follow you apart from Kaggle?
+
+Abhishek Thakur  47:58  
+Best platforms to follow me? 
+
+Sanyam Bhutani  48:00  
+Follow your work.
+
+Abhishek Thakur  48:02  
+I share a lot on, not a lot, but I share quite often on LinkedIn and Twitter. I'm also very active in all kinds of slack teams. You can find me, in I think in all of the slack teams.
+
+Sanyam Bhutani  48:18  
+I'll make sure to have all these things linked down.
+
+Abhishek Thakur  48:22  
+Russia, Japan, China, India. 
+
+Sanyam Bhutani  48:26  
+Okay.
+
+Abhishek Thakur  48:28  
+So.
+
+Sanyam Bhutani  48:29  
+So chances are, if you're on a data science community, you, you will be there.
+
+Abhishek Thakur  48:33  
+Yeah, you will probably find me there. 
+
+Sanyam Bhutani  48:36  
+Got it. Alright. Thank, thank you so much again for taking the time and big congratulations to you on winning the title.
+
+Abhishek Thakur  48:44  
+Thank you very much for the call, it was very nice. Hope to see you on the leaderboard.
+
+Sanyam Bhutani  48:52  
+Hopefully someday,
+
+Abhishek Thakur  48:53  
+Yeah, you're also not competing that much right?
+
+Sanyam Bhutani  48:57  
+Not recently.
+
+Abhishek Thakur  49:00  
+See you there soon.
+
+Sanyam Bhutani  49:01  
+Alright. Thanks. Thanks a lot.
+
+Abhishek Thakur  49:03  
+Thank you. Bye bye.
+
+Sanyam Bhutani  49:16  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week, with "Chai Time Data Science".
+

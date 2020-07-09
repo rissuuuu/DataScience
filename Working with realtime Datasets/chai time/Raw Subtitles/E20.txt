@@ -1,0 +1,240 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Hello, and welcome to another episode of the "Chai Time Data Science" show. In this episode, I interviewed Dr. Boris Dorado, a research scientist at CEA, where he's working on some very interesting projects in the domain of computational physics which we talk all about during the interview. In this interview, we'll talk about Boris's first Kaggle competition, predicting molecular property, organized by champs where he teamed up with four Grand Masters, and the team was called four Grand Masters and a brain which landed a gold medal by finishing eight on the competition. In this interview, we talk all about Boris's experience competing in a team with seasoned Kagglers. This was his first competition as I mentioned, his takeaways from that as well as his takeaways from working with the amazing Kagglers. I'd also like to thank people who submitted questions for via the AMA section, and to Boris who, of course, was kind enough to agree to it. For now, here's my interview with Dr. Boris Dorado and I'd also like to mention if you're interested in finding more about this kaggle competition next episode will be an interview with Andres Torrubia, who is a seasoned Kaggler and his team finished second is that in this competition source You know, subscribe for that. For now, here's the interview, Dr. Boris Dorado. Please enjoy the show.
+
+Sanyam Bhutani  2:22  
+I'm really excited to have Dr. Boris Dorado on the show. Thank you so much for joining me and allowing the AMA section as well.
+
+Dr. Boris Dorado  2:29  
+Yeah. Thanks for inviting me so much,
+
+Sanyam Bhutani  2:32  
+a pleasure to have you. So you have a PhD in material science. And you have a focus in computational physics and are currently working as a research scientist at CEA. Could you tell us how did you get started with machine learning and machine learning start to come into the picture of your research?
+
+Dr. Boris Dorado  2:50  
+Yeah, so it started actually, very, very recently. What I do at work is we're solving nonlinear differential equation numerically. And so we need a lot of poor computational power to do that. And we reached, we kind of reached the limits of our current computer system capability. And so we had to find another way to accelerate this calculation to find alternative way of solving these equations. And one was machine learning, which was actually the focus on the computational on the predicting where you can approach challenge study like this. Just try to go further in your in our solving the differential equations.
+
+Sanyam Bhutani  3:39  
+I'm sorry, what, what, what's the other way apart from machine learning? Is it like just scientific computation? [Sorry] What's the alternative? Like if you weren't using machine learning? It's a scientific computation or how do you approach that problem?
+
+Dr. Boris Dorado  3:53  
+Yeah, it's a it's solving a numeral key differential equation. So you have you have a big Schrodinger equation. And that we want to solve. And, and, and we use iterative gradient descent procedures to, to find the solution of that we don't actually solve the equation we yes, we solve the equation but not like finding the true solution. And magically, we just use;
+
+Sanyam Bhutani  4:18  
+A brute force of sorts.
+
+Dr. Boris Dorado  4:19  
+Yeah, no, it's not a brute force. It's, we're, we're transforming the equation into minimizing problem. Solving the solving the equation is, is just like, trying to minimize a big function with a lots of variables. [Okay] And, and, yeah, so it takes a lot of time.
+
+Sanyam Bhutani  4:41  
+Got it. So you will also follow the traditional path. If I may in research, could you tell us what made you pick physics as a career path and take up the research domain instead of the industry? 
+
+Dr. Boris Dorado  4:52  
+I tell you what I wanted to do chemistry and before that, so yeah, I was really interested in chemistry and dream, my masters and my masters course, there was a lot a lot a lot of chemistry that we had to learn by heart and I didn't I kind of didn't like that. So I, I switched to physics. But yeah, I've always been more I can see where I would say that I'm doing a physical chemistry. That's actually what I'm doing really physics or chemistry I'm doing. I'm doing physical chemistry. And, and yeah, that's why I the end, and what why did I choose? So I'm working in nuclear energy. And I choose this path not so much for nuclear energy, but rather because of actually night science. So nuclear reactors are made of uranium and plutonium and, and it was more of the physics of it. No, that was interesting me, like the radioactive decay and all the processes of radioactivity, more than nuclear energy. So that's, that's how I started into the path.
+
+Sanyam Bhutani  6:01  
+So to me it also sounded like you're working on some secret Iron man, could you tell us more about what current projects are you working on and maybe say some secrets of your lab?
+
+Dr. Boris Dorado  6:12  
+Sure. I won't be able to share some secrets but we don't have any secrets. But we are we are developing reactor cores, that's for sure. I don't know if it's Iron Man. Maybe maybe we are but I'm not. Yeah, I'm not. I don't have a high enough clearance to to know that. But no, I am. I'm working on nuclear reactors. I've worked a lot on a traditional pressurized reactor course, which is a oxides of actinides A uranium oxide, so that's uranium and oxygen. [Okay] And, and I'm interested in how they evolved during the reactor operation. So you have your reactor cores and it's burning and it's emitting a lot of different atoms because it's radio, it's radioactive. And so it's, and it's transforming in a lot of different stuff. And it's everything neutrons everywhere. And so I'm trying to figure out by using computer, computer tonal calculations, too, and I'm trying to figure out how it's always evolving in the in the reactor. Getting if it's an, how can we increase the efficiency and increase the security in case something, something happens?
+
+Sanyam Bhutani  7:34  
+Okay. So once I can already see the trends, but one machine once machine learning came into the picture of your research, did you find any parallels between physics and machine learning because both have this similar experimental setup, where you have to run so many experiments, some work some don't?
+
+Dr. Boris Dorado  7:52  
+Yeah, definitely. There is definitely a parallel between machine learning. That's why it wasn't so hard for me to go into machine learning. Because it's it's, as you said, it's like they have this similar trend in terms of research, you're trying things, and they're not working. And so there is this cycle where you have an idea and you implemented and then you see it doesn't work. And then you you try to iterate over that. And the I was surprised that there's also a lot of all the algorithms are minimizing cost function in machine learning. And I realized that the machine learning community as had exactly the same problem as we had, trying to find, yes, trying to find the global minimum of a cost function. And so there was a metastable states where you couldn't find the global minimum. And so this is what I had of that program. So there were a lot of parallels. And as a takeaway from that did that I had, I can, I think that the machine learning community can benefit a lot from the physics community and the other way around to I I took from the Kaggle competition, I took a lot of interesting ideas that I want to do in physics now.
+
+Sanyam Bhutani  9:06  
+Okay, so do you think your maybe patience of working as a researcher where things fail, some don't work out was helpful in this domain as well. [Sorry] So this patience that are researcher requires that maybe you spend a few months on working on an idea and that doesn't work out. So did you find that also helpful in machine learning? Because [Yeah] it's familiar.
+
+Dr. Boris Dorado  9:30  
+Yeah, that's definitely similar. Yeah, you're you you're trying to find an idea. And so you've been you're working. I would say that in physics, maybe it's more of a it's more of a brute force in machine learning. You have an idea you implemented, you implemented and you try it and it's since the calculation is quick. You can, you can, you can see very quickly if your idea works in physics, it takes a little bit, the time scales are a bit Bit more more important, meaning that you have an idea, it takes some more time to implement it than just machine learning. And then to test it, it takes a few months. So I would say that maybe in physics, you have to, to think of just a bit beforehand, you have to think if your idea is going to work on it, you just can't implement everything that passes through ahead, because it's, yeah, it takes more time to validate to validate it.
+
+Sanyam Bhutani  10:27  
+Got it, because it's more of a physical world that you're working in not just a computer. I wouldn't;
+
+Dr. Boris Dorado  10:31  
+Yeah, yeah. Yeah, there's physics behind it. So you can first think about it before trying to implement it.
+
+Sanyam Bhutani  10:38  
+Got it. So coming to the predicting molecule properties competition, congratulations on your first actually gold medal. [Yeah] Was this your first first Kaggle competition or did you also have some casual competing experience before this?
+
+Dr. Boris Dorado  10:54  
+No, no, that was really the first the only competition that I had before that was that it was not competitions actually, it was a skill test during interview processes for new jobs. You know, when I apply for new jobs, they asked me like it to the skill sets where that way I had to predict prices for houses or for loners these kind of things. But no, that's what's really, really the first challenge that I ever signed up for.
+
+Sanyam Bhutani  11:26  
+That's amazing, also getting a first gold medal is absolutely an amazing experience, which we'll just talk about. But before that, could you help us set the stage of what was the talent about and how is it really if it is to your current results?
+
+Dr. Boris Dorado  11:44  
+So the challenge was to try to predict properties, chemical properties, magnetic interactions between atoms and molecules. And this is actually very, very difficult to do with computational degradation. So the input data was what we call the QM nine data set with which is a very, very well known benchmark data set in chemistry in computational chemistry. And, and the QM nine data set has a lot of different physical, chemical, physical, chemical, chemical properties, like the potential energy of the molecule, its vibrational frequencies when it's vibrating and the bandgap when you're exciting, good. The it takes some amount of energy to send you electrons to different levels and so that we're giving you this kind of levels. So, a lot of a lot of I would say usual properties and the properties that we had to calculate the challenge is actually very, very difficult to to calculate. And so what is first I was surprised that it was that they the organizers had to find a way to I found a way to to to to calculate these properties, and so it's no wonder that the machine learning can be used to calculate these properties because yeah, using computational, solving the numerical solving the Schrodinger equations, and finding these properties very, very difficult. And it's related to my research because while the, the, the training set was so the training target was the know the target lab labeled was calculated in the training set using the same approximation that I use at work. [Okay] I was very, very well aware of this calculation and you exactly what they had done and so I was in a yeah, I was in my you know, I was in my environment. [Your element. Okay.] Yeah, I was in my element.
+
+Sanyam Bhutani  13:52  
+Got it. So once you found the competition and you thought, this will be interesting and easy, maybe for you, so what was Your first go two steps when you start working on the competition, and how did you decide to approach the problem when you initially started?
+
+Dr. Boris Dorado  14:08  
+So another term I said it would be easy. I was, yeah, I knew that there were I knew that there were a lot of really, really, really good people on Kaggle. And so it was just like more of an experiment for me at first I was like, okay, I know, I know. I know all the scientific part of it. I know about magnetic couplings between molecules I know. So it will allow me to focus more on machine learning men in physics because I won't have to struggle about physics. And my first approach was to I wanted to try how, you know, I've been working, I've been a learning machine learning on Coursera. And I wanted to my first thoughts were that I wanted to apply what I what I had learned on Coursera onto the training set, so it was very, very elementary what I did, I really did what what we were told on Coursera. So I started with my training center and I split it, I split it in, in like 70% and 30% for training, invalidating. And I used really elementary machine learning algorithm less random for us and ACM and something like that. And then I realized he didn't score is very, very, the score was very low compared to the when I compare the when I checked on the leaderboard, but and so I realized, okay, something's definitely is is better than what I'm doing.
+
+Sanyam Bhutani  15:39  
+And once you started getting the bite of Kaggle, could you tell us what was your high level approach in in this competition and how did you structure your workflow? I think this was also before you teamed up so how were you competing? Before you teamed up with I think first it was Andrey Lukyanenko
+
+Dr. Boris Dorado  15:58  
+Yes, so well, the high level approach I studied with, with Andrew's kernels, and I, and this is this yeah, this was really, really interesting. And I really liked the guy. The first while I, as soon as I read his kernels, and it was very informative, and it was doing a lot of EDA. And it was fun to read his kernels and I studied to, for I realized, first that there was there were a lot of people in Cairo that that who were sharing stuff that I didn't know. And, I mean, Andrew was sharing his own private algorithms to calculate and so this is where I discovered about the cross validation, the K fold cross validation, and that who, that was actually very much, much more accurate than what I was doing with just my 70% and 50% and I also found about light gradient boosting models. And this yeah, they shifted my score. Yeah, really nicely actually. Because what I had, I had had devised a new input feature that was called a CSF atoms centered symmetry function. 
+
+Sanyam Bhutani  17:21  
+Okay. 
+
+Dr. Boris Dorado  17:21  
+And it was not working very well on my on my decision trees. And when I used Andrew's kernels and Andrew's scripts of LGBM with this k fold cross validation, it worked actually pretty well. And so this is where I thought, yeah, this is what I thought, okay, maybe I should keep up with Andrew, because you seem to have a lot of knowledge about machine learning. And I have a really great input feature that I can't use. So let's team up.
+
+Sanyam Bhutani  17:48  
+Interesting. You also written an amazing writer up your competition experience and how you ended up teaming up with the Grand Masters, we'll have that link in the description. Could you maybe confirm or deny are Kaggle Grand Masters human beings or have they transcended into an alternate reality?
+
+Dr. Boris Dorado  18:06  
+No they are not real. They're bots and Google bots that yeah, no, no, no, they are they're actually pretty fun. And it was, yeah, it was really a so it really first it was surprising for me because I wasn't expecting actually that Andrew accepted my invitation request. Yeah, it was really surprised because you know, I know you have I know that there are a lot of people competing for the for the for the gold medal. I wasn't here for the gold medal. I was I was here because I wanted to learn machine learning initially. And so imagine you are Kaggle Master Grand Master and everything. And you have some guy who just joined Kaggle for just one competition and he's asking to invite to it so I had to say I had to yeah. So I told Andrew okay, Andrew, I have a super nice input features. It's called a TSF. I've made a kernel kernel about it. It seems great, but I miss machine learning skill. And so I think we should team up because we are complimentary. And I guess that's what worked. Maybe he thought that okay, yeah. We need done and knowledge, obviously, in this competition and in the end we didn't because the first one, you have interviewed the second position, and they have absolutely no domain knowledge. 
+
+Sanyam Bhutani  19:32  
+Yeah. 
+
+Dr. Boris Dorado  19:32  
+That's impressive. That's, that's impressive. And so I guess, yeah, I guess that's why he accepted because he knew that we had, we needed domain knowledge, and the other Grand Masters came after that. And yeah, it was very, very fun. And then I got to the Slack channel, and there are a lot of Grand Masters there. And it's really nice to to be part of this community because they are, you know, they're they're lifting up they're lifting you to the top because they know so much. And so you learn so much from them. It's really interesting.
+
+Sanyam Bhutani  20:05  
+A quick plug for the podcast. So we have the interview the second position winners, that'll also be linked in the description and an interview with Artgor, Andrew, so please do check those out if you're interested. 
+
+Dr. Boris Dorado  20:17  
+Okay. 
+
+Sanyam Bhutani  20:18  
+Could you maybe tell us how was this experience? Of course, you're a amazing learner, because you picked up all these techniques right after you during the competition. But how did teaming up with the Grand Masters affect or maybe orient your learning approach versus how it was when you were just starting out?
+
+Dr. Boris Dorado  20:35  
+Yeah, it was, it was it was a hard yeah it was a hard task because I, LGBM LGBM, was okay. I mean, it was it was easy. It was just better decision trees and so on. So, it was okay. When we started working when we started thinking, okay, so so after Andrew came well after we teamed up with Andrew we feel field came up so what yeah with Psilogram, Yeah, you get 
+
+Dr. Boris Dorado  21:13  
+He joined the gym. And so that was also a very nice surprise. And what's fun actually is that he actually had sent me an invitation request before I teamed up with Andrew. [Okay] But I never seen it. I never seen it. I've never seen it and I don't know what happened with GABA. Definitely there was a problem and I think it was very;
+
+Sanyam Bhutani  21:34  
+It's after you team up so it doesn't show up anymore, if I remember correctly, on Kaggle.
+
+Dr. Boris Dorado  21:39  
+Because he was he was he was telling me that I sent you an invitation and now I see that you have teamed up with Andrew. So I don't know, maybe the team invitation were sensing your tenuously and so something messed up I don't know. And I was very naive about it. I remember because I received an email saying that the the Kaggle team had to be answered. No, the Kaggle team request he told me that the Kaggle team requests had to be answered. And I was thinking, I thought I thought that the Kaggle team meaning the team of Kaggle, I felt a team of Kaggle asked me something, but I don't know what he was talking about. And so instead but sorry, but what requests are you talking about? And I've never seen any any email from the Kaggle team and so no he told me no, no, I asked you to team up with me. And I was like, come on, like the first year. Almost the first guy on the leaderboard why would you team up with me? So yeah, joined the team and then Bojan, joined as well. And then he we started thinking that we needed neural networks. And it's here that a lot of people in the gym study to say, okay, now we have a problem because there's absolutely no one in this team. That who knows about neural networks, right and, and so if it were only neural networks, he would have been okay. But it's not like the easy part of neural network, we had to go into graph neural networks, which are a derivative of recurrent neural networks. And then you have a lot of you, you can plug convolutional and densely connected stuff. So it's like you're taking all the difficult stuff in the neural networks, and you put them together. And this is what what the competition was about. So yeah, that was actually very difficult to learn through that. And yeah, it was very interesting because I knew that I would need it for my work. So I got straight into it. And then I tried to learn about this interesting your graph your networks,
+
+Sanyam Bhutani  23:48  
+For context for the audience. When you actually Google graph neural networks, you find research papers, unlike CNN or annalen, where you find some courses, some articles nicely documented. So I think this was much of an open ended question still, I think it still is at this thing.
+
+Dr. Boris Dorado  24:05  
+Yeah, yeah. And it's what I what I've noticed that. So we Google the word,, this graph neural networks, and it's also really  flourishing field. There are a lot. There's still a lot of paper. But I think that's what deep learning is about. The I think there is an architecture that pops out every every day about we have a lot of indies grasping or nettle, we have like 10 different versions of them. And each one is we will probably publish our solution. And that will, that will make yet another graph neural networking in this long list. I mean, everyone is changing something and then it makes a better solution. And then it's published that we had a lot of googling to do because there were a lot of different architecture out there.
+
+Sanyam Bhutani  24:57  
+So going back to teaming up experience you had this again, diverse Grand Master team that you were with, and I think also reflected in your activities. He had two amazing kernels from you that I'll have linked in the description. But could you maybe tell us how every Grand Master because Bojan for example, has a rich stacking experience. ChristOf, has a deep neural net experience Andres the king of EDA. So how did every one of these affect your process or your approach to;
+
+Dr. Boris Dorado  25:32  
+So yeah, so Andrew actually made a lot of EDA but in this competition EDA was not very interesting. We, I mean, it was just molecules and between the molecule and molecule well, that's always molecules. And so to me, Andres was more of in your load about basic machine learning algorithm like LGBM, and it was a really yeah, efficient this and he had a lot of programming skills that were that were interesting for me. And it definitely Psilogram, definitely. He was a you he was interesting. It was interesting to to work with him because he, I realized that because I was wondering how can you get so high in the in the leaderboard by making by doing the same thing as we're doing LGBM. And so I realized that he had done really interesting features based on on what first on what was in the corners in the public corners, but also how we could create this meta features which I didn't know about this matter features that like new features, and they absolutely didn't have any physical sense. I mean, he was just taking items and then first nearest neighbor and then it was a trying to build feature that I had absolutely no sense in physics and I was surprised that if It actually worked. I was like, how can this work? This has no physical meaning. But yeah, it worked. And then yeah, but Bojan, is a master of stacking and, and ensembling.
+
+Sanyam Bhutani  27:12  
+Meme master also, unofficial meme.
+
+Dr. Boris Dorado  27:15  
+Yeah, yeah, True. True. True. The Slack channel the meme master is really interesting. He's always posting something. Yeah, yeah. Yeah, I agree with that. And so he helped a lot. That's all if you ask someone else in the team, you will definitely tell you something else about these Grand Masters and how they contributed to the to the to the, to the competition, but this is really my my feeling about this. And so both on a boat on definitely helped me understand what is enabling because I didn't know about that. I heard about that. But I was he was explaining me how he makes all the plans that we have. So we were and something blends and blending of blends and blends. And so yeah, it was really interesting. And I didn't know that and I was surprised that it also worked. So then I looked on the internet for articles about inseminating. So I learned why statistically it works. And so that was really interesting for me. And then, Christof yeah, Christof was maybe you were to me what was the more interesting because he had so much knowledge of deep learning. And you could just say he had a PhD in mathematics. So I know I do a lot of mathematics do so it was really interesting to work with him. And he was a he was coding he was implementing gold social so fast and I had to keep up so I had to work a lot to keep up with all these architectures. And and no, it was really interesting. I think it was the most challenging for me was trying to follow up with Christof, is very yeah, he's very clever guy.
+
+Sanyam Bhutani  28:51  
+Got it. So you also shared your hardware setup, which was pretty scary to me. It included multiple machines multiple, multiple graphic arts and could you speak to how effectively or did you use these and how to what extent were these had fallen in your solution?
+
+Dr. Boris Dorado  29:07  
+So I started with CPU on so I have, I have a computer at work with something like 24 CPUs. So for lightGBM, it was great. Yeah, yeah, it was great because it's, it was a it was a it was going pretty fast. And, and I couldn't I could run separate task and separate models. And it was I had, yeah, it was nice. But when we came into neural networks, every everybody's told me okay, we need GPU. And, and that's actually how I learned that we had GPU at ca. So I studied, yeah, I studied contacting the IT team and I asked them, okay, do we have CPU and GPUs and they told me yes, we do. We have a dgx. What's a dgx. It's a big machine with eight GPUs a to be hundreds on that. So I didn't know what was p hundred at that time. So I checked on the internet and I said, okay, looks nice. And then we have 20 v hundreds of why's everybody yeah. What why is nobody using them? Yeah, because nobody's doing deep learning. Okay? Well yet because it was a prototype, it was a prototype machine. And so what they were expecting that people were studying, we eventually started with deep learning and so they will be using them. So I started using them. The shame is that we couldn't efficiently paralyze the neural networks. So basically, the dgx is the dgx is a is a is eight GPUs that are on the same node. So they the communication between them is very, very, very fast. But we couldn't take advantage of that because we couldn't find a way to efficiently paralyzation The models. So this is what I'm going to try next. And so we were learning different models on every single CPU. So that's, that allowed us to do the hyper parameter set quicker, because we could, yeah, run models different separately on GPUs.
+
+Sanyam Bhutani  31:20  
+To reiterate for the audience, again, GNN is an open research area. So unlike scenes, which sometimes can be easily paralyzed, this is where the trick or the open question would lie.
+
+Dr. Boris Dorado  31:32  
+Yeah, and I sorry, but the problem also with GNN, is like, is no like, framework for that. You know, if you want to do CNN or RNN with CNN;
+
+Sanyam Bhutani  31:44  
+?????
+
+Dr. Boris Dorado  31:44  
+Yeah, yeah, there's, with keras. You just put just a second show conversional putting layers and recurrent layers, but we don't have for GNN. So you have to do you have to work? Yeah, you have to code yourself. You have to implement yourself withn GNN, and so that's why it's it's it's not paralyzed as much as a conventional or recurrent neural network would be.
+
+Sanyam Bhutani  32:08  
+Got it. So what framework did you end up using? And how did you track your experiments across the team? I believe everyone, whether using the same playbook or very different approach.
+
+Dr. Boris Dorado  32:19  
+So we were using what Christof used, so he was using Pytorch. So I went with Pytorch because I didn't know either keras or Pytorch. So we went with Pytorch. And so the or the other in the team, were actually more of there were so Andrew was giving us papers, articles from the internet every day, so we would read them and and and Christof would implement them. And yeah, yeah, I mean, yeah, we went with Pytorch and we went with it. We didn't code much, except when we had to except for when we had to Christof was doing most of the stuff. And we were changing. I mean, by total chaos, that's still very high level programming, programming language. And so we could just, even if we didn't know about a title, we could just read the code and figure out that this is doing that. And this is doing that. And so we could change manually hyper parameters or something without really modifying the code. So no title, it was all carrots was not much of a problem. I mean, we led this to Christof and then we would read it, read what Christof and implemented and then we would change by handle hyper parameters and;
+
+Sanyam Bhutani  33:35  
+Got it. So there's a question from the AMA section by Tarun. He says, what did your testing pipeline look like when you were working on different ideas in parallel, I believe, and how did you keep track of all these experiments and results?
+
+Dr. Boris Dorado  33:49  
+So I don't know about the others, but I was I had, so the pipeline. Well, pipeline is easy. We and that's the same In scientific research, if you want to have the influence of something, you make everything go constant in the calculation. And so this is the basic yeah, basic crude of trying new ideas. And so we were just and sometimes, when we change our architectures, we had to make sure that everything else was staying constant. And so we the graph, that origin engine had to be the same. And so we had like a big, I had like a big Excel file with all the architecture all the possible graph because the graph would change depending if we put this oh, that and, and then the architecture, the interaction between the atoms and the end, the bonds would change depending on the architecture. And so I'd like a big Excel files with different hyper parameters and I would keep track of the bed scores with this.
+
+Sanyam Bhutani  34:52  
+One other shameless plug my muse I'll have a article very soon, which will talk all about how to use open source tools to automate the you were talking about by building and callbacks into functions that will automatically create the spreadsheet for instead of human who check that out as well, if you're interested. So, I think Christof mentioned that you tried a wide variety of ideas that did not work. Could you maybe tell us what ideas didn't work for you and some thoughts of why you expected them to work and maybe why they didn't work?
+
+Dr. Boris Dorado  35:26  
+So to me, the ideas were more physical. I had a lot of physical chemistry, input features that I was expecting to work, and it actually failed. And it was surprising for me, because when I analyzed the problem, I was like, okay, we're missing this. So far, LGBM and it worked great for LGBM because it's more interpretable than your network. So LGBM gives you at the end, the input feature. Yeah, that works the best that Yeah, the most important input features. And, and so I, when I tried with LGBM new input features, depending on what was missing, that works actually pretty well, but with neural network, it's more difficult. And so I was expecting things to work and it actually didn't work like, you know, the magnetic coupling between atoms is really related to what we call the magnetic shielding tensor. And this is what an input features that that we had in the in the training set only, and that further tests that so we we first predicted the input, the magnetic shielding tensor for the test set. And then we added to the to the training set, and it failed, and I didn't I didn't understand why. And so there's also there's also a discussion topic on this on the on Kaggle, I was there was there there was a different types to have magnetic coupling to predict. And there were always two of them that were that had a very low scores compared to the others. And I was wondering, I was trying to find a way we had a very low score and so, I plotted all them I, I drew all the molecules that had a very low score. And I realized that they they had what we what is called messengers, which is basically different, different molecule, the same molecule but with different properties. And and so we didn't have this in our in our in our training data. And so I started adding measurements to the training data and it failed, also. But the problem is I I still don't understand why. It's certainly strange that you're, you're thinking that you are adding relevant information from physical and chemical information to this to the data for the new and it took to work better, but it doesn't. And since it's so not interpretable, I still have no idea why it didn't work, but well, it didn't work.
+
+Sanyam Bhutani  38:13  
+Okay. If you could also, maybe now blow it up. I think it'll be too complex, but maybe a 50 foot overview of the solution, maybe from your point of view that led to winning the gold medal and the decision making process behind what all models that you include in the final solution.
+
+Dr. Boris Dorado  38:32  
+Yeah, so the final solution is a graph. So graph neural network is, is a is actually a derivative of records in your network. It's just that you are updating through time. The it's a deep referential network, okay. And so you we are adapted through time, the status of the atoms and the end the bonds between atoms. So, it's going through time, that's why it's recurrent. And it's the because we have you have one layer for each of the atoms, and to have like a vertical vertical layers for different atoms and bonds and then you have a horizontal layers for the record through time process. And so that's a deep director and neural network. And the key thing is how you make So first is the input feature that you put into your notes of your, your neural network of your graph your network that are going to be updated and so they are updating you using each node, each item is updated, the status of each item is updated depending on its neighborhood, and it's not his own property and its own properties. And so we started with this and basically, then you have to make to have atoms and bonds interact one with another. [Okay] So that's what define the main architectures of gradual network. You several different ways of doing that. And so we went with, we went with this net architecture. So we tried a lot of stuff, but our neural network was very deep. And so we had numerical problems, we have like, exploding gradient issues. And we started doing dense connection between interaction blocks and everything, you know, to improve that. And in the end, what works best was the net architecture. So we started from that. We modified it to be it in order to have more interactions between atoms and bounds. In order to remove the vanishing grade, the vanish the exploding radius issues we had, yeah, really dense connection between some of the of the layers and, and then at the end, or what we call a regression head that will calculate the properties you're looking for.
+
+Sanyam Bhutani  40:54  
+Got it. Okay, now, maybe talking about maybe in hindsight, how has Kaggle impacted what you taking away into your professional life? Are you taking away any learnings that will help you in your quote unquote, off Kaggle machine learning workflow?
+
+Dr. Boris Dorado  41:11  
+Yeah, definitely. First yeah, first my LinkedIn profile exploded. Because every because every, every one of the grandmasters in the team posted something on LinkedIn and they have a lot a lot of followers and so you have all these people and they just come into your profile and then just click add friend add friend add friend so I have like, I don't know, maybe 50 to 60 connection requests every day. So yeah, it said I hits a lot and but that's that's actually you meet a lot of new people and that's actually very interesting. And, and in, in a institution, they don't know much about Kaggle because we don't do lots of have mentioned earlier, we're not doing lots of machine learning yet. So I don't have a very Yeah, I don't have a lot of professional impact from that. Except that if I want to change job, I think that it would help me a lot. Because, yeah, he it means that I've been yeah. You I think that you when you're when you're winning a Kaggle competition, it means it's a lot because it's the competition is very fierce. There are a lot of people and it's really difficult to get in the top 15% in the top 15 people team and I, I didn't realize this at the beginning because this is my first competition and I end up with a gold medal and I said, okay, well, why not? But talking with all the the other members of the team, I realized that I yeah, I got very lucky to be in this team with all these people and end up with a gold medal. Gonna had a lot of messages on LinkedIn. Tony, please, team up with me next time. I wanted to say that okay, I'm just a beginner I got lucky in the first place. So no, I mean I think that yeah winning this go solution gallery it also means that you have worked a lot during three months and it talks I think it does a lot about your personality whether you are someone who just give up on the okay, you are, I don't know you had 200 or 300 at the leaderboard Are you giving up or are you still trying to make it to the top and yeah, because it requires a lot of work. We've been working nonstop for three months every weekend until late and everyone was really available anytime of the day of the day and during the weekend. So you know I think it also tells that you are willing to work a lot to to find yet to to reach the top and that's I think that's a nice and I think to take it to take out from this.
+
+Sanyam Bhutani  44:03  
+One of my favorite quotes is by Grand Master Rohan Rao. He says Kaggle is his favorite second dream job, but it comes at a sacrifice, I think which you were just talking about. 
+
+Dr. Boris Dorado  44:12  
+Yeah, true. 
+
+Sanyam Bhutani  44:14  
+So I, we were talking about people in your area, I think you're in the Paris area. So what is a machine learning scene? They like? My question is based on the fact that people talk about here. I'm from India, we don't have a lot of Grand Masters or Institute's here, do you think that's relevant? Or if you're on Kaggle that's irrelevant. You can team up with anyone who you probably don't know in real life as well.
+
+Dr. Boris Dorado  44:39  
+So the last scene in in Paris, I have no idea. [Okay] Yeah, I have no idea. I mean, since I'm so new in the ML, I know that we have a lot of startups and and that they are doing AI stuff and Most of them are doing or not doing it. But yeah, they thinking they're doing AI;
+
+Sanyam Bhutani  45:05  
+But using Logistic Regression
+
+Dr. Boris Dorado  45:07  
+Yeah, this happens and I don't know, I know that we're not using deep learning so much. Let's talk about France okay. We're not using deep learning so much. It's It's very, because I think deep learning is it takes time it takes time. And so if you want to do it industry alley and if you want to you okay, you you watch your you write your neural network and you want to, it's it, how can I say that. Yeah, it's difficult because, I mean, you work with commercial people and engineer people. And so you have to explain to them, they want to understand why the speech, they don't care about this, this or that feature, but they want to understand the model a bit. So when you're talking to a commercial, you can't they want something that interpretable. And that's why decision trees are leaner or regression or pulling immigrations are used more than deep learning because when your commercial guy con comes in ask you, okay, explain to me this model, you can tell you okay, this feature is more important because this coefficient in the regression is more important. And it's easier to say, okay, however, and I could deep graph neural network, and, and look, it's outputting a very well score, but I don't know what's happening. They don't want that. So I guess that the deep learning thing is very poor at the moment. But I think that eventually it will increase. I know that in the United States, it's declining is, is flourishing. So eventually will. And I know that Christof has had the same problem in India in Germany that deep learning is not used very much in industry because it's not interpretable and takes time. And so, yeah, I don't know if I'm answering your question, but;
+
+Sanyam Bhutani  46:59  
+My take away what I actually wanted to ask was if you're from an area that doesn't recognize these things, if you go to Kaggle, you can actually team up with people who might have the same experience. And you cannot also learn a lot by just going online to that platform.
+
+Dr. Boris Dorado  47:14  
+Yeah, yeah, you can just turn it on by just reading and that's what I figured out. First, you can learn a lot by just the public kernels, but it will bring you up to, let's say, not even bronze, I think you have to. After that you have to sort of sometimes you have like one kernels that is leaking and everyone just forget and then it ends up like silver. But I thought first that it was a it was I first thought that it was great to be in the 25% of Kaggle competitions. But then I realized that no, it wasn't because everybody can be in the top 25% by just working just to beat it but and the takeaway is that if you really want to go silver or gold you have to, you have to, to go well beyond what you're usually used to doing. And because, for instance, for graph neural networks, if we there is no, like I said, there is no deep learning framework for that. There is no it's just it's a you have for RNN or CNN, but not for CNN. And so if you're not willing to go do yourself your own architecture, and so look into it, and then you don't go, you don't go very far. And that's yeah, so you can learn a lot. And maybe you can learn a lot from your work for your work, because real life is not calgon competition, so you probably will learn a lot from all these people. But yeah, if you want to go up the leaderboard, yeah, it takes a lot, a lot, a lot of work and time.
+
+Sanyam Bhutani  48:51  
+For sure. Before we end the interview, I have one last question for you what best advice you have for someone who's just starting out maybe on Kaggle and also machine learning broadly speaking.
+
+Dr. Boris Dorado  49:03  
+So just starting machine learning. I mean, I would, I would say go on Kaggle because, I mean, it can be a bit overwhelming at first because I mean nobody's using decision trees on cowgirl or something they're all using LGBM or admin stuff [Yeah] but it will they are always really nice kernels and and even the Titanic stuff and and the house predicting stuff is really great for eta and, and stuff like that. So I learned a lot from that too. And I would say yeah go on Kaggle, try your competition if you have a bit of time. Just Just try to do to tackle the competition with very simple basic algorithm so that you, you, you just realize how it scores compared to the others and then try to improve it bit by bit. And what if you have the chance that I had to team up with a Grand Master then go for it.
+
+Sanyam Bhutani  50:10  
+Got it. That's that's amazing. Anyways, thanks for that before we end the call would what would be the best platforms to follow you and follow your work?
+
+Dr. Boris Dorado  50:20  
+LinkedIn definitely, and I will yeah, I will I will post a blog post on LinkedIn about a future Kaggle competitions and and maybe future works on machine learning and I'm going to to write something about graph your network or so to try and and like formalize everything that we've done during this competition and publish it eventually. So yeah, LinkedIn, definitely.
+
+Sanyam Bhutani  50:47  
+That's amazing. I'm really looking forward to those will have your LinkedIn profile in the discipline. Will you be participating in more competitions in the future? Have you thought about?
+
+Dr. Boris Dorado  50:55  
+Yeah, yeah, we we're I'm thinking about Computer Vision competitions because I want this is a this is something that I want to be best. best at. And I know a bit about comfy comfy networks and, and, and and all this stuff but I same as I said I want I want to I want to know to see how if what I've learned on Coursera for instance is working great on Kaggle competition. So I will do exactly the same thing I will go on. I will go on a computer vision competition and try simple stuff to see how he performs and then maybe get better.
+
+Sanyam Bhutani  51:42  
+Looking forward to your gold medals. And thanks so much Boris for doing this interview. And good luck for your competitions.
+
+Sanyam Bhutani  51:51  
+Thank you so much.
+
+Sanyam Bhutani  52:01  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science."
+

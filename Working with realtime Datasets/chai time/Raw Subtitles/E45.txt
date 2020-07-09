@@ -1,0 +1,231 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the "Chai Time Data Science" show where I interview Kaggle legend double Kaggle Grand Master, Mariosfor the second time on my interview series. If you haven't yet, read the previous blog interview. Please do check it out because this interview really takes off where  the previous one had ended. In this interview, we continue talking a lot about Kaggle and we talked about how Kaggle has helped Marios in his data science journey, and his data science work at h2o.ai, all about the projects where he is contributing to. We also discuss his recent gold winning solution to the data science poll 2019 competition. And I believe the approaches shared by Marios are applied, even generally, outside of that competition. I feel we also touch upon a very important topic that isn't discussed as much on this podcast, the personal side of things, and the personal sacrifices it takes to really become the best become the best in the world become the best on Kaggle, like the sacrifices it took Marios to become number one on Kaggle both in competitions and discussions. So please stay tuned for that discussion towards the later end of this interview. For now, here's my interview with Kaggle legend, Grand Master Kazanova-Marios, please enjoy this.
+
+Sanyam Bhutani  2:29  
+Hi everyone. It's a huge privilege for me to be talking to Kaggle legend for the second time Grand Master Marios, Marios, thank you so much for joining me again on the interview series.
+
+Marios  2:39  
+Now, thank you for inviting me in this, you know, very popular series. And by the way, you have done a great work on, you know, interview, interviewing many different people in this field. Very nicely structured, really privileged to be invited. Thank you.
+
+Sanyam Bhutani  2:54  
+I'm really lucky that great people like you keep saying yes and I keep getting lucky. I have, I'm lucky keep continue asking stupid questions to really smart people.
+
+Marios  3:03  
+No your questions, that's really good, actually, yeah, your questions makes us look smart.
+
+Sanyam Bhutani  3:10  
+Okay, so I want to start by talking about your Kaggle and data science journey. At what point did you really become interested in data science to an extent that you decided to take up a career in this?
+
+Marios  3:20  
+Yeah, you know, I kind of this is this is a story I've told quite a few times. So maybe I'll put a little spin into it. I'll give a little bit more more context. I was I'm originally from Greece. So I think it was around 2010 that I finished university and that was in my family had a history with accounting. So I was either going to do this also in Greece, we started having some economic recession back then. So, um, I didn't really want to do accounting, so I decided to do masters and I went to the UK to do risk management. And I was really lucky because the course was very good. But it wasn't really focused on on predictive modeling that at the end of the year, they had University was organizing some talks, you know, enterpreneurship type of talks where different business professionals were coming and they were trying to inspire you about what to do next is something that the university does really well. And there was a guy who came, who told us the story of how he made money by a competing to the horse races. He figures the same course with us, his name escapes me. But he took a very analytics and strategic approach on this. He started collecting data on a daily basis for two years he was going to the horse races without really betting maybe he was betting just for fun, but he was mostly gathering and collecting data. And after two years, he built a logistic regression model in order to predict the winner and along with some strategy, he started making money. The way he described this, the approach he took and how he made sort of a living out of this I was I was really impressed. It seemed like a superpower at that point, you know, the power to gain insight and predict anticipate the future. I think I was really impressed. So this is really what got me into into the field. I started playing a little bit myself. I even created a tool called Kazanova. In Java, you know, anything I was learning, I was putting it into a software and then I made it available because, you know, I didn't want that knowledge to go to waste. And after this Kaggle came into the picture, I remember it was when I joined my previous company was called []. They have already hosted two Kaggle competitions by the by the time I joined. So I remember when I joined that company, everybody was talking about it. And they were talking about the learnings they got from the competition. And that was an extra incentive for me. Then I said, everybody's talking about it, as I said, give it a salt. And I am. So basically this is how Kaggle, Kaggle started.
+
+Sanyam Bhutani  6:30  
+Okay, for the audience, I'd like to mention in respect of  Marios' team, we're not talking about the open source world, which we've already talked a lot about in the previous interview. Go check that out, please, if you're interested. But coming to Kaggle can you tell us how has your approach now evolved over these years that you've been active in? How has your approach and also views on Kaggle evolved over all of these years?
+
+Marios  6:55  
+Um, my views on Kaggle hasn't changed a lot. Um, is a great is a great platform to to learn many aspects from, from data science, and is a great is a great platform to collaborate and meet new people in this field. I guess the reason I first joined was because I wanted to emit originally I wanted to test how good I was. Because for for a long time you're, you know, in your own cell. I was learning things, but I didn't really know how they would fare against in a in a competitive context. And this is what originally drove me into it. And I can say I was very satisfied. Like, look, I mean, the first attempts were not very good. And I think this is something everybody should realize. I mean, I have seen a few really talented people that they've done really well from the beginning. I guess I was not one of them. Did a bit too bad either, but, you know, it takes some time obviously to get familiar and learn the tricks. But yeah, the what actually, after that original stage of trying to see where I was, then I want to see how to to improve. And I think this is where Kaggle is, is really good because it has created the platform where it's easy for people to share, it is it incentivizes people to share you know, through kernels through discussions. Iytnow, these things have been to some extent gamified because the you can get awards from doing this. 
+
+Unknown Speaker  8:49  
+Yeah. 
+
+Marios  8:50  
+But I have to say that this was happening even even before they have been, you know, the these rock. So, generally the data science community is a great thing. Community is community that shares, it is one of the most generous communities I've seen in the whole online spectrum. And yeah, I was learning a lot and they still do, is a great place to to follow if you want to be up to date with recent advances in data science.
+
+Sanyam Bhutani  9:22  
+Yeah. 
+
+Marios  9:23  
+Is a great place to test a process and benchmark yourself is a great way to collaborate is a great way to start a project when you don't have your own resources. Kaggle has done a great job on this it's it's it's really amazing that they have done that that no you can actually work without having your own resources and not only work but only also use like GPUs for example recently. 
+
+Sanyam Bhutani  9:50  
+Yeah.
+
+Marios  9:50  
+They have done an amazing work on that. Um, so yeah, I mean, I guess doing really well on on, on on Kaggle get it to number one, that was just a bonus. You know, he was just he, I mean, I'm really glad that it happened and always left with a lot of effort into it. And even gaining some cast as well. But this, especially the last part, they were not that important. What really drove me was to learn to improve in my craft, you know, meet other people in this space. And these are mainly the reasons that I still, I keep doing it.
+
+Sanyam Bhutani  10:31  
+I think there's this one very important aspect people miss out on the fact they feel like hey, I'm not from the United States. I'm not from San Francisco. I don't have access to the knowledge the people but in your case, you you come from Greece, but he was able to gather knowledge online just using Kaggle without I believe having a San Francisco like or a bay area like cultures.
+
+Marios  10:53  
+Correct. To be fair, I did invest time so when I enter Kaggle I didn't start from from zero, I would say was in a way a data scientist before data science began exactly I think, I mean, we've got already got the name of data science because I really invested on both programming for that purpose, because I didn't know programming pick this up in the university by download via buying basically some Java books. And the, so I picked up programming for the sole purpose of trying to do work in in analytics essentially do specific work in in predictive modeling. So I had a very focused knowledge for that space. And then specifically, I was trying to learn, you know, the maths, stats and everything related to that field and yeah, so when I entered Kaggle I sort of had that, that background. So, but yeah, I had to pick it up from scratch. And it I think it was tougher in a way back then because that information was not so freely available as it is today, and they were not courses back then, that you have in Coursera where you can pick up a load of skills right now. 
+
+Sanyam Bhutani  12:30  
+Yeah.
+
+Marios  12:33  
+Yeah, but but you know, having said that, I'm not saying that. It's, I guess what I'm trying to say is that you can still you can still learn, if you put the time, a lot of online resources, you can actually learn a lot from Kaggle as well. If you pick up those know that type of, of competitions. And then you just follow the trend that a lot of people that have just learned by doing standard competitions on Kaggle. And they obviously didn't do very well in the beginning but progressively they starting doing better.
+
+Sanyam Bhutani  13:15  
+So can you tell us of some skills that I believe you took away from Kaggle that you were able to apply to the real world? And this question what is needed some the decent debate that people are trying to spark that hey Kaggle is not equal to real world data science. I know most Kagglers disagree to that, and the people were making that argument that aren't even Kagglers, what's your take on that debate?
+
+Marios  13:37  
+I think there is some small truth in it. And I don't I don't want to either mine, Kaggle. I think it's fair to say that it isn't, no, I mean, there, there are some other skills you also need in the business environment as well. But there are certain things where you can take from Kaggle and are very transferable and applicable to your current work like things like how to avoid overfeeding, I know that people are bashing Kaggle on that, because there have been cases of probing and that's true, there have been cases where there hasn't been a great work on trying to make certain that you cannot leak information from the test data and use that to improve performance or your training data. But there have been many other cases where they have done that well, and they have been like huge sifts between public this data and private this data. Um, so yeah, building strong validation strategies, picking up a new techniques with actual usable code and filter out what doesn't work because there are a lot of papers that come out and they claim the every month you have, every day almost you have it comes out and beats everything else, but to be honest, unless I see it on Kaggle now I don't believe it you know, I said with actionable with with actual code. 
+
+Sanyam Bhutani  15:07  
+Yeah 
+
+Marios  15:08  
+Right. This is where I will believe it because I know it is tested in a very competitive context and under a specific metric given some constraints and so, in these are very, I mean, how to make presentations to some extent, how to interrogate the data that has been great work for with presenting especially since Kaggle incorporated notebooks in general data science flow, and at least in the context of having like a data set, which is kind of well defined. I think these are these are great skills and, and, and as of late also how to constrain resources, especially with character restrictions how to be more efficient how to make certain you get the best possible score given some time constraints and hardware limitations and computing limitations in general um so yeah in obviously picking up new languages I for example I wasn't using much are in the still don't use but I picked up a lot of things from from Kaggle and even Python with something I mostly learn from Kaggle not the actual syntax that the what's specifically related to the data science packages that people use on a day to day basis. Um. Yeah, I mean, these are all these are these are skills have definitely picked up from Kaggle and are transferable There's some other things where I think you still get them mostly from your working environment. 
+
+Sanyam Bhutani  17:07  
+Yeah. 
+
+Marios  17:07  
+Like, how to make good presentations, PowerPoint, how to. And I think that's one of the most important things how to translate a business question or a business problem into a machine learning problem. Yeah, it definitely, man. It's that like, what resources will they need? What sources? What sort of data will I need? How should they create the validation and that strategy? Which metric to use, then how should I test these when it goes live? How for example, am I going to do the A B testing and see if there is an applet, for example, how to make this scalable, how do make certain you know, it's it doesn't exceed certain hardware limitations, I guess now Kaggle has also elements that can help you with this. But generally, it's this aspect of the work which still needs experience. As problems in the business environment are not well defined. You have to define them you have to make them well defined.
+
+Sanyam Bhutani  18:23  
+Like you said, to be fair, Kaggle gives you a great head start after with the things that to be fair, Kaggle doesn't teach you can only learn through the real world to which Kaggle will help you get to.
+
+Marios  18:33  
+Yeah, but the thing is, you will pick up the skills eventually, absent people making a great transition from Kaggle with Kaggle being the only actual real data science experience to the business world. And obviously, they take some some time for them because they will have to learn the business part. But I've seen people who have been very successful doing this and they have seen people with a you know, they were coming from very diverse backgrounds into Kaggle to learn data science and then making it a successful transition to that field. 
+
+Sanyam Bhutani  19:11  
+Okay, now;
+
+Marios  19:12  
+You need to give them credit for that. I mean, 100% Kaggle definitely helps you. So I think people are really unfair to diversity. Yeah, really very, very unfair.
+
+Sanyam Bhutani  19:25  
+Coming to your current job, you're a data scientist at h2o.ai. Can you tell us what tasks are you working on? And how is your Kaggle experience helping you currently?
+
+Marios  19:35  
+Yes, I'm in. You know, h2o has a very inspiring, inspiring vision to democratize AI. And, you know, I follow that vision. And that mostly happens for me through this automated machine learning tool that h2o is developing called driverless AI which automates certain parts of the the machine learning process specifically for supervised learning tasks. And I see myself a little bit as jack of all trades. So I specifically contribute to the code base of the software. I guess the part which are mostly involved is the time series components, the automated time series components of driverless AI, and however I'm involved in, in other parts of the software as well. You could say I do product management to some extent. And but at the same time, I try to be close to the customer on both the trial face and after they have become customers because it is really important to collect that feedback and translate that into a tool which is not just you know, predictive Yeah, but there's also very useful to the customer. Okay. And I've been also trying to make certain that, you know, customers make good use of the software. But I think this is this is really key, you know, you want to be able to build something that is not just predictive, it's not just good data science, but there's also it all the customers will love it and will find it useful and they can integrate it easily into the day to day processes. Kaggle really helps me on that, because as we thrive, thrive and try to be as productive as we can. We need to be able to see what you know, the new things that come out, and Kaggle is a great way to do that. I mean, you know, like, things like you know, BERT comes out so you do Kaggle and we try to incorporate because we know it works. And we can see the implementation different implementations for it. And, or just, you know, another technique comes out. And, you know, you want to be able to take that and make certain you have the most cutting edge, the most predictive tools, you know, to get the best possible results.
+
+Sanyam Bhutani  22:21  
+I guess, to give an example, EfficientNets that will really famous research that came out by Google haven't appeared on Kaggle at all, and people know that they might not be the best networks or architectures that you could use.
+
+Marios  22:33  
+Yeah, yeah.KSo yeah, it's also good to scout for efficient implementations week implementations as well. And it is a lot of it on on kaggle. So yeah, it's, it's really being able to extract that, that no lids extracted the insights and the implementation themselves and making certain you know what it is the most competitive thing performance wise out there and then find also ways to incorporate that.
+
+Sanyam Bhutani  23:14  
+You could you mentioned for the audience can you help us understand you mentioned you also work with customers after the transition with the product has been made, isn't automail supposed to be a one click solve everything solution, why do you need to work with customers after they have driverless AI?
+
+Marios  23:29  
+Yeah, no, I mean, you know, there are a lot of things that can arise you know, when you put the model into production, you know, how do you track performance when you need to rescore or retrain your model, you know thrifts when your model stops performing or how do you know sometimes you may also help on exactly translating the business problem into that problem that in this case driverless AI can solve this. And yeah, so it's definitely not just, it's not just one, one click. So, problems need to be formatted, you know, in certain ways, you know, the big the right metrics, you need to have some good test strategies as well, you know, to be able to monitor that the model is doing well. And, and then obviously, you have to integrate the code that comes out from the tools, the different coding artifacts, and then incorporate that into the pipelines that you know, the customer has. And all of this, you know, takes quite some, it takes some work, you know. So, yeah, you need to you need to, to follow up on that sometimes, you know, to help making certain that you know, the the pipeline is as best as possible.
+
+Sanyam Bhutani  25:03  
+AI is not replacing it anytime soon.
+
+Marios  25:06  
+Hehe, no no. 
+
+Sanyam Bhutani  25:09  
+Do you think someone can achieve a silver or even gold medal just using driveless AI, is that a possibility?
+
+Marios  25:18  
+We can definitely achieve it on on some of the past competitions. I think what's a little bit hard now is that you cannot really control the external data that everybody's using. I think some of the old competitions which were more constraints constraint which you knew that you know, this is the data said no other external sources. For example, like there was this this BNP Paribas hosted competition with with claims. With we can do really well like we can get very close to adopt them within few hours of driverless AI working. Um, and that's because this was a competition that was you know, it's there were no really licks, you know, there were not external data sources where people could bring in and everybody could bring in different things. So if you have such a constrained environment, I think, yeah, it should be able to. Okay.
+
+Sanyam Bhutani  26:33  
+Speaking of medals, I want to discuss your latest a gold medal from the Data Science Bowl competition 2019 one for the audience, although it ended 2020 but can you before we talk about your solution, can you help us set the stage about the problem statement and the challenges so to speak.
+
+Marios  26:48  
+The problem statement was so you have different kids that they were using an app. Where in this app? They could play different games or I think what's different educational I think type of videos. And then they were, and at some point, they will have to do some assessment tests. So some assess them games. And the, essentially what you were tasked to predict is how they will do in that test. So given the learning experience that the person had using the app, can we see can we predict how they are going to do on that assessment test? I think that was the main statement they wanted. In other words, the modeling statement, I guess, thinks that the, the host wanted to derive were probably a lot about inside and whether that educational price prior to the assessment, whether it does really help on driving a better assessment, and the thing it does, because first of all, I will have to credit my team and that competition, they did a great job on creating diverse solutions. What I can say from my part is I approach this a lot as a time series problem. So I kept at this I measure the the historical records of each one of these kids in in different ways or users anyway. Like everything they have done, where they've clicked wherever they have misclicked how well they have done in previous assessments, in words, assessments, they've done well or not so well. How much time they were taking between assessments, how many pauses and something else idea is that I quickly realized that the test data had a different distribution in many of these features in regards to the training data because generally the test data you had last history than the training data so you had assessments which were earlier in the process while in the training data, you had some assessments which were quite late in the process or the person had various assessments and had played for many, many more hours. So I tried to put some effort to try and replicate that within my training data. I think that was key to getting to think very close to solo gold medals in the in the public. Part of the of the competition um, I basically tried to trim out no lids and historical records. And I did that multiple times creating multiple different data sets, you can see that as a form of bagging, or randomized auditing of different models built on different views of historical records for each person. And, and so my strategy was a lot based on that sort of trying to get a little bit closer to the distribution of the test data in regards to how much history I have available for each child before making predictions. I have to say, though, that in the private data, it didn't work as well. So it worked better on the public data than in the private data. 
+
+Sanyam Bhutani  30:44  
+Okay. Could you could you give us a higher level overview of your approach maybe of this competition as a proxy to how you approach all other competitions? How does your pipeline look like?
+
+Marios  30:56  
+Yeah, I think in general, the first thing that I do is I try to, first of all understand the problem statement. And if I can that really sells because if you can also put some domain knowledge into this, if you have I think that normally can help, then understanding the metric that I'm being tested on. And are there for example, specific techniques that optimize for that? Do I need to build something that optimizes for that? So these are these are questions that comes fairly quickly into the process. And then I try to create a strategy. After doing some some quick combiners some some visualizations between the training and the test, the judge will come up with a validation strategy that can help you can help me achieve the best score in the test data. I'd like to see how the train data differs from the test data. And what will be the most sensible uprights to create a validation framework that could best reflect, you know, what the train desk setup look like? And the for example, are there temporal elements in the data? Do I need to take a time series or a game series approach on how I create my validation strategy? Are there specific groups in the data, like, have different customers in the training, they need to test data? So I have, I need to create a validation strategy that also adheres to that I always validate onnew customers. Um, so these are things that come into my mind again, fairly quickly, to come up with a strategy then what they do is they normally test these ideas of different validation strategies, making some really simple models and just to see which one behaves better on on, you know, the public part of the test data. So I use this strategy and see a next percentage of improvement. If I include that Z feature, do I see this kind of uplift in the test data? Which approach seems to be a bit closer, you know, I do this kind of comparison. So I actually waste waste within quotes, sometime in the beginning of competitions, testing these kinds of ideas before I actually get into it. 
+
+Sanyam Bhutani  33:34  
+Okay
+
+Marios  33:34  
+Um, and then, after, after this stage, I think I'm good to go. Then I started doing more exhausted feature engineering. I play some automated things, obviously. But they also try to put some domain knowledge if I have as well into it. I am obviously try and build many different models. I will set up also a an assemble strategy. Now with Kaggle kernels I think I'm become more popular, I also try to do whatever I build I build it in a way that it will be easily transferable to a Kaggle kernel. So, separate my training and and my inference and build anything in a way so that I can easily upload the data set or in a trained model on on Kaggle in order to do the scoring. And progressively I keep looking at kernels, I keep looking at what people use and post and I try to incorporate that although I have to say I don't do that immediately for various reasons. I don't want to get affected too much but what the others are doing. I want to be able to create because I want to leverage the assemble. 
+
+Sanyam Bhutani  34:58  
+Yeah. 
+
+Marios  34:59  
+You know, put across, a strategy, you know, data solutions can give better results.
+
+Sanyam Bhutani  35:05  
+Of experimentation.
+
+Marios  35:07  
+Correct. And I know that various ideas can can get a better result. So I tried to think of it myself in the beginning without getting affected by what the others are doing. And then after I get stuck, man, I'm started getting ideas from, from the forums, and, you know, discussions and kernels. And this, this has helped me because I'm also able to create some novel ideas in the beginning, which I can use to my advantage when I also incorporate what other people are doing into this pipeline. 
+
+Sanyam Bhutani  35:45  
+Awesome. Yeah. Now for the audience. The complete solution might be very technical, so please find the link to the complete write up in the description. But if you could give us a very high level overview of the final gold winning solution to close to this competition.
+
+Marios  36:04  
+In that specific one, I don't think I have actually. I mean, I have just a general I think we have a general, write up of, but it's, it's obviously combining different strategies which can be tricky in within kernels. And in my case, my solution was actually about 10 to 15 minutes, and still included and assemble of eight, nine different models, not to me, or all of them were trained on the same data. But you know, this this data where, you know, three versions of the original data look, and then, after I've built these models, and I'd be called these model objects, I just incorporated starting approach. And I had a mega model, which was also be called that use these models as inputs in order to make the final predictions for my part. Then obviously the other people created their own solutions. I think they tried to address the the fact that the training and test data were different in different ways. For example, they use different weighting or cases that can counter for example, an assessment without having much history before that. But generally, we all provided hold out predictions, and obviously final predictions, and then we'll try different assemble strategies somewhere based on studying somewhat based on voting. Um, and I think the one that works best was the voting one. And that was pretty much it. 
+
+Sanyam Bhutani  38:11  
+Okay.
+
+Marios  38:12  
+Yeah. 
+
+Sanyam Bhutani  38:13  
+Can you also tell us you're teaming up strategy? What strategy do you apply while teaming up with anyone on Kaggle?
+
+Marios  38:21  
+Yeah, I guess this has changed. Maybe this has changed over time. In there can be I think, various goals. I think if you're really targeting to go for, like the best possible results and you want to think strategically about this, you want to team up with people who are likely to take a different approach than you so they, for example, the excel at different techniques, maybe someone is very good at deep learning while someone else is very good at, I don't know, tuning lightGBM models, you know, and you want to be able to form a team of people who are likely to take diverse solutions. So that is a strategy. I think we'd all want to be with someone who is much better than you or has much more experience than you. At the same time, I don't think you want to maybe team up someone who has very little experience, this may make it a bit more difficult. Mistakes might arise as well, you need to make certain that you know, that person knows the rules well, and sometimes it don't, you know, can lead to unfortunate events. And so, I think, yeah, as far as strategy goes, I think that's in in a key that you should look at that. On the other hand, you know, you should also have like fun. So teaming up with friends is also always a nice option, especially after you've played with some people a couple of times you do and you develop a relationship then you know it's really nice to play with friends. Please play with people that you can learn from. Yeah, the this is my my my view how I say this.
+
+Sanyam Bhutani  40:30  
+It's really interesting. You mentioned the word play can you tell us even after becoming the best the best worldwide the best on the world's home to data science platform, why do you continue to Kaggle even still even today?
+
+Marios  40:43  
+Yeah, I don't think I ever I was like the best. Yeah, so the I did manage to get at the top at some point after obviously putting a lot of hours into it. And I guess the yu know, I still like to do this exactly for for the same reasons I've mentioned before you know, the the as I said, getting to the top was a bonus. I mean, I did try hard to get there. It wasn't my original goal after I got myself into a within striking distance. I actually thought that since I got here, I should really try and get to the, to the top spot. But that was, you know, the fact that I actually got there was really a bonus. The reason I did it was because of the learning was because, you know, I wanted to become better in my craft. I didn't like that environment. I did see it a little bit like a game. You know, like, you know, you have a game. You have a leader board, you have certain tools and actions and skills that you can put in place in order to achieve a better score and that's also what kept motivating me and I put a lot of time into it as well. I guess my approach has changed a little bit over the years because you know obviously it takes a lot of sacrifices to be able to get a good results consistently, I'm yeah I cannot obviously put I don't want to put that much time anymore. I still you know, I want to obviously enjoy and take away the benefits I can without killing myself in the process. Um but yeah, it's I guess, I use that I want it is it has an element of of play. It is. I still say its a bit like a game.
+
+Sanyam Bhutani  42:56  
+I also want to discuss another theme another message that I'd like to get across and you've been very vocal about this, even on this interview otherwise about the sacrifices, personally and even you're doing so much efforts on Kaggle I'm sure it took a lot of genius and efforts both combined, it affected your health also, how has your view been a viewpoint now changed, because everyone gets competitive. I'm sure there's an element of passion, where should they draw the line?
+
+Marios  43:25  
+Yeah. And I have to say that personally, I don't regret it. So it's, it was a conscious decision. I knew I would in order to get to the top spot. I will have to make sacrifices, this man working extreme amount of hours. I remember I was working 60 hours about six hours per week on top of my job
+
+Sanyam Bhutani  43:49  
+Hehehe.
+
+Marios  43:49  
+So I was not sleeping much. Had to drink a lot of coffee. I was eating a lot. I was almost never quite given even walking, running. I mean, I mean my physique went went quite bad. Um, and that meant, you know, you don't go out with friends on Friday, Sunday or Saturday nights. I'm eating a lot of sweets, it you know, it does, it does make a lot of difference. You know, eating sugar and chocolate, had gained maybe 20 kilos on top of my standard weight while I was doing that, and it took us a lot of effort to lose that. Um, but yeah, as I said, I don't I don't regret it because I have learned a lot from it. I wouldn't have been able, I didn't, I wasn't as talented as others may be to achieve this. With less time. I think I had to put the time in it. And I don't regret it. But I'm not going to do this again. I think you know, I did it I mean if I if I'm able to still get somehow good results in, in within a limited time compared to what I was putting before um then I'm I'm I'm quite happy with that while I still you know enjoy the process I still learn, still pick up new skills. This is this is my views. This is my sort of how I say this, you know how bad that is, I guess. Having said I don't regret it. I don't want to encourage people to go in and do that. I mean that I think that wouldn't be responsible of me. On the other hand, it's quite a tough to say not because I didn't for myself. I really want to do to achieve the top squad and but, you know, I think striking and balance is really really important at the end of the day, it doesn't matter if you don't get to that spot, you know, they have people who have enjoyed Kaggle have enjoyed the benefits of Kaggle they didn't reach the top spots and they still you know, they have been very, very, very successful. So, you know, you should, you should prioritize, you know, yourself first you know, try to enjoy the process, you know, striking a balance, as I mentioned, very, very important. Yeah.
+
+Sanyam Bhutani  46:51  
+Even in terms of reputation, so to speak, the Kaggle community recognizes each other very well and even if you're not in the top hundred and you're doing a few competitions here and there and you share great ideas. The community knows you and they always appreciate and recognize you. So you don't have to absolutely aim for that impossible sport even to have that appreciation.
+
+Marios  47:13  
+That's correct. Yes, I am. And as I said, even doing one or two competitions, it can be really beneficial for you. And you mentioned 100, even 1000 or even less, I've seen people, you know, just getting a silver in a already bronze in a competition and they're able to, you know, get recognition out of it. And it helps them in in their professional environment. For example, you don't need to get to, to the top spot in order to have your work recognized. Be more you know, extract skills and make an impact, a bigger impact in your work environment. Yeah, having said that, you know, I also want to be honest because, you know, for me it I really, I really wanted that but that's that's me, right? I don't know, this is how I was born. I don't know I really wanted that I really wanted to ace the game even even for a little while. But you definitely don't have to do that.
+
+Sanyam Bhutani  48:30  
+That's a taste of pure passion.
+
+Marios  48:31  
+Especially if it can be hurtful. It was very, very tough to lose all this extra pounds very tough.
+
+Sanyam Bhutani  48:38  
+That's a taste of genuine passion for the audience who are listening to this episode. Now for the audience who feel completely overwhelmed to even start competing or even try a Kaggle competition, what would be your best advice?
+
+Marios  48:51  
+Just don't think twice and started thinking about it. The bigger is going to become into your head. No one started, you know, being 100% comfortable, you know, and it still you know, a new technique or something comes out you know, a new, you know, very different code base than what you've used before or, or you know, like embedding new packets has a completely new syntax. You can still feel a little bit overwhelmed in the beginning, you know, it's what you need to do is just, you know, go ahead and do it and it will take some time but you will get used to it. You as I mentioned, you can start with this and this applies to it to general I mean, you and your working environment this as well. You will encounter new tools you will encounter, yeah, new new software and new packages. And you need to develop that mentality of, you know, breaking something down and fixing it up afterwards. It's you gone out, you should really think twice to start with the knowledge type of competitions, and then just see what the others are doing. As I mentioned, there are resources and courses out there, there's actually one course which I'm involved as well, it's called How to Win Data Science competitions, also build with other excellent Kagglers from the Higher School of Economics from last year. So there are there are ways to to, you know, to pick it up, you shouldn't really think twice, just enter try, you will likely fail in the beginning.   fail within context depends how you determine it has failed. Because if your goal is to learn you never really fail. And, yeah, just just just go for it. Don't think like don't make it bigger in your head than it already is. You know, it's it's gonna take some time. And and it still does even for experienced people when something new comes out but the good thing generally with programming based principles is that there is a period where you make very little progress in the beginning but then it goes really fast until you usually know that when when you feel that you want to give up because you read and you don't understand you put the time you make little progress day by day, but after a while, it will go really fast. You know, like like once once you started getting it so this is something you should you should have always in the back of your mind. So you're thinking of not starting or giving up.
+
+Sanyam Bhutani  51:44  
+Now I save the most tricky question for you towards the last I know you, you're a gaming fan. Can you pick a name your favorite game of all time and Xbox or ps4 or PC, which is your preferred platform of service?
+
+Marios  51:58  
+Oh, oof which one should I pick. 
+
+Sanyam Bhutani  52:04  
+maybe two of them?
+
+Marios  52:06  
+All time I guess old time the Final Fantasy series looking for now it's I played both on PlayStation and PC I think it is tough to select which one I would say Final Fantast 7,8 and 9 are are the best games I've played have like a strong story, nice gameplay and stuff to choose which one of them to be honest. Um, the these yeah, these are my, I guess from more recent ones. I did like the Mass Effect series. 
+
+Sanyam Bhutani  52:48  
+Okay.
+
+Marios  52:49  
+Then Horizon Zero Dawn, which is also actually very relevant to what we do on PlayStation four, these are games I really enjoyed. I used to do also quite some online gaming. Back in the day, I also think done quite quite well. I used to play Dota, in defense of the NCS back in the day. I spent a lot of time, yeah, I'm happy that I was actually able to take that passion from gaming, and put it into Kaggle because it also helped me in my work. And that's why I say if you actually see like a game, then you know, you can make progress in especially for a period of time, you won't even feel tired. You'll be able to do this for hours and hours and hours. And don't feel tired because it's like when you play again.
+
+Sanyam Bhutani  53:43  
+Awesome. Thank you. Thank you so much for all of your amazing advices and all of your contributions to the data science and Kaggle community and for joining you on the podcast Marios.
+
+Unknown Speaker  53:54  
+And thank you, likewise for the opportunity to you know to have this podcast with you
+
+Sanyam Bhutani  54:05  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science".
+

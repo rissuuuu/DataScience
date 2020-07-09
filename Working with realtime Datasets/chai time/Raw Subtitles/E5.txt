@@ -1,0 +1,567 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiast where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Welcome to another episode of the "Chai Time Data Science" show. In this episode, I interviewed Tim Dettmers, a PhD student at the University of Washington who's working on the representation learning a neuro-inspired and hardware optimized deep learning. Tim has a background in computer science along with software engineering experience. In this interview, we talk about deep learning research. What a deep learning research pipeline looks like. We also discuss about Tim's recent publication on sparse learning, sparse networks from scratch. Faster training without losing performance is the title of the preprint. We also discussed deep learning hardware, Kaggle, and Tim shares many great pieces of advice about getting a break into deep learning research. I really enjoyed doing this interview with Tim, Tim has been kind enough to say many great advice is about deep learning and deep learning research. Please enjoy the show.
+
+Sanyam Bhutani  1:55  
+Hello, everyone. Welcome to today's episode. I am talking to Tim Dettmers today. Tim, thank you so much for taking the time to do this.
+
+Tim Dettmers  2:02  
+Yeah, thank you for having me.
+
+Sanyam Bhutani  2:04  
+So you're currently a PhD student at the University of Washington and you have a background in computer science. Could you tell us what made you pick deep learning as a career path and how you got started in deep learning?
+
+Tim Dettmers  2:17  
+Yeah. So I got started by doing Coursera classes. I was doing Andrew Ng's machine learning class and then Jeff sent in deep learning class. And that got me really interested into deep learning and, you know, picking deep learning as a career path, it's a bit different question. So, I like to pursue a strategy of exploring my interests, like in a depth first session, fashion, and so from;
+
+Sanyam Bhutani  2:58  
+Breath first search for you.
+
+Tim Dettmers  2:59  
+Pardon?
+
+Sanyam Bhutani  3:00  
+It's like the depth first search was the breath first search for you.
+
+Tim Dettmers  3:04  
+Yeah, yeah. I mean, some people they like to explore different kind of areas to get a feeling what is interesting to them and then recently
+
+Sanyam Bhutani  3:12  
+realized was is basically
+
+Tim Dettmers  3:13  
+Yes, yes. And I'm more specializing and my background was actually a bit bit weird, I would say. So I started out in philosophy, I was really interested in philosophy. At some point, I got frustrated with that I moved on to psychology. Then I moved on to statistics, the neuroscience, the machine learning and then deep learning. And when I came to deep learning and was like, I felt like all these other areas. There were like, all combined sort of deep learning. And, yeah, so you have machine learning, learning from data to learning about features. That's that's the core part of deep learning. You have statistics and there's also a core part of deep learning and very interested in neuroscience and neuroscience, deep learning the descent. Media, they like to make it close. It's not that close. But I like to take inspiration from neuroscience. And that makes it very interesting to me.
+
+Tim Dettmers  4:14  
+Also, psychology is more like
+
+Tim Dettmers  4:19  
+the first research neural networks was really motivated from psychology, understanding the cognition of humans and how was it represented? And there were like two views like one logical view more one distributed representation. connectionism. And so, yeah, really, the concept of deep learning is also well rooted in psychology. And yeah, so yeah, I'm philosophy helps, I think in any field, really. And so if you combine all of that, then that sort of makes deep learning and yeah, I don't know when I found deep learning and boss really exciting. And I felt like yeah, I want to To do this for a very long time. And so yeah, at some point
+
+Tim Dettmers  5:07  
+yeah, I just stuck with keep learning. Gotcha.
+
+Sanyam Bhutani  5:10  
+And could you tell us like, what made you pick the research part? So currently use you enroll as a PhD students? Oh,
+
+Tim Dettmers  5:17  
+yes. So I have had some experience in industry. I was working as a software engineer when I discovered deep learning. And at that time, I was also bit frustrated with being a software engineer. Because it wasn't so challenging anymore. So one thing that is important for me is the concept of exhausting my potential. And you can exhaust your pen potential in many areas. But in terms of work, it means to me that I need to do something that I'm good at. I need to to be able to improve my self constantly. Yes. And the main goal is really to, can you reach a barrier where you say, this is too difficult, and I cannot improve anymore? And yes, a software engineer, I didn't really feel that I was limited but not because of my ability more about yet the problems at some point they've come but repetitive.
+
+Tim Dettmers  6:30  
+And so, I mean,
+
+Sanyam Bhutani  6:33  
+the core of it is sometimes repetative.
+
+Tim Dettmers  6:37  
+Yes, yes. Me it depends always like on the job. This is this some soft engineering jobs where you can get very much in details. I mean, I could imagine if you're doing work on like, very low level stuff at Google, there's so much things to optimize so much things to know about and improve that that's probably interesting. But yeah, for me, I wanted to change. And so what I did is accumulated enough money to afford a bachelor. And then I did my bachelor studies and on the side sort of deep learning research. I couldn't find an advisor at that time. So I did deep learning research on my own. But I quickly felt that I really was enjoying this and just wanted to do that later and made more experiences in industry at Microsoft Research, which is a bit more research environment, but I could feel that the thinking the ideas are constrained by applications. So if you look at Microsoft Research, then the core part is also is what you working on. Is it useful for Microsoft, okay, and you can feel that and so Currently, in academia as a PhD student, I have much more freedom. And I'm really enjoying that. And currently I'm really seeing myself in academia and not an industry. It's it's just a thing about having the freedom to work on ideas that you like to work on and also to challenge yourself.
+
+Sanyam Bhutani  8:19  
+So, I'm curious, like, could you tell us what does a deep in the life of a researcher mean? Maybe your life look like? What problems are you currently working on?
+
+Tim Dettmers  8:30  
+Yeah, I mean, I think I'm the life everyday life of a researcher differs quite a bit between researchers, because it's very depend on research environments, very dependent on the research project. And also very dependent on the face in which you're in in the research project. But generally, I'm I'm an early bird, I go early to work. I do my best work in the morning. And so most of the work is programming. prototypes, doing experiments, reading papers, writing drafts. And I like to do these activities in the morning and afternoon I usually have discussing discussions with my advisor with colleagues meetings. Yeah. And then then there are some, especially in the first and second year of your PhD, there will be homework, that will be classwork. And yeah, I tried to push that to the afternoon, and emails and administrative stuff. Yeah, that's sort of my routine.
+
+Sanyam Bhutani  9:38  
+Okay, Cory. And I'm curious, like, how does your research pipeline look like? And could you tell us like, how do you approach a new problem? So for example, when you think of a problem, where does the inspiration came from and what questions do you ask?
+
+Tim Dettmers  9:51  
+Yeah, yeah, I think that's a very good question.
+
+Tim Dettmers  9:55  
+And this very difficult problem. I don't think I have like the perfect How to do research. But there are certain steps which are important to think about. And I think the first step really is to think about what kind of problems are you interested in intrinsically, so you can work on problems, but in research, you almost always will hit roadblocks. It will get difficult things will fail. And you need to be able to keep up the motivation. You need to be able to keep working on the problem. And if you're not really, really interested in something, and that will be a problem. Yeah, you need to stay motivated. And so the first foot or four ideas is really, you need to ask yourself is this kind of idea interesting enough to me to keep working on it? And I think that's, that's really the first thing that you should think about. The next next thing is really, about what kind of project you work on. The idea of a project and just sitting down and thinking about ideas is often very difficult. I mean, creative process is more dynamic. It's more like you're working on a project and suddenly you get an idea for another project by you, I don't know attend to talk or you just have some some thoughts in there.
+
+Sanyam Bhutani  11:27  
+Maybe go and get an idea sometimes.
+
+Tim Dettmers  11:30  
+Yes, yes. And so, also when you're reading stuff, maybe you're still working on a project but something pops in your head and then then write it down. So it's more like when you finish your project, and you should, the bestest, the best option is to have already like some ideas that are interesting to you mean if you really sit down and think about ideas and Then it's like important to keep in mind that the creative process sort of killed by structure. You need some relaxation. It's like you cannot sit down, don't think really hard and having eureka moment, it's more like you need. And that is also what psychology research says you need the expertise, you need to read blogs. But once you've done that, and you thought hard, you need to take a break, relax, your brain does all these things unconsciously in the back of your mind. Yeah. And at some point, you make these associations, and suddenly you have no idea. And so yet, I mean, I think it's important to not to be too hard on yourself, how to get these ideas.
+
+Sanyam Bhutani  12:54  
+Not creative, but it does involve a lot of creative thinking all those who many people do miss out on that. But you need to be creative and you're working on a new problem.
+
+Unknown Speaker  13:03  
+Yes, yes.
+
+Tim Dettmers  13:05  
+Yeah, actually, I'm currently writing also a blog post about creativity in academia. Yeah. It's it's, I don't know, it's it's a difficult thing to think about difficult thing to talk about. I think often people are beating themselves up for not being creative. Yeah, and I don't know. If that is true, I think everybody can create it in their own way. I think it's also finding sort of amnesia where you excel. And for me, I take a lot of ideas from neuroscience, because that just interests me intrinsically. I just like to do it. And then it's easy for me to bridge ideas from neuroscience to deep learning. And for other people that might be different areas, different interests, and yeah, there shouldn't be too much false. Yeah, but Yeah, monda flipped maybe in my blog post. Yeah. But yet if you move on on the research pipeline, so once you've got ideas, it's important to evaluate those ideas which I which ideas are good, which ideas are bad for them? Yes, yes. Um, I mean, one thing if you do a reality check is I like to separate it two things. One is, which is actually very important, but not many people think about it. Is the question Can this project fail? Can this project fail fast? When you get an idea, the most time that you can waste on is an idea that doesn't work. And or rather than idea which is unclear how you can show that it doesn't work. So idea that doesn't work but you cannot show it and then you can work on this it.
+
+Sanyam Bhutani  14:58  
+For example, in machine learning Nothing works until it does. So like how do you Yes? know that this experiment? Yes has the potential or maybe I'm like just pushing too hard.
+
+Tim Dettmers  15:09  
+Yes. So when you sell the idea face, you can think about the simplest experiment which can refute the idea. And often it's very simple. Often you can say, Okay, if this doesn't work on enlist, then it will not work on imagenet it will not work on safer, then the idea is sort of doomed. People say everything works on enlist. And that's kind of true. I mean, there's a degree how well it works. But, and you want to be competitive with other methods. But once you went through illness, you want to move on to a more difficult task. So it's more like an iterative step, make it more just more difficult over time. You can test it over time. But when you think an idea, it should already be very clear how you can refute the idea Correct. So if if your ideas to General, and you cannot have a test like this, then it's probably not a good idea to be testable. Yeah. Okay. And another important thing to do this reality check is really this idea impactful. So if everything works out, so let's say, all the experiments show perfect results, wouldn't people care? Would it move research forward? And the best way to really shake that? My opinion is to be short, rough, write up a few idea, write an abstract, write an introduction, write an abstract with like imaginative results with like, imagine up results, what could be realistic, and think about how you could write it. And once you've done that, I think you're from what you are much. It's much easier to evaluate this historically. Significant are these results with this kind of motivation are the interesting move that doesn't move research forward. And so once you have, like, managed to do this, and it sort of looks promising, then you can add, let me political, more details about the method, then send it to a colleague. And a colleague often can quickly say,
+
+Tim Dettmers  17:26  
+if I look at this, this this detail, it doesn't make sense to me.
+
+Sanyam Bhutani  17:30  
+Or,
+
+Tim Dettmers  17:32  
+look, there's this problem, how are you going to solve this? I think you overlooked this. And
+
+Tim Dettmers  17:39  
+that way you can quickly like,
+
+Tim Dettmers  17:43  
+make your idea robust. And so before you get started in the project, you already know like kind of, and this is maybe a bit risky, but it's impactful, and I can show that it doesn't work. So
+
+Sanyam Bhutani  17:55  
+you have expected result in your head. After
+
+Tim Dettmers  17:58  
+Yeah, it's all about I know if it, I can quickly make it fail if and if it doesn't fail. I know the next step how I can make it fail and if it doesn't fail, then I can do the next step and then I will have a very useful research results. And I can I have this motivation and I have this story. And I can tell an interesting story where people say, hey, that's that's useful, I think that will be useful for future research. And so, you know, the sort of outcome but research is always like noisy and and a mess. And so, you have these milestones in between where you can say okay, I shake up a check this this problem and I know Okay, now I can move forward, it has some promise this idea and yeah, so that is, I already talked basically about the next steps is just experimentation. And you have in mind already, like some experiments be can make your project fail, because you're just
+
+Sanyam Bhutani  19:02  
+going to have those projects. Experimenting?
+
+Tim Dettmers  19:07  
+Yeah, yeah. I mean, if you if you have an idea how to make your project fail, usually also have the experiments how to do that. And usually you need to adjust things a little bit here and there. It's not all set into stone. I think it's a bit too complicated for that. But you get an idea, you're getting a rough idea. And as you do the experimentation, you can see all maybe there was not the right way I get some data, but it's unclear if this is good or not. Let's try something else. Sometimes the senses are just indicated to try something more difficult, difficult, more difficult task to get more precise data on how well your idea performs. And as
+
+Sanyam Bhutani  19:49  
+you get an intuition, like after feeling so many experiments is hard to get an intuition that will get this maybe isn't delivering on the results. For example. Yes.
+
+Tim Dettmers  20:02  
+I mean, it's always difficult. I
+
+Tim Dettmers  20:06  
+mean, when something fails, you do not abandon the entire project, usually, usually you say, Okay, what I thought about this method doesn't work, but change it a little bit, then you changes a little bit. Try it again, I probably failed again. And I mean, you can go on and on with us forever. And it's difficult to say when is it enough when you say, Okay, I should continue with this. But otherwise, I might miss a very important idea very important research contribution. Or maybe you say to yourself, I think this this, I have enough evidence that it sort of doesn't work. I think it doesn't matter what kind of method how I changed my method, it will not work this idea. And so yes, it's it's difficult to make a hard decision there. You own, you can always miss out. You can say, Oh, these methods probably I don't have a promise. And then a couple of weeks later, you see somebody published results with a very similar method. And that can happen. But yeah, it's just difficult to get it right. Yes, yes. And, I mean, that's also what I like it's just challenge you can learn with every project, adjust a little bit and try to improve. And yeah, that's, that's what I enjoy. And you Yeah, so that is like, if you have the idea, if you have the results, the next step is really bad writing it up. And you you if you write up like already, like an abstract introduction, that's sort of you have already a little bit of material and it's not too difficult to fill in the rest. Usually what you want to do is you work yourself From the results, through the Methods section fed through the introduction, and mbn, the abstract, and so you need to probably rework everything that you've written. I think what many, especially young researchers struggle with is writing the first draft. And this should be done really quickly, it should be really dirty and rough. And it can have mistakes and misunderstandings and things are not clear. The important thing is just to get it down on paper, okay. And if you write blog posts, it can be good training to get in this mindset of just writing down the stuff that you have. Bring it on paper, and once you have that the rewriting begins and the rewriting is just rewriting, rewriting and rewriting. So you take this dirty draft, rewrite and make a bit better rewrite and make a bit better. making it better. And at some point, it has enough quality where you say, Okay, now I can send it to someone. So you send it to someone, they give you feedback, then you rewrite it again, let me send it to people, you get feedback, you rewrite it again, you repeat the cycle, many times until you then say, now that looks good. I think it's like ready for publication. And I think it's ready there. We can submit it to somewhere, okay. Usually, it's a bit different. Usually people have a deadline in mind. They say, oh, in the iclear in September, let's submit something. And then they work on something and then time runs short and what people usually somewhere they need to cut the time they need to eat to save the time, and usually they spent not enough time on rewriting the draft. And what that does to your work is it's less clear. This is really bad and Often, which is also important, the story, the impact of your research ideas, not very clear. And so you might have good results, but people are not really understanding it and people think, okay, what's, what's the deal about it? You have good results. What does it mean in future? And it's not clear for people. Yeah. How your work fits in. So yeah, I don't like the idea of deadlines, but it's like a necessary evil, I guess.
+
+Sanyam Bhutani  24:31  
+Yeah. Yeah. Yeah. I think it is more important to like have a
+
+Sanyam Bhutani  24:36  
+crystal clear exclamation.
+
+Tim Dettmers  24:40  
+Yes. I mean, I like to, I like my research to be useful. And if you did, already, the experimentation found the ideas and so forth. And so once you have the results, and they're good, then then you've done already the hardest work The most risky work the work where you can fail the most. In rewriting your paper, you cannot really fail, you can only fail to do it. Not enough, you're not invest too much time. So it's a very simple process
+
+Tim Dettmers  25:19  
+which just takes a lot of effort. And
+
+Tim Dettmers  25:22  
+you need to get a lot of feedback, but it's not so complicated. And it's safe. You you nobody can take away the results sort of someone can give you bad feedback, and that puts your paper in a bad light, but you can work around that and try to frame your work differently. And yeah, I think it's just researchers. They sell themselves short by not doing that enough. Yeah, I like a paper that is easy to read. Clear and technical story.
+
+Sanyam Bhutani  25:59  
+Okay. A new task on the interview series He also mentioned like about this for writing blog posts that you think of an idea of keep distilling it until it becomes clear and then you send it for feedback.
+
+Tim Dettmers  26:13  
+Yes, yes. Yeah. blog posts. It's a very similar process mean for the most part, you should really spend on rewriting, rewriting, make it clearer and better and better. And at some point, it's good enough to you can like collect feedback. Yeah, on, on blog posts, I usually don't get so much feedback. It's just
+
+Sanyam Bhutani  26:40  
+I'm a huge fan. By the way, I feel complete blog post. I read all of them. I'll have them linked in the description. Thanks, views.
+
+Sanyam Bhutani  26:47  
+Yeah, yeah.
+
+Tim Dettmers  26:49  
+I think blog posts also a bit more personal. So you can send people developers for feedback, but I like If a blog post sounds a bit weird, or is, has some mistakes in there, I think that's also myself. That's who I am. And I like that. So I like to keep my style my blog posts
+
+Sanyam Bhutani  27:18  
+one thing,
+
+Sanyam Bhutani  27:19  
+like it's glucose, in my experience are easier to read than a research paper and like, as someone writes a blog post about a research paper, it's like very easy to digest that compared to reading the paper.
+
+Tim Dettmers  27:33  
+Yes, yes. Yeah, for my newspaper also wrote a blog post. And yeah, for me, it was actually quite challenging to find the right balance. So the research papers already quite limited, and I would like to put more content into it and account and I had like this temptation to put more content about my research into the blog post, but that would have made it less accessible. So in the end, I said, probably what is most useful is to make it very accessible to people. I don't know if I succeeded, but I tried. And it's an experience. Yeah, I think you get better with it as you practice links.
+
+Sanyam Bhutani  28:17  
+Okay. So one of the research interest that I want to talk about is hardware optimize deep learning. Like how deep learning is marketed usually to folks is that hardware now is good enough to do deep learning. But help us understand that by still this an important area of research and why is hardware not good enough in your opinion yet?
+
+Tim Dettmers  28:38  
+Yes, I think the main the main problem there is really the future. And so deep learning hardware is currently pretty good, pretty well optimized.
+
+Sanyam Bhutani  28:56  
+The problem is really
+
+Tim Dettmers  28:59  
+we are hitting The physical limits of computing. And soon, our transistors will almost be the size of like a couple of atoms. And you cannot make it small anymore. Other than that, you cannot go smaller than atoms, you don't know how to do it. And so, GPUs will not get much smaller. I mean, there's still a couple of iterations. But they're so difficult because quantum effects come into play. And certain things on a ship, like SRAM, they don't scale Well, when you make them smaller. They have sublinear scaling, they don't get twice as fast. And now we're hitting a level where they only barely get let that they get in just a little bit faster. So what it means is, if you look back the past 10 years, we got a lot faster GPUs.
+
+Sanyam Bhutani  29:53  
+For example, every iteration would have huge boost compared to the previous series. Yes, yes. Getting narrowed down. Like it's been marketed some Yes. The big server. Yeah. But yes.
+
+Tim Dettmers  30:06  
+Yes. And I think there's also important to have like, Yeah, really the marketing numbers which are often theoretical, and the practical numbers. And if you look at the last iteration of GPUs didn't improve so much. And it's also longer interval. And we will keep seeing that. So with the next iteration, we will not get big improvements, and it will take longer until the next generation of GPUs arrives. And it will repeat me for two more times and then see end of the line, we cannot go smaller. We can go to different materials. But we don't know how to do it will cost dozens of billions have maybe hundreds of billions to do it will take maybe 10 years to really get it to market. Yeah. The current way how you manufacture ships is very, very well researched. It's working really well. But it's now getting so difficult that only two, two factories basically can really produce the best ships that out there today. And
+
+Sanyam Bhutani  31:22  
+yes, you will see the beautiful GPUs are also sort of getting famous along. They're commercially available for users. So what's your take? So,
+
+Tim Dettmers  31:32  
+yes, so I think, GPUs suffer step, what we will see in the future, and that is, GPU is no longer improving speed. But we can improve speed by specializing and making ships more and more specialized for certain kind of neural networks. And so what we see in GPUs is already a specialization, a specialized ship. Our current neural networks, and that works quite well. And what's really great about their TPU their integration into the network of GPUs at GPU cluster. It's much, much more efficient than a GPU
+
+Unknown Speaker  32:17  
+Sagan.
+
+Sanyam Bhutani  32:18  
+I think they call it a TPU board or something like
+
+Tim Dettmers  32:21  
+Yes,
+
+Tim Dettmers  32:22  
+yes, the TPU part. It's very well engineered, very well designed. It's very fast. If you put together GPUs, you will not get that performance. And
+
+Sanyam Bhutani  32:33  
+it was was actually made for gaming and not for neural networks.
+
+Tim Dettmers  32:36  
+Yes, yes. mean with 10s. Of course, you have like also specialized elements on the GPU. But it's not through roughly optimized for deep learning. And so we have now the status of GPU, but the GPU will hit some elements to the GPU. So the next step in computing is really a move away from
+
+Tim Dettmers  33:02  
+From processing
+
+Tim Dettmers  33:06  
+everything in parallel with very simple operations, it will move away, it will still work like that. But what we will have is cash based processes. So processes that have a large amount of very fast memory, this memory is 100 times faster than the normal memory that have we have on a GPU. And what it does is it takes up most of the space on the ship looking, but you can have very specialized compute units, which to very fast computation. The only downside of that is that, to really utilize these kind of ships, you need to have very small models. And so if you look at graph core, which is such a ship, then your model needs to be 300 megabytes. Yeah, and so we need to find ways to try networks that are that have a smaller size and to really use utilize these ships,
+
+Sanyam Bhutani  34:06  
+I think that's sort of that also causes like shift in research because I know we're also headed towards like bigger models, huge models, especially with XLS. and stuff.
+
+Tim Dettmers  34:16  
+Yes.
+
+Tim Dettmers  34:19  
+So you can break down bigger models into like smaller pieces, but they need to fit well enough together and they need to be parallelizable, which is not easy, especially if you look at models like excellent on that they they are parallelizable to some degree, but for cash based processes, you wouldn't have difficulties. So it's not the right architecture for cash based processes. And I mean, you can take the strategy of like TPU scaling up in the data center, but it would be much nicer if you can have a desktop computer which is as powerful as interview Plus for particular network. And if we can compress, transform us like Excel net into a cash based version, then we would have performance which 100 times faster. And I have a strong belief that computation enables progress. So if you can run image net in the 10 minutes, which we you would be able to do on a single card of a graph core. If you have like a model which is small enough to fit into cash, then it enables you can do experimentation so fast that you can innovate much more quickly. And for
+
+Sanyam Bhutani  35:48  
+viewers like most of the models, the famous or nowadays take sometimes even weeks to train on GPU, so,
+
+Tim Dettmers  35:54  
+yes, yes. So, and that's getting problematic. I mean, we seen it right. If you look at the next element, it's a really really big transform i a pre trained language model. And the version that came before extended was but bird was a bit smaller train the less data and but these models are systems that it's very difficult to do hyper parameter search and actually, Facebook research came out recently are actually will come out soon the results already published, they show they are better than Excel net with a bird style model they just do the hyper parameter tuning more carefully. So, that shows you already we are at the point where we can no longer really safe the models better than another model, because we cannot do the hyper parameters such as too expensive to do. And so, and we hit a limit where knowledge about models is very unreliable. We cannot say Model X is better the model Why? Because of the hasn't been exhaust exhaust is exhaustively researched. Yes. And yeah, the problem is just compute. You need a cluster to do research on these kind of topics. But even the classes is too slow. And so we, I think I strongly believe we need innovation in computing technology. And because we have more specialized processes, we need innovation and architectures. The architectures need to be designed for the hardware and the hardware people. They making a leap of faith they see okay, deep learning cannot go on as this now, but there's no research to support any direction. And so yeah, graph core. Yeah. Like bets on smaller models that needs to come in the future we will have smaller models which performance well
+
+Sanyam Bhutani  37:58  
+in Lake in a market Former and if me For example, apples is the phone has a new processor that has some compute capability, for example.
+
+Tim Dettmers  38:07  
+Yes, yes. mean the mobile device market is it's you get so much benefit if you can run a neural network on a mobile device. And mobile devices are just small on you there you have a similar problem you can develop a specialized chip for mobile device, but then you need a specialized network to to to be able to utilize the ship effectively. And so yeah, my current research, I worked on this problem I took this perspective, what kind of networks do we need to have? One perspective is to look at mobile devices and say, how we can compress a dense network down to a sparse network so it can fit into a mobile device. My perspectives is more about training. Very big models like Excel net. Can you come Yes, can you compress these models down so you can train them rather than GPU cluster but on a desktop and still be able to do it? In a, like, time, time efficient manner? Can you what what what I would like to do is enable for everyday researchers to be able to train these big models, I think then we can make much faster progress. We have much more reliable data about where to go. I think right now it's it's like a numbers game. People like to post Oh, this models better than that. But we are not so sure where this performance comes from. Yeah. And the last
+
+Sanyam Bhutani  39:42  
+thing about calculations about the money that went into it, and like, I think that's that wouldn't be reproducible research in a way because I just have a single 2080 and no way I am going to run a marvelous.
+
+Tim Dettmers  39:55  
+Yes, yes. And so I think it's important that we democratize This kind of research that we enable everyday people to run these kind of models and that's like I think also called motivation of my research in general. One is a bit more neuroscience related one is really like, can we use the hardware and efficient way? That's awesome. And also the future.
+
+Sanyam Bhutani  40:20  
+Since we already talked talking hardware, I'd like to discuss more about that for a little little section. So I'm really thankful, first of all, to you for the light up about GPUs that made me pick my hardware. I completely chose my hardware just using that many people. So first question to you like, how many GPUs do you have? Because you have benchmarks across all of the variants. So you have all Oh,
+
+Tim Dettmers  40:43  
+sorry. Sorry, I didn't get the question. What
+
+Sanyam Bhutani  40:47  
+do you have like all of the Nvidia GPUs because you do benchmark?
+
+Tim Dettmers  40:52  
+Yes. So, the thing is, if you have the deep learning architectures performance, between the Keep learning architectures diverse. But if you have one GPU of a certain architecture, it's quite easy to extrapolate results to a different GPU. So if I have results on the 2080 ti, then I sort of know what the performance on the 2018 is. And I mean at the University of U dub, University of Washington, Europe, I have some colleagues and they have all different kinds of GPUs. So I asked them if I can run some
+
+Tim Dettmers  41:32  
+stuff, so Okay, I personally have one wondering about
+
+Tim Dettmers  41:38  
+my colleagues have And with that, I can get good sample from the samples I can then extrapolate and also verified extrapolation. So yeah, a lot of people have like a GTX 10 at 1017, that sort of thing. So I can verify does this expert extrapolation makes sense? And, you know, that's sort of how I produce the results on my blog post makes it there's always a bit variation in the system itself, CPUs and that sort of thing. Yeah. And there's variation between tasks, some tasks are not so well done well designed for certain GPUs and that sort of thing. But I think in general, the results are quite reliable. Yes.
+
+Sanyam Bhutani  42:27  
+Okay. So also understood, I do think since the time you written the post, because cloud options have definitely gotten somewhat cheaper. So do you think like, is that now a comparable option was is like investing money into a deep learning box?
+
+Tim Dettmers  42:44  
+Yeah, that's a good question. So I think the cloud has many advantages, especially if you have like workloads which change over time. So if you Suddenly need to train a big model for you just need a lot of compute, then the cloud is really beneficial. And I like I mean, it can also be a cheap option if you have a GPU for prototyping. And so you figure out your model. And once you said, Oh, I figured it out now, then you run the model in the cloud faster to hyper parameter search there, that can be quite efficient in terms of money. But if you really using deep learning a lot, then it probably is more cost efficient to really invest into a deep learning box. Yeah, it's I mean, you still pay electricity costs. That's like an upkeep that you need to pay and the initial costs for the GPUs. But if you compare the costs, the cloud can get expensive. I mean, especially on AWS, a lot of startups interested in GPUs, because they do some light, deep learning startup. So that can be expensive and If you look at research on transformers, a lot of them use GPUs because they're just faster for this application.
+
+Tim Dettmers  44:08  
+But you also see the numbers, the
+
+Sanyam Bhutani  44:12  
+comparison between CPU and GPU block was who I learned. So how this
+
+Tim Dettmers  44:17  
+Yes, and mean performance keep us a pretty great, especially if you paralyze them across the network so much better than GPUs. But they're also more cost efficient. The lack but versatility and the recurrent neural networks haven't seen many good applications on GPUs, and convolution networks. They don't seem to be that good. They're really shine for transformers. But it's a great option to have, especially if you need a lot of compute power. It will keep you partners really powerful. And so I think the place of for cloud computing is really, you should have own CPU for project Typing, but then you can scale out or use can scale out for paper deadlines, or you can scale out for very big experiments. And the cloud is very useful for that. But if you want at least one GPU for prototyping,
+
+Sanyam Bhutani  45:17  
+also for a person investing into a box or maybe cowgirl or hobbyist deep learning, yes. How do you suggest they should plan their investment? Like what should they focus their money on? And I'm, I'm sure, based on the comments, you know, like, what is the number one mistake that people usually make when investing into a box? Your opinion?
+
+Tim Dettmers  45:35  
+Yes, yes. And so
+
+Tim Dettmers  45:38  
+I think the, the the most common mistakes actually mistakes, not related to the GPU. It's more like CPU and RAM. So people are often not very conscious about what do they need, what do they really need for the thing that they want to do? So if you run, if you do cattle competitions and you use a lot of cyclone, then the CPU can be very useful. Yeah. If you want to do more deep learning related stuff, the CPU is not that important. In terms of RAM, people often waste money on getting like fast ram with a lot of like gigahertz. It's actually not much faster. And it's very constrained by the motherboard specifications. If you overclock it, it's very unreliable. So it's a waste of money to invest in fast Ram. I mean, also depends on what kind of things you do for competition. I would like more of RAM, just to have a peace of mind. Yeah. You don't have to optimize the code too much. You can prototype more quickly if you have a lot of RAM It's annoying when you want to try a new model. And then he said he realized, okay, I need to refactor my code because uses too much memory
+
+Sanyam Bhutani  47:09  
+competitions, that experiment might fail, and you will start falling down on the leaderboard so you won't work fast on it.
+
+Tim Dettmers  47:17  
+Yes.
+
+Tim Dettmers  47:19  
+I guess it's always option to start small with a small model frame and this easy to extend. But yeah, with with things like CPU, we need to be bit more careful to spend your money and terms of GPU, the top mistakes are really cooling and the amount of memory that you get. Yeah, so on my blog posts, I have list of the most cost efficient GPUs and people like to say, Oh, this is the most cost efficient GPU, I get this one. But what they often miss is how much memory they need to do their things. Yeah. So for many kaggle competition, if the deep learning related, you can do very well, if you have like eight gigabytes of RAM, that means RT x 2018 rT x 2017. But if you want to really want state of the art models, and that can be effective if you want to really be at the top of the competition and kago for example, if you want to do hacks or research, if you want to run state of the art models, if you want to run on image net, some some domains like medical imaging, they're very large images, that can be a problem. So you want to have a lot of memory. And also, if you want to run specific models, like transformers, they're usually very big really didn't need a lot of memory. So if you have these kind of cases, you should get 28 VTi. Okay, otherwise, probably eight gigabytes of memory sufficiently can save a bit of money. The next Mr. Take is people. If you have two cars next to each other, the cooling needs to be really good. If you have a space in between, then cooling is usually sufficient and you can do go with any cooling. But if they're next to each other, especially if you're multi GPU set up, then you should pay close attention to cooling. And so at the University of Washington, we experimented a little bit with with our systems there. And you can have the blower fan GPUs and phenomenal fan GPUs, the normal fan to abusive block each other and they overheat very quickly. But the blower fan they have an exhaust at the back can fit overheat less quickly, but the the default temperatures higher. So it doesn't improve the performance much before GPS system. So what now exists 2018 Ice with water cooling or hybrid cooling. These are really the best. They have very stable temperatures. And another hack, which actually did with my system at queued up is F two GPUs. And then I have two extenders, and that puts the GPUs just somewhere else in the case. And
+
+Sanyam Bhutani  50:21  
+so in the top or below, far away from
+
+Tim Dettmers  50:24  
+Yes, yes, yes. And so just a space. I mean, with that, sort of you destroy the effort within the case, but people overestimate how big that factor factors, the really the main effect is, the fans on the GPU and the location of the GPUs or how close they are to each other. If the cooling is obstructed within five GPU, and with extended you can easily solve this problem and run school and without any problem you can afford GPUs
+
+Sanyam Bhutani  50:56  
+and liquid cooling as you mentioned, water Willing to why is it important? Like, should we consider that for two GPU setup? Or maybe after that, and what should we Yes, we're looking into that.
+
+Tim Dettmers  51:11  
+So as long as you have a space between GPUs, you don't need any water cooling and you shouldn't get any water cooling is more expensive and less reliable. If you have three or four GPUs, or cooling and become it can become interesting. It also depends if you really paralyze models across all GPUs. Yeah. If you share the system with other students, for example, for other people, and if you do like a grid search, often the cooling is sufficient. And if you run a big model, the cooling is more important than the smaller model. And, I mean, I'm talking about this because if GPUs overheated you lose about 30% of performance. Let's just if you compared to like a CPU CPU give a very fast CPU gives you a boost of like 5% performance but deep learning, so cooling is very important. And so water cooling can really help if you're three or four GPUs, it gets more complicated the more GPUs you have, because you have ready eaters that need to be disputed in the case, you need to make sure that you get the right case with the right amount of space. And you can actually put the revenue to somewhere where it makes sense. And then you should have a very fast and reliable system, you should prefer to the all in one solutions rather than the customer solutions. The customer solutions can be a mess can be unreliable. If you've done it a couple of times it gets more and more reliable than you know how to do it and it's like good, but it can be respected. I mean, you should keep that in mind.
+
+Sanyam Bhutani  52:58  
+So I really like that That's important because not many people even talk about water cooler I it's mentioned in running but people who even have those water cooler pieces I don't think they document their approach.
+
+Tim Dettmers  53:10  
+Yes. I mean people I think are just afraid of water cooling it's like you feel like oh there's like liquid inside or
+
+Sanyam Bhutani  53:18  
+something goes wrong that's that's why I did not consider that because I felt like it might be insured but just the coolant will be insured or not. If it leaks over all the components, I will get those back.
+
+Tim Dettmers  53:30  
+Yes, and that's that's a valid concern and mean the all in one water cooling solutions a bit more reliable. And that helps. And I would recommend those and I mean, honestly, sometimes it's also fine to take a performance in the air and not worry about your GPUs. So most of my system has been air cooled, okay, and usually works fine. Because you're not always run big models on all of your GPUs, you're not always paralyzed across all your GPUs. And so you might get like a 30% performance hit when you do that, but most often you run smaller, simpler models mean, as I said, if you do research, you experiment your way up, and only at the very end, you need this very good cooling. So, cooling is often good enough.
+
+Tim Dettmers  54:32  
+If you want the perfect performance water cooling.
+
+Sanyam Bhutani  54:35  
+You mentioned in a tweet that four by four PCI lanes for GPUs are good enough. So I'd like to know more about that. So what research went behind that comment and for the audience, GPU runs on something called PC aliens and it expects 16 PCI lanes to work as they call it in full capacity. So yes, a common misconception that you clear clarify and you'll be courses, they can work on laser lanes. Almost as good enough as Yes.
+
+Tim Dettmers  55:07  
+Yes. Um, yeah, that's another problem or mistake actually, a lot of people they are really obsessed about lanes they want they get 16 lanes make things really fast. But often you don't need that performance. So you get about one gigabyte of bidirectional performance per PCI lane. So before lanes, your four gigabytes per second. And to understand really why four lanes are enough for two GPUs, you have to, like understand the architecture. And so two GPUs are often they are paired between a PCI switch. And so you have these two two GPUs, and they can communicate with each other in a bidirectional manner. But if you have four GPUs, then only one GPU from this side can communicate with one GPU from this side at any one time. Because you have to switch and it's blocking basically the way but
+
+Sanyam Bhutani  56:04  
+the link, I think,
+
+Tim Dettmers  56:08  
+yes, and the link helps with that. It's a different system, which allows more parallel access to compute.
+
+Tim Dettmers  56:19  
+And that can help if you have really a GPU cluster.
+
+Tim Dettmers  56:24  
+But usually, so if you have four by four lanes and two GPUs, you do just one message between GPUs and you have synchronized the entire system. If you're four GPUs, you need at least three messages. And so you need three three times as much lanes. And so the same as actually two for three GPUs because it's another PCI switch. So
+
+Tim Dettmers  56:53  
+if you have
+
+Tim Dettmers  56:58  
+let's say, 12 lanes on 3g Use, which you cannot really have but just as an example, then that will be comparable to have three lanes on two GPUs in terms of speed. And so fallings on two GPUs is much faster than what you usually see. What do you have with four GPUs? Okay, so if you have eight lanes for four GPUs is much slower than four lanes for two GPUs.
+
+Sanyam Bhutani  57:24  
+And this becomes important because otherwise you will be making investments into expensive motherboard a more expensive CPU. Yes,
+
+Tim Dettmers  57:31  
+yes. Yes, CPU is especially she she CPU set off the support like 16 lanes, and people are afraid because they say oh, I only have like 16 days in total, but I want to have two GPUs and or three GPUs. I mean, then again, you need to think about how do you paralyze and is it really important if you get if you have three GPUs if you get the speed up of like 2.5 or 2.0 so You will degrade the performance a bit. But the use case is not that common, you have to ask yourself, how often do I paralyze? How important is it? I have maximum performance?
+
+Sanyam Bhutani  58:11  
+Because very similar. Good, you will have bottlenecks in Iowa some places. So,
+
+Tim Dettmers  58:15  
+yes, yes.
+
+Tim Dettmers  58:18  
+Exactly. I mean, you can get these performance gains if your code is optimal. And that's also one thing to think about. Usually, not all the things are optimal. Often the bottleneck is somewhere else. And sometimes it's very difficult to fix. And so I like to be bit more practical and rather bit more cost efficient, and rather than to get the optimal performance.
+
+Tim Dettmers  58:45  
+Yeah, so people should not obsess so much about lanes. It's not so important.
+
+Sanyam Bhutani  58:50  
+Okay. I'm going to ask you to do like a wide wide variety of options when you buying a GPU there's different manufacturers, different ad editions. So have you tested goes on? What are your recommendations for those?
+
+Tim Dettmers  59:04  
+Yeah, so the gain and performance that you get is usually from a GPU architecture and a particular ship. And you don't get performance if you buy like a super clocked GPU, they often cost a little bit more, you say, oh, where has higher numbers, but for deep learning, it doesn't matter so much. And so my advice is really that you should just watch the price always get the cheapest GPU and the cooling. So for particular use cases you want particular cooling, and these are should be the only considerations otherwise always get the cheapest one. So if you buy an RT x 2080 ti, get the cheapest one with the cooling that's right for you.
+
+Sanyam Bhutani  59:50  
+And do you think like to produce great result results do you need like a huge cluster of GPUs or is it also possible like to be in the maybe state of the art or De creme and just use lesser GPUs, maybe one or two?
+
+Tim Dettmers  1:00:05  
+Yeah, so there are research areas where you need a GPU cluster. And it's just these research areas can be extremely important. And we talked a bit about Excel netbook, bird. And if you train large transformers, you need a lot of compute, and there's no way around it. For some research, if you do image net on one GPU, it's a bit of a pain. If you have four GPUs, it's much, much, much more tolerable, tolerable to do these long experiments. And, but they are so there's so much research that you can do on one GPU. And it can be really, really important and you can also view it as I said before, the solution of using GPU clusters to do research is flawed, it leads to a domain where computing data is king. And companies dominate everything. And results get more and more unreliable. And this is dangerous for science. We don't know where we're going. It's not very democratic. And so with a single GPU, you might work on exactly those things that led you to the important the really important research that you do on a GPU cluster on a single GPU. But usually, if you have one single single GPU, you don't work on this big problem. You work on a different problem that would enable you to do this big kind of work and, or you just work on a completely different problem. Some problems are very conceptual, a lot about interpretation. A lot about different architectures. If they work on safer that says a lot, then you do one experiment in image net, then then people then people are fine with it. And you don't need a GPU class, then it helps for some problems, but you don't need it.
+
+Sanyam Bhutani  1:02:15  
+Going back to research, you just published a blueprint for sparse networks from scratch, faster running without using performance as a title of the preprint. Crew, TELUS models, the idea.
+
+Tim Dettmers  1:02:26  
+Yes, so
+
+Tim Dettmers  1:02:29  
+the main idea comes from neuroscience. So they are like two facts, which made quite an impression on me. And one is that if you look at all the species, the brains of the of all different kinds of species, they're very much limited by calorie intake. So usually, what do you have, if you have an animal it has as many neurons as it can afford without starving to death, if it would have more neurons It will not survive, because it's just too expensive. And so what that tells you said, brains from an evolutionary point of view then need to be extremely optimized. And a different thing is, if you look at primate brains, what was found is, the more neurons a primate brain has, the fewer connections you make between neurons. And so this is also part of the efficiency. If you would take a human and you would connect all neurons with all neurons, then the computation would be so expensive that you would just starve to death. So actually was was recently found that pregnant women they're very close to the limit where the system so the gut can absorb certain amount of calories and You cannot go above that. And pregnant women are very close to the threshold. So if it would be a bit more expensive, our brain, you wouldn't be able to produce offspring.
+
+Tim Dettmers  1:04:12  
+Or we would need a better guts, or injections of glucose or I don't know. But
+
+Tim Dettmers  1:04:20  
+yeah, so what what what this tells us is that sparsity is really important. It's really important that we do the computation on the brain with as few connections as possible. And so if you look at deep learning, you see very sharp contrast and deep learning, we connect everything with everything. The universe is everything with everything. Yes, yes. And
+
+Tim Dettmers  1:04:47  
+also, if you look at convolution,
+
+Tim Dettmers  1:04:50  
+in the brain, if something activates it has like a cascade of other things that activate and if in neural networks, we activate everything If you didn't detect the cat, then filter for a car was still look over the area where the kid was and says, oh, maybe the car hidden somewhere here. And that doesn't make much sense. So, what you really want to do is sort of specify the information processing only process what is important and one aspect is really can we train in were unable to sparse weeks ago can we remove the weights and make it still train to a dense performance level? And so there has been research which takes a dense newer networks then proves that to be very fast network, which is usually more use a mobile devices, and they only lose a little bit of performance in their process. And but my main interest was, can we make training faster? So can we make it more efficient, similar to how the brain is very fast? Very efficient, can we Make neural networks faster and more efficient by using sparsity. So can we train the neural networks from a sparse configuration and keep it sparse throughout training, and still get a dense performance? And at the same time, yeah, just increase tech training speed. And that was the same as it was the main idea behind the project.
+
+Sanyam Bhutani  1:06:21  
+Okay, we just get to the results, which, as you published are very interesting. But could you tell us the algorithm you've developed? And how does it work?
+
+Tim Dettmers  1:06:30  
+Yes, so the algorithm that are developed, it's called spouse learning or tempted spouse learning, because it starts battling spots momentum, sorry. And so because it uses momentum, and so you can break down this algorithm in three parts and or sparse learning. You can break it down in three parts in general, if you have a sparse network, the question is really, which connections Do I need which connections Useless. And so these these questions, basically say, you need to figure out which connections are useless. So you need to prune certain weights. And if you have batch normalization, then on average, the input is, has always the same magnitude for weights. And that means that you can determine importance of the weights, on average by its size or by its magnitude. And so, good way to find weights which are useless, it's just to remove the smallest weights, okay. And that also has been reliable found to be reliable in the literature. And so that's one part of the algorithm. So removing these useless weights, you can look at the smallest weights. And then the question is, where do you put these new weights, so you put some weights so you now have a budget, which you can spend somewhere else until you now you need To find effective weights, we have weights effective. And what I found that a global Global Version if you look at all the, if you have a measure of effectiveness effectiveness across all layers doesn't really work because you're comparing apples with oranges every layer is very different. So, you need a measure of how important is a layer okay. And so, what I looked at is and if you have this question, how can you determine the importance of layer? Then a very closely related question is how can we determine which weights have the potential to be to reduce the error rate the most So, which which weights will be important in the future as a and this question sort of also answers which layers will be in Important in the future. And so, one measure for that is, if you look at that gradient, and over time and Stochastic gradient descent, and it will zigzag around, but if the local minimum is here will maybe look go like this, yeah, but if you take the average, then these exactly will cancel out, is basically a straight line to the minimum. And this, this method of taking the average of the gradients over time, that's basically momentum. That's also the idea behind momentum, you want to accelerate the, the gradient towards the direction of the local minimum. And that's what you do with averaging. And so, this is some momentum and you have the momentum of weights. And then the idea is, if you take the average momentum within the layer, then you sort of get the importance of how On average, how important is a week sleep. And so when you have this measure, you can compare apples and apples because now we have a measure of what how important is a layer or how important is to wait in the layer. Okay, and then you can say, if I have 100 weeks, then I know I should put put 50 weights here, many weights here 30 weights here, because my importance is proportional to that. And so now you distributed the weights to the layers. And now you need to grow in certain positions need to connect certain neurons between layers. And so the different ways you can do that, actually, just throwing them randomly works already quite well.
+
+Sanyam Bhutani  1:10:45  
+Okay, but
+
+Tim Dettmers  1:10:46  
+what I do in my paper is, again, look at the momentum of missing weights. So if you have dense inputs and dense arrows, you have a dense gradient. So even if you have missing weights, you can Huge a gradient for that. Okay, and so with that, if you take the gradient over time you get an also an idea of if this Wade would be present, how much would it reduce error? And so I use this measure to basically say, Okay, he's missing weights are the most important ones, they have the most promise, and I will grow those. Okay. And yeah, that sort of describes the entire sparse momentum algorithm. Prune waits for the magnitude, then you to determine Leah importance by the average momentum of layer three, and then you redistribute weights within the layer, according to the momentum of the missing weights. That's for algorithm.
+
+Sanyam Bhutani  1:11:45  
+That's an amazing explanation. Thank you for that. Thank you also mentioned some very interesting results on a few data sets. So could you talk a tell us about those and do you think these are expendable to other approaches as well? Because, yes, you just used to CNN model Remember correctly?
+
+Tim Dettmers  1:12:02  
+Yes. So I did experiments and computer vision when the project started I actually did experiment on natural language processing tasks, especially Transformers it was one may focus make Transformers fastest. But, and like in many things natural language processing is more difficult than computer vision problems because there's so many more classes, there's so many more nuances, you have a tail distribution So some things I mentioned very rarely in combination, but have a very particular meaning. And so my method didn't work quite well in that okay but in computer vision, you have more structure. If you have cats if you have 10 different cats equipped panel looks the same. You have different different positions, different angles, that sort of thing. They they you can figure out how to catch It's it's probably more difficult if you have like a text off of Shakespeare to disentangle the meaning, but it's easy to get to look at the picture of a cat and sort of get the meaning. Yeah. So So I started experimenting on in computer vision tasks. And I looked at MSI for 10 and image net, and they had worked much better. And so, as I said, before I went through this Shane of things I tested in in this experiment with different methods of work quite well. And when I have very good method, I tried it on cipher. I could prove things further and then I move on to image net. And yeah, so I tried different kind of an ns I tried like some standards and networks, which are used often in the literature on compressing and neural networks. And that's like Loonette with some fully connected layers to fully connected layers to hidden layers. Yeah. And then there's a version with two conditional layers very simple. On sci fi looked at architectures VGG, which is quite standard, I looked at Alex net, which is not so standard on cipher, but it's now computers not fast enough, it can train it on that without any problem, right residual networks are subscribed on Seifer and then normal residual network on image net. And so my most through rough results on Seifer 10. And I can see that I can get dense performance for networks between five and 50% of any between five and 50% of waitzkin. That's performance. Okay, so for Alex net for example, I need between 30 and 50%. weights to get dance performance. For VGG, it seems to be a very efficient architecture for sparse learning. I only need between five and 10% on VGG 5%, five between five and 10% of waits for day two to get
+
+Sanyam Bhutani  1:15:13  
+also and most like this model, because it's pretty big compared to the recent ones
+
+Tim Dettmers  1:15:20  
+is Yes, that's true. And so some wide residual networks work well, they only need 5% of ways, but some others do not. And I currently don't understand the relationship. So wide residual networks, it differs between five and 30% of weights that you need. But if you look at speed up speed ups that you can gain, if you use sparse convolution, which doesn't really exist as of now, which, which could be developed mean, these kind of algorithms haven't been developed because there were no networks. There were no application for the algorithms. And now with my work, I think they have some potential There, and maybe people will develop these kind of algorithms. So if you use sparse convolution, what do you then can see is you get pretty good speed ups for like wide residual networks was between five and 10 times faster for image for Alex nets about three times faster foot BGG or five times faster. So that that's pretty good. And, and what is curious is if you increase the number of weights to speed ups don't decrease quickly. And that's because the most important layers are usually also the most computationally expensive. Those are usually the first few layers. So the first few congregationally I said the most expensive to compute. And they also the most important mean if you if your first layer is empty, you cannot learn anything. And so yeah, so if you increase the number of weights, you still get pretty good speed up And so it seems to do this kind of training, you can get dense performance and good speed ups, if you have the right algorithm. And yeah, that's sort of the main results. I haven't calculated speedups on image net yet. It might be higher, it might be lower. I'm not quite sure. My intuition that it's a bit higher, because you just have deeper networks with more paramitas. And the last layers are very sparse. And, yeah, I will probably add those experiments. And yeah, tomorrow there will be the reviews. I will get the reviews from the Europe submission. quite curious about that. And then we'll see if, yeah, this work
+
+Sanyam Bhutani  1:17:54  
+will be published on it not maybe by the time this podcast is out. It's already in
+
+Tim Dettmers  1:17:59  
+Yes, you Yes, yeah, let's, let's see. I'm hopeful.
+
+Sanyam Bhutani  1:18:04  
+So you also provided an open source, sparse library implementation. Could you tell us about that? And also you use pytorch? I believe in the framework. So yes, the reason for using that, and what do you think about its extensibility? to other new relate models?
+
+Tim Dettmers  1:18:21  
+Yes. So
+
+Tim Dettmers  1:18:24  
+yes, software is important to me, I want to write software that people can use, they can extend easily and do their own research with what to strive for fun. And so the library that I wrote around that around around around this idea, basically, and so it's a simple wrapper around basically any pytorch neural network. So you can just say, oh, make this network sparse. Basically, with one line of code. You need me to add a little bit more lines to business. Say when to when to use pass momentum on other spots algorithm. But I was also paid attention to was modularity. So you can very easily extend, for example, redistribution algorithms or growth algorithms for pruning algorithms. So you can easily add your own algorithm there. You don't need to meddle with a library or anything. You just need to implement a function that returns a specific tends or value. And then you have your own methods, which might be better than spark momentum, you might be able to publish it. Yeah, I use pytorch. I'm, I'm really big fan of pytorch. I think it's very well designed. It's just designed for prototyping. It's designed for research. It's you can do experiments very quickly. And yeah, I like to just contribute to that. With my spousal learning life I think, yeah, I want to encourage people to really try and you to use and use pytorch. When new hardware will come out, like cash based hardware, things might change a little bit. But right now, I would say pytorch is the best deep learning framework. And for things like GPUs, probably 10s of feels better. For some publication, you want to use TensorFlow. And of course, it always has like, this is a subjective thing. Some people like TensorFlow better. I like pytorch better, but, um, I think pytorch is really easy to extend really easy to work with really easy to prototype. It's really too easy to understand the code and to understand other people's code. And yeah, that's why I chose to work with pytorch
+
+Sanyam Bhutani  1:20:55  
+recorded. Also Leslie Leslie Smith, in his interview mention that usually when he's thinking of a research idea, he'd like to run the code. So that's also very kind of you that you have the library available. I'll have that link in the description so that
+
+Tim Dettmers  1:21:11  
+that's great. Yeah. Yeah, I think that's important. Free producing research is important. I mean, we see it with research that it's now so expensive that you need to do cheap you Plus, it cannot really reproduce it. Yeah. And that's dangerous. I think it's a very important part of science to be able to reproduce research. Yes.
+
+Sanyam Bhutani  1:21:32  
+So I also want to shift the discussion to a bit, uh you have been very active on Kaggle. When you were taking part in it, you peaked, your rank peaked at 63 when you act on the platform, so could you tell us more about your Kaggle experience and what did you do during Kaggle back in the day?
+
+Tim Dettmers  1:21:52  
+Yeah, for me that was a time when I studied deep learning, but I didn't really know have any experience applying it. And I was in a situation at that time, I was like a bit academically isolated. So I didn't have an advisor didn't work with PhD students. And that's the reason it's very difficult to say, do I have the skills? And what am I missing? What skills am I lacking? I think Kaggle for me, it was really, this is really a great platform to do is just set to challenge yourself, try something practical. And then also compare yourself against others to see what am I what what do I need to learn, and also the community is very useful. You can learn so much from others. And yeah, this combination, I think it's it makes Kaggle really a great platform to really increase your skill and I started Kaggle because of that reason, I really wanted to increase my skill of deep learning, also focused on applying deep learning method to Kaggle competitions, which is not always easy. Most competitions are more suited to feature engineering. And yeah, but it was very insightful. I learned a lot.
+
+Sanyam Bhutani  1:23:15  
+So since you started started in the time, like when you got a gold medal, I was going through a solution of yours we mentioned user back in the day and this for context your audience is like six years ago, you used a two layer neural net model along with a linear unit. So do you think since then, like obviously, these have gotten more challenging?. Do you think it's still possible for someone to get started today and make it to the top hundred?
+
+Tim Dettmers  1:23:39  
+Yeah, today, I mean, I haven't done any Kaggle competitions recently, but I got a feeling for how it is to run a couple of Kaggle competitions when, when I talked to a couple of other people, and it seems much more challenging today. It's much more competition and I mean, I think back in the day, especially with deep learning, people didn't really know how to use it. So getting a two layer neural network to work on a data set. I mean, it was more like, how do you convert the inputs to get it right. But;
+
+Sanyam Bhutani  1:24:15  
+There was no TenSorFlow, no Pytorch, no;
+
+Tim Dettmers  1:24:19  
+Yeah, that's true. That's true. Yes, yes. Yeah, I am, you know, developed my own neural network code at that time to do that. But I'm here today, it's easier to do these things. Knowledge is more readily available. It's more techniques and more robust. You can train deeper networks without a problem. Back then no batch normalization exists and that sort of thing. So yeah, I think today, you need a lot of knowledge to be able to compete and competition is stiff. Yeah. If I would start now, I think I would need a long, long time to reach the top 100. Yeah, it wouldn't be easy. And I think in the end, it's about picking your battles. 
+
+Sanyam Bhutani  1:25:12  
+Yeah. 
+
+Tim Dettmers  1:25:13  
+For me, Kaggle was a way to prove myself. And I proved to certain point in leaderboards are very useful to say, now I have these skills, my skills are comparable to these kind of people. And I talked with people in the community and I learned these things. And I think that I sort of have robust skill set. And from there for me, it was like moving on, and experiment with the research and I really like that. And you can get a lot out of Kaggle, but you should be conscious about what you want to get out of Kaggle.
+
+Sanyam Bhutani  1:25:53  
+So, also, one of the things that people usually do is they like they they are MOOC educated, so they've taken on ? then they go for Kaggle or start applying for jobs. So do you think a MOOC educated person, or how does a MOOC educated person become maybe like a research oriented or? 
+
+Tim Dettmers  1:26:11  
+Yeah. 
+
+Sanyam Bhutani  1:26:11  
+Do you think it's possible for them to produce good result or produce good results on Kaggle?
+
+Tim Dettmers  1:26:18  
+Yes. I mean, I'm a big fan of MOOCs. I'm a big fan of alternative routes of education. And I think in many aspects, MOOCs getting much better skills than University classes. If you have MOOCs, combat Kaggle, I think you have, you get a very powerful, up to date, and thorough set of skills that you cannot get it with a university education. If I would be an employee, I would hire MOOC people, people that didn't know education and well, Kaggle competitions much more readily than fresh university graduate without any experience. 
+
+Sanyam Bhutani  1:27:06  
+Yeah.
+
+Tim Dettmers  1:27:06  
+But you have to be realistic. I mean, that's my mindset. But many people industry, they're very conservative. They want to see you have that data science degree or Math degree or statistic degree, whatever. 
+
+Sanyam Bhutani  1:27:22  
+Yeah. 
+
+Tim Dettmers  1:27:23  
+And it's disappointing. I mean, I would like our societies to be more meritocratic. People that are good, they should preserve good jobs. And I don't think that's true. It's, it's mostly about privilege nowadays not skill. I think that supposed to continue in the future and it's a sad fact. But I think you need to keep in mind. So if you really want to get good MOOCs and Kaggle are great, but you should also think about some education, formal education that you get and what you get, and especially you want to do research, it's important to also get involved with real researchers experienced researchers, you learn a lot from them. But also if you want to move to the next level, you need like recommendation letters. That's very important. I did research on my own. And that is impressive to a lot of people but the real research experience I made after that when I joined a research lab for an internship and they are really gather the real research experience. So if you want to get into research, try to get involved with research labs with PhD students.
+
+Sanyam Bhutani  1:28:53  
+Do you think like; 
+
+Tim Dettmers  1:28:54  
+You, yeah?
+
+Sanyam Bhutani  1:28:55  
+And internship is a good way to get a taste of research. Like if you're not sure, maybe do six months and; 
+
+Tim Dettmers  1:29:01  
+Yes, yes, I'm a big fan of internships. I'm a big fan of taking it slow. I think people rush into things when I see at U dub PhD students with age 21 someone 19 that's, that's, that's crazy. I mean, I think for many things, you should really get a taste for things first, and really try them and then decide, yeah, that's what I want to do. And then you can take the next step. And so that's not always easy. It's not easy to get find a research internship. But you might be able to find something here and there. And I mean, people will say you should cut find like the career ladder with internships. It's a bit similar to you can start with like, something a little bit research related and that gives you maybe the background to do go into a bit more research related. And then at some point, you get really good. And that's not only good for you to try out if you really like research, or really like research and industry or really like a position as a research engineer, or as a data scientist, but it's also a stepping stone that enables you get opportunities. So if you do research internships and you, you get recommendation letters, you might might be able to get a publication out of your research internship. And with that you can compete against other people when you apply for PhDs, because it's a very stiff competition nowadays. It's a very high bar can be quite frightening. But my advice is, take it slow. Work with researchers figure out if you want to do it, builds your research experience, and then then go for it. Now take take your time, you have enough time in life. There will be a time where you own your career and you're working. And it gets more and more similar experience every day. If you're young, you have the opportunity to do still do risky things, weird things, things that you cannot do if you have like a family and I don't know, I need a stable income. So yeah, I would encourage people to explore and then settle down.
+
+Sanyam Bhutani  1:31:46  
+That's that's great advice. I also want to ask you, so like, there's this explosion in research. So how do you stay on top of machine learning research example, you do you must be reading a lot of papers every day. So;
+
+Tim Dettmers  1:31:59  
+Yep.
+
+Sanyam Bhutani  1:31:59  
+How do you stay on top of the the huge outlet?
+
+Tim Dettmers  1:32:04  
+Yes, it can be very intimidating with all the things that came out come out. I think key part is really not what do you read. But what don't you read. So you need to decide what is enough? And what is sort of, yeah, I don't need to read that. For an example, x element is like a big thing. But I never read the paper I skipped the paper looked at the results. Me, the story is clear. If you have like a big, big architecture bit more data, if you tweak it architecture a little bit and it does better, but no surprise, you don't need to know the details. That's like one filter that you should apply. But another filter is more like topic related. So I like to stay up to date on research that is relevant to my current research project. And there's some tools which helped with that, like semantic scholar released a new tool, where you say, okay, these are some research papers relevant to me, then I will find very closely related work, which you might miss if you just go along the citation graph. So I also like to go along the citation graph, but especially if we work in very dynamic and new areas that can be difficult and tools like semantic scholar can help. But if I go outside of a very specific domain in my research project, I usually rely on Twitter and colleagues. I just listened to the like the big things sort of, and I usually don't read papers in full, okay, look at the motivation look at their results. And if it's interesting and good, then I look at the lack of the method section, but I use don't dive deep. And they're like;
+
+Sanyam Bhutani  1:34:04  
+Yeah, one of the tweets that that got viral was JP mentioned that go through 10 abstracts over reading one paper in depth. So I think that's that's what you follow?
+
+Tim Dettmers  1:34:14  
+Yes, yes. Uh, yeah, I think that number sounds about right. I mean, for me, it's not necessarily the abstract. I mean, always read the abstract, but you can read paper on so many different levels.
+
+Sanyam Bhutani  1:34:29  
+Yeah. So if you rather than read one in full,
+
+Tim Dettmers  1:34:34  
+Yes, I mean, for example, for XLNet, I read the abstract sort of understood like the idea and concepts. I read transformer Excel before, so I had already built a background. And so then I went straight with the results compared that looked at the ablations and that was it. Then Then I close the paper and knew what I had. For some papers, it differs some papers, you just need to read the abstract. Often you want to skim some graph some some tables. But yeah, you want to be selective. And yeah, that is sort of mean for things in NLP natural language processing. I usually rely on Twitter and my colleagues there. But when I go a bit further outside deep learning, computer vision, reinforcement learning these kind of things, you also want to sort of get the big ideas that are running in those fields. And what I really like that is I look at arxiv Sanity in the most popular papers in the last week or last month, and go through the top papers and then I see sort of what this entire field of deep learning up to what is machine learning up to where are like bridges made from different areas, and that sort of thing. And yeah, I think that combination like detailed view on my own project, or high level on NLP and bit more selective, and also higher level on people learning in general that that works for me, but everyone is different. I know some people that read all the new archive papers that come out every day, we not read them, but skim them. And most of them are not good. Of course, well;
+
+Sanyam Bhutani  1:36:29  
+Half for Twitter is like I create separate lists who a computer with a list of computers and researchers at NLP.
+
+Tim Dettmers  1:36:35  
+Yes. 
+
+Sanyam Bhutani  1:36:36  
+And whenever I want to find out like what the best people have done these days, go to that list, see what's trending at how it's ranked. And maybe like in the first 50 tweets the scrolling down, I can find a link to archive or some papers.
+
+Tim Dettmers  1:36:48  
+Yeah, that makes sense. That makes sense. So I people that are follow on Twitter. Only I didn't work. I don't work with lists, but that's actually very good strategy. Maybe I should do that. I currently just follow mostly NLP people kind of try to keep it selective. And that sort of keeps me up to date with what's going on in NLP. And then I rely on archive sanity to really filter for other fields. But yeah, maybe it's a good idea to really have these lists and separate areas mean require some initial effort. But once you get there, I think it's a quick way to filter down what you really need to know. Yeah.
+
+Sanyam Bhutani  1:37:31  
+I'll have my list in the description for the audience if they're interested in that.
+
+Tim Dettmers  1:37:35  
+That's great.
+
+Sanyam Bhutani  1:37:36  
+So before we conclude, this was a great conversation. What best advice do you have for a beginner who's maybe looking to get a break into deep learning or into deep learning research?
+
+Tim Dettmers  1:37:47  
+Yes, um, that's a good question. I think it really depends on what your goals are. So if you want to be a research engineer, if you would want to become I'm a research engineer, if you want to become a deep learning researcher, or natural language processing researcher, or a data scientist, you need different kinds of skills, different kinds of abilities, what's always important is that that's what people often missed. This you need also the right kind of connections and their privilege plays a big role. But you can also establish connections slowly go through some channels. So you might not if you want to do research, you might not be able to interest some professors, men working with you. But if you talk to PhD students, and other people that do similar work, for example, they're fast AI community and feeling that the community is really supportive. And these people they work together even though they don't have research background, but they work on some research problems. And you can see that they have some gaps in their in their research repertoire. But they have very interesting perspectives because they're bit more isolated, that makes you just think of it differently and that can be very interesting. So you mean if you don't have the privilege to have like, certain connections, and you can try to get in through these channels, find some friends find go into communities like fast.ai also kaggle, and go from there. Maybe you can find a link for someone that is on these platforms, but also works in a research lab, a PhD student, maybe you can even make a connection directly with a PhD students, and that in the end can lead maybe to an internship. And when you're in the internship, then you're very close already working with a professor with, and that gives you more connections to other other industry lads. And that's basically also how it worked out for me. So, so slowly, working your steps up and trying to get closer to the goal, you need to be realistic. If you want to be a researcher, it's gonna be a long way. For me, I took almost 10 years to get to the PhD where I am now. But if you I mean, some people they they get they, they they panic when they realize oh, all my other peers, they are much younger than me and they already advanced further. Some people they get uncomfortable when they see PhD students which are age 20 or 21. Because they say oh there's so much younger when I was so young I couldn't do these things. But you need to remind yourself it's not about age. Age will give you also certainly character certain experience. And if you take things slow, you do not make things worse you get more well rounded and the experience can pay off a lot. My software software engineering experience it's still relevant today and the work that I did like all the studies that I didn't neuroscience and psychology they worked out, but they're still relevant today. But yeah, take it slowly be patient, go step by step, improve focus on your skills. So this is in terms of connections, but if you if you want to become a data scientist Kaggle might be the right thing. If you want to become a research engineer, maybe you should work on some deep learning hacks or some interesting question. If you want to be a researcher, you need to do bit more research, you can get some initial skills from Kaggle, and so forth, that at some point, you should focus on research and it's complicated process. It's a very noisy processes pattern. It's a very unfair process. But you can try to make the best out of the position where you are right now. And often if you are patient, you can get to some point where you can be quite satisfied and get at least the part of it what what you wanted to do. So yeah.
+
+Sanyam Bhutani  1:42:36  
+Awesome. That's that's amazing advice. And thank you for the super amazing conversation. Before we end the call. Could you maybe point us to a few platforms to follow your work? Where are you most active?
+
+Tim Dettmers  1:42:47  
+Yeah. Thank you for doing this interview. It was just really great. I mean platforms for for me, it's on Twitter. You can follow me on Twitter, Tim_Dettmers and yeah, otherwise just my blog. Usually on these two platforms you will see like, what I'm up to what I'm thinking about. And yeah and thanks again for for doing this was really great pleasure to have this interview with you.
+
+Sanyam Bhutani  1:43:19  
+Thanks again for joining me and for all the amazing contributions that you made to blog and also to the research community.
+
+Tim Dettmers  1:43:26  
+Yeah, thank you.
+
+Sanyam Bhutani  1:43:38  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review, or feel free to shoot me a message you can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science."
+

@@ -1,0 +1,195 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science," a podcast for data science enthusiasts, where I interview practitioners and researchers and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello and welcome to another episode of CTDS dot Show. The show bringing you quarantine content having interviews with my machine learning heroes. In this episode I interview senior data scientist at H2O.ai, kaggle competitions master and PhD holder in mathematical physics. Dr. Max, Jeblick Dr. Maximilian Jeblick. We talk about his transition from physics into data science. Max draws many parallels between the two and how the terms used even in his research show a really nice parallel with data science. We discuss about his experience of teaming up with the oldest Cargill Grandmaster, Dieter, Christoph ankle, and Max's his advices and his learnings from competing on so many kaggle competitions and how should you YES, YOU go about learning from a competition while also trying to take part in it and slowly moving up the leaderboard over time as you keep competing in these competitions. We also discuss Max's work at a H2O.Ai and he also shows advises around how can you balance all over These amazing things that he's contributing to book kaggle. And data science broadly speaking. For now, here's the conversation. Please enjoy the show.
+
+Sanyam Bhutani  2:25  
+Hi, everyone today, I'm excited to be talking to another maker. Dr. Max. Max, thank you so much for joining me on the podcast.
+
+Max J  2:32  
+Yeah, thank you. It's an honour to be on your podcast. I really [It's]
+
+Sanyam Bhutani  2:35  
+an honour to me talking to you. Thank you. So I'm going to talk a lot about different things about your background. But I want to start about talking how you transition from physics and maths into data science, I believe, what was the factor driving that transition for you? [I think there]
+
+Max J  2:52  
+were about maybe three factors for doing so. So maybe to give you some background, I will explain what I did. During my PhD, so I studied physics and Munich a little bit Maximilian University and also to turn my PhD in mathematical physics. And what I was looking at was the dynamical description of quantum gases. So, imagine you have a metal, you cool it down to very low temperatures, then at some point you will observe super conductivity, which means that you don't have any resistance. And the longer you may note, there is videos where you have a superconductor and on top of a chance of magnets loading, yeah, which is quite some cool phenomena, and that you can explain with quantum mechanics, quantum mechanical phenomena. And also you have to same with super fluidity for example. So with liquid helium cooled down, then on on at some threshold, you will observe that you don't have any resistance and long as no friction, you have a super fluid. And what I was looking at was this a so called Bose Einstein condensate. So you have a dilute gas of atoms, you cool it down to almost absolute zero Kelvin. And what you can observe is that you get a state of metal so called Bose Einstein condensate, which means that almost all particles are the same quantum state, which was quite amazing. I think. It's really an interesting state of matter. And this set of methods very retro. So if you disturb it a little bit, you destroy the common sage. If you shine light on it, you destroy it. So what you really want to understand from a theoretical point of view is, what are the properties of this condensate? When will the toilets when warranted call it so depending on the physical parameters, how will the condensate behave and in particular, what I did And this is interesting refers to data science was I was looking at as an arrow function, a loss function and the loss function describes the relative number of particles which are not in a common state. So, you have the loss function initially, you know, you run a Bose Einstein condensate, you observe the time evolution of that gas. And you want to show if initially the loss function is small, then at some later times, under some assumptions about the physics of the system, the loss functions still small. And so, what I did to show this is that you have the loss function depending on time you take the time derivative of that, so the gradient with a bunch of terms and you estimate these terms and show that these terms are small.
+
+Sanyam Bhutani  5:52  
+So, these terms are similar like data science students like we already know about gradients, some of the audiences from data science at the same terms used in physics as well,
+
+Max J  6:02  
+yeah, it was very similar actually say,
+
+Max J  6:06  
+What was interesting and this was, I think a striking moment for me is that the loss function I was using, so you have the loss function, you throw it small, then traffic gradients are small, which implies at some later time the loss function will be small and the loss function I was using, I was reading this paper about object detection. And when you detect objects with masks, they use a tape in that paper, they propose a loss function called focal loss, which they then showed I had very nice properties was without the neural network to converge better. And I realised, oh that loss function or the idea behind it was very similar to the loss function I was using because I had to tweak the loss function quite a bit, to be able to show that the gradients are small and the way I use it in my PhD was very similar to this focal loss idea, which was the modification of lock close. Okay, and this Yeah, this was amazing for me. So, so, so many parallels there. So what was I was doing on pen and paper, interestingly, to have machine learning data science and deep learning work, because at the end, both are like optimization problems, if you cool even if you cool down the condensate, and you try to bring it to minimum temp , so that's another minimization problem. I was working a lot with these minimization problems with the loss functions, and so on. And this was one driving factor for me, really to go into data science. Okay.
+
+Sanyam Bhutani  7:48  
+Bose Einstein condensate is it's a very volatile state like you mentioned. So well all of these theoretical calculations or did you like actually produce the condensate and then collect the data but what tools were using for all of the data analysis? If I make a
+
+Max J  8:05  
+purely theoretical
+
+Max J  8:08  
+say, we have. So Munich has a laboratory, which scientist, and they're able to produce them that it's really hard, I wouldn't be able to do that. So it was really based on the theoretical part on the mathematical description of the condensate.
+
+Sanyam Bhutani  8:30  
+And were you using NumPy, pandas, all of these libraries or was more calculations?
+
+Max J  8:37  
+Okay. Oh, yeah, kind of different. I think another factor which drove me into data science then was also if you want to get a permanent position, academia, it's pretty hard to say because you need to search for your PhD. You need to do two or three postdocs. You have to Move around go to different cities you need to apply every one or two years for another position. And then there are very talented people in that field and the number of open positions which are permanent is rather limited. So be willing to go all in
+
+Sanyam Bhutani  9:20  
+you transition from your traditional path that you talked about in academia to industry, you actually I think joined the startup first you founded a startup, how was that experience any any good memories from that?
+
+Max J  9:31  
+was really amazing. So
+
+Max J  9:35  
+So what I did we after the PhD, I co founded Khumbu.ai So to give you some background khumbu is a valley in yoga Mount Everest for the name comes from and we were four people in there so they were ChristOf aka Dieter you may know him.
+
+Sanyam Bhutani  9:54  
+The retired construction, Kaggle GrandMaster
+
+Max J  9:57  
+construction worker. And then we were, we were four people in total, the Bahamas, and Philip. It were all from my research group. So we co founded this together, which was quite interesting, interesting experience. And I think the key insight I had there is like, really do what you love. We love doing kaggle competitions. We love data science, and what's really amazing to be able to transfer the knowledge you gain inside kaggle to a customer protract when we were doing customer facing data scientist, it was also really interesting for me to see how the business works. The business might come to you and say, Hey, we have some fraud from our customers. What are the measures we can reduce this fraud? So it's not about everyone a model with 0.958 You see? That's not Their objective but having a model with 0.95 AUC might help solving that problem, because then you can say, Okay, these are the drivers, indicators for a person being fraudulent, maybe then the company can act upon these factors. So it was really interesting to being part of the cycle. Cooking also to have a good, really having an insight into how different companies work, what problems they are facing what they want to solve. It was really an amazing experience. I would say.
+
+Sanyam Bhutani  11:38  
+Were there any key learnings for you, for example, you also, like you mentioned faced many businesses and you also need to convert the business problem into a technical problem, like you mentioned. So how was that learning experience any takeaways from that? Where you
+
+Max J  11:51  
+think what really happened? So think what the learning from the PhD from the research group at quite a lot As a researcher, you're being independent, so you're responsible for your own work. This, of course, helps quite a lot. And also being able to convey your ideas in a way such that they're understandable. That's quite important to do. So, when I was at university, I was a research assistant, meaning that I gave lectures and help the students with the exercises. And they're in front of like 200 persons 200 students and need to explain your ideas, answer questions and really try to convey your message. This adds quite a lot, I would say. Okay,
+
+Sanyam Bhutani  12:43  
+how how did Kaggle come into the picture? I believe you joined your first competition around two years ago with along with detail or maybe your second competition was with data. How did you get started on target
+
+Max J  12:56  
+and let's read it that transition say during the PhD Christof Dieter. He got really into kaggle and into data science a lot. And he was really encouraging to start this but also on kaggle. And yeah, like what I told you before, like this trial as I wanted to go into data science and find this field really fascinating. drove me to kaggle. Okay. was really a unique experience, I would say.
+
+Sanyam Bhutani  13:29  
+Awesome. So today you were a competitions master. How's your journey from your first competition to becoming a master? You worked across many different competitions? How is your approach evolved over all of these?
+
+Max J  13:42  
+Yes, I think it was quite a bit. Back then when I started. You never as I mentioned, this theoretical background and you know back propagation is a new weight initialisation of how it's done in a neural network is meaningful. statistical background, background and stochastics and Neural algorithms very well. But I think what I transitioned from this approach, also the kaggle problems is how you interact with the data and how you really our hands on the data gain insights from the data. So there are different things, which I think are quite important. And so one thing is, for example, understanding the data really well. So you may have a data sample, let me give you an example of cats MERS was a starts classification. And I think beginning I would maybe do like a train test split or a stratified split. Now nowadays, I really go into the TF data and take a deep dive first are examples of that example you might you might find a Your data that you have the photo of similar pets several times, you're the owner of the pet of the dog to 10 pictures, for example, they are very,
+
+Max J  15:11  
+very obssesed with the pet.
+
+Max J  15:14  
+And when you do then a train split and you don't look at the data that might be the pictures of the same, appear both and train and validation sets. And you set up is completely useless. And what you could then for example, use like, oh, maybe you want to cluster your data into groups, such that pictures with similar content are in the same cluster and then split proof test with respect to that cluster. And all of us have to speak back on or you might find that you have some tabular data. And for some column, the test that distribution is completely different and in training, then you need to think about Yeah, why that's the case might be that Some annual data and on the test set, you're predicting on an idea. And something has changed in between maybe how the data was collected as strange. Yeah, I don't know. So there's a lot of considerations you take, need to take up front to better understand the data. Also, from there, you gain a lot of insights, what you could do them possibly what you need to take care of. So understanding the data really well is crucial. Also, what I learned a lot is, of course, your bag of tricks. So what models work well for what competitions and also being able to maybe back your model, so it's not like a black box. But when you Model Model behaves strange, you're able to understand Oh, is it because the data is strange has some interesting properties. The model isn't able to catch up or Is your model behaving in some weird way because you made a mistake in neural network, things like that also like and another thing, which I learned was quite being able to have a bag of tricks and applying them in different domains. For example, coming back to the stock was cat classification, you might use a technique called mix up, which was quite popular nowadays to take 80% Docker image 20% cat image, merge them together, and the label is 80%. doc and 20% cat, which means that you're doing some kind of augmentation, which then reduces overfitting and helps the model to generalise better. What you can do, for example, is that you could take this idea and think about well can I tried, can I apply maybe to tabula data or cal, and I applied to NLP. So these are things you're getting more and more confident with. And you really so what I try really is to be creative when Kaggling and there are The other thing, which really improved. So these are all the modelling things for Tetris describe being confident with data, being confident with the model, being confident with the hyper parameter tuning, all of these things, which you can experience but also improve quite a lot with respect to our code and how I set up a problem. So what I was really beneficial, I think is using knowing you IDE very well so I use PyCarm and when you use, you know, all of these shortcuts, you can refactor very easily you can workflow chess improves quite a lot. Surprised to use as much design patterns as possible. If there are beneficial for example, using dependency injection, if you say, Oh yeah, that's a good design pattern, I may use it. And as an example, like you want to have clean, classify toxic comments, and you come up with the idea well, maybe to add the number of exclamation marks in that comment.
+
+Max J  19:30  
+Because comments with many exclamation marks, they might be more toxic on average, and maybe that's a good feature. Then if your setup is quiet, your setup is quite flexible, you might be able to incorporate this idea by changing like three or five lines of code, entering it in a data set, maybe once you normalise distribution, then adding an additional layer in a neural network. That should be Trouble with, let's say, five minutes, don't want to spend like six hours trying to implement that idea, then you can iterate very fast on different ideas. And you probably will find out Oh, it doesn't tell us at all, because the model probably will figure that out very easily. But at least you had one idea, you were able to verify whether this idea helps or not in very short time. And so this also, I think, is very important to have some good pipeline in general. I was
+
+Sanyam Bhutani  20:35  
+hoping you would be in club, Jupyter notebooks are not PyCharm. But coming coming to the interesting ideas you had mentioned. So how is how do you come up with those ideas? Is that intuition based or over time, you found out patterns and you get a rough sense of what might work better?
+
+Max J  20:56  
+Yeah, it's a mixture mixture, I would say What I do is like I read a lot of on the old kaggle competitions. Look at the top solutions. Read the panellists. Look, oh, what did they Well, what insights did they gain? What was the key findings from the data? Because the top solutions are usually very creative. And what are the challenges? Well, if what whether facing that helps quite a lot, maybe there's also a GitHub repository with the solution which, which you can then look into and see what was that person or that team in particular going to save quite a lot. And I also try to read as many research papers as possible, or at least try to get an idea of what they are doing. And again, nowadays, there's a lot of transition from one idea, which was maybe first and wented in computer vision or NLP to some other The main really try to yeah half maybe this bag of ideas from different domains and try to apply them in different contexts.
+
+Sanyam Bhutani  22:13  
+What competitions Do you enjoy the most? So you mentioned NLP computer vision, a wide variety of competitions and you've competed across a wide variety which ones do you enjoy?
+
+Max J  22:24  
+Say the competitions I am trying I mean
+
+Max J  22:28  
+basically all I would say, as long as the competition doesn't have any severe flaw like leak, the data is set up. in a strange way. It was random, the competitions are useless I usually do and try a lot of competition because each competition you learn something new, you learn something very particular that learn something of that particular data set, what are the challenge is for that data set. And so I think the competition which I enjoyed most, personally was the Trends competition. So this was a competition where you have to protect the circled scalar coupling constant. So that's a physical property from the geometry of metrical structure of molecules. And this competition I'm trying a lot because first of all, it relates to what I did during my studies, and was interesting for me to see machine learning or data scientists data science in general it can help in this regime, which I also like quite a lot in this competition was started on could be very creative. At the end, we had some craft neural network. And we use the transformer architecture known from Bert to set up a graph neural networks and two people in that competition they were quite creative with with their rights. Because this was some this was a kind of weird where you when now that math literate track system, so you could try different ideas different things out and yeah, and try that.
+
+Sanyam Bhutani  24:17  
+Okay. So basically you look for interesting challenges and you take up the challenge whenever you see one on gagne
+
+Max J  24:23  
+Yeah, yeah, whenever new challenge comes up at kaggle I'm like, Oh, that's a challenge, but I don't try to do to manage challenges at months.
+
+Sanyam Bhutani  24:34  
+This one competition or have you also worked on multiple in paddle
+
+Max J  24:40  
+also have done like as multiple in parallel. So you try to in that case, you try to have some symmetry or you may plan like the competitions have different deadlines. So you might priorities for Sunday competition, which and early Ensign champion to the other competition. So that's a thing you can do. Definitely.
+
+Sanyam Bhutani  25:05  
+Okay. And how do you balance kaggle and work? I believe I read somewhere you enjoyed reversal thing on non pandemic days. And you also used to do some workshops I found out. So do you enjoy taking a break from the tech world and going out into nature or how do you What's the secret to balancing everything?
+
+Max J  25:24  
+Yeah, I think that's, that's something I think I also learned from PhD degrees like being responsible for your own wackiness and also with kaggle, you can work as much or as little as you want to. So you have to find a good balance. For example, what I do is that we have a river wave in Munich, which was kind of unique. So you have a standing wave in a river in Munich, in the centre and what I do is that maybe before work, I go to I go there go surfing. Have a like having Amma tree and going back to work and being refreshed and having been able to work there.
+
+Sanyam Bhutani  26:10  
+Do you know of any other rivers that have such spots for like me Surfing is is this similar to rafting?
+
+Max J  26:17  
+It's sort of wave standing actually say the wave doesn't move. And it's in some places. No, Canada, there's a wave or Australia there's another wave. So it's popping up really and people are getting more and more into that sports.
+
+Sanyam Bhutani  26:34  
+Interesting. Now, coming to work, conversation about what interesting challenges are you working on H2O.ai
+
+Max J  26:43  
+different things that you do at H2O.ai which are quite interesting. So first of all, I work together with customer and prospects and helping them getting the most out of driverless AI. So driverless AI is a platform which where you can do automated machine Learning. So, as a company, you have a data set and you want to have some insights there. And then you can use driverless AI to obtain these insights. And you might for example, have a customer
+
+Max J  27:16  
+that uses the Einstein condensates in a laboratory.
+
+Max J  27:20  
+He measures the state of the system of the vacuum chamber and he wants to have some alert whenever this vacuum state chamber becomes unstable, and the condensate collapses, and he needs to redo the experiment. So you might have a data set and the label might be temperature is ultra cold, cold charge or critical and he really wants to have a model in production which which allows them wonders once the system becomes critical. And what we put them up there is discuss the different approaches to do so. Some of tribalism, Bring your own recipe architectures. Primus works very well out of the box upon that you can customise it and bring your own model to pre processing steps, your own metrics. For example, we could then say, Oh, yeah, in your use case, you have some classification problem of the classes or or not. When the model predicts code into status, ultra counts, let's see, we're done the model, the model predicts ultra code and to state the actual state is critical. So you may then may come up with a metric. For example, quadratic weighted Kappa. This is a metric, you know, maybe from a kaggle competition, you know, that's a classification metric can use for classification problem that takes care of the other and use that as a custom recipe. Or you might say, okay, maybe it's important for the customer. Imelda t able to predict the labour critical with high confidence we may then transform that data into a binary classification problem predicting marital status critical or not. But then look at the data together, maybe we can do some specific pre processing steps which are data specific, which we can then implement as a custom transformer. So this is like the way I worked also in the startup like engaging with the customers, understanding problems, the business objectives, and try to get the most out of their data. And apart from that, I'm also working on the products itself. So I'm currently working on some NLP
+
+Max J  29:52  
+stuff. So stay tuned.
+
+Sanyam Bhutani  29:55  
+Okay, maybe maybe for a future interview, but another thing to use Driverless AI is for benchmark on starting out on competitions. Do you DriverlessAI for Kaggle?
+
+Max J  30:07  
+Yeah, I mean, I ever take the data, upload it to Driverless, then go surfing and voila.
+
+Max J  30:17  
+I mean, literally what we do is
+
+Max J  30:21  
+the company and what I do also is that we test our private lesson all competitions, like maybe have a competition, which was one year ago, and some state of the art changed and we test driverless AI on that competition data. So maybe we have new ideas, new models, for example, the Bert model, which will come out in two or three weeks, which we have done the new state of art and NLP inside the product and we can test it on all the competition data, or we have Transformers new Transformers test. How do they perform All competitions also like, what was the key insights from that competition, which was maybe back one year ago? And can we use that insights to improve our product. So this is usually open cooperate with kaggle. And then generally when I do competitions, I think there's also an advises that I do and what I want. What I try to do initially is that I start out on my own, and I try not to look at the telecon loads initially. So we might have very, very good kernels from very talented people, giving you a very good baseline. But for example, once you look at that card, you may be stuck with that particular idea idea. And it's might be hard to find a way out of that idea. So you're not starting fresh because of that. When I say With a competition, I usually start on my own. Try to understand the data, maybe come up with a baseline very quickly, and then iterate on that. And then later on, I made my look at what is available outside.
+
+Sanyam Bhutani  32:18  
+If I may add many people who are just starting out, it's okay for them to copy, but max really is experienced on kaggle. So you were aiming for higher medals zone but you're starting out okay to copy but you also need to meet you understand what's going on? Yeah.
+
+Max J  32:35  
+Yeah, definitely. I think that's also an advice. I mean, what I do clearly also is you have competition metric, which is not trivial to implement and there is a kernel, which implements the competition metric IRA may very rarely use that information. So it's not that I don't look at all at a try not to focus too much on one particular kernel.
+
+Sanyam Bhutani  33:02  
+You're teaming up with grandmasters also at work. How do you feel about teaming up with grandmasters artists today?
+
+Max J  33:09  
+Yeah, it's really amazing. So, company's really amazing. And because the team which makes up the company, they're very talented people, and we have a lot of very talented presence on kaggle. But apart from that, so the whole team, I think it's very, very skilled. It just kind of reminds me all such back my days at university, so the research group I was in my advisor was very talented, very nice person. And I find that also at work. So I work a lot with Olivier. He's a very nice and very talented person. It's really a try to be able to work with him. And I think what's kind of unique, also that markets that HTML is that you have experts for us. A variety of fields sort of expert computer version of experts for NLP with a very strong crew for machine learning interpretability of persons tabular data, which are really, and the world's best, I would say, I think that's quite unique that you have his knowledge inside one company.
+
+Sanyam Bhutani  34:29  
+It's a privilege for me as well to be without too many smart people like you on the podcast and ask stupid questions to them. Coming to one final question, if you were to give one best advice to maybe yourself if you were just starting out today on kaggle, or to anyone who's starting out on kaggle what would be one single advice you'd give them?
+
+Max J  34:48  
+One single advice. Hmm.
+
+Sanyam Bhutani  34:51  
+Maybe if you
+
+Max J  34:54  
+can give a couple of advices I don't know if there's the most important advice I think if it also I think it also depends on a lot about your background which swing which frames to in already which things you may be not confident because data science and machine learning there are a lot of lot of things you can learn. You can go in different direction and it really depends on the person what direction he or she finds interesting. Kaggle wis wise I would say don't look too much on the medalists and on the rankings and on bad things really try to have try there. And really when you start on kaggle I think what's important is that you try to understand what a particular idea does. For example, you're starting an NLP competition you have to spurt model down chess imports from transformers and part two part model. Try to understand paper, maybe try to understand specific aspect of it, for example, what's the attention mechanism how its implemented. If the attention you have a dot product is normalised with respect to the dimension, if so why that's the case, try to understand as many things that possible, you don't need to do it. You don't need to understand everything from the beginning but really try to go into the algorithms and into how things work. Because if you have that knowledge, you can then use that knowledge and transfer it and maybe use it in another context. Also, but I already mentioned is think it's quite important that you try to be creative. So don't just look at the highest scoring kernel and fork it and maybe change the number of faults from five to 10 and 10. Choose and blending because on the long term, that won't that won't to improve your skills? Yeah, I might have an idea. And that idea. You have my reverse and the public notes. But at least you tried that particular idea on your own. And you might have some insights there, for example, like this, currently it is with sentiment extraction challenge, which I didn't submit anything. But I tried to, I implemented a paper, which I thought was very useful for that particular challenge. And at the end, I found out Oh, isn't that useful? And it was kind of off topic of that competition. But I implemented the idea from the paper, I gained some insights, I learned a couple of cool new tricks. And these tricks may be beneficial for you try competitions. Really try to be creative Try to just focus on the metric too much. Like try to get as
+
+Sanyam Bhutani  38:07  
+you build that intuition, like, like you mentioned, and maybe you load land into the maidens, initially, but as you build up that intuition and skillset, eventually you'll you'll find yourself up in the rankings.
+
+Max J  38:18  
+Yeah, definitely.
+
+Sanyam Bhutani  38:22  
+Now, before we end the call Max, what would be the best platforms to connect with you, you're still active on kaggle, and how your kaggle profile and your LinkedIn profile link in the show notes, any other social media platforms that you'd like to mention.
+
+Max J  38:34  
+I think kaggle is a very good platform to connect to me on LinkedIn if you want. I think these two resources are quite good to reach out to me.
+
+Sanyam Bhutani  38:48  
+Max, thank you so much for joining me on the podcast and thanks for sharing all of your advices
+
+Max J  38:53  
+Yeah, thank you has been really a joy for me being part of your podcast.
+
+Sanyam Bhutani  39:04  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week, to "Chai Time Data Science."
+

@@ -1,0 +1,366 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview Practitioners, Researchers, and Kagglers about their journey, experience, and talk all things about Data Science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the Chai Time Data Science Show. This is a very first, if I may on this series where I get to interview two amazing Kagglers. I'm sure they need no introduction: Dmitry Gordeev, also known as the "dott" on kaggle. And Philipp Singer, the Psi on Kaggle-I've already been lucky enough to interview Phillip on the series. So please do check that interview out if you haven't. In this interview, we talk about first Dmitry's journey into data science on kaggle. And in the later half about "The Zoo": The victory and Philipp's team named for all of their amazing victories has been unanimous, I'm sure now with the community, it's known as the zoo. And we talk all about the zoo's journey both of their journey on kaggle. Together, their approach on teaming up their approach about winning a competition and we discuss definitely about what does it really take to win a kaggle competition. The zoo in the past one year has had 100% success rate of Medalling, including three wins on competition by wins I mean 1st position finishes and a LARGE Majority of gold medals. We also talk about their recent win on the NFL Big Data bowl competition, their approach to the competition, of course, zooming out and talking about how they went about distributing their workloads, what does it take to win a competition? How does their approach vary over the days of the competition, and the solution, a quick note to the non native English speaking audience. If you're watching this on YouTube, or if you're not watching this on YouTube, please go to YouTube and enable the subtitles because this will have manually checked and re uploaded subtitles so that you all can have a better watching experience. The written version of this will come out in a few days from the release. So you can also find the links to where the written or the blog version of this interview will come out. If you'd like to check that out instead of watching or listening. For now, here's my interview with the two lions from "The Zoo" team on Kaggle: Dmitry Gordeev and Philipp Singer, all about winning kaggle competition. What does it really take to win a kaggle competition, "The Zoo", and the solution about NFL Big Data Bowl, Please enjoy the show!
+
+Sanyam Bhutani  3:14  
+Hi, everyone, this is really a first time for me. I'm sitting across two lines in the call Two lions: from the zoo, Dr. Philipp Singer who's on the show for the second time, Welcome back! And Dmitry Gordeev. Thank you so much for joining me, both, on this series.
+
+Philipp Singer  3:47  
+Thank you. Thank you for having me a second time.
+
+Philipp Singer  3:51  
+great honor.
+
+Dmitry Gordeev  3:53  
+Thank you for having me for the first time then.
+
+Sanyam Bhutani  3:56  
+Privileged to have you, If you could just speak out your name for the audience. Who tune into the audio so that they can recognize you by your voice.
+
+Philipp Singer  4:05  
+ Phillip,
+
+Dmitry Gordeev  4:08  
+and Dmitry Gordeev-that's me,
+
+Sanyam Bhutani  4:11  
+Okay, awesome. Now, since the audience is already familiar with Philipp's background, I'd like to go for a first solo gold discussion, pun intended with the "Dott": Dmitry. I believe your background is in pattern recognition. You studied pattern recognition at Moscow State University. Can you tell us more about it? And can we call it data science today because I think that was a little while ago in the called pattern recognition.
+
+Dmitry Gordeev  4:36  
+That's true. I think in in Russia, the education system is a little bit different. And therefore the naming convention of certain things were different. Back then, that was the faculty of computational mathematics. And we had also an interesting name for exactly this facility, the courses, the parts of the faculty, it Took, but translating to more commonly known terms, I would say machine learning, data mining this sort of things. So I just, I, I would probably not be completely wrong by saying that I have a data mining master degree from Moscow State University like trying to connect the terms with with the usual system of naming the indications.
+
+Sanyam Bhutani  5:25  
+You were WAY ahead of the curve: You studied this in 2005 and even before the AlexNet boom, all of the computer vision boom didn't happen. And I believe you also studied computer vision. Did you have a passion for this field, How did you start in data science later on your life?
+
+Dmitry Gordeev  5:42  
+with computer vision? I started quite a while later because back then.
+
+Dmitry Gordeev  5:50  
+I think it was rather like the beginning of
+
+Dmitry Gordeev  5:54  
+comp-competitive machine learning. Okay, so we have lots of theory. medical background there with regards to the algorithms. What was out there we're using mainly MATLAB back in during the studies. So kind of the the hype of "R" [Programming Language] came out a little bit later and then Python. So I had to catch up after I graduated.
+
+Dmitry Gordeev  6:19  
+One of my teachers
+
+Dmitry Gordeev  6:22  
+became kaggle, Top One, I believe, three years after I graduated. Unfortunately, he's not participating in kaggle for for a while now, but I learned quite a lot from him. So you can imagine that we had also quite a nice stress on the practical aspects of the field.
+
+Sanyam Bhutani  6:41  
+Yeah, for sure. I can only imagine. You're also currently a data scientist at a UNIQA group. Could you tell us what problems are you working "off kaggle" and what does it in your life look like along with the balance that you maintaining with kaggle the winning balance it maintaining it.
+
+Dmitry Gordeev  6:56  
+Unfortunately, at work, you don't have like Such nice prepared tasks and problems and datasets. So by far the most part of our work and I can say our because together with Philipp we'll basically be, we'll work for the same team within the same division of the same company. Most of the work is dedicated to like stuff around it. So I don't know 90% of the work is about talking to the people discussing the ideas of what projects to run,
+
+Dmitry Gordeev  7:30  
+thinking what data to collect, talking to people try to do the bureaucratic paperwork to get the data.
+
+Dmitry Gordeev  7:41  
+And we also take over a lot of like technical stuff around that. So since we started winning, we also decided just to take over whatever is involved like data storage, data, ingestion, maintaining the cloud infrastructure, stuff like this. As well as like deploying them all pushing them to basically dockerize everything we push everything to Kubernetes and do it in the cloud. So, like major part of the work is related to be capable of delivering entrance services and products within the company.
+
+Sanyam Bhutani  8:21  
+Okay, now people have this misconception that you absolutely need to know everything. A lot of things that you mentioned, do you think your traditional background help you knock it out of the park? Or did you also have to learn a lot of things as you went along your journey?
+
+Dmitry Gordeev  8:35  
+It did help a lot. I believe I have quite a strong background in mathematics and in computer science, software development, partially as well, that helped a lot. And that applies not only to machine learning specific tasks, but at the tasks around that, as I said, like the date related things, you always have to struggle through the deployment. things, which is also quite a big struggle as it turns out to be. So that was really helpful. I can clearly well I can just looking at looking back saying that that helps quite a lot.
+
+Sanyam Bhutani  9:13  
+Okay. Now, you also had the direct influence of kaggle from your professors you mentioned but what led you to signing up on your first competition and how did you get addicted to the Kaggle bug?
+
+Dmitry Gordeev  9:27  
+I have like two
+
+Dmitry Gordeev  9:30  
+to kind of separate journeys are on kaggle first one was, I think around four years ago, I kind of discovered the platform on my own which was not that difficult back in time. And I wanted to jump in try certain try things just see how well I I can do such things. Back then I discovered that one of my professors are doing the competitions and doing quite well I didn't know that before that. So it was a surprise to me. And I think I did three competitions, I did it completely alone. And one of them, I kind of set it targets to get to top 10. And one of them because back then that that gave a label of Master: Well, they didn't have grandmasters back then. So okay, that was a kind of a big thing for me. And that was to large extent lucky, but I got exactly to the 10th place, jumping to place from the public to the private one. So it was really exciting. And it was really educational to try things there because that was exactly the place where you can try old the state of the art modern algorithms and methods. So it was really good knowledge base for me. Back then everyone started using extra boost. Most of the competitions were Tabular, Maybe some textual data. So actually XGboost plus neural networks, stuff like this, I tried that. So I did three competitions, got one gold medal. That was, that was not a gold medal according to the terms back then, but it is now. And then I kind of took a break because I realized how much time it requires how time consuming it is, if you want to really succeed, and I didn't have the time I was working for for a bank here in Austria back then. And I just realized I cannot manage like everything all together personal lives and professional life and kaggle. So I gave up for a little bit until two years ago, I just decided to leave whatever I was doing back there in banking and just focus on data sciences as the field. I'm was able to get to a position of data scientist and insurance company and then the whole story on began around a year ago.
+
+Sanyam Bhutani  12:02  
+Okay, I think you both have discovered a cheat code to kaggle. Whenever you name your team to the zoo, you will probably end up in a gold medal or winning the competition. Is that your secret? Because I was going through your profile you have 100% rate of meddling with a 70% rate of gold medal which to my knowledge is the highest. Can you share a little secret of yours?
+
+Dmitry Gordeev  12:24  
+Maybe it is indeed the name. We don't know it yet. We might try a different one. Maybe this will work if we rename ourselves symbol differently. Yeah, the most success of course, is coming from the from the period where we teamed up with Phillipp's and teamwork. We had I think we're in seven competitions. Yeah, I posted about it on Twitter. I think we had seven competitions. And to me it was amazing how well it worked. So I was I felt like it is a good time to just state the achievement because cannot last for too long. And for the next couple of competitions we're definitely not gonna win might not get to the gold. So let's just enjoy the moment for now.
+
+Sanyam Bhutani  13:11  
+I think it would be otherwise but coming back to your team. I remember Philip got really mad. I think you got really married Philip one time because you didn't name your team his team to the zoo is so I figured that's the cheat code.
+
+Dmitry Gordeev  13:27  
+Absolutely. I got really upset because you have to, um, was it the one competition where we didn't get the gold medal? Maybe that was the men that was the reason why we didn't get it but yeah, we decided to keep the name just well to have some sort of a label of our team. Why not? It's brought us like apparently
+
+Sanyam Bhutani  13:51  
+I think it's your-you hold the CopyRight to it so that Phillip can't go solo naming himself to The Zoo and become a grandmaster like you already are.
+
+Dmitry Gordeev  14:00  
+Fair enough. Well, maybe he maybe he needs to have his name on his profile for a bit to get his solid gold.
+
+Philipp Singer  14:08  
+Actually, actually, sorry to jump in Actually, I tried to do it and Dmitry told me not to do it, so
+
+Philipp Singer  14:15  
+maybe I should do it. It might actually lucky.
+
+Dmitry Gordeev  14:19  
+Yeah, I'll close my eyes. You just should. You should rename it just few minutes before the deadline of the next competition and just let's see what happens.
+
+Sanyam Bhutani  14:29  
+Now, coming to your teaming up strategy, I'm sure teaming up on kaggle would have affected your professional life as well. As you mentioned, you both team up on work. Can you both speak to how did teaming up on kaggle affect your professional life? teaming up in real world?
+
+Philipp Singer  14:47  
+Okay, I can I can I can start?
+
+Philipp Singer  14:51  
+Well, I mean, first of all, I think I mentioned that those last time we in teaming you learn a lot and probably You learn more how the other person works, then if you're in a project that work because as Dmitry said, there are so many different facets to that work. But, but okay, you focus on one thing and one goal and you try to achieve the goal together and so, so you can have more streamlined process towards it. And you can kind of, kind of also see how the, how the other person works and of course, and of course, it's, it enables you to, to also learn to trust the other person and to, to see that you can rely on the other person and I mean, the more and more you've worked together I can I can fully fully believe in his in his capabilities to do anything. So So that's, of course also quite fruitful for the off camera work, I would say. Awesome.
+
+Sanyam Bhutani  15:57  
+Now coming to your partnership On kaggle, how has it evolved over the years? Have you learned up? How do you figure fit better into each other's Puzzles: Your skills-I believe they might complement each other? Or is it still a natural process you both pick up tasks as you see fit for the competition.
+
+Dmitry Gordeev  16:17  
+since the very beginning, we decided not to have any, like segregation of duties just because kaggle was first of all learning experience for us. So everyone wanted to learn everything pretty much. And this is how it works since the beginning and still the way it works. So everyone feels free to try whatever crazy ideas he has, or whatever he thinks is important at the moment. And that works quite well for us. I would say mo several reasons one, because a certain idea might affect different parts of the modeling pipeline, and you might you might have an idea and ended up start with like changing model parameters and end up redoing the whole data pipeline in the end. So I do believe it doesn't, it does not work to like strictly splits between one thing and another. It is quite fruitful to explore and just maybe go with the flow. In the meantime, the other person does the same thing. You exchange your ideas, your exchange your discoveries, and that helps. This is basically the way we approach things. So everyone was just basically fields that I don't know, has his own list of ideas, knows and recognizes the list of the ideas of the other one and whatever he believes in. At the moment, this is the stuff he focuses on.
+
+Sanyam Bhutani  17:52  
+Okay, now, how does this approach seems towards the last days of the week, specially in hindsight for the competition that you have won, I think you have won three competitions together, is there any change, maybe a bigger push during the last days.
+
+Philipp Singer  18:06  
+So I guess how we how we change our collaborations during the last days of competition depends very much on when we start the competition. So if it's very in the early days of the competition, like for example, it was in NFL where we started on the first day, we invest case as it was, this time, we already have a very, very clear plan. And in this this case, we also had like perfect cross validation, perfect, everything figured out. So it was just fine tuning in the end and praying that no one catches up to us. So So mostly mostly holding hands and into brain, but of course, it depends on other competitions, where we where we restart later and burgers freedom, still a lot of stress. In the end. There's always stress but in terms of figuring things out, you haven't figured out everything. Trying to improve. So then then, of course, we try to maybe speed it up a bit more like one does. Blending. The other guy does more on the feature engineering or the modeling side.
+
+Sanyam Bhutani  19:10  
+It's like this show in the games, one commander takes position of one border and the other is doing other stuff. Is that [Yeah,]
+
+Philipp Singer  19:16  
+exactly, exactly. But we still try to always, always push our ideas and our insights. So we really tried to not do it alone. Like one can physically do it alone. But it's more than doing the coding part. It's
+
+Sanyam Bhutani  19:31  
+the brainstorming is together.
+
+Philipp Singer  19:32  
+The brainstorming is always together, like
+
+Philipp Singer  19:36  
+chat a lot. Talk a lot. And, and yeah, I mean, over the time, as we have worked so much together, I mean, some of our ideas converge more to similar years. Because in the beginning, like we had more more like some competing theories, like for example, early stopping is something that we have always discussed and to discuss And also discuss with other people, people like that's one of the main things we always in each competition Should we do early stopping should be not too early stopping, but now we both don't like it any longer. So, so yeah. But still, it's very important to estimator, he said, have crazy ideas. I think that's one of the main main things like you need to have something in the competition to have an edge. And that usually needs to be some kind of crazy idea. And yeah, so also, if it's, if it's still on the last day, a crazy idea, you can still try it out.
+
+Dmitry Gordeev  20:35  
+Yeah. But we usually focus on on a single competition. So instead of like trying to three different ones in parallel, we usually take one and focus on it. So by the time it is like, two, three days before the deadline, usually, I personally feel exhausted from from thinking about the same thing over and over again. So So I do believe I tried all the ideas which could have popped up in my head by then. And the last days is about picking the last submits deciding on certain minor things and holding fingers crossed that no one catches up.
+
+Philipp Singer  21:17  
+Yeah, I mean, you can you can, you can even have a very solid solution and in the last few days destroyed solid solution because you tried too much. I'm in German, I have it lately with my German pronouns, but it's called like "fresh, limp essence (?)". So you make something that is already good worse. And you need to be careful there to not do not overdo it. So, but of course, you still try in the end. And if the leaderboard is tied, you try some things. But then in the end, you need to, you need to select your two subs. And, of course, that's also one of the main parts of the competition. That's why we also talked a lot about that then in the last few days to come up with with something robust we really start planning earlier than others I guess. So we already have a plan how to blend. But of course in the end you need to then decide on the final blending, stacking, not blending, and those those things that hopefully give you an edge on the private leaderboard.
+
+Sanyam Bhutani  22:20  
+On the flip side, I believe you both are at a stage where you can keep coming up with new ideas for some new like me who gets stuck on the leaderboard by just copy and forking. How do we are any suggestions for how do these noobs come up with new ideas? How do we keep progressing on the leaderboard?
+
+Dmitry Gordeev  22:38  
+It's a tough question because usually what we observe is we have always a good backlog of ideas. Usually they we start with those which make the most sense of course they think the first couple of weeks, but still like let's try this or over I saw that sometimes this stuff works, or let's try what we did in the past competition. Or let's try what someone else did in the winner solution. And we saw I didn't want her solution of the competition, which took place. I don't know, two, three years ago, though there is a paper where someone tried something like this. And they usually we are not that fast in trying those ideas out. So the Usually, the list is, as always, always has like five, six ideas there. So you, you start the Kaggle Kernel, you're like, Okay, we have like five ideas. Let me try one, one or two, they usually fail. Soon as they failed us trust, start thinking in different direction, write down another idea, put it there and so on. So usually, there is something there. And as soon as we don't limit our scopes to certain parts of the pipeline. It is quite easy to jump from one thing turn to another. So you spend two days trying to optimize the structure of the neural network, you get tired of it, you're like, Okay, let's just do something crazy with the data, you switch to the data. And maybe it helps and you'd like start thinking a little bit differently, because they haven't thought about it for a while already. And, you know, ideas, but like, one, two months, and then you get really tired of doing the same task, the same problem.
+
+Sanyam Bhutani  24:32  
+How do you track these experiments internally? Do you follow based coding practices? I'm sure you both must be familiar with each other's coding style. Maybe you're doing code reviews internally at work also, or do you try to avoid that? because like you said, you put an idea on the freezer and then come back to it.
+
+Philipp Singer  24:50  
+I think that that's one thing. We try to optimize more and more. So Dmitry had the idea to start also starring snippets Code somewhere so that we can reuse it. So we have started to do that. I think both of us have a quite solid clean coding style. Um, so so that kind of usually fits together. Of course, each one costs a bit differently. But what we usually try is that one, right starting kernel starting notebook with the main pipeline, and then we usually work together on that one. So our codes are basically comparable and usable. I don't think we we do any official coding style or anything.
+
+Philipp Singer  25:41  
+We
+
+Philipp Singer  25:42  
+because we don't have to, but but, but maybe it would be a good idea. But in general, I think we have quite a solid code base and tracking. Tracking we use an Excel sheet mostly for experiment tracking software. Nothing too excited, exciting. We were trying with other other tools, but excel sheet usually works quite well to be honest. Because if you have a Google Sheet and everyone can just enter the discourse and you can track it and discussing CV and correlation to lbs, very important. So that's what we do a lot, of course, and that's why we need some kind of tracking. To do that.
+
+Dmitry Gordeev  26:26  
+We often do we prefer to do even Kernel competitions, for multiple reasons, but it also forces us to follow some standards, both of the coding because as soon as you know that the other person is going to fork your kernel if it works, use top doing like dirty things quick and dirty solutions. It kind of it adds a little bit of discipline in the end, but it also makes you do makes it a habit, I would say After you do it for a little bit, you're like, Okay, I'm never doing like this quick and dirty, awful card code, inefficient calculation sort of things, even if you want to have a very quick check off a certain idea, you still do it the proper way.
+
+Philipp Singer  27:17  
+If he, for example, in some competitions, you just have to do the inference in Kernels and you can do the training externally. And what what I think is a good idea is to start on the Kernel first, have a baseline Kernel there then go to your offline stuff, because it's very hard sometimes to port your offline solution to the Kernel solution because of memory issues. Isn't isn't isn't that and at least if you start working on on the environment, you have to do the final data preparation and everything it can help you. And I guess also sometimes it's very tempting and easy to start with a political but I guess it's really advisable to start with your own From scratch with your own kernel, because first of all, it lets you understand the public solution way better. And it lets you figure out if there are any problems in the public kernel. And you you start with something clean, and you can have your own influence, because if you start with a public kernel, those have sometimes sparks in it. So it's, I think, a good a good way to start yourself.
+
+Sanyam Bhutani  28:28  
+Now talking about us mentioning, you have to discuss all of these ideas, I believe, and Phillipp also mentioned this on the earlier interview that teaming up is definitely a lot of fun. The zoo has brought him a lot of amazing legendary, teaming up. Also, I think you've teamed up with Christof, Giba, as well. Can you speak about that experience? How does teaming across different time zones change? Because for now, you both I think can discuss sit down and discuss ideas. How does that scene in that scenario
+
+Dmitry Gordeev  28:58  
+that was kind of part of the Learning Curve also to team up with others and see how they work, see what we might miss from the way we do things. Giba was I think the first person we teamed up with, probably. So it was it was a good learning curve for us to see how he approaches tasks because well, I knew Giba even from the back from the Time when I just started a few years ago. He was by far too one there. And that was also an interesting thing to that. Maybe learn how he approaches things, how he thinks about problems. So how he comes up with the idea, also, like technically, how, how does he do? How does he collect the models for stacking stuff like this? So it was part of the experience, I would say part of the kaggle experience to team up with different people to see how things work on their side what do they prefer to do to learn from them? [Okay.]
+
+Sanyam Bhutani  30:05  
+Shameless plug I've already interviewed Giba on the Series so you can find a link to that interview in this description. Please check it out if you're curious. Now, Congratulations on another gold medal. In fact, another win in the NFL Big Data world competition. Before we talk about your win, I'm sure there are many more to come, can you set the stage by telling the audience what was this Challenger and what led you to joining the competition? The first days usually, is it like you see the CSV manually and numbers start popping around your head you figure out you will win this, is that the case with your expertise now?
+
+Philipp Singer  30:40  
+Um, so let me let me start with quickly giving an overview of what the competition was about. Um, so NFL is American football. So they play with a ball, you can call it an Egg and they have to carry that egg to the end. That's what we have to learn. 
+
+Philipp Singer  30:57  
+Anyways, so they have a lot. They have a lot tracking data. So they have some sensors in the in for each player and they collect collect the position and by the position they can also deduce things like speed acceleration, they have also orientation direction they're looking at and they are collecting this over frames. So, certain time time spend between frames and the collected between for each frame. And the teams have to kind of data and that is tracking data and what was the what was task in this competition was that there is a situation where, where the rusher gets the ball but a quarterback and he has to rush forward meaning running and that's called the rushing play. And we had to predict how far is the person rushing forward. So how many yards and we had the data Exactly in the frame or at the time of handoff. So as he got the ball, they can they can detect that basically from the whole tracking data, but they only then selected that data at that point in time. And that's what we had. So at the time of handoff, we had all the data all the defensive players of all the offensive players for each player, their respective positions, speed, etc. And we knew how far did the Russia run. And then we had to use that information to predict how far he is running physically. Why did we join? There is I don't think there's a specific reason. Um, we jumped in really early in the competition. I guess both of us are sports fans. We definitely were not NFL fans before, [but were you familiar with]
+
+Sanyam Bhutani  32:51  
+all of the Terms that you just mentioned. Or
+
+Philipp Singer  32:54  
+no, [no], like, I mean, I mean, for example, I was once at the college football game in us when There was missing there. So I know roughly how it works but but we don't we didn't know any details like, what is a Russian play? Even we didn't know that or what is it? What what are all these things? What What is the role of each player in a player? So we watched videos, we watch the data, we check the data to figure those things out. Um, we're still not our experts, but we understand it way better, better now than before. So, why we coming back to why we joined, we were sports fans, it looked like very interesting data, like tracking data. It was a kernel competition. There was hopefully no potential for a leak, which was the case because it was korban future data, and we were just kind of ready to jump into something new. So that's why we
+
+Dmitry Gordeev  33:55  
+know that was exactly the period when kaggle hosted That, I want to say eight to 10 repetitions at the same time. So it was like heavy deep learning. And we tried to jump into this game we we took part in one of the computer vision competitions. And we finished that one and the next one and the new. The new limitations on the GPU kernels kicked in. So basically, that was the moment when there were a lot of computer vision contests with huge data sense. And I personally don't have a GPU at home. So basically, I was always relying on GPU kernels on kaggle so I had no chance to jump in. Philipp got his GPU only after winning Qoura if he invested in getting a
+
+Dmitry Gordeev  34:50  
+good computer at home identity
+
+Sanyam Bhutani  34:53  
+[For Tax Purposes]
+
+Dmitry Gordeev  34:57  
+Well know the story
+
+Dmitry Gordeev  34:59  
+and At that point, basically, we're just sitting and waiting for something next to happen. And the first thing that popped up was exactly NFL competition. So we tried it, we looked at it for a couple of days. We got really into it quickly, I think within a week, and then we just continued. So that's that was the reason why we started that early. And that was the reason one of the reasons why we jumped into NFL competition.
+
+Sanyam Bhutani  35:30  
+I think this also speaks to the sentiment if you're not a domain expert, you can also using your expertise of data scientists me pick up the field and also get a better knowledge. And you've already won the competition but I'm so you also learned a lot about NFL also so to speak.
+
+Philipp Singer  35:47  
+Yeah, I mean, we can we can go a bit about that.
+
+Philipp Singer  35:51  
+About that maybe when we talk about the solution, but in general, in general, I think anyone can win any competition. Mostly, except maybe very computational every solution. So, competition so you can you can you can come up with something model and new without necessarily being a domain expert.
+
+Sanyam Bhutani  36:14  
+Now speaking about this competition specifically I think usually Philipp had mentioned this you'd like to join the competition slightly during the later days. How was this different? How did the workflow starting from day one change over the years and what we'll do today? Sorry, and what were your go to steps? When you join the competition?
+
+Dmitry Gordeev  36:35  
+We'll learn that
+
+Dmitry Gordeev  36:36  
+after offer few competitions will learn that it is not a good idea to jump into one since the very beginning. First thing you need to do whenever competition starts in just is just sit and wait, see what's going to happen and then pick up that's that's the advice I heard myself and I probably agree with that. So when you were doing something wrong Just investing that much efforts that early in the competition because what what's most frustrating on kaggle is getting stuck. And if you start early if you run out of ideas early, you're stuck somewhere in the middle of the competition and this is the most upsetting experience you can have everyone else catching up and you're just slowly slowly getting lower not staying as people are overtaking you, you're just going lower and lower and there's nothing you can do about it. So that's that even went to extreme with NFL I think we were stacking models by the end of the first week of the competition, because we just just rushed into it. Put together like a light GBM few other models, combine them blended them, squeezed few digits and got to like top place And then we realized that basically, there is there should be a better way to do things. And we changed the focused and we kind of restarted the whole thing after a couple of weeks. But it was helpful because we learned the data we learned what exactly is happening there. We learned the metric, which is a weird one, we'll learn how we kind of had to get the feeling of how sensitive it is to different types of modeling, and so on.
+
+Philipp Singer  38:31  
+And, and I think like this is this is the perfect example for a competition where you cannot start too late to be on the top. I think if you jump into that competition the last two weeks, except you know, something, I think it takes for that competition, you first need to come up with a proper model. And then there is a lot of tuning verticals that needs to be done so it's not something very can jump in quickly. Even if you have the idea which is already hard enough to come up with. I think it needs to
+
+Sanyam Bhutani  39:02  
+Do you-do you both still hold open and you should join a competition early or late or again, it depends on the competition for you.
+
+Dmitry Gordeev  39:10  
+Depends, but so it is better to start later unless the competition is quite short. I like if you remember lottle How long was that four or five months? lifetimes, I think five at least when champion two months before the the ends and that was definitely sufficient.
+
+Sanyam Bhutani  39:33  
+Okay, good. Now, coming to and this is one of my favorite questions because distributing workflow since the last time such an exclusive idea teaming up you have to learn how to distribute your idea. Speaking of this competition, specifically, how did you distribute your workflow over the days and was it again a natural show or any segregation happened?
+
+Dmitry Gordeev  39:59  
+I would say it was Completely,
+
+Dmitry Gordeev  40:01  
+if not completely random than it was changing like day to day so someone else someone wakes up in the morning and has a brilliant idea to reward the whole structure of neural network or like the data preparation. So he digs in he tries that usually it fails the next day, okay, let's do fine tuning all like certain parameters and that one, and especially in the beginning, if you if you talk about like long term planning of where to start, what to do what to postpone until the later stages of the competitions. That was definitely a very bad example of what we did. Because we did like the full on day preparing the model modeling and stacking within two weeks then we just started from scratch. Because we kind of get get stuck and realized that not that's not working that well and me There are like certain concepts which would fit them the problem better and they did.
+
+Philipp Singer  41:07  
+Okay. And and maybe to add one thing, what is worth mentioning here is that Dmitry had one one really fundamental idea in the beginning or soon after the start off the competition to restructure the neural network. And correct me if I'm wrong, but it didn't work the first the first time. But sticking to the idea if you believe so strongly in it, it worked a bit little bit by changing it a little bit. So sometimes just because something doesn't work the first time it's worth to stick to it and maybe rethink it a little bit and, and also try to try to adapt a little bit. I mean, after we had this, it was mostly tuning and changing things to the to the architecture and and figuring things out. But we had such a strong cross validation set up that we could test basically every idea we had with complete confidence. Either it works or it doesn't work. So that was really, really nice in this competition.
+
+Sanyam Bhutani  42:09  
+Speaking of fail ideas in Dmitry's writeup, and Dmitry-as a fan-I request you to please do more write ups on the forums or discussions, but in your writeup, you publicly mentioned all of the ideas that had failed and like Phillipp said, You pursued a few ideas that came through, how do you not go control a delete when an idea doesn't work and you get frustrated and how do you keep pursuing it?
+
+Dmitry Gordeev  42:33  
+Well, that's that's a key thing, because to my expectation, like 80 to 90% of the ideas we try or overall overall to come through all the competitions they fail, like, maybe one in five one in 10 ideas would work. So it is, it is the struggle which pays off in the end, but you have to get mentally prepared that whatever you do, There's a good chance that it failed. We have a kind of an inside joke whenever someone comes up with an idea which makes total sense and explains it in a very straightforward way it has all the logic behind it. These ideas usually like have 99-100% chance to fail Okay, yes if you if if if I show up in the office with like all all shining with the great idea and claim that that absolutely has to work because this and this usually Philipp just nods along. Yeah, makes sense, Makes sense-try it. You know, he's gonna fail. Yeah, I know it. He knows it fails. I know it's gonna fail. But you have to still try and learn certain something from that.
+
+Philipp Singer  43:51  
+And I mean, overall, it's not. We don't know which idea would have worked if we would have stick to it. So I mean, you can Explore everything, there is only a limited thing you can explore. And an idea is like a feature of a model or of the data. So basically, sometimes the idea might only work in combination with the other idea. So it might be a combined effect that can only be achieved if you do both things, or if you also do the other thing. So, um, it doesn't always work, but it makes it makes sense to also come back to fail that yours A few weeks later, like, let's say the idea is, I don't know. Everyone has that idea. But pseudo pegging, convert or knowledge distillation and maybe your model at this point is just too weak that it doesn't work properly. But it's it's a simple thing to try later again, or there are more complex at yours. But still, also thinking how this idea might enter. interact with other things is important, but you never know. I mean, There might be so many ideas that we think failed. But in other circumstances they might have worked perfectly. It's it's, it's hard to say.
+
+Sanyam Bhutani  45:09  
+Do you think you're amazing results and I'm sure efforts from earlier also factor into intuition if I may, or any other ideas that you found useful from your previous competing experience in this competition?
+
+Dmitry Gordeev  45:22  
+Definitely, I think NFL is a good example of a surprisingly, the logical idea, which we put on together on paper ended up working in, in the competition. So we had an idea of how to kind of what principles to have within the neural network, and therefore what's truck trade should have tried it. I mean, I think the very first attempt failed but like the second attempt, which we took, I don't know 15 minutes after that, but slightly, the reshaping it worked well. And then we basically built everything Else on top of the of the main principles which to behind it and that that works other than that usually in competitions you know you know things that worked previously in different from different winner right tops from different discussions you know like the the basic ideas, the usual ideas, the usual suspects there and you go through them. Sometimes some of them work sometimes they don't sometimes you realize that there's some trick in it and start thinking developing data or changing it or maybe coming up with something a little bit different. But in this regard, I would say it's maybe experience over the intuition mostly, but sometimes when intuition works, I think it is even more rewarding.
+
+Sanyam Bhutani  46:55  
+Also, did you have any predefined pipelines adequate just pull it in to keep a record of it Previous pipelines for future competitions Do you find them those useful?
+
+Philipp Singer  47:05  
+I mean, in this case, we use mostly PyTorch to fit the neural network. And we have used it in the past. So we we, of course, could reuse, reuse a lot of the code. But I think this is the first competition there, you really refined our pytorch code. And so we have to have have that now ready to be reused in other competitions. And as it was a current competition with very, very restrictive thing. It was how many run runtime hours was it? Four hours only. And we use neural networks. And we had to fit in the kernel and predicting the kernel. So that already you had to use neural networks, but the very, you could not do them on GPU. You had to do them on CPU. So we have to work a lot on the pipeline to optimize towards steps Things like doing parallel ization using all the course, figuring things out with NumPy and multi threading and figuring out that kernels use different CPUs across different grounds. So there was a lot of lot of stuff to do on the technical side to, to really bolster and boost our our solution because we wanted to back as many models as possible and also run run more complex models and themselves. So a lot of work went and we had a lot of time in this competition, a lot of work went into refining that, which is good because we have that basically ready to reuse. But in general, as I said earlier, we have snippets for different things. And of course, it's all in our brain to write the code down quickly.
+
+Dmitry Gordeev  48:55  
+Where as soon as we prefer Kernel competitions, we usually will tend to write, like a compact code, so shorter things. And after we finish a competition, we usually just slice it and certain important things, they just go to kind of a snippet storage. And then this is what I personally use to start a new one. So okay, if I think PyTorch would do here, I just copy over some snippets from a different competition and then start changing things. So if it was a classification task, now it's regression, certain things to change, like the input, data structure and so on. It's-so-I think it plays a little psychological role. When you do something from scratch, you try to resist it because you think it's going to take too much time. But as soon as you have a snippet of code and you just rewarded, you might end up like changing pretty much everything there but you don't have the impact. That you invest in that as that much time because you usually don't
+
+Sanyam Bhutani  50:06  
+Plus since its your code. You're already familiar with it. Many beginners struggle with the i think i think it's a paradox of starting with something from scratch. Unless you're experienced enough, you cannot do that. But you need to do that if you're going to be ahead of the game.
+
+Dmitry Gordeev  50:20  
+Exactly.
+
+Sanyam Bhutani  50:22  
+Now, another topic that I want to touch up before we talk about your solution is beginners assume that grandmasters are these people who sleep in a room with nothing but GPUs as a heater. And you just mentioned you don't have set up a GPU setup. Can you speak of the hardware that you think a person would need to become a better data scientists or better machine learning modeler? If I may
+
+Philipp Singer  50:50  
+maybe Dimitri is the better person to answer that because he's, I would assume the only top 10 Grandmaster without a GPU at home. So I believe it has it has to two sides of there are two sides of the story. First of all, having limited hardware can also improve your skills. Because first of all, you need to focus on simple solutions. And you need to focus really also on your coding and efficiency and of the of the runtime, which can really help to shape the solution because sometimes it happens that you start with very with something very, very complex, but you completely neglect the more simpler solutions that you would do if you have more limited hardware. For example, in this case, I believe we would have started more complex maybe if we would have had more capabilities in terms of computational power, or even more knowledge about the topic like other started with more complex things like transformers, which we didn't even think about starting in the beginning, because because we were there. First of all, I'm not that excited. instance. And and so not blinded by, by it in some sense, and we tried to restart the idea from the scratch and also from the computational runtime. The other side of the story is that there are of course, some problems and data sets nowadays they can they can only be tackled, or that can be better tackled with more computational power. So there is definitely definitely necessary. I still believe that most like maybe 80 or let's rather see 70% of the competitions on kaggle can be won without using the Kaggle hardware, which is the Kernels.
+
+Dmitry Gordeev  52:41  
+Yeah, we need to put aside probably computer vision competitions, mostly, especially with large data sets, especially like the Google competitions. They do require quite quite heavy hardware and in general computer vision is the area where more computational resources-would-can bring a lot of benefit. So we try to focus on other things. But we also did one computer vision competition just not have like a topic we haven't covered. We pretty much we didn't use that much resources outside of kaggle for that one as well. Not that much. We did, of course, but not that much. But with regards to all the remaining competitions, we tried this year old three, we won we basically won with the models with the runtime either within the kernel limitations or in terms of flannel (?) worlds different story, but I think the analogy of the model which won the competition ran within like 20-30 minutes, something like this. NFL and Korea, they were Kernel competitions. So we try to focus on those and I i've agree very much with with the statement that if you have Like very powerful machine, you might get kind of sidetracked and focused on rather like brute forcing the the task while you should spend your time and your brain to figure out a better setup and more efficient way to run things or a more appropriate structure of the model and stuff like this and this is going to be neat the the competitor, which has just more GPUs and runs the same stuff with the for longer he parks or with learning lower learning rate stuff like this. And we try to focus on such competitions and we try to avoid those were which are definitely going to be kind of going to require lots of resources or where we see that it will be clear benefit. And here when we sign up all that was a perfect example to current company. edition you have like handful of thousands of records. And it's all about like running things in a compact form. And we also are big fans of doing everything really efficiently. And that really kicks in when you have when you have limited runtime you when you have limited resources. So even if you have a neural network, you need to fit within the CPU time limit. If you run it efficiently, you can do it pretty much the way someone else would do it in a brute force manner on GPU. It has a funny side effects. We have this for our limits on GPU on CPUs for NFL, and we ran some of the cross validation on GPU machines, because in pytorch, you basically change one line of code and you're running it on GPUs. So whatever ran for four hours, you can just transfer it to GPU. It will run within 20 minutes and it's still a good thing. thing to do.
+
+Sanyam Bhutani  56:02  
+I think that's also where the distinction, again, a platform I interviewed CPMP-do check it out. But CPMP also, I think in one of the competition, or he constantly does share these optimized code, where you can speed up your code by really a huge factor. I think that's also an opening night and I wish many more beginners who are afraid of the hardware Listen to this. For the computer vision competitions. I'd also like to mention that even though it's a mental barrier that you need to deal with the huge data Google usually does sponsor some amount of credits to get you started with its to still do it. Anyways, that's a message that I'd really like to get across to the audience. Now, coming to your final solution, I will definitely have the writer by Dmitry and hoping to read more writeups by him but we'll have that link in the description. If you could please give a higher very high level overview of your solution.
+
+Dmitry Gordeev  56:55  
+Well, we're basically write the write ups usually together and just flip a coin and pick The one who publishes it, okay? In a way now with regards to NFL it's it's a very long interesting story how we came up with this idea. But we which we tried to express in the right top or what we didn't the right time, but we split it first part to kind of explain why we did it this way. So, forget about machine learning. Let's look at the task, which was looking at the NFL play as a person who has no idea what's happening and just tries to explain to himself the things in simple words. So there is one person ball carrier was the blower and he's trying to rush towards the end of the field. There is the whole defensive team core trying to tackle him and stop him as early as possible and And all his teammates are basically trying to prevent defenders to stop him. There were quite a lot of top solutions which put the players in certain order and applied Transformers from top of them. So Transformers were supposed to recognize what our depend what are the dependencies between the players? What is important and what is not. Everyone quite quickly understood that the most valuable variables are relative positions and relative speeds of the players not that much. wins or temperature or quick Zach was carrying the bowl or I don't know the score, the leaderboard scores, stuff like this. So some people put together like an area of the players and then did the same trick. The Transformers do for the word embeddings basically, but just instead of words, we have Players, what we did, we tried to split it into kind of a simpler things, lads remove all the teammates of the ball carrier. So there's one guy with a ball and 11 guys are trying to stop him. And a key idea was not to impose any sort of arbitrary ordering or filtering of the players. So we treat all the 11 equally. And I've heard that that quite quickly transpires that to implemented you just from a convolution with the kernel size of one over the defensive players. And then you pull them together somehow. So you treat all 11 players equally and you don't care in which order they they're supplied to the neural network. That idea shined quite quickly and we got to the top for quite a while without using any data about the bolt carrier teammates. So out of 22 players, we have We use the data only of 12. And we were like one for quite a while, and then dropped to top two or three. So realize this, this idea works really well. And then we applied the same idea to the offensive team players. So pick one defense defender, player, defender, and look at all the offensive players as those people who are trying to stop him tackling the rusher. So this gives you like the idea of having like the second kind of nested convolution over defensive players, but you can nicely shape it into tensor. We did that we jumped back to the top with a quite nice and comfortable gap and spend most of the time fine tuning the structure, trying other ideas like augmentations, because why not? It's a neural network and we don't have that much data. Let's try augmentations will try different things and tricks. And we had perfect CV. So it was, it was a brilliant competition for us in terms of how much we enjoyed it. We had one interesting idea in the beginning, it worked incredibly well, we were able to invest time to improve it further and further. We didn't have to submit to leaderboard because the correlations of CV and leaderboard were perfect. So we're just like working on the idea of progressing constantly until probably the last week.
+
+Philipp Singer  1:01:32  
+And I mean, what is been very, very frustrating thing and Kaggle in many competitions is that you develop a model you think it's good to submit it to public it'll be and it sucks. So that's a very frustrating thing. Even though you should not care that much about public ob. It's still a very frustrating thing. And taking that out of the equation in this competition made it really enjoyable because you really you really First of all, you You really know when something works on your CV, you can trust that it works on the lb because we had really perfect correlation. And it it it also allows you to not have this stress each day about using your five submissions. Because you need to test some idea if it also works on the public lb. So for a few weeks, we didn't submit at all. And we we just, we just the first time we did it, I'm still not sure if it is psychologically for for others more worse or I don't know. Yeah. And um, yeah, you can even I mean, we could we could then even test if our correlation still holds by making our solution verse by, for example, changing the number of iterations of the model. You see this if you gets verse, you submit it and see Oh, it's worse again, the correlational so um, that was that was really nice. Maybe one more thing regarding the solution as Dimitri said, I think one main aspect was that you work with an ordered entities and some relations between these entities, which in this case, were mostly only speed and acceleration based relations between the players. So, you have to find some kind of structure that works with this unordered sets and does not give any ordering any arbitrary ordering because the simple thing most of us I think, tried in the beginning is okay have a feature for each offensive player, which is the speed of the offensive player or the defensive players, but then you have to build a feature of that like GBM over forever. And you have to say, but you don't know is is now displayer your first feature or displayer you your second feet feature, you can make some ordering by maybe sorting them by distance to the, to the to the Rusher, but this is arbitrary and is not not not not the solution that is warranted here. So, that was quite novel. And there was another competition actually, which was very, very similar to that setting which was who would believe about molecules. So, that was the molecule competition about predicting the bonds between the molecules. And that had a had a very similar setup as tracking data in the NFL, you had unordered sets in some unordered entities in some space, and you had to find some, some relations between it in that molecule competition, it was also also mostly about transformers and, and graph neural networks, which work quite similarly. And in this case, in NFL competition, if you check the top leaderboard out of the top 10 a lot of people also participated in the molecules competition. So that's also at one point when we saw it was NN and transformers are what all of them are doing or graph neural networks. Of course, we also tried it. But we already had a different solution. Because we did not start with transformers. We started with a rural network rural networks. And so not competing in the molecules competition might have been actually beneficial for us in this competition. We might have started with Transformers otherwise,
+
+Dmitry Gordeev  1:05:25  
+you know, it gave us a clue at some point and some point we realized that we're competing with transformers. So we tried Transformers on our own. We tried to even nice nicely incorporated them, incorporate them in our structure. So we tried both things. We saw that it works, but not as well as what we have. And that was another nice moment for us then that we realized that we're on the right track.
+
+Sanyam Bhutani  1:05:54  
+Now, this is a question. I think it also touches upon a personal topic. What does it really take? To win a karaoke competition, if you could speak to that, because I remember, Philip had shared that there was risk going happening on the leaderboard and you were removed for a little while from the leaderboard, which I remember caused a lot of stress. My time you will let said you will win even though at back at that time, but if you could speak to both the personal and professional aspects of what it really takes to win a competition,
+
+Philipp Singer  1:06:25  
+I don't know mental stability. It was really, really stressful for us. I'm totally honest here because we had the top solution we were ahead on the public leaderboard by a wide wide margin. We knew our solution is super stable, there should be no, we cannot be overtaken basically on the privately the reverse. so sure. It was a two stage competition, meaning it was rescored actually four times off the charts because you cannot have the data because you could crawl the data basically super easily. That You know how many yards that player rushed in that play? That's public data actually. So they had to do something. So they scored it on the actual new games for rose for four weeks in a row. Of course we were already nervous before. Then the first rescoring was published, which was a very bad timing. It was close to going to bed for getting up early to the flight to Tokyo, where we went to Kaggle Days. And we were off the leaderboard.
+
+Philipp Singer  1:07:35  
+So we were really, really, really stressed.
+
+Philipp Singer  1:07:39  
+We tested our code multiple times, we ran simulations about the new new new data. We handled old now values. We even had a fallback solution in the crowd, so we had no idea why it failed. It turned out that it was runtime error most most likely costs I still don't know the exact reason but most likely cost because as I said earlier, we tried to utilize all of the hardware we have available available and the parentally they ran it on a slightly different hardware. So it failed. Thankfully, they figured it out they they they kind of investigated it they figure it out. Thanks Thanks to them a lot. So we played the river back on the leaderboard Yeah, it was it was stressful. It was stressful afterwards because each time you think Oh am I still on the leaderboard Am I not? Christmas both of our birthdays. So it was always a refreshing five checking because I don't know we burn really invested in the, in the competition. The weavers so excited about it and it would have been ashamed to be out of the completely out of the competition by something like that. Yeah. Everything went well in the end. So
+
+Dmitry Gordeev  1:09:07  
+yeah, thank you to the kaggle team thinking to Will-I think he took over the investigation and they, they discovered the certain bug in the batch process. So they fixed it and we were reappeared on the leaderboards. And that was that was a moment of relief. Yeah.
+
+Dmitry Gordeev  1:09:27  
+With regards to what it takes to win,
+
+Dmitry Gordeev  1:09:32  
+probably two things Believe in yourself and lots of lots of lots of time to spend on on the competition. I would probably people can use us as an example to prove that you don't have to rely on heavy hardware to win, that's for sure. So you can do really smart things with the even with the hardware provided by kaggle That is in most cases sufficient, you just need to find the good idea. And just not to give up every time something doesn't work, some ideas is more just keep trying. Check what other people are doing. Bring your own ideas, just keep doing until it works.
+
+Sanyam Bhutani  1:10:22  
+I think the message I'd also like to get across is it also takes a lot of personal sacrifice and not just in terms of time, but also since you've really put in these efforts, it also takes a mental barrier that you have to close to winning competitions.
+
+Philipp Singer  1:10:34  
+Yeah
+
+Sanyam Bhutani  1:10:37  
+Dimitry is already a grandmaster. And I know Philipp is not a grandmaster, because of your evil plan of keeping the name Zoo to yourself, but even as GrandMasters people that we really look up to as the knowledge keepers, or was there anything that you learned away from this competition that you're taking away into your professional life or into data science-y knowledge
+
+Dmitry Gordeev  1:11:02  
+You mean from NFL competition? in particular? Probably that was the point when we try to be creative. So I wouldn't say we discovered something new to us in this competition, maybe just tried out certain ideas, and we saw that it worked. So my personal takeaway would be that was an experience to gain confidence in shaping up a neural network of your own structure. So I would be less resistant to like trying out certain things with neural networks in the future. So I, yeah, I can't imagine myself like seeing either a pre trained model or one build from scratch for a particular task. And then just thinking what if I remove this and reshape that and change the dimension over here? I tried. It failed. But at least I won't I wouldn't feel that much of a barrier to try it out I won't feel stupid and unexperienced doing so anymore
+
+Philipp Singer  1:12:12  
+For Example: in APTOS blindness competition we also use neural networks but they have used mostly pre trained predefined models so we got first really first real confidence and using pre-trained models fine-tuning them and and that kind of stuff. And this is the first competition where we really designed a neural network ourself from scratch, basically. So I think they're much more confident to also do that in the future. If some kind of problem comes up that warrants a more normal structure or kind of different setting of the structure towards towards solving the problem.
+
+Sanyam Bhutani  1:12:50  
+Okay, now, before we end the interview, any best advice is for both people just starting into machine learning and starting their kerrville journey.
+
+Philipp Singer  1:13:02  
+Um, I think as always and can just repeat it. Believe in yourself, don't be scared to things to do to to do things. This is not only fine tuning the model, but this also goes back to building your code base building your model. Like we talked about it earlier, copying a public kernel is fine, but you will never learn because you said some people are scared to start from scratch, you will never learn it without actually trying it once. You can always go back to something but at least try up try to set up your pipeline because I believe it really really helps you. Um, there's so much information out nowadays. Don't be Don't be also scared by some titles. I mean, sure that guy is a GrandMaster and but he's also cooking with the same tools as you are. And there are several competitions like the second place in the NFL competition. Is, is a quite unknown person on kaggle. And he has done an amazing job and has crafted as a solo person and wonderful solution, which was the best transformer solution out of all of all, so yeah, don't don't be scared, like I signed up to the blood from seven years ago and I would have never fought to be able to compete with the best year because I never tried it and I never thought it's possible but yeah, it's it. There shouldn't be some some kind of too much worshipping a belief of and being scared of people just because they have a higher title of course they're all very brilliant people, but you can be yourself a brilliant person.
+
+Dmitry Gordeev  1:14:45  
+even look at Santander, which was the largest competition kaggle ever hosted so far. The top team consisted of, of two persons one was a grand master and the other one who put a lot of efforts in it had, I think novice title basically. And that's that's what what it takes. I do believe that there are a lot of people smarter than GrandMasters out there just not having enough time to invest or not yet having the practical kaggle skills just because they need some time to gain them. And if you're just starting, you might be exactly the person off of this profile. You just need time to maybe learn certain practical skills, maybe just get the mindset properly to approach the competitions.
+
+Sanyam Bhutani  1:15:35  
+Thank you for the transparent answers before we end the call. Please, could you mention what all social media platforms are any places where we can best follow your work? Maybe Phillip, if you could mention yours.
+
+Philipp Singer  1:15:48  
+Um, you can follow me on Twitter. I'm Ph_singer. That's it's also linked on my Kaggle profile otherwise, as you mentioned, I am a discussion guy on Kaggle so you can follow my thoughts and complaints and mostly also there, I'm in the typical slack channels, you can find me there. Yeah. 
+
+Dmitry Gordeev  1:16:13  
+Same holds for me, I'm there on Twitter to LinkedIn kaggle you can just text me on Kaggle and get to my email address as well. I'm not posting as much as Philipp does. I'm trying to get a little bit more interests, and we'll see if it happens or not. But anyway, I'm open through multiple channels, feel free to approach me.
+
+Sanyam Bhutani  1:16:35  
+Please steal Phillipp's memes-I'm sure those will be fun to check out on the forums. These links will also be there in the description of this podcast so you can follow both of these people from there also. Thank you so much, Dmitry, and Phillipp for joining me on the podcast and I hope to have you again once you win another competition really soon.
+
+Philipp Singer  1:16:56  
+Thanks for having us
+
+Dmitry Gordeev  1:16:58  
+Thank you Sanyam
+
+Sanyam Bhutani  1:17:06  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week
+
+Sanyam Bhutani  1:17:21  
+to "Chai Time Data Science"
+

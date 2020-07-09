@@ -1,0 +1,423 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiast where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Welcome to another episode of the "Chai Time Data Science" show. In this episode, I'm joined by one of my friends and peers from the fast AI community Robbert Bracco. Robbert is a fast AI student and has had a very interesting background. After graduating with a degree in computer science, he went on to play poker professionally for a couple of years, until recently when he decided to take an interest in deep learning. He has also been an author of one of the most famous threads on the first day forums, you may recognize him as user made up masters from the forums where he has created the threads, audio, deep learning audio and things Jeremy says to do, both for the part one and part of the course. In this episode, we talk a lot about Robbert's journey into deep learning, audio specially deep learning applied to audio, also about the official quote unquote unofficial fast a audio library to which Robbert is a contributor. We also talked about self learning and online education. This also sets a theme for our upcoming episodes where we take a deep dive into self learning How to keep your focus while following an online course. And also a podcast version of quote unquote, things that he says to do. So it will be a revision or a highlight of fast AI part one as well as part two. Stay tuned for that, and enjoy the show.
+
+Sanyam Bhutani  2:31  
+Hi, everyone. Welcome to today's show. I'm super excited to be talking to my friend. He is from the fast AI family, the foster community. I'm joined by Robbert Bracco today and we'll be talking about audio. Thanks so much for joining me today, Robbert.
+
+Robbert Bracco  2:46  
+Yeah, thanks. We've had a few Skype conversations about audio in the past and it's really nice to be doing in front of an audience.
+
+Sanyam Bhutani  2:54  
+Yep. So be excited about it as well. So before we get started talking about audio I know you have a super interesting background, you're not a computer science engineer, one might anticipate you to be you played poker professionally for quite a while before jumping into the machine learning space. So could you tell us a bit more about your background?
+
+Robbert Bracco  3:15  
+Yeah, absolutely. Um, in 2009, I graduated from University with a degree in economics and computer science. And the path I was kind of headed on of going to work for a company just didn't appeal to me, had a strong preference for freedom, independence, I was young, I wanted to travel. And the idea of having you know, two weeks of vacation a year or less like, didn't appeal to me, and I've been playing poker as a hobby. Since I was 15 years old, and I kind of did some of the numbers and realized, you know, I'm living cheaply enough that I could actually do this for a living for a while, so I decided to take a shot at it. Spend six months doing that and maybe get some travel out of it. And some cool experiences and end up doing it full time for eight years as well. Okay.
+
+Sanyam Bhutani  4:06  
+Yeah. So you were traveling the world through that time and and like playing remotely? Is that how that work?
+
+Robbert Bracco  4:13  
+No, it was more. So I was almost exclusively online. I wasn't really playing live tournaments or anything, but I could be anywhere I did take advantage and ended up living in some cool places. I lived in Brazil for a while Argentina, and just got to travel around a bit. So I was super lucky. It definitely shaped a founder and taught me a lot about like the same path we're on right now. It's self learning machine learning. Poker is a similar path, you kind of have to teach yourself and so I really gained a lot of the skills that I have from machine learning, I think came directly as a result of my experience in poker.
+
+Sanyam Bhutani  4:51  
+I mean those skills for like being able to teach yourself using resources and;
+
+Robbert Bracco  4:56  
+Yeah, and trying to kind of filter through who knows what they're talking about. And who doesn't, there's a lot of bad information out there. [For sure] Also the discipline, you know, it's hard when you're, I'm sure you know, when you're your own boss any day, could be a vacation that you could just take this day off tomorrow. [That's right] So to really succeed and thrive, you have to find a way to be consistent and have that balance that, you know, I found challenging for a while.
+
+Sanyam Bhutani  5:23  
+Definitely. And so how did machine learning come into the picture for you? So what caught your interest about machine learning?
+
+Robbert Bracco  5:31  
+Yeah, it's actually kind of a long backstory. So I'll try and zip through it. So my interest in getting back into programming started, I was just kind of reaching the end of my career in poker. I wasn't finding it very fulfilling. And I ended up moving with my fiance, then girlfriend to a small town in Brazil, to work for an NGO there. And while there, we were teaching and doing some work in the community, and I just realized the master opportunity there is to use a software for education. You know, even we were in a poor town in a poor state in Brazil. And even in the worst part of town where there was, you know, makeshift housing and open sewage, you can still find in almost every home, at least one Android smartphone, which totally blew me away. And I just thought like, this is an opportunity to, you know, make education more widely available, like for you and I, in our situation, you know, we're already educated, we're really fortunate unable to be an advanced MOOC or you know, just go teach ourselves but like, I think in the next 10 years, we're going to see that extend to a lot more fields beyond computer science. So I saw that opportunity, and I realized I didn't have the programming skills necessary to after I guess I tried building stuff for about two or three months, and I realized I thought;
+
+Sanyam Bhutani  7:05  
+But you di study about computer science in college you mentioned, right?
+
+Robbert Bracco  7:09  
+Yeah, I did. So I have a background in programming, but honestly, I don't feel like I took that much away from that. You know, I hadn't done it in eight years. [Yeah] I was very, very rusty. And, you know, it was such a focus on theory, you know, they wanted you to learn how to build a compiler before you build a useful piece of software. So I;
+
+Sanyam Bhutani  7:31  
+Totally know what you're talking about. 
+
+Robbert Bracco  7:33  
+I'm sure a lot of the audience as well is super familiar with this dilemma.
+
+Sanyam Bhutani  7:38  
+Yeah.
+
+Robbert Bracco  7:41  
+I decided I looked at the options there was going back to school going into debt to get a master's degree. But I end up taking alternate route, which is what I saw a lot of people like yourself doing and that's taking these online courses self teaching for free. [Yeah] And I think it's a super cool path. And I think we're going to see a lot more people doing it in the future.
+
+Sanyam Bhutani  8:08  
+So during during this this period that you were spending in the town, you realize that you could maybe apply machine learning to help other students.
+
+Robbert Bracco  8:19  
+It kind of came in a little bit later, I was trying to build just normal software. And what I realized is that there are certain things where normal software just wouldn't cut it, you couldn't take the human out of the loop. And I realized there's never going to be enough teachers to be on the ground in these places to do the work that I was doing one on one. So I realized that the potential existed for AI to fill that gap. One example and this kind of segues into audio a little bit is pronunciation. If you're a non native speaker of a language, it's really hard for you to tell why your pronunciation is bad? You need an expert who comes in and listens to what you're saying and says, oh no, you should be saying it this way, and kind of guide you through the tricks of doing it. And that's the type of work I was doing on the ground in Brazil. And I realized that AI is completely capable of telling the difference between two sounds and then supplying instruction. So I realized that AI was going to be a lot more flexible than other forms of software. I jumped into a few courses I was taking. I wasn't really sure what direction I wanted to go. I took a web programming stack called cs 50. I took;
+
+Sanyam Bhutani  9:43  
+That thing for beginners;
+
+Robbert Bracco  9:47  
+Is really nice. It gives you kind of a broad survey of things. At the same time, I took intro to algorithms wanting to from Princeton on Coursera, which is like a little bit more computer science driven. And the third course I took was;
+
+Sanyam Bhutani  10:00  
+???? 
+
+Robbert Bracco  10:01  
+Yeah, intro to machine learning by Andrew Ng, which is like, you know, really famous course in the community. [Yeah] I loved it, I decided that was the direction I wanted to go. But I realized coming out of that course, I couldn't build anything. Just spent 12 weeks I worked really hard. And, you know, they kind of supplied half the code for you, and you were doing all these low level things. But when it came out when I wanted to apply it, I didn't have the first clue how to begin. And just kind of really, fortunately, I started hearing about Jeremy Howard and fast AI. And it was likely what I needed the moment like focus on building not on theory, uh;
+
+Sanyam Bhutani  10:42  
+Top down approach as as they call it.
+
+Robbert Bracco  10:44  
+The top down approach exactly. And it's, you know, changed the way I think about learning and how we should do things. really impactful.
+
+Sanyam Bhutani  10:52  
+So did you end up taking I think you took the 2019 one 2019 part one, right?
+
+Robbert Bracco  11:00  
+Yeah, I started the end of January this year was when I jumped into fast AI for the first time and just had no clue. is so fun going through the class though, because everything's new. [Yeah] Kind of maybe a month after that I started trying to work in audio, but I had absolutely no clue what I was doing. I was trying to take pictures of the raw waveform, like just squiggly lines and pass that into a model, hoping that it would recognize the pattern but it did not succeed, couldn't get anything working. So I realized I'm gonna have to learn a little bit more about audio. [Yeah] And started kind of a four month journey into signal processing and;
+
+Sanyam Bhutani  11:47  
+Interesting. So throw this way like you're you had a goal in mind. So you weren't like driven to machine learning because of the hype or because it looks fancy to you but because you want you to use this to be able to build some third leg up to help with the pronunciations.
+
+Robbert Bracco  12:04  
+Yeah, absolutely that. And I do that even is just a stepping stone on the road to building more general education software using AI and machine learning. But yeah, that's been kind of my goal from the beginning. And it was cool because I had that concept before I started any machine learning. So it was this really kind of fuzzy idea in my head. That seemed cool, but I didn't even know if it was possible.
+
+Sanyam Bhutani  12:32  
+Like I think that's that's one of the interesting aspects like people will jump to the field without having a goal in mind. But if you have a goal, you can sort of narrow down the things you want to learn about, maybe charted a study for yourself that I want a MVP ready by maybe an end of the year or something like that. So;
+
+Robbert Bracco  12:51  
+Yeah, totally. It's we've talked about this before. I'd love to hear your outlook on it. You know, it's easy to get addicted to the online classes and jumping to the other without getting any replying like, how did you? I guess, resist that temptation. What have you found to work the most for you?
+
+Sanyam Bhutani  13:10  
+I did fall into that for a bit that I think like one of my most famous articles how not to do fast not a or any machine learning MOOC basically talks about this infinite learning loop of going from one course to another. And this was also when I had a set of goals in mind. So I wanted to build a few applications and maybe also like some agricultural facing ideas. But the thing for me about these shows, you do one course and then you realize you can't build anything. So you find that identity and other course you go to that goes, and you keep jumping from course to course without like being ever ready to be able to build something.
+
+Robbert Bracco  13:51  
+Yeah.
+
+Sanyam Bhutani  13:52  
+I and after a while, I was close to graduation. And during this time, I realized that the only way to be able to build anything is actually go out and build it. So [Absolutely] I think just taking one course for me, I think first day is the base. That's what I would recommend to everyone. But whatever caused that, really you find your sync with your rhythm with just doing that, do it thoroughly and then focus on that one project or goal of yours if you'd like.
+
+Robbert Bracco  14:22  
+Yeah, I couldn't agree more. I'm being kind of an, like a little bit of a perfectionist and academic type. Like I had this idea that I kind of had to conquer everything in a systematic way. So I was like, oh, I'm going to learn Pandas by doing a Pandas tutorial of like, every possible function. And same with NumPy there's some great data science books. [Yeah] None of it stuff. You know, I went through these tutorials and stuff and until I started using it for real applications, like it just wouldn't stick in my mind. So I think that's really good advice to anyone who does didn't really know what to learn next. If you go try and learn just something in general, like it may not be what you need. And if it's not what you need, you just won't retain it. So the best way when you're feeling like, oh, what should I do next is go build the thing in your head, see where you get stuck, what's stopping you and then learn that. 
+
+Sanyam Bhutani  15:21  
+And the other thing that I like to point out too is like, if you don't have the idea with you yet, and you want to test out your skills, or maybe like find a job in this field. Kaggle is one of the things that gets as close to real world. I mean, the downsides to it as well. You don't get to see the data collection part, etc. But if you ignore that, it's it's as close as you get to the real world with like real time leaderboard for you as well. So that's one of the things that you can try, you know.
+
+Robbert Bracco  15:51  
+Yeah, that's a fantastic point. Because when you're building your own project, I think Jeremy's talked about this before in the class. [Yeah] You're building your own thing, and it doesn't work. You don't know if it doesn't work because the thing is not possible because of your data. And so kaggle really lets you isolate the learning portion of deep learning and compare yourself against others and see how you stack up. So yeah, I think that fantastic advice as well. Kaggle and building your own projects. Those two hand in hand are really powerful tools.
+
+Sanyam Bhutani  16:26  
+Yep. And I think you also try to compete for for the audio challenges recently.
+
+Robbert Bracco  16:32  
+Yeah, so I jumped in. I was mainly working on our implementation of fast AI audio. So I didn't end up starting the freesound 2019 competition. This was an audio Kaggle competition for;
+
+Sanyam Bhutani  16:46  
+We'll have it linked for maybe on a card for audience.
+
+Robbert Bracco  16:50  
+Okay, cool. Yeah, it's like a scene classification. So they're just various audio scenes happening. Maybe dog barking or explosion gunfire buzz, and you have to classify the scene based on the audio. [Got it] I got in it with seven days left, which was my first mistake trying to take it on. And but I had a lot of fun. It was my first cable competition. And I ended up not doing very well in it barely broke the baseline, I end up determining after because of data leak. So I was leaking between my train and validation set. So I wasn't generalizing, it was a really good lesson. But overall, it was super fun because I really had no Kaggle experience and no, I hadn't spent much time reading other people's kernels and reading about strategy. So I just got jump in and try and kind of invent things and I like people out that I rediscovered certain things like stalking. I kind of implemented my own version of that and I didn't know so it was really nice to just have that period. Kind of free creativity where you really had no clue what I was doing. And I was just trying stuff. I just gotten to the level where I was able to using, you know, Pytorch and NumPy and all these libraries to actually implement my ideas and machine learning. It was kind of a tipping point for me where, like, I actually knew how to take ideas out of my head and try them out. And before that, I didn't have that ability. 
+
+Sanyam Bhutani  18:26  
+And like this, to get to this point, you went through the first day courses and the courses you mentioned before that as well. Right. So this happened after that.
+
+Robbert Bracco  18:34  
+Oh, yeah, definitely. I would say it happened maybe three months about into having taken steai and having played around with the code and tried to make my own things, months, and I think I started realizing I could actually, you know, I could of course, I could make cool stuff. I'm just, you know, putting my data sets in their code. [Yeah] As far as like making completely new ideas, you know, making my models architectures, forms of data augmentation that kind of came about three months in.
+
+Sanyam Bhutani  19:12  
+Yeah. And I think we all know that you've you've done the course rigorously as well. So these, you, you made up monsters on the forums for those who don't know, and you have this amazing period called things Jeremy says to do. So. Yeah. So; 
+
+Robbert Bracco  19:27  
+That was kind of inspired by your how not to do fast AI. Yeah, so you were right before I took the course I read that post. I thought it was really cool. I thought, well, I should kind of search around and get more advice on people who have gone through the course. [Yeah] How they, what they regret what they enjoyed how they wish they spent their time and I did that and the number one thing that came through was people saying, I wish I had listened to Jeremy. Jeremy has great advice. You know, I wish I hadn't gotten bogged down in the theory I wish I hadn't. I wish I spent more time with the code. So I said, Well, you know, if everyone's saying this, I think maybe I'll go through, and I will try and record all his advice, and then just put it out as a list and;
+
+Sanyam Bhutani  20:17  
+I think he lays out all of these easter eggs throughout the lecture in in running that this thing is, you could try this, for example, class imbalance just works. And he just mentioned such things in running that I think many people tend to overlook. So that's for sure.
+
+Robbert Bracco  20:35  
+Nice I'm glad you enjoyed it.
+
+Sanyam Bhutani  20:37  
+Yeah. Now, so I sort of want to get an idea from you, like, how's the situation for audio? Is it like, as ripe as image and NLP? In your experience you, can you just use any API to model outfit or could you tell us a bit about that?
+
+Robbert Bracco  20:56  
+Yeah, sure. It's a there's a lot of different stuff going on. But I still feel like it's not as mature as maybe NLP or computer vision. But there are a lot of cool projects coming out recently, Google's released some stuff where they're trying to add a generative audio. So they're trying to do stuff like voice transfer. So imagine you're using their translation app, and you're translating from English to Spanish, but the Spanish that comes out is in your voice and not the voice of a computer. So like, there's a lot of really novel things that are haven't reached the same level of maturity, as you know, computer vision applications. [Yeah] There's lots of room to do research and build cool stuff.
+
+Sanyam Bhutani  21:47  
+I think things are coming out for sure. I think news net from open AI, that's pretty cool I couldn't tell the difference if that's coming from an actual concert or if it's generated.
+
+Robbert Bracco  21:59  
+Yeah, it's absolutely amazing work. And she started in fast AI, right?
+
+Sanyam Bhutani  22:03  
+Yep. We actually hired her on the interview series also. So I'll have that linked off as well. What Christine has mentioned like what we were just talking about is she had this fixed project in mind. And I think Jeremy's also highlighted this in the part one of the course where he highlights that the best advice is to really focus on one project and make it really good. That sort of outweighs many projects on your resume.
+
+Robbert Bracco  22:31  
+Yeah, definitely.
+
+Sanyam Bhutani  22:35  
+Yeah, so I know you're also working on a fast AI audio. I think it's a full capacity audio. Could you tell us more about the library? What is it about?
+
+Robbert Bracco  22:45  
+Yeah, for sure. First, I'll say on official fast AI audio. We have no affiliation. We're just huge fans and students of the class. The goal is to build an audio module for fast AI that follows is the same pattern as their other existing modules. So for example, the whole purpose of fast AI's computer vision module is to allow people who aren't PhD in computer vision to build world class models for whatever it is that they're really good at. So maybe they're a farmer, maybe they're a doctor. And we tried to copy that same pattern and spend time learning stuff about signal processing and audio engineering, so that we can backed it away and make it really easy for anyone who has an interest in building an audio model to do it without having to spend five months bogged down in signals processing and spectrograms.
+
+Sanyam Bhutani  23:46  
+So all of these technical stuff, I assume is common to like when you're working with audio using any software pipeline.
+
+Robbert Bracco  23:52  
+Yeah, definitely. Like I guess I'll go into what the pipeline kind of is. You take raw audio for the most spark some people do do machine learning directly on raw audio but not as developed as an area, most people will pre process it in some way, maybe remove silence or resample it followed by creating a spectrogram, which is an image representation of the frequencies of the sound.
+
+Sanyam Bhutani  24:21  
+So the phones that we usually see, those spectrums;
+
+Robbert Bracco  24:25  
+No, so a waveform that you would normally see is just the amplitude of the wave at any given point in time. And that's a very complex signal, what you're actually seeing there is a lot of different frequencies being added together. And what a spectrogram does is it breaks that apart into the constituent frequencies, so you can learn from that like a really cool analogy that's not mine. I heard from someone else's, it's like a prism. You take the white light, and it splits it into the colors that made it up.
+
+Sanyam Bhutani  24:59  
+Got it. So like a very detailed representation of all the audio in an image format.
+
+Robbert Bracco  25:04  
+Yeah, exactly. So if you want, again to exactly what it is, is, if you have it's an image where the x axis is time and the y axis is frequency of the signal, go in any pixel at point x, y at time x. Sorry, it's the, the color of the pixel indicates the magnitude of the frequency, how much energy is there? 
+
+Sanyam Bhutani  25:34  
+Okay. 
+
+Robbert Bracco  25:35  
+The frequency at time x. So it's this kind of a complex combination showing them which frequencies are present. 
+
+Sanyam Bhutani  25:45  
+Got it.
+
+Robbert Bracco  25:46  
+As a function of time.
+
+Sanyam Bhutani  25:48  
+Got it to take the audio, you maybe process remove some of the noise, etc, and then convert this into an image or the spectrogram.
+
+Robbert Bracco  25:56  
+Exactly, yeah, and this is the most common approach and from there, just gets fed into a;
+
+Sanyam Bhutani  26:01  
+?????
+
+Robbert Bracco  26:04  
+Yeah, CNN we mostly use resonates we found dense nets to be very good as well. Although, you know, quite slow because they're deep and it's;
+
+Sanyam Bhutani  26:15  
+Yep, but I'm really surprised that even resonates we're pretty well with these I don't think like imagenet are using pre k models for these are using translunar.
+
+Robbert Bracco  26:26  
+So yeah, it's been shocking to me. You would think that something that has nothing to do with spectrograms like imagenet wouldn't help with training, but it actually helps quite well. It speeds up training just the same. I mean, it makes sense because those early layers are just, you know, recognizing basic features, like directions of line and shapes. They can then in the later layers be used to analyze spectrograms Um, so it's not all that surprising, but yeah, we we found that just basically the same approach you take for normal computer vision gets really good results on audio. And I think there there's definitely room for improvement. And this is where additional research needs to be done custom architectures. That's what we're looking at the next step is starting to improve upon that base result. But I think it's really exciting that you can get such good results with, you know, just kind of the defaults.
+
+Sanyam Bhutani  27:28  
+And is it similar to like image? Or does it transfer learning part where you unfreeze them all take longer to converse, because the target image is sort of different or is it pretty similar to a standard image task?
+
+Robbert Bracco  27:40  
+No it's it's really similar. You don't see that option during the fine tuning stage after you unfreeze so I would have expected yeah it to either take longer or have more change or to get more benefit but it;
+
+Sanyam Bhutani  27:55  
+??????
+
+Robbert Bracco  27:58  
+Yeah. 
+
+Sanyam Bhutani  27:59  
+Yep. So I assume you will also be checking out efficient net if you haven't yet. 
+
+Robbert Bracco  28:06  
+Sorry, what's that? 
+
+Sanyam Bhutani  28:08  
+The efficient net that that's just come out from I think Google AI research.
+
+Robbert Bracco  28:12  
+Okay, no I haven't played with it at all.
+
+Sanyam Bhutani  28:15  
+Interesting. So they talk about this architecture that sort of much more compact. It's, it's like less heavy than even resnet and it outperforms them on imagenet.
+
+Robbert Bracco  28:27  
+Nice, do you know, if there's a Pytorch implementation that's publicly available?
+
+Sanyam Bhutani  28:31  
+I think there is. I think there is, but now, there was some chatter around like, they don't do so well on transforming. So I'll also be curious to know, like, how does it do on audio? Maybe maybe really shines there?
+
+Robbert Bracco  28:46  
+Cool. Yeah. We'll have to get in there and test it out. 
+
+Sanyam Bhutani  28:49  
+Yeah. So I also like you, I don't think you have a background in like audio engineering. So could you tell us like what sort of experimentation and research has gone into this unofficial board of first AI audio.
+
+Robbert Bracco  29:04  
+Yeah, definitely. It's been a lot of just playing around and learning and seeing what works and trying to improve upon results and it's been a collaborative effort. First, it was a few fast AI students, Tom Mackie, Zach?, Stephan, basically built a simple implementation that I could not have done myself like doing a lot of the low level stuff, getting everything going. And then I've been working with Harry Blum to add features on top of that, and just kind of make things add niceties to the library. And for air using those things. We've been experimenting to see what works for different problems for speech recognition for voice mission and the different problems and then again, trying to abstract away any specific audio knowledge that users would need.
+
+Sanyam Bhutani  30:03  
+Similar to like the fast AI tradition, as you mentioned?
+
+Robbert Bracco  30:07  
+Yeah, and it's a lot of just playing around with different spectrograms settings and seeing what works and;
+
+Sanyam Bhutani  30:12  
+Got it.
+
+Robbert Bracco  30:12  
+And dealing with for example, if you have clips ranging from 300 milliseconds to 30 seconds, those are all gonna be different size images. How do you deal with that? [Yeah] Do you crop them? Do a take the point three, second one and paddock with zeros? Or do you repeat it over and over? And just experiments like that to kind of see what gives the best results and then making those the defaults for the library?
+
+Sanyam Bhutani  30:40  
+That's a great point. Because I think like for image, we take it for granted that you can just crop into the image, resize it to whatever because you're trying to maybe just find an object in the image but for audio, like the spectrograms, I think become relevant if you can just grow up into it.
+
+Robbert Bracco  30:56  
+Yeah, exactly. You can't resize it. You can't scew to the x axis because then they;
+
+Sanyam Bhutani  31:02  
+?????
+
+Robbert Bracco  31:03  
+Because it's a time axis. So;
+
+Sanyam Bhutani  31:07  
+Gotcha. Yeah. And so just just for context, like, I know, you follow the top down approach of fast AI. So was it was it to like code first approach for you? Or was? How much of theory did you have to read for this? Because I know you. You mentioned some sorta, results are coming up very soon. We'll get to that part in a bit. But yeah, to this point.
+
+Robbert Bracco  31:31  
+Again, yeah, I want to stress I'm in no way an audio expert, no way. An audio engineer, and I just, you know, four months ago, I didn't know what a spectrogram will was. I spent, I was using a guy named john Hart quest????? to did an audio implementation of fast AI, a long time ago, maybe a year ago. So it was really advanced. And I remember taking his code and trying to copy parts. I couldn't even figure out how to save a spectrogram. I didn't realize it was just a NumPy array and I remember spending hours just trying to get a basic model going. So my advice really is the top down approach. Absolutely jump right in. [Yeah] If I had gone and you know, picked up a signals processing textbook, I wouldn't have made any of this. And I would;
+
+Sanyam Bhutani  32:19  
+I can guarantee that's that's very true advice.
+
+Robbert Bracco  32:23  
+Yeah. So it was hard for me because I'm a bit of a perfectionist and like, I, it's really hard to know that, you know, probably 10 or 15% of the stuff that I'm putting out there might be imperfect or might be just outright wrong, you know. But there's just never going to be a way that you can produce stuff that's perfect. And that's where the community comes in. So I'm always running stuff through the fast AI, audio thread that we maintain. And who were way more experienced than me say I think you're mistaken here like this would be a better way of explaining it. I just take that up added to the guide give them credit. And, you know, we keep improving incrementally and I learned a little bit. So I think if I had waited until I was an audio expert, I don't know that I would ever be an audio expert because it would be really demoralizing to not be building stuff. building stuff is what keeps me energized. And;
+
+Sanyam Bhutani  33:16  
+That's, I'm also wanted to ask about like, since you mentioned, the community has played a really big part for you. So how have you looked at the community? How have you approached this? Like learning through peer peers if you may?
+
+Robbert Bracco  33:37  
+Yeah, um, I think just not being afraid to ask questions that might make you feel kind of dumb. I hadn't worked on any open source projects. My method as of three or four months ago for maintaining backups was to just make a copy and stick it somewhere. I hadn't to like really learn to get, and they'll find someone who is experienced and will, you know, help walk you through the kind of harder parts of it. So for me, that's been bass on the forums, we have a telegram chat where we work and discuss features. And he's really walked me through the proper way to use get to maintain a repo to do code review. And you know, I felt like a bit of a burden on him at times, but it's been really good for me and you know, that being said, we would love contributors to fast AI audio are totally open doesn't matter school level, like, like I said, three months ago, I didn't know the first thing so I think really, anybody can do it. As long as you meet the basic fast ai prereqs. You're a Python experience high school math, you really can learn as you go.
+
+Sanyam Bhutani  34:53  
+Yeah, I also want to like sort of drop a warning for people so I know for sure that even like when we discussed anything you you were there to you made sure to do your homework, your side of the things and then actually ask the question so that I think what a lot of people mistaken is that if you list asking people for free, or like even on any sort of forums, please do your homework. Don't just take other people's time for granted.
+
+Robbert Bracco  35:21  
+Yeah, absolutely. And, yeah, it's something to be conscious of. And I catch myself doing it all the time. I'll send Harry a question. That's something that after I send it, I realized I could just Google that, like, what am I doing in disguise time is a valuable resource. So then I'm like, I just delete the message and then go figure it out myself. But if you get really stuck, you don't and you're going to go down a two hour rabbit hole that's not really going to lead anywhere just to get unstuck from a bug or something. Having someone there who can save you that time and frustration and point you in the right direction is invaluable. So I recommend working with the community and finding someone, maybe one level above you and one level below you, and trying to bring the person one level below you up and trying to bring yourself up with the person above you, because I found that teaching for me has done more than anything to solidify the concepts. They're kind of fuzzy in my mind. Think that's just as important. It's not an altruistic thing. It's a for your own learning sake, find someone who is one level below and just try and offer them help and guidance. And; 
+
+Sanyam Bhutani  36:31  
+I think to keep a check on yourself, sometimes you assume that you know something totally. And when you're trying to help someone you realize that even I don't understand what what I'm trying to explain. So that's even even for me.
+
+Robbert Bracco  36:46  
+Absolutely. 
+
+Sanyam Bhutani  36:48  
+So you mentioned you also welcoming, open source contributors. So could you tell like, how can a beginner who has no idea get started with the library right now and;
+
+Robbert Bracco  37:01  
+To get started, we aren't. We don't have pip install set up yet, because we're still kind of breaking things. And we're trying to slow that down. But;
+
+Sanyam Bhutani  37:15  
+You would say;
+
+Robbert Bracco  37:16  
+What's that;
+
+Sanyam Bhutani  37:17  
+Still in the alpha state of the library, if you may?
+
+Robbert Bracco  37:20  
+Yeah, I would say we're kind of graduating into a beta stage. And we're not super concerned about breaking things at the moment. And because, as you know, fast AI version two is coming out soon. [Yes] We're going to have to refactor the API anyway, [For sure] mainly focused on just kind of getting cool features and making it useful, especially for our own work. So you know, using this library directly, it's been really helpful to me. And then, you know, later, we'll go through and when we do this big refactor and try and make it as proper as possible and from that point, you know, have continuous integration and we have some testing but not as much as we should. So anyway, if you want to get started using the library, you can just go to the GitHub repo which I'm sure Sanyam will link. And in the readme, there's a simple install. You just clone the library and run one command. And that's it. We've got a set of tutorials starting with getting started. That just shows you the most basic way to train a model. We've got an intro to audio guide, which compilation of the stuff I spent the past four months learning. It's kind of scattered throughout the internet. I wanted to bring it together in one place in a Jupiter notebook where you can play around and really get a sense of how things work. That we have a features notebook which just is everything the library can do. And then releasing soon we're working on a couple notebooks related to cable competitions that will walk you through simple models. You know, they're not large ensembles. They're not doing fancy things, but they're getting good results. So we're excited to share this video.
+
+Sanyam Bhutani  39:07  
+Even I'm excited about that for sure. I also wanted to share with the audience that we will be doing a screen cast very soon. So maybe by the time this podcast is out, the screencast will be out as will be Robbert will be presenting all of these amazing news that he's talked about.
+
+Robbert Bracco  39:25  
+Yeah, definitely. Uh, go ahead.
+
+Sanyam Bhutani  39:30  
+Yeah. So could you also tell us like, how could we support the framework or word or other areas can contribute to right now?
+
+Robbert Bracco  39:41  
+Yeah, definitely having users and feedback would be, you know, a great first step. So if you just want to take the library, try it out. Especially build something cool would be great, but and then just get back to us with comments, bug reports, feature requests, and yet an extra that would be if you want to contribute. We've got a telegram thread going or chat just for audio. And then we also have one for development. So you can hop in there participate in the fastest I audio thread that's been something I've been really happy with is I started it maybe four months ago, we keep a list of resources, great learning stuff at the top. And then we have a chat going about new developments in audio, what we're working on. And that's been my main source of kind of new learning and finding people. So it's a great thread.
+
+Sanyam Bhutani  40:34  
+Awesome, we'll also have all of those linked below. So I know you mentioned in our friends as that you're also working not just on making this like state of the art but also on making your optimized refactoring constantly. So could you tell us a bit more about that and also, like, what immediate features will be rolling out that you excited about?
+
+Robbert Bracco  40:58  
+Yeah, we're just Just trying to make everything as easy as possible. And as fast as possible. Really subscribe to not sure how to pronounce it, Radek, R-A-D-E-K;
+
+Sanyam Bhutani  41:11  
+I have, I'm not sure either.
+
+Robbert Bracco  41:14  
+He made one of the points that's been the most impactful to me. And that's that if you are spending more than 30 seconds waiting for something, [Yeah] you're just going to get distracted, your day is going to go downhill. So we've spent a lot of time really trying to make things fast, make things smooth, so that you can stay in your pipeline and not have to implement something yourself that is gonna take a lot of testing and then running and waiting and debugging. That will kind of get you off track so you can keep focusing on building what you want to build. 
+
+Sanyam Bhutani  41:49  
+The essence of prototyping really.
+
+Robbert Bracco  41:51  
+Yeah. And just helping with that. So we're constantly adding new stuff in and it's kind of a really fun, iterative loop where I try and build stuff. And then I realized, oh, this would be a really useful feature. And then I go work on the library for a while and make a pull request, go back to building what I'm doing and move on. So that's kind of the development process and features I'm excited for that are coming up. There's been a lot of research lately and audio into doing a augmentation directly on spectrograms. So instead of like the traditional way, I guess is to augment the actual signal, the audio itself does add white noise, and then you generate the spectrogram. And then you feed it to an image model. But you can't do that as quickly because then you have to regenerate the spectrogram every time which is a bit time consuming.
+
+Sanyam Bhutani  42:53  
+Generating that audio like writing a pipeline for that would again they be some resource and time consuming. Because I would imagine;
+
+Robbert Bracco  43:03  
+Yeah, it adds in a quite a significant amount of time. And so there was a really groundbreaking paper released this year in April by Google called spec off map, which is where they found that basically just putting blank bars vertically and horizontally on the spectrogram, like as simple as that just blocking out information similar to cut out. Got them really good results on speech recognition. It got them new state on a few very highly competitive datasets.
+
+Sanyam Bhutani  43:36  
+Interesting.
+
+Robbert Bracco  43:36  
+Implemented that and we have a working version, but I like the idea of doing all augmentation on the spectrogram. So basically being able to add white noise or remove noise by doing math directly on the spectrogram. That is super interesting to me because it would just be fast and efficient.
+
+Sanyam Bhutani  43:58  
+And I'm sure you must be making sure, at least on the admin side of things, these happened pretty fast compared to how it could be adding it to audio.
+
+Robbert Bracco  44:07  
+Yeah, definitely it is faster, because it allows us to, again, have the caching and not have to regenerate. But like, I'm really new to this stuff. So I'm total amateur optimization of Pytorch is, you know, a concept of what I would really love to see some more advanced people to get involved. Like, I can't imagine if, say like, a Jeremy and sullavan just got their hands on this and just did what they do. I would be amazing.
+
+Sanyam Bhutani  44:36  
+For sure.
+
+Robbert Bracco  44:37  
+I know my limits. And I know there are people out there who can take this to the next level. So that's actually what I would love the next step for this.
+
+Sanyam Bhutani  44:45  
+Yeah, if you're listening to this, and you're sort of mildly interested, please go ahead and check it out. You you might also help help Robbert achieve some state of the art goods you never know.
+
+Robbert Bracco  44:56  
+Yeah, definitely. Like I you know, it's been good to work with this and be a contributor to it, but I feel like no ownership over the library. I want to hand it off to people who can make it something, you know, really, really useful for people working audio.
+
+Sanyam Bhutani  45:11  
+It's amazing. Also like you also mentioned this great advice from I think Radek that he as he calls it, the curse of control plus t. So if whenever you prototyping if it goes beyond 30 seconds, you are bound to press Control+T, then the internet is a distraction.
+
+Robbert Bracco  45:30  
+Yeah.
+
+Sanyam Bhutani  45:32  
+So, before we conclude, could you share any advice for beginners who are you know, even into intimidated to contribute to open source or, like intimidated by machine learning to get started even properly?
+
+Robbert Bracco  45:48  
+Yeah, there's a lot and we could do a whole podcast on just that, um, I would say, consistency matters. Above all, just, you know, it's better put in a little bit of work each day then to kind of go on and off it for weeks. It's really hard to make progress if you burn out. Get to know yourself and what really drives you and then use that to build a consistent work habit. I'm a big fan. We've talked about the book deep work. [Yeah] Idea for intellectual work. That's really exhausting. You can, working in short, intense bouts, and then letting go of work entirely and going and living your life. So some of my most productive periods I'm working, usually 8am to 2pm at the latest, and I stop, I go do other stuff. I hang out with my fiance, I go exercise, I go cook. And I come back the next day and I'm just ready to crush it again. I'm hungry. Whereas I, you know, after 2pm if I'm like, oh, let me check on this model. How's it doing? Oh, it crashed. Let me try and fix it. Just let those little drips interrupt the rest of my day. [Yeah] I come the next day just not the same. And I don't feel like I feel like if I limit my hours and work really intensely and don't accept any interruption, I get more done working five hours a day than 10 hours a day, if it's a kind of open ended for so that's been really helpful to me.
+
+Sanyam Bhutani  47:22  
+Also, I feel like if if you have more time you said, like speaking from my experience, you tend to get more explorative. And then things start to like diversify in all weird direction not leading to any proper goal. Usually, at least for me
+
+Robbert Bracco  47:39  
+Oh, definitely for me as well. Or just being certain tasks can be tempting. When you have unlimited time. You can say, oh, I should do this. But when your time is really limited [Yeah] yeah, you get that tough decision where you have to choose between two things. And in that case, you're going to choose the kind of more beneficial on the one that's going to lead to the outcome you want. Definitely, you're not going to get caught in the kind of frivolous things that you'll do if you have all day.
+
+Sanyam Bhutani  48:07  
+Yeah, for sure. That that's great advice. Thank you so much again for joining me today and taking the time out for the podcast. We'll have all of the links in the description for our audience and looking forward to the future releases of fast AI audio the unofficial port.
+
+Robbert Bracco  48:26  
+Yeah, definitely. Thank you for having me on, man. It's been really enjoyable to just chat. All things machine learning.
+
+Sanyam Bhutani  48:33  
+For sure, likewise.
+
+Robbert Bracco  48:35  
+Okay, cool.
+
+Sanyam Bhutani  48:47  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review, or feel free to shoot me a message you can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science."
+

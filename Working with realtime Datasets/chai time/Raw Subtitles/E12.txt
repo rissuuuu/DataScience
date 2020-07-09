@@ -1,0 +1,354 @@
+Sanyam Bhutani  0:00  
+Hello Tuatini. Thank you so much for taking the time to do this and joining the interview series for the second time. 
+
+Tuatini Godard  0:05  
+Hi, Sanyam. Glad to be here.
+
+Sanyam Bhutani  0:09  
+Yeah. So today you're working as what people would think, to be the picture perfect life for any coder. You're travelling the world and workng on the move, which we'll just get to in a bit. Could you tell us how did you get interested in machine learning at first, like, what, what made you as you mentioned, quit your software desk job and shift to this field?
+
+Tuatini Godard  0:35  
+Yeah, sure. So at first, what, four years ago, I was an Android developer. And I worked for a small startup. And the thing is, when I started working, work was really great. I'd said because I will start everything from scratch and add new feature and stuff like that. But at some point is started getting boring because you know, at some point, you will only start to do maintenance stuff. And everything start to get boring, basically. And so it got repetitive and very repetitive. Yeah. Because you only you're, you're only fixing bugs and, and maintaining stuff, basically. So at that point, I started to look for new opportunities. And the moment where I started to look for zero opportunities was exactly at the moment where deep learning started to boom. And I didn't know about that at all. Then I started to get interested in it. And when I started doing stuff on kaggle, and seeing how things works, I got immediately burnt and so I decided to;
+
+Sanyam Bhutani  1:50  
+You got Kaggle bug. 
+
+Tuatini Godard  1:52  
+Yeah, yeah. And, and then so I decided to tell my boss that I'm too that I wanted to quit to be on what we call on in France unemployment benefits. Where because when you get to quit a company, you can get unemployment benefits for two years in France if you work for two years makes it and so I was kind of like surviving on that stuff. And so I've learned that a sense from day one when I, when I was unemployed, and after one year in house, got into freelancing.
+
+Sanyam Bhutani  2:33  
+And to give the audience insight, I'll also have your profile linked but you have about 2200 hours of experience on on your profile on Upwork. So that really speaks for itself about your hard work. I also wanted to ask you about during this two years study plan of yours, you also you got started with freelancing towards the end. So what made you pick freelance side of work over what we call the job job the standard job?
+
+Tuatini Godard  3:01  
+Sure. So I wanted to experience it at first because I didn't know about that word at all. But it's a bit daunting at first because you know, when you used to have someone behind your back telling you what to do, well, it was not it is a case in the startup when I was so. So I was I was like, used to manage myself, I'd say. So when I started freelancing, well, of course, it was a whole different world because it's not just about managing managing yourself, but it's also about managing your time and marketing yourself. bit like yes, no, luckily, and it's not like the stakes are not the same. You know, when when you miss a deadline and you're an employee, like it's it's okay, you know, but when it when it's a client, go ahead and explain to your client why you missed the deadline.
+
+Sanyam Bhutani  4:00  
+So you, you sort of like have complete ownership as you; 
+
+Tuatini Godard  4:04  
+Yeah, exactly. All. Exactly. And one of the most frightening part that I encountered was, you know, being having the having as a complete ownership of the project. And when you screw up something, you know, when you screw up something, you know, you have, you basically have to tell your client, you're the one who's responsible for that. And sometimes it can be hard because if you are an employee, you can still rely on your team. And I don't know, but you know, it's not the same thing. I can't explain it.
+
+Sanyam Bhutani  4:46  
+Yeah, I assume for like, even the startup, they might have a person handling the communication, but if you're freelancing, at least by yourself, you you the person who has to communicate it to the client also work on the code. So that that's really the challenging part.
+
+Tuatini Godard  5:00  
+Exactly, yeah, yeah. 
+
+Sanyam Bhutani  5:02  
+So any like composites in your mind like in terms of ownership compared with the startup world and freelance, like which one would you still prefer? Is it still freelance?
+
+Tuatini Godard  5:14  
+Still freelance. Yeah. Because apart from the difficulties that you can encounter along the road, there are so many advantages of being a freelancer. Well, it also depends what kind of freelancer you are, you know, you could be a freelancer who's working in the offices of your client. And this kind of freelancer I didn't want to be one of them. And so I decided only to go remote because in the startup, I was work for the startup I was working for. It was it was 100% remote so I got used to that and I've got used to manage myself. So when I started freelancing it was the first mission I had was not remote because I just wanted to get a feel of what it looks like. And I just jumped on the first mission I could find. But then I decided after that one that everything following it would be remote on.
+
+Sanyam Bhutani  6:20  
+Okay, so, over the past few years, you worked on many great projects, I'm sure so do you have a favourite or the could you tell us about the kind of projects that you worked on?
+
+Tuatini Godard  6:32  
+Well, actually, I didn't work on that many projects. But what I will actually say what I'm currently working on is one which is fulfilling me because it's actually about detecting skin cancer in digitalized skin tissue itself, to make things simple and it's really fulfilling in the In the fact that, well, you really working for something meaningful, you know, and not not for I don't know, whatever, mobile app mobile app which can do. I don't know, I don't know how to explain that, that, you know, this work is really fulfilling, and at the same time;
+
+Sanyam Bhutani  7:21  
+?????
+
+Tuatini Godard  7:22  
+Yeah. And and at the same time, it's, it's not, it's, it's well paid. I'd say it's not a very high pay, but it's well enough for me. So I don't have to complain in from any sides of the project.
+
+Sanyam Bhutani  7:43  
+Got it. So you're also like, I know that you're interested in interesting projects over well paying ones. So could you tell us about the motivation that what kind of projects generally would pique your interest?
+
+Tuatini Godard  7:57  
+the kind of projects that will wake my interest will be project which revolve around I'd say climate climate change. Around medicine, laser what I'm basically doing, then I don't know, there is a last one. But I completely remember I said it says these two are the most fulfilling project for me. But at the same time, I would lie, saying that one paid project is not fulfilling either, you know. So if it's a well paid project, and it's not one in one of the area that I'm interested in, well, I was, I can probably start it.
+
+Sanyam Bhutani  8:44  
+Right. So that's also great people think about AI as something that can do all these techie things. But as you say, they're like you're already working on this medicinal domain that too, as a freelancer and you're also looking forward to working things that might impact environments. So that's really amazing. 
+
+Tuatini Godard  9:02  
+Thankyou.
+
+Sanyam Bhutani  9:04  
+Yeah. Now, I want to dig deeper into the life of machine learning freelancer. So could you tell us what a day in your life looks like? Are you coding for from a different beach every, every week from a different scene? How does it work?
+
+Tuatini Godard  9:19  
+I don't know, who's the guy who told you that people are coding from the beach, but he's a total idiot, hehe, because you will be very, very stupid to code from the beach because you will put sand in your keyboard and stuff like this. So definitely not a good idea. But yeah, and when people are saying you're calling from different digits, you're not. You're not physically coding from the beach, right? But when you're coding from many different countries, depending on the visa you can get into those countries when you have a new EU passport is very easy to get around because you can have certainty In one country, and then you move to the next one. So that's it for now. I'm in French Polynesia, and then I'm gonna move to New Zealand and then to Bali, then to Thailand. And from there, I didn't plan anything yet.
+
+Sanyam Bhutani  10:16  
+Yeah, so kind of the perfect life in terms of what people would;
+
+Tuatini Godard  10:20  
+It depends really depends because, like I have I have a friend who's been doing that for for four years now. But at some point, you start to get bored of that life because like late like, like everything in life, you know, if you do something too much, you start to get bored of it like a ensure that in in a 10 year period, I will be bored to do deep learning. So what bores in is having to move to another country every month, you know? And also relation, in relationships, you know, when he meets someone, he cannot stay with that person for too long before he has to depart to another country. So there is no long term relationship that he can make. And also, I don't know, it's he told me that that this kind of life at some point is gonna is gonna bore you. So it's not just like rainbow and unicorns, you know, at some point you get bored, like everything in life. 
+
+Sanyam Bhutani  11:38  
+Is this is this itinerary of yours for a couple of years or is it just in for the next month, next few months?
+
+Tuatini Godard  11:45  
+You mean the plan that I that I just said. [Yeah, your travel] Uh my travel is actually for the next four to find months I believe. I don't remember quite exactly. Because as I told you, you know, you have this visa issue. For instance, in Indonesia, I can only stay for 30 days. And I have to pay a fee if they want to stay 30 days longer. And same goes for New Zealand. It's three months, I believe. Thailand, also 30 days and same for the rest of the Asian countries.
+
+Sanyam Bhutani  12:20  
+Yeah, I think there are all of these challenges that people really don't understand about. First getting a project with, we'll just get to, but also once you have the project ready, you have a clientele and then being able to work remotely. So could you maybe tell us about a few challenges that you face in this setting? Or things that people would miss miss out?
+
+Tuatini Godard  12:45  
+What is the first challenge is when you get your client and if it's remote, you have to make sure that it's not a short term gig. You know. If you don't have a steady income, it's going to be hard for you to Basically, I don't know, you know, be able to be on one country to another. If at some point you don't have any more money, you know, left in your bank account, and I was really lucky to find that client and actually the client I found was was ahead of my friend whose name is James. And he's the one actually who finally found the client because he had a good Kaggle profile and as well as a claim on him. But but yeah, if I didn't have this client, too, because it's been one year and a half since I started working for that client and I had to make sure that he will employ me for a he will hire me for for a long time, you know, before leaving everything behind, you know, like you can just gem gem to another country. If you have a short term view again, then figure out you don't have any more money left. And yeah, you cannot even take it right back to your home country.
+
+Sanyam Bhutani  14:09  
+Yeah, and I am sure that must have been more like a lot of practice also to be able to dedicate a lot of lot amount of dedication to be able to send your skills through to the client as well. 
+
+Tuatini Godard  14:19  
+Yeah. Yeah. 
+
+Sanyam Bhutani  14:22  
+Also, we keep talking about the internet issues. So that's, I think, another point that people would miss out. 
+
+Tuatini Godard  14:30  
+Yeah, especially;
+
+Sanyam Bhutani  14:31  
+Do you have any comment on;
+
+Tuatini Godard  14:33  
+Especially in deep learning, actually. Because, you know, when you have to download a big chunk of data set, it's gonna be harder depending on where you stay. Especially in Asia, as Internet is not that great. But;
+
+Sanyam Bhutani  14:51  
+I can confirm that.
+
+Tuatini Godard  14:54  
+Yeah. So one of the things that you could do is having remote servers. We are lucky with my friend that our current client has a lot of AWS credits. So basically each time we have to generate the data set and train our models on the data set, we can just use AWS and SSH to the instance. And we can download everything and keep everything in AWS so we don't have to download anything locally.
+
+Sanyam Bhutani  15:30  
+Got it. 
+
+Tuatini Godard  15:30  
+So that way, we don't need to have a very good internet connection. But when internet connection becomes an issue for you, you can simplerely on what we call co working spaces, which are things made especially for nomod digitals it's the name that we gave to people travelling the world and working at the same time. And what yeah, basically you can you can just go to to this kind of space and get to reliable internet connection. Well, of course it depends on a lot of factors but most of the time it works.
+
+Sanyam Bhutani  16:07  
+It I think it's a better option than maybe working from an Airbnb or such as say.
+
+Tuatini Godard  16:13  
+Yeah, you could you could probably find an Airbnb with a good internet connection and work from there because yeah, this this way you will save on on the co working space, the money you will give to the co working space. But there is another thing that I just booked I didn't try it yet. But people are saying a lot of good things about it is what they call what people call co living. It's basically a whole package you know, we both as a as a homestay and the co working space altogether.
+
+Sanyam Bhutani  16:22  
+Sort of the the garage startup setting, in a way.
+
+Tuatini Godard  16:55  
+Yeah, yeah.
+
+Sanyam Bhutani  16:58  
+Yeah. Also, like I do remember that you had to remote set up earlier. So;
+
+Tuatini Godard  17:03  
+Yeah but I got to get completely rid of it.
+
+Sanyam Bhutani  17:10  
+Problems, I assume? Or did you also have challenges with it like when you were travelling and you would have to remotely SSH into into your server? 
+
+Tuatini Godard  17:18  
+I didn't, I didn't have so many problems apart from when the internet provider will get the internet in my home country. But apart from that, I have created a setup where I cooled remotely you know, activates the current. I don't know if you can say that in English. Yeah. basically turn on and off the current going into my motherboard. And by doing that;
+
+Sanyam Bhutani  17:51  
+I think it's called wake online.
+
+Tuatini Godard  17:52  
+Yeah. Not to wake online because wake online I'm not sure what I'm going to say is correct. But I think wake online, you cannot like hard shut down. Nor you can hard reboot a machine. And basically, if your machine is stuck, I don't know if we wake online, you work on land, you can basically we voted, you know. And so the setup I had was basically controlling the current itself. So if I had a problem, I would just get the current remote and go this way and making sure that my machine would shut down. And when I when I'm activating it, I configured the motherboard so that when you resist current, it automatically wakes up. Yeah.
+
+Sanyam Bhutani  18:47  
+I think you've also do a blog post on it, which will have a link to have in there. Yeah. I also want to give this a try.
+
+Tuatini Godard  18:54  
+Yeah, I did yeah.
+
+Sanyam Bhutani  18:55  
+Now I also imagine that the top of like, working by yourself can get lonely. So even like compared to a standard setting where you have, maybe your team you're working with in a startup or maybe a corporate setting. So how do you avoid the loneliness of freelance as we call it?
+
+Tuatini Godard  19:17  
+So yeah, it can definitely get lonely. For fortunately for me, I have my girlfriend who's very often around, so I don't feel that lonely, but most people who are lonely who are single, I know struggling with this. And another aspect of working remotely like that is you can easily get into the bad habit of, of, for example, not exercising, you know, like you would stay at your desk for the whole day and;
+
+Sanyam Bhutani  19:55  
+Becoming lazy, lazy, essentially.
+
+Tuatini Godard  19:57  
+Yeah, exactly. Because when you have an office, you still have to move to the office every day, you know, so you are still exercising a bit if not that much, depending on the person and the distance to the office. But you're still moving, you know, and and when you're working remotely can get difficult to motivate yourself to exercise at the end of the day. And as a result, you can start to get a bit fat like, like, then you can, it can be very detrimental to your health. Because, you know, you don't even have to commute you know, to your office because your office is your home so;
+
+Sanyam Bhutani  20:36  
+The office is.
+
+Tuatini Godard  20:37  
+Yeah, exactly. So you basically just wake up, go to your desk and you're done for the day. And yeah, and if you're like me like you like to, to play video games in the evenings, that doesn't arrange anything, you know, like, I don't know, and;
+
+Sanyam Bhutani  20:55  
+I think I sort of [Yeah] take both of those categories so working from my desk, and playing video games. So definitely.
+
+Tuatini Godard  21:03  
+And one of the, one of the tricks that I found to be able to exercise without my, my own consent was actually to travel well, you know, because if you have to leave the country every, every month, you it also means that you have only a month to visit the country. So it means that every weekend you have, you have to, to get around and get around walking to visit the country. And then when you get to the airport, it's also a lot of work. So in a way it's kind of exercising, like, maybe not in a good way, but it helps.
+
+Sanyam Bhutani  21:44  
+Got it. So going back to the question of getting projects, like could you share a few tips maybe on what are the best ways to getting a freelance job or project as we call it? 
+
+Tuatini Godard  21:57  
+Um, personally, I'd say build your portfolio portfolio and also learn to market yourself for my case, I was very lucky because the first freelance mission I had. It's actually a guy who came to me and even if I knew I wasn't a good fit to for his mission, he did wanted me to, he still wanted to have me on his mission and, and of course, it was a total failure because it was my first first mission. But then the second client is still the one that they have today. And the second client actually was fine, but found by gems, my friend gems, and he found him, like I said, through Kaggle. And so basically, thanks to his good profile on Kaggle, he was able to get this client but you know, in this world where there is a lot of competition, especially when you're freelancing like on Upwork and, and was a website like this. It's very old.
+
+Sanyam Bhutani  23:05  
+Like I assume the alternatives would be freelance
+
+Tuatini Godard  23:08  
+Freelance Freelancerpoint.com?? Yeah. So so basically, yeah, you have to have a good portfolio. It doesn't mean necessarily to get a good Kaggle profile, but it surely helps. And, of course, I'm speaking about my own experience from two years ago, you know, because it's been one year and a half, since I started working for my current client, and I didn't switch to another client since then. So maybe what I'm saying right now is a bit outdated, outdated, maybe Kaggle has changed in a way that people don't look at it, but you have to do your own research basically. But the core idea is this is that you have to get something which differentiate to from the user, you know, and something that a client will be willing to, to accept as a proof of your skills, you know.
+
+Sanyam Bhutani  24:09  
+Yeah. [And] So, I think, maybe blogging, Kaggle, and even open source projects would would be a good fit for that.
+
+Tuatini Godard  24:18  
+Yes. Yeah. Well, it really also depends on the client, you're going to target. Like, if you're going to target the technical client, which we have, do we have a person's open source project are going to help that if you're going to target someone who just want to, you know, like, who just have money to throw at the project and doesn't really know a lot about technical stuff. And you have to do all the technical stuff yourself. Well, first, it's gonna it's going to be difficult for you to communicate with him. And second, he he's not going to be interested in open source project because he doesn't understand why as you know, so if he just kind of person look at a Kaggle profile it's much easier for him to determine if you're skilled or not because you just look at your millions???? 
+
+Sanyam Bhutani  25:11  
+Got it. 
+
+Tuatini Godard  25:12  
+So yeah, it really depends on;
+
+Sanyam Bhutani  25:17  
+Yeah, for sure. I think it's it's similar to job setting where some people would want 10 years of experience somw would want a master, some would be happy with even a Kaggler I think so. [Yeah] Of course varies, I believe.
+
+Tuatini Godard  25:31  
+Yeah. Yeah. As for as for degrees like master and stuff. My friend James not have one I believe. And he still found a client, you know, so if you don't have a master, I do have one. But I didn't use it. I, my client, I think is not even aware that they have one, you know. So [Yeah] if you don't have one, if you don't have degrees, don't be discouraged by the fact that you're not going to find any clients, if you're working hard at it, and you make a good online presence. I'm sure you're gonna find some really fulfilling jobs.
+
+Sanyam Bhutani  26:11  
+Got it. We'll also have James profile linked off in the description. So I think the basic point is be to be able to communicate your skills through if you have a master's that wouldn't stop you from doing this. But even if you don't have a degree, yeah, you have to somehow make up for to be able to communicate to the client that hey, I do have this amount of experience. [Yeah. Exactly] Projects or via these blogs or via these Kaggle competitions.
+
+Tuatini Godard  26:36  
+Yeah, to be honest, my mother, like really didn't help me like, not even once a believer, you know, like in my in my whole career, I was always evaluated on my skills. Like even when I when I first got when I got my first job in the startup, what I what I develop in an Android application, they checked my skills on a technical interview, but they didn't really care much about my master degree. Because today, you know, it's that I like, like everyone can have a master degree, you know, if you [Yeah] he like, like, if you have rich parents, you can do sometimes you can even pay for the degree, you know, like, let's be honest, you can you can literally have parents who pay for the degree because I saw people in my own school who didn't even know how to code to create a single single line of code, you know, but still got the degree you know, even if it was the computer science degree, you know?
+
+Sanyam Bhutani  27:43  
+Yeah, I think like, university not naming any, and he would be happy to like have students who can just pay the fees, but they don't really keep a check on those skills, as long as they're getting grades or whatever.
+
+Tuatini Godard  27:54  
+Yeah, yeah. Depends.
+
+Sanyam Bhutani  27:56  
+Also, I think you have a master's in computer science background.
+
+Tuatini Godard  28:00  
+Yeah, I started programming at the age of 14. But most of the things that they have learned, I have learned by myself and I didn't want just to follow what what will be taught in, in, in school, basically, you know.
+
+Sanyam Bhutani  28:17  
+In a, got it. So that that's a great amount of wisdom. Thanks. Thanks for the honest comment there.
+
+Tuatini Godard  28:24  
+Yeah. Yeah. So don't be discouraged. If you don't have any degree. I'm sure you can get, James was able to do that. So you can surely do the same. 
+
+Sanyam Bhutani  28:33  
+Yeah. Got it. So I also want to talk about being able to convince a person about the project requirements that hey, it's not a 10 day thing, you can just do model dot fit. That's not how machine learning works. Because clients come from all different backgrounds. They might be technical business people. [Yeah] So how, how do we communicate our project requirements and skill set based for the situation.
+
+Tuatini Godard  29:00  
+For my client, I was very lucky that he had the technical background. So, he could easily like understand the ins and outs of you know, programming and doing AI and stuff like this. But what basically what I told my client was that I will do everything for from a to z to z, if he needed something to be done in the project is I will do it or I will own him to a profile which is required for this task, you know, and so far like I've done with gems, the machine learning part and the data engineering part. I don't really know what the you know, there's a limit between the two but but we merged them together. also had to create the GUI interface with electron. And so yeah, I really touched on all the medical aspect of the project, you know, like I did all aspects of it. And even even beyond that a sense like I had to the DevOps thing. I had to, to generate a report every week for him to be able to tell where we are at, you know, and a lot of stuff like this. And I know not everyone wants to do that. A lot of person just want to be specialised in say, data science and don't want to be the I don't want to do anything else. And it can work to like gyms currently have two clients. And for one of these guys, he's only working on the data science part, and with our client and doing most of the software engineering stuff, and he's doing his way Really focusing on the data science stuff because he has more experience than me. And so we are kind of complimentary, you know. So it's great. And so having finding, finding a good partner that you can you can, you can put your title is very essential because you can still, like rely on him if you have problems or have a sense, like in this verse, I know, like, for instance, we have to travel with my parents in two months. And so I have to take some time off, you know, but the client is not taking any time off. So I'm counting on James to to be able to handle the client without me during that period, you know, and, and same goes for me if he has things, take some time off basically.
+
+Sanyam Bhutani  32:00  
+Yeah, I think that's that's a great point that if you might want to pick working in a team remotely and a remote team situation maybe with with a business partner, which might, which might like complement, the loneliness as well. And the challenging aspect is nuclear. Also interesting that it's you can also like get exposure to not just data science and if you're up for the challenge, even all of these other things that you mentioned, and I know that you you learn on a as needed basis who, like did you have experience in these things before? Or did you pick these up as as the requirements give? 
+
+Tuatini Godard  32:40  
+It depends, actually. Like I had, at first of course, like everyone to have to learn the whole stack I'd say, you know, like, like the basic things like how neural network works machine learning in general. But yeah, as new requirements comes up, you know;
+
+Sanyam Bhutani  33:01  
+Like, and the GUI side of things, for example.
+
+Tuatini Godard  33:05  
+Yeah, yeah. Like this is a GUI, for instance, I didn't work on I didn't use JavaScript since I was 14. Yeah. And I picked it up, picked it and learned it in one day. And then I started doing the Gi Gi. But but it's not, it's not that impressive when, when you you're, you're getting exposed to a lot of different programming languages. And you're in this fear for a long time. It's very easy to pick up on a new language because you already know all the patterns, which are common to all the languages, you know. So like JavaScript for me was very, very similar to Java, which I've done for a lot of years. 
+
+Sanyam Bhutani  33:55  
+?????
+
+Tuatini Godard  33:58  
+Yeah, exactly. So I did a I didn't really. I didn't have to take a lot of time to learn, basically. And if I encountered some difficulties, I would just Google it and yeah.
+
+Sanyam Bhutani  34:11  
+Got it. So can you share maybe one tip and one warning for someone who's looking to get started with freelance as a career options in the field of machine learning?
+
+Tuatini Godard  34:27  
+Hmm, that's a tough question. And so one tip, don't get, don't get discouraged. Like, I know, like, for me from my personal experience, that working alone, you know, on learning things like over and over again and every day, like for a year and how it can get discouraging at some point if you don't see any results that it says is a must. The one of the most important part of doing that was that I was also working on on projects, you know, so you really have to find a goal when you're working toward well, you have to work towards that goal, you know? [Yeah] And when when you're working towards that goal you have to well, you will learn the stuff yet that you need to reach that goal, you know, and if you don't have any goal and you're just learning for the sake of learning, you can get discouraged pretty fast. 
+
+Sanyam Bhutani  35:23  
+????
+
+Tuatini Godard  35:23  
+So what's known as;
+
+Sanyam Bhutani  35:25  
+infinite loop an infinite loop of learning where you keep going from one course to another that also comes into play there?
+
+Tuatini Godard  35:31  
+Yeah. Yeah, like if you don't have a course there is no point you know, like, we'll just jump from one class to another and yeah, and figure out oh, I already know that and this but I can't apply it anyway. You know, yeah. Like one of the one of the good things that you could do if you don't have any project in mind is doing Kaggle competitions, like it is very a good way to, to stay passionate about data science, especially when you attack very meaningful competitions.
+
+Sanyam Bhutani  36:05  
+I think there are a couple of ones at the intersection of medical medicine also happening on kaggle right now, so such competitions for sure. 
+
+Tuatini Godard  36:12  
+Yeah, definitely. 
+
+Sanyam Bhutani  36:13  
+Yep. 
+
+Tuatini Godard  36:14  
+Yeah. 
+
+Sanyam Bhutani  36:14  
+And maybe a warning for for people who think of this as a perfect option.
+
+Tuatini Godard  36:23  
+As for freelancing, it's a work on your communication skills go like for me, the communication skills are the most important thing that you could have, you know, that like if, even if you are a very, very good coder, yeah. And you're able to, to, to basically create the whole project, you know, like like to, to respond to all the demands of your client. If you're not able to communicate the as a result and not able to, to be clear on the deadlines as requirement and stuff like this, is there gonna be like a little tension between you two because from one side the client won't understand what you're doing, you know? [Yeah] Because he can't see what you're doing you know, like for him you're just doing magic for certain clients, you know;
+
+Sanyam Bhutani  37:22  
+But et you're working and there is this tension.
+
+Tuatini Godard  37:26  
+Yeah, yeah. And and from the other side, you know that you're doing the right thing but, but if both of you cannot align on on the same goals, you know, and and be able to communicate clearly clearly with the with the goal and the deadlines, that is going to be tough. So, if you want to be a good freelancer, a good communicator, I'd say absolutely.
+
+Sanyam Bhutani  37:51  
+Got it. That's a great insight. So, before we conclude, do you want to say maybe your top favourite resources or online courses for beginners to get started, like you did say that masters might not do the things, so any other alternatives that you prefer.
+
+Tuatini Godard  38:15  
+And so what I'm going to tell you is probably a bit outdated, because I started well, more than two years and a half ago. And when I back when I started, I started doing Udacity, which I definitely not recommend, because it's overpriced for what you get. And I did Udemy courses from super data science, which I really enjoyed. And I really recommend because for the price you pay, you really get very good content content. But maybe today's they're a bit outdated. So I don't know you have to get to make sure that when you start a new course that it's not outdated, you know, because this field is moving so fast that you can you can easily start a course, which is two years old and, and just fall behind, you know?
+
+Sanyam Bhutani  39:12  
+Yeah, I think except for the classic Andrew penguin??? it's common to all of these courses. 
+
+Tuatini Godard  39:17  
+Yeah. 
+
+Sanyam Bhutani  39:18  
+I think fast AI does this great job of always being at the cutting edge. That's where I met you also on the;
+
+Tuatini Godard  39:25  
+Yeah. Fast AI is definitely good. We I still, even as today, I still am still following courses of Jeremy Howard because as new papers come out, he's talking about them in part two of his courses that he is making every year. So it's very a good thing to keep to keep updated with the latest things, especially when you don't have to read all the papers that come out. But I think that if you start with fast AI, you really have to supplement this course something else because I'm not 100% certain about that, but to me it is it gives you a big overview of how things works. But there is a lot more around it, you know, like even for, for deep learning the AI from end to end. What I when I, I didn't, I didn't follow it, but from what I've heard from people, it's like it's very math oriented, you know, and less oriented on the practical side. And you and when you will get when you you being a freelancer, you're more interested in the practical side and says Terry????, so;
+
+Sanyam Bhutani  40:46  
+Indeed [Yeah] the client would care about the mathematical;
+
+Tuatini Godard  40:50  
+Yeah and he doesn't care if you've read, you've read the latest paper and and go to 1.001 accuracy more than the last day, you know, he doesn't care about that stuff. He cared about results and results that works. 
+
+Sanyam Bhutani  41:08  
+Got it. So with before we conclude the call, could you maybe tell us what would the best place to get in touch with you for projects for the listeners who might want to hire you for for work, or the best place to follow?
+
+Tuatini Godard  41:25  
+You have my website tuatini.me
+
+Sanyam Bhutani  41:29  
+Which we'll have linked in the description also.
+
+Tuatini Godard  41:31  
+So yeah, and I think you can probably find everything from that. It's it's not, it's not updated. It's been maybe more than a year since I didn't update it. 
+
+Sanyam Bhutani  41:47  
+That's common to all all of us software engineers for sure. Yeah. 
+
+Tuatini Godard  41:53  
+But yeah, you can find all my contact information in there. You can also send me an email from there.
+
+Sanyam Bhutani  41:59  
+Got it. 
+
+Tuatini Godard  41:59  
+So yeah, everything everything is there.
+
+Sanyam Bhutani  42:01  
+Great we'll have all of the details in the podcast description. And thank thank you so much for joining me today for the second interview.
+
+Tuatini Godard  42:11  
+Thanks to you.
+

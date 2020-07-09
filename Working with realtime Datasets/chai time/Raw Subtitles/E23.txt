@@ -1,0 +1,999 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Hello, and welcome to another episode of the "Chai Time Data Science" show. In this episode, I interview Andres Torrubia, who is an entrepreneur at the intersection of engineering, customer first mindset and monetization and also a Kaggle competitions master and active Kaggler. Andres has co-founded a digital distribution startup headquartered in San Francisco which sold for 34 million US dollars. And he's currently the CEO and co founder of fixr.com spelled "fixr.com". Fixr.com is helping owners make the best decisions on their home. So do check out the website if you're interested. Andres has a Bruce Wayne during the day lifestyle where he works on his company and a Batman during in the night lifestyle during which he works on kaggle competitions where he's an active competitor. In this interview we talk all about his journey to the field of data science and Kaggle. We also discuss the predicting molecular property Kaggle competition by chance where Andres' team Quantum uncertainity was placed second in the leaderboard and this also pushed Andres into the Kaggle competition master. I'd also like to thank everyone who submitted their questions on Kaggle forums for the AMA section and to Andres, of course, who was kind enough to answer all of them. For now, here's my interview with Andre Torrubia, Bruce Wayne during the day and Batman of Kaggle world at the night, please enjoy the show.
+
+Sanyam Bhutani  2:31  
+Everyone, I'm on the call with Andres Torrubia. Andres, thank you so much for joining me today and especially for agreeing to the AMA section of the conversation.
+
+Andres Torrubia  2:40  
+Yeah, thank you so much. It's my pleasure to be in this podcast.
+
+Sanyam Bhutani  2:44  
+So you've been working in the business world for almost two decades now. If I may, you've co-founded a company that got acquired for 34 million US dollars and are currently the CEO of fixr.com. Before we talk about your quote unquote Bruce Wayne life, how did you become Batman? So you have this title you're Bruce Wayne in the night and Batman during the evening, machine learning in the evening, could you tell us about your machine learning journey and your deep learning journey? How did you get started?
+
+Andres Torrubia  3:12  
+Yes. Okay, so my background, even though you know, I'm now a CEO of fixr, my background is really an engineer. So my only job and we'll touch on this later was at CERN at the European Center for Nuclear Research, where I was an engineer for about one year. And then I used to have a background on software development what now you know, in the deep learning machine learning community is referred to as server 1.0. So basically what happened is one day, I would just set all our user open their Facebook and Google and things and see that you know, their computer is sort of recognizing faces. So I started seeing this trend, especially about perception, which I thought as an engineer that was out of reach, it's been out of reach for, you know, those two decades. So I started feeling like this fear of becoming obsolete, like, you know, if you are, let's say like you are, you know, chemical, chemical chemical engineer, and you see a spaceship going out to the moon and even to the, you know, to solar system so, you can think about the reaction that happened, you know, the chemical reactions or the propulsion systems and you understand that now is suddenly, you know, so much diversity or you know, alien comes in from another galaxy, you know, you have no idea of how, you know, it works, right. So, I felt the same like, Oh my god, I mean I am an engineer, and I have no idea on how this did really work. So then, then, just just out of pure intellectual curiosity, I joined one online course, in this game was Udacity. I joined the self driving degree, and the reason for choosing either self driving is because it felt I thought there was a very difficult challenge to do so very car. And that for sure you will have to use techniques that were unknown to me. And of course, the course center of those techniques, which I didn't really know at the time was, you know, machine learning, but especially as a course progressed deep learning. 
+
+Sanyam Bhutani  5:21  
+Got it.
+
+Andres Torrubia  5:21  
+That's what triggered my journey.
+
+Sanyam Bhutani  5:23  
+Okay. So also to talk about your journey in the business world, you've been working in business right after graduation, you did work for CERN for a while, but you have a portfolio of having advised co-founded and even worked as a seat you are now as a CEO. What made you pick this path as well? And why not go along the job path?
+
+Andres Torrubia  5:49  
+So I will say let's be very personal. So you know, I started coding when I was maybe 14-15. And and you know, you you I'm for the most part you know, self, you know, self only I live in a relatively sized city by 300,000 people in Spain. So I didn't really have lots of, you know, community, you know, in person around me. So I have to learn, you know, basically through books, you know, etc, I have some colleagues, but in less that I would really have liked. So then you know, what happened on those years before even University and during University, how old these ideas and it was funny because I had this idea, new, very simple, maybe even again, etc. But then, you know, maybe one year down the road, I would see it in a product. So then I say I have these ideas. And you know, more often than not, I see them reflected that somebody else is doing it. And then very clearly, very early on, I said, "Okay, eventually I will be, you know, creating those ideas and trying to put them in the marketplace". My original plan was to work for a few companies, you know, CERN or maybe other companies I really love but then I really like cryptography. So my real plan was to work in first in CERN then begin different companies. But then, you know, I visited the US, my cousin was there. And then I told him about a few ideas I had back then. And then basically, I quit CERN while I was visiting *Okay [Sanyam laughs]* So yeah, it was very, so I think I really had all these like, really are, you know, plans of starting a company. So I knew I would do it eventually. And basically I did it before I had a plan, but that, I think, in retrospect, it was good.
+
+Sanyam Bhutani  7:41  
+Got it. Coming to your current job as the CEO of fixr.com. Can you tell us more about the business and what parts of it do you handle?
+
+Andres Torrubia  7:50  
+Yeah, so fixr is the place where you go to make the best decisions about remodeling. So we run the site in the US, and now we have just launched in Spain. So, you know, you want to know how much does it cost to, you know, paint a room, etc. So we have great content. And then if you make the decision of, okay, I'm going to go ahead and build this project and this project, then we can hook you up with local companies in your area that can give you estimates. That's what we do. And as you are thinking right now, it's very detached, right, from machine learning, etc. Later, so as a CEO, you know, do what, you know, from the there's there's few things CEOs have to do high level, you know, it's finance, setting the strategy, and then making sure hiring, we have the best talent that we can. So I do those three things that really, the company is doing well, so we don't need financing. We've been you know, in the business for 10 years, so it's done enough. So, so on that front is good. And then the new thing that I'm doing, and it's a consequence of, you know, this machine learning journey is so before as I said, I started the journey for, you know, intellectual curiosity. So it was not about okay, I want to study deep learning because I want to apply it in my business. So it was not the case of a solution looking for a problem, which,
+
+Sanyam Bhutani  9:30  
+It was just out of curiosity for you
+
+Andres Torrubia  9:32  
+curiosity, and then what has happened down the road is I started feeling like a hammer down at, you know, was the name, nails right? So it's, you know, so every place I look in the business, I have, again, a software 1.0 bug, and also I see okay, why don't we do this with you know, prediction component, instead of having you know, these, you know, old style rules to drive this process. So then then suddenly, everywhere I look, I see things that we can approach through machine learning. Some, you know, I'm often annoyed to do deep learning, which will come later.
+
+Sanyam Bhutani  10:14  
+Got it? So now there's a question from Alison Davy. Could you tell us what made you sign up for your first competition? We did have an interesting conversation offline as well.
+
+Andres Torrubia  10:27  
+Yeah. So yeah, that was that was super fun. So what happened is, so say I joined the Udacity Nanodegree. And then there's initial term, which is three months, and those three months there's just I think, one or maybe two, there's two exercises, two projects. One is the traffic sign recognition. So it's very simple if you will use classification, task classification only detection. So it's very simple with it in terms of flow, etc. And then the second property was our behavioral cloning project when you have to, you know, driving a video game kind of thing, doing a neural network to predict the steering angle, right? So with those two projects, remember, I came from nothing, right and having no idea machine learning, and three months down this path, I've learned to implement, you know, neural network, which for me was a huge deal back then. Then I felt like I had superpowers. Okay, so what happened is right after I finished the first term, okay, three months, then Udacity and DD, you know, the Chinese Uber launched this competition about, is basically you have to be a real time real time detector of pedestrians and cars, okay. And so the inputs are really all of the sensors that are supposed to be in the DD car with his team lighter. It was only We go correctly 32 channels later. So the channels are really the lasers. So there's the lighter basically, for those that don't know, is the sensor these these kind of early sensors that are on top of the car, right very expensive. Some of them more than an actual car, then they they have lasers mounted like this, that is spinning a circle. And then the lasers record the distance that the light travels and reflects back. So you have and then you it's been in maybe it's been 10 or 20 times per second. If I recall correctly. 10 this kid was 10 times per second. And then you get for each, for each spin, you get a point cloud so he's always like, black images with with points is kind of like matrix the movie. That's it later reading so you get it petition to God the lighter reading of a that is going you know around and then you also get cameras the camera and you get some of the sensors that you know you're not going to use like the gas you have left etc. So this competition was about getting all those sensors, you know as many as you can or as few as you as you can, and then predict like like putting a bounding box in 3d. The obstacles. Now, what happens is something that in the literature which I didn't know the time is called the Moravec paradox, which is things that for humans seem super simple, but are difficult for computers. So what happened to me was a perfect storm between the Moravec paradox man my other confidence of Jessica in three months of this journey. So I
+
+Sanyam Bhutani  13:54  
+also worked in the software domain for like, before jumping into the machine learning domain you had been active
+
+Andres Torrubia  14:00  
+Yeah, yeah, so I think the so I think I had a good start in programming, although I didn't know any Python back then. But Python is a very, you know, benign language compared to C or even assembly language, which was my origins in assembly language. So you can imagine then also decent math, you know, from university, my studies and then also systems like building a computer, you know, running Linux. So all these three things are I think, prerequisites I already had, so that's a good start. Okay, then but then the machine learning. So then but then what happened is okay, this looks easy, right? Like, if you look at the point cloud, you can actually kind of see where the car is. I know how to be new another word. So this is a piece of cake.
+
+Andres Torrubia  14:50  
+Piece of cake. So
+
+Andres Torrubia  14:51  
+So what happened is by first like, so during this competition, the ground truth as usually happens was a nightmare. I spent lots of time Integrity, ground truth. And then I studied papers. And I was very funny. So the, they were like to kind of they were like 2000 teams. And the first the first stage was to get just 50 teams out of the 200. So I found it was very new back then very, very new. This paper about that was I think, as far as I know, the first paper that dealt with point clouds natively. So in deep learning and machine learning things are easy quote, but easier when the data has always the same length right? is a structure for images. He said, like a dense matrix of pixels that you fit in, and always they don't change right. But a body is different. Great a boy.
+
+Sanyam Bhutani  15:53  
+Who could you for the audience who don't understand what is a point cloud could explain that?
+
+Andres Torrubia  15:58  
+Yes, I point Like a set of 3d points,
+
+Sanyam Bhutani  16:05  
+a 3d image of who if we may gather from a leader center?
+
+Andres Torrubia  16:10  
+Yeah, but it's not an image. So the each item in this set are like a minimum three coordinates like x y&z
+
+Sanyam Bhutani  16:19  
+so 3d photo graph situation from which we can generate an image of objects.
+
+Andres Torrubia  16:24  
+Yeah, you could project tackle, you could project the point cloud, which is what you are showing a point, a point cloud, you are really looking at a 2d projection from the perspective of the car, or from the car from one side, right to that side to the prediction, but the native point cloud is really a set of points. And the difficult thing here is, is a set of points so the order doesn't really matter, right? So if you had the order in which it appears in your array, let's say you're in computing, right, it doesn't really matter, because each one has its coordinates. So That's, you're going to start to see that that's difficult, right for machine learning to deal with, you know, a set instead of an array, right, which which the order matters, were a sequence in with your reminders. So in this case, it doesn't really matter. And then also, it was difficult because it's been had a different number of points. So that was also difficult. So but then I found out about this paper, that was the first one at first I know, I know, that dealt with pointers natively, which is called pulling it from, you know, a team in Stanford. So I implemented it. And with thanks to this implementation, I managed to get in, in the 50 in the first stage, 50 seats, but then, so as you know, I only have like one computer. I was a GPU universe decent, but you know, just one GPU, and they have some data, this competition, so I go to never have like a meter.
+
+Andres Torrubia  18:00  
+Which, you know,
+
+Andres Torrubia  18:01  
+was enough to get me in the 50 cut the first stage. And I thought initially that it was just a matter of Okay, the the machine learning algorithm, or the learning hasn't really converge enough, right? So for me, this is going to be easy. I'm just going to rest, and right. But then one day was I was running, and he was obsessed with this problem. And it was like, in my mind reviewing the paper, and then I thought about a few assumptions that they make in the paper that we didn't really match the exact problem of that I was dealing with. And then I email the author. And I said, Hey, you know, is this ride what I'm thinking? And he said, Yeah, that's right. Which means that all my stuff wasn't doing really to get me any higher. So I had a crisis like then it's funny because the same has kind of happened with this molecular competition. I will I will get into that later. So then I have to like rethink everything. And then long story short, I instead of looking at LIDAR as 2d images, which is most what most people do, they meet projections of lighter. Some like a planner predictions like from the top from the sides or they're like do they do is very good reaction of cylinder predictions. And but but then I said okay if all these teams and they working from universities from companies are really focusing on 2d predictions, that's the path I cannot take or that but I shouldn't take because these guys are experts in this thing and there's only three weeks left they have to really switch my mind and then I can see their
+
+Sanyam Bhutani  19:40  
+total duration of the competition. So from when you entered, how
+
+Andres Torrubia  19:44  
+three months I actually enter like one month later. So last year to last one month. So so I thought okay liner is really if you think about it, I won the signal. Each each Right of later. So basically what I did is consider later as a sequence, right as it's moving, right? And then if it's a sequence, you could work with RNNs right or SDS. So then I built you know, a point segmentation algorithm trading the later 16 beans us like a 16 dimensional one the signal, okay, if you will, and that really work really, really well. And there was some interesting real time because but then you didn't really need because he was like, very long sequence like 1024 to not lose like angular resolution, but then I was able to segment so you know, long story short that I very few, like two weeks before the deadline I partner with with a Russian teammate. Not you know, One had a really, you know, good experience in in a tool that they wanted us to read the solution which is called Ross are always robot operating system. He had no idea back then. So we can have a split, I was working on deep learning the perception stuff and he did the what is called the carbon filter for the rush implementation. And we ended up for in this competition. So there was, you know, I cannot fail to spoil because it was my first competition. And we managed to do it, you know, pretty decently because all the other teams have lots of brilliant experience. And there was one Russian team that was been working for like one or two years in a Formula One autonomous car. The other guys all were Chinese from top universities in China. So I think I felt, you know, really proud to to finish my first competition in the first
+
+Sanyam Bhutani  21:54  
+quarter. So, after getting the full position in that competition, how did Calgary come into the picture for you. When did you sign up for Carolyn? What was the point leading up to?
+
+Andres Torrubia  22:04  
+I think the so I think I did this one which happened? Yeah, I think I did this one which ended in maybe June or may 2017. And then I was a summer I didn't do much. And then I joined my first one in college, which if I recall correctly, was the governor one corvina competition was about they give you a picture of a car in our special setup the head and you have to basically do in Photoshop what is called the magic wand right to basically do a segmentation of the car. So getting the pixels of the car only the car and the background. So that was the component one which you see my image segmentation which is conceptually much easier than the lighter one of these is my first image thing which is not good indication. We're done segmentation, the challenge in this competition, whether the images were quite big number two, you know, back then. So we're like
+
+Andres Torrubia  23:09  
+10, ADP, images, right? So it was a in an issue to fit them in the GPU. So,
+
+Andres Torrubia  23:16  
+and I always so
+
+Andres Torrubia  23:18  
+so that that's when Carol came into place. And that was like, then I thought, okay, maybe you know if this, like with a JUnit rise, it looks like a
+
+Andres Torrubia  23:27  
+solve problem,
+
+Andres Torrubia  23:28  
+which, for many problems, it is implementation of larger big data set. And then I started, you know, I open this Pandora's box of things that are beyond just the implementation, like how do you have mean data and techniques were being done in Calgary, I was looking at the forum. Then in symbols, I have no idea what I'm assembled. Right. So then, you know, there's all these you know, very creative solution sometimes maybe not so creative when you just black symbols. Kind of blindly, but still so that kind of said, and then the community, right the community in Godot, you know, the and the sophistication they have in the train said, the public leaderboard and the privately the road, you know, not not many competitions have So, so sometimes you join a competition that is, you know, organized by a company, and they do not have this level of sophistication,
+
+Andres Torrubia  24:24  
+really like
+
+Andres Torrubia  24:26  
+the sophistication and also the competition, and also the fact that you could team up with different people, not for the sake of winning. So, I must admit that in the first one, I did it out of necessity, because to which I kind of had no idea of Ross. So that was kind of a mystical, but then cago is a good amount needed to learn from people that think very differently, that you think I have different experience. That experience may be about coding, maybe about data cleaning, maybe about tools. overtricks. So it's it's a thing very, very rich ecosystem. Got it?
+
+Sanyam Bhutani  25:05  
+And for context, this was your second competition. So nothing happened between those two competitions.
+
+Andres Torrubia  25:12  
+So
+
+Andres Torrubia  25:14  
+what could have happened?
+
+Sanyam Bhutani  25:17  
+Okay. Yeah. But did you take any other online courses or any other?
+
+Andres Torrubia  25:24  
+Well, yeah, well, of course, I became hooked to this. So I the one. But then I immediately saw the
+
+Andres Torrubia  25:34  
+the classes of 2016
+
+Andres Torrubia  25:39  
+that were taught.
+
+Andres Torrubia  25:41  
+You know, by by three, I think minimum three Fei Fei Lei, Andrej Karpatht then our Justin Johnson correctly at
+
+Sanyam Bhutani  25:53  
+CS231n?
+
+Andres Torrubia  25:55  
+exactly, right. So, and that's a superstar class. I think. Anybody worth their while in deep learning should watch that although his label as image they will be so that's so then I became completely hooked on you know i watch this reading videos etc so I didn't have any back then then after that I did firstly I courses but then to these before firstly I to Bono so in every reading of my career was an interest but then TensorFlow was too cumbersome for me like wrote into flow maybe with her research but for traffic it competitions Keras PW lightning so that was that was my my you know my transition so I was really curious, watching, just watching videos, reading papers, and then also studying like to follow people on Twitter. I think we are lucky in this industry if you will, or in this discipline or industry. Yeah, we are I think we are one of the very few disciplines that happens to have like a real time open dialogue about the breakthroughs. So somebody will implement like you see last week or two weeks ago with the optimizers I had the job like every day a new optimizer so you know we have you used to have Adam now you have like rectified Adam yeah then people started also like a day before came to look ahead, people combine those two and those all in the course of one week. Yeah, that's crazy in other disciplines, this meeting months before you start because you know, we have archive for open papers. I think that was like, okay, so I was feeling that. You know, we are you are witnessing like the, the the birth of a new thing like when I was with the scene, almost at the birth of the internet when I started I was like here is better because you can see things and the time from idea from from paper to implementation to production is super short. I think the shortest I've ever seen definitely.
+
+Sanyam Bhutani  28:14  
+So the next question is from the king of Kaggle kernels, artgor, or Andrew Lukyanenko. How do you balance time spend on competitions with life and work so do not sleep like Batman either. So you Bruce Wayne in the day and but when during night
+
+Andres Torrubia  28:30  
+so so muslin the day, you know, just like a regular job, I think we will touch on this later, I typically join for the most part, competitions where I can apply deep learning instead of conventional feature engineering, machine learning. Because I think that trend, there's this few reasons one is, like practical the direction in which society is going to generate more and more data, even though in some scenarios less data, you know, maybe like boosting algorithms may work better, right? That's not really the trend we are going we are going to work with generate more data. Labeling is easier, etc. So that's one thing.
+
+Andres Torrubia  29:18  
+And then the other from my personal perspective
+
+Andres Torrubia  29:20  
+is that typically when we work is, you know, you look at the Kernel in Kaggle, and then you see, you know, you think in your head, how would you tackle it? And this is just like background thinking. And then decoding as opposed to so the coding in server 2.0 deep learning machine learning, yes, much, much shorter than in some were one point or 1.0. Yes, change but traditionally that you wanted to do like a conceptually simple website. No, it's always weeks, right? According if not months, right as a team, right. Now that we have full stack, but before we used to have like a front end back in Yeah, it's crazy like rough friggin worse. Okay, so, so now this is like you have the idea ideas, right? And we know these frameworks, we don't have to do the the differentiation of the last function is automatically done for you. So, you know, the coding is just normal, there's nothing you could code in like three or four hours for so, yeah. So then, so, what I do so, how do we balance I try to be very strategic about what I do. And typically, we try to focus on competitions when I can apply new ideas. And we department has some for example. So of course, in the video I mentioned to was different because we use like a recurring and that was for later which I think nobody has done then from the other one from corvina. We need something different which instead of thinking that the uniform image, so we need like a first step
+
+Andres Torrubia  30:57  
+and then we need like a refinement taking like boxes of the permimeter has found. So it was kind of knew there was one dB, same thing.
+
+Andres Torrubia  31:10  
+And then I'd seen this approach
+
+Andres Torrubia  31:13  
+more polished because I was like two steps taking by doing by research of Uber. So we were into something, you know, new things. So I always try to focus on things that okay, even though if I'm not an expert Can I do it differently enough with small effort of Korean time, and then I can, like throw the ball into my computer. And then it's just letting you train for a few days, a check a study, experiment and launch it again. But that's not really a lot of time. It's mostly taking care of the computer
+
+Andres Torrubia  31:48  
+and training
+
+Sanyam Bhutani  31:50  
+but I again like to highlight that since you had this experience of working as a software engineer over the few years that also helpful so for me, for example, training something Might take maybe a few days that you could I imagine code in a few hours
+
+Andres Torrubia  32:06  
+Well, I don't know
+
+Andres Torrubia  32:09  
+what one of the things that traditionally one change I've done and thanks to fast AI and Jeremy Howard: is this idea of interactive programming which is historically I will use the gory mega you know Visual Studio or even like Sublime Text environment which you don't get immediate feedback of what you do. Sometimes you go in and debugging etc. So, definitely good like for production systems, which you have to know like, so engineering, like proper like mobile, etc. But then this brand of whatever engineering practices with interactive programming, when we when I was a kid, we used to have basic that you know, the person who said the computer would get better in terms of race and you even to load a game you have to program or type Something right to that was a good experience. So I think right now it's this this interactive, you know, interactive interactivity product, which you can immediately like lots of gold, if it's wrong, then you get just put another sell me much, much faster. I think that's a great advantage. But then of course know when programming really helps and that's something I I recognize sometimes a big rendered and and sometimes it's not bad yeah but also we have to keep in mind that Python against that may not be an efficient language in terms of you know, the CPUs per thing accomplished by server expressive and effective language may not be efficient, but is very effective. And today, we are trading efficiency for effectiveness. And I think especially with for beginners, you know, c++ is more efficient, but you know, would like as a beginner doing machine learning, which was was
+
+Sanyam Bhutani  34:01  
+also curious about the Arctic. I'm not sure if you checked it out swift for TensorFlow. So first a founder, Jeremy Howard is really pushing for it. What are your thoughts on that?
+
+Andres Torrubia  34:11  
+I think that's, that's, you know, I was, so
+
+Andres Torrubia  34:13  
+there's
+
+Andres Torrubia  34:14  
+people coming to me and say, How do I learn, you know, machine learning cetera, I said, you know, I'm thinking in my head, if you're like 16 years old, like, you know, do Swift, because it's the new thing that is coming. I see this, this this vision of getting the atomic unit, either of us through going through the lessons. So the atomic unit be being to no representation that gets compiled, instead of interpreted and the way things in Python are, because they are not in Python, right. By excetera, like, sense of flow by there's none of that is really Python. So you get a Python API, where that's it right. So that's going to hinder eventually and when you broke down like the trend today Look at the AMD processor is really more power processing and doing power processing in Python is a mess. And it's found that the Python community at large doesn't recognize that as a problem. You know, the famous deal you know the the the global interpreter lock thing that's to me it's crazy that you have to do things like Jeremy has like, tried to simplify somehow with the Barlow function which used to be Mongolia Yes. Do this Paolo helper function that But again, it's been processes sending when you launch many items he gets out of always handles for all the open files are get created. So it's a big mess. But it works, right. So my vision is, I'm really excited. So I'm really excited about the possibilities month today I'm not using it because with two reasons You're way too immature. Yeah. And I said don't have the time.
+
+Andres Torrubia  36:05  
+So because I
+
+Andres Torrubia  36:06  
+want to do, you know, less code and make sure it works. And also, as far as I know, and I may be wrong, every single release candidates, TensorFlow to, even in Iraq, even in Houston, is significantly is lower than pytorch. Yeah. And for competitions, speed is critical of experiments. So that's one of the reasons I'm not using TensorFlow to, even though the eager paradigm, which is, of course borrowed from either pytorch or even
+
+Andres Torrubia  36:39  
+pianos. Piano is
+
+Andres Torrubia  36:44  
+better than the graph approach, in my view, or easier.
+
+Sanyam Bhutani  36:48  
+So there's a question from Corey Levinson, I think this is specific to your current gold winning solution as well. But maybe you can talk broadly about that right now. Why does Why do you choose faster instead of native pytorch
+
+Andres Torrubia  37:01  
+I think so I've made the answer ready for better face this this imperative model construction instead of the graph defined model is easier and you know more flexible in my view and then firstly I see some top so you get lots of goodies from fasting. So you get like learning rate finder, one line of code rate for my paradigm right? You get training loop again like fit one cycle, one line of code, right. So is it difficult to be there of course, you can do everything, you know, manually Empire if you but then the beauty of fast AI, which may not be evident when you use it, is that if you invest time with the callback systems, then you can do I think everything you can do manually. You can do with a callback system, even in the in the current version, which is version one You know, so of course you have to invest. callbacks are easy. I think the most difficult part I had more trouble is the data bunch, you know, data blog API's, yeah. Because of the cascading way which they are built. That's where especially in a solution with a when you do not use the previous what they call the the library for vision for text, tabular, right? When, when, when you outside of those, like, walled gardens that are very things are easy. And then you have to build your own
+
+Andres Torrubia  38:37  
+item list. And, you know,
+
+Andres Torrubia  38:40  
+then it's a bit more, yes, it is, you know, I think it is more difficult than Cara's would Yes, had generator that is bits out data, maybe the unit is more low level, but you grasp it immediately. Whereas in first a you really have to buy into their architect Which you do, but requires a bit more of a learning curve. So I guess you get the best of both
+
+Sanyam Bhutani  39:07  
+worlds. For the audience I'd like to mention and this episode is being recorded on first of September, they are actually building the 2.0 of the library. And it's open to contribution if like, you'd like to invest time there. So you can maybe jump in right now and also learn the architecture as they build it.
+
+Andres Torrubia  39:24  
+Yeah, it's to me the the, the first day I so there's the fast.ai latest, I don't know which version is the course I think it's the three which is really the v1 of the library, right, yeah, you know, be three have like two parts. The initial part, which is, you know, is basically a walkthrough through the library, right. But then the second part to me was like mind blowing, like, really mind blowing like him. For me. It's very unusual for, for several engineering or for four months. perspective for the greater for library to tell you like how they do it, that workflow. And this rofo is very different from anything I've seen, right? So and then do anything from scratch, the way they did it, to me was like completely mind blowing. So if, if you've done this, or if you have not done the first a course, I really recommend like, you know, go to course to right now. It's very accessible, top down approach. You know, it's, you know, kudos to Jeremy and Rachel and Sylvia and on the first a team for building in, but then when you finish like, you know, the second version that they go into details,
+
+Andres Torrubia  40:43  
+why they did,
+
+Andres Torrubia  40:45  
+why they did it, and how they did it is just amazing. the only the only thing I really had which is a very picky, they've largely addressed I made a complaint in the forum and I didn't do anything In terms of fixing it like going to William, because I don't have really time, was it the naming? So there were some naming consistencies initially that they've like, CNN learner, remember image, new, they've, they've changed, they have different names so they change it. So there's then also my mind is still fighting generally between having all these crazy abbreviations that you It's time to read them you have to process for at least for me, I'm a native English speaker. So I have to see like, why, you know, they use you know, I don't know, you know, smaller vibration in these days. And the longer version in these others, there's consistency in naming, but again, this is you know, you can't really complain you're getting this for free.
+
+Andres Torrubia  41:52  
+Really, right. I mean,
+
+Andres Torrubia  41:54  
+he's done his journeys is funding this. So it's to me is like really mind blowing. There's no Like a company, like, you know, MX net, they have Amazon, right? doesn't flow. They have Google biters, they have Facebook. So there's interest in those three. So the interest here is pure and the interest, and they've been the library, not only from solid engineering principles, because of the high level goals that they have interest of making this accessible to me is just mind blowing.
+
+Sanyam Bhutani  42:26  
+I also follow on Twitter that Jeremy will never accept any form of donations for the first year football. So I don't know why or how they do it. But it's totally amazing.
+
+Andres Torrubia  42:35  
+Yeah, that's crazy.
+
+Sanyam Bhutani  42:38  
+Another thing I personally want to mention is once you get the hang of the naming convention, which may take a while, then it's definitely rewarding because then you can easily wrap your head around the architecture that we were just talking about and the complete practices. So if you like do invest some time there, it's definitely helpful in my experience.
+
+Andres Torrubia  42:56  
+I really wish I had the time to do version
+
+Andres Torrubia  43:02  
+clone myself. clone.
+
+Sanyam Bhutani  43:08  
+Okay, so the next question, I think you answered this in some extent, maybe you could code some examples, but Allison Davey asks how has would you have learned taking part in kaggle competitions impacted your professional life?
+
+Andres Torrubia  43:22  
+Yeah, so I think so going to already said so before I started from a Christian standpoint. So now I see Okay, why don't we do this and we're actually doing it. Now. I think the difference between our end is pretty obvious, right? The difference between there's few differences between a color competition and Production The first is in a company is a data set right that more often than not, you do not have the data set. Luckily, we already have the culture internally of being extremely data driven. So we already have and kept the data that we are using for training does one thing but then the other thing which is, you know, this The whole life cycle of, you know, the learning model is not really, as far as I know, we don't really have like super best practices for it like do do. Do you retrain every day? How does online learning work in practice? What is if you're deploying, like, if you do like automatic deployment, like what software that you do continuous delivery, that's Continuous Delivery work from the delivery models? Do they require validation? What sort of all these things that explode, that you can really, you know, understand and in the server to win a World, we don't even we don't get have the best, like several engineering practices that we have in this over one point a wall that we've taken maybe 2030 years to develop. So we are in you know, you know, data point almost zero in so that means there's lots of opportunities to do products and add Yes, in the summer too.
+
+Sanyam Bhutani  45:03  
+So the next question is, again from Andrey Lukyanenko, in go, how do you choose in which competition to take part in forecastle?
+
+Andres Torrubia  45:11  
+So I think he has to add something for me in terms of learning new things. So I'd really like challenges. So for example, in this particular prediction one, yeah, I think. So my teammate, I will reach out and say, Hey, if you look at this competition, I've looked at that I've looked at that. And it was, I think this is really difficult, right? Because they have different molecules is a graph. They want you to predict many different things in the same molecule, but there's not always the same things. So I have no idea really no background in in quantum mechanics or anything like that. And yes, know what I got high school level chemistry, which is just like drawing them out. I know when a different type of atom exist that's it. So so so again so this one he was like a challenge and yeah it was a nice challenge and again and also the fact that okay if I approach in this I do I want to do it in a lazy way which is leading machine to the the feature engineering So, so the same like I'm now I joined and have really low you know accuracy and score in this there's no one I Tripoli fraud competition. That is mostly Tabler data is really similar data there are only mines with some feature cetera and the Winning Solutions right now in the leaderboard had they have like, all muscle first I know all of them because on the forum, comment, etc. Us boosting unwerth Yeah, so and then like men are 15 nearing Begin the start of the other. So right now I'm saying, Okay, I'm going to get in this competition, but I wanted to learning, which so far so far is not competitive. I haven't seen really any competitive, good sport in the world with speed learning. So I'm trained. And of course, this is not using I've tried already You see, like the table are, you know, solution doesn't get it doesn't get at all, because there's things that like, for example, there are things that are legal anymore can't really see as your frequency of an idea, right? Or when you have like a double a data, new items that do not show up at all in the in the in the in the training set, and they are in the test set. So there's testers who strange to you know, disalignment so then I said, Okay, could I do what there was this, I think great solution from Previous one from the Microsoft fraud so not for the malware competition with I think his name is his CPM p CPM, CPM p solution that the manually try to align the two distributions manually. So I think so I'm doing this one, maybe I don't succeed, I don't know we'll see with the idea of trying to align two distributions with deep learning in which I wouldn't have to do anything to very against it. So it has to be challenging in a way that I give the best representation I can find. So the computer does my job.
+
+Sanyam Bhutani  48:48  
+That sort of gives us an insight that you always look for the talent but then you also live in a take a lazy approach, we'd like to just do the human parts and leave the computational parts for the computer.
+
+Andres Torrubia  49:00  
+Yeah, well, I think that's the promise of the learning. Right. And so far, it's shown that even again, if you have enough data,
+
+Andres Torrubia  49:08  
+the representations that that it finds are sometimes the issues that we do not understand sometimes those representations of some issues. We haven't built them. yet. He's already enterprise, right? We don't understand how the brain works. So it shouldn't surprise us that something that we've been inspired by, right also, we cannot really fully understand, although it's easier than the brain, but doesn't the idea so you can use the learning have enough data? You know, I think it's kind of good to be lazy in a way.
+
+Sanyam Bhutani  49:39  
+That's what you do. Which brings me to the next question, which is by Michel ml, sorry, if I got that wrong, it's Michel Can you describe your high level approach when competing in Academy competition and what is your machine learning workflow?
+
+Andres Torrubia  49:53  
+So okay, so I think we have approach going to be honest, I don't so to be the right answer. We is not my answer. The right answer is there is a great post by Andrew Karpati about how to tackle machine learning problems, which is very systematic like, first you build a model. And you try to overfeed with just one or very few samples to make sure that nothing is really broken. So that in this one point over Google and they will be what used to be called like a smoke test, right that it doesn't explode. Right? So that's so the right answer is not mine is Andrew Scott party. Answer. What I do, it's a girl in competitions is a different thing. And in a commercial product,
+
+Andres Torrubia  50:39  
+versus
+
+Andres Torrubia  50:41  
+the first thing is, you know, even before the data, I look at the current the current so notebooks that doing the exploratory data analysis, because there's great people that are really good at you know, showing the data. So that's even before joining, okay, what if I joined this, what I'm going to deal with
+
+Andres Torrubia  51:00  
+First,
+
+Andres Torrubia  51:01  
+if I'm then I also look at the metric, is this metric Make sense? Is it defensible? Is it not? Can I be loud enough? Good enough proxy? Then in my mind, I think okay, how would I approach it is can I come up with it? And this is even before joining. So just thinking about it, so this may take just one hour really looking at all these things and making your head the picture of how look like they will join done with data and then I do the things that I have suspicion that may be useful. representation or analysis. Yes, in an interactive way, not looks. It's way worse, that would people publish is very ugly. So you know, maybe I just get numbers, I don't get fancy pictures. Sometimes you have to do them. So that's the initial thing then I build like a toy model. Initially, one thing that I used to do I know in retrospect, is thinking really hard about the data representation. Okay, I think the input representation is key. So even in images that you may take for granted that you're going to throw in pixels, right, right, arguably pixels, sometimes, you know, depending on the scenario, there may be other ways for example kevanna competition right. So, you get JPEG pictures, right, internally. I think you may be both know that the pics are compressed right are two levels. So one is at the you know, kind of entropy level, which is you know, far outside of domain, but the other is in the color space. So, in images, machine learning models are usually doing with her up. But there's a thing a better representation because of how we perceive things which are being exploited by the sugary things which is luminance and chrominance. Right. So in the canonical tradition, for example, I did this, do netting which do with feed just one channel of luminance on the top. Right. And then once you do the downsampling defeat, the UMP tempts you save memory and you get more expressiveness. And also for competition, which is back then I used to have a more less powerful CPU. I created like a small, different Fork of the turbo, a big library, which incidentally first day I uses that you kind of get the components automatically so it's even faster gaping the compression, because he doesn't have to do color, color space reconstruction. So he's faster. So then so then you can use this. jpeg think more natively because The images are given given to us in jpg, right? And if you think about it when you decompressed your upsampling the image, yeah, so, so these things happen even before I start by then, okay, then I have to look if there is like an open source documentation that I can easily, you know, like, do surgery in, which
+
+Sanyam Bhutani  54:23  
+The lazy approach.
+
+Andres Torrubia  54:24  
+Yeah, exactly right, because I'm not building
+
+Andres Torrubia  54:29  
+a big library. So in that essence, that's that input orientation. So it's getting notice of the data loss function input representation bill as you know, simple model and then then he then you can almost see immediately right if your model different model gets different approaches that a good start, right so that's that's pretty good. And then uh, and then he's training is like the boring part because you know, Again, sometimes I agree with with your me that today you can do with one DB you would before require, like a cluster, but competitions are competitions.
+
+Andres Torrubia  55:13  
+Right? So
+
+Andres Torrubia  55:15  
+for like one this happened to us in the molecular one we lost a few last few hours. It for one decimal point, right? Maybe because there's thousands of team participating I'm more likely than not the top teams are using approaches that may be similar to yours. Just sometimes, you know, in symbols wins or more computing power wins. So you know, then you have to I ended up in my house with five GPUs. So I started I remember when I started I used to do had like retrofit my gaming machine. I like gaming, PC gaming, so I retrofit my den would have any means I couldn't game in More because the freaking computer was like training constantly right? And I couldn't stop it and then shooting a sub ID on what you can do checkpoints but you know, especially back then it wasn't so you know sure that you will get the checkpoint with all the optimizing optimizer data that you can resume. Right so so model training like I didn't do I see a ball and then it's just iterating that cycle at the very end as maybe you I'm not good at and symbols I'm not good.
+
+Andres Torrubia  56:33  
+But at the very end, you know, we
+
+Andres Torrubia  56:38  
+believe this is also I think when I do with power when I've done alone, I haven't done in tempo because I don't have enough machines, but it also has a few machines. So he's, you know, pretty good doing the assembles which is why don't touch
+
+Sanyam Bhutani  56:54  
+Okay, what would be this is slightly off topic, your favorite game maybe today and back from the days of tri-media. 
+
+Andres Torrubia  57:02  
+My favorite game. Okay, so that's easy question. So back from days of tri-media, this was really funny because stream media we did PC games distribution. And it was funny, because because it was working with games I got testing every day I didn't play much until Halo came out. Okay, so my favorite game, I would say all time, but one of my favorite games ever is Halo. When I very proud of equally proud is funny, equally proud of my machine
+
+Andres Torrubia  57:39  
+experience.
+
+Andres Torrubia  57:41  
+Like having finished Halo one two and three legendary mode to me, is like a super achievement like playing soul that an amateur with players I'm I'm almost embarrassed to say how many hours I've put into those games.
+
+Sanyam Bhutani  57:58  
+I never got past normal mode.
+
+Andres Torrubia  58:02  
+Yes I heard legendary especially in color to thing was crazy so and today to a very recent games and it's a very funny story so I think MGS Metal Gear Solid five right? It was because I'm this you're going to laugh about this okay so the game it asks you your name did you build your thing right before your bed for you for you today would you were born I type it in I forgot about it right and then I'm like I spent like many many months playing the games right good maybe it put 100 hours
+
+Andres Torrubia  58:39  
+in the game
+
+Andres Torrubia  58:40  
+and the day of my birthday which I have for God but they put my birthday in the game it was playing and then they call me you know in this game your base gets invaded. So sometimes your your home base get baited by a team like online team and you have to go by this how busy the game a few times. You have to go back undefended you're in a mission Hey they call you a boss come up quick base you know there's a problem in the base you have to come up with come back and defending so I
+
+Andres Torrubia  59:10  
+freaking out like they're going to steal
+
+Andres Torrubia  59:12  
+my things and go back to the base right and then there's all the base Members this is Sydney Happy Birthday
+
+Andres Torrubia  59:25  
+for God to I was like completely blown out by this like I almost cried
+
+Andres Torrubia  59:33  
+in the computer screen so that that's that's very recent and right now because I have like a super like incredible gaming gig because of the lyrics I have. My main machine is a thread Ripper with 32 threads. Okay 3x2080Ti
+
+Andres Torrubia  59:53  
+RTX current. Okay and Two in SLI so it's 4k With ray tracing all the all the bells and whistles, yeah, it says I play in a big screen with a projector. 4k projector. [I'm really jealous of you honestly.] So this is right now because I built a GPU I bought because of this competition. So the last one because also the visual editor and recently because my wife said Dr. Plus cerebral engineer has written he's got recently a PhD on a so we are like competing for GPU resources and so they had bought his third GPU for her. For us, I was training with the two of them because they have a computer. So right now and then with this third GPU, you get back to games for free. 111 was well theme, gum blood and the other was control, which is remedy control. So control so I'm right now Control, which is, of course the graphics are I think the best
+
+Sanyam Bhutani  1:01:04  
+The RTX is pretty amazing on that team.
+
+Andres Torrubia  1:01:07  
+Yeah, yeah, that's I think that the game because I bought Metro Exodus because of Ray Tracing. Yeah. But honestly, you know, it's a hard sell, right? Yeah. So far buying this game really makes a difference. So I'm playing control right now.
+
+Andres Torrubia  1:01:25  
+It's like a window of three GPUs and think I like going. Okay.
+
+Sanyam Bhutani  1:01:36  
+That's really interesting. So, coming back to the world of machine learning. Congratulations to you on your amazing finish on the molecule competition. Your team play second on the leaderboard and also Congratulations on becoming a competition Master. Thank you. I really love to get to know more about your solution. But before we get to that, could you help us set the stage And tell us what was the quote unquote predicting molecule property competition challenge about.
+
+Andres Torrubia  1:02:06  
+So this is like a
+
+Andres Torrubia  1:02:09  
+great competition, because not only is a challenge in Berlin, which I'm attracted to, but also because the usefulness for the scientific world, I think it's pretty high as the organizers, you know, explain in the description to is basically what the competition is about. It's,
+
+Andres Torrubia  1:02:31  
+you know, in, in, in chemistry,
+
+Andres Torrubia  1:02:34  
+when I studied chemistry, it was very experimental, right? So you have a molecule, and you have a very similar molecule, and let's say one of them explodes. You know, if you add water and the other does not, and they look the same, right? This doesn't really happen in physics, like if you see things similar, you can also anticipate the behavior, right? In math somehow. You see a formula there's exceptions, but you can anticipate I'm predict, but in chemistry, you know, when I studied when he was a kid, he was really unpredictable, you have to do experiments. So initially we did experiments. Now now, because molecules are very small right atoms, right? So it's Armstrongs distance, and that level there is like quantum interactions
+
+Andres Torrubia  1:03:21  
+that happen.
+
+Andres Torrubia  1:03:22  
+And that's really why is difficult to predict because we really didn't understand the quantum world, maybe 20 years ago, we didn't have the capabilities of simulating the one two world. So today, we have better understanding of the quantum mechanics that really, you know, drive those, you know, properties that molecules exhibit, and we can simulate them in a big computer. Okay. We can do simulations, however, take time in computer because you have to simulate crazy equations that are very difficult which I have no
+
+Andres Torrubia  1:03:55  
+idea and no
+
+Andres Torrubia  1:03:56  
+really interest of knowing. It's super complex regarding the quantum mechanics, which they don't have that. So. So this this group of universities, Muslim UK, I think they, they, they, they thought about this and say, Okay, we're going to simulate a real simulations of around, let's say 140,000 molecules that we
+
+Andres Torrubia  1:04:23  
+know,
+
+Andres Torrubia  1:04:24  
+we've simulated their properties in the in the computers, each simulation for each molecule takes one day or one week. What So, okay, so and there are more molecules, so 20 to 29 atoms of Max. So, and it's got you can calculate with these the types of atoms that they use and 29. Then there's billions of potential molecules. And I'm sure there's treasures in those billions. So maybe there's a molecule that can be a good drug for disease, maybe there's a molecule that could be used for solar panels. Maybe there's a molecule that can be used to struck oil from the sea when there's an accident. So there's treasures, right? However, we don't have the resources because it takes days or weeks to simulate the behavior. So they say, okay, could we do a shortcut? Okay. Could the machine learning community build a model that doesn't run the expensive simulation, and some can somehow, you know, shortcuts and that's it really quickly. So that's their motivation. Okay. Okay. So that's the, that's the context. So the first thing I did when I joined is I remember I emailed the organizer and said, Okay, this is great. It's a competition, but it's a challenging competition. I feared that what may happen which didn't happen, which may happen That something wins because some body has to win. Yes. But their solution may not be usable. Because it's not accurate enough, right? It's fast, but it's not great. And it will be, you know, with, you know, it's not waste of time, maybe they will say, okay, your machine learning is still mature for this problem. So that science, right, so you learn from the possibilities sometimes, because I asked him, okay, what is your threshold of success? And really, the organism responded, which was great. And he said he gave up both of these. Basically, these competition is measured by accuracy. And he's measuring on nobody's, nobody's making scale, which means that is the for those that don't know is the opposed of exponential. So from exponential you increase our beta goes really fast. You're here, going like one point down, it's exponentially more difficult as you go down into the score. So, he said, Okay, if people finish above minus
+
+Andres Torrubia  1:07:04  
+two, you know, I,
+
+Andres Torrubia  1:07:06  
+you know, it's not so good.
+
+Andres Torrubia  1:07:08  
+People finish between minus two minus three, you know will be good. But if people finish below minus three, I will be his word extremely excited.
+
+Andres Torrubia  1:07:19  
+Okay. So then I already
+
+Andres Torrubia  1:07:21  
+have like a goal, okay, we have to get to minus three.
+
+Andres Torrubia  1:07:25  
+So difficult
+
+Sanyam Bhutani  1:07:28  
+solution is minus 3.2 something. Yeah,
+
+Andres Torrubia  1:07:32  
+yeah, so there's actually, so I think we, we finished with well, point 01, or zero source to present a different login is exponential. And then our single model, one model only so far published. I think our model single model is the best. They use different symbols. So the God within symbols more score we use. I think it's more similar models because we retrain them. So we're not as diverse we lack computational resources. But our single model was minus 3.16, which was more precise that their number one, which minus 3.09. correctly, but again, so you know, at that level, every solution is, I think, super good. So that's, that's their, the framework for this conversation. So what they may do is they give you a molecule that can have, you know, three, five, up to 29 atoms, and they say, okay, what's the magnetic introduction to Beyonce reader know exactly what that is? Okay? Okay. It's called j kopplin. So it's a number, okay? So it's a number that's good to know, just a single number and a scholar number between one of them and the other is like the magnetic force, have no idea of really ladies. So that's, that's the idea. So that is, but then it's really For a molecule, you may have a to hundreds, but I think was 180 something putting in the data somewhere even potential coupling. So because in the water molecule years between age and the other age or age and the oxygen, right, so different combinations, but there are some combinations that are not really explored. Or maybe they're not useful, because there's a difficult problem race a molecule has, they give you the molecule with the atoms partitioning in space, right? You can derive the bonds of the atoms, you're going to be the graph and and then they give you the the, the kind of pair pairwise interactions that you have to predict the context. So it's a very tiny problem. If you look at the literature, what you're going to find is that the steady state of the art before the competition Because the top solution the three top solutions beat, the state of the ad networks are the state of the art. Previously, this competition was graph graph based models that think, you know, the input somehow in terms of a graph. And what I said again, say look, if I going to join this, I need to do something different. So I'm not going to look at graphs, because so let's see if we can get something that is different. So then same a war for rice or water can I think about a nice case of also the last function is is very easy, right? Because the metric is differentiable. No, that was easy. In theory, but it was easy, then to the station is the issue, right? So and there is indeed looking at the forum is crazy, right? They talk about big camera angles and quantum stuff. Right about the molecules and the bonds, the types of bonds, so you have to be an expert. So you have to be come on expert, I cannot become an expert in two months. So then I said, Okay, what I mean, what is the minimum representation that contains all of the information? So, you may be tempted to think it's a graph, because that's how we first studied chemistry. Right? But it's not really a graph in the graph can derive be derived there with the three points, very, you know, the atoms and their positions. There are no possible different graphs, there's just
+
+Andres Torrubia  1:11:43  
+that because of the laws of nature.
+
+Andres Torrubia  1:11:47  
+So with that thinking, I always try to feed the network, the most entropy, right? Okay, less redundancy and more skeezy graphing, maybe You said redundancy.
+
+Andres Torrubia  1:12:02  
+Okay, so
+
+Andres Torrubia  1:12:02  
+that's the first thing. We're thinking. Okay? So let me be it really becomes easier when you're studying this stuff. Because you'll be, I only am going to fit into the world within. And this is going to sound funny now, with an older set of points doesn't look familiar, like a point load in the Yep, yes, yes at a point cloud. Another point cloud. Okay, so number one cloud. Now the issue is that and that's it. So So let's say that you only have one source Adam in a molecule, and you have to predict get from one to Adam, the interaction we doing different items. Doesn't look like segmentation regression problem. It kind of does right. Because you have to predict a value for each point, right value. So, unless emendation is really a value by the end, you do like a softmax right? Or Or down in the network? Mind if you will, right. So, you know, why not predictive value acceleration directly? So that was the thing is very simple. Right?
+
+Andres Torrubia  1:13:14  
+So you, you have like a 3d point.
+
+Andres Torrubia  1:13:18  
+Yes, a cloud of three points, you have a reference Adam. And you have to predict. So then we use pointed, we really have experience with. So with point in, we managed to get a two minus 2.2 2.3 score, right. But then every experiment in the same way, you know, we were not able and then was very unstable. And I was thinking, why that happened in terms of the network. And it's because, well, you have to really dig deep in the point of architecture, because he's really
+
+Andres Torrubia  1:13:56  
+trying to find
+
+Andres Torrubia  1:14:00  
+Functions super high dimensional space that gets squeezed at the very end, who could so the data wasn't going to cut it in this competition. So, then then I thought okay, what other and this is a difficult question. So, what other architectures take an order sets of let's say items and order sets, again an order set,
+
+Andres Torrubia  1:14:26  
+right and
+
+Andres Torrubia  1:14:29  
+many right. So, in an image kind of the point is where it is it defines the image right? You cannot have all the points around. You know, by definition, the recurrent neural networks are already dependent because that's really a feature of them. Right. Fully convolution layers because of the weights how their instructor they know which neuron they are accounting for, for the weights and its position dependent. Also, not D kind of the barebone functional block like the fully connected layers, but then I look at the the I actually heard about a podcast with one engineer from will brain and DeepMind or you'll be now there's a good podcast that Lex Friedman does on a and he you know, like on the passing says that transformers, the inner blocks of transformers are pushing independent and they had to really come up with an idea of a position on information. And then I said okay, this is it. So I just remove the machine information. God is more complicated than that. Right? But that's the kind of the idea the idea is you can use actually, they don't former blogs encoders without encoding positions are where you would if the oxy anybody in the room item or your secretary doesn't matter because the positions are in the actual deck. Right? And then that was a that was a breakthrough idea, then then then would happen in that the transformers are huge to train to have you seen the famous or infamous? Like open a DBT to drama right here. Yeah. about releasing the models etc. They gave us I don't know, hundreds and hundreds of new be used to train those models because they are huge. Our biggest model was 1,000,001 sorry 100 million permute. Okay, is the biggest mall. So luckily for us because I'm also very impatient. I, you know, in May in this case, my teammate did, was more patient more patient than I was so he left their model streaming for longer. Nobody making My free be your home. Like I only put the max time I did train was like three days. Okay?
+
+Andres Torrubia  1:17:07  
+And
+
+Andres Torrubia  1:17:08  
+if we have led these models for running for one week, they have enough capacity to eat, you know, quantum mechanics and more.
+
+Sanyam Bhutani  1:17:20  
+I think unfortunately DistilBert came out just recently but Giving that a shot might have been interesting. [What does it] distilBert is a transformer from hugging fees. [Yeah, I saw it.]
+
+Andres Torrubia  1:17:34  
+They're like, Yeah, but this game like this before the competition. So strategically and also we have other ideas. So, so the idea the implementation is we take a molecule reference Adam, and then we we be like a point cloud of that. For defenses. Hello, we built a different point though, which is just moving the source Adam to the center of coding in space, that's it. But then we also have one idea that was the we internally call the sleeve this we call the atom transformer because we really take, we create, like one different molecule or atom. We call them symlinks by just changing the reference points, but then we also had these 90% implemented would really mean 50% in the real world. Magnus 90% implemented the molecule transformer. Okay think Kim number one and demon 3d which is could predict like all the couples in one shot but because we were tween and it was was working so red, we decided to invest resources in just train the models because we didn't have enough dbqs so if we had enough dbqs we will have trained for longer, and also, I have had resources to test the molecule Just some. If you guys better not that the atom transform, you know, that's that's the game.
+
+Sanyam Bhutani  1:19:08  
+For reference again, for the audience, are you talking about all of these molecular properties and quantum mechanics but did you or your teammates have any background or domain knowledge about this before joining
+
+Andres Torrubia  1:19:20  
+not nothing, nothing that's, that's, that's that's one reason why we actually consciously decided not to pursue this approach. So, so I say work at CERN. And but my my worker Sam was just an engineer doing testing in the electronics were working okay. excetera so we didn't really involve
+
+Andres Torrubia  1:19:44  
+quantum mechanic etc, and and Pavel my teammate. He's a sublinear working in deep learning. So he does have pretty solid, deep learning background because his actual job is engineering. How about
+
+Sanyam Bhutani  1:20:02  
+and for context, many of the top ending top leaderboard teams were actually hide a lot of domain knowledge and these people were stacked up against your team.
+
+Andres Torrubia  1:20:14  
+Yeah, that's a Yeah, but this is what always happens in in deep learning. You can see like an outsider coming. So this very similar also happen. So again, there was other competition that we have not discussed that I did with bubble, which is similar in there, too. But the most notable one was the talk about Diddy, but we ended number one in Alibaba, Alibaba, competition lighter in China with that was crazy. That was crazy. And some of the teams actually even the, it is funny, because we were like submitting and then I look at the Alibaba researchers that are winning the competition etc. They dealt with with point clouds in a very convoluted way. For later, we won this competition because again, the input the presentation, we change completely with the presentation of later, we made into a dense matrix better than predictions, which were not predictions. So it's kind of weird. Very, like he's kind of the gay thing like the, the native output of the sensor, but condensing a dense matrix that has some holes that you can account for in the lock function. And then we ended up number one, again, people that were experts in point clouds and they have the sophisticated, pointless architectures with voxels and things sometimes, yeah, it's so sad. So my view, you know, in our, you know, I think so when you're new and in many disciplines, when you start, you may be you You definitely been work, then it was a super complex and what a strive for always is For the solution to be simple. So that's, that's difficult. Sometimes you get it, sometimes you don't, I think that you should strive for simplicity in the solution. And it's not easy. So he's not he's not that easy. It's simple. Sometimes simple is more difficult. But I think that's what you should strive for.
+
+Sanyam Bhutani  1:22:19  
+That that's why I found it when we when I could see myself actually went to the competition while researching upon your profile, but I could see myself going up on that path of learning about voxels and the representation instead of striving for something totally simple, like you did.
+
+Andres Torrubia  1:22:34  
+Yeah. And then there was the other competition. What about feature engineering, etc, which was the one competition that I joined because I thought it was impossible. Nice for funny. So there was a the I triple IEEE camera detection. I don't know if you know about this. Yep. There was one that was so fun, because the idea here in this competition was they give you a picture Dude, I got CCI, right the the TV series to forget police. So is they give you an image. And you have to predict which camera made the picture out of the pixels. You don't have meta data, nothing now you have pixels only. Right? And not only that you can have pixels that have been compressing, gaping and blurred. Oh my god. So if you think about a third, this is not possible, right? To do this
+
+Andres Torrubia  1:23:30  
+today.
+
+Andres Torrubia  1:23:31  
+So then I remember I participate in this one. So you know just be like, blindly, right? If you let's say that you are like me to the restaurant, right? And you come to me, and they give you a picture of those cats. They look crazy to you, right? You don't have even right so but you put them in a box right with labels and outcomes. dog and cat, right? I was thinking if I was on your network, right? It's kind of crazy thing. Could I detect the camera out of the
+
+Andres Torrubia  1:24:03  
+pixels?
+
+Andres Torrubia  1:24:05  
+And so the question is, and gridding take a dog out of a cat. So, from the perspective in your network is a similar problem, right? So, if you are looking at each neuron right what he does, so it doesn't have high level motion for us, we have so then I did what everybody would do, which is put like a classification neural network and feed crazy data in right with the expectation that it will find something right without knowing what to find. Yeah, and then to my surprise was a there was a bit in gathers, you know, this tension about releasing kernels or public with with score. So it can have happened to me in a way that so I did it at home, I got pretty bad results. So they were like 10 classes, and they only got like 50%, which is more than tons but We're like, 9293 94 to really we're doing some way off the dollar. But you know, in a way, I wasn't ready to break the way because I initially thought it was an impossible problem. So I said, you know, what, I want to open source in the competition, but indeed have the solution. And Will this be patient of because it's, you know, pretty bad illusion, I mean, 50% with that somebody will find a box or help me, or help, you know, with the solution, of course, didn't have you know, it was wanting to spend time looking at faulty code, right. And then I was walking and I realized that he made a bug in the code. And you know, the worst thing coming from server 1.1 to point out is that the bugs are silent. Yeah. And the the greedy, greedy, greedy grading descent algorithm will do anything is power. To find the best solution, even if you try to sabotage him back, right. So in some ways is is your, your your ally, in this case when you have bugs is your enemy because he tries to hide the box that so so this is what happened here. So I found the bug was a simple minor sign, you know in the last function that was twisted right by steals banks to learn in spite of having a bad sign. And then he goes like I fixed it. And he was like 92, so suddenly was one of the top solutions. And it was open source. So what happened is that they took teams, they created it like crazy in symbols with this with my code. And I remember how to in the last day, I added like a cause was couldn't be, in retrospect. So with moving forward, that they said that you couldn't use the code if you were doing in symbols Because, you know, that was my license to use a code. But of course, the before I had published with this clause, you know, people could just go back and take the older version, which they did, of course, in the so that was, but this is one example because some of the teams that perform worse were experts in optics. So they were looking for features like the chromatic aberration. The, the, you know, spectral analysis, the encoding of the, you know, cameras don't have RGB. So they have, I think it's called buyer, I think, pattern Australia up. So they were looking at artifacts of DVD reconstruction, so you have all the crazy stuff. Yeah, you have to be really an expert in this domain. And the top solutions again, they didn't in this case, there was just a blown in, I think we were in the top I think top five One of the the only team that didn't use any domain knowledge by thing, which in this case was an exception, I this, I think this would become the norm more than the exception.
+
+Sanyam Bhutani  1:28:11  
+Sure. So you just all about multiple GPUs as well. I'm curious, how did you effectively use these may be broadly speaking as well for other competitions? And how would these helpful and there's a question by owner but how did you track your experiments?
+
+Andres Torrubia  1:28:27  
+Yeah. So now he's way
+
+Andres Torrubia  1:28:30  
+more way easier than it was before investing. I
+
+Andres Torrubia  1:28:33  
+do yes. Due to Parallel
+
+Andres Torrubia  1:28:36  
+Alto and that's it. now have two different computers. So far, I have not tried to do distributed multi machine training.
+
+Sanyam Bhutani  1:28:46  
+So that multi GPU,
+
+Andres Torrubia  1:28:49  
+so my CPU, yes, so one computer have three, I've used three and either have two, and I've used to, I mean, and right now, but in keras, there's also multi GPU
+
+Andres Torrubia  1:29:01  
+Which is easy.
+
+Andres Torrubia  1:29:03  
+And then in in fast AI, this to follow, it has some issues. So like kind of backing the library that if you it may not be an issue with the library because you're running like an interactive programming code, you may execute like to borrow twice, and then it builds us to go back and then it's complicated because it fails on validation, but if you know what you're doing, you will be okay. And it's super easy to do and they were actually linear improvement in efficiency. So, like you you have to use you double I always try to squeeze the bad size or maybe you have like 11 gigs each, I try to put maybe 10.5 on each quarter not like yeah, Max Max the you be used and then you have to trade off between memory usage and compute so far, I always so far with the 2080 ti memories the bottleneck not computing because I always max out memory and also the the, the the computing paradigms for I don't know if that's the case with Finley I think the most powerful you can buy today is a Quadro with three, two, or even more gigs of RAM with crazy expensive drain the Quadro 6000 they made one which is affordable, affordable Titan RTX, which has 24 gigs, but then it has only slightly more computing power. And in this case, I'm doubtful that even if you have can feed more batches, that you have enough tensor you or wherever is called computing power to do all them in parallel, and they they were benchmarked I've seen from things called lambda labs. I'm gonna. Yeah, the better I've seen from nonetheless, lambda Labs is that it doesn't is not equal to two x.
+
+Sanyam Bhutani  1:31:18  
+2080Tis
+
+Andres Torrubia  1:31:19  
+Yeah. Another issue with having like three GPUs in my machine. Yeah, that is a big mess in the machine, right? Because
+
+Sanyam Bhutani  1:31:27  
+it will happen heating issues and even like PCIe Lane management things people overlook.
+
+Andres Torrubia  1:31:33  
+Exactly so. So PCIE, I actually bought the thread Reaper because we have lots of
+
+Andres Torrubia  1:31:42  
+PCI lanes. One issue that I didn't foresee was that if you mount like to have yourself going to as they Mr. Like 2.5 PCI slots, it means that you may get The place where you would feed the third GPU obstructed. So I had to do this for this competition. I also had to do the you know, do it yourself atronics they had to find in China, a flexible PC extender, God squeezing the crazy and then and then also in the competition I was getting these errors da da da you
+
+Andres Torrubia  1:32:29  
+know many people based on my surgeon a
+
+Sanyam Bhutani  1:32:33  
+loser Probably not.
+
+Andres Torrubia  1:32:35  
+So the error is in a circular error
+
+Andres Torrubia  1:32:38  
+that the GPU has fallen out of the bus like this cryptic right. And if you look at maneri in this error, you will only find find people that have been doing mining like Bitcoin mining, they have a dbqs right? And he's very obscure conversation about it could be PCI electromagnetic interference because it's a long cable could be power issues so it's but there's no like solution really. So I had to do like I I seal that I was looking I had to make a picture I shield it with aluminum film, the PC extender well and grounded in peace Yeah, so that was so I also for this competition to do like Howard trying to fix me fix it. So I messed around the three W's by need to like clean up the mess, so make a huge mess. But yet, it works so that the good news is super easy in a computer to have to. Now the only caveat I make if you plan to have to be us. Make sure that you address the thermals on the second gbu because he's likely going to get depending on your cooling system is going to get the hot air from the first floor. Make sure that this is addressed. So you have a good case.
+
+Andres Torrubia  1:34:04  
+I don't know. So
+
+Andres Torrubia  1:34:05  
+don't put the two up use go to each other if one of them has defiance going in these directions, because the this one either may die because of dermals or it may throttle down and you will get much worse performance.
+
+Sanyam Bhutani  1:34:22  
+That's the caveat. I'd like to drop a quick plug. So I've had an interview with Tim Detmer, who has this amazing write up about all GPUs. So please do check that interview out in case you want to find out more about all these GPUs. We've also talked about thermals there, so that might be an interesting conversation.
+
+Andres Torrubia  1:34:39  
+Okay, okay. Yeah.
+
+Sanyam Bhutani  1:34:42  
+So this next question by Michael ml, what computing resources would you recommend to train gold medal models in a reasonable amount of time? And what is the minimal amount of computing resources to be able to iterate and learn fast for a given problem in your opinion? Well,
+
+Andres Torrubia  1:35:00  
+was your first so to learn is really you can learn with cloud resources so you can learn with will call up an issue
+
+Sanyam Bhutani  1:35:11  
+they do give $300 in advance so that's
+
+Andres Torrubia  1:35:15  
+yeah well that's that's Google that DC right the Google Compute Engine 300 bucks but the Google collab is free [ok] 12 hours to get caught up so we've caught up so
+
+Andres Torrubia  1:35:25  
+you know it's
+
+Andres Torrubia  1:35:26  
+right now there's no barrier for learning right now competition competition so your competitors so this is an ongoing war, I think is the trend is to grow bigger as time goes by is unfortunately I think unless you are lucky some some some bad You see, like an internet competition you dumped in the head like either lack that they just got the right hyper parameters the first time Yeah, they were lucky because there's dozens of people participating. So luck is going to be you know, given to some of them.
+
+Andres Torrubia  1:36:01  
+So,
+
+Andres Torrubia  1:36:02  
+the minimum if you can if you want to buy right now I would go with you know AMD CPU
+
+Andres Torrubia  1:36:13  
+eight cores will be
+
+Andres Torrubia  1:36:15  
+pretty good triggers of fatigue when you do augmentation maybe Yeah.
+
+Sanyam Bhutani  1:36:24  
+Compared to it goes that way.
+
+Andres Torrubia  1:36:26  
+Yeah The only reason I recommend eight instead of six is because if you down the road want to move to a to GPUs, yeah, then your colored worries will be more expensive, you have to sell and then buy the other one. And then in terms of GPUs, I will get the I will if you can afford like a 2016. Nvidia because it has better support for hybrid training, mixing, training and that makes sense Because you can feed more memory. And then it was my experience 10 times with the RT x two x
+
+Sanyam Bhutani  1:37:07  
+faster. Definitely.
+
+Andres Torrubia  1:37:09  
+And it's just infest the I one line of code.
+
+Sanyam Bhutani  1:37:13  
+This one function, honestly not even a line. Yeah. So as you know, like, during a competition, you may be running 20 to 30, maybe even more experiments, or even dental in like a data science scenario. Could you tell us maybe what ideas worked for you and what didn't work during this molecule competition and some thoughts behind like, how did you approach when an experiment failed?
+
+Andres Torrubia  1:37:41  
+Yeah, I think, for us, the biggest
+
+Andres Torrubia  1:37:46  
+failure
+
+Andres Torrubia  1:37:49  
+failures, the biggest failure, we're was that
+
+Andres Torrubia  1:37:54  
+regularizing the model was super hard to get. So we tried Drop out with both the number one and number three, my son successfully current. We also tried adding like rotations and really was working great with our rotations and it ended up so it doesn't burglarizing the model our trainers, validation so validation was you know almost spot on with a label which
+
+Andres Torrubia  1:38:26  
+was great but then our train was so much better than validation so some models we manage it minus six
+
+Andres Torrubia  1:38:38  
+train loss instead of you know minus 3.1 we went 16 the best we got. So, there was a very clear issue
+
+Andres Torrubia  1:38:52  
+that I tried both
+
+Andres Torrubia  1:38:56  
+different schemes killing with decay didn't work. Try something I thought I embed it but it was really invented which is called cut out. Like I didn't know about it, I call it knockout, which in this competition was basically
+
+Andres Torrubia  1:39:12  
+wiping random items. Which India didn't show the year so I didn't get into mass. It was former like, wiping items like knocking out
+
+Andres Torrubia  1:39:25  
+a spotting scope.
+
+Andres Torrubia  1:39:28  
+That didn't work either. So double
+
+Andres Torrubia  1:39:31  
+three great. Good last but didn't regularize.
+
+Andres Torrubia  1:39:37  
+So that was I think our biggest thing that even today I do not know why it doesn't.
+
+Andres Torrubia  1:39:46  
+So that's that's something I need to look into because obviously could be further improve if we did right to relationship.
+
+Andres Torrubia  1:39:57  
+Yeah, that's, that's big.
+
+Sanyam Bhutani  1:40:00  
+So the next question is by WGWKa. That's the username on kaggle. What would be the first idea in your mind about feature selection and how do you allocate resources allocate resources, when time for example, be can being considered when the resources are limited cash will be the best example.
+
+Andres Torrubia  1:40:22  
+So, if I think that feature selection
+
+Andres Torrubia  1:40:27  
+you know, based on the unspoken procedure is a pretty moot point because I tried not to do normally. So, I think the answer is shifting the answer is trying to have to find the input representation with the most entropy. extract the data and has like a very nice matching machine model that you can feel it forever be an independent resources No BS, it depends on each one of these and really one of the challenges. So, but I am it's a try not to write too much code and the computer.
+
+Andres Torrubia  1:41:14  
+that's, to me the question would be right now, do I get
+
+Sanyam Bhutani  1:41:23  
+that degree?
+
+Sanyam Bhutani  1:41:25  
+So, the next question is by Grant, what are the things that help you increase your score gradually and the strategy you use there and maybe if you could also summarize your final solution that made it to the second position.
+
+Andres Torrubia  1:41:40  
+So, so in terms of gradually increasing in our case was just a hyper parameter search
+
+Andres Torrubia  1:41:50  
+few things,
+
+Andres Torrubia  1:41:52  
+number of years
+
+Andres Torrubia  1:41:55  
+the with optimal number of attendees hits,
+
+Andres Torrubia  1:42:03  
+number of hits and the dimension of the
+
+Andres Torrubia  1:42:08  
+aggregate of of hits of the attention. So those are and we just basically started like trying different things. And I must say that this is an area that we could have done a better job especially, we had more confusion. Because we have been especially being more disciplined in testing the most technical conditions. So you say okay, we'll leave this for 330 books, which is reading and then at the end sometimes what happened to me is I got excited I got this idea of knockout pan with the model was like need training, I would kill it. Okay.
+
+Andres Torrubia  1:42:50  
+I got finished training with Naga It was kind of a weird mix. So because you know, of course, if I had like to, you know, several resources I train and the very last days I rented in a place that
+
+Andres Torrubia  1:43:09  
+is called fast to the AI.
+
+Sanyam Bhutani  1:43:11  
+They are pretty cheap or multi machines
+
+Andres Torrubia  1:43:15  
+super cheap compared to the others now released from their business were able to have of course, this price cuz comes with it. You know it's been, but you know, for us to run a few treatments, three spent somebody asked me how much do you spend so it's been maybe like 6070 bucks. I rented like two machines with for 2080 ti speech.
+
+Sanyam Bhutani  1:43:45  
+For reference, I believe on AWS or maybe GCP. This would easily be above 200 $250.
+
+Andres Torrubia  1:43:52  
+Yeah, so it's
+
+Andres Torrubia  1:43:54  
+cheaper also, but I must say also add for a few hours. I tried this preventive thing to kill it. I tried again, eight, eight v 100. machine. No. Okay. Anything already more powerful. It was racing with us.
+
+Andres Torrubia  1:44:14  
+Us buddy was like
+
+Andres Torrubia  1:44:17  
+incredibly fast, but it was super expensive. So I bought just know that you can wear this single preemptive that is super cheap, but they can shut it down. Right? America makes sense when you do this in Amazon, you know, they don't really sell you down this offer. But in Google Cloud, it was shut down every like two hours. I couldn't I couldn't use because, you know, training sort of maybe you know, maybe it was like company to be like a filtering system that need to restart due to recent training to super light. But I didn't have the time to be was like three days before You got it's not difficult, but you have to do it,
+
+Sanyam Bhutani  1:45:05  
+too. And if you could maybe give a very high overview of the final solution that made it to the top of the leaderboard.
+
+Andres Torrubia  1:45:12  
+Yeah. So the final solution sites, the input representation is just just the three coordinates that against you the trainset
+
+Andres Torrubia  1:45:24  
+just normalized, like miners there mean divided by the universe the motivation for that mean 01 which is
+
+Andres Torrubia  1:45:39  
+Nila meditation, and then you get the atom also and the cuddling tight, and they have like eight types depending on the different atoms. So how do you fit in with the drama has, let's say 266 56 dimension. So, in this factor is three, first is the equation, right? Two and the other is just for the remaining 253 they mentioned so he's like an embedding, embedding, learned learned embedding of the atom type which is good really encoded, like last one protected right studies. So the particles that are familiar with so you expand it into embedding which more dimensions, which could be, you know, in my mind, like my mind
+
+Andres Torrubia  1:46:40  
+the, if I on a neural Network,right?
+
+Andres Torrubia  1:46:46  
+So right now it only knows that these type three, right, which we know it's a nice
+
+Andres Torrubia  1:46:55  
+right but then it is a huge factor of 120 something Dimensions could find or learn, like physical characteristics.
+
+Andres Torrubia  1:47:06  
+Right? So let's give some room for the model to be a good fit, right?
+
+Andres Torrubia  1:47:16  
+And then same for the Jacob. So does does the rest of the English really three coordinates
+
+Andres Torrubia  1:47:26  
+and the coupling type this guest and this really gets into pretty much Manila. Although puddle did some changes on sort of rules or new things over the years, but in mind, we're just vanilla money
+
+Andres Torrubia  1:47:46  
+transferring careers, medical there is any difference which is encoder.
+
+Andres Torrubia  1:47:52  
+So, and then there's that baby, the smaller model six layers and the biggest one was 2020 24 years to come. And then would you get the thing would you get the output. So on the output you get to these like 29 great to get into Muslim because some of the molecules don't have 29 atoms. So you have to mask that you can mask that you can use for the transformer, although it's not really needed if you do things differently, but it's better to use this as a mask. This is my spacing in this you tell the model a model, you cannot look at this position. Okay. Okay. So it's a way of for being able to look at this person, the mask right then he does the attention but the mask is for be the model in the language thing that you said to prevent them from looking into the future
+
+Andres Torrubia  1:48:56  
+because in theory
+
+Andres Torrubia  1:48:59  
+so we only Look at the value items. And then the last function. It's very straightforward. The only caveat is that because none of the 29 items have decoupling define, is really mask, we build a mask of which was everybody. So the last question only uses that was a valid. That's
+
+Andres Torrubia  1:49:23  
+for simple and the only thing I'm missing is it at the very end of the tape 24 layers of performers, you have like the same dimensions as the beginning. Right? So what you do is we did
+
+Andres Torrubia  1:49:39  
+it's kind of a linear transformation of all the items from 200 256 to either for us, the contributions that were given to you, or just wanting to want to predict the final scholar contribution. And if you think about this, The one deconvolution because it's a linear transform with sure weights because the other mixes
+
+Andres Torrubia  1:50:09  
+convolution in one dimension. That's it.
+
+Andres Torrubia  1:50:11  
+And then that's it. That's, that's super simple. There's no there's nothing else.
+
+Sanyam Bhutani  1:50:19  
+There's no quantum mechanics in all at all.
+
+Andres Torrubia  1:50:21  
+There's no exactly I think the number one team they built that was
+
+Andres Torrubia  1:50:27  
+that
+
+Andres Torrubia  1:50:32  
+was really sophisticated, because it was really rough.
+
+Andres Torrubia  1:50:37  
+But I was gonna say it's like super simple. Christ.
+
+Sanyam Bhutani  1:50:47  
+So the next question is by Rahim, nnessee, the dean, how can someone develop the good habit of progressing on each competition? I'd also be curious, like what happens once if you start maybe on the publicly leaderboard and you're out of ideas. What do you do after that?
+
+Andres Torrubia  1:51:04  
+So I think, you know, there's there's two things. One is to look at the leaderboard. And then I would recommend that when you start you set your goals, like, what do you want out of the competition? Why do you want to win Ohio? You want to learn? Right? Very different. I think I recommend, especially if you're starting to, to say the word learning because I think there's a, there's a dark side of
+
+Sanyam Bhutani  1:51:33  
+gamification.
+
+Andres Torrubia  1:51:37  
+Sorry, the gamification thing was to team up to win medals, and you don't learn. So. So my recommendation is, do as much stuff as you can personally for girls Good idea, but including yourself, because each mistake is not a mistake. It's a learning experience.
+
+Andres Torrubia  1:51:57  
+And then I'm not So much. I mean, it's extremely competitive. And
+
+Andres Torrubia  1:52:06  
+and then if you're stuck team team app, that would be
+
+Andres Torrubia  1:52:12  
+the best approach. But I would also recommend to team up with maybe just one team member. Because if you team up in a big team, you know, you could be tempted to not do anything. Yeah. Or to do less that you would do if you were to do it with yes to that. So, so I've seen this a female few times. And so my career has been a big mix with with paddle. Every time we've been married. It's been a good experience with other people, I've teamed up sometime it's been good. Like, for example, in the data, the big data, what is it called? Maybe once a year.
+
+Andres Torrubia  1:53:03  
+Yeah, I think Yeah, yeah, the BS.
+
+Andres Torrubia  1:53:06  
+Yeah. But it was pretty good. But there's, you know, there's a female, and people that in their history people tell me that they have a race or anything, like anything, right? Nothing. So, you know, it happens, right? So it's, you know, this is really a game, but then again, it's a big team. So it was a person only can have the responsibilities more, you know, it's more defined than Venus. Right? And, and the reason I say I like to team up is because you get wildly different perspectives may be good in finding leaks, right? Which, you know, I don't, you know, get off I don't don't really explore Sometimes you don't find the leak, but looking at finding leaks, you find something that would be super interesting. I'm going to give you an example. So when we started the Airbus competition about the sheets that people found this league, were initially looking at something different, when we were trying to do was to
+
+Andres Torrubia  1:54:21  
+assemble, like a big map, like they would they give us more tiles, and we knew we could put it
+
+Andres Torrubia  1:54:29  
+right to build like a build map. And then we could do better with a chance right when you have this big map, but then what we
+
+Andres Torrubia  1:54:39  
+found was that the lower left and that really was like crazy, because test and train.
+
+Andres Torrubia  1:54:49  
+Right. So although we were not looking for the link directly, indirectly, right, and that's, so that's a different way of thinking right? Which maybe I would have not Thought that will given the data in the state that we were given to hand on the semi tank, right? Because we did this and then you know, they have to cancel the competition, get the new data and redo it. But but then like we lost interest
+
+Andres Torrubia  1:55:18  
+I think we didn't even So
+
+Sanyam Bhutani  1:55:30  
+what advice what best advice would you have for someone maybe who's just starting on Kaggle to just learn?
+
+Andres Torrubia  1:55:38  
+So when I said is this, try to do it yourself even if you fail?
+
+Andres Torrubia  1:55:45  
+Don't
+
+Andres Torrubia  1:55:47  
+Don't get upset with the with the rankings or the leaderboard? Because it's like super famous, I guess with
+
+Andres Torrubia  1:55:56  
+There is about even the Kaggle masters You know, some of them, you know, they when they started they got pretty bad results. Yep. So that's normal. There's people laughing okay. I am frustrated because I'm seeing all these great solutions. And I fear that I'm may not be up to the task, you know and we will start like that. And the angry said came up initially, especially initially female with few the members. So you actively have to work because of the ways is to as you mentioned. And the third is to read in depth solutions for competitions. Is it much better if you have participated because you know, firsthand what you're dealing with, but even in competition, you have not, do you may see like a new keyboard. Like, for example, I remember in the government competition, because just like it my first look over the top team used, like, who they call like, level two livers to be symbols. Yeah, they get stuck in I had no idea like a poster poster like, I thought it was like a library or like, like a deep learning architecture, which I didn't know about even like remissed. Me will will give you pointers
+
+Sanyam Bhutani  1:57:22  
+go to the next question is by Raheem, how can African guys also have a breakthrough when dealing with Kaggle Grandmaster, which I'd like to reframe as how's the if you may elaborate on that machine learning scene in Spain. And just to elaborate on the fact that most of the online learning for you, I believe, comes from calcula and online resources, not just the local community.
+
+Andres Torrubia  1:57:45  
+Right, so, so addressing the Africa, so there's there's of course,
+
+Andres Torrubia  1:57:52  
+Africa, but I would point the person posing the question to resources, one of them is There's a community and a conference called people are in della. Yeah. Which know if you're in Africa may be worth look at. And the other is, firstly, I forums, which is study group for Africa. So that's, you know, started for in Spain. So, again, most of my stuff, actually, there was one thing that I did, they haven't mentioned, which is interesting. I think the only time I've learned like physically being in a place to learn deep learning, was when I went to a summer school 17 Yeah, like one week of summer school in Spain in the bow, okay, which means, like our first one, we first your best, like, one week learning experience ever because of faciliate You know, it was there were people coming from the vector Institute.
+
+Andres Torrubia  1:59:00  
+People from Facebook, from Google, from Microsoft. It was great, great people
+
+Andres Torrubia  1:59:09  
+you know, keeping up the talks.
+
+Andres Torrubia  1:59:12  
+So that was and there's there's there's lots of good summer schools for deep learning many places of time. It wasn't Europe. So the stage 2312 place in I think we're so in more.
+
+Andres Torrubia  1:59:27  
+Others few in Canada in the US there is a bunch. And in Asia, I don't have the luxury of speaking any of their language. So I don't really know. But I'm sure there's banks in China, maybe Japan, and then Korea, and then into some global community. Being
+
+Andres Torrubia  1:59:48  
+in a in Spain, we have to, I think two big communities are sort of slide groups. One is that one of them is go mnh like machine learning style, which also includes Bonnie Spain, but every Spanish speaking country, especially
+
+Andres Torrubia  2:00:10  
+in Latin America, and the other is machine learning. Spain, Spain machine learning friendly and those run through slack.
+
+Andres Torrubia  2:00:22  
+In my city, there's no really
+
+Andres Torrubia  2:00:27  
+in terms of like, community, there's at the university. The DJ study is studied in a different university. But in my city, really contain the, their postdocs and, and PhD students. They run every two weeks one like a meeting which is open, and also we do in my city. We organize like a conference more geared towards the general public. So it's really like But it's pretty good because I think there's one thing that is missing. So right now, you and I are discussing the how, right how we do things. But I think the bigger question is the What the Why? What do we want to do with AI and machine learning? And why do we want to do it? The term and then this? I think it's going under the radar. I think we do have some responsibility as practitioners to educate. Because I think the worst thing that can happen is to have people have no idea what they're talking about, to either regulate, regulate
+
+Andres Torrubia  2:01:44  
+or speak about the Terminator scenarios.
+
+Andres Torrubia  2:01:50  
+That's crazy, right? That's a great thing. We do have some responsibility. First one on in terms of
+
+Andres Torrubia  2:01:59  
+trying to Have this set understand, think the best example, at least I've seen is in Finland, where they have, like, you know, General like, you know, for everybody
+
+Andres Torrubia  2:02:14  
+like a training, open training on what AI can do, what are the implications? What is the difference between, you know, the ethics because ethics right by us.
+
+Andres Torrubia  2:02:27  
+The, I don't know if it goes this far into
+
+Andres Torrubia  2:02:32  
+the key into correlation, which is doing today, and causality which we're doing, and people think we're doing consulting, we're not.
+
+Andres Torrubia  2:02:44  
+So two things that I don't think we don't have our community in Spain is about the how, at this point, so it's your ears, etc. I think we are missing a big opportunity. In Spain, and maybe even beyond Spain, about having people really know what you're talking about, like Rachel from us, and others that have these higher.
+
+Andres Torrubia  2:03:13  
+Why want to do it? And what do we want
+
+Sanyam Bhutani  2:03:17  
+That's a great point, I think, also, like you said, What many people miss out is I'm just doing a Kaggle competition, how will this even affect ethics? or How will this even matter, but people generally even overlook things there and things like that, in my opinion, also adds to the origin of all of these biases.
+
+Andres Torrubia  2:03:38  
+Yeah, well, there's, there's, for example, there's one competition that I didn't join, especially because I wasn't really, you know, aligned with the goals, which is really weird, but I'm not the only one. I know. It was brought up before which is the
+
+Andres Torrubia  2:03:58  
+salt segmentations Yeah.
+
+Andres Torrubia  2:04:02  
+Remember this the side, like graphs about salt, which, you know, may not
+
+Andres Torrubia  2:04:11  
+have the secret sauce. Right. But what was the purpose of this competition was about drilling oil right now, so in my case, everybody's free to think you know what they want to think. But you make a new one, my coder solution to be used in our project that is, firstly understand maybe I'm wrong
+
+Andres Torrubia  2:04:34  
+would go against, you know, would make climate change worse because oil extraction
+
+Andres Torrubia  2:04:43  
+so I would rather work in a solution that address climate change instead of having instead of helping the most extreme cases like he'll be like a tobacco company become, you know, use machine learning to help people be more addicted right. So that is Like,
+
+Andres Torrubia  2:05:02  
+I don't want to work on that on that.
+
+Andres Torrubia  2:05:07  
+So maybe, you know, I don't need that scale. Yeah, it's all competition, but you want to join. So that's a good point, although it look like a nice competition. We've had some challenges. I didn't want to join this one. So that's, I see, I think you're, you're we are missing maybe
+
+Andres Torrubia  2:05:34  
+in terms of you, being
+
+Andres Torrubia  2:05:39  
+you know, be taking more ownership on the side effects are on the effects, right or even side effects on the effects of these technologies. We have to as engineer, have to
+
+Andres Torrubia  2:05:53  
+these both big movements and medium educated
+
+Andres Torrubia  2:05:57  
+risks.
+
+Sanyam Bhutani  2:05:58  
+I really respect that. perspective. So this conversation has been full of many great advises. So thank you for those. My final question would be what single best advice would you have for someone who's just starting their journey into machine learning?
+
+Andres Torrubia  2:06:15  
+So few things don't be overwhelmed. Because especially today, like every week, it's like I see the whole thing is being rebuilt every week. Because indication like you know, before Yeah, like it was the best right then when x ray white resonates you know what else right I'm losing track, right? Yeah, of things possible to keep track of things. Many of those you have to remember like many of those are very incremental.
+
+Andres Torrubia  2:06:48  
+So don't be overwhelmed.
+
+Andres Torrubia  2:06:51  
+And then, I would recommend to into some learning, like, have some training in the form of online free courses. You're not such a self taught, you know self taught a student, maybe you opt for paid courses which have great
+
+Andres Torrubia  2:07:09  
+experience, maybe if you live
+
+Andres Torrubia  2:07:12  
+in person, you know to do you know, like regular learning, then take the practice and right now the single best practice before like going to accompany is the current competition because you get so many angles and and it's the closest you will get to a real setting and then use the advice that top you know, beta also you've done interviews with great travelers and they also created back
+
+Andres Torrubia  2:07:47  
+so Fredo your
+
+Andres Torrubia  2:07:52  
+advice
+
+Sanyam Bhutani  2:07:55  
+Thanks. Thanks for the mention will definitely have this series link for those who want to check it out. Maybe for courses I'd also like to mention first note a it's my personal favorite and the only course I'd recommend so if you'd like to spend some money would add services. Go there in person have used that study group over there. I know it's it's pretty intense during those weeks. Maybe give that a shot but definitely take a fast day for the course. Yes, I will.
+
+Andres Torrubia  2:08:21  
+Yeah, I'm with you, I would recommend
+
+Andres Torrubia  2:08:25  
+two things. Firstly, I was 21st. Firstly, I, you have to ask me for a second one. I would do the Cs 231n And yeah, this number, the one that capacity in 2016. Although it may seem to you that you'd like the Middle Ages, even the speed that we are, but that one is completely different from faster the AI may respect you. Once you've done for ci and you want to take a different perspective. It's pretty. It's pretty well. Got
+
+Sanyam Bhutani  2:09:05  
+it. So this has been an amazing conversation before we end the call what would be the best platforms to follow you and follow your work apart from capital? Of course.
+
+Andres Torrubia  2:09:15  
+I think I'm most active on Twitter with the caveat that I
+
+Andres Torrubia  2:09:22  
+should.
+
+Andres Torrubia  2:09:25  
+And the reason is because we would
+
+Andres Torrubia  2:09:30  
+be an influence to have people down from somewhere to wait. Oh, so we're in Spain, which we don't have many people talking about AI. But even if I be in Spanish, I have to say they also follow like Japanese carolers. That, that reading Japanese, and they shall seek Oberon to translate tweets. So you know, you can follow what I say and without looking into your traveling, getting
+
+Sanyam Bhutani  2:09:57  
+started works well for you. So while I was on Your profile, it will fail on your tweet. So please don't let that barricade you from.
+
+Andres Torrubia  2:10:05  
+Yeah.
+
+Sanyam Bhutani  2:10:08  
+All right. Thank you so much for doing this interview. And thank you for sharing all of these great advisors today.
+
+Andres Torrubia  2:10:14  
+Okay, it's been a pleasure. And thank you so much for inviting me and both for putting this together I think is a great resource to have like a peek in, you know, I was reading interviews that are great.
+
+Sanyam Bhutani  2:10:28  
+Thank you so much. It's because of people like you who agreed to do them. So thanks to all people like you.
+
+Sanyam Bhutani  2:10:34  
+Okay. You're welcome.
+
+Sanyam Bhutani  2:10:45  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review, or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week. Time data signs
+

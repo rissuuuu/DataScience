@@ -1,0 +1,231 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:46  
+Hello and welcome to another episode of the "Chai Time Data Science" show. In this episode, I interview Andrew Shaw a fast.ai student and creator of music autobot which is an AI power pop music generator. Andrew has a background in Computer Science, iOS and software development and we talked all about his background and his journey into the field of machine learning and his journey as a fast AI student. We also talk all about music autobot you should definitely check out the website which is music autobot.com we talk about the idea the efforts and the tech behind it. We also discuss Andrew's journey as a fast AI student and the fast AI don bench result, you can find a link to the original fast AI don bench blog post in the description of this podcast. This is going to be a NLP slash transformer release in for the podcast on Sunday, which will be the next release. I'll be releasing the interview with the CTO of hugging face. And we'll be talking even more about transformers and NLP. So stay tuned for that for now, here's my interview with Andrew Shaw. Please enjoy the show.
+
+Sanyam Bhutani  2:12  
+I'm on the call with Andrew Shaw, hello, Andrew, thank you so much for joining me on the podcast.
+
+Andrew Shaw  2:17  
+Thanks, Sanyam. Thanks for having me.
+
+Sanyam Bhutani  2:19  
+So, before we talk all about how you will be putting EDM producers out of their jobs pretty soon. Tell us how did you get interested in machine learning? And when did you decide to start your journey in this field?
+
+Andrew Shaw  2:32  
+Yeah. So it started around two years ago, I left my job at Yahoo. And I was just a little bit burnt out. I was doing iPhone development for around six years. And I was trying to think about what would be like the next cool thing to work on. And just like do a little side projects, and at the time, the two big things were like deep learning and crypto. And so I was just take a bunch of video up watching a bunch of videos and a bunch of classes. on them. And as soon as I came across the fast AI video, I was like, Oh, this is it. I know, between crypto and machine learning this is machine learning is amazing, like the stuff that you can do from the top down. And so I got super focused on, on just taking all those classes from fast AI and, and from then I was I was pretty hooked on on this path. Got it? And two years later, I guess I'm yeah. So it's yeah, I got sucked into it.
+
+Sanyam Bhutani  3:28  
+Interesting. So fast AI was your first course that you signed up for? Or did you like juggle around with other schools courses as well?
+
+Andrew Shaw  3:37  
+I think quite a few. So the other one, I think is Andrew names machine learning course. That was the initial one that I took. Yeah. And then fast AI. I think there were still a few. There's a self driving CT course on I think Coursera that I also took for a little for like one semester.
+
+Sanyam Bhutani  3:56  
+Is it? Is it or the Udacity one?
+
+Andrew Shaw  3:59  
+Sorry. It was Udacity yes, I get mixed up between all the other videos I've been taking. But yeah, so I was taking a quite a few kind of deep learning and classes and it helped kind of just help me generalize, kind of the theory and the basics. 
+
+Sanyam Bhutani  4:18  
+Got it. So you've also been a huge an active member and contributed to the fast AI projects and the community as well. The other project that you've been a major contributor to is, and this was titled as 'how to train your image model under 18 minutes'. So the project where the fast AI collaboration happened to save the image net speed record for tinian public infrastructure, that's the title of the project. And now with auto music bot, so could you also tell us a bit more about your fast AI journey?
+
+Andrew Shaw  4:50  
+Oh, yeah, for sure. Uh, so I feel incredibly lucky to be on this like fast AI journey. So after taking that first class I actually realised this part two was happening in San Francisco and a block away from where I was. 
+
+Sanyam Bhutani  5:05  
+Okay.
+
+Andrew Shaw  5:05  
+So I was like, yeah, I might as well just drop in, and go and take the class in person. And so being able to take the class in person, I think what's really amazing about fast AI is actually the community. So the online forums, everyone there is just learning how to learn. It's just in the same boat. So everyone's just incredibly helpful. And so even being in person, seeing how Jeremy works, and and I think, part of that image that competition was through that class in person. Jeremy was like, does anyone want to enter this competition and see if we can beat out all these companies like Google and Intel, and then a couple of us 90 students are like, yeah, let's do it. I think we have a chance. And luckily, we actually got like pretty incredible results and surprisingly bunch of people with much less resources. So that's kind of a story. And then that's, that's actually it was like really inspiring to be able to, to do something and then with not without like a PhD background or a bunch of a huge research team and huge resources. And that's kind of what made me believe that it's possible to to kind of work in this deep learning field.
+
+Sanyam Bhutani  6:23  
+Have you followed the recent courses as well? So given your background and to the audience, I'd also like to mention that you built some amazing apps one also got the best productivity app or by Lifehacker I think, so. You're excited about the super TensorFlow scene that's, that's going on. And all that stuff.
+
+Andrew Shaw  6:43  
+I'm super excited but to be honest, actually hadn't haven't watched the the most recent lectures on combining swift and I was kind of heads up, heads down on this music project. So there's something I've been meaning to go back to and actually learn It would be amazing to, to actually,
+
+Sanyam Bhutani  7:03  
+Yeah, I would love to see some more projects in that zone from you. But we'll just talk about the music one in a bit. Could you tell us more about so I constantly talk about this team shout out to an episode with Robbert Bracco. He's a contributor to an unofficial Board of fast AI audio, but it's about learning to learn. And because it's fast AI, it's sort of this open ended question, how do you follow the material based and how do you take the material for yourself? So could you maybe tell us how did you approach the material and maybe, how did you refactor your approach as you went on with it?
+
+Andrew Shaw  7:37  
+I see. Yeah, I think everyone has different styles of learning. And for me, I found out what work best is. So another class actually, I think it is this one is on Coursera that I had watched was like learning how to learn and and yeah, that class they talked about this thing like Just learning and diffuse learning. And so for me, taking the fast AI course, what works best for me was actually just going through all the lectures really fast at once. And I know people say to stop, and then really look at, try to understand what's going on. But for me, it helped to just kind of get this general idea. And then actually, from there, if there's anything that inspired me, I would I would go deep into focus on to whether it was like, I think one project I did was style transfer. So arbitrary style transfer. And that was one lecture in in fast AI. And so I wanted to take this code that was in TensorFlow and converted into Pytorch. So all along I tried to to look at different projects that I might be inspired on doing. But I kind of briefly just tried to do all the lectures as fast as I can before I kept looking for I would lose.
+
+Sanyam Bhutani  8:53  
+Yeah. You first completed all of the like watch the complete videos and then written back to replicating the lesson course.
+
+Andrew Shaw  9:02  
+Yes, exactly. So I'll go through them very fast. And then there's parts in NLP or, or computer vision that I was interested in on different research I would go back into.
+
+Sanyam Bhutani  9:13  
+Great, got it. Now shifting gears to your recent project music order, what could you give us an understanding of what's the challenging aspect here? And what is music autobot all about? 
+
+Andrew Shaw  9:25  
+Yeah. So the general idea for music alibied is actually just a tool to help, I guess producers or anyone just trying to compose music. And this was kind of a tool I created for myself, because I actually just also started to dance music. And it was just interesting. How do I use AI to help assist me to to kind of build some cool melodies. And so the general idea of music is that we're combining a few like the recent advances in NLP and we do it in a kind of a clever ways so that you can, if you have melody, we can translate that into chords more, if you just have a few notes, we can kind of autocomplete that idea. Or if you have already have an existing song, we can remix that song into a different beat, or just change a few notes that you don't like. And the actual so when it comes down to the challenging aspects, I think the most challenging is, is probably collecting the data set and formatting that. And then like once you can do that it's actually a drop in, it's like, really easy to just use the fast AI code that train the language model, and then just apply it completely to music. And then after that, of course, there's a few like tweaks you can do and optimizations for music, but in general, it's just data collection, and then just apply fast AI language models to it.
+
+Sanyam Bhutani  10:48  
+Interesting. So once you came up with the idea, could you maybe tell us like how did you find the next steps of how do you tackle this problem? And maybe like, how did you find the ideas to explore? 
+
+Andrew Shaw  10:59  
+Yeah, so I think the first probably the way I structure most of my projects is just try to get a really good baseline going. So once I have an idea, which is let's try to apply a new transformers to music and, and and going from that it's just how do I get something working as fast as possible, which is what I learned from fasting, I just just try to get something and then from the top down, it doesn't matter if you're copying someone else's project or someone's code. So for me, there were there's, there's quite a few projects out there that are taking music data, and then and then training AI on it and whether it's like RNNs or other transformers. And so basically what I did was I took existing projects and I kind of modify that to the things that I would like to do.
+
+Sanyam Bhutani  11:51  
+Okay, so I think the project has been under the wraps for 5-6 months, I think, and could you tell us like what went on behind the curtains during that period, what was the prototyping experience like and motile idea as they do iterate upon?
+
+Andrew Shaw  12:08  
+Yeah, it's been quite a while. And my history is all that I wasn't sure when releasing it, I should just keep it all there. But I think it's important to see that in you know, this project took a long time and and for other people to see the whole process. And so for me, I don't have much music background. So this was something I thought was super cool. So in the meantime, I was learning kind of music theory, and then production on the meantime, and then also learning how Transformers work. So before I knew a lot about, I knew a little bit more about computer vision when we were doing that competition. And so all this was a little bit new to me. And it was a so those probably five, six months were a lot of switching between linear little bit music. They need a little bit about transformers, and every time I got stuck I would just switch over to, to learning about either music but switching between learning music and learning. A deep learning so okay.
+
+Sanyam Bhutani  13:09  
+Yeah, um, I was going through a code base, and I think it's somewhere around just 2500 lines of code. So on the GitHub page, I'll have that link in the description as well. Could you walk us through the code base? What all is in there? I think you've also created a library, which again, is music or toward?
+
+Andrew Shaw  13:27  
+Yes. Ah, so this. Yeah, I didn't realize this 2500 lines of code. If it kind of just grew that way, I'm sure there's a lot I can I can clean up. But the library is basically a glue between a Python framework called music 21, which is dealing with music data, and then being able to have manipulate it in a way so that you can train deep learning models on and then so so the two main libraries, I use where We're music 21 and SAS AI. So this whole library is kind of a glue between those two, to get things to work well together. So yeah, as mentioned earlier, the hardest part, I would probably say 80% of the data of the lines of code is around data formatting and data encoding. And then the other 20% is probably these models that I've combined together. And for training music.
+
+Sanyam Bhutani  14:30  
+Got it. So music 21 comes into picture of data set handling, could you tell us where does fast AI come into the picture for for this? How do you use fast AI in the project?
+
+Andrew Shaw  14:41  
+So I use fast AI for basically all the training that I do. So once I have that data set ready. I've used most of the same code to train a language model. I've used to train music model and be The only difference is I've changed the A lot of things are very pretty custom within fast AI. But fast dad makes things incredibly easy to customize. So the callback systems, you can kind of tell it to we're handling music data. So for data augmentations within music instead, what this is, is you're basically transposing the song from the KFC to like the key of E and that way you can multiply your data set. And there's a few other things that I've used faster I for the biggest thing is the training loop but also for parallel session across multiple CPUs.
+
+Sanyam Bhutani  15:38  
+Okay. So you'd already built on the image net competition Do you think your coat and go fast a experience was helpful from there?
+
+Andrew Shaw  15:47  
+I think so. I think it was very helpful for this project. The way she structured I guess the way they structure the project for me was first just kind of getting a pretty good baseline. And then the second part was actually just keeping really, really I think it's more getting a lot of logs, and then really keeping track of all your experiments. So I probably have maybe 100 more than 100 notebooks where I have all the logs of all my experiments and each, maybe sometimes it's just one line change so that I can kind of go back and take a look at it. So doing a competition, there's a little bit different from doing your own project from the ground up, but there's a lot of things that transfer over.
+
+Sanyam Bhutani  16:38  
+Okay. Now, going back to the data set collection part, could you maybe walk us through what the pipeline look like? And did you look into the legal copyright aspects of it as well because you also created a Chainsmokers remix. And now when I upload my video to YouTube, I'm always afraid of putting the song into the video. So Ddd you go through that as well?
+
+Andrew Shaw  17:02  
+Yeah. So a lot of the data. I'm not sure if I should mention this, but it was actually scraped from some websites or other music files were stripped from these sites that host MIDI files for free. And my basic understanding was that I think it's more okay to train on, but then not releasing the data set publicly. And this is after I went back. And when I was thinking about releasing the model, I went and talked to these companies that actually, I took a lot of data from, and then they said, yeah, it's actually totally fine. It happens. It does happen sometimes for academic sets. And so as long as you don't release any of that, and you keep it super secure, it's okay to train your models on that just just don't release any of that data. And so at least for me, I've only just released the model and then all the songs that I have are actually a slight variations of the of the actual song and only within like maybe 10 seconds, a 10 second clip of the actual song.
+
+Sanyam Bhutani  18:10  
+So you now let's say you have the data in place, maybe if you could walk us through the pipeline of the project. So I know it's pretty, pretty technical. So we'll have all of the four blog posts written by you linked in the description. But if you could give us a high level overview of what's going on in the project.
+
+Andrew Shaw  18:28  
+Yeah, I'm starting from the top. So it's this web app. And that is all built in and view and it's a static front end that that I posted on GitHub pages. And all that really does is it talks to our API server, which hosts a pre trained model that I've built on using all the music data. And that API and the backend is is hosted on AWS, and on the end, it's using flask. So it's basically receiving requests. So as soon as you click generate, we send that music file from the front end to our back end. And then we, we start, we start predicting from there.
+
+Sanyam Bhutani  19:20  
+Got it. And then wjat how, like, how was the model trained upon if you could walk us through that pipeline as well. So you have the train model put up in the flask web, but how was that actually trained upon?
+
+Andrew Shaw  19:34  
+So that model was trained separately, and I've I, in general, I use a Jupiter notebook and it within the project, you can see that see it, see the notebook how I went through this, too. But the first step is just formatting all the data and saving that and then I used fast as training code. Like one cycle learning, and we're a few other ones, so mostly just fast as training code to train the model. And, and then for the prediction part that was the part where most of the modifications came to be able to predict music notes instead of text.
+
+Sanyam Bhutani  20:20  
+Gotcha. So the main meat of the problem lies in a the data set and then generating the music. 
+
+Andrew Shaw  20:27  
+Yes. Got it. 
+
+Sanyam Bhutani  20:29  
+Now you also worked on a few recent architectures to code bird and transformer Excel along with CPC, which is an older model. If you could help us understand how did you went ahead and like research about these and how did you end up implementing them because I don't think fast AI has an inbuilt implementation of these.
+
+Andrew Shaw  20:54  
+Oh, yes. So that part was combining bird transformants you see. So the reason I did that for music was that, instead of just taking a few notes, and then auto completing that idea, with bird, you can erase a few notes. And then you can have the bird model, predict those notes. And so that's kind of like a little bit of a remix. And then for sequence to sequence of that sequence, the sequence is usually used for translation. And so what I use that model for was, if you have chords, you can translate it to melody, or if you have melody, you can translate to chords. And those models were actually something I had been playing around with separately. So when I was working on the transformer XML code, bird came out with these incredible results and I was like, I want to try bird see if it works for music. And, and so I had all these things separately, and the idea around combining them came out when I saw this paper called unified LM by Microsoft and the idea behind that was being able to combine a bird and, and these and the transformer XL be. So for bird, you have the bidirectionality, which helps with the context. But they're also super slow to train because you're only training on maybe 15% of the tokens. And so, the idea behind unit unified LM was to combine those both up, combine both and get the benefits of bidirectionality of bird and the training of, of the transformer. And so I read just the summary and I was like, oh, this is super awesome. I'm gonna go implement it. And it turns out, it didn't do exactly as I thought it was actually even slower in training. It wasn't. It didn't exactly combine the transformer in the way that I thought I thought it was. And so the idea of combining these three came from that was when that paper didn't solve exactly what I was thinking about. I was like, well, if I want to solve my problem, how would that work? And, and eventually I kind of, so it's just that that idea of combining the both both transformer and bird, where I built on top of it and then and then combine it in a way where we use translation and masking and, and forward prediction. 
+
+Sanyam Bhutani  23:23  
+Interesting. I'm curious how how much of GPUs went into this project, what all hardware went into creating music, artwork.
+
+Andrew Shaw  23:33  
+How much hardware went into this?
+
+Sanyam Bhutani  23:35  
+How many graphic cards?
+
+Andrew Shaw  23:38  
+So the training in the end, I'm using eight v one hundreds, and it takes about maybe 36 hours to train the whole model. So yeah, I'm using quite a bit of compute power to train this. And that's a lot because I have quite a bit of data, but you can shorten it.
+
+Sanyam Bhutani  23:58  
+But again, The results are pretty promising. So it's definitely worth it.
+
+Andrew Shaw  24:04  
+Oh, yeah, for sure. And I'm actually just training, I think a comparison, I'm training GPT too small. So if I would train a larger model, I'm sure take maybe double, triple the time of that. So there's still a lot of improvements that I can do on this call. I just don't have as much resources.
+
+Sanyam Bhutani  24:22  
+Gotcha. Now, I really love how the website function. So for the listeners, please go to music. autobot.com do check it out. But it works as like, as Jeremy always mentions with keeping a human in the loop along with the A. So was that intentional? And what are your thoughts around that? Do you think this will also enable producers to maybe be more productive? Maybe now version two.
+
+Andrew Shaw  24:46  
+I hope so. So actually, this last weekend, when I posted my project, Twitter saying that I would love to try to make a song with I assistant so this past weekend, we spent basically trying to do that and the results, we were able to get one verse out of it but we weren't able to kind of complete a whole song and that was the old always the the idea of this work that I didn't want to focus more on the performance side of generating something that you can listen to continuously. But for me, it was mostly focusing on pop music and building something that to help producers and I think that's where the state AI is at right now is that maybe chat bots are not quite there yet. Like a slowly replacing humans, but I think it's great for something maybe it's like autocomplete or, or helping you kind of change the style of your story or and I think there's a huge area in AI assistance right now.
+
+Sanyam Bhutani  25:48  
+So and you've been pretty honest in your writing as well that the fifth generation sounded pretty good for for the roses remix. In my experience, it was somewhere the same number. So what I how I look at it is maybe like allowing a human to just throw some ideas at the model and see what it gives back to, you know, maybe this, how will partner to bounce ideas off as a producer?
+
+Andrew Shaw  26:14  
+I think so. And I think, at least as, as humans, it's like, incredibly easy to listen to something and realize, hey, that doesn't sound right. But when it comes down to actually writing something from scratch, it's just it's a little bit harder. And it takes a little bit more kind of mental mental power to to, to write something from scratch. And so for this, it would be mostly yeah, just generating ideas. And some of them sound pretty bad. But also some of them are just like out there reading like, oh, that might work. And I'll just change a few notes. And yeah, so that's kind of the the whole idea behind it.
+
+Sanyam Bhutani  26:52  
+Got it. So coming to the part with this can be improved upon. So for someone who's maybe trying to improve upon this or trying to reach out to help you, what suggestions do you have, where should they start or any ideas that you have?
+
+Andrew Shaw  27:07  
+Yeah, within the whole music area, I think there's a lot of areas to to improve on. One is a is also just generating the actual sound. So right now I'm only using with using music notes. But if you can generate the actual sound in maybe using different instruments or in a different style, that's one way to kind of improve on this idea to to provide inspiration for for music producers. And as for as for other features, I think one thing that could also improve is that as you said earlier, like maybe one out of five, or or maybe like one out of 10 things like sound okay and, and to build, maybe to build like a music critic on top of that, so before instead of us having to filter out all the good and bad songs, we can have a music critic that can maybe filter out half of the songs back and decide, hey, this sounds like something that we trained on or this sounds This doesn't sound like anything is just a little bit too random. Mix it
+
+Sanyam Bhutani  28:14  
+But again, the challenging aspect is to be human. It's pretty easy to say that that sounds like trash. But creating a critic can actually correctly classify that would again be a challenge in itself, I assume.
+
+Andrew Shaw  28:27  
+Oh, yes. Yeah, for sure. So;
+
+Sanyam Bhutani  28:31  
+No, please go ahead.
+
+Andrew Shaw  28:33  
+No, I was going to say especially a critic, that is it's just designed for any person's taste. So what I think is good, the critic might not think is good. So having that tune, it is also very hard.
+
+Sanyam Bhutani  28:48  
+Definitely no zooming out a bit. So there's always this question of, should I end my project or should I continue exploring because nothing works until it does in machine learning? I'm sure many of your projects might have failed when you were building this project. So where did you draw the line of? Do you want to continue exploring upon the idea? Or do you want to maybe switch to another idea?
+
+Andrew Shaw  29:13  
+Yeah, um, that happened a lot. And I just, I took maybe like, five or six months on this project and, and it was basically just deep diving into, into trying to make it work. And for me, I would try to go as far as possible. And then until I ran out of ideas on, on how to make it work. And it was mostly if there weren't any more late low hanging fruit left, then I was like, it's probably time to move on. And so that's kind of how I decided to just switch over and so and for me, it was pretty easy to because I was doing across intersection between music and deep learning. It was easy, a little bit easy for me to switch every time I got stuck and then got and I'll go back and try out a different idea that I had called it.
+
+Sanyam Bhutani  30:06  
+Maybe zooming out to a general advice, what advice do you have or suggestions you have for people who don't have their passion projected? Or maybe their app idea yet?
+
+Andrew Shaw  30:19  
+Yeah, I, for me, it's, it's always a little bit about exploring. So I didn't have this idea from the beginning. But it was, in the meantime, when I don't have an idea it was it was learning. So taking the fast AI courses, or learning a little bit more about deep learning, research that's going on now. So maybe it was like blog posts about recent advances in papers. And then, so when i when i was didn't have my own passion project, it was, it was just kind of building up to when that idea came, I can I would be able to implement it and not be frustrated about about how much longer it's are all the other things I needed to learn before that. And that's kind of the way I went about it is like, if you don't have a project yet is just kind of do a little bit exploring and then do a little bit learning. And then once that, that idea comes is just go, just super focused on that project and see what you can do with it.
+
+Sanyam Bhutani  31:19  
+It's, in my opinion, it's also about chasing the idea for quite a while because things usually don't work initially, maybe for quite a while until they start to show some promise.
+
+Andrew Shaw  31:30  
+Oh, yeah, it's incredibly frustrating. Sometimes where things don't work or things don't turn out the way you expected to. And I think part of the journey is just, it's it helps. It really helps if it's something that you're you really care about or something that you think is really cool. And it's something that you don't then it's really hard to pull through. And so there's a lot of projects I have that are just just completely just failed and I've abandoned because I just didn't feel you the work was worth it to put into it.
+
+Sanyam Bhutani  32:03  
+Now you attended the fast AI course in person. I want to ask you what advice do you have for someone who's just maybe MOOC educated and trying to get a break into the field, so any best citizens for a MOOC educated person searching for jobs in the field?
+
+Andrew Shaw  32:20  
+Yeah, that's a great question. And I'm actually in that same boat so I'm most educated person and I'm also right now trying to to get into that field. So just take this all with a grain of salt because right now I'm still doing this on the side. And I think my biggest advice is that it would, for me, it helps a lot to to just do this not more with something that you're as something that you're very super interested in. And I think I was incredibly lucky to, to be able to, to do this full time but for people who who have jobs or other commitments. And, and, and they're learning this. The idea is it takes a ton of time and a ton of patience. And so just not to be frustrated. And if you get frustrated, don't, don't, you know, don't follow yourself and and you can take a break and come back. And these things, I think a lot of people in this are like PhDs and they took five years. So kind of the thought that I should be able to do this in a year, that that can kind of be very motivating if you don't feel like you're measured up against them. So I think, for me, it's just kind of take your time and do things that because you really are very interested in it. And it helps a lot to not to not get burned out super easily.
+
+Sanyam Bhutani  33:42  
+That's great advice. Before we conclude the call, what would be your best advice to people who are just starting their journey in deep learning any best advice is and how not to get intimidated by all the amazing work that's going on in the field.
+
+Andrew Shaw  33:58  
+Yeah, it's really hard to also to just get sidetracked me like, Oh, this is so amazing maybe and maybe that Yeah, but just starting out, I feel like I was the same way and, and maybe joining like a fast AI community where everyone is in the same boat and everyone's doing incredibly cool stuff but they're also talking about the things they didn't understand and and other people are frustrated too about maybe how long it takes and having that community is really great because it helps push you along and then everyone can learn at the same time. And for me, I think having that that's kind of what kept me motivated for these past couple years. 
+
+Sanyam Bhutani  34:39  
+Just out of curiosity so I've always taken the course online and you've taken it both offline and on in person as well, in person and online as well, sorry. Did you find any difference or do you feel it's honestly the same experience for both both the categories.
+
+Andrew Shaw  34:57  
+Uh so online and in person, I think lectures when you're watching, I think it's pretty similar. And the I think the difference for me was that Jeremy does the study groups in San Francisco and be able to attend those study groups. That was probably the biggest help for me to be being able to see how Jeremy prepares the lectures and how he works. That alone was was really good, but I believe, whether you're online or or in person, you can get a very good experience. The other person I think it's sylvane, who was who is purely online, and then he was he was really active in the forums. And I think he's gotten just as good experience or if not better than anyone who is just in there in person and being we'll see how everyone works.
+
+Sanyam Bhutani  35:50  
+That's a good point. So thank you for the amazing conversation before we end the call what would be the best platforms to follow your work and maybe your next amazing project wheever that will come out.
+
+Andrew Shaw  36:01  
+Oh, yeah. So probably best platform is just music Autobot.com, and that's where the project is released and any updates on that area I'll be putting up there.
+
+Sanyam Bhutani  36:12  
+Gotcha. And how about your personal profiles any profile that you want to mention?
+
+Andrew Shaw  36:18  
+My personal profile probably hit me up on Twitter. It's bear Pelican. And so the AARP li ca n and yeah, message me with any ideas and and that's where I'll be posting any updates.
+
+Sanyam Bhutani  36:32  
+Awesome. Alright Andrew thank you so much for taking the time to do this interview and thanks a lot for creating the future AI to replace music producers.
+
+Andrew Shaw  36:41  
+Thank you so much. Thanks for having me. 
+
+Sanyam Bhutani  36:52  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message you can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science".
+

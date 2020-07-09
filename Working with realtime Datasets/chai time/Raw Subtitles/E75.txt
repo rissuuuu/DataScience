@@ -1,0 +1,237 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science," a podcast for data science enthusiasts, where I interview practitioners and researchers and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to the 75th interview on CTDS.Show also the 100th interview I ever done. In this episode a complete the dream of having interviewed my heroes from fast.ai by interviewing Rachel Thomas on the podcast, Rachel Thomas is the co founder of fast.ai, and is currently director at the Centre for Applied ethics at the data Institute at the University of San Francisco. This episode is really part two of my blog interview with Rachel, so please check that out. This episode covers three broad, three broad themes. We talk about top down learning, and what does it take to create a course or material that follows the top down deep teaching approach, we discuss the topic that Rachel is currently involved in ethics and biases. I asked Rachel many questions of how can we do better? How can we address this theme better? something that all of us have been made aware through her efforts and how can we incentivize someone to contribute to this. We also discuss project building and blogging. Rachel has written. I mean two amazing blog posts, which again, you can find in the show notes, please check them out. This episode really addresses a few very important topics. And I try to ask a few important questions that I've been made aware of through foster day. So I hope we all get to learn something about ethics, ethics in a via this episode, for now. He's the conversation. He's enjoyed the show.
+
+Sanyam Bhutani  2:41  
+Hi Everyone, I am honoured to be talking to my guru, our hero. Yes, our hero Rachel Thomas, thank you so much for joining me on the podcast.
+
+Rachel Thomas  2:50  
+Thank you. Sanyam. I'm really happy to be here.
+
+Sanyam Bhutani  2:52  
+I'm honoured to be talking to you. Fast.ai is my hero, you both are my my heroes. Thanks. Thanks for doing
+
+Rachel Thomas  2:58  
+Oh, you're welcome. Yeah. I wish I wish we could be doing this in person, but I'm glad we're online.
+
+Sanyam Bhutani  3:04  
+Maybe next time [maybe yes.] Okay, so I want to there will be a lot of things that I'll be asking you about. Definitely. But I want to start by talking about your journey and top down learning. How did you learn during your university days? Did you follow any top down approaches? When was the first time you learn something in the quote unquote, top down fashion?
+
+Rachel Thomas  3:26  
+Yeah, so I am I'm mostly my university was mostly kind of a traditional bottom up approach. And in hindsight, I didn't recognise this at the time, but two projects that kind of stand out to me, one was in my computer science algorithms course. The professor on the first day gave us these really complicated scheduling problems. And so mine was a we were doing these teams but you know, students ranking like which classes they wanted to take and then figuring out like which size room in which time to offer it and kind of all the the conflicts that proposals and we were told to come up with a solution to optimise the scheduling. And we had like six weeks and it was something that we tried all sorts of things, but you would always kind of come back to like, Oh, this seems like to check everything you need to be doing something in factorial. Like this isn't, isn't possible to optimise. 100% and then kind of the day we turn them in, he was like, let me tell you about NP complete problems. And that was that was a very memorable experience. And because I had not heard of NP complete problems and was like oh, but I feel like that really gave me kind of like a deep understanding of like, Oh, yeah, like I see kind of how tricky This is by having kind of just wrestled with this one went NP complete problem for six weeks searching searching for a way to optimise it. And so that was that was a fun project and another memorable one that Yeah, in hindsight feel like was kind of a a top down approach was in my mind anyway. with sticks, and I took a semester long class on syntax. And the project for the entire semester was to come up with a set of rules governing the English language. And again, again, that's something where, you know, we kind of started, you know, simple building them. And then each week, you know, the professor would have counter examples of like, you know, these examples violate your rules. And I think that, you know, both those projects had particularly kind of frustrating moments along the way, but they ended up I feel like being very, very memorable and really kind of helping me learn things in a more experiential way.
+
+Sanyam Bhutani  5:34  
+Which is cool to anything that follows a top down learning approach. You don't realise it after you only realise after you're done with [Yes, yes.] So speaking about teaching in this fashion, can you give us an insight about behind the scenes that Firstly, now it's an amazing course everyone really loves it, but I'm sure there are a lot of challenges with creating a course that follows this approach. And I think you might have defaulted. Also, you mentioned this to the bottom up teaching approach. How did you find the balance?
+
+Rachel Thomas  6:03  
+Yes, yes. So it's definitely something where I mean, just because I was in school for over 20 years, primarily learning bottom up like it, I definitely default into that. And I know particularly with the numerical linear algebra class, I had to be very intentional about like, now I'm trying to do this in the reverse order and kind of start with these more complex things and then get to the smaller pieces. And so it is something where I think Jeremy and I sometimes kind of have to remind each other No, like top down would be would be this way. Because it it takes more work to do things top down and it I think for many of us, it's kind of not our inclination. But it is yeah, it is, it can be time consuming. And you have to be kind of conscious that that's, that's the goal you're going for.
+
+Sanyam Bhutani  6:49  
+Oh, so you've got many courses, the NLP one, the linear algebra one. Now you're teaching ethics, which is your favourite if you had to pick one and you think it's possible to extend Top Down learning to other topics of math to make them and uncool as well.
+
+Rachel Thomas  7:04  
+So yes, the answer the second part? Yes, I think it is I, I definitely think taking more time to think about, you know, given a particular example how to do it. ethics is currently my favourite just because that said, that's what I think about most these days. And I think it's also it's so urgent kind of for all of us to be thinking about ethics.
+
+Sanyam Bhutani  7:25  
+We'll talk more about that soon. But this is a question from the AMA, what would you change about how math is taught in the US? And what is the best way for someone who's feeling that their math education is inadequate to fulfil their concept needs or the conceptual needs?
+
+Rachel Thomas  7:44  
+Yeah, so I mean, I think for many of us, and it's not the fault of our teachers that this is kind of how math is taught. Math in the US is taught in this very vertical way where each year really kind of builds on the year. for it, which is common in a bottom up approach. And the problem with that is if you get, you know, one bad math teacher, it's really hard to recover. And so a lot of a lot of people I talked to can even kind of pinpoint the year that they lost interest in math, you know, and they had you know, some sometimes it's not even a teacher, but maybe you have something going on in your life circumstances. And if you have a bad year in math, often you can't recover because this is kind of another failing of the the bottom up approach is because everything is building, you know, in this very sequential way, you don't you don't have the building blocks you need. So I really would want want people to get away from that more. And bring in more of kind of the the patterns and playfulness of math that can exist. And a few a few examples, particularly the high school level. I think a lot of what's taught in discrete math, if you study computer science in college, where you're going to do you know, combinations and permutations and kind of some of the counting problems. I think that's really fun, and I think it's a very different flavour of what you see in kind of the algebra calculus sequence. And I wish I wish everybody got to see that and at a younger age. So I think I want to incorporate more more of that I also think probability is crucial, I think probability is really important for you, and just being able to understand the role world and we've seen that with, you know, with issues around like election forecasts when you know, people saying like, oh, there's an 80% chance this candidate will win and, you know, people interpreting that as like, oh, they're gonna win by 80% or, you know, get 80% of the vote. So I would love to see probability incorporated at a younger age. Also linear algebra, which I, you know, I love in linear algebra. And it kind of makes me sad that it many school, many colleges in the US it's not taught till after calculus, and I think a lot of people kind of get bogged down in the calculus sequence. And so then they, they never get to see linear algebra, which is just super useful. So In addition to kind of incorporating more bottom up approach, or sorry, top down approaches, I would also like to see these topics kind of brought in earlier. And I think they could help with some of that. Feeling like even if you don't understand one of the topics at the time, you can still learn and do well with the next topic.
+
+Sanyam Bhutani  10:19  
+To think but one of the really cool ways I think it was either you or Jeremy had shown me while implementing attention attentional layers, that here's how it looks in Mathy terms versus here's how it looks in code that that can also be like, because I'm coming from the hacker community so I
+
+Rachel Thomas  10:37  
+can no definitely Yeah, like writing it out in code really is a great way to test if you understand it, and often Yeah, feels easier or simpler than the math, the math approach or equation approach? Definitely.
+
+Sanyam Bhutani  10:49  
+So jumping forward to someone who's created a good project someone from fast.ai communities, who's here who has shared their uncool story of building a project, our work gets highlighted a lot Thanks to you, we have a small, fast.ai Twitter community that is very helpful towards each other in highlighting our work. But how can we make a wider machine learning community, the wider search community that might not be able to appreciate a farmer's work who has never coded but has been able to implement an application as much as they should? [I think I]
+
+Rachel Thomas  11:21  
+think we're seeing that change some, like, I definitely think things have improved a lot from say, compared to late 2012 2013. And I think the the field has opened up and I think I think even kind of the the major companies have shown more interest in kind of offbeat projects. And so there's still there's still more work to be done. But I think that there have been some positive changes. And I you know, I hope fast AI has been kind of a part of that of
+
+Rachel Thomas  11:50  
+trying to change and broaden the focus.
+
+Sanyam Bhutani  11:53  
+I'm biassed, but it definitely has been
+
+Rachel Thomas  11:57  
+Thank you.
+
+Sanyam Bhutani  12:00  
+If you were to pick a underrated side of it that you wish gets more coverage with.
+
+Rachel Thomas  12:08  
+So to and you're gonna be very familiar with this, but I think in the broader AI community, I think there's often a perception that fast AI is just for beginners, of like, Oh, this is just a way for beginners to get started. And so I wish that more people knew that, like, the fast AI library is state of the art. And the fast AI course takes you to the state of the art. And it's not just for beginners, and it can be used in, in research and in production. So that's kind of a like, key misconception. And then related to that, also getting out the word about the fast AI software library, because I think we're, we're best known for the course and some people kind of think that that's all there is.
+
+Sanyam Bhutani  12:47  
+I'm a bad student because I've never really completed the course but it's so rich that I've always been a student and I think I'll speak to it for a few more years.
+
+Rachel Thomas  12:56  
+That's great.
+
+Sanyam Bhutani  12:59  
+Now, Switching to another topic that you're currently involved in ethics and broadly speaking biases you decided to start fast a after realising that deep learning was exclusive, you shared a few stories? How far would you say that first day has reached in solving that mission?
+
+Rachel Thomas  13:19  
+I think we've we've definitely made progress. And I think we have given kind of an on ramp to too many people that might not previously have had one. Although there's certainly a lot more more work to do. And I think there are also still really remains kind of issues around just cultural perception and a lot of people, it just never occurs to them that that deep learning could be something they could be involved with, or that they could have something to contribute to. And I think this also relates to a lot of the cultural perceptions around math or computer science and people thinking that it's not for them or that they don't have the right background to be a part of it. And then we also kind of have all the bias is within the industry that can make it harder for people with with non traditional backgrounds to get hired. And that's something that kind of even even when you've given the on ramp and you know, I think we have students from fast AI that are incredibly qualified and experts, that kind of getting getting others to recognise that and hiring consultants, sometimes be an obstacle.
+
+Sanyam Bhutani  14:26  
+Yes, to convince someone that you have 15 years of experience in AI, you just need to be known to have intelligence.
+
+Rachel Thomas  14:33  
+Yeah.
+
+Sanyam Bhutani  14:34  
+So what was it at a specific point that led you to switching to working a full time capacity for Applied ethics or any any incident or any story that led you to this?
+
+Rachel Thomas  14:47  
+No, it's really it was kind of a gradual transition. I found myself just spending more and more time thinking about ethics and writing about it and giving talks about it. And so it is sometimes referred to as kind of my My Side hobby that took over my life. And but it was it was never until I until I got offered a position with USF. Although at that point, I was already devoting so much time to ethics that it was like, Oh, this, this totally makes sense. And it's really natural. But it was just it was kind of this topic I couldn't stop thinking about.
+
+Sanyam Bhutani  15:18  
+You have highlighted so many biases that you had, unfortunately faced in industry or otherwise. Why is it important that we start looking at them right now, especially in AI where most of the apps aren't even ready for the real world?
+
+Rachel Thomas  15:33  
+Oh, yes. Because I mean, so we have seen from stuff that's been deployed all these really, really alarming repercussions. And I think, you know, in the United States, I think there's a lot of really great conversation happening now particularly around racism and white supremacy. And we're seeing and this is something that people have been worrying about for years of you know, how facial recognition can be used to surveil protesters. And this is not a new issue, and some things I try to mention when I teach is, there was a black man Freddie grey, who was killed in Baltimore a few years ago. And during the protest after, after his murder, police used facial recognition to identify protesters, which I think is incredibly alarming. And I think that those sorts of concerns are really heightened now. And, and that said, that's kind of just one example. But these, this technology has very profound real world impact that also is incredibly intertwined with with bias and race and power and kind of how these technologies are used.
+
+Sanyam Bhutani  16:39  
+So Rachel, you've made all of us at least fast.ai students aware about the biases and the ethical responsibility that we should hold but how can we make a person go the extra mile? I'm sure you're aware of it. You, you know the biases that exist, but how do you take the extra step to make sure that it doesn't happen and do watch
+
+Rachel Thomas  16:59  
+Yes. There's, I mean, this idea if I don't know that you can, you can't you can't make somebody who is perhaps resistant. I think there are many people out there that want to do the right thing and, and really care about the world and wanting to do good. And so in many cases, I think giving people knowledge or giving people concrete tools they can use and for this, I really like the markkula Centre has a tech ethics toolkit of kind of practices you can implement in your, your company, one of those is doing like ethical risk sweeps. And so kind of taking this idea from cybersecurity of really trying to proactively look for, for ethical risk and to build that into your process. So there are definitely practices you can implement. But I think there are many people that are inspired and motivated when they hear stories of others kind of standing up for what's ethical and what's what's right. But on a on a broader level. I do think this is why we need structural changes and policy changes as well. Because individual motivation is not is not going to get us all the way there. And so it's really tough because I think there's this this total misalignment of incentives right now in tack and particularly in, in venture capital and in the emphasis also on on metrics and kind of having these metrics around, you know, advertising revenue and click through rates can often incentivize really, kind of negative consequences for society. And I think for many companies, even if there are people there that want to do the right thing, it can be hard if you're always fighting your business model.
+
+Sanyam Bhutani  18:41  
+You mentioned
+
+Rachel Thomas  18:42  
+kind of where the the need for like policy and structural changes is.
+
+Sanyam Bhutani  18:47  
+Definitely you mentioned structural changes. This, there's a lot of finger pointing that happens in the industry: top level management, reporting to the engineers, so on and so forth, who should really be conscious and who should be eligible. Somebody who should also take hold of the responsibility for
+
+Rachel Thomas  19:04  
+this is tough. And Dana Boyd talks about this, of that, you know, even prior to computers, bureaucracy has often been used to, for people to evade responsibility. And, you know, in an extreme example, we saw this in Nazi Germany have kind of a lot of officials just saw them as bureaucrats, and were able to kind of point to others on responsibility. And unfortunately, today's algorithmic systems are kind of just extending that bureaucracy and making it and so you know, there have been cases of their algorithms that can be used to screen tenants, you know, the landlord could use and so, you know, the seen cases where, you know, like a black man was denied being able to rent this apartment, even though he had a very stable job, and the landlord was like, Oh, you know, it's not, not my decision. This is what the algorithm told me. And so we're getting a lot of that in different areas and And then within companies, you get that as well of so many companies are just, you know, these really complex systems and different siloed areas. And so it's a, it's a tough problem. It's not what humans are good at. Have you definitely definitely need senior leadership taking responsibility and making ethics a priority. But I think I think the first step is kind of recognising that. Even recognising that we're kind of creating these systems where nobody feels responsible. You know, the,
+
+Sanyam Bhutani  20:33  
+the other part of the problem is how do we create a open culture I work at a startup where this is not a problem. So I'm the wrong person to ask this question. But how do we come up with a culture where no one is afraid to speak up when they see a problem?
+
+Rachel Thomas  20:49  
+Yeah, so I mean, that needs to be modelled because I mean, it is true that in many, many startups, it's not just startups, many, many companies in general, it's not safe to speak up. And so I think many people that are working worried about that their their fear may very well be justified. So do you think you need to kind of see the example coming from leaders speaking up? And also even incentivizing? I've heard of kind of proposals of, you know, giving our reward to an engineer that raises an ethical concern, but then building that into incentives. And it's really tough because there's often this focus on doing everything as fast as possible in tech, but to take the time to stop and reflect on what potential ethical issues are or take the time to investigate a potential ethical issue. In a culture that prizes speed above all else, that's not going to be you know, that's going to be seen as a negative and so you do have to kind of address that.
+
+Sanyam Bhutani  21:46  
+Again, the structural part of it comes into picture. [Yes,]
+
+Rachel Thomas  21:49  
+yes. Yeah. always kind of comes back to the structural part.
+
+Sanyam Bhutani  21:53  
+Now, there's another issue that you've raised. And it does exist the gender imbalance in teams or otherwise I'm ashamed of that. As well, my podcast has a 10% of women representation in the heroes that I've interviewed with. So that's a problem that I'm going contributing to. But how do you think we can improve or solve it?
+
+Rachel Thomas  22:11  
+Yeah, so it takes effort. So yeah, definitely kind of, yeah, it's good to get to recognise the problem. And then to realise that you need to put effort into it. And this needs to be kind of an ongoing process to, I think a lot of companies kind of wait too late, you know, until they already kind of have a big team. And even if even when you're at the point of when you're ready to hire in a sense, it's almost too late. Like ideally, you would start before before you're even hiring anyone. In a company contacts kind of the number one advice I want to give is to treat the women and people of colour, particularly black and Latin x and indigenous employees really well now. So really to focus on the employees you already have and if you treat them well and give them opportunities to advance But to kind of think about like, what can you do to make your environment appealing so that people people will want to work there as a key. Another key and this, I mean, this is, this is tough. In the United States, there's studies that can't remember the average, the average white person I think, has either zero or one black friends, I think it's maybe 00 black friends that we just are kind of very segregated, and particularly white people are able to kind of not have close relationships with people of colour unless they're being very intentional about it. And since so much hiring that happens in startups and tech companies is through friends and is through your social networks, I think to always be working on trying to diversify your social network and doing that in a you know, a meaningful and genuine way of really just trying to build friendships for the long haul. But I think you know, I think it's understandable that People want to hire their friends and hire people they trust. But there's kind of a lot of inertia working against us. And so you kind of need to be working on on diversifying your social network.
+
+Sanyam Bhutani  24:12  
+I think that there are also two sides to the problem, like, I don't think this is a good approach, what many people do what they do is, we need a woman on the panel. So let us go out and invite one. The other one is, hey, maybe I'm biassed towards my community. Should I look outside of it? There are talented people outside of our communities as well.
+
+Rachel Thomas  24:31  
+Yeah, see, I know there's true Yes, there's definitely talent outside our communities and so ways to edit this is something that I think we need to do more at fast AI to is kind of how can we be diversifying our our community further and yeah, and to have the the connections and the invites be be meaningful as well? Yeah, I haven't been invited for panels where I'm like, you know, I'm not even really related to that topic. Yeah. It makes you feel like they're just asking me because I'm a woman or
+
+Sanyam Bhutani  24:57  
+you know, so again, Speaking of community, there's a question from the community. What advice would you have for a woman trying to navigate deep learning feel as a newbie, they sometimes feel afraid to ask a question or clarification because it sounds stupid or basic.
+
+Rachel Thomas  25:14  
+So this is, this is a tough one I wanted, I wanted to just acknowledge that tension that I mean, one asking questions is super important. But that also, it is true that sometimes people will judge you, particularly if you're from an underrepresented group when you ask questions. And I feel like it's like we see this on Twitter every so often. You know, there'll be a movement of software engineers and perhaps predominantly white or male software engineers saying how they have to Google basic things. And then, you know, a black woman software engineer will point out like, you know, I couldn't publicly admit to this because people would really judge me and said that there is people are perceived differently when they ask questions, and so I actually don't have a A great answer to this question, but just wanted to acknowledge the tension that I definitely hope you're getting your questions answered. And that you find kind of safe communities to ask them in but recognising that Yeah, sometimes in the workplace, maybe maybe there
+
+Rachel Thomas  26:15  
+would be negative repercussions in certain groups.
+
+Sanyam Bhutani  26:19  
+If I may chime in as unqualified as I am to answer that question, but we recently completed the fourth of the course and I posted a lot of questions I would really feel shy to ask the question that would feel the those who are stupid but they got a lot of likes, the approach that we followed the forum so I think, Oh, great. Yeah. This there's also one hesitation to just asking questions.
+
+Rachel Thomas  26:43  
+Oh, yes.
+
+Rachel Thomas  26:45  
+Everybody feels it. Yes. I think everybody can can feel scared about asking questions. And yeah, and I think anything you can do also, somebody listening to questions to kind of, you know, affirm that there's there's no stupid question that any questions is a good one to go out of your way to help others. There are ways that we can all kind of encourage a culture of asking questions. But you're absolutely right that I think everybody sometimes, maybe even often, yeah, worries about the questions they ask.
+
+Sanyam Bhutani  27:14  
+And like you said this, this mentioning this GREAT word, this is a great question or just liking the question also, is a great incentive to the person who's asking that yes,
+
+Rachel Thomas  27:23  
+yeah.
+
+Sanyam Bhutani  27:25  
+So, you're teaching us all about ethics? We're pretty aware of it. But how do we get someone from the outside world, some researcher who is let's just focus on improving a model are improving their personal skills? How do we convince them to also divert some of their time to these important issues?
+
+Rachel Thomas  27:45  
+I can That's tough. I mean, I think there are people that are convinced when they see the societal implications, and that learning more can help them. But again, they are also structural issues and I think that that some But sometimes it comes back to many of these ethics issues end up being very interdisciplinary. And it's very, very important that we be drawing from kind of the social sciences and the humanities and how we approach them. And in I'm most familiar with the US, but there's often been this kind of exalting stem over other fields and in the tech industry, kind of exalting coding and math skills over other types of skills and other types of expertise. And so some of what needs to happen, I think, is being able to recognise and value other areas and other skills more for someone with a very technical background to recognise the importance of Humanities and Social Science expertise, and the kind of need for that and exploring ethical issues and addressing them.
+
+Sanyam Bhutani  28:49  
+I think one of the ways you mentioned is just incentivizing someone's reboot incentivize when someone brings up a topic, but second, second, by just being aware of the problem.
+
+Rachel Thomas  29:00  
+Yes, yeah, you're right. Yeah, no, that's a great one too about incentivizing. And, and I did have a student who had worked at a healthcare tech company who said that, you know, they had a process in place where you could raise a potential ethical issue, and then they had a specific team that would investigate it for you, and that they really liked that process of kind of feeling like somebody would look into this. And the the student that told me this head had raised ethical issues twice. And he said, once, it turns out, it was not actually an issue, but there was, you know, there's no negative repercussion at all about raising something that turns out to not be an issue, because I knew the company was glad to just be investigating and to try to catch things earlier.
+
+Sanyam Bhutani  29:43  
+Okay, now, I want to switch gears towards another topic that you educated us on blogging and projects.
+
+Rachel Thomas  29:49  
+Oh, yes. Yes.
+
+Sanyam Bhutani  29:51  
+First, Thank you for all of us, most of us were you and started blogging without your advice that most people start with projects and blog posts that are low hanging fruits. How do we start seeking more difficult problems? Because again, that's where people get uncomfortable.
+
+Rachel Thomas  30:10  
+So I mean, one thing, I think it's okay to move incrementally and to start with a simple project and then think about ways to expand it or make it more complicated. I think also to this, I guess kind of goes back to your earlier one of your earlier questions. Like I love it when people write blog post about things that didn't work and what they got airs on, because I think there's so much that we learn from that of just hearing for somebody else of Yeah, what didn't work for them and a project. But I think people are often more reluctant to share that sort of information. And so kind of whatever we can do as a community to encourage kind of also people sharing the not just the success stories, but kind of the failures of you know, this is where I totally got stuck, or, you know, this is an approach that I thought would work and I tried it and it didn't, but I do think we learned a lot as a community from from those
+
+Sanyam Bhutani  31:00  
+It's a superficial metric. But my most viewed article is one we had shared that I failed the Google ai residency.
+
+Rachel Thomas  31:06  
+Yes, yes. Yeah. No, thank you. Thank you for your openness and sharing that too. Like, I think that that, you know, takes bravery to share. But I think it really resonates with people like people. It's something that everybody can relate to kind of experiences like that.
+
+Sanyam Bhutani  31:19  
+Yeah. So coming to what would be your best advice for finding a project to contribute to while going through something that maybe can become an incremental problem? Yeah.
+
+Rachel Thomas  31:34  
+I mean, there's so many things that would be good projects. So you know, really, so definitely, if there's something that you're already interested in, or a data set you already have, that can be great. But even if there isn't, I feel like I often talk to students that are kind of trying to find the perfect project or trying to find a project that nobody has ever done before. And I would want to encourage people that you know, even if you're using a data set that other people have used or a project where other people have been done something similar, that you can still learn a time by doing that, and that you're still going to have your own unique spin on it and you can still kind of take it in a different direction. I mean, the more you can kind of align it with a background interest of yours, I think that can be helpful, but it's also it's okay, if you don't feel like you have the passion aside from aside from deep learning to,
+
+Rachel Thomas  32:22  
+to kind of be applying it to
+
+Sanyam Bhutani  32:24  
+There are also a lot of advices that you would mention while running the course that also become interesting projects. Interesting endpoints.
+
+Rachel Thomas  32:33  
+Yes, yeah.
+
+Sanyam Bhutani  32:35  
+So this is a final question. You and Jeremy both have given us so much how can we contribute to the back to the mission what can we do better? What What should we be doing to help the mission?
+
+Rachel Thomas  32:48  
+Yeah, and I want to say I mean, you've done a tonne as well. Sanyam I love your blog post and the podcast. It's great kind of every everything you do for the community. I have to say you know anything, so definitely answering the questions. have others and so kind of answering questions in the forums helping others. Yeah, anything anything you can kind of, you know, writing a thorough walkthrough of how you how you did something, I think kind of Yeah, just teaching and helping others is a way to help the community and also promoting you know, caring and compassionate behaviour. And like you were saying before, kind of even the simple act of liking somebody question or saying that's a great question can be really, really affirming and helpful.
+
+Sanyam Bhutani  33:29  
+If I can reframe that even me personally, me, I've been treated as a future good deep learning practice nearby. Rachel Thomas and Jeremy Howard, that's that's the best feeling on the community and I think, at least on the fast.ai community, that's that's a feeling that everyone tries to pursue.
+
+Rachel Thomas  33:48  
+Yes, yeah. Like, yeah, fostering that feeling of that, you know, everyone has so much potential. And yeah, and encouragement about when things don't work out. This is maybe a little bit related. But a story I like to tell from college is the first time I tried to take real analysis, which is kind of a core area of math and was required for the math major. And some of this was I think that the teacher, but I got into the class and I was miserable. And I had no idea what was happening. And I can't remember was only like the first or second week of school I like, came home from the library at like 3am crying and was just like, This class is terrible. And my roommates were like, you need to you need to drop this. And I was really concerned because I was just like, oh, you need this to be a math major. And when I went to my advisor, who was a math professor, she was like, you know, she's like, Rachel, this wasn't your year. She's like, you know, you're going to take this course again next year, you'll do great. You know, you can, you can do this. It's just like, you know, isn't the right time for you. And that was it was really encouraging to me. How she kind of framed that as you know, it's not a failure that you're dropping this class and that you're going to do it again later. And it ended up I took it again the next Year got an A and ended up focusing on that even in my PhD and my calls, it was an area I ended up loving. And so kind of reminding people that even if you do have a really bad or discouraging experience that's not, you know, a statement on what you're capable of in the future, and maybe, you know, this just isn't the right time. But that you can return to kind of any topic again, at a different point and, and maybe you will love it, then. I think kind of to be able to reframe kind of failure when things don't work is is helpful as well.
+
+Sanyam Bhutani  35:36  
+I was hoping you'd have scored an A+! [Hehe] Rachel, thank you so much for all of your contributions to the community. And thank you so much for all you've done for the fast.ai community before we end the call. I know your Twitter is math underscore Rachel and there's the website fast. Okay, any other platform that you'd like to mention?
+
+Rachel Thomas  35:59  
+Now, those are And then also the course course.fast.ai of course, in the forums dot fast AI is is a way to kind of connect with others. And yeah, those are the kind of the main main platforms I'm on.
+
+Sanyam Bhutani  36:14  
+Okay, awesome. Thank you so much.
+
+Rachel Thomas  36:18  
+This was great. Thank you.
+
+Sanyam Bhutani  36:25  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week, to "Chai Time Data Science."
+

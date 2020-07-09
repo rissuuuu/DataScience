@@ -1,0 +1,867 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the time data science show. In this episode I interview Kaggle Grand Master and data scientist at h2o.ai, Rohan Rao. I feel there is a lot to cover here, so I might miss a few things about Rohan but I'll have his Wikipedia page, yes Wikipedia page, LinkedIn and Twitter link in the description in case you want to connect with him or follow him. Rohan is a Kaggle Grand Master in the competition tier, and a data scientist as I mentioned at h2o.ai. He has represented India not just in data science, but also in Sudoku and puzzles. He's a seven time and current national Sudoku champion, and the first Indian to be ranked in top 10 at the World Championship in 2012, where he secured the eighth position. Currently, his world rank is 17 and he's secured two podium finishes at Asian Sudoku championship. And he's a five time national puzzle champion with his current rank being 44th. Four time and current times natural Sudoku champion. In this interview will talk all about his journey into data science, into data and numbers. Rohan is a numbers guy. We talk all about his journey into the world of competitive sports, both on and off Kaggle. We also discuss one of my favorite things that I got to witness from him at the Kaggle talk that he had given, again linked in the description. On and off Kaggle, we talk about his on Kaggle versus off Kaggle journey. In his off Kaggle journey we discuss his data science journey and on Kaggle will discuss how his approach to Kaggle has changed over the years, how it's evolved, and his current thoughts on the platform and tips and advice is of course to newbies like myself. We also discuss his recent eighth gold medal on his profile and his second position finish on the ASHRAE great energy prediction 3- that's the title of the Kaggle competition solution. Bringing of course the eighth medal to his profile. I'd like to thank everyone for sending all of their questions via the AMA I've tried my best to include all of them. And again, a quick plug this interview, including all of the future ones will have proper data science term check subtitles for the non native English speaking audience. So if you're watching on YouTube, please enable the subtitles for a better experience. And if you have any other suggestions for how I can improve the interview, please do send them my way I'd be most happy to include it. Also, the blog post for this will be released soon so you can subscribe to my mailing list or you can check out the link of the blog where this will be posted. Again, this is a special interview release, that thanks to h20 will be released on h20.ai's YouTube channel. In case you want to check out all of the other interview series that has been going on you can find The link to the playlist in the description of this podcast and video. Without further ado, here's my interview with Kaggle Grand Master and data scientist and Sudoku champion, Rohan Rao. Please enjoy the show.
+
+Sanyam Bhutani  4:32  
+Hello, thank you so much for joining me on the interview series and specially agreeing to the AMA section.
+
+Rohan Rao  4:39  
+Sure Sanyam, thanks a lot for inviting me to your channel and I'm more than glad to be doing this interview with you.
+
+Sanyam Bhutani  4:46  
+It's a privilege to have another person whose name when you Google or Wikipedia page, returns. It's a privilege to have you on the show. Talking about your background you have a masters in starts. And you've been working in machine learning space right since your post grad studies, could you tell us how did you get excited about data science or machine learning and confirm or deny the stats background was your secret weapon to becoming a Grand Master?
+
+Rohan Rao  5:16  
+So I think the the story starts a little before my masters. So I think after my 12th grade, you know, most of my batchmates, friends, they were all doing either they were getting into engineering or getting into, you know, medical or going or trying to be doctors. And so when I sort of you know, reflected back as to what I really like, or what I really enjoy doing. It was math. So I really, I really like math. I like numbers since a very young age.
+
+Sanyam Bhutani  5:49  
+You're a numbers guy.
+
+Rohan Rao  5:50  
+I am a numbers guy. Yes, it's on, it's on my profile as well. So I just felt you know, instead of you know, just doing what lot of other people are doing I wanted to pursue something that I really like, I really enjoyed, which is the reason for my bachelors, I decided to do a simple Bachelor of Science where I majored in statistics. So my courses there primarily were economics, maths and stats. And I think during those three years, it really made me understand there is so much more to math than just the high school math that you are taught. It's it's a much more vast broad field, broad area. And that's when my passion and interest really grew in statistics. Just to pursue it further I applied for the Masters course at IIT Bombay. I cracked the entrance exam and I got through. So those those two years of masters really helped me get a lot of theoretical understanding of statistics and a lot of the algorithm, lot of the algorithms that are there a lot of the, you know, base knowledge and information about the field. So in terms of whether it's my secret weapon now, I can very easily say it's not.
+
+Sanyam Bhutani  7:16  
+Okay. 
+
+Rohan Rao  7:17  
+Right. So there's a lot more to to data science and just the pure statistics. So when I started out, I think my statistical background helped me pick up things in data science much faster. And we're talking about like, 2013 so data science was just sort of, it's just starting to become, you know, popular and people were getting into the field, you know, doing research building algorithms. 
+
+Sanyam Bhutani  7:48  
+Yeah. 
+
+Rohan Rao  7:49  
+And this was a time where like, there was XGBoost. Hehe.
+
+Sanyam Bhutani  7:51  
+Hehe.
+
+Rohan Rao  7:53  
+Random Forest was like the new hot thing. So, so while my course did not have too much of practical application. It was primarily and completely theoretical. So so it gave me a lot of the base understanding and the ground concepts of how a lot of the elements that we work on in data science today they work. So obviously, you talk to anybody in the data science field, it's really about you know, being hands on actually building stuff, actually doing things, writing these algorithms, trying out, you know, the wildest of ideas that you get. So statistics is, is a piece but it's it's not a secret weapon. 
+
+Sanyam Bhutani  8:40  
+Okay. 
+
+Rohan Rao  8:40  
+It is more like an add on, you know, that that I was fortunate to have formal education on it. But it is something that I think any person out there can just spend, you know, three or four dedicated months, just reading and studying about it through so many online reources and material that is there.
+
+Sanyam Bhutani  9:02  
+That's a very honest insight. Did you also have a practice of coding? Or did you pick it up while in college or after college? How did that journey start for you?
+
+Rohan Rao  9:14  
+About data science?
+
+Sanyam Bhutani  9:15  
+About coding specifically because you had a theoretical background in stats and then I assume you have to also pick up code to apply stats.
+
+Rohan Rao  9:23  
+Yes, so so my course, my masters course did not have coding at all. And it may surprise people but yeah, we did not probably write more than 10 lines of code across the two years. It was pure theoretical. So, so in fact, you know, one of the things I very clearly remember, in 2013, after I passed out, someone asked me, you know, what do you think about Python. I think it's a really nice snake. And that was my actual reply. I didn't know there was something called, you know Python which is a programming language, right, so, I think it began with my first job. I was fortunate to be placed in a data science consultancy firm called 64 squares. They're based out of Pune in India. So, so, there, I had a great mentor and boss, Shashi Godbole. During those years 2013 he was among the top Indians on Kaggle. 
+
+Sanyam Bhutani  10:31  
+Okay.
+
+Rohan Rao  10:31  
+And he was the one who, you know, introduced me to Kaggle, sort of exposed me to a lot of the current happenings in data science. And as part of my work in that company, I had to, you know, pick up a programming language to be able to actually, you know, implement the solutions and the algorithms and sort of hand it over to our customers. So, that's where then I started picking up, you know, coding. I learned R first and even as of today, it's my favorite language.
+
+Sanyam Bhutani  11:04  
+You're still a fan.
+
+Rohan Rao  11:06  
+I'm still a big R fan. I think data.table is, they very easily and clearly my favorite library of a programming language of all time. Hehe.
+
+Sanyam Bhutani  11:16  
+Okay.
+
+Rohan Rao  11:17  
+So, so yeah, I picked up R, I think during my first entire year, majority of my world was I mean, everything was in R slowly there was, you know, development happening, community getting built around Python. Pandas because became quite popular. Some of the clients that we were talking to had requested, you know, to sort of give solutions in Python because they had their extract in Python and it's sort of more easily integrable into their systems. So that's when you know we, within the company, we started learning and picking up a bit more about Python. I started applying some of those on Kaggle. And then you know, with practice, with more exposure, you just improve and get better at it. 
+
+Sanyam Bhutani  12:14  
+Got it.
+
+Rohan Rao  12:14  
+That's how I sort of picked up my my coding skills. It was from scratch. 
+
+Sanyam Bhutani  12:19  
+Okay. Now before we talk about your journey, because there are a lot of things to unpack here, you're currently working as a data scientist at h2o.ai, could you tell us more about the problems that you're working on, the projects that you're working on? And what does a day in your life off Kaggle currently look like?
+
+Rohan Rao  12:38  
+So h2o as a company, we have, you know, a wide range of products, libraries. So it's a pure machine learning based platform.There we have a bunch of open source tools, we have just some some closest products and I think one of the the beauty of, you know, h2o as a company is it has a good mix of, you know, building and enabling data scientists around the world to use the h2o's ecosystem and the products in a very generalized fashion and;
+
+Sanyam Bhutani  13:19  
+Democratizing AI, as we call it.
+
+Rohan Rao  13:22  
+Goes with the motto of the company, which is, you know, democratizing AI. So the challenge to build, you know, let's say a library or a product, which is as generic in nature as possible, so that it caters to a wide variety of use cases with the complexity of building really vertical or industry specific solutions, using these, you know, global tools. So I think that mix and that challenge, to be to be able to combine both to be able to implement both optimize both. I think that's a great that's a great balance on the on the work front that I have. And I enjoy, you know, working on both sides, both both aspects of it and I do work on the product side building these, you know, universally accepted and use products as well as trying to you know, optimize them to build clearly solid, accurate, very industry specific solutions. And the other big advantage of a company like h2o is, being very industry agnostic, you get to you understand, talk to an experience, so many different and wide applications of machine learning across so many different industries. So it's almost a new learning experience with every customer.
+
+Sanyam Bhutani  14:46  
+Even for you?
+
+Rohan Rao  14:47  
+Yes, even for me, even now, even now. 
+
+Sanyam Bhutani  14:50  
+Okay. 
+
+Rohan Rao  14:50  
+So I mean it just it, that is what gives me the kick. So and that's what I enjoy doing.
+
+Sanyam Bhutani  14:57  
+Awesome. Now, coming to your journey. I'll talk about your non data science journey first, because during my research for this interview, I found three themes about your career that really stood out to me, sports and competitiveness. They are like pretty visible on your Twitter, your love for sports, love for numbers, obviously, and logic. You're a top rank holder outside of data science as well in Sudoku, which I think you found by chance and became, turned out you you're really good at it. Could you tell us more about your journey on these things outside of data science or journey, puzzles and logics and numbers? And how do you balance this lifestyle of data science and non data science-y world
+
+Rohan Rao  15:40  
+Yeah, so since a young age, I've always been fascinated by numbers as well as sports. I've, I've played a lot of different sports. I just I enjoy the the physical aspect of it. And in fact, in today's world, and I'm glad that you know, I had so much of exposure and opportunity to play so many different sports and pursue some of them. So one of the key aspects and you mentioned that point very well, which is competitiveness. And I think it comes from my school days where I was, I was a Chess player. So I played Chess at, you know, the national levels. I have my international rating as well. And I think that really, I really understood how to how to optimize yourself in a competitive environment, right? How do you push yourself How do you make the most, how do you work hard to be really good at something and actually show it and display it. And the thing that, you know, pushed me or the thing that gave me the maximum happiness, right is, let's say at the end of, you know, a chess match or you know I have played Caroms, I've played Badminton, I've played TT. It's that thrill of, you know, winning. 
+
+Sanyam Bhutani  17:20  
+Hehe.
+
+Rohan Rao  17:20  
+Where you really feel that oh, you have finally, you know, achieved something or you've hit a goal. Obviously, you don't always win, which is also one of the other key aspects of it. So I really learnedwell how to deal with failures, obviously, I mean, nobody's perfect, right? You would have, you would have wins, you would have losses as well. So to be able to, you know, accept that loss, to be able to go back. You know understand why, why did you lose or where did you go wrong and sort of improving yourself. I think that cycle, really, really worked well, and I was able to, you know, optimize that over the years, sort of learning from lot of these different competitive environments, winning some losing others and improving improving yourself day by day.
+
+Sanyam Bhutani  18:12  
+How did you manage to keep your keep your peak performance under pressure because I remember reading about it in your blog post about a championship I think where you missed the flight and there was some visa issues turned out you raised South Korea 28 hours late, and yet you did pretty well in that championship. So any tips or tricks for handling the pressure not just of that but also like of the outside world?
+
+Rohan Rao  18:38  
+Yeah, it's it's not easy. I mean, this, this is something that has come over many years of experience. So I think if the the pressures and you know just the the expectation the, the wishes of doing well. It is a little difficult and hard during the initial stages of anything. You know, whether, whether it's a sport, whether it's Kaggle, whether it's work, it's anything. It's just, you know, experience and with time as and when, you know, you learn that it's it's not the end of the world, there will always be another time, there will always always be another chance, like nobody's perfect. And I think the, the most important point is whenever you face these incidences or scenarios, it's more about learning from them, and ensuring that if ever that happens again, or even if something similar happens again, you know, how really well to deal with it. So even if you know, I look back at, let's say my Sudoku career, which it's it's been more than a decade now. I started it my first Sudoku competition was August 2006. 
+
+Sanyam Bhutani  20:00  
+Wow. School day.
+
+Rohan Rao  20:05  
+Yes, yes, I was in my my 10 standard, my 10th grade.
+
+Sanyam Bhutani  20:08  
+Okay.
+
+Rohan Rao  20:09  
+And there was a small city level competition in Mumbai, where I used to live. I did not know how to solve a Sudoku then. And, but I just liked numbers. I liked math. I used to do a lot of crosswords and puzzles in general, but I had never solved a Sudoku, then.
+
+Sanyam Bhutani  20:30  
+Okay.
+
+Rohan Rao  20:31  
+So just one day before, before that competition now, my father came to me and asked, okay Rohan there is this Sudoku competition. Do you want to go for it? And my response was, I don't know what's a Sudoku.
+
+Sanyam Bhutani  20:45  
+Wow.
+
+Rohan Rao  20:46  
+Okay so he gave me the newspaper. And he told me, hey here's as an example. Why don't you just read and try to solve it? So, so I took the newspaper and I was solving the Sudoku. My dad went and bought me an entry ticket for the competition. 
+
+Rohan Rao  21:04  
+Okay.
+
+Rohan Rao  21:04  
+So and the next day was was the competition. So I just went for it. I mean, I solved that one single Sudoku the previous day. I just sort of understood the rules and got a sense of you know how it works. And the next day in the competition, I stood first. 
+
+Sanyam Bhutani  21:25  
+Okay.
+
+Rohan Rao  21:26  
+So standing first in the city, like suddenly out of nowhere.
+
+Sanyam Bhutani  21:29  
+Of the thing you never knew about.
+
+Rohan Rao  21:32  
+I mean, I didn't know about it the previous day. So I just sort of sat and thought thinking, okay, maybe I'm good at this. So, and then that point of time, I was quite into Chess. So playing a lot of Chess, going for tournaments. So with with Sudoku, certainly coming in. It was hard to balance both. And that's where, you know, one of the key aspects of my life which, which is it is about sacrifice. You know, it comes in lots of different ways. Whether it's you know, management of time, whether it's, you know, optimizing the 24 hours that you have, optimizing the set of things you can do to make, you know, the maximum impact. I think one of the hardest decisions I've ever taken in my life was during that time, where I just completely stopped playing Chess. 
+
+Sanyam Bhutani  22:33  
+Okay.
+
+Rohan Rao  22:33  
+And till today, I never got back fully in Chess, but the primary reason was, I realized that to be really good at something, you have to sacrifice and give up other things. It was just not possible for me to you know, pursue both and try to be good at both. So I sort of just gave up chess. I took over Sudoku full time. I really enjoyed it. It was something new. And I was doing well. I worked really hard, I practiced hard. And I've been fortunate to, you know, perform well at the at the nationals and and it gave me a great opportunity to represent India the World Championships for almost 10 years now.
+
+Sanyam Bhutani  23:22  
+To remind the audience again, this mature decision making happened in your I think, 10th grade, as you mentioned, so during in that age group, when I don't even remember what I was doing.
+
+Rohan Rao  23:34  
+Yeah, I could be 10th grade. Yeah, I mean, it was. I did speak to a few people, but the decision was hard. It was mine. Obviously, you know, looking back in hindsight, you always feel oh, it was a;
+
+Sanyam Bhutani  23:50  
+Dot connect. 
+
+Rohan Rao  23:51  
+Yes, you can always connect the dots backwards, but it's, it was hard at that time.
+
+Sanyam Bhutani  24:00  
+Coming to another interesting journey of yours Kaggle, which you started after you joined your first job in data science. So like people usually aim for the opposite, use Kaggle as a proxy to join data science. Can you talk about your initial days of Kaggle? Did you also have an amazing first few competitions like with Sudoku? And what starts helpful in the first competition? This question comes from the fact that many people think they absolutely need to take a statistics course before jumping on Kaggle. Is that true?
+
+Rohan Rao  24:33  
+So I would differ from you a little bit, I would still say my Kaggle and my data science journey sort of started in parallel together. 
+
+Sanyam Bhutani  24:44  
+Okay.
+
+Rohan Rao  24:44  
+So I think my first job, which was at the data science consultancy firm, that's when I really got into data science. And that's when I started Kaggle as well.
+
+Sanyam Bhutani  24:55  
+Got it.
+
+Rohan Rao  24:55  
+And I think it is great to, you know, work on both in parallel. And, in fact, in one of my recent talks at the Kaggle days, Bangalore, I specifically talked about, you know, on Kaggle and off Kaggle, and how it's important to, you know, balance and work on both aspects of it. So you, you do learn a lot of things on Kaggle. And honestly, and I'm sure any Kaggle Grand Master or master would agree that there are absolutely no prerequisites to join Kaggle and to become good at Kaggle, right, it's the only okay, so the only prerequisite I would say is you should be willing to invest time. That's the only prerequisite. So, so obviously, like with time with practice, you know, with understanding, questioning, reading, learning, you do get a lot of the understanding about how Kaggle works, what are the things you can learn and benefit from during the competitions? Now, obviously there are, you know, there are data sets, there are kernels. You can do visualizations, you just write kernels or you can, you know, just share things on the forums.
+
+Sanyam Bhutani  26:16  
+Copy and start also.
+
+Rohan Rao  26:18  
+Yes, there is absolutely no dearth of information and, you know, content out there. So, I keep telling people, the Kaggle forums, in some ways, they are like a goldmine of of information. And even today, you know, when I reflect back, I think, a large majority of a lot of the skills that I haven't learned, the things that I've learned and I know comes from, you know, spending time on Kaggle. So that being said, there are important aspects of data science to learn and know even outside Kaggle. Just you know, couple of short key examples is, so on Kaggle you get ready made datasets. In a in a corporate work environment, you are in charge of know, figuring out what data do you have? How do you prepare the data set? How do you get the right accesses? How do you build those data pipelines. So, that is one major piece component, which is very important, which you generally only get when when you work, you know, on a project outside Kaggle, like on your own or within within the company. The second is productionizing. So on Kaggle, you're not really required to, you know, productionize your code, you know, have it run in real time, fix the predictions, you know, integrate it with another access to more product. But this is something that's probably one of the primary reasons why a lot of data science projects fail in the industry. Because it's not very easy to, you know, productionize some of these algorithms models, and have it running and functioning, as you know, the business expects it to. So, so balancing the two is very critical, very important. And my strong suggestion would be that you're given a choice, you should spend time on both, which is what I've managed to do across the years.
+
+Sanyam Bhutani  28:36  
+Okay. Talking about your initial competitive days on Kaggle. Did you also have those wonder moments on Kaggle? How was that journey like for you and what competitions did you enter? Did it change over time?
+
+Rohan Rao  28:51  
+Yeah, so I think because of my you know, competitive spirit and background, I got hooked on to Kaggle. You know I think anything that's very sporty or which is sort of objective in nature, it's what sports is all about. The evaluation is objective. Like, generally there are points. And at the end, whoever has the most points or plays the best game, they sort of emerge the winner. It's not a human based evaluation. So I found Kaggle that way. So Kaggle it's about you're given a data set, you're given an evaluation metric, do whatever you can and optimize it to the fullest. 
+
+Sanyam Bhutani  29:34  
+Yeah.
+
+Rohan Rao  29:35  
+I'd obviously with with some constraints, obviously, the the public and the private leaderboard concept is really great to to ensure that the models do perform well and generalize better. But, you know, just the the competitive part of it is what I really want to talk to. I started out doing competitions where you know, I just spent time reading through forums, just exploring the data and trying to understand because, and I'm talking about like, 2013-2014. There were no kernels at that point. 
+
+Sanyam Bhutani  30:15  
+Okay.
+
+Rohan Rao  30:17  
+So I think a lot more had to be done from scratch then. Now, the way it is now that you know, you can just jump onto a competition you have five great, amazing public kernels. So you already have a great head start. 
+
+Sanyam Bhutani  30:35  
+Yeah. 
+
+Rohan Rao  30:36  
+So, so earlier it was it was a bit more, there's a little bit more of hard work required. 
+
+Sanyam Bhutani  30:42  
+Do you think that the situation now is like, in a challenge in itself, because everyone has that equal head start?
+
+Rohan Rao  30:50  
+Yeah, I think, I think there are pros and cons either ways. The biggest pro is you know, you get a head start and you learn a lot more, like irrespective of what people may feel, I think you know the kernels are a great way of, you know, showcasing lots of different ideas, different models, algorithms. And obviously, the downside is a lot of the people tend to miss out on the thought process that went behind some of these kernels.
+
+Sanyam Bhutani  31:23  
+Yeah.
+
+Rohan Rao  31:24  
+Why were certain features engineered or created, why were these models used? Or how are the, you know, the classic example is a lot of the modeling kernels have just the set of parameters. So you miss out on how did he person come up with those parameters. So these are some of the things that a lot of people take for granted. And they don't fully get a chance to, you know, explore some of those aspects of it. So yeah, there are there are pros and cons of of, of either way, but in terms of competitions I generally do one competition at a time. 
+
+Sanyam Bhutani  32:05  
+Okay.
+
+Rohan Rao  32:06  
+I started out like that and I think even now I generally tend to like just focus on one. The main reason being I want to be back as much as possible from the competitions. So obviously performing well is one goal one wish, but the larger the more important aspect is from every competition there is so much of learning that you get which is true even today, like even today after six years of Kaggle, with every new competition there are still like two or three new different things that you know I do want to take back with me. 
+
+Sanyam Bhutani  32:50  
+Okay.
+
+Rohan Rao  32:50  
+So that has been my primary objective of working in competitions. Doing well is obviously it's just it's it's a cherry on the cake. So when you do well, obviously you get excited about it.
+
+Sanyam Bhutani  33:03  
+It's a side project.
+
+Rohan Rao  33:05  
+Yes, absolutely. And it sort of motivates you to, you know, do more, do better. And I think just that competitive spirit in me helped me pursue it over so many years.
+
+Sanyam Bhutani  33:18  
+I think you mentioned this during our offline conversation in the Kaggle days meetup. Do you still subscribe to every single Kaggle forum? I know you already mentioned it's a great learning source for you. Do you still read every single discussion?
+
+Rohan Rao  33:32  
+So during my first maybe two years, I did.
+
+Sanyam Bhutani  33:37  
+Okay.
+
+Rohan Rao  33:37  
+I used to subscribe to every foru;,
+
+Sanyam Bhutani  33:40  
+Every single message.
+
+Rohan Rao  33:41  
+Every single, yeah. During my first two, two and a half years. Yeah, probably up until the time I became a Grand Master. 
+
+Sanyam Bhutani  33:49  
+Okay.
+
+Rohan Rao  33:49  
+I mean, that's no reason for stopping but I just got really busy with work. So I think 2017, 2017 was the year I was least active on Kaggle and since then I think it brought about a slight change. I started doing lesser competitions and spending less time on Kaggle. Some of my work projects was also very interesting, which is the reason you know, the the balance level, it had a slight shift. 
+
+Sanyam Bhutani  34:21  
+Yeah.
+
+Rohan Rao  34:22  
+I, off kaggle sort of became slightly more interesting, important. So, so yeah, it switched a bit in the middle. But now primary, I think I mainly tend to focus and read just one or two of the most interesting competitions or ones that I'm most excited about. 
+
+Sanyam Bhutani  34:42  
+Okay.
+
+Rohan Rao  34:42  
+But the primary reason is more because of the management of time. There are a lot of other things that I want to do and pursue and in Kaggle one of my goals was like to become a competitions Grand Master. 
+
+Sanyam Bhutani  34:58  
+Okay.
+
+Rohan Rao  34:58  
+After achieving that goal, you know, the marginal benefit of spending more time decreased for me personally. So that's the reason I reduced it over time.
+
+Sanyam Bhutani  35:09  
+You already proved your space on Kaggle so you're doing that now in your workspace.
+
+Rohan Rao  35:15  
+Yeah, I like to you have set some targets for myself, in anything, try to reach it or achieve it. And once that is done;
+
+Sanyam Bhutani  35:29  
+You move on to the next;
+
+Rohan Rao  35:30  
+Move on to something else try outside I in general, I like exploring new things. Just trying out different ideas, different hobbies. Sudoko has been long but I still really enjoy it. So that's why I still do it.
+
+Sanyam Bhutani  35:50  
+Talking about time I, this is your message that I became a huge fan of and to quote you "Kaggle is my second favorite second full time job. But it comes at a sacrifice." So many people have asked this question from the AMA, how do you balance time spent on competitions with life and work? And I'd also love to know how the shift has happened over the few years. How do you better manage your time once you like got the hang of Kaggle?
+
+Rohan Rao  36:19  
+Yeah, that's that's the golden question. Right.
+
+Sanyam Bhutani  36:22  
+Hehe.
+
+Rohan Rao  36:24  
+Yeah, I've been asked that question quite a few times. And so I have 36 hours in a day. 
+
+Sanyam Bhutani  36:33  
+Okay. Got it. 
+
+Rohan Rao  36:34  
+I'm just kidding.
+
+Sanyam Bhutani  36:37  
+Hehehehehehe.
+
+Rohan Rao  36:38  
+You know, so, so one of the things that I do, not necessarily it would work for everyone. But you know, I did realize that to be really efficient and to do as impactful work as possible. You need to choose, like you need to make those choices and sacrifices. So one of the experiments that I that I had done and I still follow it even today is I make a sort of like a master task list. 
+
+Sanyam Bhutani  37:20  
+Okay.
+
+Rohan Rao  37:21  
+So it could be an end, it's not for a really large duration, something like let's say, one year or six months.
+
+Sanyam Bhutani  37:28  
+Okay.
+
+Rohan Rao  37:28  
+So usually, I usually do it for three months or six months, but you could do it for even a year. Let's say you have a set of n tasks. And these tasks should should include everything right from, you know, sleeping, eating, working, playing anything, anything and everything that you would do in your life, or that you will want to do for let's say those six months, you list down those tasks. For every task associated, you list down an expected time. So for example, let's say if it's sleep, right? So you would be doing, let's say, eight hours of sleep every day. So you multiply it by, let's say, six months, so you get that many hours of sleep. Similarly, for every task that you have, I put down my expected number of hours that I want to spend on it. Right? So I have these expected number of hours. Now, it's about prioritizing these tasks. So now I order these tasks, which are the ones that are most important to me. So obviously, like eating, sleeping, you know, so all these things have to be right on top. They are non negotiable. 
+
+Sanyam Bhutani  38:49  
+Yeah. 
+
+Rohan Rao  38:49  
+But after that, when you really have choices, so maybe there's a choice between, let's say, working on a Kaggle competition for three versus some of these choices, decisions, you need to prioritize. So I order the end tasks from top to bottom, in terms of the most priority or the most important tasks. So now once I have the tasks ordered, I look at the cumulative sum of the expected hours. 
+
+Sanyam Bhutani  39:24  
+Some Stats Terminology there.
+
+Rohan Rao  39:26  
+You keep adding the expected number of hours of each each task until you hit that number, which is your total of six months. Right? Or just to give some buffer, it could be a total of five and a half months. But obviously there would be certain you know, activities or events where you can't really know, what but the most important pieces here. So after you come up with that cutoff, let's say you know, you have, let's say 200 tasks, and you reach your cutoff at let's say, the 75th task. The 125 tasks, which did not make the cut. It's really about discipline, right, to be able to have that discipline of sacrificing those 125 tasks for that period of six months. I think that significantly helps and benefits, it's not necessarily to work for everyone. I think people have to try out different ways, different things. But I mean, it's, it's fair with everyone, right? So everyone has 24 hours, and it's really about how you manage and optimize those 24 hours for yourself. You know, this has worked really well for me, it's it's given me a lot of time to spend on Kaggle, Sudoku, other interests, hobbies, but it has come at the cost of other things that I have sacrificed. So but yeah, I mean, I'm willing to do it. So if other people are then they should definitely try it out.
+
+Sanyam Bhutani  41:00  
+Also about having the discipline to be honest to yourself when we set goals professionally, we devoted a huge chunk of time and as the motivation cycle goes down, the hours also go down and the planning goes down the water drain. So that's where I think the discipline part of it comes into the picture.
+
+Rohan Rao  41:18  
+Yeah, discipline is it is important because there would always be times when you know, you have like, let's say, you know, a group of friends decide to you know, go for a picnic or a trip or an outing. But if, if you if you haven't allotted that time, in your you know, priority list, you have to be able to say no, at that point in time, which is, which is difficult. Yeah. It does take some time, some effort to to even make those decisions. But I think at the end of six months, you would realize that okay, fine, you gave up on, you know, these five things or these seven things, but there were another five things that you achieved, which, which otherwise you wouldn't have. So I think that's the that's the, you know, balance pros cons that you have to accept and and build on that.
+
+Sanyam Bhutani  42:17  
+Talking about your Kaggle journey. I'm sure it took a lot of sacrifices, but there was a lot of genius behind it as well. Can you tell, this, again, is the topic we've already discussed about on Kaggle versus off Kaggle, people often talk about Kaggle in data science, but I rather want to ask you how has what you've learned on Kaggle impacted your professional life in a positive or negative way?
+
+Rohan Rao  42:44  
+Definitely, I mean, there are no two ways about it.
+
+Sanyam Bhutani  42:48  
+Okay.
+
+Rohan Rao  42:49  
+So, so I think the number one, the number one thing that you know, most Kagglers are really good at is, I think for any problem statement across any industry, they would be able to very quickly build a solution and build like a 90th percentile solution, maybe 95th percentile solution in within like 24 hours. And just just that ability to understand, you're given, like a particular business objective, how do you structure that, that that machine learning problem and you know most most of, most of the Kagglers have a lot of automated and ready made scripts, and you know just dump, dump that you know, data set or model dump the flow into your scripts, get an output, and, you know, then walk around the optimizing, tuning it. You know, there are a lot of these nitty gritties that I think Kagglers are really excellent at, like things like let's say over fitting, or leakage, you know, doing target encoding kind of features very, very efficiently and properly. These are some things that I think outside of Kaggle it's very hard to know, really explore or understand or even get some of these ideas. So I think a lot of the best feature ideas that have got have been picked through Kaggle features, right, through Kaggle competitions, which I have gone and implemented in the actual real world life problems and projects. So so a lot of these are technical aspects. I think I've really learned well on Kaggle which I've been able to, you know, implement and actually even productionize it. So.
+
+Sanyam Bhutani  44:49  
+Coming to teaming up aspect of Kaggle. Most of the beginners seek teaming upon Kaggle, for obvious reasons. However, for you, I think this is one of the few like highest numbers I've seen. You've done 60 percent of the competitions by yourself and medal of course in a large few numbers of them. Why did you decide to be the lone wolf in all of these competitions?
+
+Rohan Rao  45:10  
+Yeah, I clearly remember at least during my initial days, I used to only do solo competitions. I think it comes from my background, even Sudoku is an individual sport. Chess is an individual sport. And I'm used to being an individual fighter.
+
+Sanyam Bhutani  45:32  
+Hehehe.
+
+Rohan Rao  45:34  
+Okay, put it that way, right. So I remember even when you know we used to play cricket, I used to barely you know, take singles and doubles. Then when we used to play badminton, I used to never play doubles. I just somehow like never like that, you know, dependency on another person. For no fault of theirs. Just I think my nature was I that I liked, I like to build things and I like to do myself. 
+
+Sanyam Bhutani  46:09  
+Take ownership.
+
+Rohan Rao  46:10  
+Yes. Take ownership. I like to, you know, see something from start doing with as less help as possible. So it would not be not take any help. Obviously when you are stuck when you're facing issues, you go, you definitely go to people ask for help. And in turn, I think whenever anyone came to me asking for help, I tried to sort of help them and showcase a solution as as best as I could. But over time, I realized, Kaggle is different, like data science is different. So practicing and learning data science, I found was significantly better and faster in teams. So I think I finally took the leap of faith and I joined, you know, a couple of teams for some competitions. And I realized just you know that just like data, especially on Kaggle, it's not just on ensembling models. It's also ensembling ideas, ensembling people. Right? So just having two different people build, like the same model is still way more powerful way more interesting than, let's say one person building two different models. There's a lot more diversity, like the way I do things is very different from the way someone else would do the same thing, and that's where, you know, I learn, okay, maybe there's a better way of doing something,
+
+Sanyam Bhutani  47:40  
+You get access to not just their brains, also their code, also their thought process and also their models, which directly helps with the leaderboard, but that's not the most highlighted portion.
+
+Rohan Rao  47:52  
+Yes, absolutely. You get you get access to a lot of these. It just adds a different dimension to your thought process and to the work that you're doing. So that's when I started realizing that, you know, yes, there is there is a lot of advantage and benefit of working in teams. Unfortunately, I realized this after getting four solo golds.
+
+Sanyam Bhutani  48:17  
+Hahaha. 
+
+Rohan Rao  48:19  
+But yeah, I think since then, yeah, the the I think many of the other competitions I've started teaming up. And I think in recent times, a lot of the competitions have been in teams. So going forward, I will be doing more of team competitions.
+
+Sanyam Bhutani  48:39  
+You also quoted teaming up is the most underrated aspect of Kaggle during Kaggle Days event.
+
+Rohan Rao  48:45  
+Oh, yes, I remember that. So it was it was more like, you know, moment of realization, even for me. 
+
+Sanyam Bhutani  48:52  
+Okay.
+
+Rohan Rao  48:53  
+Even if I used to refrain from teaming. So for me, the thought process was hey, you know, how do I optimize a competition to get most points, let's say, right and;
+
+Sanyam Bhutani  49:05  
+Okay.
+
+Rohan Rao  49:05  
+And with the, yeah, with every additional team member in your team, the number of points that you get reduces, for the same rank
+
+Sanyam Bhutani  49:14  
+For the audience these push you up the competition's ranking, which I think you were aiming for.
+
+Rohan Rao  49:23  
+Yes, yes. So, so my main objective was like a little different. But then I realized that I was missing the aspect of the probability of getting a higher rank. So that also increases when you team up. 
+
+Sanyam Bhutani  49:39  
+Yep.
+
+Rohan Rao  49:40  
+Right. And I think now that the new Kaggle scoring system, I think that came about two years or three years back, for every additional member, the decrease in points is lesser. There is more incentive to team up and you just you just don't better you have a higher chance of you know, finishing well. And I think ultimately an on average, it's it's just a win. Like, you just win. I mean, you get you perform better, you learn more. Even I think sharing itself is another big form of learning. So when you share with people you know, others come in they share their ideas use you done things about your work and yourself as well. Whereas if you do something individually, there's like nobody evaluating your work. Like there is no you know, cross checking that's happening. There's no verification so you miss, you miss out on some of these aspects of it.
+
+Sanyam Bhutani  50:39  
+Okay, now, coming to your recent feat, congratulations on the eighth gold medal on your profile. Before we talk all about your second position finish on it's called ASHRAE great energy prediction competition. Can you help us set the stage about what was the challenge here and what made you sign up for it? What made you accept the challenge?
+
+Rohan Rao  51:02  
+Yeah. So the the ASHRAE competition, actually stands for the American Society of Heat Refrigeration Air Conditioning Engineers. took it. So it's sort of like an association of, of these folks and it's it's it's a global association I think across more than 150 or 140 countries. And I think their primary objective is just to you know, enhance improve energy improved flake, just the way some of these resources are being manufacturing have been manufactured, consume, and just sort of enabling to have a better environment. So it's, it is primarily in the in the energy sector.
+
+Sanyam Bhutani  52:01  
+Okay.
+
+Rohan Rao  52:02  
+They hosted this competition on Kaggle, where the primary objective was to predict the consumption of energy of buildings. So I think the data had about it had 16 sites. So sites so every site was thank thanks to the leakage we know that every site was like an educational institute or a university. And each site had like a set of buildings. So they could be classrooms or halls or maybe a convocation center or residential blocks, right. So there are a lot of these buildings in each university. And there were four types of energy consumption meters. So I think the biggest one was electricity, and the other three were there was hot water, there was steam and there was chilled water. 
+
+Sanyam Bhutani  53:02  
+Okay.
+
+Rohan Rao  53:03  
+These were, so essentially, the task was to predict the consumption of these four meters across these different buildings across sites. So these sites were spread out globally. So they were across different countries and different types of buildings. So the the primary data was the historic meter readings of these buildings, along with some metadata information about the sites and the buildings, like, you know, the weather data about the sites, like what is the temperature, the humidity, the cloud coverage that you, and specificity on the buildings it was, there was data on the year of construction of the building. What was the square feet area of the building? What was the type of building? So broadly this was, this was the data set. So it was a energy forecasting sort of competition. 
+
+Sanyam Bhutani  54:06  
+Okay.
+
+Rohan Rao  54:07  
+For me, the objective was I, I haven't been very active on Kaggle, last one, two years. So I thought this was, it was an interesting data set. It was also a large data set. Which was one of the reasons I decided to give this a shot. Yeah, I mean, that's, that's, that's the reason I sort of joined.
+
+Sanyam Bhutani  54:38  
+Okay. Could you tell us your first go to steps as a proxy of like, generally speaking also about Kaggle competition, but first go to steps when you got started on this competition? How did you approach the problem?
+
+Rohan Rao  54:51  
+Yeah, so I think, for any Kaggle competition, the first thing that I do is I spend one complete week on almost any Kaggle competition by myself to just to get a complete understanding of the data, like an end to end understanding of the problem statement, the data set, the kind of features, what's the evaluation metric. For me, the goal is, you know, at the end of that one week, I should be able to answer any question anyone asks about that data set. So having that mindset, I sort of dig deep into the data and get like a very deep understanding of what what the sort of data is, and then comes to the more the more process oriented part of it, which is, okay, then you start, you know, building your pipeline of modeling. How do you set up the right validation framework, build some baseline simple model is to get a sense of, you know, what's the accuracy rate that you have, or what's the, what is the valuation metric, where you sort of stand with a very generic set of features. You make some, make a few submissions to the leaderboard, to get a sense of directionality between, you know, your valuation with the public leaderboard. And then finally, it's, you know, really going deep into optimizing, like tuning hyper parameters on ensembling, teaming up figuring out external data sources, or trying a bunch of other crazy feature ideas. Some smart small hacks. So yeah, this is generally this but I think the the most important piece in all of this is the initial one week, that is for every competition. Just getting a deep sense of the data to be able to answer any question that that is put forward.
+
+Sanyam Bhutani  56:57  
+For beginners like me, it might take longer than a week. So if you feeling intimidated by that I can confirm it takes much longer for me to be able to have that comprehensiveness of any data set.
+
+Rohan Rao  57:09  
+Yeah, I mean, it's, it's one week now, right? So after six years, I'm saying it's one week. So obviously, during during my initial competitions, it used to be longer. You do spend more time, you know, figuring out how to look at things, you may not be able to cover all the aspects of it. And over the years, a lot of the you know, the ways I explore data, I've automated it. So it obviously with time, you get better you get faster. No and and I still feel that every person should do this themselves. So there are a lot of automated scripts out there. There are a lot of, you know, these EDA kernels and the automated visualizations, but I still think if you know every person can build their own like toolkit of the things or the way in which they would like to see and explore data. I think it's it's a great experiment and investment to have.
+
+Sanyam Bhutani  58:07  
+Like Steve Jobs had a gut feeling for good products of, subjectively speaking, Kaggle Grand Masters have the gut feeling for most of the data sets. I think that's why they, every one of us looks up to Kaggle Grand Masters so much.
+
+Rohan Rao  58:22  
+I mean, it, it still comes with experience. So it's not really like, there are a lot of strong, you know, Masters as well out there, doing, who're doing really well in competitions, and it's just a matter of time, before you know, even they'll be Grand Masters.
+
+Sanyam Bhutani  58:40  
+Just a matter of a solo gold. Hehe.
+
+Rohan Rao  58:43  
+Okay, some people are waiting for their solo gold. But it's really about, you know, with time and experience, you get these gut feelings.
+
+Sanyam Bhutani  58:53  
+Okay. 
+
+Rohan Rao  58:53  
+It's not gut feelings that, you know, I've been born with, or you know, Grand Masters are born with;
+
+Sanyam Bhutani  59:00  
+You don't see the data and visualization start happening inside of it. 
+
+Rohan Rao  59:04  
+It's not that you know, you you see the data and oh you get; 
+
+Sanyam Bhutani  59:08  
+The numbers start coming up around your head.
+
+Rohan Rao  59:11  
+Exactly, you know, this is gonna work. It's it's it's, it's that's not how it works.
+
+Sanyam Bhutani  59:18  
+Okay.
+
+Rohan Rao  59:19  
+Like that it's really about, you know with experience and trying out and automating you get a better understanding of the data. 
+
+Sanyam Bhutani  59:29  
+We're all familiar with the amazing results from earlier. Can you tell us this if you found this problem easy, so to speak, and relevant to any previous experiences from Kaggle or off Kaggle?
+
+Rohan Rao  59:41  
+So I think among the various competitions or data sets I've worked on, this would be amongst the easier ones, in the sense that the data set was fairly simple structure easy to understand. I think the only, there were two major challenges. One was, the data size was quite large. So even Kaggle kernels was not very sufficient. The second was, just the way this particular data set was structured, so for time series kind of problems like this one, where you know, you are forecasting for future, for the future. This data set had three years of data from beginning 2016 to end 2018. But the train data was only one year, it was 2016. And the tennis data was two years. So it's it's contrary to most other data sets and problem statements that we would see where, like the training data would be few years and your test It would be one year, maybe the training data is one year and you have to forecast for two weeks or a month. So this this particular data set was unique in that way. 
+
+Sanyam Bhutani  1:01:12  
+Okay. Could you tell us more about your team? How do you generally pick your teammates and your teammates in this competition? And when you have this multiple team of awesome people, how do you distribute the ideas and workflow and track all of the hundreds of thousands of experiments that are being run?
+
+Rohan Rao  1:01:31  
+Yeah, so when looking for teammates, primarily, I look at two things. One is credibility of the users, like they should have, like spent some time on Kaggle you know, doing some competitions or it could even be interesting kernels or some good discussions. So I, I avoid teaming up with absolute beginners and novices because there is a slight chance that you know, they may not be able to give their best or they may not know much about Kaggle. And, and it would just not be fair to either of us. The second thing, which I do is I try to team up with people or teams that sort of have a reasonably decent score. And it's just it's, it is just to optimize, it's a personal optimization that I do, to have a higher chance of finishing well. And I'm sure like a lot of people do that. So it's, it's a combination of these two. So for this particular competition, I think when I posted the the half and half kernel, which became quite popular, and in fact, the the original author of that kernel is another Kaggler was by the user named KXX 
+
+Sanyam Bhutani  1:03:01  
+Okay.
+
+Rohan Rao  1:03:01  
+He shared that kernel in our, in R, and I thought it was like a very great, simple, unique idea, which was beating a lot of the, you know, complex feature engineering based kernel out there. So I just coded the code in Python and shared it. So, so I think that that kernel became popular. And Oleg is a German who was working on this competition at that point of time and he was doing well, I think he was in the top 10 at that time, and he asked me if I would be willing to team up, and I joined his team. And then we started doing well, we worked together for close to a month and then towards the end, we needed the original push to perform well. So we added two more team members. One is Anton, another German, and light who was a Chinese. So all, I think all all four of us, we spent quite some time on the data set, on the problem statement. We we picked out, we picked up different aspects of it. So while you know Oleg and anton, they were primarily focusing on the boosting based models. So that's when I decided to focus a little bit on the neural network. And I helped set up the the ensembling flow. When light came in, he had read his light GBM, and he tried to optimize a CatBoost. So we sort of, you know, just picked up different components or different types of models. And specific to this competition, I think early on, we realized that feature engineering is not going to help too much. So we just decided to, you know, on ensemble and diversify as many different models as possible. 
+
+Sanyam Bhutani  1:04:57  
+Okay.
+
+Rohan Rao  1:04:58  
+And then we realized thatyou know, data cleaning was the key, I think close to 60% of our time on the entire competition went towards, you know just cleaning the data.
+
+Sanyam Bhutani  1:05:10  
+Okay. So I want to scream this one thing for the audience. I know it's a huge misconception, but the previous, I think you mentioned this at the Analytics Vidhya conference, but all of your seven gold medal solutions, were trained on a simple laptop, not a huge AWS server. I really want to scream this for the audience. Can you share the whole hardware setup for this competition? Or did you again do it on your laptop? Or did you do it on a PC server?
+
+Rohan Rao  1:05:39  
+Yeah, so so I don't know how it happened. But yeah, I don't know. Coincidentally, all my previous seven gold medals though. All those solutions I had built on my, not just laptop, it's my 4 GB MacBook Air. So it's a very lightweight since machine, just 4 GB RAM. So, and I think I think most of the competitions, either they had some clever feature engineering or they do some clever data processing and simple, you know ensembling, like nothing too complicated, nothing fancy. So i think that's where, that's the reason why they worked on the laptops. And they did it perform well. Specifically for this competition, the data set was large but, you know, based on our solution and I've shared a very detailed write up on the Kaggle forum, I think our basic;
+
+Sanyam Bhutani  1:06:45  
+It will be linked in the description.
+
+Rohan Rao  1:06:47  
+Yes. So the base was building models for every site. So since we had 16 sites, the entire data set could be broken down into 16 sets of, you know trainnig data and test data. So that was a bit more manageable. So we could use, you know the Kaggle kernels for the site specific models. But to build a model on the entire data set, which we did use as part of the ensembled models, even the Kaggle kernels with 16 GB RAM, were not enough. So, so I'm not sure the exact specifications my teammates used, but I think when I when I ran, you know, the codes on my machine, it was a 64 gb ram machine. So it was just a VM on on GCP. 
+
+Sanyam Bhutani  1:07:39  
+Okay.
+
+Rohan Rao  1:07:39  
+So I use a GCP and AWS interchangeably for, for competitions. 
+
+Sanyam Bhutani  1:07:45  
+Okay. 
+
+Rohan Rao  1:07:46  
+I have a slight preference towards GCP. But I think both are they have their pros and cons. 
+
+Sanyam Bhutani  1:07:53  
+Okay.
+
+Rohan Rao  1:07:53  
+Yeah.
+
+Sanyam Bhutani  1:07:54  
+What computing resources would you recommend to someone who's aiming for the gold region in a reasonable amount of time?
+
+Rohan Rao  1:08:03  
+So why not try a 4GB MacBook Air?
+
+Sanyam Bhutani  1:08:07  
+Hehehe. You think it's still possible in 2020?
+
+Rohan Rao  1:08:12  
+Yeah, I mean, why not? Like why not? It's it's, it's a little bit more difficult now, I would concede, and I would accept, admit that. But I think, you know, I should take it up as a challenge for myself, saying that I have this 4 GB MacBook Air, what's the best I can do using this laptop? It's I think during those days, I used to just have this as you know, a challenge for myself. Even some of the other competitions, you know, AnalyticsVidhya other other websites I used to just challenge myself. Well, let's just stick to my laptop. Let's see what's the best I can do. And I think what that enabled me to do is, which I've also mentioned in my Grand Master panel discussion at h2o world So my favorite thing is to build the single most powerful optimized model. So to get one model which is like super optimized and very, very accurate, it gives me like;
+
+Sanyam Bhutani  1:09:19  
+Very uncommon on Kaggle, again for the audience out there.
+
+Rohan Rao  1:09:22  
+It's not just, I mean, you can just ensemble, blend a lot of different models and algorithms really fast as well. So maybe, maybe the the value out of that is is reducing with time, but I still think because I used to do that, I think my, my ideas and the way I think about, you know, features or think about, you know, squeezing the most from a data set. I think that's significantly improved. 
+
+Sanyam Bhutani  1:09:54  
+Okay. 
+
+Rohan Rao  1:09:55  
+But as of now I think a lot of the more recent competitions, they have quite large data sets. And it is becoming important to have larger, you know, systems and resources. In some ways Kaggle has solved that by providing, you know, 16 GB RAM kernels, which you can run 10 or even more simultaneously.
+
+Sanyam Bhutani  1:10:22  
+Yes.
+
+Rohan Rao  1:10:23  
+So they are providing that. But yes, you do find often that even 16 GB is not enough. And my recommendation would be to sort of have your toolkit set up on the cloud.
+
+Sanyam Bhutani  1:10:38  
+If you're gonna invest the time, also invest into a machine.
+
+Rohan Rao  1:10:42  
+Yes, yes. And it's part of, it's part of the investment and it's also a learning process. And you really understand and learn how, how a lot of the algorithms and the software aspects of it. They sort of marry the head of the components, you know, with GPUs becoming so popular. And now maybe even TPUs coming up, and you know, maybe other things in the future. So it's good to have that knowledge and understanding as well.
+
+Sanyam Bhutani  1:11:09  
+Yep. Now, as you all know, like 20 to 30 experiments are tried maybe even more in a Kaggle competition, a lot don't work. How do you decide which to continue pursuing, which to end in context of this competition or generally speaking, and, I mean, how do you come up with intuition about why didn't any experiment work?
+
+Rohan Rao  1:11:31  
+So I think this is a combination of two things. One is your validation. Just having the best and the right validation framework is very important. And that should be to simplify some of these decisions. And if you go through many of the past Kaggle top solutions, there are a lot of different ways in which you can set up your validation framework. And it's not only your local validation, so you can do out of sample validation, you can even do cross validation you can do, you can even check your public leaderboard, you can do a combination of all this. It's a lot of people, you you sort of have confidence of like a feature or a model or an idea if it shows total improvement in at least two or three multiple places. So that when you are more confident that a new idea or a new feature is working with. The second is a bit on intuition. Sometimes, you know, it's not always possible to you know, locally validate everything. Sometimes there are certain aspects of which which, you know, you know, which is there in your test data, but you cannot bring in including data set. So, some of these leaks have to be done outside and manually. Especially to actually I think it was very difficult to set up a good validation framework. And the primary reason being the uniques, the unique structure of the data set, then you have one year of data and two years of test data. So we just have to give all that validation that we moved on month. So we just as you just ensured that no different months were in different groups. And we stuck to that. Overall, it seemed aligned with the public leaderboard. And intuitively, we felt that the public leaderboard should be at least close to resemble the private leaderboaed. So we trusted the public leaderboard more than the the local validation. But the other major component was the leak data. Some of the sites the target variable was publicly available. So some awesome Kagglers no script, the data set and in the right sportsman spirit shared on the kernels. So I've created them in my post as well. So that that data will be used for doing some of our validation, because that data is also present in the private tested. Candidate remove it from the final results, but it was good to validate some of the ideas, models, beats that we had. 
+
+Sanyam Bhutani  1:14:33  
+Okay, yeah. 
+
+Rohan Rao  1:14:34  
+And in terms of managing all of this, some of the people that work with me would know that I have this famous excel sheet. I maintain for a lot of the work, competition, even outside Kaggle many of the projects that I work on, so I maintain this sheet where can I record everything, every every idea that was tried, what were the scores.
+
+Sanyam Bhutani  1:15:02  
+You're a numbers guy.
+
+Rohan Rao  1:15:03  
+Yeah I'm a numbers guy and you know, being a data scientist, it should be a data driven decision, why wouldn't you have to weigh both of them? So I like to like, you know, just sit back look at, you know, the 20, the 30 experiments that were tried for I'll understand what were their movements, how did they perform. And then sort of use that to take the final call on the final decision.
+
+Sanyam Bhutani  1:15:31  
+Okay. Now, coming to your final competition solution, if you could give a very high level overview of it, of course, I'll have it linked in the description for those who want a complete understanding. But if you could explain it in a simpler fashion in this podcast.
+
+Rohan Rao  1:15:48  
+So my, so our solution, it was primarily built around Oleg's LightGBM Setup. So he said, a very nice script. There's no forum for every site, we build a Nigerian model. So we were able to optimize models for every site. So there were 16 sites, we build 16 models. And even if you remove the neat ones, we had one side for every model. Then to ensemble, we built one model for every building type and meter combination, took it. And we also build models using the entire training data together. The model types that we used were XGBoost, like GBM, CatBoost We also build neural networks, but only for the electricity readings. We found that our neural networks were not performing well for the other meters. So we didn't ensemble it for the other meters. And finally, so yeah. So the two major components outside the modeling is the the initial data processing, the data cleaning rather. So there were a lot of outliers in the data. And very initially we found that just removing these outliers gave a significant boost to the performance. And I think if I remember right, there were 1449 buildings. And I think at least two of us went through the rate of every building manually concluded. So I think a significant amount of time was spent just on you know, cleaning the data.
+
+Sanyam Bhutani  1:17:44  
+I believe you're also a fan of cleaning the data dropping features as much as you can, dropping data as much as you can.
+
+Rohan Rao  1:17:51  
+Oh, yes, ay, c'mon! That's my secret sauce.
+
+Sanyam Bhutani  1:17:53  
+Hehehe.
+
+Rohan Rao  1:17:53  
+It's shouldn't in the public. No, no. Yeah. So yeah, I mean, one of one of my favorite,  you know, data processing steps is dropping features, and I've even won competitions just because of, you know, dropping noisy or unimportant features. So it is;
+
+Sanyam Bhutani  1:18:13  
+Contrary to what people do on Kaggle because people would love to add as much features as they can usually.
+
+Rohan Rao  1:18:20  
+Yes, it is quite counterintuitive. And in fact, I've had, I've had arguments with people saying, hey, no, you know, you need the models to be more clever to figure out what's important and not. Well, I mean, I do agree with that, but I still like, you know, dropping features. And it's not just about accuracy. So it's also about, you know, if you have, let's say, 1000 features whereas even if maybe 300 of them are not very useful, your code runs much faster with 700 features, rather 1000. So you can run more experiments, you can do things faster. And that's where, for me the benefit and the motivation comes from. So, so yeah, in in this competition we drop the outliers. And so what this resulted is in a more accurate model, but because we drop the outliers and all the outliers were zero valued, that the target variable was zero. Since we were dropping them, we were we were artificially inflating the mean of the target.
+
+Sanyam Bhutani  1:19:27  
+Okay.
+
+Rohan Rao  1:19:28  
+Which is the reason our final predictions, we post processed it and multiplied by a factor of less than one to bring down the mean to the actual expected. 
+
+Sanyam Bhutani  1:19:41  
+Okay.
+
+Rohan Rao  1:19:42  
+So, so broadly, this, this is the sort of flow of our solution. So in fact, we, the final leaderboard was announced a few days back. And we did we did check our submission even without the leak, without the post processing, it still performs, I think it's good enough for second or third. 
+
+Sanyam Bhutani  1:20:07  
+Good. 
+
+Rohan Rao  1:20:07  
+So I think overall, we had a really solid model. And primarily that came from the data cleaning that was done. And I think most of the credit goes to Oleg for that. I think he spent the most time and he figured this thing out. And I remember during our initial discussions, we quickly realized feature engineering is a little risky, because it's hard to validate, and it may just add noise. And even without feature engineering, we were getting very similar scores. So I think all our final models have like just a very basic set of 20 or 25 features. 
+
+Sanyam Bhutani  1:20:47  
+Okay, did you end up using R as well for this competition or was it Python?
+
+Rohan Rao  1:20:52  
+So it was primary primarily Python, but our ensembling script is an art. So all the data processing, the models, every models you know optimization everything is in Python.
+
+Sanyam Bhutani  1:21:08  
+Okay. 
+
+Rohan Rao  1:21:08  
+Only the last ensembling piece that is in R but that's very easy to do in Python as well, just you know towards the end we wanted to do things really fast and, and since Ris still my, you know my right hand language my first language I switched to R got things done faster.
+
+Sanyam Bhutani  1:21:27  
+Okay. Now I will share a few questions from the AMA one by one and maybe you can go over them because there are a lot of them. What was your feeling around all of the leakages that has happened during the competition?
+
+Rohan Rao  1:21:40  
+It's it's unfortunate. This I think this is something that the organizers should have at least realized or made an attempt to solve for before. But you know, even that being said, full credit to all the people who, you know, scraped public websites and, you know, shared the data on the forums. I think it helped made the competition clean. And at least it gave, it became a level playing field. So I think a lot of people are afraid that people who are good at web scraping, they are going to win this competition. And honestly, een I had that fear, so so I mean, I'm glad and I'm happy that the the leaks were shared and finally you know, towards the end, I think the Kaggle team also, they took a good decision that they, (((((they would remove the sites that will need from the private test set, just you know, to be fair and safe, because they didn't want solutions that were heavily exploiting the leak to be the top solutions. Turning that was, that was a good decision. It's just unfortunate that it's sort of like an ad hoc requirement that came to Kaggle like in between of a competition. So it took quite some time for them to finalize everything and, you know, share, share the final results. But yeah, I think overall at the end, probably with the leak happening, I think it's they made the best out of it.
+
+Sanyam Bhutani  1:23:22  
+Okay. How did you train on the massive data, any tricks or tips for doing or just dealing with such massive data in general?
+
+Rohan Rao  1:23:32  
+Just get more RAMs, computing resources and computing power is getting cheaper, I think especially for Kaggle you would want to do things faster, because I think it's easier to you know, just get a larger system. I think there's more benefit than to spend a lot of time like super optimizing your code. But obviously, you can do the latter as well. And there is learning in it. So even I think the kernels only competitions on Kaggle, I think that's what forces you to do that. So you can't really build really large complex, you know, compute intensive or time consuming features or models. So they give you that constraint that what can you do in 16 GB RAM with how many cores are there and within nine hours of runtime. So there are these competitions were now forcing you to, you know, figure out ways in which to get the best output or solution with constraints on resources. Considering you already have this constraint in some competitions, for the other ones, I think you should just go bezerk, and you know explore these higher RAM machines and actually sort of see the the value and the impact and the benefit that they make.
+
+Sanyam Bhutani  1:25:12  
+Now, as you mentioned, you spent a lot of time cleaning the data. Did you automate? Was that automated? And do you have any tips? Again, the person is asking about how do you do it in increments? Maybe you run small experiments, or was it a full scale experiment for you the whole data cleaning process?
+
+Rohan Rao  1:25:31  
+So let me break this into two. So I talked about data cleaning for ASHRAE and I talked about data cleaning in general. So specifically to ASHRAE, we did try a couple of, you know, simple rule based data cleaning scripts, and I think a couple of them are also shared on the Kaggle kernels. So they do work. They do work reasonably well. It works for about 98% of the cases, it does identify the right outliers. But I mean, if you're working on a Kaggle competition, you will want hundred percent, so and 1449 buildings, it's not too much. It did take I think, maybe five full days to go through every building, you know plot it, identify those outlier observations.
+
+Sanyam Bhutani  1:26:27  
+Again for seasoned Kagglers, not newbie Kagglers.
+
+Rohan Rao  1:26:31  
+Hehehe.
+
+Sanyam Bhutani  1:26:31  
+Hehehe.
+
+Rohan Rao  1:26:35  
+No, I mean, this is this is fairly doable.
+
+Sanyam Bhutani  1:26:38  
+Okay hehe.
+
+Rohan Rao  1:26:39  
+There were not too many of them, like, and so if you plot the observations of a building, it's very easy to like pinpoint and sort of identify that, oh, these are the outlets. So I think that's that was fairly doable. It just took time, but I think it enabled us instead of having 80%, 98% of outliers removed, we got to like the exact set of hundred percent of our outliers that we actually would have wanted removed. But yeah, I mean, I think if this was like a production system, where you had to update it, like every day or every month every week, obviously this is not feasible, then you would go for the automated scripts.
+
+Sanyam Bhutani  1:27:24  
+Okay.
+
+Rohan Rao  1:27:25  
+Data cleaning in general, I would say, I think it's, it's a little bit more of an iterative process. So I think with experience there are a lot of basic and repetitive data cleaning ideas or data pre processing ideas that that are there. And the general, the general approaches to try out each of them, validate it locally or locally with the leaderboard, and then sort of take the combination of the set that works the best
+
+Sanyam Bhutani  1:28:00  
+Okay, now a question about your solution. Did you try to build time series models with CNN and LSTMs for ASHRAE and if you did, why didn't you include those in the solutions?
+
+Rohan Rao  1:28:12  
+So we did. In fact, I have also publicly shared a kernel that uses prophet. So I did try LSTM as well as prophet. But I think both of them performed significantly worse than the boosting models. And also, we also did try to ensemble them with a very small weight, but it barely get any improvement. So we decided to sort of scrap that idea. But I think again, the reason why these models don't work is due to the size of the training data. So it's just one year of data. So it's hard for time series models to really understand let's say your early teens or your early backgrounds,or even patterns within a year, because within a year you have like only one set of data points. So I think that's the reason why these models don't fit really well. And it didn't really work out for us. And most of the top teams don't have any time series based models that are used. 
+
+Sanyam Bhutani  1:29:21  
+Okay, now, I know that you have personally started pushing a lot of sharing towards the discussions and kernels also, which you also did in this competition, which is like, slightly contrary, because usually the top winners don't share while they are competing. They don't give away that much knowledge. This question is, will you continue doing that in future competitions also, or did this just happen by chance in this competition?
+
+Rohan Rao  1:29:48  
+Actually, I disagree with you on that. I think in many of the past competitions, many folks amongst the top teams have shared, while the competition has been going. And in fact, you know, I just also wonder, oh why are they really sharing? Like, is this the secret sauce? Is this what's going to be? Is this what is required to perform well? But I think the motivation for you know, these people and for me in this competition, it was not so much about and none of these codes or ideas have been shared in the most optimal way. So even if you look at the kernels I've posted, they are just, they're just the building blocks that enable people to use them and for them to pick up an optimized for themselves. So, so yeah, there are there are been times where, you know, optimized code has been shared, and it has received a lot of backlash. But personally, if you look at my kernels or even some of my discussions, I don't think I've really shared much about my optimized set of models, or I don't think I even shared my CV or validation framework or schools. So the kernels are primarily just building blocks that enable, mainly beginners and newcomers to know quickly pick up and try out things for themselves.
+
+Sanyam Bhutani  1:31:23  
+I'm sorry, I'm the new Kaggler who hasn't experienced as many competitions so I relay the prevailing emotion that experienced Kagglers don't share as much.
+
+Rohan Rao  1:31:31  
+They do they do. In fact, you have also interviewed CPMP, and irrespective of where he is on the leaderboard, he's always sharing a lot of interesting stuff. And in fact, I have learnt a lot from a lot of these top Kagglers who, you know, have shared ideas, have shared codes. So I thought, you know, for a change, you want to you know, give back to the community. So that was my little motivation.
+
+Sanyam Bhutani  1:32:00  
+Another plug is an interview that I did with Kaggle legend Giba Gilberto who shared a leak in a competition and ended up performing really well on that one also. So do check that out (for the audience). The final question from the AMA is, how many total hours were put into the entire process from agreeing to the terms to selecting the final models throughout the time you were active?
+
+Rohan Rao  1:32:27  
+For the ASHRAE competition? 
+
+Sanyam Bhutani  1:32:28  
+Yes, yes.
+
+Rohan Rao  1:32:29  
+Okay. For this one I started I think beginning November and the competition ended mid December. So that's about 45 days. I probably spend about on average, three to four hours every day. 
+
+Sanyam Bhutani  1:32:50  
+Okay. 
+
+Rohan Rao  1:32:50  
+So that's about 200 hours, 200 man hours. And we had like four people in our team. So maybe the team effort totally was maybe 500.
+
+Sanyam Bhutani  1:32:59  
+1000 hours. 
+
+Rohan Rao  1:33:01  
+Yeah, between 500 and thousand.
+
+Sanyam Bhutani  1:33:04  
+Okay. Okay. It's, of course, some genius and a lot of efforts, or a lot of genius and a lot of efforts as well.
+
+Rohan Rao  1:33:13  
+Yeah, it's a combination. It's a combination of both.
+
+Sanyam Bhutani  1:33:16  
+Now, stepping back from Kaggle, you have witnessed Kaggle over the few years since 2013. I was in high school back then so I didn't get to experience it, but I assume the platform has changed a lot. Can you name any favorite change, or any favorite feature that they have added over the, over these years?
+
+Rohan Rao  1:33:38  
+Favorite feature, I think favorite feature would definitely be the kernels, the notebooks. You know, not not just about you know, giving a platform to share it, but also about, you know, giving resources to the competitors. Because ultimately, you don't want you know, the best solutions to be built by the competitors who can only afford, you know, larger systems. It's really about sort of nullifying that aspect of it.
+
+Sanyam Bhutani  1:34:10  
+And democratizing it again. 
+
+Rohan Rao  1:34:12  
+Yes, yes, exactly democratizing the resource power of it, and enabling more people to come onto the platform and like literally, like anyone can just connect to Kaggle using any machine now. 
+
+Sanyam Bhutani  1:34:27  
+Yep.
+
+Rohan Rao  1:34:27  
+Use the kernels to solve, solve the problems. So I think that would be my, my number one favorite feature that they have introduced, compared to the 2013 days-yeah.
+
+Sanyam Bhutani  1:34:42  
+You've also been former number one on AnalyticsVidhya You also achieved many great results on crowd analytics platform. What are your thoughts on competitive data science outside of Kaggle? Any preferences there?
+
+Rohan Rao  1:35:00  
+Yeah, I think I was one of the few ones who have been active on AnalyticsVidhya and CrowdAnalytix since more than five years, and I think these, these platforms are really good and you know, understanding data sets, optimizing models, building solutions, really quick turnaround time. In terms of, you know, these particular platforms in general, they, I think each is different in a particular way. So, I mean, just for example, AnalyticsVidhya has, doesn't just do competition, they do like a lot more of, you know, blog posts and they have a lot a lot of educational content. Their primary focus has been in the Indian, Indian market, being an Indian company and that they are clearly, like the biggest data science community of India. I think that they have done some great work. And in fact, I've also mentioned this before that I think the last four or five competitions on AnalyticsVidhya, they have been exceptional, like the quality of the data set, the stability of the metrics, just the organization and the final outputs the solutions. So, so I think it's just, it's just getting better with time. On Kaggle, I mean, they have a lot more variety. They have internationally the largest community, they have a wide mix of, you know, different problem statements. And I think globally, the kind of learnings that you will get from these platforms, it's it's just incredible. And I think the best part about these is, it's 100% free. 
+
+Sanyam Bhutani  1:37:09  
+Yeah. 
+
+Rohan Rao  1:37:10  
+So I mean, I don't see any reason why someone not in data science would not be on these platforms.
+
+Sanyam Bhutani  1:37:17  
+Very True: Now this has been an amazing interview full of amazing advice, but I'd like to ask you for a final advice to beginners who are just starting their machine learning journey, and how can they motivate themselves to make the sacrifice as you call it?
+
+Rohan Rao  1:37:36  
+Yeah, so;
+
+Sanyam Bhutani  1:37:38  
+It's a trick question, heh.
+
+Rohan Rao  1:37:42  
+It's, it's, it's it's tricky to have one single answer. But I think the answer for this really needs to come from the individuals themselves. So internally, I've shared some of the things that has worked for me. So other people, other Grand Masters, you know, they would have their share of experiences. But there would be you know, certain aspects which are the common or consistent across these. But primarily it's it's really about you know, not not feeling afraid of, you know, going deep into these competitions or these data sets trying out stuff, and I remember someone telling somewhere, but I don't remember where it was. So no idea's ever a bad idea. It's a no, no feature idea or no modeling idea is really a bad idea. And as you discussed and you mentioned that you have to try 100 things and maybe five will work.
+
+Sanyam Bhutani  1:38:50  
+Yeah.
+
+Rohan Rao  1:38:50  
+So if you, if you do not try 100 things, you will never find those five that work. And to try those hundred things you have to put in that amount of time and effort. So it does come at at the cost of, you know, invest investing this this time and putting in that number of hours. But there is learning and and if if anyone wants to be good at machine learning or who wants to build a career in data science, the they have to, they have to spend time do things hands on, you know, try out a lot of stuff. And that's how that's how you grow and become good at it. And in fact, I think we are at a generation where there is so much of content freely available. So anyone can do it sitting anywhere in the world, they just need access to one machine and internet. So it's just super easy to be able to pick it out, do things and grow. So that would be my simple;
+
+Sanyam Bhutani  1:40:02  
+Before we end the interview, can you see the secret behind your name Vopani on su-I think sudoko leaderboards and Kaggle as well.
+
+Rohan Rao  1:40:11  
+So that's, that's been a secret for many years and it will continue remaining a secret. 
+
+Sanyam Bhutani  1:40:17  
+Okay.
+
+Rohan Rao  1:40:18  
+I do plan to, you know, share. It's a nice, it's a nice story.
+
+Sanyam Bhutani  1:40:23  
+Okay.
+
+Rohan Rao  1:40:23  
+Of what that name is and how I came up to it. But there is there is still a few more years to go before I can publicly share that. But it is going to come, sometime.
+
+Sanyam Bhutani  1:40:37  
+Hopefully it might be revealed on the podcast so subscribe if you haven't. Thank you so much, Rohan. Before we end the call what would be the best platform to follow you? I'll have your Twitter and LinkedIn link in the description, any other platforms that you want to mention?
+
+Rohan Rao  1:40:53  
+Yeah, so I would say twitter, twitter is the best place, email would be another. 
+
+Sanyam Bhutani  1:41:00  
+Okay.
+
+Rohan Rao  1:41:00  
+So these these two places generally I'm fairly active, LinkedIn not so much. I just keep it to my personal professional network.
+
+Sanyam Bhutani  1:41:11  
+Awesome. Thank you so much Rohan for joining me on this series and for all of your contributions and representing India not just in data science but also in sports at the national levels and best wishes to you for your future Sudoku competitions and also data science world competition.
+
+Rohan Rao  1:41:29  
+Cool. Thanks so much Sanyam for inviting me to the "Chai Time Data Science" show and it was good. I have been following your show and I've been seeing the interviews so it's great to be now, you know one of the episodes. 
+
+Sanyam Bhutani  1:41:44  
+Thank you so much.
+
+Rohan Rao  1:41:45  
+And I hope your viewers also like this, this interview.
+
+Sanyam Bhutani  1:41:49  
+I'm really sure we all will enjoy it as much as I did. 
+
+Rohan Rao  1:41:53  
+Cool.
+
+Sanyam Bhutani  1:42:01  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science."
+

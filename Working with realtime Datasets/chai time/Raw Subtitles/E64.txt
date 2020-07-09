@@ -1,0 +1,237 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science," a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the "Chai Time Data Science" science show. In this episode I interview, Hamill Hussein, who's currently a staff ML engineer at GitHub. And we talk all about the open source world and his life behind the open source world at GitHub, the projects that he's been working on and his journey into the field of machine learning. We talk a lot about his research ideas and the projects that he's been working on at GitHub. And before GitHub in his previous life. We also talk about fast AI, his journey with fast a, and his best advice is to student along with his recent project, so to speak, fast pages, which is one of the best ways to get started with blogging, if you don't want to put it on a website that paywalls your blog. So please stay tuned for that if you're interested. I think this interview has many hidden advices around open source and fast a or even data science so to speak, so I'm really excited to be releasing this interview. Quick reminder, please remember to subscribe to my newsletter. If you Want to stay up to date with the episode releases there are two episodes releasing every week. And secondly, if you're a non native English speaker, please remember to go to YouTube and watch the video of the interview on YouTube and enable the subtitles if you like, for a better watching experience. Without further ado, here's the conversation. Please enjoy the show.
+
+Sanyam Bhutani  2:40  
+I have today on the show I have someone who's working on the other side of the open source world if I may. Hamel thank you so much for joining me on the podcast.
+
+Hamel  2:49  
+Oh, thank you. I'm really happy to be here.
+
+Sanyam Bhutani  2:52  
+Really excited to be talking to you. I want to start by talking about your background because I'm curious how did you get interested in machine learning at what point in your career did you find the inspiration to start a journey in this field?
+
+Hamel  3:05  
+Yeah, um, that's a really good question. So, I'll kind of start from the beginning. You know, when I was in college, I, undergrad, I studied industrial engineering, a lot of optimization, things like linear programming, stuff like that. My first job I graduated was doing credit risk modelling. Okay, for for now, a bank that is now no longer exists because of credit risk, credit risk problems. And then at some point, I decided to do management consulting. And I did that for about almost almost a decade, a little bit less than a decade and I decided at some point that that wasn't something I wanted to do the rest of my life and I wanted to do something like more hands on. In the management consulting realm, I did a lot of what's called Data Analytics. So some machine learning a lot of data cleaning, you know, a lot of kind of reporting stuff, but some machine learning. And at some point, also, so like, I got really burned out on management consulting for a wide variety of reasons. Something that resonates with me when Jeremy tells people about his background, about him being consultant is that he's almost recovered. 
+
+Sanyam Bhutani  4:47  
+Yeah.
+
+Hamel  4:47  
+I think that's hilarious because I feel like I really understand what that means. But maybe I'm not fully recovered yet either. But to continue going on. So I kind of had a quarterlife crisis. And I decided to go to law school. 
+
+Sanyam Bhutani  5:06  
+Okay.
+
+Hamel  5:07  
+Because I just I think I was so disillusioned from management consulting, I thought that, you know, I don't really care what I do as long as this challenging and make perhaps I can make a living out of it. And I thought I had this idea that I can also help or use law to help people. It turned out so I went to law school is kind of kind of a crazy bet on my part, but I said, it doesn't matter. Life is short. And then I went to law school and I really hated it. I hated every moment of it. I hated it like it was. So you know, I actually enjoy programming and data and looking at data. And so it was just complete opposite of in so many ways. I ended up graduating, but then at five or six days After graduating, I realised like I can't spend the rest of my life doing this. I need to go back to do something now, like, do something in tech. So, fast forward a little bit. I ended up doing a little bit more consulting just to get out. But then very quickly transition to tech. So the first startup that I went to, was called Data robot. It was very formative for me, is a group of people that are kind of at now and especially at that time as well, kind of the superstars of Kaggle I had three or four number one Kaggle people in the world working there in the same company. And, and so, and also learned a lot through Kaggle. I've never been good at Kaggle per se myself. But I definitely learned a lot and I really, really fact that and a lot of my friends were also doing casual. And, and so it was really a great community. And so when I learned at the startup, I said, okay, like I need to join them. But my skills at that point weren't necessarily extremely polished, especially when compared to the kind of, you know, sort of the group of Kaggle Grand Masters. And so, I was, I decided that I need to work at this company, no matter what even if I can just sit next to those people and learn from them or ask them questions. You know, this is the best thing I can do. So my first job at this data robot was a sales engineer. So that basically what that entails is going to customers and in kind of demoing data robot saying this is what it does. This is how it works, answering questions, so on and so forth. And actually learned a lot doing that, and actually took the time to try to soak in as much knowledge from all of these people as possible, asking questions, trying stuff out on my own, kind of digging deep and I learned so much from that. And then I pivoted to do a lot of other roles, a data robot, then I became more of more traditional data science stuff, sort of learned a lot about a lot of things. And that really helped shape me. Then at some point, for personal reasons, I had to move to San Francisco. So I thought to myself, okay, I'm in San Francisco. I should maybe try to experience what was it like a typical Silicon Valley company look like? What's, you know, what's an exciting place to do data science at that time? I looked around and there was air Airbnb seemed like a really exciting place to do data science. So I applied I got the job. And I think that was really helped by data robot. I learned a tremendous amount at that, at that company, and I think that was, I think that I see I see a good story for maybe listeners of your podcast, like, you don't always have to enter in as a data scientist per se. You can try to find opportunities where you can learn somehow and be creative with how you take that journey. Anyways, so Airbnb, Airbnb, I worked in the growth marketing team, so using machine learning to sort of optimise marketing spin for Airbnb. And so I was to kind of go back one thing I really liked about data robot is that really resonated with me. This idea of building tools for data scientists, I thought that, like, I thought that's something that I could really understand. And really see the value of and something that gave me joy is, you know, it's something that that just brought me a lot of satisfaction. And so going to Airbnb, you know, I wasn't doing that. Obviously, I started out doing machine learning, optimising spend. But then very quickly, I sort of started drifting into making tools for data scientists. So how can we make the infrastructure better? Or what kind of tools can we build to make the process of using, you know, building models easier? And then, for other, so then I had to move to Portland, where I live now. So I try to find a remote company that allows me to do that. And that, you know, is remote first. And so I discovered GitHub. GitHub is a company that is it's a remote first company. What that means is most people are remote. And they have all this processes in place to facilitate remote work. And so I started working there. So GitHub, I do a variety of things. I focused a lot on natural language processing. And looking at things like GitHub issues or code. And then I started again, drifting back into tools for data scientists. It's I realised, I keep coming back to this, I just drifting into it naturally. And so I'm actually going on now focused on building tools for data scientists who use GitHub. Now, there's not really that much there yet. But that's what I'm working on. 
+
+Sanyam Bhutani  11:50  
+Awesome. Now I want to break a myth, have on your computer science bounce super helpful because many people miss out on the fact that you just mentioned. There's a lot of learning to be done while you're at the job also. So do you agree with the fact that maybe a CS background is helpful to some extent or it's not necessary?
+
+Hamel  12:18  
+ Oh, yeah. Okay. I totally skipped over that. So, on the journey, like I think between data robot and Airbnb, or even I was Airbnb. I enrolled in this Master's of computer science class at Georgia Tech. It's good. It's like a MOOC. This is before fast AI was even available. It was like, you know. And so, for me at that time, I thought, oh my God, I'm this person that has a law degree. And I have a, you know, undergrad, and, you know, industrial engineering. You know, I felt that maybe my resume looked a little bit weird. Maybe CES be a way to wash my hands, maybe get some form of formal training, maybe it's helpful. Maybe it's not I don't know. I, you know, I will say it was a lot, I spent a lot of time doing that. It was actually a lot of effort. I've been seeing my wife for probably a year or more two years, maybe. I mean, I saw her but you know, I'm kind of exaggerating. But just to give you an idea, and I don't I mean, I did learn some things. But I will say that learning on the job learning from people learning from mentors, you know, that was way more helpful than anything else. And things like fast AI fast AI was an incredible learning experience. And a lot of different dimensions, which we can talk about. So I don't think is necessary at all. I think The kind of the best thing you can do is in your job that you have currently try to find ways that you can apply machine learning data science, using your domain expertise. So where you're sitting, and you know if there's creative ways to get into data scientists, if you look at jobs, you know, if something isn't so you have to start with a title data scientist. There's a lot of paths to get there. So, yeah, I wanted to also demystify the CS degree formalism thing. 
+
+Sanyam Bhutani  14:31  
+Yeah. It's like an insider secret. And I received a lot of heat on this when I went out and said, I did a computer science degree I how I do hold a bachelor's, but it didn't make me a better programmer, just to let you know, and you can probably do better even if you didn't go to the rigorous rating of just studying what data structures are or how does that electronic board function because people think CS equals better good. No, it does not. It equals to Moore theory.
+
+Hamel  15:02  
+Yeah, definitely. And I, to be honest, I don't know how much of it, theory I remember. Maybe maybe the theory is less scary to me when I see it or hear about it. I kind of know what that is. But is that worth three years of two years of torturing myself? I'm not really sure. I would say, maybe, perhaps not. I don't know.
+
+Sanyam Bhutani  15:27  
+I it's actually funny. I, I now work at a company where I get to sit next to Grand Masters, and we went to meet up with someone who's talking about compilers. And I remember telling him this is the only time I found something that is studied in my college relevant to something that I'm remotely interested in.
+
+Hamel  15:46  
+That's really interesting. I forgot that you work at h2o. And I would say, there's a lot of parallels between data robot and h2o and especially the environment and yeah, I think that's an amazing experience that you get to go through that Actually a lot of really impressive people that work in there, including yourself.
+
+Sanyam Bhutani  16:05  
+Too kind, I mostly sit, sip chai and talk a lot to the Grand Masters, but I think I'm very fortunate to be here.
+
+Hamel  16:13  
+That's great.
+
+Sanyam Bhutani  16:14  
+Coming to your journey you're already working in the data science field would lead you to signing up for fast AI. Many people do the opposite. They're looking for a job or maybe they're interested. Why did you sign up for fast AI?
+
+Hamel  16:29  
+So the way I found fast AI is through HackerNews. And this was back in the very first fast AI with with the Keras. And you know, until then, Aaron was talking about deep learning. And it seemed very, I didn't, you know, I didn't know where to begin like learning it seemed very mystical. Like, how do I learn this? I don't I don't know if I understand. is a little bit scary, intimidating to me at that time, the deep learning part of it. And I kind of had put it off for a while. And then I saw it on HackerNews and just the way that is described, like, from the very first sentence, deep learning about a PhD, or I don't know what the tagline was, and is like, okay, we're going to take you through this, it was Jeremy Howard, I knew of Jeremy Howard, not personally, but from data robot, you know, people, you know, all the kaggle grandmasters sort of talk about each other in a good way. And I knew his name. And I knew, okay, someone with that mindset, that kind of the casual mindset of sort of doing things in a practical way. You know, that's going to be a really interesting perspective. I need to I need to check it out, you know, and learn, like what, whatever this is. And actually, like, yeah, I signed up for it and actually convince my my friends at Airbnb, where I was working at the time to come with me. And then we all went and we all really enjoyed it. And one of the problems with the first course is, it made me so productive that it kept me like I couldn't really focus on the second iteration, like, by the time they finished, they converted to pi torch. I was the first time made me so productive, that I started five or six different projects, okay, at work and otherwise. And it just kept me so busy. That it took me a while to, you know, catch back up into like the Pytorch kind of version. It's not really a problem, but it is a funny, kind of, that's how good the course was.
+
+Sanyam Bhutani  18:47  
+It's a good problem to have. 
+
+Hamel  18:49  
+Yeah, yeah. 
+
+Sanyam Bhutani  18:51  
+And I'm sorry, did you take the first part in course and after after that, did you take them online or;
+
+Hamel  18:58  
+I took a so I definitely took them in person. But I think even when I was thinking that person I viewed most of them online, because I mean, it's just better to like, in my mind, it's very convenient to look at material online. I can pause it, I can skip steps, I can go back all that stuff. But now definitely went in person  sometimes. So, yeah, I mean, I did both. 
+
+Sanyam Bhutani  19:27  
+Okay.
+
+Hamel  19:28  
+Yeah. 
+
+Sanyam Bhutani  19:29  
+Okay. Awesome. How did you end up approaching the material? And this is maybe a bigger question towards the later iterations where it's it's really a huge topic. It is in the community, how to do fast AI. How did you do fast AI. Any tips and tricks? How did it work better for you? Any any secrets?
+
+Hamel  19:48  
+So the way that I did it was so I definitely didn't go through the material, very rigorously explore it. I think went with the flow of my learning. So what I mean by that is, when I encountered a topic that I thought was useful to, I try to look for opportunities to apply it at work or apply it to something that I'm doing. And sometimes these diversions would take me completely away from fast AI. Like, it would just keep me so busy. Because So, for example, one of the, because I learned karass, which was, I didn't really understand before that first course. I was able to, you know, look for opportunities, like I was working on GitHub at some point. And I thought, okay, let me try to do something that summarises GitHub issues. 
+
+Sanyam Bhutani  20:48  
+Okay.
+
+Hamel  20:48  
+They probably it probably won't work, right? Because it's issues like it's not gonna, I'm not gonna be but let me just give it a shot. And when, you know, I tried it, it worked reasonably well. And then it is so exciting. And then that led to all kinds of other projects. And so I just let the learning take me wherever it goes with the priority being applying it. So like, try to find ways to apply it on something you're doing. And then the benefit of that is your work becomes learning. And really, I felt like I was just doing fast AI work all the time. And so that was really that's really enjoyable. So that was a key for me. And I still try to do that wherever possible.
+
+Sanyam Bhutani  21:37  
+And I feel I struggle with this as a student because when I started I was in any university. Any advice is there on how to find the passion project for people like me who struggled in the past to who maybe aren't working at a data science company currently or don't have that killer idea or that passion project.
+
+Hamel  22:00  
+You know, the I would say it's okay not to have the killer idea. You just want to be prepared when the killer idea comes. And you know, there's other examples I can give you the fast AI, where it really, you know, jam so there's one I don't even remember what lesson it is or this is gonna be extremely vague. But it was something some less than about apply applying embeddings you know, from images to completely outside the data set to a different data set. And, for example, being able to label images of maybe you know, like a fish when a fish was not in the training set because of this some, like kind of knowledge transfer. And then I thought, okay, I can, that's really interesting. And then he could search he could he could also, he mapped one embedding space onto another embedding space. He described some paper is able to search the images for like, you know, a fish on a boat or something. And that wasn't in the training somebody able to find it in some other data. 
+
+Sanyam Bhutani  23:25  
+Yeah. 
+
+Hamel  23:26  
+And I was sitting there in class. I thought, I wonder if you can do that with code. So and, and so I was like, went home and probably worked on that for a month or so. Like non stop I like forgot everything about the class. I put that on pause and wait um, so but i guess I but before that, like, there was an essay killer idea was just keep listening and keep sort of learning But then keep your mind open to the killer idea and be willing to completely explore that idea. I think without, you can always come back to the class but being able to apply what you learn in the class to a real problem. That is where it really you can really submit yourself. And so, yeah, I think that's how I go about it, of course, different styles, different people. But you definitely don't need the killer idea, but it will come like if you're prepared for it to come.
+
+Sanyam Bhutani  24:34  
+I think that that brings me to two very interesting topics that I've always been interested in. But for the audience, I think I'm not sure but that was part two of the course. I don't remember which I;
+
+Hamel  24:44  
+Don't remember anymore. Yeah, that was long time ago.
+
+Sanyam Bhutani  24:48  
+Yeah. But the first point is, if if you're falling, MOOC, even the fastest MOOC, it comes under that category. Completing a MOOC isn't what you're aiming for. Especially with fast AI you're building skills. Because Jeremy teaches you things in a fashion that it does instigate your thinking it does give you stimulus, and you're supposed to build projects off of it and not just stick against every lecture. And that's not going to be your takeaway.
+
+Hamel  25:16  
+Yeah, that makes sense. Yeah.
+
+Sanyam Bhutani  25:18  
+And secondly, like you mentioned, if even if you, if you following a lecture, the idea could come there and don't disregard the stupid ideas also, to quote the best example, clarifying black and white images. It's it, who'd you it would work to that extent?
+
+Hamel  25:38  
+Yeah, I think follow the ideas and try them out. You know, and then the another part is right about that ideas and share the knowledge. I think that's a that's a key part of fast AI that I think is encouraged. And maybe is underrated.
+
+Sanyam Bhutani  26:04  
+Still underrated again, for for anyone who's curious, I recommend one best advice, which is by Rachel Thomas. The blog is titled by you. Yes, you should blog. That's absolutely the title of the blog. Please look it up or school into the show notes to find it. But now now I want to talk about your current day job. What are you working on on GitHub? And what does a day in your life currently look like? And he takes trips. So it takes some tips and tricks you found with remote work now that you're working remotely?
+
+Hamel  26:36  
+Yeah. Okay. I'll start with what I'm currently working on. So as I mentioned, you know, so I GitHub by been, I've worked on a bunch of things, some natural language processing for GitHub issues. I've worked a lot on representation learning of code, using various techniques. And as I mentioned, vast data gave me some inspiration to work on that. For I kind of didn't appreciate. I mean, it wasn't really aware of a way to try to go about representation learning of code, although it could have discovered it through other avenues and kind of, you know, the idea came literally in fast AI course. And then I started pivoting to making tools for data scientists. And thinking about ways that data scientists struggle with their workflow, and how GitHub might be able to help solve that. So certain things I'm working on is continuous integration, continuous delivery mechanisms for machine learning workflows. So like, so you might in GitHub, you might be familiar with things like Travis or circle ci that execute tests for you automatically. You for change, you know, code is merged into production. But then machine learning ci CD is very interesting. Because you might, you might have your standard tests lemo and do additional tests. And I actually want to train the model against, you know, a data set. And you might want to measure it against the baseline to know whether or not the change to your model should be merged into or, you know, production or deployed to production. And, you know, the traditional ci CD tools, it's hard to know how to do that, you know, it's not really built for that, because the compute can be large. And, you know, the workflow might look a little bit different. So I'm working on tools for that. I'm working on kind of a lot of tools that use GitHub pages to take information in a repo that is in a certain format in a standardised format and render it for for the end user. So like if you, if you put your metadata about your machine learning project in a certain format in your repo, then it gets sort of in a pretty kind of dashboard thing. 
+
+Sanyam Bhutani  29:15  
+Okay. 
+
+Hamel  29:18  
+Funny enough, like I was working. So we're going back to the blogging subject, about why you should write a blog. So I've been using medium for a long time. And it's sort of been that it was nagging, like, in a way, like, there's been some people that I respect saying, you know, a lot of times I opened a medium link, there's a paywall, and I just closed it. Because it's too, you know, because if you're on mobile, you know, you have to send it to an incognito window, or something like that. It's not you know, it doesn't take much to get people disinterested. They need something to dissuade them. And then they're done. And then also started thinking, what if medium goes away? What if someone buys them? Or what if they just decide to completely make you pay? What happens to that content? That's really sad, you know, and also had for the longest time, I had friends that had blogs on their own. And I thought it was always thought it was like magical, like, how are you doing this? You know, I would ask my friends, okay, how are you doing this blog and saying, oh, they were using. So go get the repo and there's all this HTML, all this, the CSS in there, maybe some JavaScript and also some templating languages. And it was, like some of his idiosyncratic like, I was like, okay, how did you figure this out? See, this is not data science. This is something like this. It looks complicated. Like I can't just read this code and like, understand what it is, but you're blogsite looks cool. And you've managed to figure it out. Like, that's crazy, like, okay, I want to do a blog to like, how do I figure I just was nagging me for some time. Then I finally said, you know what I'm gonna figure it out. Like, I want to figure out how to make my own thing, my own page and get on pages. So kind of dug really deep into Jekyll and GitHub Pages. kind of went through it. also did a lot of tutorials, HTML, CSS, all this stuff completely. Does not ML is not;
+
+Sanyam Bhutani  31:34  
+Yeah, yeah.
+
+Hamel  31:34  
+Probably for the past two months. I've not done really any ML. I've been doing all kinds of ci DevOps and stuff like this. 
+
+Sanyam Bhutani  31:42  
+But you need it to put ML content out there. Just to be fair.
+
+Hamel  31:46  
+Yeah, I mean, so then, um, so at the same time, Jeremy, learn the same time I was looking at this, I saw that Jeremy posted fast template, an easy way to make blogs on GitHub. So I was really excited about that, like, wow, okay, like, that's really interesting. Somebody, somebody else is very interested in the subject apparently. And through some conversation with Jeremy, we got really excited about taking the idea further to fast pages. So fast pages, something I'm really excited about. Going back to why you should blog. So before this data scientists, you know, it's really hard to convert a Jupyter notebook into a blog. It's not that easy. So what you'd have to do is, I mean, the minimal version is maybe not that hard. You know, you take your notebook, you run NB convert, convert it to markdown. 
+
+Sanyam Bhutani  32:50  
+Yeah. 
+
+Hamel  32:51  
+And then you save your markdown file in a certain folder that you have to take care that your images are saved. Also in a correct folder so that the links don't break and stuff like that. And, you know, and then there's all this, all the details really add up. So you might have a lot of code in your Jupyter notebooks. Sometimes you want to hide the code, sometimes you want to show the code. Sometimes you want to hide the code, but you want to make sure that somebody can easily see it. 
+
+Sanyam Bhutani  33:25  
+Yeah.
+
+Hamel  33:26  
+Or sometimes you want to show the code but make make it to where they can hide it without any of these plugins. So without, you know, too much fuss. And you want to be able to do things that you do on other blogging sites like medium. So medium is nice, it looks nice, and it gives you some, you know, functionality, so you want to be able to embed pictures, local images or remote images. You want to have captions on your photos. And, you know, while we're at it, since it's Jupyter, can we keep some of the interactive visualisations interactive because that's one of the great things about Jupyter is allows you to have visualisations and also, we want to have comments. So people can make comments you can communicate with your readers. And you want to be able to have things like search, and also tagging of your blog posts into categories and all of this stuff that when you start to add on all these details, it gets quite complicated for people. And, and so we wandered away, we started to think, is there a way that you can just author a Jupiter notebook and just save it and the rest is happens autumn like this magically for you, it just becomes a blog post. Yeah. And you can use convenient markdown syntax in the Jupyyter notebook to say whether you want to hide a cell, show us out whatever. And so we realised that combination of MB Dev, which is a great fast AI project, and GitHub actions, which allows you to automate a lot of things on GitHub is a perfect combination for doing. And so that's why we we launched fast pages. So allow people, data scientists to share knowledge. In you know, you can use other things other than Jupiter notebooks, you can use Word docs, you can continue to use markdown files. thing I'm most excited about is the Jupiter. Because really automated, a lot of that stuff that was really hard to do. And it gives you something that's not really available on medium. You know, you can have your notebook and it automatically links back to GitHub. So there's, there's, you can you can customise all of this but you automatically get links to open the blog on GitHub, or run it in colab. So everything is transparent. All you do is save your file and then all of a sudden when you share that blog is ready Rich in it comes pre built with sensible defaults that really enhance kind of collaboration and visibility and transparency in. In technical blog posts where you have code visualisations, you have text.
+
+Sanyam Bhutani  36:19  
+I've always, decently at least I've developed a very strong opinion on medium and I don't want to trash them. But I've completely moved away. I am self hosting my website right now. So I definitely am very excited about this. And I do blog on medium but that is just for the audience that already have theirs, how about fast pages? Where is it currently for the audience that is itching to check it out? What can we expect right now?
+
+Hamel  36:48  
+Yeah, fast AI, slash fast pages. So the thing that is magical so many ways, so it's even the odd the, the setup is even automated. So what you'll do is you go to fast AI Fast pages on GitHub. And you'll notice the setup steps are two steps. One is click on a link, and you create your repo from the template. And then 30 seconds later, GitHub automatically will open a pull request, changing the configuration of the repo, so it will work under your username. And then all you have to do is you have to, there's one step where you have to add SSH keys into your repository. And that's in the PR instructions how to do that. Once you do that, you merge that PR, your blog is like that. And and then that's where the magic starts. And then the magic continues where you write your Jupyter notebook, and you just save it into the notebooks folder, and then magically that becomes a new blog posts. And so that's that's really cool. Yeah, that's kind of what you can expect.
+
+Sanyam Bhutani  38:03  
+I want to give a shout out to Aman Arora, who's who's been using it as an early adopter. It's not early adoption, it's almost ready. But do check out his blog. And please do check out the project. Also, if you're interested, I can definitely vouch for it. Coming to GitHub, what's it take on GitHub in the world of software? 2.0, so to speak, do you think GitHub is perfect? Or and can we still get away with GitHub by adding adding all of the features that you're working with? Or since since GitHub isn't very ideal, so to speak for Jupyter notebooks I know, or maybe I'm being very picky?
+
+Hamel  38:41  
+No, I think that GitHub offers almost nothing for data scientists at the moment. And this is something that I'm really passionate about. And I think people you know, there's definitely been attention being paid to this. And there's definitely been a work on it. So the things that are there for data scientist, I mean, is Jupyter rendering of notebooks, which isn't perfect. But beyond that there isn't much. So I agree with you. And that is definitely a huge opportunity. And that's something I'm, I'm trying very hard to change. We'll see how it goes. But I'm optimistic.
+
+Sanyam Bhutani  39:27  
+I am also curious about your research pipeline, you're already working on some some very interesting features. What problems are you currently working on? And how closely integrated are those with GitHub? You also mentioned the issue summarizer. I think I think you've done a few talks on it. Is it ready? Can we somehow request a beta invite for it?
+
+Unknown Speaker  39:48  
+Yeah, I mean, so that's a very interesting question. So some machine learning projects, kind of in the research kind of phase. And then things like summarising GitHub issues, natural language semantic code search, where we try to demonstrate searching for code with natural language. That's not keyword search. So like if you're searching for file server, you can find code that deals with that, even though the word file server doesn't exist anywhere. And so we we've done so done quite a few projects like that. But they've kind of parked in the research category firmly at the moment. And at some point, will maybe graduate from that, but they're definitely parked there. And so I don't, I don't know if necessarily those features will ever make it into production or that research we'll make it into like some get a feature. You know, that's hard for me to say so I've kind of pivoted almost completely away from that kind of stuff to working on software engineering tools. So things like actions that can help automate various parts of the machine learning workflow. And I'll be I'll be writing blogs about some of this on the fast pages site. Hopefully soon, you can read more about what this actions is that I'm talking about. I know it's, it's fairly new. And especially for machine learning people, it might not be obvious how it could be relevant to them. Besides the traditional ci CD stuff, but and also doing things like fast pages, I've been working on fast pages for at least three weeks, almost full time, trying to polish it up with the caveat that you know, actually I'm not a front end person. I don't know. Really, you know, JavaScript, I'm also learning. So, you know, definitely taking me longer than let's say somebody who's season front end developer. But basically creating tools for data scientists is what I'm working on right now at the moment. So we'll see where it goes, maybe I'll pivot back to machine learning. But this is kind of where this has taken me. I made a conscious effort to explore some software engineering tools get better at that. And that's what excited me at the moment. So yeah,
+
+Sanyam Bhutani  42:32  
+Awesome. I think this is also maybe a tangent. But people think of research as something that academics to who have no idea about the real world data science. But here even though you're working on projects, it did lead you to publishing some amazing research and that that really speaks to the I think the field broadly speaking, even if you're working on a problem that might have been sparked through general curiosity or wherever you working It could lead to research or very interesting projects, or maybe both. Who knows?
+
+Hamel  43:04  
+Yeah, definitely. And I think if you're working on some interesting problems, you also get to work a lot of times with interesting people. And so one of the benefits of let's say, natural language, semantic code search was had the benefit of working with some very talented people, including Microsoft Research, which is a really, really cool organisation of people, you know, really talented in various aspects of machine learning. And so that was a personally a very rewarding experience. And so there's also that, you know, it doesn't the research doesn't always have to become a product to be useful for you. I think.
+
+Sanyam Bhutani  43:48  
+Yeah. Talking about the semantic code. So how can we take it out and what what can it currently do?
+
+Hamel  43:56  
+Yeah, so there's a there's a paper On archive, if you can Google my name code search, it'll show up that way, though. So GitHub repo, it's on GitHub slash code search net. We wanted to call it code net, for various legal reasons we couldn't do that. 
+
+Sanyam Bhutani  44:18  
+Okay.
+
+Hamel  44:18  
+So we had to put the word search in there. It's a little bit clunky, because it's not really about search, per se, even though that's the task that we explored. It's about is really an open data set. It's a really large data set of code and natural language. So the parallel corpus of code from six or seven different programming languages and their associated comments, so you can do anything you want with this data set. I think it's actually one of the more underrated data sets out there. Because it's it's relatively untapped. 
+
+Sanyam Bhutani  44:57  
+Yep. 
+
+Hamel  44:57  
+In terms of you know, People building things on it, whatever;
+
+Sanyam Bhutani  45:03  
+Will be state of the art.
+
+Hamel  45:05  
+Yeah, basically, yeah. And there's a lot of cool applications like, you know, if you could build a better search engine, or maybe you could, you know, fix, do fix errors in code, variable misuse, detect variable misuse, better code completion. This is all possible, you know, potentially with the data set that's out there, and the one that we provide So, so getting this data set yourself is actually very cumbersome, you will have to clone a lot of repos, you would have to use a language parsers to parse all the code in these various programming languages to parse out the code part in the natural language part, make a lot of decisions about how to do that. Put it in a format that's amenable for machine learning. And you know, all that stuff is kind of wood is a very high barrier to entry. So we have cleared that barrier to entry. done all that work sort of hosted this data set for the community. So it's really interesting. We have a candlelight competition that we're doing in partnership with the weights and biases, weights and biases as an experiment tracking system is really cool. suggest looking at it if you haven't. Yeah, I think it's good and excited about that.
+
+Sanyam Bhutani  46:26  
+Awesome. Now, before we end the interview, if you were to give one basic advice to future learners who are too shy, or maybe too intimidated, maybe to even create a public repo, what would that be?
+
+Hamel  46:39  
+I will say share your work write about it. That's it. That's the most important thing. It doesn't even matter what it is, even if you learn something tangential to machine learning. So when I was saying if I say I had to learn how to use Docker, because we had a very complicated setup at work, where I couldn't just instal whatever I wanted on these GPUs, I had to encapsulate it in Docker container. But I really I had a lot of problems learning what Docker was at that time. And I found some blog posts were they weren't helpful. So you know, I'm just gonna write a blog post. I'm just making those to myself, really. But no one's gonna read it. I mean, it's my first blog post. Who cares? That turned out for some reason, a lot of people read it, but then I got it. But then I made a lot of friends through that. And a lot of friends and also they opened up a lot of projects. You just resist Docker. It's not like, it's not like, you know, it's a mind blowing thing, but it just, you know, that's the power of writing. It's, it might be it's very underrated. And I think no matter what it is, write about it. Share your knowledge. Someone says if you don't do it, it never happened. Like if you acquire some knowledge, we never wrote about it. Or we didn't do a project and you know, write about it, it kind of, you know, never happened. Like, in a way.
+
+Sanyam Bhutani  48:10  
+I definitely agree with you on that. Before, before we end the interview, I want, I'll have two platforms in the description. But what would be the best platforms if you could just mention them for the audience artists too lazy to even scroll to show notes?
+
+Hamel  48:25  
+I'm sorry, the platforms?
+
+Sanyam Bhutani  48:26  
+The platforms to connect with you or follow you.
+
+Hamel  48:29  
+Oh, Twitter is the best one, I would say. 
+
+Sanyam Bhutani  48:33  
+Okay.
+
+Hamel  48:33  
+My handle is my first and last name concatenated together. 
+
+Sanyam Bhutani  48:38  
+Okay. Awesome. All right. If you can't find that these search in the show notes and find Hamel. Thank you so much for joining me on the podcast. And thank you so much for all of your contributions to the fast AI community and even the community broadly.
+
+Hamel  48:56  
+Yeah, I appreciate it. Thank you.
+
+Sanyam Bhutani  49:04  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week, to "Chai Time Data Science."
+

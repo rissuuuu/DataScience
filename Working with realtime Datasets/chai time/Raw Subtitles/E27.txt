@@ -1,0 +1,372 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to the 27th episode of "Chai Time Data Science" show, if you are from the first day family, you'll recognize why 27 is an important number to me. And I'm really, really honored to be finally releasing my interview with my guru and the guru to the complete fast AI community Jeremy Howard, co founder of fast AI. In this interview will talk all about Jeremy's journey from university to consulting founding to software companies, followed by becoming number one on Kaggle and invest eventually investing into Kaggle. We of course talk more about fast AI, the conversation should also give you an insight of how the team works. How do they collaborate and how is research at fast.ai done. How the course has evolved over time. It's really a huge honor for me to be able to share this interview so thank you so much Jeremy for helping make this happen. And along with a quick note to the viewers and listeners thanks to your comments from now on all of the episodes will include timestamps to the parts of the conversation in the description of the podcast or on comments on YouTube. So please feel free to find them if you're interested. Thanks to the complete community for sending all the amazing questions on the AMA thread. For now, here's the conversation. Please enjoy the show.
+
+Sanyam Bhutani  2:20  
+Hi everyone. It's it's a huge honor for me to be talking to my biggest machine learning hero and the machine learning hero for the complete fast.ai community, co founder of fast.ai and my guru, Jeremy Howard. Jeremy, thank you so much for joining me on the podcast.
+
+Jeremy Howard  2:37  
+Thank you for having me.
+
+Sanyam Bhutani  2:40  
+So I think you've had one of the most unique paths to becoming a researcher, programmer founder, data scientist and our global teacher. Can you confirm or deny, confirm or deny if you studied programming at university? What goes did you take?
+
+Jeremy Howard  2:57  
+I did not study programming I studied philosophy at university.
+
+Sanyam Bhutani  3:03  
+So I did time you also started working at McKinsey as a business consultant, you were one of the three, worldwide analytical specialist. Could you tell us about your journey there?
+
+Jeremy Howard  3:17  
+Sure. I mean, it was a bit random. I. So I was I was studying at University of Melbourne, and I needed money. So I was looking for a holiday job. And there was a one day a week, kind of junior, it helped her job advertised, which the company didn't say what company it was, it was just advertised on the university jobs board and I applied to it. And this guy rings me up during the summer and said, you know, you want to come in and do an interview. And I was like, okay, then where whereabouts where what company is it called McKinsey and Company and unlike McKinsey and Company you mean the McKinsey and Company? Is that correct? Yeah. Oh, okay. Absolutely. I'll be right there. So I did an interview and I got this one day a week job. I teach Junior thing. And I guess the funny thing was at that time, so this is 20 years ago. More than that, 27 years ago, goodness me. And at that time, people didn't generally have great PC skills. And also kind of the management consulting firms everybody had much the same background that all like done basically Stanford or Wharton MBAs. So I found when I was doing my one day a week at I'd help people out of no clean their kitchen. When they spilled coke into it or forgot their password, or whatever it is, I would always ask them what they were doing, you know, and they would tell me and show me and I'd be like, Oh, why don't you use this other feature of Microsoft Excel? Or why don't you use, you know, sequel database for that or whatever, you know, access and practice. And people found it super helpful because I knew how to use computer. There's no computer software better than they did. So, it kind of pretty quickly there was this queue at the door every time I came to work every Friday, people wanting tips on how to solve their problem with this with computers, basically. Yeah, so one day a week became two days a week became three days a week and yeah, you know, within a few months, they have me a full time job doing this thing whatever it is I was doing.
+
+Sanyam Bhutani  6:03  
+While you were still in university.
+
+Jeremy Howard  6:05  
+Yeah, but I just started actually pretty much. And so that was like taking me 90 hours a week, the job. So I didn't take leave me any time to study. The job was much more interesting than anything that happened at university anyway. So what I ended up doing was I just turned up to exams, I would take two weeks off McKenzie before each exams, and I would study for the exams and find out what assignments I was meant to have done and played with the professor to let me turn them in two months, you know, somehow they always did. And it worked out great because you know, I was invited in the end to, to work on the project team sitting on site and getting flown around the place and fancy hotels, whatever else and isn't it felt very exciting, you know, and I wanted to learn about business. So it was a good opportunity to, you know, that other consultants to ask me about my business strategy and stuff. Yeah, it was. It was good.
+
+Sanyam Bhutani  7:16  
+Okay, so you also worked on as, as I found online optimization models, statistical analysis and to develop data models can can we sort of link that to what we call machine learning now? Was it similar? 
+
+Jeremy Howard  7:28  
+Oh, yeah, absolutely. I mean, it was all data analysis. It was all data science. So I actually, after a couple of couple of years, I moved to kind of the other big management consulting firm being at Carney and county and McKinsey started at the same time, their apartments originally added at Carney actually helped found a new global practice which we called leveraging customer information. And that global practice was all about, you know, was what today we would call big data because basically actually trying to convince companies that data was a valuable asset and that they should think about putting it in like a data warehouse. And I ran, yeah, believe it or not, I was running courses in, you know, logistic regression and linear programming and whatever for at counties, clients, and then what I would do is I would take the people that develop those courses, and we would do projects with them to like, try and drive value within the business to kind of so joint project between at carnie. And people, you know, within the company within the client, whereas kind of both a learning exercise as well as an actual you know, project so.
+
+Sanyam Bhutani  8:44  
+Got it.
+
+Jeremy Howard  8:45  
+Yeah, and you know, I built it I helped build a program for at county globally for education for teaching all the at county consultants to use pivot tables and access and you know, stuff like that. We played around a little bit with neural networks.
+
+Sanyam Bhutani  9:04  
+In the early 2000's?
+
+Jeremy Howard  9:07  
+Sorry?
+
+Sanyam Bhutani  9:07  
+This was in the early 2000s.
+
+Jeremy Howard  9:10  
+And this would be in the mid 90s. [Okay] Early to mid 90s. So we bought, we mainly did stuff with decision trees in those days. So when random forests appeared in like 1999, that was really exciting because it was like, I knew that decision trees had problems and, and kind of random forests largely solved them, which was great.
+
+Sanyam Bhutani  9:39  
+So, this was during this period. Was it the case that you picked up programming skills while working on them? Or when did you start your programming career so to speak?
+
+Jeremy Howard  9:48  
+Yeah, good question. So I had a I had a Commodore 64 computer. [Okay] growing up. And;
+
+Sanyam Bhutani  9:58  
+I've never seen one of those.
+
+Jeremy Howard  10:00  
+Yeah, so it's like 64 K of memory. And you know, you when you turn it on, you get a prompt where you can type in basic commands basically. So I did like a tiny bit of programming tiny, tiny, tiny bit of programming in high school just learned from from a book. Because when my mom gave me this computer, she didn't know about software, so she didn't buy software. And you couldn't download it, obviously. So I the only stuff I could do with computer was stuff I programmed myself so so I had to learn a little bit. And then you know, the did a lot more programming once I started doing this consulting kind of stuff, because I started using Visual Basic for Applications a lot with Excel and access. And that was great because it was like, very applied very tangible, like everything was like solving a real problem for people who needed it right away. Yeah, but I didn't really learn like software engineering. Like 1999 what I wanted to create fast mail, because before that everything I'd built, it was only for me. It was really like, I mean, other people were using it, but I wasn't nobody else was coating it with me, it would like be a one off thing I'd build for some project and then it'd be thrown away, I didn't really have to extend it. So things like using symbols instead of magic strings, or you know how to like structure things in maintainable ways. I didn't want any of that stuff really until I started working on fast mail.
+
+Sanyam Bhutani  11:35  
+What led you to being from as the internet called you wonder kid consultant, to your journey as a founder. So what led you to founding fast mail?
+
+Jeremy Howard  11:46  
+I kind of always wanted to do my own thing. And so like, my one, my one regret really in my career is I spent too long in consulting. I was there for eight years. I think my original plan was to do two years, it would have been perfect. You know, the issue was a it felt like it felt like I had a lot to learn from the other consultants about business and stuff. And because I never quite understood what they were saying. But in hindsight, that wasn't true. In hindsight. They just didn't. They didn't understand. Their business was going like when we talked about stuff like the Internet, and they were trying to explain to me why the internet wouldn't be very important, and I should forget about it. And I felt like I wasn't understanding what they're saying and I had a lot more to learn but that wasn't really what happened. So you know, it also I just got caught up in the rat race of like, being successful at the big consulting firms and useful of itself like a good goal for somebody who wants to I don't know, like getting good grades or something. That actually is a waste of time.
+
+Sanyam Bhutani  12:55  
+Fully recovered, so that's okay.
+
+Jeremy Howard  12:57  
+Yeah, hopefully. So but anyway, I wasted a lot of time. And I always wanted to do my own thing. And I guess part of it is it's hard when you want to do your own thing is you're looking for the perfect thing. And there is no perfect thing. So. So I, the other thing is I kind of heard that starting a small business, probability of failure was really high. So I kind of did something a bit weird, which as I started to, at the same time thinking that would, you know, increase the chances. But again, it was kind of based on a faulty premise, because actually, your probability of success is quite high. If you do things properly, it's not stochastic, it's entirely almost entirely up to you. Whether you're successful. So anyway, yeah, so I, so one of the things was a insurance pricing optimization company called optimal decisions, which, you know, came pretty directly out of ideas that I developed while I was helping insurance clients and I kind of thought was really weird that nobody's using optimization methods in this industry for pricing. And then the other one was fast mail, which I'm not sure I really intended it as a company originally originally, it was just like, gosh, I hate how all of the email systems crappy it was basically Yahoo Mail at that time.
+
+Sanyam Bhutani  14:27  
+Back in the 2000's I think.
+
+Jeremy Howard  14:29  
+Yeah, was 1999. Again, yeah. So. So I thought I'll build my own that will be better than theirs. And then at least I have something that I like. So yeah, basically started doing those two things about the same time.
+
+Sanyam Bhutani  14:44  
+Got it. So what I'm able to understand is since since the beginning, you always had a practical approach to all of the problems something something that you can teach right now at fast AI.
+
+Jeremy Howard  14:54  
+Yeah, right. I mean, that's just me. I I struggle with pointless abstractions or solving pointless problems. I mean, it's nice. There's some fun puzzles to solve or whatever. But in the end, I want to spend my time you know, helping somebody do something useful. And, and also, doing it in a very data driven way is something I've always yeah, I've always found, works well.
+
+Sanyam Bhutani  15:26  
+So when did Kaggle start to come into the picture for you in an only online piece of information, I found that it was like a walk in the park situation for you where you ended up winning a sprint race against gold medalist in your first competition.
+
+Jeremy Howard  15:41  
+Yeah, that was really, really, really weird for me. Because I so I, I ran fast mail and optimizations for about about 10 years and sold them and;
+
+Sanyam Bhutani  16:00  
+Legal rules.
+
+Jeremy Howard  16:02  
+So I founded both of those companies. Okay, so I was kind of we didn't exactly have titles, but yeah, it was basically running or co running those companies. So, yeah, so fast mail it was with a one guy called Rob and the two of us just ran everything we didn't, you know, I guess I played more of a CEO role and he played more of a CTO role, but we didn't you know, we didn't have titles we didn't worry too much about it. That optimal decisions those were two other guys that did that with and again, we be ran it together and build it together. So you know, all the usual stuff. Hiring and you know, sales and blah, blah, blah. I tend to have more of the product vision stuff and all of these things. I both of those companies with companies that I kind of decided to start and had the original vision for Rob joined fast mail a few months after it started, for instance. Although he had much deeper technical expertise at that time than I did, so he made the code lot better. Yeah, so anyway, so I thought of myself as a manager, and a business guy, like, done any technical courses, either in coding or in math or so I felt very not just insecure about my technical skills but confident that they were not good. And especially since it's been all these years, kind of managing these companies. I did some coding but it got less and less over time and yeah, so after selling the second of I just had all this time on my hands and didn't know what to do with myself. And I kind of felt like oh, it'd be nice to be to become better at, like machine learning and stuff. So I just SPSS and so not SPSS, s plus and for a long time, being the kind of commercial predecessor in some ways, for quite a long time at optimal decisions. Although, you know, only in as much as the amount of time I could spend when I was doing a lot of management stuff. And I kind of thought it was okay, but I didn't feel like a very good at it. So I joined an meetup in Melbourne with the hope I could, you know, kind of find ways to meet people that knew more about it than I did and get better at it. 
+
+Sanyam Bhutani  18:52  
+Yeah. 
+
+Jeremy Howard  18:52  
+And that so the first meetup I went to, I guess, Kaggle had just started. It was basically one guy Who would done that? And somebody told me about this thing called Kaggle. So I was in Melbourne and capital came out of Melbourne. And they were like, oh, there's this thing called Kaggle. that runs competitions. And that's a good way to learn more, because you could use our to enter a competition. And I thought, oh, that's cool. So I emailed the meetup group, and said, like, Hey, does anybody want to form a team to this competition? [Yeah] And I guess what I found again and again, tends to happen is when you say something like that, dozens of people will email back and say, yes, I'd like to be on a team. But no one does anything. 
+
+Sanyam Bhutani  19:44  
+That's still the case. I can confirm that.
+
+Jeremy Howard  19:46  
+Very, very, very much. Everybody wants to be on the team, but no one does anything. So lots of people kind of said, yeah, I'd like to be on the team. And then I'd start like, I started just doing things. This competition and nobody else could be doing anything. So I didn't end up having a team at all. And I didn't even end up using our because I kind of, I was pretty good at C sharp, you know, that was the thing I was most comfortable with and I liked so I used the time series competition. So I used C sharp to kind of create lots of plots of at least different time series and I kind of looked at them and I looked for patterns and I had never done anything with time series. So I kind of kind of were picked this competition, so it's just trying to learn, you know, and I, I wasn't really sure about putting an actual submission in because that seemed very intimidating. As well, I did, I'd probably be lost. And that would be embarrassing. But I kind of thought I should try you know, and if I'm last and last, so be it. So I kind of entered with my real name. To kind of maximize the pressure on myself to like, do my best I could. [Yeah] And yeah, I mean, I didn't, that wasn't, you know, I was surprised. I was only like halfway down the leaderboard, I wasn't right at the very bottom. So that was good. kind of put an early entry in. And when I looked at the people that were in the top 10, they were all like, PhDs and professors and stuff. And so I thought, okay, well, at the very least, I'll learn from them at the end of the competition to see what they do. [Yeah] And I guess yeah, it's weird. Like I just spent a bit of time on each day and just came up with simple more simple, common sense things to try and each time Well, a lot of them didn't work, obviously, but some of them did. But we have been hired a bit higher and yeah, by the end of it. I found I did find somebody to team up with and, and yeah, we won the competition. That, like, totally changed my mindset about both my own skills and about like, I don't know, the lay of the land. And I had always thought like, they were PhDs who were like, somewhere way up there in the stratosphere genius. Who I could never understand. And I suddenly is like, oh, actually, just by using a bit of like, I didn't read any papers or anything. I just used common senses, like, oh, you know, with a bit of common sense. [Yeah] It's actually oh, this is like, all that stuff I've been doing in business and whatever. It is trying to find common sense solutions to things. That's, that's all this stuff is. It's not. It's not some weird magic, you know? And I also thought, like, oh, and I'm, I've actually found something I'm apparently good at, you know, so that was nice. I felt like okay, I should, I should focus on That because that's that's apparently a skill that I accidentally have developed to them. I guess I probably do it differently to other people because I have a different background. So let's see where that takes us. So that's that's kind of been my focus ever since.
+
+Sanyam Bhutani  23:17  
+And you mentally you I believe you got hooked to the Kaggle system as he calculus call it, you ended up becoming number one in the rankings and also a Grand Master.
+
+Jeremy Howard  23:26  
+Yeah, so yeah, so I i think it was the second competition I entered was for the International chest ratings story. And basically trying to find a better way of doing ratings. And I came across this interesting, true skill through time approach, which was something that was developed at Microsoft Research. And one of the interesting things there was not only not only with a cool technique, but their research code was in F sharp, good. I really like F sharp. And I also know that's something that pretty much nobody in data science understands. And so I thought like, probably nobody else is going to know even how to use this code. So I kind of picked it up and modified it and got into it and realized this was a super powerful approach for ranking systems. And I ended up coming second is competition largely through just leveraging this truth, true skill through time approach and a little bit of pre processing, a little bit of post processing, a little bit of hyper parameter tuning. And, you know, the guy who came first and I were like, super, super close, you know, I was a little bit better on the public and his little bit better on the private and so it's like, super fun, kind of, I don't notice a competition experience. And then I think it was my third competition was predicting grant Success for University Grants, research grants. And for that one, I, again, I use C sharp, that was kind of fun because it was just kind of relational data. And I had done a lot of work with relational data. And so I built this C sharp library to basically auto generate all kinds of different features and aggregations relational data, and just dumped it into my favorite tool, which is a random forest. [Yeah] Favorite tool at that time anyway. And I ended up winning that partly because they came a notice to noticed a data leakage issue, which, although it's like, not very helpful for the organizers, it's super fun, actually, as a competitor thinking of all the kinds of leakage that you might be able to find and finding ways to test them out. So yeah, I mean, I really, you know, fam, you know, I kind of like done super well on three competitions. in a row, and at that point on kaggle, nobody else had got anywhere close to that. So I like not only was I number one, but that's number one by miles. And I said, like, oh, this is super exciting, you know, to be doing something good. So I'm interested in and I'm learning a lot and I'm getting better at it and the community. So yeah, that was fun.
+
+Sanyam Bhutani  26:23  
+Got it. And during that period, you will also invited to join the team. You also I believe, so a lot in the vision because you were one of the first angel investors in Kaggle.
+
+Jeremy Howard  26:33  
+Yeah, so me and another guy became the first angel investors. And then as more people started using it, it got started getting really slow. And I was like, oh, that's weird, because it's still not like by any stretch a high traffic site. We compared it to something like fast mail, which I had been working on previously, which had million users using it all the time, because people are always looking at email. You know, this was a small number of thousands of users at most and added on putting in like one submission a day or something it just made so no sense so slow. So I asked to look at the code. And when I did, I was kind of like, oh, no wonder it so slow, like, there was no indexes. And on at the end of the tables, the whole thing was just not, you know, well optimized. And it was written in PHP, and it was kind of like, didn't feel very scalable. And I kind of thought, oh, that's as an investor, I felt worried that there was a kind of a technical problem here. So I volunteered to rewrite the whole thing. And so I started out by creating a new database for it from scratch and then I started rewriting the whole thing to .net and we found a guy who was also a great net programmer. We ended up kind of doing that together. But it was all like just an informal volunteer thing. But by the end of that, you know, I think it was running on like three AWS servers and was basically fully loaded. And we were down to using one server like 1% load. It just, it was like, okay, that's, that's, that's good. Now we can scale from there.
+
+Sanyam Bhutani  28:27  
+After that, you again went back to a founder role, this time in machine learning and the intersection of medical space at analytic. So did did you have any background again, in medical domain during that time? And machine learning?
+
+Jeremy Howard  28:41  
+No, no, I certainly didn't. Yeah, so at Kaggle you know, I ended up becoming an equal partner in the company. And, you know, we got funding for it, and I came to San Francisco to help develop it. But yeah, I mean, one of the things that happened around 2011 was I started seeing deep learning. Doing super well. And, you know, I always said to myself, since my kind of early 20s, but I saw the promise of neural nets that like one day, neural nets will start becoming the state of the art and things because they just, they just make so much sense, you know. And I kind of kept on checking in from time to time to see if that was happening. And it wasn't, it wasn't and it wasn't, then suddenly, it was. Mainly it's like the work that Dan Searson was doing in your ?'s lab was like literally surpassing human performance, traffic sign recognition. So I felt yeah, that just like, the kinds of problems that were coming to kakko weren't even the right problems to to demonstrate what was happening here, they were generally like tabular time series kind of stuff. It just didn't feel like that was going to really leverage the promise here. So I actually spent a whole year doing nothing but researching deep learning application opportunities. So I went around and interviewed lots of people and visited lots of companies and stuff like that. And yeah, came to the conclusion that the biggest opportunity for societal impact was in medicine. And I care a lot about societal impact because I felt like all that time I'd spent in consulting and on fast male and an optimal decisions, hadn't really had a very significant, positive societal impact, and that just felt like such a sad waste of two decades. Just saying I just felt really stupid for spending all this time doing stuff that wasn't really making much of a difference to the world. So yeah, super excited to find out that medicine, you know, a lot of diagnostic medicine and a lot of treatment planning could have could be boiled down to a kind of data analysis. And the kind of data analysis that I thought deep learning could be pretty good at. So yeah, I decided to start this company called analytic to focus on seeing what we could do there. And in particular, because there's about a 10 x shortage of doctors in the developing world, so people are dying because they don't have access to medicine or to doctors to, you know, find out what's wrong with them. So, yeah, started Enlitic, to see what what we could do got amazingly good outcomes very quickly, but that was very very, very intimidating to get into a field about I didn't know anything about it, I didn't have any family that adopters a, it felt very exclusive and inaccessible. And it is, you know. So that was, that was a very difficult thing to try to get into. But it felt really important. And I felt like if I could show some success and equally importantly get some publicity that people would take notice. And if they did, then people would start to invest in this. And then if people invested in this, you know, maybe, maybe the promise of deep learning and medicine could start to be seen.
+
+Sanyam Bhutani  32:45  
+Like, what's your perspective on the current state of machine learning, broadly speaking in the medical domain?
+
+Jeremy Howard  32:52  
+Well, it's you know, it's very early I would say like what we did on Twitter made a real difference there. Like it's, it's it, it's gone from being entirely ignored. Like at that time it was the first organization to focus on deep learning and medicine. [Yeah] There was basically no, almost no academic papers that were discussing it. It was totally, yeah, that just didn't really exist as area of interest. Now, it's, it's huge, it's huge. You know, there's a whole journal about it. And, you know, you can see a very direct lineage lineage from the work we did on lydic to the stuff that's now happening, like a lot of the other early companies that jumped into this, who I met at conferences and stuff would come up to me and said, thank you for starting Enlitic, It's because of that, that we started this so that's really really, really nice to see.
+
+Sanyam Bhutani  33:53  
+But it's still in the research phase so to speak rather than;
+
+Jeremy Howard  33:56  
+Yeah, it's still it's still very early days. There's there's very, very, very, very little clinical application going on. There is some in China. But you're not generally going to hear about it. Yes, it's it's happening within organizations who have no reason to want to trump it, what they're doing and every reason to keep it quiet. My, you know, I thought some of the biggest opportunities were in things like teleradiology, and I saw that just yesterday, a company was announced it's going to combine teleradiology and AI so I'm taking a very long time. This is take a very, very long time. But it's it's it's happening. You know, it's happening slowly, and there's certainly plenty of money, plenty of interest. So I think I think it'll happen.
+
+Sanyam Bhutani  34:49  
+Now, coming to how you how you found fast AI aid was through the frustration than the general lack of good materials as I found online. Did you envision fast.ai getting to the stage it is currently at in terms of how you enable everyone to make deep learning uncool or it's is it is there still a gap in your vision?
+
+Jeremy Howard  35:11  
+I mean, it's not gap in my vision. But I mean, at the same time, it's still be, you know, beyond my wildest dreams of what we could have achieved. I mean, I guess if you would push me to say like, what's the best you could possibly hope for I could have sketched out something roughly like this. But yeah, I mean, part of the issue was, you know, at at analytically could just do one small piece of one small piece. And I knew that to really harness this tool for societal benefit would require a lot more people and specifically a lot more domain experts who understood their fields, you know, whether whatever, you know, whether it be journalism or neurology or legal or whatever, so so really, that's where fast AI came out of was was wanting to have a kind of higher leverage impact than just working in one field, particularly when we saw how it was possible to kind of do a lot in one field. And then quickly. So, yeah, so the kind of the thought was okay, if we're gonna let anybody be able to leverage deep learning to help them with whatever it is that they're passionate about whatever they care about. Step one is to see what we can do what people can do right now. You know, what is the current state of the technology and teach people how to use it? So, so we decided to start out by focusing on education. And we thought like, yeah, once we do that for a while, we'll see where the gaps are. And then we can start doing kind of research and development to fill in those gaps so that people with less background can get better and better results. So at this point, we're still failing in that, like at this point, we still require a year of coding before you do anything on fast AI, which is excludes the vast majority of humanity. [Yeah] I mean, anybody could spend a year learning to code but it's a it's a big obstacle. So that's, so we still got a long way to go. But at the same time, we certainly have seen a lot lot lot of people with no particular math background, certainly no machine learning background, are solving society important problems with the benefit of deep learning and with their own domain expertise. So that's certainly making progress.
+
+Sanyam Bhutani  38:01  
+Did you always enjoy the role of being an educator? So you mentioned even during your early days you had cooked up some tutorials. Was that always something you enjoyed? Or again, something that you had to pick up for your vision?
+
+Jeremy Howard  38:13  
+Um I don't know if I enjoy it or have ever enjoyed it like it's, it's very scary. Like I do find it terrifying to to prepare something where before I start preparing it I'm like, I don't understand this nearly well enough. And maybe I never will. Because;
+
+Sanyam Bhutani  38:42  
+Oh, sorry. I definitely speak as as a part of the first day community as a whole and now that I've graduated, I can officially say that you've been a better much, much better Professor than all of their courses I've taken.
+
+Jeremy Howard  38:55  
+Thank you. I mean somehow number how many times I successfully navigate some topic area and get to a point that I can teach it. There's always this large part of my brain that when I start on something new tells me that I won't be able to do this one, this one will be beyond me. So that's kind of scary. And so the preparation is scary. And then the teaching itself is scary because it's like they have to get up there and try to make sense with this thing and real time.
+
+Sanyam Bhutani  39:29  
+Thousands of people watching in person.
+
+Jeremy Howard  39:31  
+Yeah, absolutely. But then having done it, it's a good feeling to like, have it in the bag and be like, okay, people, people are using this and getting stuff out of it. So, I think I think I'm, for a lot of people, I'm a I'm a good teacher, because I don't have the traditional technical background where I've patiently gone through the foundations and build stuff on top of them and like, you know, only a very small subset of the world, go through that formal process until they get their PhD or whatever. And then they start teaching. And then they're all going to teach that way because that's how they learned. I guess I'm part of a small but increasingly large group of people who [the top dpwn approach people] Yeah, I didn't do any of that more just like okay, I want to do something. How do I do the thing? You know, oh, turns out I need to learn about this other thing. Now let's learn about this other thing. But it does mean I yeah very much understand. The thought process of trying to understand if you don't try to understand the topic and the design desire to not spend 10 years getting to that point so, yeah, so like I like most people, I'm pretty visual in terms of like how I think about things. And again, like most teaching of most technical topics isn't very visual tends to be very based on you know; 
+
+Sanyam Bhutani  41:19  
+I can officially agree to that, because I'm out of college. I received my degree, so I can agree to that.
+
+Jeremy Howard  41:26  
+Yeah. So again, you know, you get this really biased sample of people who have been through that process, comfortable with it and are happy to teach that way. And so you get this very weird, biased kind of subset of humanity that does most technical teaching in a way that doesn't suit most of humanity. 
+
+Sanyam Bhutani  41:47  
+Yeah. So can you tell us what amount amount of efforts go into the course when we don't get to see you lie because to me fast AI is like this amazing movie, which has a sequel that's always better than the previous parts of how do you do that? How have you rerun the course over and over rewritten the library for the 13;
+
+Jeremy Howard  42:09  
+It's a it's a full time job, right? So there's, there's, there's there's four things, as you know, that we do being teaching research development community. I will say the community increasingly is looking after itself, which is nice, but you know, actually, thanks to folks like you, who put a lot of effort into it. The other three definitely don't. The, you know, the research directly leads into the development, the development directly leading nowadays into the courses. So for one course, which takes seven weeks, twice, generally twice a year, all the other time is being spent basically preparing the stuff for the next course. So it's you know, and even that never feels like enough. Because we want to, you know, we want to show you the best way to do x for all x where, you know, we're all kind of interesting. And the field moves very quickly. And, you know, part of the issue was also on the development side, we never really had the time to make our software really, really good. Like it was always building something just enough for the next course kind of a thing. So I never had the time to step back and say like, what's the absolute best way we could do this? 
+
+Sanyam Bhutani  43:43  
+For the audience I'd like to mention that just the three core contributors, Jeremy, Rachel and Sylvain at the course, now it's slightly larger, but again, it was just these three people working on the library.
+
+Jeremy Howard  43:56  
+Yeah, and you know, Rachel doesn't really work on it anymore because she started her job as the director of the Center for Applied data ethics, so it's yeah, 99% is me and Sylvain so, yeah.
+
+Sanyam Bhutani  44:10  
+So can you tell us more about how do you approach research? Because I know you're very critical of most of the resources as being done today. What questions do you ask what things are interesting to you?
+
+Jeremy Howard  44:23  
+Well, for us, it's always starting with a problem that we're trying to fix. So normally in academia, you would start with like, oh, what's the way I think I can get something published? That's your question, right published and get citations. And so that means picking a problem, which everybody else is already working on, because that's what gets published. And that's also what's gets cited. Try to build a significant but not too big, incremental, current approaches so that everybody involved in that field will understand that No able to cite that on their increment on your work. So that's the whole process of, you know, most academic research is kind of, by definition, skewed towards incremental evolution without too much bold rethinking of basic ideas. You know, in theory, kind of tenured professors should be able to jump out of that, you know, that's kind of part of why that's there. But in practice, tenured professors tend not to code much anymore. They tend not to really do much with their own research anymore.
+
+Sanyam Bhutani  45:40  
+If you can confirm that.
+
+Jeremy Howard  45:41  
+Yeah. There are there. That's not true of everybody. Like you look at guys like Yann LeCun and Yoshua, Bengio and Geoffrey Hinton, like there's a reason that they're well known, because they keep doing high quality work, you know, And like, look at your look on he's, he's spending plenty of time coding and trying new ideas and yeah, so we're also me, I'm kind of like, okay, I have a particular problem I want to solve sometimes. It's, it's like, I want to win this competition. So like with the Stanford don't bench competition, you're like, okay. We had get ourselves a specific goal, which was can we train image net within 12 hours? [Yeah] So that was like, a problem we wanted to solve. Because we basically wanted to say to people, hey, you don't have to be Google scale to do something like trading image net from scratch. Sometimes it's kind of driven by will like recently, I want to just show people how to do medical imaging analysis really easily. So I created five Kaggle kernels about RS and a brain hemorrhage competition. And so my research there was like, how do I make each step of this so simple that I can create a single small cargo kernel that anybody can understand with no prerequisites, you know? Sometimes it's the research is kind of starting from a point of saying, Why doesn't idea x work in domain? Why? So for example, that a couple of places that's been used as a lot transfer learning, you know, with that, that's how we did you lm fit. It's like, why doesn't transfer lending get used in an LP? Yeah, that's how we got the state of the art for segmentation. Why? Why are people using transfer learning and segmentation properly? That is going to say that's how we developed with Jason login. So basically, yeah. We use transfer learning for image generative modeling. So sometimes it's like a certain amount of bloody mindedness of saying like, okay, this method ought to work in this domain. And everybody says it doesn't, but it should. So let's keep on hammering at it until we get it get it to work.
+
+Sanyam Bhutani  48:20  
+How do you continue building the 49 models when only the 50 year to work so because it as you quoted it, nothing works in machine learning until it does. 
+
+Jeremy Howard  48:29  
+I don't know like to be clear, I hate I hate hate hate doing machine learning. I really enjoy writing software like a normal software, but I hate training models speak for the reason you specify. It's like, not only does nothing work, but you get no feedback about why it doesn't work or what you could do to make it work like so, you know, for me, I kind of come back to my, to my intuition. Maybe intuition is not quite the right word. It's like not formally proving things, but knowing enough about how the things work to know that it ought to work, you know? And so if it's not working, like saying like, okay, it's not working, the very act of finding out why it's not working should of itself lead to interesting insights. So maybe, let's not set my sights as high as saying, let's make this work. Maybe it's like, let's just set my sights as high as saying, like, let's learn why it doesn't. Because if something doesn't work as a reason 99% of the time and something doesn't work is because I have some stupid bug. But it's really hard to find that stupid bug in;
+
+Sanyam Bhutani  49:50  
+Machine learning space.
+
+Jeremy Howard  49:51  
+Smuch code, which is why I'm so ruthless about refactoring. Like I'm trying to reduce the amount of code and not extremists, the better code but reduce the amount of code that I have to write to train a model, because that's less code that I could grow up. So the more stuff I can automate, the less stuff that there is for me to think about when I have the inevitable moment where nothing's working. And I have to figure out why. That requires a lot of tenacity.
+
+Sanyam Bhutani  50:29  
+Yeah. Andres Torrubia asks from the AMA section. How does fast AI team find these obscure peoples like Leslie Smith's learning rate finder?
+
+Jeremy Howard  50:41  
+Mainly from Twitter. I don't quite remember where I first came across Leslie Smith. Oh, I guess. So that was yeah, so originally, it was the cyclical learning rate, which was less obscure there were people talking about cyclical lending rates. And the finder I think was in that paper, but was the kind of slightly ignored part. So part of the trick is to actually read the damn papers, not just the summaries and people's blog posts, it's like read the paper that they're actually often better written than one might expect. Like they're often they'll actually have the better explanation of what's going on and then anybody's blog post. I also look for competition winning approaches. So like, particularly academic competitions, generally have workshops, where the competition winning approaches are discussed. And generally those workshops don't have normal like if an archive preprints they normally have a special workshop website where the people's talks will be specifically uploaded as slides. And those have often have much more interesting detailed content than any paper does. So kind of competition workshops are really good. And then you can see like, what are they site and just kind of get more information about some of the basic ideas. Things like archive sanity a good because you can see like other papers that are similar. But yeah, I think I think if you careful about following people on Twitter, you can get the best kind of starting point from Twitter. And particularly if when you see something interesting on Twitter, like you can then again look to see what it's cited and see what's exciting if and look at archived Saturday and get them a whole new rabbit hole. Yeah, it's kind of it's pretty easy to get started on Twitter like you can, like, you can just see all the people I follow, for example, and start following the same people. And now you'll be seeing the same papers that I see. There's no, yeah, there's no secret to it.
+
+Sanyam Bhutani  53:16  
+The recommendations, in my opinion is very helpful in that sense, whatever is getting retweeted, comes up at the top. So in the top 10 tweets, you can't miss it.
+
+Jeremy Howard  53:25  
+Yeah, absolutely.
+
+Sanyam Bhutani  53:27  
+Coming back to the fast AI library, can you tell us what amount of efforts to invest into that? And now the third rewrite is happening. So can you tell us more about the research and the software experience that goes on?
+
+Jeremy Howard  53:40  
+Yeah. So so far, and I've been working on that pretty much entirely full time since the last course finished. And it's the first time we've, you know, decided not to have a deadline. So we don't have a course this this half year. that reason we decided no deadline. That's right, everything is as well as we can take as much time as we need, and make it the very best we can. So that's been super fun. Because as I say, I hate trading models. So I haven't made any models at all for the last six months. I just love writing software. So that's been good. And it's been really nice to take the time to do it as well as we can. And we both feel pretty proud of what we've we've built because it's like, every piece is the best we can make it. So we you know, the documentation system is really good. You know, we built a new tool for generating Python modules. Libraries from Jupyter notebooks, which we love using. It's got its own testing your DNA, it's got its own documentation development built in. We've created our own types of spectrum system for Python, which will;
+
+Sanyam Bhutani  55:03  
+A book is also coming out that I can't wait to read.
+
+Jeremy Howard  55:06  
+Yeah, yeah. So we're writing. So once we finished the library, we can work on the book, which we're kind of starting to get back into now. Originally, we were planning to read the book version one. But then when we realized how much better version two would be, we just thought that it would be stupid to read the book version one so we kind of stayed at O'Reilly please wait six months while we software? We have a very understanding. So yeah, fast AI v2 is entirely entirely written from scratch. The the highest level of API's looks super similar and familiar compared to the one. But underneath, nothing looks familiar. Like, rather than this kind of ugly mess of thousands of lines of code. It's a really delightfully layered API, and it's really, really enjoyable to work with?
+
+Sanyam Bhutani  56:02  
+Can you tell us more about how you and Sylvain collaborate? So how does your common workflow and your distribution or tasks look like?
+
+Jeremy Howard  56:10  
+Yeah, I mean, it helps to Sylvain is just a super patient and nice person. And it's also incredibly competent. So what tends to happen quite a lot, is I'll kind of say to him, okay, I think we should build x, you know, and we seem to have pretty similar tastes. So most of the time when I do that, he'll say, like, oh, that sounds fantastic. And he'll go and build x. And then I'll kind of look at it and I'll be like, okay, that does what I said I'd like it to do, but the way it does, it is not great. You know, it's like, you know, has this issue or that issue and so that's point, you know, I tend to kind of take over. And so the thing that he spent six hours making it work, I'll then spend three weeks refactoring it. which for me is this is very slow, iterative process of continual dissatisfaction, until eventually I get to a point where it's like, okay, this doesn't suck too much, so good. And that's kind of tends to work out nicely, because often Sylvain will then look at the result and be like, oh, that's much nicer than I had imagined we could do. And also, we both end up happy. Apparently, that's because like, he didn't have as much experience of designing API's as I had. And so in the last few months, he's actually been getting a lot better at that. So, you know, increasingly, he's building stuff which I don't throw and rewrite Studies, you know, tests and stuff. The other thing is like super is super smart. So he can keep a lot of stuff in his head at once. So he tends to write things which software can understand where else I'm, you know, 50 lines of code, and I've forgotten what the first line of code so I kind of need to refactor things until this sample. But you know, overall, you know, he's in New York, I'm in San Francisco. Although we, you know, increasingly we're spending more and more time pairing. So sometimes we'll pay for two or three hours a day. Particularly on stuff that night was quite feel we know what we want it to look like. I really liked hearing you know, it's it's a great way to think we both feel like we we end up more productive Spending a fair bit of time preparing. Other than that we're generally just like texting back and forth on Skype a little bit. And yeah, it's, it's, it's a good collaboration, I really enjoy it.
+
+Sanyam Bhutani  59:13  
+Got it. Now coming to the course. So the course has certain versions, as you call it, but each one has sort of these embedded really nuggets, what we call the things Jeremy says to do. So what recommendation on how to take the course would be take the latest, should we wait for the next version of the library? Because that's as we expected fast AI will be better than the current version?
+
+Jeremy Howard  59:36  
+Yeah, you should never wait you know, because the you know, as you know, like the pot one particle deep learning it, it doesn't really change that much in terms of like the things that you meant to be getting out of it is a an understanding of what's going on and how to debug things and what are the key steps and stuff like that. Each year we we teach more than the previous year by leveraging the software which gradually gets better and better. But, you know, a lot of people who, like you who watch, one version will watch all the following versions as well, because it's like a bet you get faster. So it takes less than less time. So yeah, I would say never, never wait for the next one to come along.
+
+Sanyam Bhutani  1:00:25  
+In terms of programming advice to the one year of software experience, because I figured this that I was really bad at it when I started, what advice do you have? How should we prepare for that one year of surrogate experience?
+
+Jeremy Howard  1:00:39  
+Yeah, I mean, that's definitely the biggest difference between, you know, maybe one of the two biggest differences between really competent practitioners and everybody else is coding skills. Which but it's entirely about practice, really. So using something like a Jupiter notebook and following along with kind of all the assignments in the course, I mean, that's just a good, that's just a good way to learn. Like I try to I try to demonstrate practical coding approaches in the course. So I try particularly in v2, the implemented, you know, kind of role model for a nice way to implement things. So like, yeah, it's not a bad way to get better at coding. It's just a lot of people are doing this now is to kind of get deeper and deeper into the first day code yourself, but it's been more and more time. Creating models and looking into them and tuning them and changing them then seeing how they're implemented. It's all yeah, it's all practice.
+
+Sanyam Bhutani  1:01:52  
+Got it. That's one of the most like, codes I think from part two fast.ai come for deep learning stay for software engineer. 
+
+Jeremy Howard  1:02:00  
+Yeah, yeah, and I mean, I'm, I have a lot more experience now as a coder than as a machine learning person really like my kind of real deep machine learning studies started with Kaggle. So like, less than 10 years ago, I feel like I have more expertise on on coding to share it also because I, you know, my whole working life have spent half at least half of every day practicing and learning new things, much of which has been coding. So I've kind of tried a lot of languages and a lot of approaches and stuff like that. So yeah, definitely feel I have a lot of coding ideas to share.
+
+Sanyam Bhutani  1:02:52  
+Got it. So coming to how you spend the half of half of your day you made an explicit promise to spend parallel learning something new. What do you usually do in those hours? Is it reading papers? Is it related to machine learning? 
+
+Jeremy Howard  1:03:06  
+It's half, it's half of each working day. So it's more like four hours. [Okay] I mean, mainly. So that's been since I was like 18. So it's like 20 years ago or something. It's really like, when I have some project to complete that day, I just try to think about like, okay, well, how could I complete that in a way that I also try out a language I haven't tried yet, or method I haven't tried yet. Or I could build a new library to automate some part of that or something like that, you know, so it's really nearly entirely about doing an actual project using something new. So for example, this weekend I had to send out 3000 emails. So I, I wrote a new email sending package, which I just put on GitHub. And it was like, okay, I will try to learn more about how good ways to send emails in Python.
+
+Sanyam Bhutani  1:04:20  
+Again, going back to your practical way of approaching problems.
+
+Jeremy Howard  1:04:25  
+Yeah, yeah. And it's like, over time. Although you're kind of, in some ways, spending half of each day at least, kind of being maybe less productive, because you're not using anything you already know. Over a period of, you know, years, that that time you're becoming potentially orders and orders and orders of magnitude more productive. [Yeah] So like, you get this kind of exponential learning on learning. Build upscaling effect, which means I do find now that I, most times when I'm sitting next to somebody doing some piece of work, I can do it faster than everybody else's around me just because I kind of have this not at all kind of skills built on skills build on skills thing now. [Yeah] Like as people get older, like normally as people get older, they get worse and worse because they spend less and less time practicing technical skills, and they learn less than less things and they spend more and more time telling other people what to do, which is a real shame.
+
+Sanyam Bhutani  1:05:45  
+Generally speaking, how, how has the approach of how you learn machine learning changed over the years? Do you also use space repetition for machine learning or what approaches do you;
+
+Jeremy Howard  1:05:56  
+No I don't. I already use space repetition learning for language learning. Because I so because I'm, you know, been learning Chinese, but I'm not in China and I'm not speaking to Chinese people, so I'm not having that chance to practice. So I need something to keep it fresh, or else my approach to learning conceptual things is as much as possible just to to use it. So if I'm learning a new language, I just try and write lots of things in that language. So I don't yeah, I don't find there to be any benefit to me and space repetition for kind of those kinds of technical topics because I just don't find myself needing to add it all. look stuff up in the documentation about like how to write a loop or something because I've got it in doing it every day.
+
+Sanyam Bhutani  1:06:54  
+So coming now to the course material, can you for once give us a hint of what is the homework we can do with fast AI because there's always this question. It's an open ended question. What's your best suggestion to go with the materials?
+
+Jeremy Howard  1:07:07  
+I mean, I'm not sure I'm the best person to ask. It's probably better placed because I, you know, I do a lot of homework for each class, which is I write every one of those notebooks and I try lots and lots of different things to figure out what to write. And so by the end of it, I feel like I'm pretty competent in that topic. So I mean, the biggest efficiency of the course at the moment is it does rely on people being very proactive. Kind of self guided learners. You know, like you are! cuz, yeah, we don't say like, answer this quiz, get this score his certificate. You know, it's more like we're relying on your passion and interest to do projects and solve problems. So for me I mean, there's lots of good advice, I think on the forum, but generally like, okay, if you can try to create something that's pretty similar to the notebook [Yeah] from scratch without picking as much as possible is, is good, that can get pretty boring, you know, so maybe make it based on some other data set you're interested in. I think it's also a case of knowing like, which bits do you find hard. You know, so, if, if the coding is easy for you, but understanding the insights about like, why do we put your metronome here? Or why do we use a three by three kind of there was there was try to here, then maybe you should spend more of your time like maybe you don't really understand the basic layers and their inputs and outputs yet, so maybe you could create a little quiz for yourself where you look at an input and compositional kernel and try to guess what size tensor is going to come out? Or, you know, you kind of go to this is constitutive deliberate practice, from the kind of the learning research community and deliberate practice is all about practicing the things which you find hard that that, you know, practice doesn't make perfect 10,000 hours does not make you an expert in thousand hours of deliberate practice, can so it's a case of like, yeah, finding the stuff that that you need to work on, and then finding a way to study that, test yourself on that, apply that in a way that's going to keep you engaged. Because the main problem is that most people don't stay engaged. So rather than trying to think about the optimal, perfect learning thing, try to instead focus on the thing that's going to keep you the most engaged so that you don't give up.
+
+Sanyam Bhutani  1:10:03  
+I think also speaking personally, how I've gotten just slightly better at these projects is through the community because there's always this great set of small icons that get very active every six months, and they're always kind with the advices. And one of the best advice I get is Kaggle, what's your current take on Kaggle? Do you think the competitions are still worth jumping on? I know you highly recommend it to the courses.
+
+Jeremy Howard  1:10:29  
+Well, yeah, not much. So so much so I mean, I so I just did a deep dive on this RSNA competition, which is only the second computer vision competition I've really done on Kaggle. The other one being the planet one, which is years ago now.
+
+Sanyam Bhutani  1:10:48  
+We're the students we do.
+
+Jeremy Howard  1:10:50  
+Yeah. So you know, it's a really great learning exercise for me to, you know, go up against the best practitioners in the world, because there's plenty of people, particularly academics, who are very dismissive of Kaggle, and they have very good reason to be right. Because a lot of them are imposters, you know, they don't actually know how to train models. And so if the got on Kaggle, they would fail. And then they would be found out that they actually don't know what they're doing. Like, there's lots of things to successful machine learning projects, but one of them is to actually be good at building predictive models that predict things. And so so, so, so many people in research and teaching can't do that, but the people on Kaggle can and so it's really great to see, you know, to work hard to do the best you can and to see what works and what doesn't. And it's really good for your software engineering because like if you do that for a whole three month period, you'll often see that your ability to maintain your solution falls apart as it gets more complex. That's a great way to learn software engineering skills. It's a great way to learn about kind of reproducible experiments skills, because you'll realize like, oh, that idea you had two weeks ago, you now can't replicate it and you don't know why nothing. Anything's, you know, not working as well anymore. And so usually;
+
+Sanyam Bhutani  1:12:33  
+When you're in a team situation, we have to send your code across to another teammate who;
+
+Jeremy Howard  1:12:39  
+Yeah, yeah. I mean, I don't do much stuff with teams. But yeah, I could certainly see that. Yeah, it's, it's a great exercise, and there's always so many competitions going on. [Yeah] And also like it's a good opportunity for practicing your communication skills. Because you can try to create a kernel. And if you've created something's good content that you've been the expressed, you'll be rewarded for it with [Yep] with upvotes. And if, if not, if you don't get the upvotes, that's interesting of itself, because it's like, okay, you, your material was not received well by a totally independent, totally impartial jury in a very kind of clear, transparent way. And it's this kind of like, the transparent feedback of leaderboard scores. And, you know, notebook up votes, is something you never get in a real job. You know, you get this kind of bullshit feedback from a manager who doesn't actually understand what you're doing. So I think yeah, it's it's a great, great development experience.
+
+Sanyam Bhutani  1:13:54  
+So another question that I personally have had faced is how do you recommend a fast AI student to jump on Kaggle Is it like in parallel with the material, which is what I still do? Or should they complete the course first, then jump on the leader board?
+
+Jeremy Howard  1:14:09  
+It is fine, you know, whatever is more engaging for you, whatever is going to keep you coming back. So, I would guess the most people doing them at the same time would be more engaging. Definitely the stuff you learn later in the course is going to help you. But the stuff you learn later in the course, you won't really have the context to fully appreciate it until you've tried doing some things. [Yeah] So, you know, you kind of have to come back and forth.
+
+Sanyam Bhutani  1:14:37  
+Um, so this will be a tricky question. What do you what would be your maybe one or two favorite projects from the community that you really enjoyed?
+
+Jeremy Howard  1:14:49  
+I love Jason's DeOldify project. I think it's like I was so excited about it that when I was preparing lesson seven, you know, I reached out to him and I said, hey, I've got some cool ideas about Gans generative models, and you've been doing cool stuff generative models based on the previous version of this course. Let's team up and see what we can build, you know. And that's, he's now turning that into a startup, I think. And you can see he's getting these beautiful results of kind of colorization, both for movies, and images. And we even ended up teaming up and co presenting at the Facebook conference along with Uri Manor from the Salk Institute. So, you know, that's an example of a project where he has worked tirelessly and had for a period of now about a year more, I guess, in a year. And that's that kind of tenacity that's so important. Like he's just been single minded and decided to make the best best thing that he can. And he reads a lot of papers and he tries a lot, a lot of things. And he's generous with his sharing with the community. And I think he's been recognized for that. And you know, and also he's not somebody who has a traditional machine learning academic background, but he's a super good coder and turned into, like, the world's leading practitioner in this field. I think it's results.
+
+Sanyam Bhutani  1:16:37  
+Would the; 
+
+Jeremy Howard  1:16:39  
+Yeah
+
+Sanyam Bhutani  1:16:39  
+So could these projects be as a sort of surrogate for you, for example, if you were hiring at Jeremy Howard company would;
+
+Jeremy Howard  1:16:49  
+Like I mean, absolutely, yeah. So I've, I've only hired one person at fast AI I that was;
+
+Jeremy Howard  1:16:55  
+ Sylvain Gugger,
+
+Jeremy Howard  1:16:58  
+On the basis, but that was entirely on the basis. his blog posts. So he was a fastai student who wrote really, really, really good blog posts showing deep understanding of the material and pushing it a bit further and yeah, so that's, that's what I care about;
+
+Sanyam Bhutani  1:17:21  
+Relly mostly self taught versus academic.
+
+Jeremy Howard  1:17:24  
+I don't care how you're taught, you know, I just care what you've what you've built, you know, like what you do. I think, like, if you've done a PhD, you know, there's a significant downside there, which is you went to school, then he went and did an undergrad. And then he went did your PhD like you you just kept on doing the same thing. You never had the interest in other things. I think like, what does the rest of the world look like? So like there's that and the downside on the upside. You know, you've stuck at something for a long time and you finished it. And it's something which is, you know, required some significant level of technical expertise. But there's definitely pros and cons to, to that. By the same token I know for me, it's like, it's all about what have you. What have you done, based on what opportunities have you had? So if you grew up in, you know, rural Bangladesh, you know, with nothing but a 10 year old computer, and had no access to universities, and you, nonetheless built this successful GitHub project. Like, to me that's much more impressive than growing up in a family of professors and going to Stanford and getting, you know.
+
+Sanyam Bhutani  1:18:55  
+Again, one final question before we end the call is is the bike in your Twitter cover profile the one that you ride to work everyday or is that you in the picture?
+
+Jeremy Howard  1:19:04  
+So that was actually in Australia. We were lucky enough to be within riding distance with the Philip Island track, which I think I haven't written that many places but people say it's the best track in the world. So that was a three hour ride.
+
+Sanyam Bhutani  1:19:19  
+Mystery solved.
+
+Jeremy Howard  1:19:20  
+Ride from my house. And so that was that was a bike I really liked. It was fast but still quite ergonomic for riding on the street that there isn't actually any bikes around nowadays that are quite as nice. Nowadays, I have a triumph. Daytona 675. [Okay] But I haven't really ridden that since my daughter came along. My my parent brain has decided that the thrill of potential death is no longer as attractive as it used to be.
+
+Sanyam Bhutani  1:19:55  
+Okay, Jeremy, thank you so much again for doing the interview. And for;
+
+Jeremy Howard  1:19:59  
+Thank you for having
+
+Sanyam Bhutani  1:20:00  
+your contributions to the fastai community and the machine learning community,
+
+Jeremy Howard  1:20:04  
+And congratulations on your all of your success, and especially your recent job, well done, much deserved.
+
+Sanyam Bhutani  1:20:10  
+Thanks. 
+
+Jeremy Howard  1:20:11  
+Bye bye. 
+
+Sanyam Bhutani  1:20:12  
+Bye bye.
+
+Sanyam Bhutani  1:20:20  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science".
+

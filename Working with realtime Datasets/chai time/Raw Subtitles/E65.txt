@@ -1,0 +1,144 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the "Chai Time Data Science" show. In this episode, I interview Kaggle Grand Master, Dmitry Danevskiy, whose team has just finished first on the Google quest q&a labeling Kaggle competition. And with that gold medal Dmitry has just achieved the title of becoming a Grand Master in the competition tier. And as you know, we'll be talking about his journey on Kaggle and into data science on this episode along with their first position solution to the Google quest competition. Dmitry is currently working as a machine learning specialist or machine learning research engineer at the speaker, we also discuss about his work, Kaggle has impacted his work and his take on where does Kaggle help you in data science? Without further ado, here's my interview with Kaggle Grand Master Dmitry Danevskiy about their first position solution, Kaggle and real world data science. Please enjoy the show.
+
+Sanyam Bhutani  2:01  
+Hi, everyone, I'm on the call with someone who's just become a Grand Master, Dmitry Danevskiy. Dmitry, thank you so much for joining me on the podcast.
+
+Dmitry Danevskiy  2:10  
+Yeah, hello. My name is Dmitry, it's my pleasure to be here. Yeah, I'm sure and recently our team or team won the Google q&a labelling challenge on Kaggle. Yeah. And this was my recent gold medal and therefore our I became Kaggle Grand Master right.
+
+Sanyam Bhutani  2:35  
+Congratulations on both the things. And we'll talk about the competition in a bit but once you become a Grand Master, do you get entrey into secret Fight Club? Do you gain any secret abilities? How's the feeling? Can you describe the feeling?
+
+Dmitry Danevskiy  2:47  
+Yeah, I mean, I can say that this is like this final status like something right really specific because, you know, prior to the Kaggle and Grand Master you have to do all this other competitions. And probably this this. Yeah, this final one wasn't like the most most challenging because, you know, first reason is that the competition it itself wasn't that hard for me for several reasons. And probably the second one is that, you know, given all the experience I got from other competitions. It was just easier. Yeah. So, but yeah, in general. Yeah. Becoming a Grand Master is like a huge step for me because it's something you know, you could channel you could tell people and they just wild, that's really awesome. That's it. Yeah, this is great. But in terms of like, feelings of, like, came much, much stronger in terms of like doing national arenas. It's not at all. I mean, I feel absolutely the same as I felt like a month ago. Yeah. And about the competition probably I will tell a bit later. But yeah, in general, it was like, I have to build a system that would automatically score a Stack Overflow, psychic change. And sourcing question questions by sorts of different attributes. Like for instance, how good the question is and how to answer answers to questions, electronics, and it answers the question. Yeah.
+
+Sanyam Bhutani  4:33  
+I guess we can talk about the competition verse. Usually we talk about, I talk about the guests journey, but before so could you will highlight the competition. What was the challenge in the Google quest q&a challenge?
+
+Dmitry Danevskiy  4:46  
+Yeah, sure. So as I said, you like given some questions and answers from StackOverflow and steady change and all the sides like ask a boon to and probably some Some like, last Come on, like, photography dots like change.com. Yeah, you have all this, all these questions and answers from, you know, like in, in a raw format and you have to build a system probably like and it will be system. That's huge analyze those those questions and answers and output some, some, some predictions on how the how the see how the question is, is like well, well formulated. Does it have like a commonly accepted dancer song? Yeah. And we've had like around 6000s of labels, examples. Yeah. In our training set and probably three or four in the testing set. Yeah. 
+
+Sanyam Bhutani  5:59  
+Okay. Was this similar to any competitions you've done in the past? Did you have any code that you could just stick on top of this competition for a baseline?
+
+Dmitry Danevskiy  6:08  
+Well, I'm not sure because I'm surely not that not that Into NLP. Yeah, I actually like trying to do like different competitions but yes, I never I never boots, sewers and I'll be competitions before except for probably before this competition our team I mean like our team, I mean, you realloc be two parts and so, other NLP competitions it was like just like just before this competition and just as good as that competition was on awake worry related topic. And there we had to do question answering now I can standards for how things is taxed and you have to find, you know, as a span of interest tags. It answers the question yeah. There we we also have to use some NLPs stuff. But that condition was really different because, you know, it's just it. Yes, it's this task is like, absolutely, like about other other stuff. Yeah. So, in some sense I, I had some some similar experience but in in yeah, in other sense I, I didn't; 
+
+Sanyam Bhutani  7:27  
+Period that you enroll in the competition like when did you sign up and how was your time and efforts involved throughout this duration and your teams?
+
+Dmitry Danevskiy  7:34  
+Uh. Yeah, so I guess we we decided to yeah, we decided to jump into this competition because we found to be frustrated because we, you know, in that previous competition, we actually finished on the, I guess, sixteenth position. 
+
+Sanyam Bhutani  7:57  
+Yeah.
+
+Dmitry Danevskiy  7:58  
+That was the top seller position Yeah, so, uh, found that we want something like, no like, like revenge (avenge-rs?). Like, in a good sense. Yeah. And I guess that's the reason we actually started doing this. Yeah, doing this one.
+
+Sanyam Bhutani  8:19  
+So, once you signed up for it, what were your go to steps? Or generally speaking when you sign up for any competitions, how do you approach the problem?
+
+Dmitry Danevskiy  8:32  
+Well, yeah, so, it really depends on the competition has presented you have some competition. So you could just you know, use some old code from from the problem you have already solved. For some others you have to do. You have to write your own pipeline, as it was in interpreters, Google can a TAF 2.0 competition where I had throughout my pipeline entirely from scratch. Here, we decided not to, you know, not reinvent things and just be the best public baseline available and made it more, much better. Yeah, so, but I wouldn't recommend doing this unless you're like really experienced because public kernels often contain a lot of mistakes. Which don't work.
+
+Sanyam Bhutani  9:36  
+Okay. So if you could escape the solution overview, and the final solution that made it to the first position.
+
+Dmitry Danevskiy  9:45  
+Yeah, so actually, the most valuable thing we realized was that the data size is like, really, really small. So like 6000s samples is like real small that data says by modern standards, and even with use of transfer learning one could expect to not have rails who low score was that small dataset. So from the first day we had thought on how we could actually utilize some external data that was allowed in this competition. And the other a lot of external data because you have access to all this several flop and stick change posts. Yeah. And so I guess our two main things that made us yet won they are they are on domain for training, where we just you know, use the standard Bert retraining on the available data change data with an external metadata that comes, you know, from the posts like the number of uploads, and whether the particular answer was accepted as a as an answer. Yeah, and we like an additional into standards mask language model. task, we added this this additional task to predict those attributes like number of uploads, what they boast. And yeah, and this this sort of retraining really helped us because yeah, because our models, they became much more suitable for working on this particular domain while yeah, well as tendered, Bert's or other other model which just use some of your some general domain knowledge that probably will not work that good. Yeah. And the second really related stuff is to use this use pseudo labeling, which is like a really, really common technique used by, you know, in, in probably almost an incompletion. Since, I don't know, like, probably three years ago. So, yeah, yeah. So and in here we do not, you know, we, we decided to, like, reinvent things and just use the regular pseudo labeling pipeline where you have some label, you have some unlabeled data, you use your already existing models to predict labels and those data and add as and add as labels to your to your training set. There were like some commits of it this bits I guess. We describe it down on the forum, so I guess I will not, I will not outline them here because it's like really too technical, so if you are interested. Yeah. Okay. 
+
+Sanyam Bhutani  13:12  
+So you mentioned you use transformer models towards the solution. And that's that's slightly contrary compared to you mentioned it's also a smaller data size, did you run any experiments or any other intuition? Why was that a better option?
+
+Dmitry Danevskiy  13:28  
+Like asking about did we to: What is a difference between like standard Bert models and our our, like, our iTunes models on the onto domain data?
+
+Sanyam Bhutani  13:40  
+Correct and because you mentioned that it's a relatively smaller data and usually transformers are really good at bigger datasets.
+
+Dmitry Danevskiy  13:48  
+Yeah, but Ben's idea was to use like, just like to take its tender, they're trained model on like, huge data sets, right. And then take relatively small external data sets to like, like a relatively big data set. So I guess we just round like, couple of Mila's posts from the stack overflow and Stack Exchange in order to even more like fine tune to avert but now on the domain data and then reuse this on the on the available training set, which was small, but this training helps the model you know, not to struggle with this work where a specific tokens found on Stack Overflow, where you have all this code snippets and song.
+
+Sanyam Bhutani  14:42  
+Now, in hindsight, generally speaking, how has working on Kaggle competitions impacted your professional life and I'm dying to ask this question on the podcast more recently, since people are debating that Kaggle isn't data science, you don't learn much data science skills, and these are mostly from people who are from outside the Kaggle world, what's your take on that? And what have your learnings been while being active on Kaggle?
+
+Dmitry Danevskiy  15:09  
+I see this is a really good question. Thanks. Well, actually, I think that both sides I mean, those who are like full Kaggle and just horribly against Kaggle have some arguments. That's my opinion is that Kaggle really good in you know, in in boosting your technical machine learning skills and data modeling skills, data, visual data visualization skills, and as a does his job, probably better than any other activity? Yeah, probably if you like working on a really good job and you have like a really strong team probably is better. It's just passes your time and try for this job. And it's not true I think about Kaggle, but for I guess 95% of people are interested in machine learning this is not an option because they're like not that many good teams and not as many really interesting jobs. So you really want to, to make your make your technical skills really good you probably are really, you should be like really interested about Kaggle. Yeah, but catalyst to be criticized by not being like really away from what is happening in real life. But I wouldn't yeah, I wouldn't agree with that. Because, you know, the modeling is like, almost the same. But yes, sure, you will not learn how to how to communicate with, with business guys of how to know how to write an efficient Python code to extract data from you know, from something extreme and so on. But it's like, you know, no one says that you will learn this. I mean, it's like so, so you shouldn't like to expect Kaggle to teach you something you shouldn't. Right? Yeah. So I would say that yeah, that's Kaggle sake, will you test it at boosting your technical skills and you shouldn't expect to live or something else because just not what goes without.
+
+Sanyam Bhutani  17:22  
+Those can only be real in the learned in the real world. Like, like you said, talking to business people can only be learned by talking to business people. And that that becomes an RL loop from the real world.
+
+Dmitry Danevskiy  17:32  
+Yeah, sure, you could learn you could learn some, some soft skills on Kaggle because for instance, if you're participating in a team member, like really hard to make your teammates to do what you want, or you know, aren't you can convince yourself that you have to do what they want. Because, you know, sometimes they're right. Sometimes you are right. And, yeah, and as walls you know, some some patience and an ability to know to listen to other people. And that's, I guess, what is like really important in in business as well. Yeah, and especially, you know, when your houses were very, very stressful situations. Yeah, for instance, where you had to do to say, to decide what submission to choose or probably what a crutch to follow, because we don't have time to test all the approaches. This is the, I guess it's just really nice, your soft skills and negotiation skills much, much stronger.
+
+Sanyam Bhutani  18:36  
+What's your teaming up strategy and how do you distribute your workflow when in a team? 
+
+Dmitry Danevskiy  18:40  
+Oh. Yeah, I see thanks. So, yes, so it really depends. So like, typically when when I'm I'm like in a team, everyone, you know, has something in mind to work on. So yes only for instances this particular competition yeah so I was like mostly thinking about general strategy about like training models about using Twitter labels about using how to use how to set up all right final and humble how to know how to know how to how to select models and so on well say as or not other guys were working on something else so for instance, Yury and and Dimitri were thinking about pre-training and this panel like a lot of time traveling, like new friend for training approaches, and yeah, and alike was interested in train like really, really deep big models a BERT, that eventually definitely turned out to be our strongest model yeah so we typically we now just say what we think and just and then if no one has any any contra arguments why you shouldn't work for this you just work in and yeah because yeah because typically I I'm I merge with those who already you know already have already has some some region some success on other competitions so they they typically know what what they are doing yeah nitrus down.
+
+Sanyam Bhutani  20:38  
+Makes sensr. Did your Kaggle journey start after your data science journey or both started at the same time. Is there a story there?
+
+Dmitry Danevskiy  20:49  
+Yeah, so I guess I started Kaggle like guess two years after actually started doing machine any machine learning. 
+
+Sanyam Bhutani  20:58  
+Okay. 
+
+Dmitry Danevskiy  20:59  
+So as a at the beginning of my, my career, I actually tried to do some Kaggle. But those attempts they were, like, unsuccessful because I user wasn't like really interested in the conditions or I found the time like nods you know, not I know I didn't not really, not really capable of solving this. I don't know and I just wanted to focus on my job and so on. Yeah. And and I guess probably one reason I wasn't paying like a lot of attention to the goal at a time because I had a really strong team on my on my job and I just wanted to work with them. And it was yes, that was a best option for me.
+
+Sanyam Bhutani  21:50  
+How was the first competition experience like how is the new team since the first medal to up till now?
+
+Dmitry Danevskiy  21:58  
+Yeah, so progress is like, well, so like my, my first competition my first like serious competition or you know, I, I just like landforms is yeah, from the beginning to the end. What is Data Science Bowl 20- 2018 and they are as I got my silver medal my first medal. Yeah, and since then I don't, okay. I participated in around 15 competitions for the last two years yeah, and I I know like it's my take like an hour to to tell about all the I was involved in. Yeah, but in general, I could say that this experience was really valuable for me because I learned so much and it's just like not this is just it doesn't mean that, you know, for instance, you can't like Lauren, from, from the industry, from the other people and so on. Just because you know, Kaggle offers you to work on so many different problems. And it makes you to compete against the best minds in the field. So you just, you know, you just it's not chance you will not learn like anything. And there was like a really big chance you will learn a lot. Yeah, so, in general, I would say that this time was like, really great and really thankful to everyone who was with me who helped me and who competed against me it's also really important.
+
+Sanyam Bhutani  23:46  
+Yeah. Awesome. Coming to your current day job. You working at least feature what tasks are you working on? What does it in your life currently look like?
+
+Unknown Speaker  23:57  
+Yeah, so we're we're is a startup here in Kiev, found it around two years ago. For some reasons is this is my start my start just to be sure, for some instances, it's queenside was was my Kaggle start and I know it's like, sounds really unrelated because I do not know, I don't know, like I didn't really relate my job to to Kaggle that's a yeah, that's my job we do we do something called wise conversion, which is something like you know, you take a model and you you make other other under other persons who speakings wise of some other person. So for instance, you want to you know, you want to reuse the voice of famous actor to now to add some some scene to me and huge imagery our project to make this work without this, this actor available. Yeah, and this is like really similar to for instance text to speech to text to speech problem, or you have to text and you have to synthesize corresponding audio. But we work on top of other person's audio instead of text. Yeah and we mostly work with with with deep learning the brushes we use, which was like try to use recent advances in the fields. We use a lot of different, different different different genetic models, like they've not and yeah, and so on. Yeah, so my job is mostly around this, but also, yeah, currently I'm also responsible I'm also responsible for for technical hiring. So I, I do some technical interviews. Yeah. And also, we're like really research oriented companies. So we do a lot of our own internal research. So I have to reach a lot of papers. Sometimes our presenters papers to the other members of the team. Yeah.
+
+Sanyam Bhutani  26:26  
+Okay. How do you balance time spent on competitions with life and work? That's the golden question.
+
+Dmitry Danevskiy  26:34  
+Yeah, sure. Well, actually, it was like really hard the either at a beginning because I didn't have a lot of experience that I had to spend like a lot of time coding and, and stuff in my my pipelines. I mean, like, when I was working on some condition, but now I think that I have like a lot of code that I can reuse from the terms of previous competitions. So typically I do not code much anymore. When I like I when I'm entering it into a competition. So typically, it takes me like rounds an hour in the morning and an hour or an hour in the evening to, you know, to add some, you know, some, some snippets and probably change some hyper parameters and just, you know, run some models on a GPU and just, you know, go sleep. So, yeah, and in general things that typically doesn't hurt my personal life and my work and yeah.
+
+Sanyam Bhutani  27:47  
+Okay, so if, if you were to give some advice to maybe a person who will interview with you makes in the future who will be doing a technical interview and is just starting their journey, what would be your best advice?
+
+Dmitry Danevskiy  28:03  
+Are asking about like starting journey like on Kaggle specifically or?
+
+Sanyam Bhutani  28:07  
+Kaggle or data things generally speaking.
+
+Dmitry Danevskiy  28:12  
+While this is really hard question because, you know, I started my my job like around four years ago and things have changed so much since them. So for instance, back then I didn't have a lot of options, where to start to I, I completed some some basic machine learning courses like greens course, and probably some others. I read some books, but yeah, but now we have so many options. You know, just like it starts so many different online classes, how many different books podcasts, you could listen to and so on. But in general, I think that if you are like, you know, if you're really serious about data science and machine learning, and you really want to be an expert in this, it's really important to pay attention to fundamentals. So I wouldn't advise like start from learning some libraries and frameworks, because you know, they give you some like really, really quick payoff. So, you could just, you know, like, reuse some some existing code and meet your pipeline work making model work. But this is not not what makes you an expert. An experts is it is one who you know, knows things like really in depth, and cute for instance, proper. Yeah, for instance, proposed some adjustments to an existing model in order to make get to know work on some new data or a new tab problem time. And for this, you really have to be good at fundamentals, you have to understand how those models work on the low level. And there's only issuable if you're really the if you're really good at math, you know, calculus, you know, linear algebra, you know, you know, you know, computer science. And, yeah, I would, yeah, I would, I would advise just pants a lot of time this parallel or you shouldn't, you know, you shouldn't forget about that practical stuff like, like Kaggle and learning. Yeah, learning tools. That's yeah, but I think that fundamentals is what makes one an expert not like not, not libraries and frameworks.
+
+Sanyam Bhutani  30:52  
+That's amazing advice. Before we end the call, what would be the best platforms to stay connected with you and follow your work apart from Kaggle and I'll definitely have these in the show notes for anyone who wants to connect with you or follow you.
+
+Dmitry Danevskiy  31:06  
+Yeah, sure. So I guess, post something on one on LinkedIn, but it's probably not the best platform for technical stuff. So I recently started my Twitter. I don't know, like, if you if you have like a link, so probably I could yeah, I could send the link. Oh, sure. Okay, so observer, I plan to post some stuff related to machine learning and probably some, I plan to do some some blog posts on a wide range of topics. Now, I know I finally like, like, I'm done with Kaggle I'm like, I I want to stop competing. But I guess it's not like I could, I could compete with like, much, much lower pace and not really care about results. Because you know, yeah, I could focus on on you know, on acuting and entering my knowledge so I plan to do a series of blog posts on on different topics and probably I will share them mostly on on Twitter and ODS, if you are interested. 
+
+Sanyam Bhutani  32:28  
+That's amazing. For the audience I have looked up your handle it's Danevskiyd spelled @danevskiyd so please follow Dmitry on Twitter if you if you're too lazy to sroll the show notes and find the link. Dmitry thank you so much for joining me on the podcast and thank you for sharing all of these amazing advices
+
+Dmitry Danevskiy  32:49  
+Yeah, thank you so much for inviting me and also for listening me. Yeah, it was my my pleasure to be here and to share my my journey with the rest of community.
+
+Sanyam Bhutani  33:00  
+Really enjoyed talking to you.
+
+Sanyam Bhutani  33:08  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science".
+

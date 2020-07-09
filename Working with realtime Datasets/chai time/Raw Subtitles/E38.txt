@@ -1,0 +1,357 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts, where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:45  
+Hello, and welcome to another episode of the "Chai Time Data Science" show. In this episode I interview Kaggle Grandmaster Mikel also known as Anokas on Kaggle and if you come from any slack community, Mikel is active on, you might have seen him the same username. In this interview, I tried to decipher for the second time if Mikel is a robot AGI or not, which again fail at. But do check out the previous interview at will be linked in the description of this podcast where I was fortunate enough to interview him on my blog series earlier. In this interview will talk all about Mikel's journey into Kaggle, machine learning and his current life where he's a computer science student at the University of Cambridge. Yes, he's 18 years old at the time of publishing this interview. Mikel was one of the youngest person to become Kaggle Grand Master in the competition tier, I believe at the age of 17. He was also the first person I believe to become Kaggle triple Master back when they were three tiers for the audience of datasets tier was recently introduced on Kaggle and earlier there were just three tiers. We talked all about how Mikel went on Kaggling at the age of 14 how he continue to learn continue to improve his score on the leaderboard, his positions on the leaderboard and his journey into Kaggle, into machine learning, into human machine learning research, where he led to work working on very interesting projects in the intersection of machine learning and Japanese literature, also where he ended up organizing a Kaggle competition, which we also talked about in this interview. I'm sure that Mikel is one of definitely one of the youngest and smartest person I've had on the series for the second time. So I really enjoyed this conversation. A reminder to the non native English speaking audience the subtitles on YouTube will be manually checked and re uploaded, so please enable them for a better experience. And the blog for this interview along with all of the time, data science interviews will be released later. So you can also find the links to where these will be posted in case you want to read the previous or the future interviews. Without further ado, here's my interview with Kaggle's still youngest Kaggle Grand Master Mikel, also known as Anokas on Kaggle, please enjoy the show.
+
+Sanyam Bhutani  3:19  
+Hi, everyone, I am on the call with a robot or AGI or I'm not sure if it's a proxy, Mikel, thank you so much for joining me on the "Chai Time Data Science" show.
+
+Anokas  3:29  
+Hi, thanks for having me. It's it's great to finally be here.
+
+Sanyam Bhutani  3:34  
+We were just talking about this but you know very well I've been a fan of yours. So it's again, a privilege to have you or I don't know if it's a proxy of yours on the show.
+
+Anokas  3:43  
+I, I say it's, it's me, but I guess that's what someone else would say. So you will just have to trust me on this one.
+
+Sanyam Bhutani  3:53  
+I guess who passed the Turing test in that case?
+
+Anokas  3:56  
+Yeah. You decide at the end.
+
+Sanyam Bhutani  3:59  
+Okay. For the listeners, can you tell us your current is age, and at which you became a Grand Master?
+
+Anokas  4:06  
+So I'm 18 now. So I started Kaggling when I was like 14, I think. And I made Grand Master last year so 17.
+
+Sanyam Bhutani  4:19  
+And Ahmad wants to confirm is it still illegal to team up with you? Would that be child labour?
+
+Anokas  4:27  
+Thankfully not. No. I, I will admit I've never looked into child labor laws, but I'm pretty sure that everyone I've teamed with is fine.
+
+Sanyam Bhutani  4:41  
+No more jokes. Hehe.
+
+Anokas  4:44  
+Hehe.
+
+Sanyam Bhutani  4:45  
+In a previous interview and mentioned you picked up Kaggle, because you initially were drawn to the competitive aspect of it. Were you always competitive? Any any place outside of Kaggle at the age of 14 that you involved in?
+
+Anokas  4:58  
+I guess like Not not that much. I didn't really see myself as a very competitive person. I think what what made Kaggle so addictive is so I would always do as often people do. I had like lots of various personal projects and stuff like I would build stuff for fun, right? And with machine learning, it was like, cool, I get to build stuff for fun, but, you know, then it's actually like, contributing like it's actually unbelievable somewhere. It's not like, right, I built something and then it like, goes into a folder somewhere it goes on the shelf, and I can never touch it again. So like, the feedback loop of having the leaderboard and like having, like goals to reach, I think it makes it much easier to stick to something because I would always I was always someone who and I think still am someone who like, wants to do lots of things, but then I will only like do something for a few months, and then they'll get bored of it and I always thought that would be the case with Kaggle. So I was always thinking like, oh, is this like because I sometimes it'll be breaks, I wouldn't be for a few months. And I was like, oh, is this it? Am I like, moving on to something else now, but so far, I think, just the, the competitive aspects and the community and everything is sort of kept me in this. It's stuck to it.
+
+Sanyam Bhutani  6:22  
+At what point did you realize that machine learning is your long term passion, something that you'd like to pursue for the longer term?
+
+Anokas  6:29  
+I don't know. To be honest, I'm, I still can't say that for sure. I still think that like, you know, one day I'm going to be bored of it, and I'm going to do something else. But then it's like, well, I have I have this like Kaggle profile, and I have all of this and it's got me into so many different opportunities. And so I'm thinking like, well, can I leave it behind if I want to, like can I leave so much behind so there's a bit of there's a bit of pressure on myself. Like keep going as a result of that, but I did I think I think I still enjoy and I had to like I can stay on this path.
+
+Sanyam Bhutani  7:10  
+Fair enough. And I'm really curious about your methodology in a previous interview again mentioned that you didn't go up and take any courses or you didn't pursue any books. You didn't read any books from cover to cover. You follow the top down approach? Can you speak more about it? What was your method when starting out?
+
+Anokas  7:27  
+Yeah. I mean, like, the question like most often get asked by people is like, oh, how do you get started with Kaggle? and so on? And I hate this question, because I haven't got a good answer to it. And I wish I did. Because probably 50% of the questions I get asked is, is like, oh, you know what course I do. So like, I should preface this by saying that like Kaggle today, the competitions are really different to how they were three, four years ago. I think it's a lot harder now. Definitely a lot harder to get started because you have back then everything was you know, you you, you have some tabular data set, and binary classification whenever you stick it in XGBoost, and like almost the same code would work for like, across several competitions. But now you get these comp, it's so complicated you have to get neural networks to work and you've got this massive data sets and so on. So I think it was a lot easier to like break in like with the approach that I took back then, which is a bit of a shame, I think. But basically, I started I just sort of stumbled across Kaggle. Like I didn't know really what it was, but I was like, oh, cool. So I signed up and everybody's leaderboards and and i really kind of started by I said, we already had kernels back then. So I didn't know what I was doing, to be honest I, I didn't have to code. So I had learned Python a couple years prior, but I never really used it. It's sort of like, I did like a online course on it, but then I forgot it. So I, I did not know what I was doing, categorically. But there was kernels. And I could just copy paste the code and run it, and it would get me some somewhere on the leaderboard. And I could take multiple of these kernels, and I could open up the submission files in Excel, average them, and I would get a better score. So that's basically I just started essentially, the script kiddie just downloading on people's code running it, I would tweak parameters, and like in the x, g boost or whatever, and like over time, I would start to like, oh, here's like, an idea. I have like a try. And and so Just doing that. And then like the other thing is, before I sort of read taught myself how to code. I started by using in the first few competitions, programs like canine and rapid minor and like, the sort of, like goi machine learning tools and like, the results weren't great, like in terms of like, if you compare to even SK learn or something. It was, it's easy to it's easy to use, right? And you have and it teaches you the concept because you get the data, you have the split cross validation, you're also tree model, perhaps you run several of them, you average them and so on. So it really like got me comfortable. And so for the first few, like several competitions, that's what I did. And I would like stay up all night doing that. Just honestly just like running other people's code even in our as well. Because the fact that people use quite a bit as well. And yeah, it's just sort of progressed gradually. I just kept going at it because I found it so fun to it's actually, like, all I could I could, you know, because I could, I say quite easily get into like, top 20% or so because most of the people that do chemical petition like most of the competitors, are they they join, they like do one thing, then they submit sample submission. 
+
+Sanyam Bhutani  11:32  
+Yep.
+
+Anokas  11:32  
+And that's it. So, in a way the leaderboard scores like quite inflated in that, like, a minimal effort will definitely get your top 50%. Right. So you can sort of do that. And I guess, I guess where that really changed was the avatar, duplicate ads competition, which was the first competition I did well and and basically what happened there was that. So the con to give a bit of background about the competition. Basically, what you had to do is you were given a bunch of listings from a website called habitude, which is a bit like a Russian version of eBay, I'm told. And so it's you basically, you're given two listings, and you have to check, you have to say here are they duplicate? So you had text data, you had metadata, you had images. This was back when there was there weren't really images on Kaggle, that wasn't really a thing. So lots of people like this was the beginning of the competition. I started this as a started and people were building stuff based on text features, right? And, but no one was using images and the first couple days, but I quickly wrote up something which basically just hatched all the images. And I dread I created a new feature which is like, are these the same image, like do they have the same image, the same listings, which is obviously quite a powerful feature, but as the first person to actually process all the images because it's like 100 gigs or something. I ended up number one on the leaderboard, which I remember was like a really huge thing for me. And then I made the great decision of teaming was the first time I've teamed with second and third place on the leaderboard at that time, and that competition was really just such a huge learning opportunity that like it was like a stepping stone from like beginner to like, I know what I'm doing. And then towards the end of the competition, we invited Kazanova, Marios, to join us because he was he was he had just started the competition. He was quite down, but you're like, well, maybe he wants to team with us. And he did. So there was like, my first team had I think he was third or second in the world at the time. And so that like that was like, all this Kaggle knowledge bestowed on me, basically. And I think that's basically how I got into it. I don't know how viable is today given like the current sort of climate of competition?
+
+Sanyam Bhutani  14:24  
+Yeah.
+
+Anokas  14:24  
+I do hope. I don't know. Because now the field is progress. And it's sort of anyone can like run models on tabular data. So sponsors aren't really interested in any more sponsors like sponsors, they want their image or their tax problem solved and over and use your network. And I think I think it's been a bit of a shame because it it takes away all this old feature engineering aspect of the old competitions. So it's definitely different, try to do competitions on Kaggle today, I'd say.
+
+Sanyam Bhutani  15:00  
+Okay, and how did you continue improving your approach, again? I don't think you took any courses while you were active as well. How did you learn new things? How did you go out and figure what is what are neural nets? What;
+
+Anokas  15:12  
+Yeah.
+
+Sanyam Bhutani  15:12  
+How did you learn?
+
+Anokas  15:15  
+Just like googling as as necessary, I think. So there's a lot of stuff I discovered by trial and error. And I think that's why I have I have a pretty good intuition of like, what might work and what won't and I think that's just because I didn't go about reading like taking notes like this. This model is good for this. That's one of the things I like I tried to move on all these different competitions. And now I sort of I haven't I understanding of like, I have a good feeling this will work like this won't work. And I think I think it's just a lot of people are quite scared to get started. Because I people have told me like, you know, oh I don't know if I'm good enough to start Kaggle yet like, and I'm just there like, well, there's no like entry exam, right? There's no, there's no risk. Just just try it and and do do whatever you can and and you will learn from it. I don't think I feel like the approach of like, oh, before I touch Kaggle, I have to do all these books and courses and stuff. I don't think that's the right approach at all, basically.
+
+Sanyam Bhutani  16:25  
+I'm definitely, I think I'd like to call myself a self made fast.ai evangelist where they really promote this idea of the top down learning goal. 
+
+Anokas  16:34  
+Yeah. Yeah, yeah, yeah. 
+
+Sanyam Bhutani  16:37  
+So it's good to know that this technique definitely works. And this this is one message that I always try to get across to the audience that you need to do more than you need to learn, especially for machine learning.
+
+Anokas  16:47  
+Yeah, I agree. I think one thing I quite like about it is I've never been that strong, on on theory, in general, like with math and all these other things. And I think people often take the wrong approach to machine learning and thinking that like, it's super easy in the practical sense is like super like theory based, but it's really not. It's all about like, how, you know, sort of getting the intuitions it's all about getting the intuitions and not about understanding equations. So I think that's like, why it worked so well for me when like, I can never do like a master Olympiad or anything like that. Right? 
+
+Sanyam Bhutani  17:30  
+Yeah.
+
+Anokas  17:31  
+I think it's it's quite a different thing. And that's good, right?
+
+Sanyam Bhutani  17:35  
+Yeah. 
+
+Anokas  17:36  
+Yeah. 
+
+Sanyam Bhutani  17:37  
+What what was your life like when you were acyive on Kaggle when you were in school? How many times did your parents walk up to your room late in the night and you're sitting in a corner working on some script in the dark?
+
+Anokas  17:49  
+That was quite quite common. I did have quite a lot of time to work on Kaggle and like I would often I would end up sort of work on it constantly. Like I would get up and I would I would always have something running and like every few hours I check in, I'd always be SSHing from my phone. 
+
+Sanyam Bhutani  18:10  
+Okay.
+
+Anokas  18:11  
+And and literally sometimes writing code on my phone for Kaggle competition. So it was always it was like always a part of like my day and and my life at time and it was a lot of fun and and my friends are very interested in it and always followed me on the leaderboards and stuff. So it was it was a really great experience being able to do that while at school.
+
+Sanyam Bhutani  18:39  
+And you still hold the title of becoming the youngest Kaggle Grand Master. Are you worried someone might become aware of Kaggle at the age of 10 and might snatch your title?
+
+Anokas  18:50  
+Yes, I I did there are a few people I know who are quite young on Kaggle close to my age. Thank you none of them have taken my place yet. But it's it's quite cool to see that like, I'm not the only one doing this there are others. There are definitely quite a few teenagers on Kaggle. And there are a few that are quite high up on the leaderboards and that's that's really cool. I just, I'm holding on to it for now but then obviously like, I'm, I will age. So eventually I won't be the youngest Grand Master often I think that's a gimmick.
+
+Sanyam Bhutani  19:34  
+I'm speaking about competitions Do you have any favorite battles, stories, any favorite competitions that you'd like to mention? And while you, once you became used to Kaggle, what would your pipeline look like once you enter the competition? Because I remember whenever you used to enter competition, you would sit on the top of the leaderboard with a huge gap a huge gap. And that would take at least a month sometimes to come over.
+
+Anokas  19:57  
+Yeah, I think I mean, like your first question, the first question is like, about like battles. I think there have been several. First, first one, of course, avatar. So there was we were, we were in first place for a long time. Battling we really like the final week was, was massive. I remember being at school. But in the last like, couple hours of the competition. One of the teams, they were like in seven jumped off above us. So we ended up second. And they had been hiding their solution for about a week they had been making fake submissions to make it seem like they weren't as good as they were. And so they really like, overtook us. And then I guess another similar cases is the competition which which I won, which was the Google landmark retrieval competition.
+
+Sanyam Bhutani  20:59  
+Yeah. 
+
+Anokas  21:00  
+There was interesting competition in many ways, very unusual. But we had managed to get in first and we was staying in first for a long time. But the last couple of weeks, we were unable to make any progress. We were completely stuck. And we were we were working really hard, because there was a second place team was catching up quickly. And just before the competition ends, the organizers announced that extending the competition by a week, which was incredibly frustrating because well, I mean, I had basically not been sleeping the last couple days. Because I felt like this is the end and it's like, actually, you've only done half the marathon basically keep just keep running. But it was it was really so devastating, always and like so many angry messages on the forums. But like that was quite a battle and in the end, like the last day they overtook us, again, on the public leaderboard. But then thankfully, on the private leaderboard, we won unlike by a, quite a significant margin. So that was like really good to see. And this competition was like, one that I am particularly proud of. Because our approach, we didn't, we didn't use the training data at all. We didn't have any validation. We had there was an image of, it was a competition of basically given to, given given a landmark. You'll find all the other images in the data set of the same landmark. And there was another competition along with it, which had which was like landmark classification. So they had a bunch of pictures of landmarks and each had an ID. So from that, you could you could use that as a data set as a training set, right? Because you, you could say, well, this boundar, we want to surface all the other landmarks the same ID. This is something that like me and my teammates had been working on for quite some time. And so we already had like a pipeline. For a lot of it, we already had trained models, which basically took an image, and we got a vector. And we just use the stuff we already had. And we built extra stuff on top of us, we build some fast and nearest neighbor code and stuff like that. But like when I'm happening is that we didn't actually train any models. For that competition. Our models were like, generic for like, detecting just objects and images. So I think that's what made it like really robust and, and like I was really proud of oscillation just because it's weird to win a Kaggle competition without any training or validation, but no, that was, that was quite, that was a fun battle.
+
+Sanyam Bhutani  24:09  
+I'll definitely have the solution linked in the description. I remember when you had published it, everyone was, became a huge fan of it. And it was on all of Kaggle forums, slack groups all over the place. We are delighted, talking about your approach when you join a competition. Can you speak more about that? And how do you get to the top of the leaderboard instantly?
+
+Anokas  24:32  
+Um, yeah, my competition. I was like, right? I've got this approach. I'm going to like, read all about it, and I'm gonna download the data. I'm going to set up my scripts and so on. That is not what I do. I, the competition launches, I immediately download the data. While the data is downloading, I start writing a script. 
+
+Sanyam Bhutani  24:54  
+Okay. 
+
+Anokas  24:55  
+And basically, my approach is always trying to get a baseline as quickly as possible. So I will I will write like a just a simple in the past indexdb script. But now I guess it's harder than your competition. So just have a baseline. But often I'll use hacks just like trading tray and model on the image size instead of actually doing detecting what's in the image. So like, I'll try and build like something really simple. And that will usually that will get me first in the leaderboard, hopefully for a few days. And I guess, like I would say to like, that's some good strategy for some reason, but it's really that just like, I like being on the top of the leaderboard.
+
+Sanyam Bhutani  25:40  
+And it's lonely at the top alone every time you get to the top of the leaderboard. 
+
+Anokas  25:44  
+Yeah. Yeah, exactly. Kaggle has these like when you when you have like a button to tweet, but it always has these like really, both the passive aggressive tweets and I just hope that people understand that it's not like me saying that those are the suggested tweet. But, um, yeah, it's unlike I just try and get like a baseline submission. And then like, I'll keep iterating on it and not not spend like many hours just just try to improve. And that will get me like a baseline understanding. Like I've get feel for the data and then I can go away and then think ideas, think of ideas and stuff. And like, a lot of the time, I will only do a competition at the beginning and also fizzle out. Usually, because I'm just not sure what to do to do well. But like a lot of the time, like when, when I do well in competitions, it's I have this like really hacky solution that I've kept adding stuff to, and a certain point like after, after a while, I will rewrite it. Once I know what my solutions look like, then I rewrite it nicely. But I just don't see the like I'm either like lazy or impatient or just I don't think there's there's that much benefit to setting up a pipeline as the first thing you do in a competition. So that's that's basically how I try and get to the top, the very beginning of all the competitions.
+
+Sanyam Bhutani  27:16  
+Talking about hardware. I remember in Kaggle notes, you had posted a picture where you had around 50 1080Tis, if I remember correctly, how do you justify your carbon footprint? And what hardware do you recommend for people who feel intimidated by that?
+
+Anokas  27:33  
+Yeah. I quite like hardware. And I quite like posting photos of hardware. I don't actually have that's not my hardware to clarify. So I will often I will help people build servers. And so I will buy all the parts and I will build service and stuffers from people. And so often like I would take a photo of all these geeky boxes that I have but like yeah, um, I guess if you buy like a server from like Dell or if you buy like I guess the the initial thing was back when Nvidia released back when they released the what was it? It was like a card with the name of it but it was this workstation with 4xTitans
+
+Sanyam Bhutani  28:24  
+DGX?
+
+Anokas  28:25  
+No way back before back when they were first doing neural networks back when torch was popular not Pytorch torch.
+
+Sanyam Bhutani  28:34  
+I wasn't into machine learning at that time.
+
+Anokas  28:38  
+They just they just released it was just conceive apart it was it was just a standard consumer case for safe case with four original Titans in it. And they were charging like 25,000 and there was like a big waiting list. And so my dad's company was like, actually we kind of want one. And I was like, actually the parts, they're not 25,000 they're 5000. So if you buy the parts, I will build it for you. And that's what we did. And it was a success. And, and it sort of just went from there. So like, I really like building computers. And I know lots of other people that are like interfacing of hardware. So they will, they'll like, use different tools like to abstract all their code. They'll use like different deployment tools or like this, like Neptune, ML, and stuff, Docker, but I like I find it really frustrating. I like setting up my environment on the hardware, and it's like, that's my environment, and they use it for everything. And so, I've always, I've always really liked building computers and working with hardware directly. And so on. So I guess my sort of photos of hardware that it comes comes from that. I have in my computer I have one Titan X.
+
+Sanyam Bhutani  30:14  
+Okay.
+
+Anokas  30:15  
+And and yeah, so that's, that's that's my personal computer. But yeah, it's, the upside is I get to like, borrow and use lots of other people's stuff and that's definitely helped competitions.
+
+Sanyam Bhutani  30:33  
+Which recommendations do you have for people looking at the current climate of Kaggle?
+
+Anokas  30:38  
+In terms of hardware? 
+
+Sanyam Bhutani  30:39  
+Yes. 
+
+Anokas  30:41  
+I guess GPU right is the first thing because you need needs to participate in an image competition. So I guess I don't really I I'm not a huge fan of the latest generation of Nvidia cards, the 20 series They're quite expensive in that they are the prices being artificially hiked because they can. So I don't like recommending it but I feel like if you if you can afford it then get a 2080 Ti. I think that makes the most sense at the moment. I'm hoping I'm hoping that they AMD can come up with some stuff to help bring down Nvidia's prices. But I guess the other thing is like, on the CPU side, I would say, get rising official. There's just the value proposition is so huge compared to Intel, and I like supporting the underdog. So I would recommend yeah, rising 2080 ti, if you can find one 1080 TI and because it's like half the price for like 75% of the performance. So it's a no brainer.
+
+Sanyam Bhutani  32:00  
+I'd like to drop a quick plug. I've interviewed Tim Detmer on the series who has a very nice blog on GPUs. And we also talked about that, so do check that interview out in case you haven't. Now, zooming out to another aspect of your profile, you're also a published researcher, can you tell us about your research interest and what led you to working in research as well?
+
+Anokas  32:23  
+And I yeah, so I guess it's sort of it started of I did some work with the University of Surrough. on some Kaggle competition, so it starts with the YouTube hm competition and then the Google landmark competition. And so they the researchers that I worked with know that okay, well, we want to publish a paper based on things I was like, amazing. And actually the the YouTube hm competition was built, there was a workshop at cvpr built around that. So we will K that's??? put something in the workshops. I was like, cool, like, I don't know what I don't know how it works but like, I'll help out. So I did. And so in the end I managed I ended up going to Hawaii CVPR, It's my first time going to the US and I ended up presenting our paper there which was like such a huge thing it's on, it's on YouTube, I was like 16 at the time, I think and it was such a surreal experience was such an enjoyable one. And so I think like being able to do research is such a rewarding thing to like, have your name up there and and also like, with someone else, like sites, your paper, you're going to read it and you're like, wow, somebody who actually knows what they're doing read my paper and like it in some way guided that thoughts or whatever, and that's such a cool thing. And since then I've been like, looking for opportunities. So, I've done a bunch more work with the University of Surrough, as I'm going in and like with CODH is just as I'm sure you'll bring up, and so on. So it's like, it's it's a lot of fun. And it's a very rewarding thing, just like Kaggle. And to have that opportunity, which I know is not everyone has, especially before University.
+
+Sanyam Bhutani  34:35  
+I remember there was another interesting story, I think, where you had a school deadline, and you almost submitted the paper at the last day for cvpr.
+
+Anokas  34:46  
+Yeah, no, this is a common story. So like, the nice condition I did, which was the third YouTube, a 10 competition. We did quite well there and Price. And we were, we were like, they were like, Okay, so we have to submit a paper. I had just arrived in Cambridge. When this happened, this is like first week of Cambridge term. And we had three days to write a paper. So that was, that was quite a that was quite a challenge. And it didn't end up being as good as I wanted it to, obviously, but honestly, like, the amount of like stuff I have to do here at university compared to like, how busy I was at school is like a completely other level. And I'm just trying to figure out how to how to basically mix and match all these things and how to make time for it. So it's, it does happen that like all these Kaggle deadlines, and like the landmark competition that got delayed, it then coincided with like an exam I had and stuff. So it's it's awful. But I somehow managed to work around it.
+
+Sanyam Bhutani  36:06  
+I'll definitely have your talk from cvpr linked in case anyone wants. 
+
+Anokas  36:11  
+Sure. 
+
+Sanyam Bhutani  36:12  
+Now, could you tell us more about the importance of your work in Japanese literature that I think you've worked along with Tarin, and David Ha aka Hardmaru on Twitter
+
+Anokas  36:23  
+Yeah. Yeah. So I've been working for the last, I guess, year and a half, with CODH, which is like a Japanese research organization, in their working in open data from humanities, and I just, I think it's such a cool thing. Like, I don't have any background in Japanese literature. So it's not like it's not like I really wants to go into Japanese literature. But it was like, wow. 
+
+Sanyam Bhutani  36:58  
+Do you speak Japanese? Because I think you speak four languages Polish, English, and two more, do you speak;
+
+Anokas  37:03  
+I don't speak I don't speak Japanese. I'd like to, especially so actually, like, read some of the output that we generate. But now I say I speak I basically just speak English fluently, but I speak Polish, Spanish and Basque. Sort of, I can hold a conversation. 
+
+Sanyam Bhutani  37:28  
+Okay. 
+
+Anokas  37:29  
+So yeah, I'd love I'd love to speak Japanese, but I don't know what was I saying so? Yeah, it was it's, there was nothing like I wanted a Japanese literature but it was like, here's an opportunity. And I knew I knew Tarin from from from before then. And so she was like, well, do you wanna like, help us out and work on this. I was like, yeah, sure. And I just think it's so rewarding to be able to like put because when you publish a paper it's like, okay, I've done something I've built a model. And it's it's in its online, but like, you know, no one's ever no one's ever going to, like actually use it. It doesn't actually get used by. 
+
+Sanyam Bhutani  38:12  
+Yeah.
+
+Anokas  38:12  
+It's, it's it's research, right? It's, it's just just, yeah. But then like actually being able to, like build something that will one day be used for something. So like, our end goal is to, to be able to sort of take all of these millions of books, and stuff that are been written in ancient, like cursive Japanese. And the thing is that most people in Japan today can't read it. Can't read any of these historical documents. And there are only like a handful of experts. But you have like a you have millions of books. So these books are never going to be transcribed into modern Japanese, by people. There's just too much of them. And so like, our goal is is to be able to sort of automate it. And then we'll be able to basically take these like millions of books and put them all online or transcriptions in modern Japanese. And instead of just thinking about it like this, it opens up so many cool things like, even like linguistic analysis, because if you have all the books over time, you can see how the language change and all these things. And I just think that like, being able to put my skills in some respects in something like concrete, and hopefully something that will actually benefit society, in some way is like a huge motivator. And so I'm really like, happy that I get to work on Japanese literature.
+
+Sanyam Bhutani  39:52  
+We're sure it will. You also ended up hosting a competition on Kaggle. What led you to hosting the competition? What parts were you involved and were you not frustrated by the fact that you can't go ahead on the leaderboard and be on the first position?
+
+Anokas  40:07  
+Yeah, so the competition isn't there wasn't like a big story about competition. So like, my part was mainly data preparation, and building like the data set and the train test split and stuff along with Tarin, and also basically talking to Kaggle, and setting up the competition in deciding what we're going to do. And so I don't think this has been spoken about before, but we had a bit of a problem, which is that basically the competition was you have, we give you pages with cursive writing on it, and you have to like identify, like, where the characters are and what the characters are. So you have to like classic object detection. Basically. The problem is that like these were books that it costs a lot of money basically to get these transcribed. So we, the data we had was the data we had. And these were like transcriptions that we had obtained for other projects. And they were like three purposes of competition. So the issue we had was that some of the books had been transcribed before, not in the sense of like, our competition format, where it was like object detection, but in the sense that there was there was a transcription like in another format of the same book. And often they would be liberties taken in translation, right? So you change the words around it wouldn't be a literal like letter for letter translation like ours was. But the the bottom line was that there was some element of like, leakage. Potentially someone could someone could it would be it wouldn't be easy. Someone could find somehow these books. And like it would take several steps to even find it. And then several steps to build a model that you can actually use the information you find. So it was like, really wouldn't be easy. So I didn't think that that cheating using it would be a problem at all. But in the end it was because of that, that we sort of had to to downscale the competition. So we ended up with a playground competition, just because we couldn't risk cheating. So we took that decision. And at the time, I didn't think it was I didn't think there would be that much of an issue like I thought we were over reacting. But recently, of course, we've all seen the issues around cheating in the Pathfinder competition and so that was like someone made a really concerted efforts to cheat in that competition and say, if I compare that to like, how difficult would it be to cheat in ours, it would be like, it seemed feasible. That's that like, and they would have done the same. And so like, I do think it's quite important is getting quite important. So I really stop naked like that. And that was, that was like a big pain point of the competition. And there was, things were still like moving last minute. And because Kaggle, actually, we weren't aware that some of this data was online, and like, Kaggle found it for us. And so that we had to put the brakes on a lot of things, and cancel the press release last minute, and all of these things right. It was like crazy but behind, like behind the scenes, like I don't know how much I can say but it was like, a lot of drama as a result of this and like, all I can say is that it's becoming so important now I guess, Kaggle's entering a mainstream and we never saw this sort of cheating in the past, even like, a couple years ago with there was like the talking data competition, which I don't know if you familiar with but basically, the the ID wrote like column was correlated with the target, things that were later in like the data set, were more likely to like, have a positive outcome. 
+
+Sanyam Bhutani  44:46  
+Okay.
+
+Anokas  44:46  
+And like today, this would last like 10 minutes before someone finds it because people try and find leakage like this. But back then literally, it wasn't found until the last week of the competition embarrassing. You have been like two months. And I think that shows like how much it's changed. People are like really trying to find leakage and like, some people are motivated to cheat. And I think that in some ways is new on Kaggle.
+
+Sanyam Bhutani  45:21  
+Yeah. Now, zooming out to what you are currently doing, I don't know why even you're going to university, but you are the University of Cambridge, studying computer science. Can you please tell us why you would need to do that?
+
+Anokas  45:36  
+Okay. Yeah. I get people's to tell me that a lot. But like, I think what I mentioned earlier was that like, I've never been good at the theory side of computer science and so on. And the course here at Cambridge is like a really theoretical course a lot of maths and so on. And actually, I find that quite challenging. So it's I don't feel that like I'm above everyone else here. And of course, like, it's Cambridge. So they're like, everyone here is really good. But I definitely don't feel that I am, like at the top of the pack, either. I mean, like, I guess the exception is like right now we're now doing a machine learning module, which I think you you saw. And to be honest, like, it's a bit disappointing, because, you know, the other the issue about, frankly, about Cambridge being so theoretical is that like, in some respects, the courses are quite far behind, like real life, so to speak, I might, I might anger some people by saying that but it's like, at least in like the machine learning course. It's like sentiment classification, using Naive Bayes.
+
+Sanyam Bhutani  46:53  
+How graduated from college I'll confirm that is very true to colleges, even today. 
+
+Anokas  46:57  
+Yeah. 
+
+Sanyam Bhutani  46:58  
+Outside of Cambridge, at least.
+
+Anokas  47:00  
+Yeah, so it's like there's no like, mention of neural networks, there's nothing and ever like I really am a few things, but they soon will have a lecture on cross validation and stuff. And I know I know that kind of been there, but I know it's going to piss me off because it's going to be like, it's one of those topics where there's no like, accepted like this the best way to do it. And I think Kaggle has made a lot of progress in the sense of everything on Kaggle is the like the best techniques are from Karol because they were battle tested. So I I feel like that's what makes it so like, useful. And I have a feeling that like the stuff we get taught in Cambridge won't hold up. They wouldn't hold up on Kaggle for example in one like a, real world data.
+
+Sanyam Bhutani  47:53  
+Do you feel like your undercover superhero situation to the spider man as soon as the faculty turns, pull out your phone, you run scripts on your phone and as soon as they turn back you're back to writing code on paper.
+
+Anokas  48:06  
+I mean, like, luckily we are allowed to, like use computers and stuff and but like our exams at the end of the year, we have to write code on paper. Which is horrifying. I don't know how I'm gonna manage. But I guess I guess like in in the machine learning lectures, like some people, and most people don't know, I'd like do a lot of machine learning so but like some people know. And so they're like they did like, look at me like, dude, it's not especially easy for you. I'm like, yeah. But that's like, it's just the it's just certain certain topics. It's just the machine learning side. And I still think that they have a lot to learn in other areas of computer science.
+
+Sanyam Bhutani  48:54  
+I think you're being humble here, but talking about your future aspirations as in ???I underscore an ???aunty underscore not underscore from Twitter as this question, what future job would you like to apply or work on?
+
+Anokas  49:08  
+It's, I don't know. I don't know. Yeah, I think in some ways I I'd like that myself off not thinking about it because I have time to think about it. But like, I feel like at the moment, I would love to start to do something and apply machine learning like industry, but where I can actually see results. So like, I love the work with CNDH because we're actually working towards this this goal. And like when it materializes, hopefully, it will, like, be like, wow, I made this. But there's stuff like self driving cars and this sort of stuff where it's like, you know, you write code and stuff and then a car moves. It's sort of this connection that makes it really, really cool. So I'd love I think, to work in some applied machine learning everything and like, I don't want to narrow my options. Basically, had I say, so like;
+
+Sanyam Bhutani  50:21  
+You're open to all.
+
+Anokas  50:23  
+Yeah, exactly. I want I don't really care. Like, in some ways, like, I'm not saying, oh, I only want to do this, right. The only thing I would say is that, like, I want to take like ethical considerations into account for like, for example, like, take something like Boston Dynamics. It's like, they make really cool robots. Like, I would love to work on robots like that. But I know that whatever robot I build will eventually be used to probably kill someone. So unfortunately, like I probably wouldn't work on something like that. So I think I think there is a so guilty that like whenever I work on something like, is this actually a good thing to build? I didn't think I think about that.
+
+Sanyam Bhutani  51:10  
+I think Self-Driving Cars, still have been a huge milestone in your journey. You were one of the first people in the Nanodegree that Udacity has, and I think you've also interned at Voyage.
+
+Anokas  51:21  
+Yeah, I did it. I did like a work experience, like informally for a few days at Voyage a couple years ago. And that was like a really fantastic experience. And and see, I would love to do that again.
+
+Sanyam Bhutani  51:39  
+Now, again, a question from the Amy. I'm sure I'll have your ML crate repository linked in the description but what frustrates you most about today's machine learning tooling and why did you create ML crate in the first place?
+
+Anokas  51:54  
+Yeah. So ML crate is like is my sort of Machine Learning Library. What it basically is, is that it's it's not designed to solve any specific problem. But when I get frustrated with someone else's library and like I rewrite a function or whatever, I will put it in my library. And then the nice thing is they sort of available, I can easily install it, and it's on Kaggle kernels and stuff, so I can sort of use it. I guess what frustrates me most is probably lack of, of good documentation. So, I think a good example of this is the fast AI library. So it's a really great library, like it's got in the sense that it has, it's really powerful. It's got a lot of cool features.
+
+Sanyam Bhutani  52:42  
+Yep. 
+
+Anokas  52:43  
+And I would love to figure out how to use it. But so far, I've really struggled. I've apparently like the only way to understand it is really is to go through the videos and watch them. So it's not really documented. You just have to sort of know how it works, and I don't like that. And like, it's as a very prescribed way of doing things. So it's like, oh, you've got to use, you've got to use like, a day to bond and all these things. 
+
+Sanyam Bhutani  53:13  
+Yep.
+
+Anokas  53:13  
+It's like, no, I just want you to do training. I want to handle the data myself. And fast.ai there's like, no, you must use data bunch. So it's, it's this frustrating thing that makes me go, okay, fine. You know what I'm going to rewrite my blank, the code myself. And that's partly like a stubbornness of like, I don't want to, like conform my code to how this like one library wants me to write it like I want to write to this way. So I guess it's, I'm trying to think of like other examples, but it's I find like, the lack of documentation quite frustrating, in in in some respects, and also, I guess my psychic learn, like has this like pipelines thing, right? 
+
+Sanyam Bhutani  54:04  
+Yep.
+
+Anokas  54:05  
+Somebody will like that like, and I don't like that. And that's a personal preference thing, but I guess it just highlights I don't like like being prescribed, like, this is how it's gonna work by a specific package. I prefer to like, use a package. Okay, I gave it this, I get out this data. Okay, now what am I going to use next? But I can use one of my packages I didn't like, basically being forced to use someone else's pipeline.
+
+Sanyam Bhutani  54:33  
+Got it. Um, so my final question in the area of data science to you would be what best advice you have for someone who's looking to start your title, becoming the youngest future Kaggle Grand Master?
+
+Anokas  54:45  
+Oh, I guess. I mean, people often ask me, how do you get started. And like I've said the competition's nowadays are very different to how they were three or four years ago. Yes, I often recommend people go and do previous older competitions. So nowadays, they're really not that nice to get started on. So, I will say I often recommend like, competitions that I did when I was getting started, like a ballad, this tabular data and try this out, look at the cars and so on. It's not the same, obviously, to do to do an old competition, but it's it's a nice way to sort of practice. But I guess the, what I would say is that you just have to sort of keep doing it. And hopefully you enjoy it. So if it if it hopefully it's you find something that's fun and and that sort of creates a loop and you end up learning it without actually like, trying really hard to force yourself to learn it. But I guess if someone's asking that question, and that's the motivated to, to learn and Kaggle and machine learning all these things. And then then I have the problem. And I think that applies to most things, not just to.
+
+Sanyam Bhutani  56:13  
+Yeah. And you definitely don't need a masters, we definitely don't need a PhD, you know?
+
+Anokas  56:21  
+Yeah, you don't need you might I don't know about other computer science disciplines. But like, as I said, right Kaggle is is so applied and getting your hands dirty, and you don't need to know the equations, you need to understand the equations, you just need to have an intuition, period. And I think that lends itself really well to people without formal degrees and so on without having been through this rigid structured approach and universities and colleges and so on.
+
+Sanyam Bhutani  56:52  
+Yeah, so this will be a tricky question. I really enjoyed asking this with Giba but what would be your favorite computer game of all time? I know you're a gaming fan as well as a gaming;
+
+Anokas  57:02  
+Yeah. My my all time favorite and I honorable mention to Minecraft obviously because I I spent thousands of thousands of dollars in Minecraft and;
+
+Sanyam Bhutani  57:15  
+You're a hacker.
+
+Anokas  57:16  
+Yeah, I started playing it like it did 10 years ago. I played I played it more than anything else for sure. I think like, I think my the game I've enjoyed most and as my favorite game ever rolled is game called near automata, I don't know if you've heard of it. 
+
+Sanyam Bhutani  57:36  
+I have.
+
+Anokas  57:38  
+But it's this quite, quite well known Japanese open world RPG. And I just I I don't know why I enjoyed it so much. But I really loved the story. And I keep every now and again I'll think like I really want another game. I want to play I want to play that again. So I guess that would have to be my all time favorite game. 
+
+Sanyam Bhutani  58:04  
+Okay. Now my final question. Can you reveal your secret behind the name Anokas on Kaggle? I think it's a username.
+
+Anokas  58:13  
+Yeah, it is I, I, I'm gonna say no, I can't, the truth bit like it's a really boring origin story. So I keep it shrouded in mystery. And everyone asks me this, and I always refuse to answer. So;
+
+Sanyam Bhutani  58:29  
+We'll try to get you on the show again to review it. But thank you so much Mikel for joining me on the podcast. 
+
+Anokas  58:34  
+Thanks. Thank you so much for having me over. And, yeah, I hope I see you soon again.
+
+Sanyam Bhutani  58:48  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description if you like this please subscribe and tune in each week to "Chai Time Data Science."
+

@@ -1,0 +1,246 @@
+Sanyam Bhutani  0:13  
+Hey, this is Sanyam Bhutani and you're listening to "Chai Time Data Science", a podcast for data science enthusiasts where I interview practitioners, researchers, and Kagglers about their journey, experience, and talk all things about data science.
+
+Sanyam Bhutani  0:47  
+Welcome to another episode in the "Chai Time Data Science" show. In this episode, I'm joined by Ryan Chesler, Kaggle competitions masters currently down in the top 400 in the competition stay on the platform. Ryan is working as a machine learning engineer at Site Danwon. He has a background in business with a degree from Arizona State University. In this episode, we talk about Ryan's journey into Kaggle, and discuss the solution to his recent finish on the Jig-saw Unintended bias in toxicity classification Kaggle competition, where his team finished 12th bagging his second gold medal, bring his second gold medal to his profile.
+
+Sanyam Bhutani  1:32  
+Enjoy the show.
+
+Sanyam Bhutani  1:46  
+Hi, everyone, I'm today talking to a very special, special Kaggler who just bagged his second gold medal on a competition. Hello, and thanks so much for joining me today.
+
+Ryan Chesler  1:57  
+Yeah, yeah. Thanks for having me. I've seen you've had lots of really accomplished people on. So it's, it's cool to be among those.
+
+Sanyam Bhutani  2:06  
+So I'm really a fan of your write up, the personal side of things. I'll make sure it's linked in the description of the podcast. I know you decided to take an all in strategy. You, you had invested quite, quite a bit of your time in your business, you decided to settle it down and go all into data science. Could you tell us what got you interested in Data Science at first?
+
+Ryan Chesler  2:32  
+Yeah, yeah. It really was just looking at YouTube videos and seeing all the interesting things that people were doing. I saw people playing video games with AI and all of these other things. And then I saw that I could apply some of these techniques to the business I was currently running. And I was seeing that, I figured that some people must be using AI, what I was doing was, I was basically trying to find deals off of ebay and Craigslist and stuff like that, because I would list something. And then immediately I would get six offers from a bunch of different people. And I was like, there's no possible way that you have a human doing this so quickly. So how are you doing that? And so, I, I had already gone through some of the Coursera courses. And I was like, this is an opportunity for me to actually apply that knowledge that I found. And so I built a very rudimentary app that was just basically looking at listings and sending an email to me if I thought it was a good deal. And so I spent a bunch of time labeling data and figuring all of that and at the time, it was just completely awful because I didn't know about pandas, I didn't know I was an awful programmer and all this stuff, but that was my first dip into it. And I just saw the value immediately.
+
+Sanyam Bhutani  3:57  
+To this was one of your first coding projects, so to speak.
+
+Ryan Chesler  4:00  
+Pretty much yeah, I had done Code Academy and a couple other things like that. But I had never actually said like, I'm going to sit down and I'm going to build something. So that was, that was my first time actually making something useful rather than just a coding puzzle.
+
+Sanyam Bhutani  4:19  
+And did Kaggle come into the picture, so what would lead you to first signing up for kaggle and getting into the first competition.
+
+Ryan Chesler  4:28  
+That was kind of necessary, I had decided that I wanted to do data science and machine learning instead of the business that I was running, because that was slowly tapering out and failing. And so I was trying to figure out what, what do I want to do with the rest of my time now, and I tried applying, a bunch of different places I applied, probably 50 different places, never got any response back and I figured going through a whole degree program was going to take too long, I had already done five Coursera courses. So I felt like I had sort of the pedigree, but I didn't have anything to back up that I actually knew this stuff. And so Kaggle for me was just a proving ground, it was the way that I could show I'm actually decent at this and I can do it even better than a lot of people.
+
+Sanyam Bhutani  5:21  
+Got it. And how was the first competition experience for you? Because sometimes it's not so good for everyone, usually.
+
+Ryan Chesler  5:29  
+Well mine, I, actually the first one I did was the Mercari Prize suggestion one. And that one honestly wasn't going very well when I first started, because I, I was applying these techniques that I just learned and I thought I was going to just come in and be able to do reasonably well, but it knocked me down a peg when I could just could not get my score any higher. And I saw these people, my score was like .43 and other people were down at .39 something and I just had no idea how they were possibly getting scores that low. And that was when I actually went to my first meetup because I was like, I'm putting in so much time into this competition, and I can, I've just hit a roadblock, I need to get external help. And so that was when I went to a meetup. And I met my teammate, Alex, and he said, I'm already working on this jigsaw competition. Let's just both work on that. And so I just ditched the Mercari one and I focused full time on the jigsaw one.
+
+Sanyam Bhutani  6:36  
+So, sort of like your first fully invested Kaggle competition is where you got a gold medal.
+
+Sanyam Bhutani  6:44  
+Yeah, yeah, I was pretty invested in the Mercari one, but the jigsaw one was the one that I ended up finishing out on. So yeah, it was kind of my first but not really.
+
+Sanyam Bhutani  6:56  
+Okay. And you're currently working as a machine learning engineer at site 1001. Could you tell us more about the projects that you're working on?
+
+Sanyam Bhutani  7:06  
+Yeah, they're not they're not as heavy machine learning as one would expect, Site 1001 does smart building related stuff. And so one of the issues with buildings just in general, is that there's a lot of basic things that people just don't even know about their buildings. So just taking inventory and knowing how many light bulbs you have, in, in a certain building is kind of a non trivial thing to do. Because a lot of those things exist just in blueprints. There's no digital format, there's no, and a lot of buildings are 30 years old, so they just don't even exist at that point. And so what my contribution has been, is figuring out ways that we can automate the extraction of that information out of the blueprints. And so just like I was using the light bulb example before, just applying simple not even machine learning techniques necessarily. But to the main system that I've been working on we call it asset ID is basically finding duplicates of things that are within the documents. So someone can draw a bounding box around one specific lighting fixture, and then it will look through the rest of the dock and find all the rest of them and say, okay, there's 275 of this specific lighting fixture. And then you can build out a whole profile of what's even in the building, which seems like a trivial thing, but with current technology, it's actually not.
+
+Sanyam Bhutani  8:40  
+Okay, and in one of your posts, I think the story behind the goal you mentioned, you full, full time now remotely. So could you tell us like, how does Kaggle blend along with your full time job because Kaggle itself is a full time job.
+
+Ryan Chesler  8:57  
+Yeah. It's just a lot of lost sleep. It, when I was running my other business, I just got kind of used to having an off schedule because I had, when, when I was running the other business, I had started doing some work to build out my own website and a couple other things. But at the time, I had so little money that I was contracting it out to people on fiber and Upwork and various other sites and they were typically people in other time zones. And so I got pretty used to staying up very late at night in order to work with people internationally, and making sure everything was going correct. So it's not much of a departure for me. Just do, do my normal daily work and then have dinner or something and then go back to Kaggle and whatever else I'm working on.
+
+Sanyam Bhutani  9:56  
+Nine to five for your job and then five to nine for Kaggle. 
+
+Ryan Chesler  9:59  
+Yeah yeah. 
+
+Sanyam Bhutani  10:02  
+And also, I think like right now your teammates are in the same time zone right. So the teammates, at least for the recent competition, were in the same time zone for you.
+
+Ryan Chesler  10:11  
+Yeah, yeah. For this competition. I was just working with Jeff? who's actually one of the guys from the local meetup.
+
+Sanyam Bhutani  10:19  
+Okay. And congratulations on your second goal on the jigsaw competition. For the audience. I'd like to mention that Ryan's team was placed 12th on the final leaderboard. And now he's just three gold medals away from being a grandmaster.
+
+Ryan Chesler  10:37  
+Yeah, it, three doesn't sound like very much, but that's actually really hard to do. So I don't know when that'll come, but hopefully in the near future.
+
+Sanyam Bhutani  10:49  
+I really love to know more about your solution, but before to set the stagem Could you tell us about the challenge in the jigsaw, unintended bias and toxicity classification challenge. What was that about?
+
+Ryan Chesler  11:04  
+Yeah, so that was actually pretty similar to the first competition that Alex and I, and Bojan and Andrey competed in. So the the gist of the competition is you're given some tax and you're trying to determine is it toxic or not? Is it something that should pass, potentially an online filter? Or is it something that needs to be flagged for review? And so that that was the gist of the first competition. And the second competition was, they realized that those systems were biased against certain groups. So they saw that if you said, I'm a black man versus I'm a white man, it would give you a different result. And that wasn't something that they wanted in their system.
+
+Sanyam Bhutani  11:48  
+And so this was due to like, some biases in the data sets itself maybe.
+
+Ryan Chesler  11:53  
+Yeah, yeah. So they, the way that it was labeled or the way that those words were used in consistent contexts that are always negative, you can sort of skew just based off of the data that's given to you, unintentionally, the, the algorithm might head in a certain direction that you don't want it to go. And so what Jake's did was they set out a metric that was intended to mitigate that. So we had to optimize not just for the area under the curve, but we also had to optimize for something called BNSP and BPSN, and in order to try to make sure that it wasn't bias against certain subgroups.
+
+Sanyam Bhutani  12:37  
+And I think you tweeted out about this that you're like, I think your winning challenge, winning solution was the starting point for this competition, for many people. So what were your first go to steps when getting started on this competition?
+
+Ryan Chesler  12:55  
+We pretty much just took off back where we had finished. So I had a code base that was used on the previous competition. The first thing was just let's take that out again and see how it can do. And at the beginning, it was good because it was a fairly complex solution. But very quickly, people were pulling out BERT and GPT-2 and XLNet and all of this studying the art stuff and just out of the water.
+
+Sanyam Bhutani  13:23  
+These didn't exist back like during that time, right? 
+
+Ryan Chesler  13:26  
+Yeah. 
+
+Sanyam Bhutani  13:26  
+So these models, yeah, got it. And you mentioned these models. As per my knowledge, these are pretty compute heavy. So what was your hardware setup like when working on this competition?
+
+Ryan Chesler  13:39  
+So among our team, I have a 1080 ti and a 1080 in a single system that I use quite a bit. But for this challenge, it wasn't really all that useful because of those large models the, the, the actually the 16 gigs of memory available on the on the P 100 on the Kaggle kernels was way faster than the 1080 ti that I had. So I ended up using almost exclusively the Kaggle kernels and then Jeff, he has a laptop that has a 1070 in it. And for him it was the same thing. So we did almost all of our work on the Kaggle kernels we did some experimentation on our local systems if we had all four available Kaggle kernels running, but it was minimal.
+
+Sanyam Bhutani  14:29  
+I think we like, I always ask this question, is it possible to actually win or win a gold medal in Kaggle using kernels and this not a kernels only competition so that's also an answer for the audience. 
+
+Ryan Chesler  14:42  
+Yeah, yeah. I was talking to Jeff there was a thread and the discussions of people asking if it was possible to get a gold exclusively with just the kernels that I, we proved it, it's, it's pretty difficult. They have every, everyone else who's using V100s and other, other resources had a clear advantage because there was even a tier of models beyond what we were using that we just kind of rolled out because they were so compute intensive.?
+
+Sanyam Bhutani  15:12  
+The bird large models and the other ones right so.
+
+Ryan Chesler  15:17  
+Yeah, there was Burt large and XL net, and then GPT 2 medium. And it was stuff that we do would probably give us a boost. But we just looked at it. And it was like if this model is three times larger than the bird small, and the bird small already takes us two days to train. Just it would be so much work in order for us to get that Bert large all the way working.
+
+Sanyam Bhutani  15:45  
+Yeah. And I know like, atleast one in about 1020 experiments works in data science, so to speak. So could you tell us like, what ideas didn't work for you? And like, what was your intuition behind those ideas when you actually write those out. And maybe the reason for those not working.
+
+Ryan Chesler  16:05  
+Well it's kind of funny, we had a meet up after the competition was over. And we discussed the various techniques because we had two teams from the meetup who were actually competing on this. And we probably spent the first hour discussing our actual solution and the last three hours explaining everything that didn't work. Because we we had so many different things that we tried that just ended up not leading anywhere. So I think a lot of things that people tried that didn't work, so we triedd de-biasing the word embeddings. So that's a technique where you've got these word embeddings. That's supposed to be your understanding of what the words mean. And then you can, there's been a few different research papers that show that you can in some way device them and remove some relationships that you don't want to be there. But we tried that. And that didn't yield any improvement on the leaderboard, I think that I think it just depends on what you're optimizing for and what you're trying to remove, because you might be able to mathematically remove, this is now no longer similar to this other word, but it doesn't necessarily mean that you've removed entirely any bias that might come along in that word embedding because there's such complex monsters. And then I could, I could talk about this forever. The, the other thing that we tried was, we thought basically, we could make our model sort of subgroup blind. And so the way we did that was just every time a subgroup word would occur, so whether it's black or white, or Christian or homosexual, or whatever, we could just always swap them with other subgroups words and so in theory, it wouldn't be able to learn the, the bias because we would see those same words in all of the different contacts. And we tried that in a lot of different forms, but that ended up not working out. And I think that just having such a simple method of just swapping one single word probably isn't enough to remove that entire relationship with the word.
+
+Sanyam Bhutani  18:29  
+Okay, and I'd really love to know more about the solution. So if you could like enlighten us about your gold winning solution, and this was sort of involved some thought process behind selecting the model. So if you could also talk about those.
+
+Ryan Chesler  18:46  
+Yeah, so there wasn't actually that much in terms of model selection because it was pretty much just as much as we could put out at the time because we didn't have the resources to train more model. And have more variety. But the the summary of our overall model was we trained Bert on four different seeds. So we did a train test split, but we had four different seats that we were working with. And we did that for Bert for GPT-2 And then for the LSTMs, that we were working with that were really similar from our previous competitions results. And so we had four seeds and then the three different models and then we just kind of did a big ensemble of those. So we ensemble within the seeds, we had three models and we could use their sub validation set, and then figure out what the best combination proceed was. And then beyond that, we could just average across the four seeds and that was kind of the way our overall model work but the I think the most unique thing about our solution was I figured out there was a way to sort of exploit the metric a little bit. And so the way the metric is laid out, you have you're graded across four things and then their power mean together. And so you have BPSN, BNSP, subgroup AUC and overall AUC. And so overall AUC is just how accurate can you be in terms of classifying as toxic/non toxic, and then subgroup AUC is, how accurate are you on just that subgroup? So just the ones that were labeled as Christian or white or whatever else. And then BPSN and the NSP are these metrics where you're trying to make sure that your, your model isn't skewed in some way. So you're, you're negative for the sub group, is in somehow creeping up and passing the positive of the background. And what I figured out we could do is make a prediction of what the identity was. And then we could shift that prediction by setting it to a different power. So we could learn that. I'm trying to think of an example, I don't remember any numbers off the top of my head. But for example, if you knew that your, your black category was always skewing high, it was biasing always towards toxic, then you can multiply it by the, or put it to the 1.3 power, and that would skew that right side further to the left. And then it would overlap less with that background positive that you were trying to avoid. And so we created this system that would;
+
+Sanyam Bhutani  21:56  
+I'm sorry, by towards the left you mean towards less toxic. 
+
+Ryan Chesler  22:00  
+Yeah, yeah. 
+
+Sanyam Bhutani  22:01  
+Okay. Okay. 
+
+Ryan Chesler  22:03  
+And so I created this system that would just basically iterate through all of the subgroups and try to find which exponent would shift it to maximize the score. And what this would do is it would balance the BNSP and the VPSN, so that they were closer together and then that would in turn, increase our score. So if you look at the rest of the people on the leaderboard above us, I think that almost every single one of them use the bird larger or the other large models and I think that that was the trick that allowed us to creep into that space without needing to do that.
+
+Sanyam Bhutani  22:41  
+That's interesting. I'd also like really love to know what would happen if you use those models along with this. So it might even like, I guess, shortcut you up to first or like top three positions, maybe?
+
+Ryan Chesler  22:54  
+Yeah, yeah. It would be nice to be able to figure that out. I had some discussions with Jeff and we think that it would but it's hard to say without actually trying.
+
+Sanyam Bhutani  23:07  
+I know you spend a lot of time like discussing, having discussions after a competition ends also like do also like to, like other possible solutions after it ends. And what's your thought process after a competition ends?
+
+Ryan Chesler  23:22  
+I don't really continue working on the competitions anymore. I typically just get too burnt out and I'm just like, I'm never touching that again. But I do, I go through and I read every one solution and I say, what did we miss? I, I try really hard to learn from those things every time because people have these fantastically complex things they put together and so I tried to figure out what can I borrow and what can I apply myself. After after the results were in, Jeff asked me basically like are you okay with this because I immediately was focusing so much on like what we could have done to got, to get first. And he was like he was perceiving it as I wasn't happy that we got 12. But I was really happy that we got 12. But I just am, I'm always obsessed about doing even better if I can.
+
+Sanyam Bhutani  24:17  
+Got it. That's the beauty of Kaggle, if I may call it that. 
+
+Ryan Chesler  24:22  
+Yeah. 
+
+Sanyam Bhutani  24:24  
+Also, if you could, like, Tell, tell a bit about what validation strategies dyou set up here? And like, how did you think about those when starting out? Or like, when did you start thinking about having good CV in place?
+
+Ryan Chesler  24:39  
+We didn't really have to do anything particularly complex for this competition, because we had 1.8 million samples. And so what we ended up doing, we started with cross validation, and we were doing k folds and then we quickly realized that that was just way too much work and you could get away with the train test split And you wouldn't have to train on all of the folds. And it was much more efficient to do that. And we found that our local results were really, really well matched with the leaderboard. So all we really did was train test split.
+
+Sanyam Bhutani  25:16  
+Got it. And I'm also curious, like many people tend to team up later in the competitions. How do you, I think, even for the competition you formed the team right from the start. So what was the reason behind doing that, instead of like teaming up later?
+
+Ryan Chesler  25:32  
+There, there wasn't really any great reason behind that. Jeff, and I just, I saw him working on the previous competition, and I knew that he had a solid work ethic and I knew I wanted him on my team. So we just teamed up pretty much immediately and said, the last competition didn't work out. Let's try to team up on this one and see if we can get even further. We had some people who approached us at the end and asked to team up and some of them were even above us. But I kind of shy away from doing that late in the competition because we've already built such complex systems that when it, when it is a kernels only inference thing, we need to, in some way merge our two code bases and that makes it significantly difficult. So we actually had people above us who wanted to team up and we we passed on that because we just didn't think it would be possible to combine our solution with other people's without just slowing down all other work.
+
+Sanyam Bhutani  26:38  
+And I'm also a curious to know, like what was your experimental setup with your teammate and like, what, how did you decide to take on the task or split those between yourselves?
+
+Ryan Chesler  26:50  
+We we started really unstructured and then we slowly learned our lesson because we had certain times where we would duplicate studies and stuff like that. And so what we ended up doing was just on GitHub, we would just have a bunch of different notebooks. And we would just do the classic thing of just adding another underscore and suffix of this is experiment to this is experiment to with whatever, and so on. But we started getting more organized. We had tables with all of our results in the GitHub. And then we also had a list of all of the things that we wanted to explore. And then eventually, we would just tag our names on that and say, I'm working on this right now. So don't, don't duplicate that.
+
+Sanyam Bhutani  27:37  
+And also, how would you like, find these ideas that you wanted to work on to the discussions or maybe the;
+
+Ryan Chesler  27:45  
+Some of it comes from the discussions, but a lot of its kind of just brainstorming and looking at where our models going wrong and trying to say is there some way that we can remove this issue within our model, so we do a lot of areas analysis looking at, seems like we're really bad at the ones that are longer. We're really bad at the ones that have some specific vocabulary. And so we kind of just tackle that directly with our analysis. And then the other thing is reading just piles and piles of papers. So just looking at we found lots of things that were related to Bert. Other things that were related to Debiasing, and we just spent a lot of time kind of skimming those finding what techniques seemed promising and then eventually trying to apply them if they seemed like they might actually get us a boost in score.
+
+Sanyam Bhutani  28:43  
+Great, and usually like this, I always find this pretty common that people's aren't that much extendable in code compared to the results at the game. How's your experience been going through these?
+
+Ryan Chesler  28:56  
+Can you can you repeat that? I don't. I don't know if I totally caught that.
+
+Sanyam Bhutani  29:00  
+Sorry. So usually like people mentioned that the results on people's aren't replicable. So what was your experience when trying these peoples? 
+
+Ryan Chesler  29:10  
+Yeah, yeah, that's definitely been my experience. I've probably, I don't know how many things I've tried to pull out of papers only to have them not work at all. One of one of the more prominent ones is the concept that number batch embeddings. And these are some embeddings that are supposed to be state of the art in multiple different definitions. And they're suppesed to be Debiased and all of this magical stuff. But then when you actually try to apply them, they're very frequently not nearly as useful as just the stock ones. 
+
+Sanyam Bhutani  29:48  
+Okay good, also would like to ask you, what are your best tips for a beginner who's just getting started and maybe dreams of getting a Kaggle gold?
+
+Ryan Chesler  30:01  
+I think it's really just about getting in and starting and just continuing to. It's just a fact that at the beginning, you're probably not going to be very good. And then you'll pick up tricks across competitions. And then eventually, you'll have a situation where you go, oh, this is exactly like XYZ competition that I did four months ago. Now I can apply that trick here. And it seems like everyone else has forgotten it already. So now, now, now you have a secret weapon. But a lot of it I since I interact with a lot of people who are just new and starting off to the, the biggest thing that I see that holds people back is their attitude, really, just being afraid that they're going to try something and it's not going to work or they don't want to put in the time only for it to be not a useful endeavor. And I think that people just have to kind of accept that this is, this is a bunch of experiments, a lot of things aren't going to work. But when you find that thing that does really well and shoots you up the leaderboard, it's going to be really exciting and it's going to be worth it.
+
+Sanyam Bhutani  31:14  
+You have you also mentioned the St. Diego meetup in your posts. So could you tell us about the group? And what upcoming plans do you have for the meetup? I think you're organizing the meetup now.
+
+Ryan Chesler  31:24  
+Yeah, yeah. Now I'm, I'm one of the organizers. I do that with my co organizer, Chris, who just finished his PhD. And really, the group just gets together and sometimes we have actually scheduled talk. So I've given one of those. I talked about the previous tricks, competition. And then our main thing now is just getting together and working on the Kaggle competition. So we just have a weekly get together and we try to discuss relevant papers and we try to split off into teams and eventually compete. And so that's how that team went that Jeff formed, Then we also had another team that formed that also got a bronze medal. So that was that was good for them.
+
+Sanyam Bhutani  32:13  
+Yeah, I'll make sure to have it linked in the description for anyone who's from that area. 
+
+Ryan Chesler  32:17  
+Yeah. 
+
+Sanyam Bhutani  32:18  
+Before we conclude, could you give us a teaser? You mentioned, you have big plans for the next year. So what's in store for you? What are you planning?
+
+Ryan Chesler  32:27  
+I can't share that much, because the plans at this point are a little bit vague. But I can say that one of the things that I've been looking at a lot is satellite imagery. I just I think that that's a really interesting area, because we can have basically a new picture of the entire Earth every day with this incredible resolution. And we can come with all kinds of conclusions with that and I feel like it's kind of an underrated data source at this point.
+
+Sanyam Bhutani  33:01  
+So as Jeremy mentions that it's a fertile area for deep learning, because it's sort of ready, but not many people are doing as many interesting things as it's it. It has a possibility for;
+
+Ryan Chesler  33:12  
+Yeah, yeah. So I can't really say I'm looking at a specific use case that is very important for California specifically. But beyond that, I don't want to say anything until I have more concrete plans.
+
+Sanyam Bhutani  33:29  
+Got it, really look forward to those. Before we end the call, could you tell us what are the best platforms to follow you about from Kaggle, Twitter and LinkedIn, I'll have those linked off in the description.
+
+Ryan Chesler  33:42  
+I think that's pretty much it. I'm, I'm pretty active on all of those. I'm also in a bunch of different slack channels. And I'm always, I'm always happy to help people if they have a problem that they have some technical issue if they're getting some error and they don't know what's going wrong. I'm always willing to jump in and help them because I've been on the opposite end of that where I I sit there for six hours and I go, why is this thing not working? And then it turns out oh, I just had this thing. It was a list and it was supposed to be an array or something stupid like that. So I'm always willing to help with that stuff.
+
+Sanyam Bhutani  34:20  
+That's very kind of you. I'll maybe list down KaggleNoobs, in the description, any other slack communities that you'd like to mention.
+
+Ryan Chesler  34:28  
+Noo, that's it. That's, that's probably the main one.
+
+Sanyam Bhutani  34:33  
+Alright. Thanks so much for joining me today and sharing your amazing solution and good luck for the next three gold medals. 
+
+Ryan Chesler  34:40  
+Yeah, thank you.
+
+Sanyam Bhutani  34:54  
+Thank you so much for listening to this episode. If you enjoyed the show, please be sure to give it a review or feel free to shoot me a message. You can find all of the social media links in the description. If you like the show, please subscribe and tune in each week to "Chai Time Data Science".
+
