@@ -1,0 +1,17 @@
+{"intents": [
+        {"category": "My Account",
+         "tag": "Ratings and Reviews",
+         "questions":["How to Review Product as well as Seller?","How to Filter Search Results with Product Ratings?","What are Ratings & Reviews and how do I write good reviews?"],
+		 "answers":["Everything is right here. Please check this out to make informed purchases on Daraz.",
+		 ["Products can also be filtered according to the number of stars received by other customers.",
+		 "You can now like/upvote reviews that you find helpful by pressing the Thumbs Up icon next underneath the review left side","You can also down-vote & report reviews that you think are not correct. Click on the More Options ellipses to mark the review as either Not Helpful or report it as Abuse."],["Daraz customers have the option of rating and reviewing their product and seller experiences.","The customers can both leave star ratings and add text to describe what they liked or disliked about their experience."]
+		 
+		 
+		 
+		 ]
+        }
+		
+		
+        
+   ]
+}
