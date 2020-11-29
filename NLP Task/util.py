@@ -5,7 +5,8 @@ import numpy as np
 import re
 from nltk.corpus import stopwords
 from sklearn.metrics.pairwise import cosine_similarity
-
+from nltk.stem import PorterStemmer
+stemmer=PorterStemmer()
 
 df=pd.read_csv('df_clean.csv')
 df.drop('Unnamed: 0',axis=1,inplace=True)
@@ -15,7 +16,7 @@ vectorizer=pickle.load(open('vectorizer.pk','rb'))
 X_=pickle.load(open('data.pk','rb'))
 def cleantext(txt):
     txt=txt.split() #spliting all text into single words like nltk.word_tokenize()
-    txt=[i.lower() for i in txt if i not in stopwords.words('english') ] #removing stop words
+    txt=[stemmer.stem(i.lower()) for i in txt if i not in stopwords.words('english') ] #removing stop words
     txt=' '.join(txt)    #again joining the words to make a sentence
     txt=re.sub(r'[^A-Za-z0-9]',' ',txt)   #removing all punctuations and special symbols 
     txt=' '.join(txt.split()) #splitting texts because some of the sentences were having more than 3,4 times and rejoining
@@ -64,7 +65,7 @@ def find_relevant(temp,items):
     temp_df=df.iloc[index,:].copy() #This returns the dataset with the predicted labels only.
     temp_df['cosine_sim']=cos_sim #Store the cosine similarity for particular input data.
     temp_df=temp_df.sort_values('cosine_sim',ascending=False) #Finding out top similarity scores.
-    return(list(temp_df['Question'].head(items).values)),return_response(temp_df) 
+    return(temp_df[['Question','cosine_sim']].head(items)),return_response(temp_df) 
     #this will return top questions that are matched with the test data with particular limit specified by items.
     #and also will try to give response to that question.
 def response(text):
