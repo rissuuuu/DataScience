@@ -14,8 +14,9 @@ def predict_text():
         try:
             text=str(request.form.get('question'))
             predicted=util.response(text)
+            print(predicted)
             return render_template('home.html',prediction=predicted)
-        except:
+        except :
             return "Invalid Values"
 
 app.run()
