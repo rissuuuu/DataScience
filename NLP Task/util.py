@@ -64,7 +64,7 @@ def find_relevant(temp,items):
     temp_df=df.iloc[index,:].copy() #This returns the dataset with the predicted labels only.
     temp_df['cosine_sim']=cos_sim #Store the cosine similarity for particular input data.
     temp_df=temp_df.sort_values('cosine_sim',ascending=False) #Finding out top similarity scores.
-    return(temp_df['Question'].head(items).values),return_response(temp_df) 
+    return(list(temp_df['Question'].head(items).values)),return_response(temp_df) 
     #this will return top questions that are matched with the test data with particular limit specified by items.
     #and also will try to give response to that question.
 def response(text):

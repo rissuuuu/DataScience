@@ -13,9 +13,9 @@ def predict_text():
     if request.method=='POST':
         try:
             text=str(request.form.get('question'))
-            predicted=util.response(text)
-            print(predicted)
-            return render_template('home.html',prediction=predicted)
+            predicted,resp=util.response(text)
+            
+            return render_template('home.html',prediction=predicted,response=resp)
         except :
             return "Invalid Values"
 
