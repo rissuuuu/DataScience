@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple login form</title>
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      form {
+      border: 5px solid #f1f1f1;
+      }
+      button {
+      background-color: #8ebf42;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form method='POST' action='/predict'>
+      <h1><center>Daraz FAQ</center></h1>
+      <div class="formcontainer">
+      <hr/>
+      <div class="container">
+        <!-- <label for="uname"><strong>Ask me:</strong></label> -->
+        <!-- <input rows='4' type="text" placeholder="Type a message to me" name="uname" required style="height:200px;font-size:14pt;"> -->
+        <textarea name="uname" cols="40" rows="5"  placeholder="Type message here" name="uname" required style="height:200px;font-size:14pt;"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+      <hr/>
+      <h2>Response:</h2>
+      <div class="container">
+      <hr/>
+      <textarea name="uname" cols="40" rows="5"  placeholder="View Response" name="uname"  style="height:200px;font-size:14pt;">
+      {{prediction}}
+    </textarea>
+
+
+      <hr/>
+      <br/><br/><br/>
+      <h2><center>Develped by Rishav Paudel</center></h2>
+    </form>
+  </body>
+</html>
