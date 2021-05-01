@@ -18,10 +18,10 @@ INCOMPLETE = 20                     #
 FIFO_GLOBAL = 10
 oldest_frame = 0
 loc_oldest_frame = np.zeros(F).astype('int32')
-phys_mem = np.full((F,2), INVALID).astype('int32')
+phys_mem = np.full((F, 2), INVALID).astype('int32')
 
 
-def init_proc_queue() :
+def init_proc_queue():
     pq = queue.Queue(maxsize=NP)
     proc_queue = list(set((NP * np.random.random(20)).astype('int32')))
     random.shuffle(proc_queue)
@@ -31,20 +31,20 @@ def init_proc_queue() :
     return(pq)
 
 
-
-def sim_process(M, sigma, outfile, lfrac=0.9) :
+def sim_process(M, sigma, outfile, lfrac=0.9):
     cur_page = int(M * np.random.random())  # Generate a random start page
-    cur_locale = round(PAGE_SIZE * (cur_page + 0.5))  #Locality of reference
+    cur_locale = round(PAGE_SIZE * (cur_page + 0.5))  # Locality of reference
     sum_refs = 0
     list_locales = list()
-    for count in range(M) :
-        num_refs = int(512 + (PAGE_SIZE - 512) * np.random.random()) # random page address in memory.
+    for count in range(M):
+        # random page address in memory.
+        num_refs = int(512 + (PAGE_SIZE - 512) * np.random.random())
         sum_refs += num_refs
         list_locales.append(cur_page)
         num_loc = round(lfrac * num_refs)
         aref_list = np.random.normal(cur_locale, sigma * 300 + 100,
-                                    num_loc)   #If siagma is less, it stays less within that locality of reference
-        #if sigma more, it may vary more
+                                     num_loc)  # If siagma is less, it stays less within that locality of reference
+        # if sigma more, it may vary more
         aref_list = correct_refs(aref_list, cur_locale, M)
         aref_list = aref_list.astype('int32')
         cur_page = int(M * np.random.random())
@@ -55,179 +55,203 @@ def sim_process(M, sigma, outfile, lfrac=0.9) :
         tref_list = tref_list.astype('int32')
         np.append(aref_list, tref_list).tofile(outfile, sep='\n')
         outfile.write('\n')
-    
+
     return list_locales, sum_refs
 
-#This block of code will control if sigma value is more.
+# This block of code will control if sigma value is more.
 
-def correct_refs(alist, cent, maxpg) :
-    if cent != 0 :
+
+def correct_refs(alist, cent, maxpg):
+    if cent != 0:
         pgnum = int(cent / PAGE_SIZE)
         lh = (pgnum + 1) * PAGE_SIZE - 1
         ll = pgnum * PAGE_SIZE
-    else :
+    else:
         lh = maxpg * PAGE_SIZE
         ll = 0
-    for i in range(alist.shape[0]) :
-        if alist[i] >= lh :
+    for i in range(alist.shape[0]):
+        if alist[i] >= lh:
             alist[i] = lh - 1
-        if alist[i] < ll :
+        if alist[i] < ll:
             alist[i] = ll + 1
     return alist
 
-#FIFO
-def get_oldest_frame(pr, algo_type) :
+# FIFO
+
+
+def get_oldest_frame(pr, algo_type):
     global oldest_frame
-    if algo_type == FIFO_GLOBAL :
+    if algo_type == FIFO_GLOBAL:
         rv = oldest_frame
         oldest_frame += 1
-        if oldest_frame == F :
+        if oldest_frame == F:
             oldest_frame = 0
         return rv
-        
+
     return INVALID
 
-def init_phys_mem() :
-    for i in range(F) :
-#         initializing Physical memory to implement FIFO
-        phys_mem[i,PID] = INVALID
-        phys_mem[i,FRAME] = INVALID
 
-        
-def update_phys_mem(pid) :
-    for i in range(F) :
-#         Updating physical memory of FIFO
-        if phys_mem[i,PID] == pid :
-            phys_mem[i,PID] = INVALID
-            phys_mem[i,FRAME] = INVALID
+def init_phys_mem():
+    for i in range(F):
+        #         initializing Physical memory to implement FIFO
+        phys_mem[i, PID] = INVALID
+        phys_mem[i, FRAME] = INVALID
 
-        
-def mem_manager(infile, outfile, pid) :
-#    num_faults = 0
+
+def update_phys_mem(pid):
+    for i in range(F):
+        #         Updating physical memory of FIFO
+        if phys_mem[i, PID] == pid:
+            phys_mem[i, PID] = INVALID
+            phys_mem[i, FRAME] = INVALID
+
+
+def mem_manager(infile, outfile, pid, algo=None):
+    #    num_faults = 0
     # Read a number of address references, i.e., execute the process
     # partially (or fully, if the number generated is > process size)
     num_addr = 512 + int(4096 * np.random.random())
     idx = 0
-    while idx < num_addr :
+    while idx < num_addr:
         addr_ref = infile.readline().strip()
-        if addr_ref == '' :
+        if addr_ref == '':
             break
         addr_ref = int(addr_ref)
         pg_num = int(addr_ref / PAGE_SIZE)
         pg_offset = addr_ref % PAGE_SIZE
-        pg_base, pg_fault = get_pageframe(pg_num, pid,lru=False)   #Trying to fetch fault for FIFO.
-        
+        # Trying to fetch fault for FIFO.
+        pg_base, pg_fault = get_pageframe(pg_num, pid, algo)
 
-        if  pg_base >= 0 :
+        if pg_base >= 0:
             phys_addr = pg_base + pg_offset
             outfile.write(str(addr_ref) + ',' + str(phys_addr) + ','
-                          + str(pg_fault1) + '\n')          #Saving the logical add, physical add and faults for FIFO
-        
-            if pg_fault == 0 :
+                          + str(pg_fault) + '\n')  # Saving the logical add, physical add and faults for FIFO
+
+            if pg_fault == 0:
                 pr_timing[pid] += IN_MEMORY
-            elif pg_fault == 1 :
+            elif pg_fault == 1:
                 pr_timing[pid] += MEM_FAULT
-            else :
+            else:
                 pr_timing[pid] += PAGE_REPLACE
-        
-        
-        else :
+
+        else:
             print(idx)
             return INVALID
         idx += 1
-        
-    if idx >= num_addr :    
+
+    if idx >= num_addr:
         return INCOMPLETE
     return COMPLETED
 
-def getFifoFrame(fr_num,pnum,pr):
-    while fr_num < F :
-        if phys_mem[fr_num,PID] == pr and phys_mem[fr_num,FRAME] == pnum :
+
+def getFifoFrame(fr_num, pnum, pr):
+    while fr_num < F:
+        if phys_mem[fr_num, PID] == pr and phys_mem[fr_num, FRAME] == pnum:
             break
-        else :
+        else:
             fr_num += 1
     return fr_num
 
-def getLruFrame(fr_num,pnum,pr):
+
+def getLruFrame(fr_num, pnum, pr):
     global phys_mem
-    while fr_num < F :
-        if phys_mem[fr_num,PID] == pr and phys_mem[fr_num,FRAME] == pnum :
-            temp=phys_mem[fr_num]
-            phys_mem=np.delete(phys_mem,fr_num,axis=0)
-            phys_mem=np.concatenate([phys_mem,temp.reshape(1,-1)],axis=0)
+    while fr_num < F:
+        if phys_mem[fr_num, PID] == pr and phys_mem[fr_num, FRAME] == pnum:
+            temp = phys_mem[fr_num]
+            phys_mem = np.delete(phys_mem, fr_num, axis=0)
+            phys_mem = np.concatenate([phys_mem, temp.reshape(1, -1)], axis=0)
             break
-        else :
+        else:
             fr_num += 1
     return fr_num
 
-def get_pageframe(pnum, pr,algo=None) :
-    fr_num = 0
-    if algo=="lru":
-        fr_num=getLruFrame(fr_num,pnum,pr)
-    elif algo=="fifo":
-       fr_num=getFifoFrame(fr_num,pnum,pr)
 
-    if fr_num < F :
+def getMRUFrame(fr_num, pnum, pr):
+    pass
+
+
+def getRRFrame(fr_num, pnum, pr):
+    pass
+
+
+def getLFUFrame(fr_num, pnum, pr):
+    pass
+
+
+def get_pageframe(pnum, pr, algo=None):
+
+    # Trying to get a page Hit below
+    fr_num = 0
+    if algo == "lru":
+        fr_num = getLruFrame(fr_num, pnum, pr)
+    elif algo == "fifo":
+        fr_num = getFifoFrame(fr_num, pnum, pr)
+    elif algo == "mru":
+        fr_num = getLruFrame(fr_num, pnum, pr)
+    elif algo == "rr":
+        fr_num = getRRFrame(fr_num, pnum, pr)
+    elif algo == "lfu":
+        fr_num = getLFUFrame(fr_num, pnum, pr)
+
+    # This indicates Page Hit.
+    if fr_num < F:
         return fr_num * PAGE_SIZE, 0
+
+    # This tries to find page fault if occured.
     fr_num = gen_pagefault(pnum, pr)
 
-    if fr_num >= 0 :
+    if fr_num >= 0:
         return fr_num * PAGE_SIZE, 1
-    
-    if lru:
+
+    # This is for page replacement based on algorith choosen
+    if algo == "lru":
         fr_num = page_replace(pnum, pr)
-    else:
+    elif algo == "fifo":
         fr_num = page_replaceFIFO(pnum, pr)
-        
-    if fr_num >= 0 :
+
+    if fr_num >= 0:
         return fr_num * PAGE_SIZE, 2
     return INVALID, 0
 
-def gen_pagefault(pgnum, pr) :
-    fr_num = 0
-    while fr_num < F and phys_mem[fr_num,FRAME] >= 0 :
-        fr_num += 1
-    if fr_num >= F :
-        return INVALID
-    phys_mem[fr_num,FRAME] = pgnum
-    phys_mem[fr_num,PID] = pr
 
-        
+def gen_pagefault(pgnum, pr):
+    fr_num = 0
+    while fr_num < F and phys_mem[fr_num, FRAME] >= 0:
+        fr_num += 1
+    if fr_num >= F:
+        return INVALID
+    phys_mem[fr_num, FRAME] = pgnum
+    phys_mem[fr_num, PID] = pr
     return fr_num
 
+
 def page_replace(pgnum, pr):
-    global phys_memLRU
-    temp=np.array([pr,pgnum])
-    phys_memLRU=np.delete(phys_memLRU,0,axis=0)
-    phys_memLRU=np.concatenate([phys_memLRU,temp.reshape(1,-1)],axis=0)
+    global phys_mem
+    temp = np.array([pr, pgnum])
+    phys_mem = np.delete(phys_mem, 0, axis=0)
+    phys_mem = np.concatenate([phys_mem, temp.reshape(1, -1)], axis=0)
     return F-1
 
 
-def page_replaceFIFO(pgnum, pr, algo=FIFO_GLOBAL) :
+def page_replaceFIFO(pgnum, pr, algo=FIFO_GLOBAL):
     cur_frame = get_oldest_frame(pr, algo)
-    phys_mem[cur_frame,PID] = pr
-    phys_mem[cur_frame,FRAME] = pgnum
+    phys_mem[cur_frame, PID] = pr
+    phys_mem[cur_frame, FRAME] = pgnum
     return cur_frame
 
-def print_phys_mem() :
+
+def print_phys_mem():
     print('{:^10s} {:^6s} {:^6s}'.format('Frame', 'PID', 'Page No.'))
     print('{:^10s} {:^6s} {:^6s}'.format('-----', '---', '--------'))
-    for i in range(F) :
-        if phys_mem[i, PID] != INVALID :
+    for i in range(F):
+        if phys_mem[i, PID] != INVALID:
             print('{:^10d} {:^6d} {:^6d}'.format(i, phys_mem[i, PID],
-                                               phys_mem[i,FRAME]))
+                                                 phys_mem[i, FRAME]))
         else:
             print('Free Frame: ', i)
     print('_____________________________________________________________')
-    print('{:^10s} {:^6s} {:^6s}'.format('Frame', 'PID', 'Page No.'))
-    print('{:^10s} {:^6s} {:^6s}'.format('-----', '---', '--------'))
-    for i in range(F) :
-        if phys_memLRU[i, PID] != INVALID :
-            print('{:^10d} {:^6d} {:^6d}'.format(i, phys_memLRU[i, PID],
-                                               phys_memLRU[i,FRAME]))
-        else:
-            print('Free Frame: ', i)
-            
+
+
 def readq(q):
     while True:
         try:
@@ -237,10 +261,10 @@ def readq(q):
 
 
 pr_size = np.zeros(NP, dtype='int32')
-for p in range(NP) :
+for p in range(NP):
     fname = 'AR_' + '{:02d}'.format(p) + '.txt'
     op = open(fname, 'w')
-    npg = int(np.random.normal(10,2.5))
+    npg = int(np.random.normal(10, 2.5))
     nsig = int(5 * np.random.random())
     print(f'Process {p} requires {npg} pages and has a quality {nsig}')
     pg_seq, pr_size[p] = sim_process(npg, nsig, op)
@@ -264,52 +288,42 @@ PAGE_REPLACE = 100
 
 # Open necessary files
 infiles = list()
-outfiles1 = list()
-outfiles2 = list()
-for i in range(NP) :
+outfiles = list()
+algo = input("Enter the algorithm to use")
+for i in range(NP):
     fname = 'AR_{:02d}.txt'.format(i)
-    outname1 = 'AR_{:02}_out.txt'.format(i)
-    outname2 = 'ARLRU_{:02}_out.txt'.format(i)
-    
-    if os.access(fname, os.R_OK) :
+    outname = 'AR_{:02}_{}_out.txt'.format(i, algo)
+
+    if os.access(fname, os.R_OK):
         print(f'Reading Process from {fname}')
         infiles.append(open(fname, 'r'))
     else:
         print(f'Cannot open {fname} for reading')
-    outfiles1.append(open(outname1, 'w'))
-    outfiles2.append(open(outname2, 'w'))
+    outfiles.append(open(outname, 'w'))
 
 # Map logical into physical addresses and keep track of page faults
-for pr in readq(pr_que) :
-    rv = mem_manager(infiles[pr], outfiles1[pr],outfiles2[pr], pr)
-    if rv == INVALID :
+for pr in readq(pr_que):
+    rv = mem_manager(infiles[pr], outfiles[pr], pr, algo="fifo")
+    if rv == INVALID:
         print('Memory overflow error')
         break
-    if rv == INCOMPLETE :
+    if rv == INCOMPLETE:
         pr_que.put_nowait(pr)
-    else :
-#         print(f'Process {pr} (Size: {pr_size[pr]} Bytes) completed; \
-#         removing from queue')
-#         print(f'Time taken: {pr_timing[pr]}')
-#         slow = (pr_timing[pr] - pr_size[pr]) * 100.0 / pr_size[pr]
-#         print('Slow down by {:.2f}%'.format(slow))
+    else:
+        print(f'Process {pr} (Size: {pr_size[pr]} Bytes) completed; \
+        removing from queue')
+        print(f'Time taken: {pr_timing[pr]}')
+        slow = (pr_timing[pr] - pr_size[pr]) * 100.0 / pr_size[pr]
+        print('Slow down by {:.2f}%'.format(slow))
         print_phys_mem()
         update_phys_mem(pr)
-        
+
 #        print('Current Status of Physical Memory')
 #        print_phys_mem()
 
 # Close all files
-for i in range(NP) :
+for i in range(NP):
     infiles[i].close()
-    outfiles1[i].close()
-    outfiles2[i].close()
-    
+    outfiles[i].close()
+
 # Print the Pages in Physical Memory
-
-
-
-
-
-
-
