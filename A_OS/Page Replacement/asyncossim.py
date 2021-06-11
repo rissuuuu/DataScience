@@ -1,3 +1,5 @@
+from datetime import datetime
+start_time = datetime.now()
 import asyncio
 import numpy as np
 import math
@@ -800,3 +802,6 @@ rr_g=rr_g[rr_g[:,0]==1][:,1]
 faults_list=[lru_l,lru_g,fifo_l,fifo_g,mru_l,mru_g,lfu_l,lfu_g,rr_l,rr_g]
 for algo,fault in zip(algos,faults_list):
     print(algo,collections.Counter(fault))
+
+end_time = datetime.now()
+print('Duration: {}'.format(end_time - start_time))
