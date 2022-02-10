@@ -3,5 +3,5 @@ pandas
 Flask
 nltk
 tflearn
-tensorflow==1.15.0
+tensorflow==2.5.3
 tensorflow-estimator==1.15.1
